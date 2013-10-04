@@ -1,21 +1,21 @@
-<p>Clase del dia 30 de septiembre</p>
-
-<p>[x] Entender los conceptos fundamentales relacionados con la virtualización.</p>
-<p>[x] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.</p>
-<p>[X] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux</p>
-
-
-<p>Clase del dia 4 de octubre</p>
+Clase del dia 30 de septiembre
+---
+" [x] Entender los conceptos fundamentales relacionados con la virtualización.
+" [x] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.
+" [X] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux.
 
 
-<p>[X] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.</p>
-<p>[X] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa.</p>
-<p>[x] Comenzar a usar git y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.</p>
+Clase del dia 4 de octubre
+---
 
-<p>Clase del 7 de octubre</p>
+" [X] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+" [X] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa.
+" [x] Comenzar a usar git y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
 
-<p>[] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.</p>
-<p>[] Comprender los niveles de virtualización y sus denominaciones genéricas.</p>
-<p>[] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.</p>
-<p>[] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.</p>
+Clase del 7 de octubre
+---
+" [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+" [] Comprender los niveles de virtualización y sus denominaciones genéricas.
+" [] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
+" [] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.
 
