@@ -1,5 +1,5 @@
-Lista de objetivos 
-==================
+Lista de objetivos de la clase 04/10/2013
+=========================================
 
 [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la 
 creación de contenedores.
