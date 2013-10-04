@@ -1,4 +1,4 @@
-Clase del 23 de septiembre de 2013
+**Clase del 23 de septiembre de 2013**
 
 [X] Entender la metodología docente, de evaluación y de interacción de la asignatura.
 
@@ -8,7 +8,7 @@ Clase del 23 de septiembre de 2013
 
 [X] Vernos las caras.
 
-Clase del 30 de septiembre de 2013
+**Clase del 30 de septiembre de 2013**
 
 [] Entender los conceptos fundamentales relacionados con la virtualización.
 
@@ -16,7 +16,7 @@ Clase del 30 de septiembre de 2013
 
 [] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux.
 
-Clase del 4 de octubre de 2013
+**Clase del 4 de octubre de 2013**
 
 [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 
