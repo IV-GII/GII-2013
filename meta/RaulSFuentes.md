@@ -13,7 +13,7 @@ Clase del dia 4 de octubre
 [x] Comenzar a usar git y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
 
 
-[] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+[] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores. /n
 [] Comprender los niveles de virtualización y sus denominaciones genéricas.
 [] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
 [] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
