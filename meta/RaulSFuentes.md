@@ -14,6 +14,7 @@ Clase del dia 4 de octubre
 
 Clase del 7 de octubre
 ---
+
 * [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 * [] Comprender los niveles de virtualización y sus denominaciones genéricas.
 * [] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
