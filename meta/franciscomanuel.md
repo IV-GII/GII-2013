@@ -1,3 +1,14 @@
+Lista de objetivos de la clase 23/09/2013
+=========================================
+
+[x] Entender la metodología docente, de evaluación y de interacción de la asignatura
+
+[x] Darse de alta y comprender el funcionamiento básico del wiki (en GitHub) y la lista de correo de la asignatura
+
+[x] Entender el concepto de software libre y su aplicación práctica en clase.
+
+[x] Vernos las caras.
+
 Lista de objetivos de la clase 30/09/2013
 =========================================
 
@@ -18,4 +29,4 @@ creación de contenedores.
 [] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo 
 de los sistemas operativos. Saber si el ordenador habitual lo usa.
 
-[] Comenzar a usar git y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
+[x] Comenzar a usar git y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
