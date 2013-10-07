@@ -23,7 +23,7 @@
 [x] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura
 [x] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.
 
-##Clase del 4 de octubre de 2013
+##Clase del 7 de octubre de 2013
 
 *Objetivos de esta sesión
 [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
