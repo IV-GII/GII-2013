@@ -1,8 +1,9 @@
-<h3>Clase del dia 30 de septiembre</h3>
+Clase del dia 30 de septiembre
+--
 
-<p>[x] Entender los conceptos fundamentales relacionados con la virtualización.</p>
-<p>[x] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.</p>
-<p>[x] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux</p>
+* [x] Entender los conceptos fundamentales relacionados con la virtualización.
+* [x] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.
+* [x] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux
 
 
 <h3>Clase del dia 4 de octubre</h3>
