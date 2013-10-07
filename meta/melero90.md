@@ -25,7 +25,23 @@ Objetivos de la Asignatura Infraestructura Virtual
 
 + [ ] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación 
       de contenedores.
-+ [ ] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los 
++ [x] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los 
       sistemas operativos.
 + [x] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.
+
+
+#### Clase del 7 de Octubre
+
+
++ [ ] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación
+      de contenedores. (clase del 4 de octubre)
++ [ ] Comprender los niveles de virtualización y sus denominaciones genéricas.
++ [ ] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
++ [ ] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.
++ [x] Contestar a la encuesta sobre la metodología de clase.
++ [x] Usar ficheros en el repositorio para los ejercicios, en vez de el wiki. El wiki no permite comentar, sin embargo 
+      sobre los *commits* al repo sí se puede. Se seguirá enlazando en la bitácora de clase, en cualquier caso.
++ [x] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
+
+
 
