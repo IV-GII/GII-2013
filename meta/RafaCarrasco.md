@@ -22,3 +22,12 @@
 *Otros objetivos 
 [x] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura
 [x] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.
+
+##Clase del 4 de octubre de 2013
+
+*Objetivos de esta sesión
+[] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+[x] Comprender los niveles de virtualización y sus denominaciones genéricas.
+[x] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
+[] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+
