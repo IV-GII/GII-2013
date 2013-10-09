@@ -1,14 +1,26 @@
-Sesión 27 Septiembre:
+Lista de objetivos de la clase 23/09/2013
+-----------------------------------------
+
+[x] Entender la metodología docente, de evaluación y de interacción de la asignatura
+
+[x] Darse de alta y comprender el funcionamiento básico del wiki (en GitHub) y la lista de correo de la asignatura
+
+[x] Entender el concepto de software libre y su aplicación práctica en clase.
+
+[x] Vernos las caras
 
 
-[]    Entender los conceptos fundamentales relacionados con la virtualización.
+Lista de objetivos de la clase 30/09/2013
+-----------------------------------------
 
-[x]    Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.
+[x] Entender los conceptos fundamentales relacionados con la virtualización.
 
-[]    Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux
+[x] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.
 
+[] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux
 
-Sesión 4 Octubre:
+Lista de objetivos de la clase 04/10/2013
+-----------------------------------------
 
 [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 
@@ -17,7 +29,4 @@ Sesión 4 Octubre:
 [x] Comenzar a usar git y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
 
 
-
-
-Sesion:
 
