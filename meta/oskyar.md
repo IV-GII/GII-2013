@@ -10,11 +10,11 @@
 
 **Clase del 30 de septiembre de 2013**
 
-[] Entender los conceptos fundamentales relacionados con la virtualización.
+[X] Entender los conceptos fundamentales relacionados con la virtualización.
 
 [X] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.
 
-[] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux.
+[X] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux.
 
 **Clase del 4 de octubre de 2013**
 
