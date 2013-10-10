@@ -19,3 +19,12 @@ creación de contenedores.
 de los sistemas operativos. Saber si el ordenador habitual lo usa.
 
 [X] Comenzar a usar git y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
+
+Lista de objetivos de la clase 07/10/2013
+=========================================
+
+[X]Contestar a la encuesta sobre la metodología de clase
+
+[X]Usar ficheros en el repositorio para los ejercicios, en vez de el wiki. El wiki no permite comentar, sin embargo sobre los commits al repo sí se puede. Se seguirá enlazando en la bitácora de clase, en cualquier caso.
+
+[X]Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
