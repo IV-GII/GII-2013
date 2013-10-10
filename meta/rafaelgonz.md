@@ -26,7 +26,7 @@ Clase del 4 de octubre de 2013
 
 Clase del 7 de octubre de 2013
 
-[]Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+[X]Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 
 []Comprender los niveles de virtualización y sus denominaciones genéricas.
 
