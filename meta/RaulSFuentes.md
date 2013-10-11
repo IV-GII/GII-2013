@@ -20,3 +20,7 @@ Clase del 7 de octubre
 * [] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
 * [] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.
 
+Clase del 11 de octubre
+---
+
+* [] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
