@@ -55,4 +55,6 @@ Lista de objetivos de la clase 14/10/2013
 
 - [ ] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente
 
+Lista de objetivos de la clase 18/10/2013
 
+- [ ]  Entregar la práctica
