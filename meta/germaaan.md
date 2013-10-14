@@ -12,10 +12,10 @@ Objetivos clase del 4 de octubre de 2013
 
 Objetivos clase del 7 de octubre de 2013
 ----------------------------------------
-- [ ] Consolidar el uso de técnicas de aislamiento y control de tarear en Linux que se usarán más adelante en la creación de contendores.
-- [ ] Comprender los niveles de virtualización y sus denominaciones genéricas.
-- [ ] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
-- [ ] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.
+- [x] Consolidar el uso de técnicas de aislamiento y control de tarear en Linux que se usarán más adelante en la creación de contendores.
+- [x] Comprender los niveles de virtualización y sus denominaciones genéricas.
+- [x] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
+- [x] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.
 
 Objetivos clase del 11 de octubre de 2013
 -----------------------------------------
