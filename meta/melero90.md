@@ -44,4 +44,16 @@ Objetivos de la Asignatura Infraestructura Virtual
 + [x] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
 
 
+#### Clase del 11 de Octubre
+
++ [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
++ [x] Comprender el método de entrega de las prácticas de la asignatura.
+
+
+#### Clase del 14 de Octubre
+
++ [ ] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica 
+      para su entrega en la sesión siguiente.  
+
+
 
