@@ -36,6 +36,13 @@ Lista de objetivos de la clase 11/10/2013
 
 [X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
-[] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+[X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
 
-[] Comprender el método de entrega de las prácticas de la asignatura.
+[X] Comprender el método de entrega de las prácticas de la asignatura.
+
+Lista de objetivos de la clase 14/10/2013
+=========================================
+
+[X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente.
+
+[X] Comprender el método de entrega de las prácticas de la asignatura.
