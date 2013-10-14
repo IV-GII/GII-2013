@@ -19,7 +19,7 @@ Objetivos clase del 7 de octubre de 2013
 
 Objetivos clase del 11 de octubre de 2013
 -----------------------------------------
-- [ ] Entender los mecanismo de creación y despliegue de aplicaciones en un PaaS.
+- [x] Entender los mecanismo de creación y despliegue de aplicaciones en un PaaS.
 
 Objetivos clase del 14 de octubre de 2013
 -----------------------------------------
