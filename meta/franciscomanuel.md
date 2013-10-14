@@ -43,3 +43,15 @@ de contenedores.
 [] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
 
 [] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+
+Lista de objetivos de la clase 11/10/2013
+=========================================
+
+[] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+
+Lista de objetivos de la clase 14/10/2013
+=========================================
+
+[] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su
+entrega en la sesión siguiente.
