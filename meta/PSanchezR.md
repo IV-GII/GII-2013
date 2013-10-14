@@ -25,11 +25,11 @@ Lista de objetivos de la clase 07/10/2013
 
 [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 
-[]* Comprender los niveles de virtualización y sus denominaciones genéricas.
+[*] Comprender los niveles de virtualización y sus denominaciones genéricas.
 
 [*] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
 
-[]* Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+[*] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
 
 Lista de objetivos de la clase 11/10/2013
 =========================================
