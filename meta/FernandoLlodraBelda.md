@@ -24,7 +24,7 @@ Otros objetivos
 - [X] Entender el concepto de sistema de ficheros virtual usado en Linux para diferentes menesteres
 
 
-Clase del 4 de septiembre de 2013
+Clase del 4 de Octubre de 2013
 ---------------------------------
 
 - [x]Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
