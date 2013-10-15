@@ -35,5 +35,5 @@ Clase del 4 de septiembre de 2013
 Otros objetivos
 
 
-[x]Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura
-[x]Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.
+- [x]Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura
+- [x]Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.
