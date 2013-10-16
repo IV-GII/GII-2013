@@ -26,7 +26,7 @@ Clase del día 07/10/2013
 
 Clase del día 11/10/2013
 
-- [] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+- [X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
 Clase del día 14/10/2013
 
