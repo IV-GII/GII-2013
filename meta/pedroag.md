@@ -25,10 +25,10 @@ Clase del día 7 de octubre
 Clase del día 11 de octubre
 ---------------------------
 
-* [] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+* [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
 Clase del día 14 de octubre
 ---------------------------
 
-* [] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente. 
+* [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente. 
 
