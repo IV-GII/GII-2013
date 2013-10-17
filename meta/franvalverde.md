@@ -27,3 +27,14 @@ Clase del 7 de octubre de 2013
 - [X] Comprender los niveles de virtualización y sus denominaciones genéricas.
 - [X] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
 - [X] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+
+Clase del 11 de octubre de 2013
+------------------------------
+
+- [ ] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+ 
+
+Clase del 14 de octubre de 2013
+------------------------------
+
+- [ ] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente. 
