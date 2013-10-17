@@ -15,7 +15,7 @@ Lista de objetivos de la clase 04/10/2013
 [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la 
 creación de contenedores.
  
-[] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo 
+[X] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo 
 de los sistemas operativos. Saber si el ordenador habitual lo usa.
 
 [X] Comenzar a usar git y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
@@ -27,6 +27,22 @@ Lista de objetivos de la clase 07/10/2013
 
 [X] Comprender los niveles de virtualización y sus denominaciones genéricas.
 
-[] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
+[X] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
 
-[] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+[X] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+
+Lista de objetivos de la clase 11/10/2013
+=========================================
+
+[X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+[X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+
+[X] Comprender el método de entrega de las prácticas de la asignatura.
+
+Lista de objetivos de la clase 14/10/2013
+=========================================
+
+[X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente.
+
+[X] Comprender el método de entrega de las prácticas de la asignatura.

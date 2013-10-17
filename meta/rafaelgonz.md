@@ -36,4 +36,8 @@
 
 ###Clase del 11 de octubre de 2013
 
-[] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+[X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+###Clase del 14 de octubre de 2013
+
+[X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente.

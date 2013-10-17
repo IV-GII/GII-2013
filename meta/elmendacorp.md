@@ -15,3 +15,9 @@
 * [x]Comprender los niveles de virtualización y sus denominaciones genéricas.
 * [x]Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
 * []Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+
+##Clase del dia 11 de octubre
+* []Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+##Clase del dia 14 de octubre
+* []Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente.

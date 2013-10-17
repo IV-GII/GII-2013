@@ -42,3 +42,9 @@ Lista de objetivos de la clase 07/10/2013
 [x] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
 
 [x] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.
+
+Lista de objetivos de la clase 14/10/2013
+-----------------------------------------
+
+[] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
