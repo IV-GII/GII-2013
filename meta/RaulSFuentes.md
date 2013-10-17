@@ -30,5 +30,9 @@ Clase del 14 de octubre
 
 * [x] Entender los mecanismos de creación y despliegue de aplicaciones en un Pa$
 
+Clase del 18 de octubre
+---
+
+* [x] Entregar la práctica
 
 
