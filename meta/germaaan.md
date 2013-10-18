@@ -23,4 +23,11 @@ Objetivos clase del 11 de octubre de 2013
 
 Objetivos clase del 14 de octubre de 2013
 -----------------------------------------
-- [ ] Entender los mecanismo de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente.
+- [x] Entender los mecanismo de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente.
+
+Objetivos clase del 18 de octubre de 2013
+-----------------------------------------
+- [x] Entregar la práctica.
+- [x] Conocer el concurso universitario de software libre.
+
+
