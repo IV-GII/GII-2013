@@ -30,4 +30,9 @@ Clase del día 11/10/2013
 
 Clase del día 14/10/2013
 
-- [] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente. 
+- [X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente. 
+
+Clase del día 18/10/2013
+
+- [X] Entregar la práctica.
+- [X] Conocer el concurso universitario de software libre

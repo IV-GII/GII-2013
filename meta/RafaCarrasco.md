@@ -38,7 +38,7 @@
 
 * Otros objetivos
   * [x] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
-  * [] Comprender el método de entrega de las prácticas de la asignatura.
+  * [x] Comprender el método de entrega de las prácticas de la asignatura.
 
 ##Clase del 14 de octubre de 2013
 
@@ -46,5 +46,14 @@
   * [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente. 
 
 * Otros objetivos
-  * [] Comprender el método de entrega de las prácticas de la asignatura.
+  * [x] Comprender el método de entrega de las prácticas de la asignatura.
+
+##Clase del 18 de octubre de 2013
+
+* Objetivos de esta sesión
+  * [x] Entregar la práctica
+  * [x] Conocer el concurso universitario de software libre
+
+* Otros objetivos
+  * [x] Comprender el método de entrega y corrección de las prácticas de la asignatura.
 

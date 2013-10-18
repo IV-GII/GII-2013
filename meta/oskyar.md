@@ -32,22 +32,22 @@
 ----------------------------------
 [X] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 
-[] Comprender los niveles de virtualización y sus denominaciones genéricas.
+[X] Comprender los niveles de virtualización y sus denominaciones genéricas.
 
 [X] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
 
-[] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+[X] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
 
 
 
 **Clase del 11 de Octubre de 2013**
 -----------------------------------
-[] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+[X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
-[] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente.
+[X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente.
 
 
 
 **Clase del 14 de Octubre de 2013**
 -----------------------------------
-[] Entregar la práctica.
+[X] Entregar la práctica.

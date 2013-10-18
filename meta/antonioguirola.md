@@ -46,3 +46,12 @@ Lista de objetivos de la clase 14/10/2013
 [X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente.
 
 [X] Comprender el método de entrega de las prácticas de la asignatura.
+
+Lista de objetivos de la clase 18/10/2013
+=========================================
+
+[X] Entregar la práctica.
+
+[X] Conocer el concurso universitario de software libre
+
+[X] Comprender el método de entrega y corrección de las prácticas de la asignatura.
