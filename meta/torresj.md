@@ -46,5 +46,5 @@ Lista de objetivos de la clase 07/10/2013
 Lista de objetivos de la clase 14/10/2013
 -----------------------------------------
 
-[] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+[x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
