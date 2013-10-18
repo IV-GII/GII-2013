@@ -51,9 +51,9 @@
 ##Clase del 18 de octubre de 2013
 
 * Objetivos de esta sesión
-   * []Entregar la práctica
-   * []Conocer el concurso universitario de software libre
+  * [x] Entregar la práctica
+  * [x] Conocer el concurso universitario de software libre
 
 * Otros objetivos
-   * []Comprender el método de entrega y corrección de las prácticas de la asignatura.
+  * [x] Comprender el método de entrega y corrección de las prácticas de la asignatura.
 
