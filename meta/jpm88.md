@@ -45,7 +45,6 @@ Clase del 18 de octubre de 2013
 ---
 
 * [X] Entregar la práctica
-
 * [X] Conocer el concurso universitario de software libre.
 
 
