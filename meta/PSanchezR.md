@@ -12,7 +12,7 @@ coste de uso de un recurso.
 Lista de objetivos de la clase 04/10/2013
 =========================================
 
-[] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la 
+[*] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la 
 creación de contenedores.
  
 [*] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo 
@@ -23,7 +23,7 @@ de los sistemas operativos. Saber si el ordenador habitual lo usa.
 Lista de objetivos de la clase 07/10/2013
 =========================================
 
-[] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+[*] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 
 [*] Comprender los niveles de virtualización y sus denominaciones genéricas.
 
@@ -34,8 +34,33 @@ Lista de objetivos de la clase 07/10/2013
 Lista de objetivos de la clase 11/10/2013
 =========================================
 
-[] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+[*] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
-[] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+[*] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
 
-[] Comprender el método de entrega de las prácticas de la asignatura.
+[*] Comprender el método de entrega de las prácticas de la asignatura.
+
+Lista de objetivos de la clase 14/10/2013
+=========================================
+[*] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente. 
+[*] Comprender el método de entrega de las prácticas de la asignatura.
+
+Lista de objetivos de la clase 18/10/2013
+=========================================
+[*]Entregar la práctica.
+[*]Conocer el concurso universitario de software libre
+
+
+Lista de objetivos de la clase 21/10/2013
+=========================================
+[]Entender los objetivos de este segundo tema
+[]Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+[]Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+[]Entender y saber llevar a cabo la virtualización de dispositivos de red
+
+
+
+
+
+
+

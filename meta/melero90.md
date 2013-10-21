@@ -50,8 +50,32 @@ Objetivos de la Asignatura Infraestructura Virtual
 
 #### Clase del 14 de Octubre
 
-+ [ ] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica 
++ [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica 
       para su entrega en la sesión siguiente.  
+
+#### Clase del 18 de Octubre
+
++ [x] Entregar la práctica.
++ [x] Conocer el concurso universitario de software libre.
++ [x] Comprender el método de entrega y corrección de las prácticas de la asignatura.
+
+
+#### Clase del 21 de Octubre
+
+
++ [] Entender los objetivos de este segundo tema.
++ [] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador.
++ [] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux.
++ [] Entender y saber llevar a cabo la virtualización de dispositivos de red.
++ [] Usar herramientas de administración y monitorización de red en línea de órdenes.
++ [] Contestar a la encuesta sobre la asignatura.
+
+#### Clase del 25 de Octubre
+
++ [] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
++ [] Usar esos conocimientos en la configuración de una jaula chroot.
++ [] Entender en qué casos una virtualización "débil" puede ser más conveniente que una "fuerte"
+
 
 
 
