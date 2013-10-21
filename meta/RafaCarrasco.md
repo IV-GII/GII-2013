@@ -31,3 +31,29 @@
   * [x] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
   * [x] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
 
+##Clase del 11 de octubre de 2013
+
+* Objetivos de esta sesión
+  * [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+* Otros objetivos
+  * [x] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+  * [x] Comprender el método de entrega de las prácticas de la asignatura.
+
+##Clase del 14 de octubre de 2013
+
+* Objetivos de esta sesión
+  * [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente. 
+
+* Otros objetivos
+  * [x] Comprender el método de entrega de las prácticas de la asignatura.
+
+##Clase del 18 de octubre de 2013
+
+* Objetivos de esta sesión
+  * [x] Entregar la práctica
+  * [x] Conocer el concurso universitario de software libre
+
+* Otros objetivos
+  * [x] Comprender el método de entrega y corrección de las prácticas de la asignatura.
+

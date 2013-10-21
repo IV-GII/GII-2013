@@ -23,3 +23,17 @@ Clase del dia 07 octubre
 - [x]Comprender los niveles de virtualización y sus denominaciones genéricas.
 - [x]Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
 - [x]Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones[]
+
+Clase del dia 11 octubre
+
+- [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+- [x] Comprender el método de entrega de las prácticas de la asignatura.
+
+Clase del dia 14 octubre
+
+- [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente.
+
+Clase del dia 18 octubre
+
+- [x] Entregar la práctica.
+- [x] Conocer el concurso universitario de software libre
