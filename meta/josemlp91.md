@@ -40,6 +40,9 @@ Jose Miguel López Pérez
 - [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con 
       la práctica para su entrega en la sesión siguiente.	
 
+####Clase del 18 de octubre de 2013
+- [x] Entregar la práctica.
+- [x] Conocer el concurso universitario de software libre
 
 
 
