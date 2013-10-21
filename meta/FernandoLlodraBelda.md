@@ -52,3 +52,44 @@ Otros objetivos
 - [x]Contestar a la encuesta sobre la metodología de clase
 - []Usar ficheros en el repositorio para los ejercicios, en vez de el wiki. El wiki no permite comentar, sin embargo sobre los *commits* al repo sí se puede. Se seguirá enlazando en la bitácora de clase, en cualquier caso.
 - [x]Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
+
+
+Clase del 11 y 14 de octubre de 2013
+-------------------------------
+Objetivos de esta sesión
+
+- [x]Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+Otros objetivos
+
+- [x]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+- [x]Comprender el método de entrega de las prácticas de la asignatura.
+
+
+Clase del 18 de octubre de 2013
+-------------------------------
+Objetivos de esta sesión
+
+- [x]Entregar la práctica.
+- [x]Conocer el concurso universitario de software libre
+
+Otros objetivos
+
+- [x]Comprender el método de entrega y corrección de las prácticas de la asignatura.
+
+
+Clase del 21 de octubre de 2013
+-------------------------------
+Objetivos de esta sesión
+
+- [x]Entender los objetivos de este segundo tema
+- []Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+- []Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+- []Entender y saber llevar a cabo la virtualización de dispositivos de red
+
+Otros objetivos
+
+- []Usar herramientas de administración y monitorización de red en línea de órdenes
+- [x]Contestar a la encuesta sobre la asignatura
+- [x]Ver las prácticas hechas por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
+
