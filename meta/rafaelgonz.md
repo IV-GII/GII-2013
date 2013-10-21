@@ -50,10 +50,10 @@
 
 ###Clase del 21 de octubre de 2013
 
-[ ] Entender los objetivos de este segundo tema
+[X] Entender los objetivos de este segundo tema
 
-[ ] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+[X] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
 
-[ ] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+[X] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
 
-[ ] Entender y saber llevar a cabo la virtualización de dispositivos de red
+[X] Entender y saber llevar a cabo la virtualización de dispositivos de red
