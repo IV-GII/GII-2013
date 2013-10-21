@@ -32,3 +32,8 @@ Clase del dia 11 octubre
 Clase del dia 14 octubre
 
 - [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS; continuar con la práctica para su entrega en la sesión siguiente.
+
+Clase del dia 18 octubre
+
+- [x] Entregar la práctica.
+- [x] Conocer el concurso universitario de software libre
