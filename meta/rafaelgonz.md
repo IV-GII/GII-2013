@@ -62,4 +62,6 @@
 
 [X]Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
 
-[]Usar esos conocimientos en la configuración de una jaula chroot.
+[X]Usar esos conocimientos en la configuración de una jaula chroot.
+
+###Clase del 28 de octubre de 2013
