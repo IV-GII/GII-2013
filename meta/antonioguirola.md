@@ -75,3 +75,18 @@ Lista de objetivos de la clase 21/10/2013
 
 [X] Ver las prácticas hechas por los compañeros y si os gustan dadles una estrella o fork en GitHub
 
+Lista de objetivos de la clase 21/10/2013
+=========================================
+
+[] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
+
+[] Usar esos conocimientos en la configuración de una jaula chroot.
+
+[] Entender en qué casos una virtualización "débil" puede ser más conveniente que una "fuerte"
+
+[X] Comprobar las notas de la práctica anterior
+
+[X] Recordar como se registran los objetivos en clase.
+
+[] Contestar a la invitación para el hangout del martes que viene
+
