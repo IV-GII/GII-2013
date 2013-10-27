@@ -85,6 +85,12 @@ Lista de objetivos de la clase 25/10/2013
 Lista de objetivos de la clase 28/10/2013
 -----------------------------------------
 
-- [ ] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+- [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 
-- [ ] Aprender a enjaular usuarios
+- [x] Aprender a enjaular usuarios
+
+
+Lista de objetivos de la clase 04/11/2013
+------------------------------------------
+
+- [ ] Resolver dudas y obtáculos en la realización de la segunda práctica. 
