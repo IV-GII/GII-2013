@@ -77,4 +77,23 @@ Lista de objetivos de la clase 25/10/2013
 [X] Recordar como se registran los objetivos en clase.
 
 [X] Contestar a la invitación para el hangout del martes que viene
+
 [X] Apuntarse a la Comunidad de Google Plus de la asignatura para el hangout, principalmente
+
+
+Lista de objetivos de la clase 28/10/2013
+=========================================
+
+[X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+
+[X] Aprender a enjaular usuarios
+
+[X] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
+
+[] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+
+[X] Comprender que existe vida en los servidores web fuera del Apache.
+
+[] Comprobar la página de chroot en la wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
+
+[X] Mirar este curso de reciclaje y mantenimiento de ordenadores, interesante para informáticos y para los que no lo son.
