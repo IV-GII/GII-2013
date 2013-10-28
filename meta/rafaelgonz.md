@@ -66,6 +66,6 @@
 
 ###Clase del 28 de octubre de 2013
 
-[] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+[X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 
-[] Aprender a enjaular usuarios
+[X] Aprender a enjaular usuarios
