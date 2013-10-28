@@ -75,10 +75,10 @@ Lista de objetivos de la clase 21/10/2013
 
 [X] Ver las prácticas hechas por los compañeros y si os gustan dadles una estrella o fork en GitHub
 
-Lista de objetivos de la clase 21/10/2013
+Lista de objetivos de la clase 25/10/2013
 =========================================
 
-[] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
+[X] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
 
 [] Usar esos conocimientos en la configuración de una jaula chroot.
 
@@ -88,5 +88,25 @@ Lista de objetivos de la clase 21/10/2013
 
 [X] Recordar como se registran los objetivos en clase.
 
-[] Contestar a la invitación para el hangout del martes que viene
+[X] Contestar a la invitación para el hangout del martes que viene
+
+
+Lista de objetivos de la clase 28/10/2013
+=========================================
+
+[] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+
+[] Aprender a enjaular usuarios
+
+*Otros objetivos:*
+
+[X] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
+
+[] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+
+[X] Comprender que existe vida en los servidores web fuera del Apache.
+
+[] Comprobar la página de chroot en la wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
+
+[] Mirar este curso de reciclaje y mantenimiento de ordenadores, interesante para informáticos y para los que no lo son.
 
