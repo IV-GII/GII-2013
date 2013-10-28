@@ -77,5 +77,17 @@ Objetivos de la Asignatura Infraestructura Virtual
 + [] Entender en qué casos una virtualización "débil" puede ser más conveniente que una "fuerte"
 
 
+#### Clase del 28 de Octubre
+
++ [] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas 
+     operativos.
++ [] Aprender a enjaular usuarios
++ [] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
++ [] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
++ [x] Comprender que existe vida en los servidores web fuera del Apache.
++ [x] Mirar este curso de reciclaje y mantenimiento de ordenadores, interesante para informáticos y para los que no lo son.
+
+
+
 
 
