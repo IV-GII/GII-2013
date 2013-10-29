@@ -71,5 +71,14 @@
 * Objetivos de esta sesión
 
   * [x] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
-  * [] Usar esos conocimientos en la configuración de una jaula chroot.
+  * [x] Usar esos conocimientos en la configuración de una jaula chroot.
+
+##Clase del 28 de octubre de 2013
+
+* Objetivos de esta sesión
+
+  * [] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+  * [] Aprender a enjaular usuarios
+ 
+
 
