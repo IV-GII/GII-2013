@@ -70,16 +70,16 @@ Lista de objetivos de la clase 21/10/2013
 Lista de objetivos de la clase 25/10/2013
 -----------------------------------------
 
-[] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
+[x] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
 
-[] Usar esos conocimientos en la configuración de una jaula chroot.
+[x] Usar esos conocimientos en la configuración de una jaula chroot.
 
 
 Lista de objetivos de la clase 28/10/2013
 -----------------------------------------
 
-[] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+[x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 
-[] Aprender a enjaular usuarios
+[x] Aprender a enjaular usuarios
 
 

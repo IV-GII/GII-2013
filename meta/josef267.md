@@ -37,3 +37,15 @@ Clase del dia 18 octubre
 
 - [x] Entregar la práctica.
 - [x] Conocer el concurso universitario de software libre
+
+Clase del dia 21 octubre
+
+- [x] Entender los objetivos de este segundo tema
+- [x] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+- [x] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+- [x] Entender y saber llevar a cabo la virtualización de dispositivos de red 
+
+Clase del 28 de octubre
+
+- [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+- [x] Aprender a enjaular usuarios
