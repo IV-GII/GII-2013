@@ -48,3 +48,8 @@ Clase del día 25/10/2013
 
 - [X] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
 - [X] Usar esos conocimientos en la configuración de una jaula chroot.
+
+Clase del día 28/10/2013
+
+- [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+- [X] Aprender a enjaular usuarios
