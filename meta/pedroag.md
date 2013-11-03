@@ -38,13 +38,13 @@ Clase del día 21 de octubre
 * [x] Entender los objetivos de este segundo tema
 * [x] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
 * [x] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
-* [] Entender y saber llevar a cabo la virtualización de dispositivos de red
+* [x] Entender y saber llevar a cabo la virtualización de dispositivos de red
 
 Clase del día 25 de octubre
 ---------------------------
 
-* [] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
-* [] Usar esos conocimientos en la configuración de una jaula chroot.
+* [x] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
+* [x] Usar esos conocimientos en la configuración de una jaula chroot.
 
 Clase del día 28 de octubre
 ---------------------------
