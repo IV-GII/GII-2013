@@ -61,11 +61,11 @@ Lista de objetivos de la clase 21/10/2013
 
 [X] Entender los objetivos de este segundo tema
 
-[] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+[X] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
 
 [X] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
 
-[] Entender y saber llevar a cabo la virtualización de dispositivos de red
+[X] Entender y saber llevar a cabo la virtualización de dispositivos de red
 
 *Otros objetivos:*
 
@@ -80,9 +80,9 @@ Lista de objetivos de la clase 25/10/2013
 
 [X] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
 
-[] Usar esos conocimientos en la configuración de una jaula chroot.
+[X] Usar esos conocimientos en la configuración de una jaula chroot.
 
-[] Entender en qué casos una virtualización "débil" puede ser más conveniente que una "fuerte"
+[X] Entender en qué casos una virtualización "débil" puede ser más conveniente que una "fuerte"
 
 [X] Comprobar las notas de la práctica anterior
 
@@ -109,4 +109,15 @@ Lista de objetivos de la clase 28/10/2013
 [] Comprobar la página de chroot en la wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
 
 [] Mirar este curso de reciclaje y mantenimiento de ordenadores, interesante para informáticos y para los que no lo son.
+
+Lista de objetivos de la clase 4/11/2013
+=========================================
+
+[X] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+
+[] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+
+*Otros objetivos*
+
+[] Consolidar la mecánica de entrega de prácticas de la asignatura y su valoración.
 

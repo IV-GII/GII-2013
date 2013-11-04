@@ -69,3 +69,9 @@
 [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 
 [X] Aprender a enjaular usuarios
+
+###Clase del 4 de noviembre de 2013
+
+[]Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+
+[]Comprender las aplicaciones del enjaulado y ponerlas en práctica.

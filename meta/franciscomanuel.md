@@ -72,12 +72,19 @@ Lista de objetivos de la clase 25/10/2013
 
 [x] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
 
-[] Usar esos conocimientos en la configuración de una jaula chroot.
+[x] Usar esos conocimientos en la configuración de una jaula chroot.
 
 Lista de objetivos de la clase 28/10/2013
 =========================================
 
-[] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas 
+[x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas 
 operativos.
 
-[] Aprender a enjaular usuarios
+[x] Aprender a enjaular usuarios
+
+Lista de objetivos de la clase 04/11/2013
+=========================================
+
+[x] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones.
+
+[x] Comprender las aplicaciones del enjaulado y ponerlas en práctica.

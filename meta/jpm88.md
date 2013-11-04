@@ -56,3 +56,20 @@ Clase del 21 de octubre de 2013
 * []Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
 * []Entender y saber llevar a cabo la virtualización de dispositivos de red
 
+Clase del 25 de octubre
+---
+
+* [] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
+* [] Usar esos conocimientos en la configuración de una jaula chroot.
+
+Clase del 28 de octubre
+---
+
+* [] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+* [] Aprender a enjaular usuarios
+
+Clase del 4 de noviembre
+---
+
+* [] Resolver dudas y obstáculos en la realización de la segunda práctica
+
