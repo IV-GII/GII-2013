@@ -39,13 +39,13 @@ Objetivos clase del 21 de octubre de 2013
 
 Objetivos clase del 25 de octubre de 2013
 -----------------------------------------
-- [ ] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
-- [ ] Usar esos conocimientos en la configuración de una jaula chroot.
+- [x] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
+- [x] Usar esos conocimientos en la configuración de una jaula chroot.
 
 Objetivos clase del 28 de octubre de 2013
 -----------------------------------------
-- [ ] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
-- [ ] Aprender a enjaular usuarios
+- [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+- [x] Aprender a enjaular usuarios
 
 Objetivos clase del 4 de noviembre de 2013
 -----------------------------------------
