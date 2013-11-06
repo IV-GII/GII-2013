@@ -83,13 +83,46 @@ Clase del 21 de octubre de 2013
 Objetivos de esta sesión
 
 - [x]Entender los objetivos de este segundo tema
-- []Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
-- []Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
-- []Entender y saber llevar a cabo la virtualización de dispositivos de red
+- [x]Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+- [x]Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+- [x]Entender y saber llevar a cabo la virtualización de dispositivos de red
 
 Otros objetivos
 
-- []Usar herramientas de administración y monitorización de red en línea de órdenes
+- [x]Usar herramientas de administración y monitorización de red en línea de órdenes
 - [x]Contestar a la encuesta sobre la asignatura
 - [x]Ver las prácticas hechas por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
 
+
+Clase del 25 de octubre de 2013
+-------------------------------
+
+Objetivos de esta sesión
+
+- [x]Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
+- [x]Usar esos conocimientos en la configuración de una jaula chroot.
+
+Otros objetivos
+
+- []Entender en qué casos una virtualización "débil" puede ser más conveniente que una "fuerte"
+- [x]Comprobar las notas de la práctica anterior
+- [x]Recordar como se registran los objetivos en clase.
+- [x]Contestar a la invitación para el hangout del martes que viene
+- [x]Apuntarse a la Comunidad de Google Plus de la asignatura para el hangout, principalmente
+
+
+Clase del 28 de octubre de 2013
+-------------------------------
+
+Objetivos de esta sesión
+
+- [x]Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+- [x]Aprender a enjaular usuarios
+
+Otros objetivos
+
+- []Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
+- []Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+- []Comprender que existe vida en los servidores web fuera del Apache.
+- []Comprobar la página de chroot en la wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
+- []Mirar este curso de reciclaje y mantenimiento de ordenadores, interesante para informáticos y para los que no lo son.
