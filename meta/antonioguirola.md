@@ -94,15 +94,15 @@ Lista de objetivos de la clase 25/10/2013
 Lista de objetivos de la clase 28/10/2013
 =========================================
 
-[] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+[X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 
-[] Aprender a enjaular usuarios
+[X] Aprender a enjaular usuarios
 
 *Otros objetivos:*
 
 [X] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
 
-[] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+[X] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
 
 [X] Comprender que existe vida en los servidores web fuera del Apache.
 
@@ -115,7 +115,7 @@ Lista de objetivos de la clase 4/11/2013
 
 [X] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
 
-[] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+[X] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
 
 *Otros objetivos*
 
