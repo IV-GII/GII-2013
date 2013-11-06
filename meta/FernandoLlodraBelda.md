@@ -126,3 +126,16 @@ Otros objetivos
 - []Comprender que existe vida en los servidores web fuera del Apache.
 - []Comprobar la página de chroot en la wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
 - []Mirar este curso de reciclaje y mantenimiento de ordenadores, interesante para informáticos y para los que no lo son.
+
+
+Clase del 4 de Noviembre de 2013
+--------------------------------
+
+Objetivos de esta sesión
+
+- []Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+- []Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+
+Otros objetivos
+
+- []Consolidar la mecánica de entrega de prácticas de la asignatura y su valoración.
