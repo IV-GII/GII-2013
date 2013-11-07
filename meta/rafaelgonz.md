@@ -72,6 +72,8 @@
 
 ###Clase del 4 de noviembre de 2013
 
-[]Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+[X]Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
 
-[]Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+[X]Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+
+###Clase del 8 de noviembre de 2013
