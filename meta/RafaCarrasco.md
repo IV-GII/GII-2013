@@ -80,7 +80,7 @@
   * [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
   * [x] Aprender a enjaular usuarios
 
-Clase del 4 de noviembre de 2013
+##Clase del 4 de noviembre de 2013
 
 * Objetivos de esta sesión
 
