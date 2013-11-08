@@ -56,8 +56,8 @@ Clase del 21 de octubre de 2013
 Clase del 25 de octubre de 2013
 -------------------------------
 
-- [ ] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
-- [ ] Aprender a enjaular usuarios
+- [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+- [X] Aprender a enjaular usuarios
 
 Clase del 28 de octubre de 2013
 -------------------------------
