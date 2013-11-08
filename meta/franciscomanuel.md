@@ -88,3 +88,8 @@ Lista de objetivos de la clase 04/11/2013
 [x] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones.
 
 [x] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+
+Lista de objetivos de la clase 08/11/2013
+=========================================
+
+[] Resolver dudas y obstáculos en la realización de la segunda práctica.
