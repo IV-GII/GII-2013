@@ -8,3 +8,4 @@ Lista de objetivos del profe
 [X] Entender el concepto de contenedores
 [X] Crear y usar contenedores
 [X] Resolver dudas y obtáculos en la realización de la segunda práctica.
+[X] Resolver dudas y obstáculos en la realización de la segunda práctica.
