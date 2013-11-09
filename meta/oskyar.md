@@ -85,10 +85,16 @@
 
 - [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 
-- [] Aprender a enjaular usuarios
+- [x] Aprender a enjaular usuarios
 
 
 **Clase del 4 de Noviembre de 2013**
 ------------------------------------------
 
-- [ ] Resolver dudas y obtáculos en la realización de la segunda práctica. 
+- [x] Resolver dudas y obtáculos en la realización de la segunda práctica. 
+
+
+**Clase del 8 de Noviembre de 2013**
+------------------------------------------
+
+- [x] Resolver dudas y obtáculos en la realización de la segunda práctica. 
