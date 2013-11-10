@@ -51,4 +51,4 @@
 
 #### Clase del 8 de noviembre de 2013
 [X] Resolver dudas y obstáculos en la realización de la segunda práctica   
-[ ] Entregar la práctica   
+[X] Entregar la práctica   
