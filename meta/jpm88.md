@@ -71,20 +71,20 @@ Clase del 28 de octubre
 Clase del 4 de noviembre
 ---
 
-* [X] Resolver dudas y obstáculos en la realización de la segunda práctica
+* [ ] Resolver dudas y obstáculos en la realización de la segunda práctica
 
 
 Clase del 8 de noviembre
 ---
 
-* [] Resolver dudas y obstáculos en la realización de la segunda práctica
-* [] Entregar la práctica 
+* [ ] Resolver dudas y obstáculos en la realización de la segunda práctica
+* [ ] Entregar la práctica 
 
 
 Clase del 11 de noviembre
 ---
 
-* [] Entender el concepto de contenedores
-* [] Configurar el sistema para poder crear y usar contenedores
-* [] Crear y usar contenedores
+* [ ] Entender el concepto de contenedores
+* [ ] Configurar el sistema para poder crear y usar contenedores
+* [ ] Crear y usar contenedores
 
