@@ -78,6 +78,7 @@ Clase del 8 de noviembre
 ---
 
 * [] Resolver dudas y obstáculos en la realización de la segunda práctica
+* [] Entregar la práctica 
 
 
 Clase del 11 de noviembre
