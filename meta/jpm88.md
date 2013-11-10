@@ -71,14 +71,14 @@ Clase del 28 de octubre
 Clase del 4 de noviembre
 ---
 
-* [ ] Resolver dudas y obstáculos en la realización de la segunda práctica
+* [X] Resolver dudas y obstáculos en la realización de la segunda práctica
 
 
 Clase del 8 de noviembre
 ---
 
-* [ ] Resolver dudas y obstáculos en la realización de la segunda práctica
-* [ ] Entregar la práctica 
+* [X] Resolver dudas y obstáculos en la realización de la segunda práctica
+* [X] Entregar la práctica 
 
 
 Clase del 11 de noviembre
