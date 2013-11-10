@@ -53,3 +53,12 @@ Clase del día 28/10/2013
 
 - [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 - [X] Aprender a enjaular usuarios
+
+Clase del día 04/11/2013
+
+- [X] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+- [X] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+
+Clase del día 08/11/2013
+
+- [X] Resolver dudas y obstáculos en la realización de la segunda práctica.
