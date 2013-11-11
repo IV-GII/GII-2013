@@ -4,11 +4,17 @@ FILE=$1
 SESSION=$2
 OBJ=$3
 URL=$4
+CUENTA_TWITTER=$5
+
 IFS=$'\n'
 SESSION_OBJS=( $(wget http://objiv-jmerelo.rhcloud.com/get/$SESSION -q -O - ) )  
 unset IFS
 ((OBJ_IDX=OBJ-1))
-COMMIT_MSG="${URL} : Añade objetivo #${OBJ} de la sesión ${SESSION}"
-echo ${SESSION_OBJS[$OBJ_IDX]/[ ]/X}>>$FILE
+COMMIT_MSG="${URL} : Añade objetivo #${OBJ} de la sesión ${SESSION} ${CUENTA_TWITTER}"
+
+
+echo -e ${SESSION_OBJS[$OBJ_IDX]/[ ]/X} "\n" >>$FILE
+
+
 git commit -a -m "$COMMIT_MSG"
 
