@@ -22,15 +22,16 @@ Listado de objetivos por fechas.
 ##07/09/2013
 
 >[X] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.  
->[ ] Comprender los niveles de virtualización y sus denominaciones genéricas.  
->[ ] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.  
->[ ] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.  
+>[X] Comprender los niveles de virtualización y sus denominaciones genéricas.  
+>[X] Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.  
+>[X] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.  
 
 ##11/10/2013
 
 >[X] Entender los mecanismos de creación y despliegue de aplicaciones de un PaaS  
 
 ##18/10/2013
+
 >[X] Entregar Práctica
 
 ##21/10/2013
@@ -59,7 +60,7 @@ Listado de objetivos por fechas.
 
 ##08/11/2013
 
->[x] Resolver dudas y obstáculos en la realización de la segunda práctica.
+>[X] Resolver dudas y obstáculos en la realización de la segunda práctica.
 
 ##11/11/2013
 
