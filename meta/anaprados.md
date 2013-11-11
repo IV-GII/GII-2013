@@ -53,3 +53,4 @@
 [X] Resolver dudas y obstáculos en la realización de la segunda práctica   
 [X] Entregar la práctica   
 
+[X] Entender el concepto de contenedores
