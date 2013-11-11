@@ -97,6 +97,10 @@ Objetivos de la Asignatura Infraestructura Virtual
 
 #### Clase del 8 de Noviembre
 
++ [] Entender el concepto de contenedores
++ [] Configurar el sistema para poder crear y usar contenedores
++ [] Crear y usar contenedores
+
 
 #### Clase del 11 de Noviembre
 
