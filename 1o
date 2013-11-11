@@ -1,14 +1,26 @@
 #!/bin/bash
 
-FILE=$1
-SESSION=$2
-OBJ=$3
-URL=$4
-CUENTA_TWITTER=$5
+if [ ! -f obj.conf ];
+then
+    FILE=$1
+    SESSION=$2
+    OBJ=$3
+    URL=$4
+    CUENTA_TWITTER=$5
+else
+    SESSION=$1
+    OBJ=$2
+    URL=$3
+    CONF=( $(cat obj.conf))
+    echo -e $CONF
+    FILE=${CONF[0]}
+    CUENTA_TWITTER=${CONF[1]}
+fi
 
 IFS=$'\n'
 SESSION_OBJS=( $(wget http://objiv-jmerelo.rhcloud.com/get/$SESSION -q -O - ) )  
 unset IFS
+
 ((OBJ_IDX=OBJ-1))
 COMMIT_MSG="${URL} : Añade objetivo #${OBJ} de la sesión ${SESSION} ${CUENTA_TWITTER}"
 
