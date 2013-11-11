@@ -98,3 +98,4 @@
 ------------------------------------------
 
 - [x] Resolver dudas y obtáculos en la realización de la segunda práctica. 
+[X] Entender el concepto de contenedores
