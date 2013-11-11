@@ -92,4 +92,8 @@ Lista de objetivos de la clase 8/11/2013
 
 [x] Resolver dudas y obstáculos en la realización de la segunda práctica.
 
+Lista de objetivos de la clase 11/11/2013
+-----------------------------------------
+
+
 
