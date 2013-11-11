@@ -22,7 +22,7 @@ SESSION_OBJS=( $(wget http://objiv-jmerelo.rhcloud.com/get/$SESSION -q -O - ) )
 unset IFS
 
 ((OBJ_IDX=OBJ-1))
-COMMIT_MSG="${URL} : Añade objetivo #${OBJ} de la sesión ${SESSION} ${CUENTA_TWITTER}"
+COMMIT_MSG="${URL} : Añade objetivo #${OBJ} de la sesión ${SESSION} @${CUENTA_TWITTER}"
 
 
 echo -e ${SESSION_OBJS[$OBJ_IDX]/[ ]/X} "\n" >>$FILE
