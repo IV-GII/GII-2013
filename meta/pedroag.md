@@ -51,3 +51,21 @@ Clase del día 28 de octubre
 
 * [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 * [x] Aprender a enjaular usuarios
+
+Clase del día 4 de noviembre
+----------------------------
+
+* [x] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+* [x] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+
+Clase del día 8 de noviembre
+----------------------------
+
+* [X] Resolver dudas y obstáculos en la realización de la segunda práctica.
+
+Clase del día 11 de noviembre
+-----------------------------
+
+* [] Entender el concepto de contenedores
+* [] Configurar el sistema para poder crear y usar contenedores
+* []Crear y usar contenedores

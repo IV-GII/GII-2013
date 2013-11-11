@@ -52,3 +52,6 @@
 #### Clase del 8 de noviembre de 2013
 [X] Resolver dudas y obstáculos en la realización de la segunda práctica   
 [X] Entregar la práctica   
+
+[X] Entender el concepto de contenedores
+[X] Entender el concepto de contenedores
