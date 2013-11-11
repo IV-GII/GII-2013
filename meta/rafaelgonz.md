@@ -81,3 +81,9 @@
 [X] Resolver dudas y obstáculos en la realización de la segunda práctica.
 
 ###Clase del 11 de noviembre de 2013
+
+[X] Entender el concepto de contenedores
+
+[] Configurar el sistema para poder crear y usar contenedores
+
+[] Crear y usar contenedores
