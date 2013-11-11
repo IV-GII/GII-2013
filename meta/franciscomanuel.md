@@ -94,4 +94,5 @@ Lista de objetivos de la clase 08/11/2013
 
 [x] Resolver dudas y obstáculos en la realización de la segunda práctica.
 
-[X] Entender el concepto de contenedores
+Lista de objetivos de la clase 11/11/2013
+=========================================
