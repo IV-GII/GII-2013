@@ -82,4 +82,14 @@ Lista de objetivos de la clase 28/10/2013
 
 [x] Aprender a enjaular usuarios
 
+Lista de objetivos de la clase 4/11/2013
+-----------------------------------------
+
+[x] Resolver dudas y obstáculos en la realización de la segunda práctica.
+
+Lista de objetivos de la clase 8/11/2013
+-----------------------------------------
+
+[x] Resolver dudas y obstáculos en la realización de la segunda práctica.
+
 
