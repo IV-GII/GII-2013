@@ -139,3 +139,4 @@
 - [ ] Conocer Nubbius, empresa granadina y caso de éxito en el uso de Google App Engine]
 
 [X] Entender el concepto de contenedores
+[X] Configurar el sistema para poder crear y usar contenedores
