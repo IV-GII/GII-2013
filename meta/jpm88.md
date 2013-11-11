@@ -51,25 +51,40 @@ Clase del 18 de octubre de 2013
 Clase del 21 de octubre de 2013
 ---
 
-* []Entender los objetivos de este segundo tema
-* []Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
-* []Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
-* []Entender y saber llevar a cabo la virtualización de dispositivos de red
+* [X]Entender los objetivos de este segundo tema
+* [X]Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+* [X]Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+* [X]Entender y saber llevar a cabo la virtualización de dispositivos de red
 
 Clase del 25 de octubre
 ---
 
-* [] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
-* [] Usar esos conocimientos en la configuración de una jaula chroot.
+* [X] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
+* [X] Usar esos conocimientos en la configuración de una jaula chroot.
 
 Clase del 28 de octubre
 ---
 
-* [] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
-* [] Aprender a enjaular usuarios
+* [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+* [X] Aprender a enjaular usuarios
 
 Clase del 4 de noviembre
 ---
 
-* [] Resolver dudas y obstáculos en la realización de la segunda práctica
+* [X] Resolver dudas y obstáculos en la realización de la segunda práctica
+
+
+Clase del 8 de noviembre
+---
+
+* [X] Resolver dudas y obstáculos en la realización de la segunda práctica
+* [X] Entregar la práctica 
+
+
+Clase del 11 de noviembre
+---
+
+* [ ] Entender el concepto de contenedores
+* [ ] Configurar el sistema para poder crear y usar contenedores
+* [ ] Crear y usar contenedores
 

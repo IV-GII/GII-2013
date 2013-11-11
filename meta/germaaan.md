@@ -49,5 +49,9 @@ Objetivos clase del 28 de octubre de 2013
 
 Objetivos clase del 4 de noviembre de 2013
 -----------------------------------------
-- [ ] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
-- [ ] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+- [x] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+- [x] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+
+Objetivos clase del 8 de noviembre de 2013
+-----------------------------------------
+- [x] Resolver dudas y obstáculos en la realización de la segunda práctica.
