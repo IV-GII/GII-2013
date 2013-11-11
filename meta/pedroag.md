@@ -53,3 +53,4 @@ Clase del día 28 de octubre
 * [x] Aprender a enjaular usuarios
 
 
+[X] Resolver dudas y obstáculos en la realización de la segunda práctica.
