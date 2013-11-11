@@ -35,9 +35,37 @@ Listado de objetivos por fechas.
 
 ##21/10/2013
 
->[ ] Entender los objetivos de este segundo tema.  
->[ ] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador.  
->[ ] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux.  
->[ ] Entender y saber llevar a cabo la virtualización de dispositivos de red.  
+>[X] Entender los objetivos de este segundo tema.  
+>[X] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador.  
+>[X] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux.  
+>[X] Entender y saber llevar a cabo la virtualización de dispositivos de red.  
 
+##25/10/2013
+
+>[X] Aprender a instalar una máquina virtual sin necesidad de usar una imagen.
+
+>[X] Usar esos conocimientos en la configuración de una jaula chroot.
+
+##28/10/2013
+
+>[X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+
+>[X] Aprender a enjaular usuarios
+
+
+##04/11/2013
+
+>[X] Resolver dudas y obtáculos en la realización de la segunda práctica. 
+
+##08/11/2013
+
+>[x] Resolver dudas y obstáculos en la realización de la segunda práctica.
+
+##11/11/2013
+
+>[ ] Entender el concepto de contenedores
+
+>[ ] Configurar el sistema para poder crear y usar contenedores
+
+>[ ] Crear y usar contenedores
 
