@@ -96,4 +96,4 @@ Lista de objetivos de la clase 08/11/2013
 
 Lista de objetivos de la clase 11/11/2013
 =========================================
-[X] Entender el concepto de contenedores
+
