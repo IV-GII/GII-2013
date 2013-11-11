@@ -62,4 +62,22 @@ Clase del 25 de octubre de 2013
 Clase del 28 de octubre de 2013
 -------------------------------
 
-- [ ] Resolver dudas y obtáculos en la realización de la segunda práctica
+- [X] Resolver dudas y obtáculos en la realización de la segunda práctica
+
+Clase del 4 de noviembre de 2013
+-------------------------------
+
+- [X] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+- [X] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+
+Clase del 8 de noviembre de 2013
+-------------------------------
+
+- [X] Resolver dudas y obstáculos en la realización de la segunda práctica.
+
+Clase del 11 de noviembre de 2013
+-------------------------------
+
+- [ ] Entender el concepto de contenedores
+- [ ] Configurar el sistema para poder crear y usar contenedores
+- [ ] Crear y usar contenedores
