@@ -62,3 +62,10 @@ Clase del día 8 de noviembre
 ----------------------------
 
 * [X] Resolver dudas y obstáculos en la realización de la segunda práctica.
+
+Clase del día 11 de noviembre
+-----------------------------
+
+* [] Entender el concepto de contenedores
+* [] Configurar el sistema para poder crear y usar contenedores
+* []Crear y usar contenedores
