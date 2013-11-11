@@ -13,10 +13,8 @@ unset IFS
 COMMIT_MSG="${URL} : Añade objetivo #${OBJ} de la sesión ${SESSION} ${CUENTA_TWITTER}"
 
 
-echo ${SESSION_OBJS[$OBJ_IDX]/[ ]/X}>>$FILE
+echo ${SESSION_OBJS[$OBJ_IDX]/[ ]/X} "/n" >>$FILE
 
 
 git commit -a -m "$COMMIT_MSG"
-
-
 
