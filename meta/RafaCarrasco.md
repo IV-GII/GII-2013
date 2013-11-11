@@ -87,6 +87,19 @@
   * [x] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
   * [x] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
 
- 
+##Clase del 8 de noviembre de 2013
+
+* Objetivos de esta sesión
+
+  * [x] Resolver dudas y obstáculos en la realización de la segunda práctica.
+
+##Clase del 11 de noviembre de 2013
+
+* Objetivos de esta sesión
+
+  * [] Entender el concepto de contenedores
+  * [] Configurar el sistema para poder crear y usar contenedores
+  * [] Crear y usar contenedores
+
 
 

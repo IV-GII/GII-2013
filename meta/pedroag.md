@@ -52,5 +52,7 @@ Clase del día 28 de octubre
 * [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 * [x] Aprender a enjaular usuarios
 
+Clase del día 8 de noviembre
+----------------------------
 
-[X] Resolver dudas y obstáculos en la realización de la segunda práctica.
+* [X] Resolver dudas y obstáculos en la realización de la segunda práctica.
