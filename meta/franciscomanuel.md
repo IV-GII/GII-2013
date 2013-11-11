@@ -97,6 +97,8 @@ Lista de objetivos de la clase 08/11/2013
 Lista de objetivos de la clase 11/11/2013
 =========================================
 
+[] Retomar el marcado de objetivos usando el nuevo script para añadirlos.
+
 [] Entender el concepto de contenedores
 
 [] Configurar el sistema para poder crear y usar contenedores
