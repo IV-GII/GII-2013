@@ -79,9 +79,9 @@ Objetivos de la Asignatura Infraestructura Virtual
 
 #### Clase del 28 de Octubre
 
-+ [] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas 
++ [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas 
      operativos.
-+ [] Aprender a enjaular usuarios
++ [x] Aprender a enjaular usuarios
 + [x] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
 + [x] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
 + [x] Comprender que existe vida en los servidores web fuera del Apache.
@@ -90,8 +90,8 @@ Objetivos de la Asignatura Infraestructura Virtual
 
 #### Clase del 4 de Noviembre
 
-+ [] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
-+ [] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
++ [x] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
++ [x] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
 + [x] Consolidar la mecánica de entrega de prácticas de la asignatura y su valoración.
 
 
