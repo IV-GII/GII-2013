@@ -99,7 +99,5 @@ Lista de objetivos de la clase 11/11/2013
 
 [X] Configurar el sistema para poder crear y usar contenedores 
 
-
-
 [X] Crear y usar contenedores 
 
