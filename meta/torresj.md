@@ -95,11 +95,11 @@ Lista de objetivos de la clase 8/11/2013
 Lista de objetivos de la clase 11/11/2013
 -----------------------------------------
 
-
-
-
-
-
 [X] Entender el concepto de contenedores
+
 [X] Configurar el sistema para poder crear y usar contenedores 
+
+
+
+[X] Crear y usar contenedores 
 
