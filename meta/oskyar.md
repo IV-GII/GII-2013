@@ -102,41 +102,6 @@
 **Clase del 11 de Noviembre de 2013**
 ------------------------------------------
 
-- [ ] Entender el concepto de contenedores.
+- [X] Entender el concepto de contenedores
+[X] Configurar el sistema para poder crear y usar contenedores 
 
-- [ ] Configurar el sistema para poder crear y usar contenedores.
-
-- [ ] Crear y usar contenedores.
-
-
-**Clase del 15 de Noviembre de 2013**
-------------------------------------------
-
-- [ ] Entender los sistemas de orquestación de máquinas virtuales.
-
-- [ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
-
-
-**Seminario del 18 de Noviembre de 2013**
------------------------------------------
-
-- [ ] Comprobar el uso de tecnologías en la nube en la práctica.
-
-- [ ] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
-
-- [ ] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
-
-- [ ] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
-
-
-**Seminario del 22 de Noviembre de 2013**
------------------------------------------
-
-- [ ] Comprender la aplicación de los conceptos de virtualización en un mundo real.
-
-- [ ] Conocer las diferentes técnicas usadas en el desarrollo de una aplicación sobre un PaaS
-
-- [ ] Conocer Nubbius, empresa granadina y caso de éxito en el uso de Google App Engine]
-
-[X] Entender el concepto de contenedores
-[X] Configurar el sistema para poder crear y usar contenedores
