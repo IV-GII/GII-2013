@@ -68,4 +68,10 @@ Clase del día 11 de noviembre
 
 * [] Entender el concepto de contenedores
 * [] Configurar el sistema para poder crear y usar contenedores
-* []Crear y usar contenedores
+* [] Crear y usar contenedores
+
+Clase del día 15 de noviembre
+-----------------------------
+
+* [] Entender los sistemas de orquestación de máquinas virtuales.
+* [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
