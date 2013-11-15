@@ -97,19 +97,19 @@ Objetivos de la Asignatura Infraestructura Virtual
 
 #### Clase del 8 de Noviembre
 
-+ [x] Entender el concepto de contenedores
-+ [x] Configurar el sistema para poder crear y usar contenedores
-+ [x] Crear y usar contenedores
++ [x] Resolver dudas y obstáculos en la realización de la segunda práctica
 
 
 #### Clase del 11 de Noviembre
 
-+ [] Entender los sistemas de orquestación de máquinas virtuales.
-+ [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
-+ [] Ver el papel de los *tápers* como base de experimentación y prácticas de muchos de los conceptos de virtualización.
++ [x] Entender el concepto de contenedores
++ [x] Configurar el sistema para poder crear y usar contenedores
++ [x] Crear y usar contenedores
 
 #### Clase del 15 de Noviembre
 
-
++ [] Entender los sistemas de orquestación de máquinas virtuales.
++ [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
++ [] Ver el papel de los *tápers* como base de experimentación y prácticas de muchos de los conceptos de virtualización.
 
 
