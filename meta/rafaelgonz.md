@@ -89,3 +89,9 @@
 [X] Crear y usar contenedores
 
 ###Clase del 15 de noviembre de 2013
+
+[X] Entender los sistemas de orquestación de máquinas virtuales.
+
+[ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+###Clase del 18 de noviembre de 2013
