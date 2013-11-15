@@ -130,3 +130,10 @@ Lista de objetivos de la clase 11/11/2013
 
 [X] Crear y usar contenedores
 
+Lista de objetivos de la clase 15/11/2013
+=========================================
+
+[] Entender los sistemas de orquestación de máquinas virtuales.
+
+[] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
