@@ -105,3 +105,5 @@
 - [X] Entender el concepto de contenedores
 [X] Configurar el sistema para poder crear y usar contenedores 
 
+[X] Crear y usar contenedores 
+
