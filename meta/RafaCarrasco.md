@@ -97,9 +97,9 @@
 
 * Objetivos de esta sesión
 
-  * [] Entender el concepto de contenedores
-  * [] Configurar el sistema para poder crear y usar contenedores
-  * [] Crear y usar contenedores
+  * [x] Entender el concepto de contenedores
+  * [x] Configurar el sistema para poder crear y usar contenedores
+  * [x] Crear y usar contenedores
 
 
 

@@ -119,5 +119,21 @@ Lista de objetivos de la clase 4/11/2013
 
 *Otros objetivos*
 
-[] Consolidar la mecánica de entrega de prácticas de la asignatura y su valoración.
+[X] Consolidar la mecánica de entrega de prácticas de la asignatura y su valoración.
+
+Lista de objetivos de la clase 11/11/2013
+=========================================
+
+[X] Entender el concepto de contenedores
+
+[X] Configurar el sistema para poder crear y usar contenedores
+
+[X] Crear y usar contenedores
+
+Lista de objetivos de la clase 15/11/2013
+=========================================
+
+[] Entender los sistemas de orquestación de máquinas virtuales.
+
+[] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 

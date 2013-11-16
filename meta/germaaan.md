@@ -55,3 +55,14 @@ Objetivos clase del 4 de noviembre de 2013
 Objetivos clase del 8 de noviembre de 2013
 -----------------------------------------
 - [x] Resolver dudas y obstáculos en la realización de la segunda práctica.
+
+Objetivos clase del 11 de noviembre de 2013
+-----------------------------------------
+- [ ] Entender el concepto de contenedores
+- [ ] Configurar el sistema para poder crear y usar contenedores
+- [ ] Crear y usar contenedores
+
+Objetivos clase del 15 de noviembre de 2013
+-----------------------------------------
+- [ ] Entender los sistemas de orquestación de máquinas virtuales.
+- [ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
