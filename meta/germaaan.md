@@ -70,3 +70,5 @@ Objetivos clase del 15 de noviembre de 2013
 
 [X] Configurar el sistema para poder crear y usar contenedores 
 
+[X] Crear y usar contenedores 
+
