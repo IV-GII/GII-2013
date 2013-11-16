@@ -66,3 +66,5 @@ Objetivos clase del 15 de noviembre de 2013
 -----------------------------------------
 - [x] Entender los sistemas de orquestación de máquinas virtuales.
 - [ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+[X] Configurar el sistema para poder crear y usar contenedores 
+
