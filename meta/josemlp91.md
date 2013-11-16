@@ -93,3 +93,5 @@ Jose Miguel López Pérez
 
 [X] Entender el concepto de contenedores 
 
+[X] Configurar el sistema para poder crear y usar contenedores 
+
