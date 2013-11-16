@@ -72,3 +72,5 @@ Objetivos clase del 15 de noviembre de 2013
 
 [X] Crear y usar contenedores 
 
+[X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado. 
+
