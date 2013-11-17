@@ -116,3 +116,5 @@ Lista de objetivos de la clase 15/11/2013
 
 - [ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
+[X] Comprender la aplicación de los conceptos de virtualización en un mundo real. 
+
