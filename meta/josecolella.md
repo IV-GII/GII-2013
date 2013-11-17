@@ -118,3 +118,5 @@ Lista de objetivos de la clase 15/11/2013
 
 [X] Comprender la aplicación de los conceptos de virtualización en un mundo real. 
 
+[X] Comprender la aplicación de los conceptos de virtualización en un mundo real. 
+
