@@ -116,7 +116,15 @@ Lista de objetivos de la clase 15/11/2013
 
 - [ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
-[X] Comprender la aplicación de los conceptos de virtualización en un mundo real. 
+Lista de objetivos de la clase 18/11/2013
+-----------------------------------------
 
-[X] Comprender la aplicación de los conceptos de virtualización en un mundo real. 
+- [x] Comprobar el uso de tecnologías en la nube en la práctica.
+
+- [x] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
+
+- [x] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
+
+- [x] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
+
 
