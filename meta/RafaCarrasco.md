@@ -101,5 +101,21 @@
   * [x] Configurar el sistema para poder crear y usar contenedores
   * [x] Crear y usar contenedores
 
+##Clase del 15 de noviembre de 2013
+
+* Objetivos de esta sesión
+
+  * [x] Entender los sistemas de orquestación de máquinas virtuales.
+  * [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+##Clase del 18 de noviembre de 2013
+
+* Objetivos de esta sesión
+
+  * [x] Comprobar el uso de tecnologías en la nube en la práctica.
+  * [x] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
+  * [x] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
+  * [x] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
+
 
 
