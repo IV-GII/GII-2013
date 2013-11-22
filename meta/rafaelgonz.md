@@ -92,7 +92,7 @@
 
 [X] Entender los sistemas de orquestación de máquinas virtuales.
 
-[ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+[X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 ###Clase del 18 de noviembre de 2013
 
@@ -103,3 +103,11 @@
 [X] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
 
 [X]Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
+
+###Clase del 22 de noviembre de 2013
+
+[ ] Resolver problemas con juju.
+
+[ ] Configuración compleja de sistemas con él.
+
+
