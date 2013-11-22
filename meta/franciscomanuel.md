@@ -102,3 +102,26 @@ Lista de objetivos de la clase 11/11/2013
 [x]Configurar el sistema para poder crear y usar contenedores
 
 [x]Crear y usar contenedores
+
+Lista de objetivos de la clase 15/11/2013
+=========================================
+
+[] Entender los sistemas de orquestación de máquinas virtuales.
+
+[] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+Lista de objetivos de la clase 18/11/2013
+=========================================
+
+[x] Comprender la aplicación de los conceptos de virtualización en un mundo real.
+
+[x] Conocer las diferentes técnicas usadas en el desarrollo de una aplicación sobre un PaaS
+
+[x] Conocer Nubbius, empresa granadina y caso de éxito en el uso de Google App Engine]
+
+Lista de objetivos de la clase 22/11/2013
+=========================================
+
+[] Resolver problemas con juju.
+
+[ ] Configuración compleja de sistemas con él.
