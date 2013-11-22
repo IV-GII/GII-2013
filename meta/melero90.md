@@ -112,4 +112,26 @@ Objetivos de la Asignatura Infraestructura Virtual
 + [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 + [] Ver el papel de los *tápers* como base de experimentación y prácticas de muchos de los conceptos de virtualización.
 
+#### Clase del 18 de Noviembre [Seminario Nubbius]
+
++ [] Comprobar el uso de tecnologías en la nube en la práctica.
++ [] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
++ [] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
++ [] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
+
+#### Clase del 22 de Noviembre
+
++ [] Comprender la aplicación de los conceptos de virtualización en un mundo real.
++ [] Conocer las diferentes técnicas usadas en el desarrollo de una aplicación sobre un PaaS
++ [] Conocer Nubbius, empresa granadina y caso de éxito en el uso de Google App Engine]
++ [] Conocer la proyección profesional de las técnicas de virtualización.
+
+#### Clase del 25 de Noviembre
+
+#### Clase del 29 de Noviembre
+
+#### Clase del 2 de Diciembre
+
+
+
 
