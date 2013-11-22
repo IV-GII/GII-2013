@@ -64,9 +64,32 @@ Listado de objetivos por fechas.
 
 ##11/11/2013
 
->[ ] Entender el concepto de contenedores
+>[X] Entender el concepto de contenedores
 
->[ ] Configurar el sistema para poder crear y usar contenedores
+>[X] Configurar el sistema para poder crear y usar contenedores
 
->[ ] Crear y usar contenedores
+>[X] Crear y usar contenedores
 
+##15/11/2013
+
+
+>[X] Entender los sistemas de orquestación de máquinas virtuales.
+
+>[ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+##18/11/2013
+
+
+>[X] Comprobar el uso de tecnologías en la nube en la práctica.
+
+>[X] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
+
+>[X] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
+
+>[X] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
+
+##22/11/2013
+
+>[ ] Resolver problemas con juju.
+
+>[ ] Configuración compleja de sistemas con él.
