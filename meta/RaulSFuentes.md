@@ -56,6 +56,16 @@ Clase del 28 de octubre
 
 Clase del 4 de noviembre
 ---
+* [X]Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+* [X]Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+* [X] Resolver dudas y obstáculos en la realización de la segunda práctica
 
-* [] Resolver dudas y obstáculos en la realización de la segunda práctica
+Clase del 8 de noviembre
+---
+* [X] Resolver dudas y obstáculos en la realización de la segunda práctica.
 
+Clase del 11 de noviembre
+---
+* [X] Entender el concepto de contenedores
+* [X] Configurar el sistema para poder crear y usar contenedores
+* [X] Crear y usar contenedores
