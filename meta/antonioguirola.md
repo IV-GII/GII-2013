@@ -133,7 +133,24 @@ Lista de objetivos de la clase 11/11/2013
 Lista de objetivos de la clase 15/11/2013
 =========================================
 
-[] Entender los sistemas de orquestación de máquinas virtuales.
+[X] Entender los sistemas de orquestación de máquinas virtuales.
 
 [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
+Lista de objetivos de la clase 18/11/2013 - Seminario Nubbius
+=========================================
+
+[X] Comprobar el uso de tecnologías en la nube en la práctica.
+
+[X] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
+
+[X] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
+
+[X] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
+
+Lista de objetivos de la clase 22/11/2013
+=========================================
+
+[] Resolver problemas con juju.
+
+[] Configuración compleja de sistemas con él.
