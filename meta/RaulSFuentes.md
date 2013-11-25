@@ -69,3 +69,12 @@ Clase del 11 de noviembre
 * [X] Entender el concepto de contenedores
 * [X] Configurar el sistema para poder crear y usar contenedores
 * [X] Crear y usar contenedores
+
+Clase del 15 de noviembre
+---
+* [X] Entender los sistemas de orquetación de máquinas virtuales
+* [X] Usarlos en la práctica para configurar máquina virtuales con un fin determinado
+
+Clase del 18 de noviembre
+---
+*[X] Seminario: Trabajando en la nube, con Ignacio Zafra
