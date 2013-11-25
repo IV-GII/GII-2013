@@ -127,4 +127,17 @@ Lista de objetivos de la clase 18/11/2013
 
 - [x] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
 
+Lista de objetivos de la clase 25/11/2013
+------------------------------------------
 
+- [ ] Conocer la historia y origenes de este lenguaje
+
+- [ ] Entender los conceptos principales detras del mismo
+
+- [ ] Conocer y saber usar la sintaxis
+
+- [ ] Aprender las estructuras de datos y control principales
+
+- [ ] Instalar y usar bibliotecas
+
+- [ ] Hacer un pequeño programa
