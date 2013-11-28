@@ -106,8 +106,8 @@
 
 ###Clase del 22 de noviembre de 2013
 
-[ ] Resolver problemas con juju.
+[X] Resolver problemas con juju.
 
-[ ] Configuración compleja de sistemas con él.
+[X] Configuración compleja de sistemas con él.
 
 
