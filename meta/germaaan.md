@@ -71,3 +71,5 @@ Objetivos clase del 15 de noviembre de 2013
 
 [X] Resolver problemas con juju. 
 
+[X] Configuración compleja de sistemas con él. 
+
