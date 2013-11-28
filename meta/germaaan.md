@@ -75,3 +75,5 @@ Objetivos clase del 15 de noviembre de 2013
 
 [X] Configuración compleja de sistemas con él. 
 
+[X] Configuración compleja de sistemas con él. 
+
