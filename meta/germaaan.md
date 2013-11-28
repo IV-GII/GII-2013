@@ -69,3 +69,5 @@ Objetivos clase del 15 de noviembre de 2013
 
 [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado. 
 
+[X] Resolver problemas con juju. 
+
