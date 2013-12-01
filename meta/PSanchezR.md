@@ -78,6 +78,22 @@ Lista de objetivos de la clase 28/10/2013
 
 [+]Aprender a enjaular usuarios
 
+Lista de objetivos de la clase 4/11/2013
+=========================================
+[+]Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+[+]Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+
+Lista de objetivos de la clase 8/11/2013
+=========================================
+[+]Resolver dudas y obstáculos en la realización de la segunda práctica.
+
+
+Lista de objetivos de la clase 11/11/2013
+=========================================
+[+]Entender el concepto de contenedores
+[+]Configurar el sistema para poder crear y usar contenedores
+[+]Crear y usar contenedores
+
 
 
 
