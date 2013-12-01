@@ -154,3 +154,10 @@ Lista de objetivos de la clase 22/11/2013
 [] Resolver problemas con juju.
 
 [] Configuración compleja de sistemas con él.
+
+Lista de objetivos de la clase 25/11/2013
+=========================================
+
+[X] Comprender la sintaxis de Ruby.
+
+[X] Aprender a hacer programas simples usándolo.
