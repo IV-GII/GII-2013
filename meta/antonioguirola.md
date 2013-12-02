@@ -161,3 +161,14 @@ Lista de objetivos de la clase 25/11/2013
 [X] Comprender la sintaxis de Ruby.
 
 [X] Aprender a hacer programas simples usándolo.
+
+Lista de objetivos de la clase 02/12/2013
+=========================================
+
+[X] Terminar la famiarización con Ruby2
+
+[]Recordar conceptos de almacenamiento físico.
+
+[] Entender el concepto de FUSE y usarlo en la prática.
+
+[] Crear y manipular formatos de provisionamiento delgado.
