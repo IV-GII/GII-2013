@@ -111,3 +111,12 @@
 [X] Configuración compleja de sistemas con él.
 
 
+##Clase del 2 de diciembre de 2013
+
+[] Terminar la famiarización con Ruby2
+
+[] Recordar conceptos de almacenamiento físico.
+
+[] Entender el concepto de FUSE y usarlo en la prática.
+
+[] Crear y manipular formatos de provisionamiento delgado.
