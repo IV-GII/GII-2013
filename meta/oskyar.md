@@ -103,7 +103,13 @@
 ------------------------------------------
 
 - [X] Entender el concepto de contenedores
-[X] Configurar el sistema para poder crear y usar contenedores 
 
-[X] Crear y usar contenedores 
+- [X] Configurar el sistema para poder crear y usar contenedores 
+
+- [X] Crear y usar contenedores 
+
+**Clase del 15 de Noviembre de 2013**
+------------------------------------------
+
+[X] Entender los sistemas de orquestación de máquinas virtuales. 
 
