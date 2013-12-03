@@ -119,3 +119,5 @@
 
 
 
+[X] Resolver problemas con juju. 
+
