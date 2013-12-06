@@ -130,3 +130,5 @@ Lista de objetivos de la clase 2/12/2013
 -----------------------------------------
 
 [x] Terminar la familiarización con Ruby2
+
+[x] Recordar conceptos de almacenamiento físico.
