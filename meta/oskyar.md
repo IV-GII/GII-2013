@@ -124,4 +124,11 @@
 - [X] Configuración compleja de sistemas con él. 
 
 
+**Clase del 2 de Diciembre de 2013**
+------------------------------------------
+
+- [X] Terminar la familiarización con Ruby2
+
+
+[X] Terminar la familiarización con Ruby2 
 
