@@ -130,5 +130,3 @@
 - [X] Terminar la familiarización con Ruby2
 
 
-[X] Terminar la familiarización con Ruby2 
-
