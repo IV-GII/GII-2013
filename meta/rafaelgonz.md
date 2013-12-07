@@ -113,10 +113,10 @@
 
 ##Clase del 2 de diciembre de 2013
 
-[] Terminar la famiarización con Ruby2
+[X] Terminar la famiarización con Ruby2
 
-[] Recordar conceptos de almacenamiento físico.
+[X] Recordar conceptos de almacenamiento físico.
 
-[] Entender el concepto de FUSE y usarlo en la prática.
+[X] Entender el concepto de FUSE y usarlo en la prática.
 
-[] Crear y manipular formatos de provisionamiento delgado.
+[X] Crear y manipular formatos de provisionamiento delgado.
