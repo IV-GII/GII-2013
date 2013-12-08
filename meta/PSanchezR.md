@@ -126,6 +126,15 @@ Lista de objetivos de la clase 22/11/2013
 
 
 
+Lista de objetivos de la clase 2/12/2013
+=========================================
 
+[]Terminar la familiarización con Ruby2.
+
+[]Recordar conceptos de almacenamiento físico.
+
+[]Entender el concepto de FUSE y usarlo en la prática.
+
+[]Crear y manipular formatos de provisionamiento delgado.
 
 
