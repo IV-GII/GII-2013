@@ -40,6 +40,15 @@ Lista de objetivos de la clase 11/10/2013
 
 [+] Comprender el método de entrega de las prácticas de la asignatura.
 
+
+
+Lista de objetivos de la clase 11/10/2013
+=========================================
+
+[+]Resolver problemas con juju.
+[+]Configuración compleja de sistemas con él.
+
+
 Lista de objetivos de la clase 14/10/2013
 =========================================
 
@@ -106,10 +115,11 @@ Lista de objetivos de la clase 11/11/2013
 [+]Crear y usar contenedores.
 
 
-Lista de objetivos de la clase 15/11/2013
+Lista de objetivos de la clase 22/11/2013
 =========================================
 
 [+]Entender los sistemas de orquestación de máquinas virtuales.
+
 
 [+]Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
