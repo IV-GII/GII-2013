@@ -80,5 +80,5 @@ Objetivos clase del 22 de noviembre de 2013
  
 Objetivos clase semana del 25 al 29 de noviembre de 2013
 --------------------------------------------------------
-- [ ] Comprender la sintaxis de Ruby
-- [ ] Aprender a hacer programas simples usándolo.
+- [x] Comprender la sintaxis de Ruby
+- [x] Aprender a hacer programas simples usándolo.
