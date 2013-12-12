@@ -91,11 +91,29 @@ Jose Miguel López Pérez
 
 ####Clase del 11 de noviembre de 2013**
 
-- [X] Entender el concepto de contenedores 
-- [X] Configurar el sistema para poder crear y usar contenedores 
-- [X] Crear y usar contenedores 
+- [x] Entender el concepto de contenedores 
+- [x] Configurar el sistema para poder crear y usar contenedores 
+- [x] Crear y usar contenedores 
 
 ####Clase del 15 de noviembre de 2013**
+
+
+####Clase del 15 de Noviembre de 2013**
+
+
+- [x] Entender los sistemas de orquestación de máquinas virtuales. 
+
+- [x] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado. 
+
+
+####Clase del 22 de Noviembre de 2013**
+
+
+- [x] Resolver problemas con juju. 
+
+- [x] Configuración compleja de sistemas con él. 
+
+
 
 
 
