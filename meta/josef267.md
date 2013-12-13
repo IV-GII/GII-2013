@@ -65,3 +65,25 @@ Clase del dia 11 noviembre
 - [x] Entender el concepto de contenedores
 - [x] Configurar el sistema para poder crear y usar contenedores
 - [x] Crear y usar contenedores
+
+Clase del 15 noviembre
+
+- [X] Entender los sistemas de orquestación de máquinas virtuales.
+- [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado
+
+Clase del 18 noviembre
+
+- [x] Comprobar el uso de tecnologías en la nube en la práctica.
+- [x] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
+- [x] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
+- [x] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
+
+Clase del 22 de noviembre
+
+- [x] Resolver problemas con juju.
+- [x] Configuración compleja de sistemas con él.
+
+Clase del 25 de noviembre
+
+- [x] Resolver problemas con juju.
+- [x] Configuración compleja de sistemas con él.
