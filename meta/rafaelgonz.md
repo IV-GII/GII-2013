@@ -120,3 +120,9 @@
 [X] Entender el concepto de FUSE y usarlo en la prática.
 
 [X] Crear y manipular formatos de provisionamiento delgado.
+
+##Clase del 13 de diciembre de 2013
+
+[X] Provisionamiento de recursos para una máquina virtual.
+
+[] Entender sistemas de almacenamiento de objetos e instalarlos.
