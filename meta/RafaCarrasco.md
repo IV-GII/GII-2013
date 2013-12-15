@@ -121,16 +121,23 @@
 
 * Objetivos de esta sesión
 
-  * [] Resolver problemas con juju.
-  * [] Configuración compleja de sistemas con él.
+  * [x] Resolver problemas con juju.
+  * [x] Configuración compleja de sistemas con él.
 
 ##Clase del 2 de diciembre 2013
 
 * Objetivos de la asignatura
 
-  * [] Terminar la famiarización con Ruby2
-  * [] Recordar conceptos de almacenamiento físico.
-  * [] Entender el concepto de FUSE y usarlo en la prática.
+  * [x] Terminar la famiarización con Ruby2
+  * [x] Recordar conceptos de almacenamiento físico.
+  * [x] Entender el concepto de FUSE y usarlo en la prática.
   * [] Crear y manipular formatos de provisionamiento delgado.
+
+##Clase del 13 de diciembre de 2013
+
+* Objetivos de la asignatura
+
+  * [] Provisionamiento de recursos para una máquina virtual.
+  * [] Entender sistemas de almacenamiento de objetos e instalarlos.
 
 
