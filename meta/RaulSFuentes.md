@@ -92,4 +92,22 @@ Clase del 25 de noviembre
 * [X] Comprender la sintaxis de Ruby
 * [X] Aprender a hacer programas simples usándolo.
 
- 
+Clase del 2 de diciembre
+---
+
+* [X] Terminar la familiarización con Ruby2
+* [] Recordar conceptos de almacenamiento físico.
+* [] Entender el concepto de FUSE y usarlo en la prática.
+* [] Crear y manipular formatos de provisionamiento delgado. 
+
+Clase del 13 de diciembre
+---
+
+* [] Provisionamiento de recursos para una máquina virtual.
+* [] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+Clase del 16 de diciembre
+---
+
+* [] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+* [] Aprender a usar el almacenamiento virtual en la nube.
