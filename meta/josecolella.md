@@ -150,4 +150,9 @@ Lista de objetivos de la clase 13/12/2013
 
 - [ ]  Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
 
+Lista de objetivos de la clase 16/12/2013
+------------------------------------------
 
+- [ ] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+
+- [ ] Aprender a usar el almacenamiento virtual en la nube.
