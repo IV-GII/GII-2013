@@ -130,14 +130,29 @@ Lista de objetivos de la clase 18/11/2013
 Lista de objetivos de la clase 25/11/2013
 ------------------------------------------
 
-- [ ] Conocer la historia y origenes de este lenguaje
+- [x] Conocer la historia y origenes de este lenguaje
 
-- [ ] Entender los conceptos principales detras del mismo
+- [x] Entender los conceptos principales detras del mismo
 
-- [ ] Conocer y saber usar la sintaxis
+- [x] Conocer y saber usar la sintaxis
 
-- [ ] Aprender las estructuras de datos y control principales
+- [x] Aprender las estructuras de datos y control principales
 
-- [ ] Instalar y usar bibliotecas
+- [x] Instalar y usar bibliotecas
 
-- [ ] Hacer un pequeño programa
+- [x] Hacer un pequeño programa
+
+
+Lista de objetivos de la clase 13/12/2013
+------------------------------------------
+
+- [ ] Ser capaces de diseñar una máquina virtual general
+
+- [ ]  Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
+
+Lista de objetivos de la clase 16/12/2013
+------------------------------------------
+
+- [ ] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+
+- [ ] Aprender a usar el almacenamiento virtual en la nube.

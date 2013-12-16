@@ -117,5 +117,27 @@
   * [x] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
   * [x] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
 
+##Clase del 22 de noviembre de 2013
+
+* Objetivos de esta sesión
+
+  * [x] Resolver problemas con juju.
+  * [x] Configuración compleja de sistemas con él.
+
+##Clase del 2 de diciembre 2013
+
+* Objetivos de la asignatura
+
+  * [x] Terminar la famiarización con Ruby2
+  * [x] Recordar conceptos de almacenamiento físico.
+  * [x] Entender el concepto de FUSE y usarlo en la prática.
+  * [] Crear y manipular formatos de provisionamiento delgado.
+
+##Clase del 13 de diciembre de 2013
+
+* Objetivos de la asignatura
+
+  * [] Provisionamiento de recursos para una máquina virtual.
+  * [] Entender sistemas de almacenamiento de objetos e instalarlos.
 
 

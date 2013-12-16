@@ -108,30 +108,48 @@ Objetivos de la Asignatura Infraestructura Virtual
 
 #### Clase del 15 de Noviembre
 
-+ [] Entender los sistemas de orquestación de máquinas virtuales.
-+ [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
-+ [] Ver el papel de los *tápers* como base de experimentación y prácticas de muchos de los conceptos de virtualización.
++ [x] Entender los sistemas de orquestación de máquinas virtuales.
++ [x] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
++ [x] Ver el papel de los *tápers* como base de experimentación y prácticas de muchos de los conceptos de virtualización.
 
 #### Clase del 18 de Noviembre [Seminario Nubbius]
 
-+ [] Comprobar el uso de tecnologías en la nube en la práctica.
-+ [] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
-+ [] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
-+ [] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
++ [x] Comprobar el uso de tecnologías en la nube en la práctica.
++ [x] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
++ [x] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
++ [x] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
 
 #### Clase del 22 de Noviembre
 
-+ [] Comprender la aplicación de los conceptos de virtualización en un mundo real.
-+ [] Conocer las diferentes técnicas usadas en el desarrollo de una aplicación sobre un PaaS
-+ [] Conocer Nubbius, empresa granadina y caso de éxito en el uso de Google App Engine]
-+ [] Conocer la proyección profesional de las técnicas de virtualización.
++ [x] Comprender la aplicación de los conceptos de virtualización en un mundo real.
++ [x] Conocer las diferentes técnicas usadas en el desarrollo de una aplicación sobre un PaaS
++ [x] Conocer Nubbius, empresa granadina y caso de éxito en el uso de Google App Engine]
++ [x] Conocer la proyección profesional de las técnicas de virtualización.
 
 #### Clase del 25 de Noviembre
 
-#### Clase del 29 de Noviembre
++ [] Resolver problemas con juju.
++ [] Configuración compleja de sistemas con él.
++ [] Crear estrategias para resolución de problemas de sistemas.
 
 #### Clase del 2 de Diciembre
 
++ [x] Terminar la familiarización con Ruby2
++ [] Recordar conceptos de almacenamiento físico.
++ [] Entender el concepto de FUSE y usarlo en la prática.
++ [] Crear y manipular formatos de provisionamiento delgado.
++ [x] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
++ [x] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
 
 
+#### Clase del 13 de Diciembre
+
++ [] Provisionamiento de recursos para una máquina virtual.
++ [] Entender sistemas de almacenamiento de objetos e instalarlos.
++ [] Ser capaces de diseñar una máquina virtual general.
++ [] Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
+
+#### Clase del 16 de Diciembre
+
+#### Clase del 20 de Diciembre
 

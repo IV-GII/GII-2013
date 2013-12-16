@@ -103,7 +103,30 @@
 ------------------------------------------
 
 - [X] Entender el concepto de contenedores
-[X] Configurar el sistema para poder crear y usar contenedores 
 
-[X] Crear y usar contenedores 
+- [X] Configurar el sistema para poder crear y usar contenedores 
+
+- [X] Crear y usar contenedores 
+
+**Clase del 15 de Noviembre de 2013**
+------------------------------------------
+
+- [X] Entender los sistemas de orquestación de máquinas virtuales. 
+
+- [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado. 
+
+
+**Clase del 22 de Noviembre de 2013**
+------------------------------------------
+
+- [X] Resolver problemas con juju. 
+
+- [X] Configuración compleja de sistemas con él. 
+
+
+**Clase del 2 de Diciembre de 2013**
+------------------------------------------
+
+- [X] Terminar la familiarización con Ruby2
+
 

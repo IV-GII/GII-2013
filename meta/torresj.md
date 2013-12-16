@@ -101,3 +101,36 @@ Lista de objetivos de la clase 11/11/2013
 
 [X] Crear y usar contenedores 
 
+Lista de objetivos de la clase 15/11/2013
+-----------------------------------------
+
+[X] Entender los sistemas de orquestación de máquinas virtuales.
+
+[X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+Lista de objetivos de la clase 18/11/2013
+-----------------------------------------
+
+[X] Comprobar el uso de tecnologías en la nube en la práctica.
+
+[X] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
+
+[X] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
+
+[X] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
+
+Lista de objetivos de la clase 22/11/2013
+-----------------------------------------
+
+[X] Resolver problemas con juju.
+
+[X] Configuración compleja de sistemas con él.
+
+Lista de objetivos de la clase 2/12/2013
+-----------------------------------------
+
+[x] Terminar la familiarización con Ruby2
+
+[x] Recordar conceptos de almacenamiento físico.
+
+[x] Entender el concepto de FUSE y usarlo en la prática.

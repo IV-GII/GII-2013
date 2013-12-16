@@ -48,24 +48,57 @@ Objetivos clase del 28 de octubre de 2013
 - [x] Aprender a enjaular usuarios
 
 Objetivos clase del 4 de noviembre de 2013
------------------------------------------
+------------------------------------------
 - [x] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
 - [x] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
 
 Objetivos clase del 8 de noviembre de 2013
------------------------------------------
+------------------------------------------
 - [x] Resolver dudas y obstáculos en la realización de la segunda práctica.
 
 Objetivos clase del 11 de noviembre de 2013
------------------------------------------
+-------------------------------------------
 - [x] Entender el concepto de contenedores
 - [x] Configurar el sistema para poder crear y usar contenedores
 - [x] Crear y usar contenedores
 
 Objetivos clase del 15 de noviembre de 2013
------------------------------------------
+-------------------------------------------
 - [x] Entender los sistemas de orquestación de máquinas virtuales.
-- [ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+- [x] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+Objetivos clase del 18 de noviembre de 2013
+-------------------------------------------
+- [x] Comprender la aplicación de los conceptos de virtualización en un mundo real.
+- [x] Conocer las diferentes técnicas usadas en el desarrollo de una aplicación sobre un PaaS
+- [x] Conocer Nubbius, empresa granadina y caso de éxito en el uso de Google App Engine]
+
+Objetivos clase del 22 de noviembre de 2013
+-------------------------------------------
+- [x] Resolver problemas con juju.
+- [x] Configuración compleja de sistemas con él.
+ 
+Objetivos clase semana del 25 al 29 de noviembre de 2013
+--------------------------------------------------------
+- [x] Comprender la sintaxis de Ruby
+- [x] Aprender a hacer programas simples usándolo.
+
+Objetivos clase del 2 de diciembre de 2013
+------------------------------------------
+- [ ] Terminar la familiarización con Ruby2
+- [ ] Recordar conceptos de almacenamiento físico.
+- [ ] Entender el concepto de FUSE y usarlo en la prática.
+- [ ] Crear y manipular formatos de provisionamiento delgado.
+
+Objetivos clase del 13 de diciembre de 2013
+-------------------------------------------
+- [ ] Provisionamiento de recursos para una máquina virtual.
+- [ ] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+Objetivos clase del 16 de diciembre de 2013
+-------------------------------------------
+- [ ] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+- [ ] Aprender a usar el almacenamiento virtual en la nube.
 
 [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado. 
 

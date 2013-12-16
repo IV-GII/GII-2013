@@ -106,9 +106,9 @@ Lista de objetivos de la clase 11/11/2013
 Lista de objetivos de la clase 15/11/2013
 =========================================
 
-[] Entender los sistemas de orquestación de máquinas virtuales.
+[x] Entender los sistemas de orquestación de máquinas virtuales.
 
-[] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+[x] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 Lista de objetivos de la clase 18/11/2013
 =========================================
@@ -122,6 +122,18 @@ Lista de objetivos de la clase 18/11/2013
 Lista de objetivos de la clase 22/11/2013
 =========================================
 
-[] Resolver problemas con juju.
+[x] Resolver problemas con juju.
 
-[ ] Configuración compleja de sistemas con él.
+[x] Configuración compleja de sistemas con él.
+
+
+Lista de objetivos de la clase 22/11/2013
+=========================================
+
+[] Terminar la familiarización con Ruby2
+
+[] Recordar conceptos de almacenamiento físico.
+
+[] Entender el concepto de FUSE y usarlo en la prática.
+
+[] Crear y manipular formatos de provisionamiento delgado.

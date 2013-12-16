@@ -78,6 +78,31 @@ Clase del 8 de noviembre de 2013
 Clase del 11 de noviembre de 2013
 -------------------------------
 
-- [ ] Entender el concepto de contenedores
-- [ ] Configurar el sistema para poder crear y usar contenedores
-- [ ] Crear y usar contenedores
+- [X] Entender el concepto de contenedores
+- [X] Configurar el sistema para poder crear y usar contenedores
+- [X] Crear y usar contenedores
+
+Clase del 15 de noviembre de 2013
+-------------------------------
+
+- [X] Entender los sistemas de orquestación de máquinas virtuales.
+- [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+Clase del 18 de noviembre de 2013
+-------------------------------
+
+- [X] Seminario de Trabajando en la nube, con Ignacio Zafra
+
+Clase del 22 de noviembre de 2013
+-------------------------------
+
+- [X] Resolver problemas con juju.
+- [X] Configuración compleja de sistemas con él.
+
+Clase del 2 de diciembre de 2013
+-------------------------------
+
+- [ ] Terminar la familiarización con Ruby2
+- [ ] Recordar conceptos de almacenamiento físico.
+- [ ] Entender el concepto de FUSE y usarlo en la prática.
+- [ ] Crear y manipular formatos de provisionamiento delgado.
