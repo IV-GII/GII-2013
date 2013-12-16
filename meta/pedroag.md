@@ -73,8 +73,8 @@ Clase del día 11 de noviembre
 Clase del día 15 de noviembre
 -----------------------------
 
-* [] Entender los sistemas de orquestación de máquinas virtuales.
-* [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+* [x] Entender los sistemas de orquestación de máquinas virtuales.
+* [x] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 Clase del 22 de noviembre de 2013
 ---------------------------------
