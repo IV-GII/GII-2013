@@ -149,5 +149,7 @@ Objetivos de la Asignatura Infraestructura Virtual
 + [] Ser capaces de diseñar una máquina virtual general.
 + [] Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
 
+#### Clase del 16 de Diciembre
 
+#### Clase del 20 de Diciembre
 
