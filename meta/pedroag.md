@@ -89,3 +89,16 @@ Clase del 2 de diciembre de 2013
 * [] Recordar conceptos de almacenamiento físico.
 * [] Entender el concepto de FUSE y usarlo en la prática.
 * [] Crear y manipular formatos de provisionamiento delgado.
+* 
+
+Clase del 13 de diciembre de 2013
+---------------------------------
+
+* [] Provisionamiento de recursos para una máquina virtual.
+* [] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+Clase del 16 de diciembre de 2013
+---------------------------------
+
+* [] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+* [] Aprender a usar el almacenamiento virtual en la nube.
