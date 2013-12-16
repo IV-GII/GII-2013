@@ -82,3 +82,14 @@ Clase del 18 de noviembre
 * [X] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
 * [X] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
 
+Clase del 22 de noviembre
+---
+* [] Resolver problemas con juju.
+* [] Configuración compleja de sistemas con él.
+
+Clase del 25 de noviembre
+---
+* [X] Comprender la sintaxis de Ruby
+* [X] Aprender a hacer programas simples usándolo.
+
+ 
