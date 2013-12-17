@@ -88,7 +88,7 @@ Objetivos clase del 2 de diciembre de 2013
 - [x] Terminar la familiarización con Ruby2
 - [x] Recordar conceptos de almacenamiento físico.
 - [x] Entender el concepto de FUSE y usarlo en la prática.
-- [ ] Crear y manipular formatos de provisionamiento delgado.
+- [x] Crear y manipular formatos de provisionamiento delgado.
 
 Objetivos clase del 13 de diciembre de 2013
 -------------------------------------------
