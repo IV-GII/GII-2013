@@ -88,4 +88,10 @@ Clase del 25 de noviembre
 - [x] Resolver problemas con juju.
 - [x] Configuración compleja de sistemas con él.
 
+Clase del 2 de diciembre
+
+- [x] Terminar la familiarización con Ruby2
+- [x] Recordar conceptos de almacenamiento físico.
+- [x] Entender el concepto de FUSE y usarlo en la prática.
+- [x] Crear y manipular formatos de provisionamiento delgado.
 
