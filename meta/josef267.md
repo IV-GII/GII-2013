@@ -87,3 +87,5 @@ Clase del 25 de noviembre
 
 - [x] Resolver problemas con juju.
 - [x] Configuración compleja de sistemas con él.
+
+

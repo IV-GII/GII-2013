@@ -167,8 +167,23 @@ Lista de objetivos de la clase 02/12/2013
 
 [X] Terminar la famiarización con Ruby2
 
-[]Recordar conceptos de almacenamiento físico.
+[X] Recordar conceptos de almacenamiento físico.
 
-[] Entender el concepto de FUSE y usarlo en la prática.
+[X] Entender el concepto de FUSE y usarlo en la prática.
 
 [] Crear y manipular formatos de provisionamiento delgado.
+
+Lista de objetivos de la clase 13/12/2013
+=========================================
+
+[] Provisionamiento de recursos para una máquina virtual.
+
+[] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+Lista de objetivos de la clase 16/12/2013
+=========================================
+
+[] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+
+[] Aprender a usar el almacenamiento virtual en la nube.
+

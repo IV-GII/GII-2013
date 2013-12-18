@@ -69,7 +69,7 @@ Listado de objetivos por fechas.
 ##15/11/2013
 
 >[X] Entender los sistemas de orquestación de máquinas virtuales.  
->[ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+>[X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 ##18/11/2013
 
@@ -80,5 +80,25 @@ Listado de objetivos por fechas.
 
 ##22/11/2013
 
->[ ] Resolver problemas con juju.  
->[ ] Configuración compleja de sistemas con él.
+>[X] Resolver problemas con juju.  
+>[X] Configuración compleja de sistemas con él.  
+
+##25/11/2013  
+
+>[X] Conocer la historia y origenes de este lenguaje.  
+>[X] Entender los conceptos principales detras del mismo.  
+>[X] Conocer y saber usar la sintaxis.  
+>[X] Aprender las estructuras de datos y control principales.  
+>[X] Instalar y usar bibliotecas.  
+>[X] Hacer un pequeño programa.  
+
+
+##13/12/2013  
+
+>[ ] Ser capaces de diseñar una máquina virtual general.  
+>[ ]  Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.  
+
+##16/12/2013  
+
+>[ ] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.  
+>[ ] Aprender a usar el almacenamiento virtual en la nube.  

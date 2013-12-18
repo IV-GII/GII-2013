@@ -85,10 +85,10 @@ Objetivos clase semana del 25 al 29 de noviembre de 2013
 
 Objetivos clase del 2 de diciembre de 2013
 ------------------------------------------
-- [ ] Terminar la familiarización con Ruby2
-- [ ] Recordar conceptos de almacenamiento físico.
-- [ ] Entender el concepto de FUSE y usarlo en la prática.
-- [ ] Crear y manipular formatos de provisionamiento delgado.
+- [x] Terminar la familiarización con Ruby2
+- [x] Recordar conceptos de almacenamiento físico.
+- [x] Entender el concepto de FUSE y usarlo en la prática.
+- [x] Crear y manipular formatos de provisionamiento delgado.
 
 Objetivos clase del 13 de diciembre de 2013
 -------------------------------------------
