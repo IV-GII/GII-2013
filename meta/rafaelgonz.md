@@ -129,6 +129,16 @@
 
 ##Clase del 16 de diciembre de 2013
 
-[] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+[X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
 
-[] Aprender a usar el almacenamiento virtual en la nube.
+[X] Aprender a usar el almacenamiento virtual en la nube.
+
+##Visita a las instalaciones Trevenque
+
+[X] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+
+[X] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+
+[X] Conocer las aplicaciones y programas que se usan.
+
+[X] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
