@@ -111,7 +111,7 @@
 [X] Configuración compleja de sistemas con él.
 
 
-##Clase del 2 de diciembre de 2013
+###Clase del 2 de diciembre de 2013
 
 [X] Terminar la famiarización con Ruby2
 
@@ -121,19 +121,19 @@
 
 [X] Crear y manipular formatos de provisionamiento delgado.
 
-##Clase del 13 de diciembre de 2013
+###Clase del 13 de diciembre de 2013
 
 [X] Provisionamiento de recursos para una máquina virtual.
 
 [X] Entender sistemas de almacenamiento de objetos e instalarlos.
 
-##Clase del 16 de diciembre de 2013
+###Clase del 16 de diciembre de 2013
 
 [X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
 
 [X] Aprender a usar el almacenamiento virtual en la nube.
 
-##Visita a las instalaciones Trevenque
+###Visita a las instalaciones Trevenque
 
 [X] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
 
