@@ -187,3 +187,15 @@ Lista de objetivos de la clase 16/12/2013
 
 [] Aprender a usar el almacenamiento virtual en la nube.
 
+Lista de objetivos de la clase 19/12/2013 - Excursión a Trevenque
+====================================================================
+
+[X] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+
+[X] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+
+[X] Conocer las aplicaciones y programas que se usan.
+
+[X] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+
+[Enlace a un resumen](https://github.com/antonioguirola/IV2013/blob/master/Excursi%C3%B3n%20Trevenque/resumenExcursionTrevenque.md)
