@@ -92,21 +92,10 @@ Objetivos clase del 2 de diciembre de 2013
 
 Objetivos clase del 13 de diciembre de 2013
 -------------------------------------------
-- [ ] Provisionamiento de recursos para una máquina virtual.
+- [x] Provisionamiento de recursos para una máquina virtual.
 - [ ] Entender sistemas de almacenamiento de objetos e instalarlos.
 
 Objetivos clase del 16 de diciembre de 2013
 -------------------------------------------
 - [ ] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
 - [ ] Aprender a usar el almacenamiento virtual en la nube.
-
-[X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado. 
-
-[X] Resolver problemas con juju. 
-
-[X] Configuración compleja de sistemas con él. 
-
-[X] Configuración compleja de sistemas con él. 
-
-[X] Configuración compleja de sistemas con él. 
-
