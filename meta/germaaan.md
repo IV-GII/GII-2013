@@ -93,7 +93,7 @@ Objetivos clase del 2 de diciembre de 2013
 Objetivos clase del 13 de diciembre de 2013
 -------------------------------------------
 - [x] Provisionamiento de recursos para una máquina virtual.
-- [ ] Entender sistemas de almacenamiento de objetos e instalarlos.
+- [x] Entender sistemas de almacenamiento de objetos e instalarlos.
 
 Objetivos clase del 16 de diciembre de 2013
 -------------------------------------------
