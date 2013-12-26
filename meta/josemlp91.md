@@ -117,6 +117,20 @@ Jose Miguel López Pérez
 
 ####Clase del 2 de Diciembre de 2013**
 
+- [x] Conocer la historia y origenes de este lenguaje
+
+- [x] Entender los conceptos principales detras del mismo
+
+- [x] Conocer y saber usar la sintaxis
+
+- [x] Aprender las estructuras de datos y control principales
+
+- [x] Instalar y usar bibliotecas
+
+- [x] Hacer un pequeño programa
+
+
+
 
 
 
