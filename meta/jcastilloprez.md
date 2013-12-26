@@ -62,3 +62,14 @@ Clase del día 04/11/2013
 Clase del día 08/11/2013
 
 - [X] Resolver dudas y obstáculos en la realización de la segunda práctica.
+
+Clase del día 11/11/2013
+
+- [X] Entender el concepto de contenedores
+- [X] Configurar el sistema para poder crear y usar contenedores
+- [X] Crear y usar contenedores
+
+Clase del día 15/11/2013
+
+- [X] Entender los sistemas de orquestación de máquinas virtuales.
+- [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
