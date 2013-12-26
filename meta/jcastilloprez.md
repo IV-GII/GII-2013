@@ -73,5 +73,9 @@ Clase del día 15/11/2013
 
 - [X] Entender los sistemas de orquestación de máquinas virtuales.
 - [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
-[X] Configuración compleja de sistemas con él. 
+
+Clase del día 22/11/2013
+
+- [X] Resolver problemas con juju.
+- [X] Configuración compleja de sistemas con él. 
 
