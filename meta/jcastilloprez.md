@@ -79,3 +79,5 @@ Clase del día 22/11/2013
 - [X] Resolver problemas con juju.
 - [X] Configuración compleja de sistemas con él. 
 
+[X] Terminar la familiarización con Ruby2 
+
