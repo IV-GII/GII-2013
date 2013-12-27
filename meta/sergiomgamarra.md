@@ -90,10 +90,99 @@ Lista de objetivos de la clase 28/10/2013
 
 [X] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
 
-[] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+[X] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
 
 [X] Comprender que existe vida en los servidores web fuera del Apache.
 
 [] Comprobar la página de chroot en la wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
 
 [X] Mirar este curso de reciclaje y mantenimiento de ordenadores, interesante para informáticos y para los que no lo son.
+
+Lista de objetivos de la clase 4/11/2013
+=========================================
+
+[X] Consolidar los conocimientos necesarios para crear jaulas con diferentes funciones
+[X] Comprender las aplicaciones del enjaulado y ponerlas en práctica.
+
+Lista de objetivos de la clase 8/11/2013
+=========================================
+
+[] Resolver dudas y obstáculos en la realización de la segunda práctica.
+
+Lista de objetivos de la clase 11/11/2013
+=========================================
+
+[X] Entender el concepto de contenedores
+[X] Configurar el sistema para poder crear y usar contenedores
+[X] Crear y usar contenedores
+
+
+Lista de objetivos de la clase 15/11/2013
+=========================================
+
+[X] Entender los sistemas de orquestación de máquinas virtuales.
+[X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+
+Lista de objetivos de la clase 18/11/2013
+=========================================
+
+[X] Comprobar el uso de tecnologías en la nube en la práctica.
+[X] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
+[X] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
+[X] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
+
+
+Lista de objetivos de la clase 22/11/2013
+=========================================
+
+[] Resolver problemas con juju.
+[] Configuración compleja de sistemas con él.
+
+
+Lista de objetivos de la clase 2/12/2013
+=========================================
+
+[] Terminar la familiarización con Ruby2
+[X] Recordar conceptos de almacenamiento físico.
+[X] Entender el concepto de FUSE y usarlo en la prática.
+[X] Crear y manipular formatos de provisionamiento delgado.
+
+
+Lista de objetivos de la clase 13/12/2013
+=========================================
+
+[X] Provisionamiento de recursos para una máquina virtual.
+[X] Entender sistemas de almacenamiento de objetos e instalarlos.
+[X] Ser capaces de diseñar una máquina virtual general.
+[X] Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
+
+
+Lista de objetivos de la clase 16/12/2013
+=========================================
+
+[] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+[] Aprender a usar el almacenamiento virtual en la nube.
+[] Asumir la multiplicidad de interfaces de recursos en nube.
+[] Usar Ruby en programas simples.
+
+
+Lista de objetivos de la clase 19/12/2013
+=========================================
+
+[X] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+[X] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+[X] Conocer las aplicaciones y programas que se usan.
+[X] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+
+
+Lista de objetivos de la clase 20/12/2013
+=========================================
+
+[] Comenzar la tercera práctica
+[] Entender los diferentes componentes de la infraestructura como servicio.
+[] Aprender a usar máquinas virtuales, localmente y en la nube.
+[] Comprender las bases físicas de las infraestructuras virtuales.
+[] Ser agnóstico con respecto a las herramientas usadas.
+[] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+[] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
