@@ -99,3 +99,10 @@ Objetivos clase del 16 de diciembre de 2013
 -------------------------------------------
 - [x] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
 - [x] Aprender a usar el almacenamiento virtual en la nube.
+
+Objetivos clase del 20 de diciembre de 2013
+-------------------------------------------
+- [ ] Comenzar la tercera práctica
+- [x] Entender los diferentes componentes de la infraestructura como servicio.
+- [ ] Aprender a usar máquinas virtuales, localmente y en la nube.
+- [ ] Comprender las bases físicas de las infraestructuras virtuales.
