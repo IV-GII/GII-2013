@@ -93,3 +93,5 @@ Clase del día 13/12/2013
 
 Clase del día 16/12/2013
 - [X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+[X] Aprender a usar el almacenamiento virtual en la nube. 
+
