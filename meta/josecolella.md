@@ -146,9 +146,9 @@ Lista de objetivos de la clase 25/11/2013
 Lista de objetivos de la clase 13/12/2013
 ------------------------------------------
 
-- [ ] Ser capaces de diseñar una máquina virtual general
+- [x] Ser capaces de diseñar una máquina virtual general
 
-- [ ]  Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
+- [x]  Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
 
 Lista de objetivos de la clase 16/12/2013
 ------------------------------------------
