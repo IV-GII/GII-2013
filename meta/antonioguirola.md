@@ -183,9 +183,9 @@ Lista de objetivos de la clase 13/12/2013
 Lista de objetivos de la clase 16/12/2013
 =========================================
 
-[] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+[X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
 
-[] Aprender a usar el almacenamiento virtual en la nube.
+[X] Aprender a usar el almacenamiento virtual en la nube.
 
 Lista de objetivos de la clase 19/12/2013 - Excursión a Trevenque
 ====================================================================
@@ -199,3 +199,14 @@ Lista de objetivos de la clase 19/12/2013 - Excursión a Trevenque
 [X] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
 
 [Enlace a un resumen](https://github.com/antonioguirola/IV2013/blob/master/Excursi%C3%B3n%20Trevenque/resumenExcursionTrevenque.md)
+
+Lista de objetivos de la clase 20/12/2013
+=========================================
+
+[X] Comenzar la tercera práctica
+
+[X] Entender los diferentes componentes de la infraestructura como servicio.
+
+[] Aprender a usar máquinas virtuales, localmente y en la nube.
+
+[] Comprender las bases físicas de las infraestructuras virtuales.
