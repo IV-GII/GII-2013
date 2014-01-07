@@ -130,10 +130,66 @@ Lista de objetivos de la clase 22/11/2013
 Lista de objetivos de la clase 22/11/2013
 =========================================
 
-[] Terminar la familiarización con Ruby2
+[x] Terminar la familiarización con Ruby2
 
-[] Recordar conceptos de almacenamiento físico.
+[x] Recordar conceptos de almacenamiento físico.
 
-[] Entender el concepto de FUSE y usarlo en la prática.
+[x] Entender el concepto de FUSE y usarlo en la prática.
 
-[] Crear y manipular formatos de provisionamiento delgado.
+[x] Crear y manipular formatos de provisionamiento delgado.
+
+
+Lista de objetivos de la clase 25/11/2013
+=========================================
+
+[x] Resolver problemas con juju.
+
+[x] Configuración compleja de sistemas con él.
+
+Lista de objetivos de la clase 2/12/2013
+=========================================
+
+[x] Terminar la familiarización con Ruby2
+
+[x] Recordar conceptos de almacenamiento físico.
+
+[x] Entender el concepto de FUSE y usarlo en la prática.
+
+[x] Crear y manipular formatos de provisionamiento delgado.
+
+Lista de objetivos de la clase 13/12/2013
+=========================================
+
+[x] Provisionamiento de recursos para una máquina virtual.
+
+[x] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+Lista de objetivos de la clase 16/12/2013
+=========================================
+
+[x] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+
+[x] Aprender a usar el almacenamiento virtual en la nube.
+
+Lista de objetivos del seminario 19/12/2013
+===========================================
+
+[x] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+
+[x] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+
+[x] Conocer las aplicaciones y programas que se usan.
+
+[x] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+
+
+Lista de objetivos de la clase 20/12/2013
+=========================================
+
+[] Comenzar la tercera práctica
+
+[] Entender los diferentes componentes de la infraestructura como servicio.
+
+[] Aprender a usar máquinas virtuales, localmente y en la nube.
+
+[] Comprender las bases físicas de las infraestructuras virtuales.
