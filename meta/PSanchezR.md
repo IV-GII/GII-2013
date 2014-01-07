@@ -151,9 +151,9 @@ Lista de objetivos de la clase 16/12/2013
 =========================================
 
 
-[]Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+[+]Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
    
-[]Aprender a usar el almacenamiento virtual en la nube.
+[+]Aprender a usar el almacenamiento virtual en la nube.
 
 
 Lista de objetivos de la clase 20/12/2013
