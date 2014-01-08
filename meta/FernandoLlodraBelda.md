@@ -139,3 +139,24 @@ Objetivos de esta sesión
 Otros objetivos
 
 - [x]Consolidar la mecánica de entrega de prácticas de la asignatura y su valoración.
+
+
+Clase del 11 de Noviembre de 2013
+--------------------------------
+
+Objetivos de esta sesión
+
+- [x]Entender el concepto de contenedores
+- [x]Configurar el sistema para poder crear y usar contenedores
+- [x]Crear y usar contenedores
+
+Otros objetivos
+
+- [x]Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
+- []Retomar la costumbre de hacer git pull al principio de cada sesión.
+- []Retomar el marcado de objetivos usando el nuevo script para añadirlos.
+- [x]Hacer la encuesta que se ha difundido por correo electrónico.
+
+
+
+
