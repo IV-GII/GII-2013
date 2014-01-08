@@ -142,7 +142,7 @@ Otros objetivos
 
 
 Clase del 11 de Noviembre de 2013
---------------------------------
+---------------------------------
 
 Objetivos de esta sesión
 
@@ -159,4 +159,15 @@ Otros objetivos
 
 
 
+Clase del 15 de Noviembre de 2013
+---------------------------------
+
+Objetivos de esta sesión
+
+- []Entender los sistemas de orquestación de máquinas virtuales.
+- []Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+Otros objetivos
+
+- []Ver el papel de los *tápers* como base de experimentación y prácticas de muchos de los conceptos de virtualización. 
 
