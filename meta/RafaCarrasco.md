@@ -142,6 +142,8 @@
 
 ##Clase del 16 de diciembre de 2013
 
+* Objetivos de la asignatura
+
   * [ ] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
   * [ ] Aprender a usar el almacenamiento virtual en la nube.
 
