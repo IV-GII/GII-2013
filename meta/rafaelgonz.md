@@ -142,3 +142,13 @@
 [X] Conocer las aplicaciones y programas que se usan.
 
 [X] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+
+###Clase del 20 de diciembre
+
+[X] Comenzar la tercera práctica 
+
+[X] Entender los diferentes componentes de la infraestructura como servicio.
+
+[] Aprender a usar máquinas virtuales, localmente y en la nube.
+
+[] Comprender las bases físicas de las infraestructuras virtuales.
