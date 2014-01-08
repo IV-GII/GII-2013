@@ -131,13 +131,13 @@
   * [x] Terminar la famiarización con Ruby2
   * [x] Recordar conceptos de almacenamiento físico.
   * [x] Entender el concepto de FUSE y usarlo en la prática.
-  * [] Crear y manipular formatos de provisionamiento delgado.
+  * [x] Crear y manipular formatos de provisionamiento delgado.
 
 ##Clase del 13 de diciembre de 2013
 
 * Objetivos de la asignatura
 
-  * [] Provisionamiento de recursos para una máquina virtual.
-  * [] Entender sistemas de almacenamiento de objetos e instalarlos.
+  * [x] Provisionamiento de recursos para una máquina virtual.
+  * [x] Entender sistemas de almacenamiento de objetos e instalarlos.
 
 
