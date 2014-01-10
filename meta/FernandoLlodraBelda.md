@@ -171,3 +171,16 @@ Otros objetivos
 
 - [x]Ver el papel de los *tápers* como base de experimentación y prácticas de muchos de los conceptos de virtualización. 
 
+
+
+Clase del 22 de Noviembre de 2013
+---------------------------------
+
+Objetivos de esta sesión
+
+- []Resolver problemas con juju.
+- []Configuración compleja de sistemas con él.
+
+Otros objetivos
+
+- []Crear estrategias para resolución de problemas de sistemas.
