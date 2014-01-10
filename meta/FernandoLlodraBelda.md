@@ -178,9 +178,9 @@ Clase del 22 de Noviembre de 2013
 
 Objetivos de esta sesión
 
-- []Resolver problemas con juju.
-- []Configuración compleja de sistemas con él.
+- [x]Resolver problemas con juju.
+- [x]Configuración compleja de sistemas con él.
 
 Otros objetivos
 
-- []Crear estrategias para resolución de problemas de sistemas.
+- [x]Crear estrategias para resolución de problemas de sistemas.
