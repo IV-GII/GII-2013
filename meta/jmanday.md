@@ -144,12 +144,12 @@ Otros objetivos:
 
 
 ###Clase del 2 de diciembre###
-* **[ ]** Terminar la familiarización con Ruby2.
-* **[ ]** Recordar conceptos de almacenamiento físico.
-* **[ ]** Entender el concepto de FUSE y usarlo en la prática.
-* **[ ]** Crear y manipular formatos de provisionamiento delgado.
+* **[x]** Terminar la familiarización con Ruby2.
+* **[x]** Recordar conceptos de almacenamiento físico.
+* **[x]** Entender el concepto de FUSE y usarlo en la prática.
+* **[x]** Crear y manipular formatos de provisionamiento delgado.
 
 Otros objetivos:
-* **[ ]** Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
-* **[ ]** Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+* **[x]** Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* **[x]** Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
 
