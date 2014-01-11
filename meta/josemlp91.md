@@ -129,9 +129,31 @@ Jose Miguel López Pérez
 
 - [x] Hacer un pequeño programa
 
+####Clase del 13 de diciembre de 2013 
 
--
+- [x] Provisionamiento de recursos para una máquina virtual.
 
+- [x] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+####Clase del 16 de diciembre de 2013
+
+- [x] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+
+- [x] Aprender a usar el almacenamiento virtual en la nube.
+
+####Clase del 20 de diciembre de 2013
+
+- [] Comenzar la tercera práctica
+
+- [] Entender los diferentes componentes de la infraestructura como servicio.
+
+- [] Aprender a usar máquinas virtuales, localmente y en la nube.
+
+- [] Comprender las bases físicas de las infraestructuras virtuales.
+
+####Clase del 10 de enero de 2014
+
+- [] Continuar con la tercera práctica
 
 
 
