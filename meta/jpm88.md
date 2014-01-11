@@ -84,7 +84,64 @@ Clase del 8 de noviembre
 Clase del 11 de noviembre
 ---
 
-* [ ] Entender el concepto de contenedores
-* [ ] Configurar el sistema para poder crear y usar contenedores
-* [ ] Crear y usar contenedores
+* [X] Entender el concepto de contenedores
+* [X] Configurar el sistema para poder crear y usar contenedores
+* [X] Crear y usar contenedores
 
+Clase del 15 de noviembre
+---
+
+* [X] Entender los sistemas de orquestación de máquinas virtuales.
+* [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+Clase del 18 de noviembre
+---
+
+* [X] Comprender la aplicación de los conceptos de virtualización en un mundo real.
+* [X] Conocer las diferentes técnicas usadas en el desarrollo de una aplicación sobre un PaaS
+* [X] Conocer Nubbius, empresa granadina y caso de éxito en el uso de Google App Engine
+
+Clase del 22 de noviembre
+---
+
+* [X] Resolver problemas con juju.
+* [X] Configuración compleja de sistemas con él.
+ 
+Clase semana del 25 al 29 de noviembre
+---
+
+* [X] Comprender la sintaxis de Ruby
+* [X] Aprender a hacer programas simples usándolo.
+
+Clase del 2 de diciembre
+---
+
+* [ ] Terminar la familiarización con Ruby2
+* [ ] Recordar conceptos de almacenamiento físico.
+* [ ] Entender el concepto de FUSE y usarlo en la prática.
+* [ ] Crear y manipular formatos de provisionamiento delgado.
+
+Clase del 13 de diciembre
+---
+
+* [ ] Provisionamiento de recursos para una máquina virtual.
+* [ ] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+Clase del 16 de diciembre
+---
+
+* [X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+* [X] Aprender a usar el almacenamiento virtual en la nube.
+
+Clase del 20 de diciembre
+---
+
+* [ ] Comenzar la tercera práctica
+* [ ] Entender los diferentes componentes de la infraestructura como servicio.
+* [ ] Aprender a usar máquinas virtuales, localmente y en la nube.
+* [ ] Comprender las bases físicas de las infraestructuras virtuales.
+
+Clase del 10 de enero
+---
+
+* [ ] Continuar con la tercera práctica
