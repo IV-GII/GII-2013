@@ -213,8 +213,8 @@ Clase del 2 de Diciembre de 2013
 
 Objetivos de la asignatura
 
-- []Terminar la familiarización con Ruby2
-- []Recordar conceptos de almacenamiento físico.
+- [x]Terminar la familiarización con Ruby2
+- [x]Recordar conceptos de almacenamiento físico.
 - []Entender el concepto de FUSE y usarlo en la prática.
 - []Crear y manipular formatos de provisionamiento delgado.
 
