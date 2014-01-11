@@ -130,8 +130,8 @@ Clase del 13 de diciembre
 Clase del 16 de diciembre
 ---
 
-* [X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
-* [X] Aprender a usar el almacenamiento virtual en la nube.
+* [ ] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+* [ ] Aprender a usar el almacenamiento virtual en la nube.
 
 Clase del 20 de diciembre
 ---
