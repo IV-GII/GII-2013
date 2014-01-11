@@ -145,3 +145,8 @@ Clase del 10 de enero
 ---
 
 * [ ] Continuar con la tercera práctica
+
+Clase del 13 de enero
+---
+
+* [ ] Entregar la práctica
