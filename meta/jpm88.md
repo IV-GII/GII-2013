@@ -99,7 +99,6 @@ Clase del 18 de noviembre
 
 * [X] Comprender la aplicación de los conceptos de virtualización en un mundo real.
 * [X] Conocer las diferentes técnicas usadas en el desarrollo de una aplicación sobre un PaaS
-* [X] Conocer Nubbius, empresa granadina y caso de éxito en el uso de Google App Engine
 
 Clase del 22 de noviembre
 ---
