@@ -106,3 +106,7 @@ Objetivos clase del 20 de diciembre de 2013
 - [x] Entender los diferentes componentes de la infraestructura como servicio.
 - [x] Aprender a usar máquinas virtuales, localmente y en la nube.
 - [x] Comprender las bases físicas de las infraestructuras virtuales.
+
+Objetivos clase del 10 de enero de 2014
+---------------------------------------
+- [x] Continuar con la tercera práctica

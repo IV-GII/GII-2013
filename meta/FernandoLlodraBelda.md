@@ -164,10 +164,112 @@ Clase del 15 de Noviembre de 2013
 
 Objetivos de esta sesión
 
-- []Entender los sistemas de orquestación de máquinas virtuales.
-- []Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+- [x]Entender los sistemas de orquestación de máquinas virtuales.
+- [x]Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 Otros objetivos
 
-- []Ver el papel de los *tápers* como base de experimentación y prácticas de muchos de los conceptos de virtualización. 
+- [x]Ver el papel de los *tápers* como base de experimentación y prácticas de muchos de los conceptos de virtualización. 
+
+Seminario del 18 de Noviembre de 2013
+-------------------------------------
+
+Objetivos de la sesión para alumnos de IV
+
+- [x]Comprobar el uso de tecnologías en la nube en la práctica.
+- [x]Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
+- [x]Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
+- [x]Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
+
+
+Clase del 22 de Noviembre de 2013
+---------------------------------
+
+Objetivos de esta sesión
+
+- [x]Resolver problemas con juju.
+- [x]Configuración compleja de sistemas con él.
+
+Otros objetivos
+
+- [x]Crear estrategias para resolución de problemas de sistemas.
+
+
+
+Clase del 25 de Noviembre de 2013
+---------------------------------
+
+- [x]Resolver problemas con juju.
+- [x]Configuración compleja de sistemas con él.
+
+Otros objetivos
+
+- [x]Crear estrategias para resolución de problemas de sistemas.
+
+
+
+Clase del 2 de Diciembre de 2013
+--------------------------------
+
+Objetivos de la asignatura
+
+- [x]Terminar la familiarización con Ruby2
+- [x]Recordar conceptos de almacenamiento físico.
+- []Entender el concepto de FUSE y usarlo en la prática.
+- []Crear y manipular formatos de provisionamiento delgado.
+
+Objetivos generales
+
+- []Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+- []Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
+
+
+Clase del 13 de Diciembre de 2013
+---------------------------------
+Objetivos de la asignatura
+
+- []Provisionamiento de recursos para una máquina virtual.
+- []Entender sistemas de almacenamiento de objetos e instalarlos.
+
+Objetivos generales
+
+- []Ser capaces de diseñar una máquina virtual general.
+- []Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
+
+
+
+
+Clase del 16 de Diciembre de 2013
+---------------------------------
+
+Objetivos de la asignatura
+
+- []Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+- []Aprender a usar el almacenamiento virtual en la nube.
+
+Objetivos generales
+
+- []Asumir la multiplicidad de interfaces de recursos en nube.
+- []Usar Ruby en programas simples.
+
+
+
+Clase del 20 de Diciembre de 2013
+---------------------------------
+
+Objetivos de la asignatura
+
+- []Comenzar la tercera práctica
+- []Entender los diferentes componentes de la infraestructura como servicio.
+- []Aprender a usar máquinas virtuales, localmente y en la nube.
+- []Comprender las bases físicas de las infraestructuras virtuales.
+
+Objetivos generales
+
+- []Ser agnóstico con respecto a las herramientas usadas.
+- []Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+- []Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+
 
