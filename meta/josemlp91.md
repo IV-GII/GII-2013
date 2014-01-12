@@ -143,17 +143,17 @@ Jose Miguel López Pérez
 
 ####Clase del 20 de diciembre de 2013
 
-- [] Comenzar la tercera práctica
+- [x] Comenzar la tercera práctica
 
-- [] Entender los diferentes componentes de la infraestructura como servicio.
+- [x] Entender los diferentes componentes de la infraestructura como servicio.
 
-- [] Aprender a usar máquinas virtuales, localmente y en la nube.
+- [x] Aprender a usar máquinas virtuales, localmente y en la nube.
 
-- [] Comprender las bases físicas de las infraestructuras virtuales.
+- [x] Comprender las bases físicas de las infraestructuras virtuales.
 
 ####Clase del 10 de enero de 2014
 
-- [] Continuar con la tercera práctica
+- [x] Continuar con la tercera práctica
 
 
 
