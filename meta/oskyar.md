@@ -142,3 +142,12 @@
 - [X] Provisionamiento de recursos para una máquina virtual.
 
 - [X] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+
+**Clase del 16 de Diciembre de 2013**
+------------------------------------------
+
+- [X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+
+- [X] Aprender a usar el almacenamiento virtual en la nube.
+
