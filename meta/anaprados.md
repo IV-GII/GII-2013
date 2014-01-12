@@ -69,6 +69,11 @@
 [X] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS   
 
 #### Clase del 22 de noviembre de 2013
-[X] Resolver problemas con juju.   
-[X] Configuración compleja de sistemas con él.
+[X] Resolver problemas con juju   
+[X] Configuración compleja de sistemas con él
 
+#### Clase del 2 de diciembre de 2013
+[X] Terminar la familiarización con Ruby2   
+[ ] Recordar conceptos de almacenamiento físico.   
+[ ] Entender el concepto de FUSE y usarlo en la prática.   
+[ ] Crear y manipular formatos de provisionamiento delgado.
