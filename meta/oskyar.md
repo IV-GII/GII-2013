@@ -151,3 +151,14 @@
 
 - [X] Aprender a usar el almacenamiento virtual en la nube.
 
+
+**Clase del 20 de Diciembre de 2013**
+------------------------------------------
+
+- [ ] Comenzar la tercera práctica
+
+- [ ] Entender los diferentes componentes de la infraestructura como servicio.
+
+- [ ] Aprender a usar máquinas virtuales, localmente y en la nube.
+
+- [ ] Comprender las bases físicas de las infraestructuras virtuales.
