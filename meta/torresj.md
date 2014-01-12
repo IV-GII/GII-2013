@@ -134,3 +134,28 @@ Lista de objetivos de la clase 2/12/2013
 [x] Recordar conceptos de almacenamiento físico.
 
 [x] Entender el concepto de FUSE y usarlo en la prática.
+
+Lista de objetivos de la clase 13/12/2013
+-----------------------------------------
+
+[x] Provisionamiento de recursos para una máquina virtual.
+
+[x] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+Lista de objetivos de la clase 13/12/2013
+-----------------------------------------
+
+[x] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+
+[x] Aprender a usar el almacenamiento virtual en la nube.
+
+Lista de objetivos de la clase 20/12/2013
+-----------------------------------------
+
+[x] Comenzar la tercera práctica
+
+[x] Entender los diferentes componentes de la infraestructura como servicio.
+
+[x] Aprender a usar máquinas virtuales, localmente y en la nube.
+
+[x] Comprender las bases físicas de las infraestructuras virtuales.
