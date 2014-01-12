@@ -130,3 +130,5 @@
 - [X] Terminar la familiarización con Ruby2
 
 
+**Clase del 12 de Diciembre de 2013**
+------------------------------------------
