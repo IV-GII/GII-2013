@@ -260,16 +260,16 @@ Clase del 20 de Diciembre de 2013
 
 Objetivos de la asignatura
 
-- []Comenzar la tercera práctica
-- []Entender los diferentes componentes de la infraestructura como servicio.
-- []Aprender a usar máquinas virtuales, localmente y en la nube.
-- []Comprender las bases físicas de las infraestructuras virtuales.
+- [x]Comenzar la tercera práctica
+- [x]Entender los diferentes componentes de la infraestructura como servicio.
+- [x]Aprender a usar máquinas virtuales, localmente y en la nube.
+- [x]Comprender las bases físicas de las infraestructuras virtuales.
 
 Objetivos generales
 
-- []Ser agnóstico con respecto a las herramientas usadas.
-- []Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
-- []Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+- [x]Ser agnóstico con respecto a las herramientas usadas.
+- [x]Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+- [x]Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
 
 
 
