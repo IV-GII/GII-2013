@@ -153,6 +153,22 @@ Lista de objetivos de la clase 13/12/2013
 Lista de objetivos de la clase 16/12/2013
 ------------------------------------------
 
-- [ ] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+- [x] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
 
-- [ ] Aprender a usar el almacenamiento virtual en la nube.
+- [x] Aprender a usar el almacenamiento virtual en la nube.
+
+
+Lista de objetivos de la clase 20/12/2013
+-----------------------------------------
+
+- [X] Comenzar la tercera práctica
+- [X] Entender los diferentes componentes de la infraestructura como servicio.
+- [X] Aprender a usar máquinas virtuales, localmente y en la nube.
+- [X] Comprender las bases físicas de las infraestructuras virtuales.
+
+
+Lista de objetivos de la clase 10/1/2014
+-----------------------------------------
+
+- [X] Continuar con la tercera práctica
+
