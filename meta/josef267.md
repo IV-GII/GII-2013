@@ -95,3 +95,23 @@ Clase del 2 de diciembre
 - [x] Entender el concepto de FUSE y usarlo en la prática.
 - [x] Crear y manipular formatos de provisionamiento delgado.
 
+Clase del 13 diciembre
+
+- [x] Provisionamiento de recursos para una máquina virtual.
+- [x] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+Clase del 16 diciembre
+
+- [x] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+- [x] Aprender a usar el almacenamiento virtual en la nube.
+
+Clase del 20 diciembre
+
+- [x] Comenzar la tercera práctica
+- [ ] Entender los diferentes componentes de la infraestructura como servicio.
+- [ ] Aprender a usar máquinas virtuales, localmente y en la nube.
+- [ ] Comprender las bases físicas de las infraestructuras virtuales.
+
+Clase del 10 enero
+
+- [x] Continuar con la tercera práctica

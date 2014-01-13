@@ -207,6 +207,20 @@ Lista de objetivos de la clase 20/12/2013
 
 [X] Entender los diferentes componentes de la infraestructura como servicio.
 
-[] Aprender a usar máquinas virtuales, localmente y en la nube.
+[X] Aprender a usar máquinas virtuales, localmente y en la nube.
 
 [] Comprender las bases físicas de las infraestructuras virtuales.
+
+Lista de objetivos de la clase 10/01/2014
+=========================================
+
+[X] Continuar con la tercera práctica
+
+Lista de objetivos de la clase 13/01/2014
+=========================================
+
+[X] Resolver dudas y entregar la tercera práctica.
+
+[X] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+
+[] Instalar y comenzar a utilizar un sistema de configuración.

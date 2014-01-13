@@ -215,13 +215,13 @@ Objetivos de la asignatura
 
 - [x]Terminar la familiarización con Ruby2
 - [x]Recordar conceptos de almacenamiento físico.
-- []Entender el concepto de FUSE y usarlo en la prática.
-- []Crear y manipular formatos de provisionamiento delgado.
+- [x]Entender el concepto de FUSE y usarlo en la prática.
+- [x]Crear y manipular formatos de provisionamiento delgado.
 
 Objetivos generales
 
-- []Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
-- []Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+- [x]Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+- [x]Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
 
 
 
@@ -229,13 +229,13 @@ Clase del 13 de Diciembre de 2013
 ---------------------------------
 Objetivos de la asignatura
 
-- []Provisionamiento de recursos para una máquina virtual.
-- []Entender sistemas de almacenamiento de objetos e instalarlos.
+- [x]Provisionamiento de recursos para una máquina virtual.
+- [x]Entender sistemas de almacenamiento de objetos e instalarlos.
 
 Objetivos generales
 
-- []Ser capaces de diseñar una máquina virtual general.
-- []Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
+- [x]Ser capaces de diseñar una máquina virtual general.
+- [x]Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
 
 
 
@@ -245,13 +245,13 @@ Clase del 16 de Diciembre de 2013
 
 Objetivos de la asignatura
 
-- []Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
-- []Aprender a usar el almacenamiento virtual en la nube.
+- [x]Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+- [x]Aprender a usar el almacenamiento virtual en la nube.
 
 Objetivos generales
 
-- []Asumir la multiplicidad de interfaces de recursos en nube.
-- []Usar Ruby en programas simples.
+- [x]Asumir la multiplicidad de interfaces de recursos en nube.
+- [x]Usar Ruby en programas simples.
 
 
 
@@ -260,16 +260,16 @@ Clase del 20 de Diciembre de 2013
 
 Objetivos de la asignatura
 
-- []Comenzar la tercera práctica
-- []Entender los diferentes componentes de la infraestructura como servicio.
-- []Aprender a usar máquinas virtuales, localmente y en la nube.
-- []Comprender las bases físicas de las infraestructuras virtuales.
+- [x]Comenzar la tercera práctica
+- [x]Entender los diferentes componentes de la infraestructura como servicio.
+- [x]Aprender a usar máquinas virtuales, localmente y en la nube.
+- [x]Comprender las bases físicas de las infraestructuras virtuales.
 
 Objetivos generales
 
-- []Ser agnóstico con respecto a las herramientas usadas.
-- []Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
-- []Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+- [x]Ser agnóstico con respecto a las herramientas usadas.
+- [x]Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+- [x]Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
 
 
 

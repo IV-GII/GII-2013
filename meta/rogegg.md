@@ -105,3 +105,78 @@ Lista de objetivos de la clase 08/11/2013
 [x] Resolver dudas y obstáculos en la realización de la segunda práctica.
 
 
+Lista de objetivos de la clase 11/11/2013
+-----------------------------------------
+
+[x] Entender el concepto de contenedores
+
+[x] Configurar el sistema para poder crear y usar contenedores
+
+[x] Crear y usar contenedores
+
+Lista de objetivos de la clase 15/11/2013
+-----------------------------------------
+
+[x] Entender los sistemas de orquestación de máquinas virtuales.
+
+[x] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+Lista de objetivos de la clase 18/11/2013
+-----------------------------------------
+
+[x] Comprobar el uso de tecnologías en la nube en la práctica.
+
+[x] Conocer las habilidades que hacen falta para emprender usando estas tecnologías.
+
+[x] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS.
+
+[x] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS.
+
+Lista de objetivos de la clase 25/11/2013
+------------------------------------------
+
+[] Conocer la historia y origenes de este lenguaje
+
+[] Entender los conceptos principales detras del mismo
+
+[] Conocer y saber usar la sintaxis
+
+[] Aprender las estructuras de datos y control principales
+
+[] Instalar y usar bibliotecas
+
+[] Hacer un pequeño programa
+
+
+Lista de objetivos de la clase 13/12/2013
+------------------------------------------
+
+[x] Ser capaces de diseñar una máquina virtual general
+
+[x]  Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
+
+Lista de objetivos de la clase 16/12/2013
+------------------------------------------
+
+[x] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+
+[x] Aprender a usar el almacenamiento virtual en la nube.
+
+
+Lista de objetivos de la clase 20/12/2013
+-----------------------------------------
+
+[X] Comenzar la tercera práctica
+
+[X] Entender los diferentes componentes de la infraestructura como servicio.
+
+[X] Aprender a usar máquinas virtuales, localmente y en la nube.
+
+[X] Comprender las bases físicas de las infraestructuras virtuales.
+
+
+Lista de objetivos de la clase 10/1/2014
+-----------------------------------------
+
+[X] Continuar con la tercera práctica
+
