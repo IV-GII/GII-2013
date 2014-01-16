@@ -102,7 +102,41 @@ Clase del 22 de noviembre de 2013
 Clase del 2 de diciembre de 2013
 -------------------------------
 
-- [ ] Terminar la familiarización con Ruby2
-- [ ] Recordar conceptos de almacenamiento físico.
-- [ ] Entender el concepto de FUSE y usarlo en la prática.
-- [ ] Crear y manipular formatos de provisionamiento delgado.
+- [X] Terminar la familiarización con Ruby2
+
+Clase del 13 diciembre
+----------------------
+
+- [X] Provisionamiento de recursos para una máquina virtual.
+- [X] Entender sistemas de almacenamiento de objetos e instalarlos.
+
+Clase del 16 diciembre
+----------------------
+
+- [X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+- [X] Aprender a usar el almacenamiento virtual en la nube.
+
+Clase del 20 diciembre
+----------------------
+
+- [X] Comenzar la tercera práctica
+- [X] Entender los diferentes componentes de 
+- [X] Recordar conceptos de almacenamiento físico.
+- [X] Entender el concepto de FUSE y usarlo en la prática.
+- [X] Crear y manipular formatos de provisionamiento delgado.
+la infraestructura como servicio.
+- [X] Aprender a usar máquinas virtuales, localmente y en la nube.
+- [X] Comprender las bases físicas de las infraestructuras virtuales.
+
+Clase del 10 enero
+------------------
+
+- [X] Continuar con la tercera práctica
+
+Clase del 13 enero
+------------------
+
+- [X] Resolver dudas y entregar la tercera práctica.
+- [ ] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+- [ ] Instalar y comenzar a utilizar un sistema de configuración.
+
