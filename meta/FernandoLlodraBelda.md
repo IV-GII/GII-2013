@@ -273,3 +273,35 @@ Objetivos generales
 
 
 
+
+Clase del 10 de Enero de 2014
+-----------------------------
+
+Objetivos de la asignatura
+
+- [x]Continuar con la tercera práctica
+
+Objetivos generales
+
+- [x]Terminar los ejercicios hasta este tema.
+- [x]Aclarar dudas relacionadas con infraestructuras virtuales.
+
+
+
+Clase del 13 de Enero de 2014
+-----------------------------
+
+Objetivos de la asignatura
+
+- [x]Resolver dudas y entregar la tercera práctica.
+- []Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+- []Instalar y comenzar a utilizar un sistema de configuración.
+
+
+Objetivos generales
+
+- []Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
+- []Poner los conocimientos de Ruby en práctica en el uso de Chef.
+- []Crear herramientas ágiles para configuración de nuevas máquinas virtuales.
+- []Comenzar a usar YAML (ver el ejercicio al final del tema, todavía no en la web )
+
