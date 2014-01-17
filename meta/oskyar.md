@@ -155,10 +155,29 @@
 **Clase del 20 de Diciembre de 2013**
 ------------------------------------------
 
-- [ ] Comenzar la tercera práctica
+- [X] Comenzar la tercera práctica
 
-- [ ] Entender los diferentes componentes de la infraestructura como servicio.
+- [X] Entender los diferentes componentes de la infraestructura como servicio.
 
-- [ ] Aprender a usar máquinas virtuales, localmente y en la nube.
+- [X] Aprender a usar máquinas virtuales, localmente y en la nube.
 
-- [ ] Comprender las bases físicas de las infraestructuras virtuales.
+- [X] Comprender las bases físicas de las infraestructuras virtuales.
+
+
+**Clase del 10 de Enero de 2014**
+------------------------------------------
+
+- [X] Terminar los ejercicios hasta este tema.
+    
+- [X] Aclarar dudas relacionadas con infraestructuras virtuales.
+
+
+**Clase del 13 de Enero de 2014**
+------------------------------------------
+
+- [X] Resolver dudas y entregar la tercera práctica.
+    
+- [] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+    
+- [] Instalar y comenzar a utilizar un sistema de configuración.
+
