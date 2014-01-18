@@ -177,7 +177,9 @@
 
 - [X] Resolver dudas y entregar la tercera práctica.
     
-- [] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+- [X] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
     
-- [] Instalar y comenzar a utilizar un sistema de configuración.
+- [X] Instalar y comenzar a utilizar un sistema de configuración.
+
+
 
