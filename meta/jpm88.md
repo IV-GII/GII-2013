@@ -115,37 +115,46 @@ Clase semana del 25 al 29 de noviembre
 Clase del 2 de diciembre
 ---
 
-* [ ] Terminar la familiarización con Ruby2
-* [ ] Recordar conceptos de almacenamiento físico.
-* [ ] Entender el concepto de FUSE y usarlo en la prática.
-* [ ] Crear y manipular formatos de provisionamiento delgado.
+* [X] Terminar la familiarización con Ruby2
+* [X] Recordar conceptos de almacenamiento físico.
+* [X] Entender el concepto de FUSE y usarlo en la prática.
+* [X] Crear y manipular formatos de provisionamiento delgado.
 
 Clase del 13 de diciembre
 ---
 
-* [ ] Provisionamiento de recursos para una máquina virtual.
-* [ ] Entender sistemas de almacenamiento de objetos e instalarlos.
+* [X] Provisionamiento de recursos para una máquina virtual.
+* [X] Entender sistemas de almacenamiento de objetos e instalarlos.
 
 Clase del 16 de diciembre
 ---
 
-* [ ] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
-* [ ] Aprender a usar el almacenamiento virtual en la nube.
+* [X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+* [X] Aprender a usar el almacenamiento virtual en la nube.
 
 Clase del 20 de diciembre
 ---
 
-* [ ] Comenzar la tercera práctica
-* [ ] Entender los diferentes componentes de la infraestructura como servicio.
-* [ ] Aprender a usar máquinas virtuales, localmente y en la nube.
-* [ ] Comprender las bases físicas de las infraestructuras virtuales.
+* [X] Comenzar la tercera práctica
+* [X] Entender los diferentes componentes de la infraestructura como servicio.
+* [X] Aprender a usar máquinas virtuales, localmente y en la nube.
+* [X] Comprender las bases físicas de las infraestructuras virtuales.
 
 Clase del 10 de enero
 ---
 
-* [ ] Continuar con la tercera práctica
+* [X] Continuar con la tercera práctica
 
 Clase del 13 de enero
 ---
 
-* [ ] Entregar la práctica
+* [X] Resolver dudas y entregar la tercera práctica.
+* [ ] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+* [ ] Instalar y comenzar a utilizar un sistema de configuración.
+
+Clase del 17 de enero
+---
+
+* [ ] Aprender a usar sistemas de provisionamiento.
+* [ ] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+

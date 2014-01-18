@@ -54,3 +54,43 @@
 [X] Entregar la práctica   
 
 #### Clase del 11 de noviembre de 2013
+[X] Entender el concepto de contenedores   
+[X] Configurar el sistema para poder crear y usar contenedores   
+[X] Crear y usar contenedores   
+
+#### Clase del 15 de noviembre de 2013
+[X] Entender los sistemas de orquestación de máquinas virtuales   
+[X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado   
+
+#### Seminario del 18 de noviembre de 2013
+[X] Comprobar el uso de tecnologías en la nube en la práctica   
+[X] Conocer las habilidades que hacen falta para emprender usando estas tecnologías   
+[X] Ver casos de uso de tecnologías PaaS y en qué caso tienen ventajas respecto a PaaS   
+[X] Conocer la pila de soluciones en la nube de Google, desde IaaS hasta SaaS   
+
+#### Clase del 22 de noviembre de 2013
+[X] Resolver problemas con juju   
+[X] Configuración compleja de sistemas con él
+
+#### Clase del 2 de diciembre de 2013
+[X] Terminar la familiarización con Ruby2   
+[X] Recordar conceptos de almacenamiento físico  
+[X] Entender el concepto de FUSE y usarlo en la prática   
+[X] Crear y manipular formatos de provisionamiento delgado
+
+#### Clase del 13 de diciembre de 2013
+[X] Provisionamiento de recursos para una máquina virtual   
+[X] Entender sistemas de almacenamiento de objetos e instalarlos
+
+#### Clase del 16 de diciembre de 2013
+[X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube   
+[X] Aprender a usar el almacenamiento virtual en la nube
+
+#### Clase del 20 de diciembre de 2013
+[X] Comenzar la tercera práctica   
+[ ] Entender los diferentes componentes de la infraestructura como servicio   
+[X] Aprender a usar máquinas virtuales, localmente y en la nube   
+[ ] Comprender las bases físicas de las infraestructuras virtuales
+
+#### Clase del 10 de enero de 2014
+[X] Continuar con la tercera práctica

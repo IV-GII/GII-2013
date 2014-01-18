@@ -149,6 +149,6 @@
 
 [X] Entender los diferentes componentes de la infraestructura como servicio.
 
-[] Aprender a usar máquinas virtuales, localmente y en la nube.
+[X] Aprender a usar máquinas virtuales, localmente y en la nube.
 
-[] Comprender las bases físicas de las infraestructuras virtuales.
+[X] Comprender las bases físicas de las infraestructuras virtuales.
