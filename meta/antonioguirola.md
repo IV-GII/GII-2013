@@ -223,4 +223,18 @@ Lista de objetivos de la clase 13/01/2014
 
 [X] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
 
-[] Instalar y comenzar a utilizar un sistema de configuración.
+[X] Instalar y comenzar a utilizar un sistema de configuración.
+
+Lista de objetivos de la clase 17/01/2014
+=========================================
+
+[] Aprender a usar sistemas de provisionamiento.
+
+[] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+Lista de objetivos de la clase 20/01/2014
+=========================================
+
+[] Aprender a usar sistemas de provisionamiento.
+
+[] Comenzar con sistemas de configuración.
