@@ -148,4 +148,13 @@ Clase del 10 de enero
 Clase del 13 de enero
 ---
 
-* [X] Entregar la práctica
+* [X] Resolver dudas y entregar la tercera práctica.
+* [ ] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+* [ ] Instalar y comenzar a utilizar un sistema de configuración.
+
+Clase del 17 de enero
+---
+
+* [ ] Aprender a usar sistemas de provisionamiento.
+* [ ] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+

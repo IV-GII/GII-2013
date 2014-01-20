@@ -113,3 +113,9 @@ Clase del 10 de enero de 2014
 - [X] Continuar con la tercera práctica
 
 
+Objetivos clase del 13 de enero de 2014
+
+- [X] Resolver dudas y entregar la tercera práctica.
+- [] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+- [] Instalar y comenzar a utilizar un sistema de configuración.
+
