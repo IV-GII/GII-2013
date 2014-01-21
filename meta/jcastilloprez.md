@@ -101,3 +101,5 @@ Clase del día 20/12/2013
 - [X] Comenzar la tercera práctica
 - [X] Entender los diferentes componentes de la infraestructura como servicio.
 - [X] Aprender a usar máquinas virtuales, localmente y en la nube.
+[X] Comprender las bases físicas de las infraestructuras virtuales. 
+
