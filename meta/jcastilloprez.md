@@ -92,6 +92,13 @@ Clase del día 13/12/2013
 - [X] Entender sistemas de almacenamiento de objetos e instalarlos.
 
 Clase del día 16/12/2013
-- [X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
-[X] Aprender a usar el almacenamiento virtual en la nube. 
 
+- [X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
+- [X] Aprender a usar el almacenamiento virtual en la nube. 
+
+Clase del día 20/12/2013
+
+- [X] Comenzar la tercera práctica
+- [X] Entender los diferentes componentes de la infraestructura como servicio.
+- [X] Aprender a usar máquinas virtuales, localmente y en la nube.
+- 
