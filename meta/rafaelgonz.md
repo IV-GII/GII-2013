@@ -167,9 +167,15 @@
 
 [X] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
 
-[] Entender los conceptos básicos devops y cómo se usan en la práctica.
+[X] Entender los conceptos básicos devops y cómo se usan en la práctica.
 
 [X] Ver los errores generales cometidos en la 3ª práctica
 
 
 ###Clase del 20 de enero
+
+[X] Saber trabajar con diferentes alternativas y ofrecer la más adecuada en cada caso.
+
+[] Entender los conceptos básicos devops y cómo se usan en la práctica.
+
+[X] Ver los errores generales cometidos en la 3ª práctica
