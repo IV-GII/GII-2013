@@ -176,6 +176,14 @@
 
 [X] Saber trabajar con diferentes alternativas y ofrecer la más adecuada en cada caso.
 
-[] Entender los conceptos básicos devops y cómo se usan en la práctica.
+[X] Entender los conceptos básicos devops y cómo se usan en la práctica.
 
 [X] Ver los errores generales cometidos en la 3ª práctica
+
+###Clase del 24 de enero
+
+[X] Trabajar en grupo en GitHub
+
+[X] Entender los conceptos básicos devops y cómo se usan en la práctica.
+
+[X] Resolver dudas relacionadas con los proyectos de la última práctica.
