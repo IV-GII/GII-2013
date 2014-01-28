@@ -107,4 +107,13 @@ Clase del día 10/01/2014
 
 - [X] Continuar con la tercera práctica.
 
+Clase del día 13/01/2014
 
+- [X] Resolver dudas y entregar la tercera práctica.
+- [X] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+- [X] Instalar y comenzar a utilizar un sistema de configuración.
+
+Clase del día 17/01/2014
+
+- [X] Aprender a usar sistemas de provisionamiento.
+- [X] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
