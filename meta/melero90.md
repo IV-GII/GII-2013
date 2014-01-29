@@ -128,28 +128,61 @@ Objetivos de la Asignatura Infraestructura Virtual
 
 #### Clase del 25 de Noviembre
 
-+ [] Resolver problemas con juju.
-+ [] Configuración compleja de sistemas con él.
-+ [] Crear estrategias para resolución de problemas de sistemas.
++ [x] Resolver problemas con juju.
++ [x] Configuración compleja de sistemas con él.
++ [x] Crear estrategias para resolución de problemas de sistemas.
 
 #### Clase del 2 de Diciembre
 
 + [x] Terminar la familiarización con Ruby2
-+ [] Recordar conceptos de almacenamiento físico.
-+ [] Entender el concepto de FUSE y usarlo en la prática.
-+ [] Crear y manipular formatos de provisionamiento delgado.
++ [x] Recordar conceptos de almacenamiento físico.
++ [x] Entender el concepto de FUSE y usarlo en la prática.
++ [x] Crear y manipular formatos de provisionamiento delgado.
 + [x] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
 + [x] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
 
 
 #### Clase del 13 de Diciembre
 
-+ [] Provisionamiento de recursos para una máquina virtual.
-+ [] Entender sistemas de almacenamiento de objetos e instalarlos.
-+ [] Ser capaces de diseñar una máquina virtual general.
-+ [] Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
++ [x] Provisionamiento de recursos para una máquina virtual.
++ [x] Entender sistemas de almacenamiento de objetos e instalarlos.
++ [x] Ser capaces de diseñar una máquina virtual general.
++ [x] Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.
 
 #### Clase del 16 de Diciembre
 
++ [x] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
++ [x] Aprender a usar el almacenamiento virtual en la nube.
++ [x] Usar Ruby en programas simples.
+
 #### Clase del 20 de Diciembre
+
++ [x] Comenzar la tercera práctica
++ [x] Entender los diferentes componentes de la infraestructura como servicio.
++ [x] Aprender a usar máquinas virtuales, localmente y en la nube.
++ [x] Comprender las bases físicas de las infraestructuras virtuales.
+
+#### Clase del 10 de Enero
+
++ [x] Continuar con la tercera práctica
+
+#### Clase del 13 de Enero
+
++ [x] Resolver dudas y entregar la tercera práctica.
++ [x] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
++ [x] Instalar y comenzar a utilizar un sistema de configuración.
++ [] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
++ [] Poner los conocimientos de Ruby en práctica en el uso de Chef.
++ [] Crear herramientas ágiles para configuración de nuevas máquinas virtuales.
++ [] Comenzar a usar YAML
+
+#### Clase del 17 y 20 de Enero
+
++ [] Aprender a usar sistemas de provisionamiento.
++ [] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
++ [] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
++ [] Entender los conceptos básicos devops y cómo se usan en la práctica.
++ [x] Ver los errores generales cometidos en la 3ª práctica
+
+
 

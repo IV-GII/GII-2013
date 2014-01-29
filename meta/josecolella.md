@@ -172,11 +172,28 @@ Lista de objetivos de la clase 10/1/2014
 
 - [X] Continuar con la tercera práctica
 
-Lista de objetivos de las clase de 13/1/2014
+Lista de objetivos de la clase de 13/1/2014
 --------------------------------------------
 
-- [ ] Resolver dudas y entregar la tercera práctica.
-- [ ] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
-- [ ] Instalar y comenzar a utilizar un sistema de configuración.
+- [x] Resolver dudas y entregar la tercera práctica.
+- [x] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+- [x] Instalar y comenzar a utilizar un sistema de configuración.
 
 
+Lista de objetivos de la clase de 17/1/2014
+--------------------------------------------
+
+- [x] Aprender a usar sistemas de provisionamiento.
+- [x] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+Lista de objetivos de la clase de 20/1/2014
+--------------------------------------------
+
+- [x] Aprender a usar sistemas de provisionamiento.
+- [x] Comenzar con sistemas de configuración.
+
+Lista de objetivos de la clase de 24/1/2014
+-------------------------------------------
+
+- [x] Usar sistemas de provisionamiento.
+- [x] Ponerlos en práctica en una aplicación real.

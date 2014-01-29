@@ -152,3 +152,38 @@
 [X] Aprender a usar máquinas virtuales, localmente y en la nube.
 
 [X] Comprender las bases físicas de las infraestructuras virtuales.
+
+###Clase del 13 de enero
+
+[X] Resolver dudas y entregar la tercera práctica.
+
+[X] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+
+[X] Instalar y comenzar a utilizar un sistema de configuración.
+
+###Clase del 17 de enero
+
+[X] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+[X] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
+
+[X] Entender los conceptos básicos devops y cómo se usan en la práctica.
+
+[X] Ver los errores generales cometidos en la 3ª práctica
+
+
+###Clase del 20 de enero
+
+[X] Saber trabajar con diferentes alternativas y ofrecer la más adecuada en cada caso.
+
+[X] Entender los conceptos básicos devops y cómo se usan en la práctica.
+
+[X] Ver los errores generales cometidos en la 3ª práctica
+
+###Clase del 24 de enero
+
+[X] Trabajar en grupo en GitHub
+
+[X] Entender los conceptos básicos devops y cómo se usan en la práctica.
+
+[X] Resolver dudas relacionadas con los proyectos de la última práctica.
