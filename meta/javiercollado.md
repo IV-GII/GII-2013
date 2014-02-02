@@ -106,33 +106,33 @@ Listado de objetivos por fechas.
 ##20/12/2013
 
 >[X] Comenzar la tercera práctica
->[X] Entender los diferentes componentes de la infraestructura como servicio.
->[X] Aprender a usar máquinas virtuales, localmente y en la nube.
->[X] Comprender las bases físicas de las infraestructuras virtuales.
+>[X] Entender los diferentes componentes de la infraestructura como servicio.  
+>[X] Aprender a usar máquinas virtuales, localmente y en la nube.  
+>[X] Comprender las bases físicas de las infraestructuras virtuales.  
 
 
 ##10/1/2014
 
->[X] Continuar con la tercera práctica
+>[X] Continuar con la tercera práctica  
 
 ##13/1/2014
 
->[X] Resolver dudas y entregar la tercera práctica.
->[ ] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
->[ ] Instalar y comenzar a utilizar un sistema de configuración.
+>[X] Resolver dudas y entregar la tercera práctica.  
+>[ ] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.  
+>[ ] Instalar y comenzar a utilizar un sistema de configuración.  
 
 
 ##17/1/2014
 
->[ ] Aprender a usar sistemas de provisionamiento.
->[X] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+>[ ] Aprender a usar sistemas de provisionamiento.  
+>[X] Ver máquinas virtuales ligeras y cómo trabajar con ellas.  
 
 ##20/1/2014
 
->[ ] Aprender a usar sistemas de provisionamiento.
->[ ] Comenzar con sistemas de configuración.
+>[ ] Aprender a usar sistemas de provisionamiento.  
+>[ ] Comenzar con sistemas de configuración.  
 
 ##24/1/2014
 
->[ ] Usar sistemas de provisionamiento.
->[ ] Ponerlos en práctica en una aplicación real.
+>[ ] Usar sistemas de provisionamiento.  
+>[ ] Ponerlos en práctica en una aplicación real.  
