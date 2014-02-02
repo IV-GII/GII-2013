@@ -169,9 +169,16 @@ Lista de objetivos de la clase 13/1/2014
 
 [x] Instalar y comenzar a utilizar un sistema de configuración.
 
-Lista de objetivos de la clase 13/1/2014
+Lista de objetivos de la clase 17/1/2014
 -----------------------------------------
 
 [x] Aprender a usar sistemas de provisionamiento.
 
 [x] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+Lista de objetivos de la clase 20/1/2014
+-----------------------------------------
+
+[x] Aprender a usar sistemas de provisionamiento.
+
+[x] Comenzar con sistemas de configuración.
