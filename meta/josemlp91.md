@@ -174,7 +174,7 @@ Jose Miguel López Pérez
 
 ####Clase del 24 de enero de 2014
 
-- [] Usar sistemas de provisionamiento.
-- [] Ponerlos en práctica en una aplicación real.
+- [x] Usar sistemas de provisionamiento.
+- [x] Ponerlos en práctica en una aplicación real.
 
 ----
