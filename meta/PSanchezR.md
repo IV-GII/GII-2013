@@ -169,3 +169,20 @@ Lista de objetivos de la clase 20/12/2013
 
 
 
+Lista de objetivos de la clase 10/1/2014
+=========================================
+
+[+]Continuar con la tercera práctica
+  
+  
+ 
+ Lista de objetivos de la clase 13/1/2014
+========================================= 
+
+[+]Resolver dudas y entregar la tercera práctica.
+
+[+]Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+    
+[+]Instalar y comenzar a utilizar un sistema de configuración.
+
+
