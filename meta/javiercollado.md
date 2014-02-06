@@ -95,10 +95,44 @@ Listado de objetivos por fechas.
 
 ##13/12/2013  
 
->[ ] Ser capaces de diseñar una máquina virtual general.  
->[ ]  Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.  
+>[X] Ser capaces de diseñar una máquina virtual general.  
+>[X]  Recordar los distintos sistemas de ficheros que se pueden usar en Linux y entender las capacidades de cada uno.  
 
 ##16/12/2013  
 
->[ ] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.  
->[ ] Aprender a usar el almacenamiento virtual en la nube.  
+>[X] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.  
+>[X] Aprender a usar el almacenamiento virtual en la nube.  
+
+##20/12/2013
+
+>[X] Comenzar la tercera práctica
+>[X] Entender los diferentes componentes de la infraestructura como servicio.  
+>[X] Aprender a usar máquinas virtuales, localmente y en la nube.  
+>[X] Comprender las bases físicas de las infraestructuras virtuales.  
+
+
+##10/1/2014
+
+>[X] Continuar con la tercera práctica  
+
+##13/1/2014
+
+>[X] Resolver dudas y entregar la tercera práctica.  
+>[ ] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.  
+>[ ] Instalar y comenzar a utilizar un sistema de configuración.  
+
+
+##17/1/2014
+
+>[ ] Aprender a usar sistemas de provisionamiento.  
+>[X] Ver máquinas virtuales ligeras y cómo trabajar con ellas.  
+
+##20/1/2014
+
+>[ ] Aprender a usar sistemas de provisionamiento.  
+>[ ] Comenzar con sistemas de configuración.  
+
+##24/1/2014
+
+>[ ] Usar sistemas de provisionamiento.  
+>[ ] Ponerlos en práctica en una aplicación real.  

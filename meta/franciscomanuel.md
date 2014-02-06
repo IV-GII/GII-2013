@@ -186,10 +186,77 @@ Lista de objetivos del seminario 19/12/2013
 Lista de objetivos de la clase 20/12/2013
 =========================================
 
-[] Comenzar la tercera práctica
+[x] Comenzar la tercera práctica
 
-[] Entender los diferentes componentes de la infraestructura como servicio.
+[x] Entender los diferentes componentes de la infraestructura como servicio.
 
-[] Aprender a usar máquinas virtuales, localmente y en la nube.
+[x] Aprender a usar máquinas virtuales, localmente y en la nube.
 
-[] Comprender las bases físicas de las infraestructuras virtuales.
+[x] Comprender las bases físicas de las infraestructuras virtuales.
+
+Lista de objetivos de la clase 10/01/2014
+=========================================
+
+[x] Continuar con la tercera práctica
+
+[x] Terminar los ejercicios hasta este tema.
+
+[x] Aclarar dudas relacionadas con infraestructuras virtuales.
+
+Lista de objetivos de la clase 13/01/2014
+=========================================
+
+[x] Resolver dudas y entregar la tercera práctica.
+
+[x] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+
+[x] Instalar y comenzar a utilizar un sistema de configuración.
+
+[x] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
+
+[x] Poner los conocimientos de Ruby en práctica en el uso de Chef.
+
+[x] Crear herramientas ágiles para configuración de nuevas máquinas virtuales.
+
+[] Comenzar a usar YAML
+
+
+Lista de objetivos de la clase 17/01/2014
+=========================================
+
+[] Aprender a usar sistemas de provisionamiento.
+
+[] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+[] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
+
+[] Entender los conceptos básicos devops y cómo se usan en la práctica.
+
+[x] Ver los errores generales cometidos en la 3ª práctica
+
+Lista de objetivos de la clase 20/01/2014
+=========================================
+
+[] Aprender a usar sistemas de provisionamiento.
+
+[] Comenzar con sistemas de configuración.
+
+[] Saber trabajar con diferentes alternativas y ofrecer la más adecuada en cada caso.
+
+[] Entender los conceptos básicos devops y cómo se usan en la práctica.
+
+
+Lista de objetivos de la clase 24/01/2014
+=========================================
+
+[] Usar sistemas de provisionamiento.
+
+[] Ponerlos en práctica en una aplicación real.
+
+[x] Trabajar en grupo en GitHub
+
+[x] Entender los conceptos básicos devops y cómo se usan en la práctica.
+
+[x]Resolver dudas relacionadas con los proyectos de la última práctica.
+
+

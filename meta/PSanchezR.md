@@ -159,13 +159,54 @@ Lista de objetivos de la clase 16/12/2013
 Lista de objetivos de la clase 20/12/2013
 =========================================
 
-[]Comenzar la tercera práctica
+[+]Comenzar la tercera práctica
 
-[]Entender los diferentes componentes de la infraestructura como servicio.
+[+]Entender los diferentes componentes de la infraestructura como servicio.
 
-[]Aprender a usar máquinas virtuales, localmente y en la nube.
+[+]Aprender a usar máquinas virtuales, localmente y en la nube.
 
-[]Comprender las bases físicas de las infraestructuras virtuales.
+[+]Comprender las bases físicas de las infraestructuras virtuales.
 
 
+
+Lista de objetivos de la clase 10/1/2014
+=========================================
+
+[+]Continuar con la tercera práctica
+  
+  
+ 
+ Lista de objetivos de la clase 13/1/2014
+========================================= 
+
+[+]Resolver dudas y entregar la tercera práctica.
+
+[+]Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+    
+[+]Instalar y comenzar a utilizar un sistema de configuración.
+
+
+
+ Lista de objetivos de la clase 17/1/2014
+========================================= 
+
+[+]Aprender a usar sistemas de provisionamiento.
+
+[+]Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+
+ Lista de objetivos de la clase 20/1/2014
+=========================================
+
+[]Aprender a usar sistemas de provisionamiento.
+
+[]Comenzar con sistemas de configuración.
+
+
+ Lista de objetivos de la clase 24/1/2014
+========================================= 
+
+[]Usar sistemas de provisionamiento.
+
+[]Ponerlos en práctica en una aplicación real.
 

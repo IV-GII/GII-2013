@@ -159,3 +159,33 @@ Lista de objetivos de la clase 20/12/2013
 [x] Aprender a usar máquinas virtuales, localmente y en la nube.
 
 [x] Comprender las bases físicas de las infraestructuras virtuales.
+
+Lista de objetivos de la clase 13/1/2014
+-----------------------------------------
+
+[x] Resolver dudas y entregar la tercera práctica.
+
+[x] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+
+[x] Instalar y comenzar a utilizar un sistema de configuración.
+
+Lista de objetivos de la clase 17/1/2014
+-----------------------------------------
+
+[x] Aprender a usar sistemas de provisionamiento.
+
+[x] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+Lista de objetivos de la clase 20/1/2014
+-----------------------------------------
+
+[x] Aprender a usar sistemas de provisionamiento.
+
+[x] Comenzar con sistemas de configuración.
+
+Lista de objetivos de la clase 24/1/2014
+-----------------------------------------
+
+[x] Usar sistemas de provisionamiento.
+
+[x] Ponerlos en práctica en una aplicación real.
