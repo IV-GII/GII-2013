@@ -305,3 +305,51 @@ Objetivos generales
 - []Crear herramientas ágiles para configuración de nuevas máquinas virtuales.
 - []Comenzar a usar YAML (ver el ejercicio al final del tema, todavía no en la web )
 
+
+
+Clase del 17 de Enero de 2014
+-----------------------------
+
+Objetivos de la asignatura
+
+- [x]Aprender a usar sistemas de provisionamiento.
+- [x]Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+Objetivos generales
+
+- [x]Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
+- []Entender los conceptos básicos devops y cómo se usan en la práctica.
+- [x]Ver los errores generales cometidos en la 3ª práctica
+
+
+
+Clase del 20 de Enero de 2014
+-----------------------------
+
+Objetivos de la asignatura
+
+- [x]Aprender a usar sistemas de provisionamiento.
+- [x]Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+Objetivos generales
+
+- [x]Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
+- []Entender los conceptos básicos devops y cómo se usan en la práctica.
+- [x]Ver los errores generales cometidos en la 3ª práctica
+
+
+
+Clase del 24 de Enero de 2014
+-----------------------------
+
+Objetivos de la asignatura
+
+- [x]Usar sistemas de provisionamiento.
+- [x]Ponerlos en práctica en una aplicación real.
+
+
+Objetivos generales
+
+- [x]Trabajar en grupo en GitHub
+- []Entender los conceptos básicos devops y cómo se usan en la práctica.
+- [x]Resolver dudas relacionadas con los proyectos de la última práctica.
