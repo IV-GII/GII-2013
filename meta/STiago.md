@@ -116,6 +116,25 @@ Clase del 10 de enero de 2014
 Objetivos clase del 13 de enero de 2014
 
 - [X] Resolver dudas y entregar la tercera práctica.
-- [] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
-- [] Instalar y comenzar a utilizar un sistema de configuración.
+- [X] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+- [X] Instalar y comenzar a utilizar un sistema de configuración.
+
+
+Objetivos clase del 17 de enero de 2014
+
+- [X] Aprender a usar sistemas de provisionamiento.
+- [X] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+
+Objetivos clase del 20 de enero de 2014
+
+- [X] Aprender a usar sistemas de provisionamiento.
+- [X] Comenzar con sistemas de configuración.
+
+
+Objetivos clase del 24 de enero de 2014
+
+- [X] Usar sistemas de provisionamiento.
+- [X] Ponerlos en práctica en una aplicación real.
+
 
