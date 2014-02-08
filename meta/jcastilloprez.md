@@ -127,6 +127,4 @@ Clase del día 20/01/2014
 Clase del día 24/01/2014
 
 - [X] Usar sistemas de provisionamiento.
-- 
-
-
+- [X] Ponerlos en práctica en una aplicación real.
