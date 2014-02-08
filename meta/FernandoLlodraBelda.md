@@ -294,8 +294,8 @@ Clase del 13 de Enero de 2014
 Objetivos de la asignatura
 
 - [x]Resolver dudas y entregar la tercera práctica.
-- []Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
-- []Instalar y comenzar a utilizar un sistema de configuración.
+- [x]Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+- [x]Instalar y comenzar a utilizar un sistema de configuración.
 
 
 Objetivos generales
