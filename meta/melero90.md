@@ -171,18 +171,30 @@ Objetivos de la Asignatura Infraestructura Virtual
 + [x] Resolver dudas y entregar la tercera práctica.
 + [x] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
 + [x] Instalar y comenzar a utilizar un sistema de configuración.
-+ [] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
-+ [] Poner los conocimientos de Ruby en práctica en el uso de Chef.
-+ [] Crear herramientas ágiles para configuración de nuevas máquinas virtuales.
-+ [] Comenzar a usar YAML
++ [x] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
++ [x] Poner los conocimientos de Ruby en práctica en el uso de Chef.
++ [x] Crear herramientas ágiles para configuración de nuevas máquinas virtuales.
++ [x] Comenzar a usar YAML
 
 #### Clase del 17 y 20 de Enero
 
-+ [] Aprender a usar sistemas de provisionamiento.
-+ [] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
-+ [] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
-+ [] Entender los conceptos básicos devops y cómo se usan en la práctica.
++ [x] Aprender a usar sistemas de provisionamiento.
++ [x] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
++ [x] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
++ [x] Entender los conceptos básicos devops y cómo se usan en la práctica.
 + [x] Ver los errores generales cometidos en la 3ª práctica
 
+#### Clase del 24 de Enero
 
++ [x] Reunión con los compañeros de proyecto cocorocó: SocialCookies
++ [x] Planificación del proyecto a realizar
++ [x] Indicaciones/Recomendaciones de los profesores.
+
+#### Dias 25,26 de Enero
+
++ [x] Desarrollo del proyecto (última práctica)
++ [x] Exposición del proyecto.
+
+
+Fin de asignatura 
 
