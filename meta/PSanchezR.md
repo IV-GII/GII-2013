@@ -206,7 +206,7 @@ Lista de objetivos de la clase 10/1/2014
  Lista de objetivos de la clase 24/1/2014
 ========================================= 
 
-[]Usar sistemas de provisionamiento.
+[+]Usar sistemas de provisionamiento.
 
 []Ponerlos en práctica en una aplicación real.
 
