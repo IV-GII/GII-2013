@@ -108,10 +108,31 @@ Clase del 16 diciembre
 Clase del 20 diciembre
 
 - [x] Comenzar la tercera práctica
-- [ ] Entender los diferentes componentes de la infraestructura como servicio.
-- [ ] Aprender a usar máquinas virtuales, localmente y en la nube.
-- [ ] Comprender las bases físicas de las infraestructuras virtuales.
+- [x] Entender los diferentes componentes de la infraestructura como servicio.
+- [x] Aprender a usar máquinas virtuales, localmente y en la nube.
+- [x] Comprender las bases físicas de las infraestructuras virtuales.
 
 Clase del 10 enero
 
 - [x] Continuar con la tercera práctica
+
+Clase del 13 enero
+
+- [x]Resolver dudas y entregar la tercera práctica.
+- [x]Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+- [x]Instalar y comenzar a utilizar un sistema de configuración.
+
+Clase del 17 enero
+
+- [x] Aprender a usar sistemas de provisionamiento.
+- [x] Ver máquinas virtuales ligeras y cómo trabajar con ellas
+
+Clase del 20 enero
+
+- [x] Aprender a usar sistemas de provisionamiento.
+- [x] Comenzar con sistemas de configuración
+
+Clase del 24 enero
+
+- [x] Aprender a usar sistemas de provisionamiento.
+- [x] Comenzar con sistemas de configuración
