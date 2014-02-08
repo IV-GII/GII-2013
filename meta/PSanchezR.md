@@ -198,9 +198,9 @@ Lista de objetivos de la clase 10/1/2014
  Lista de objetivos de la clase 20/1/2014
 =========================================
 
-[]Aprender a usar sistemas de provisionamiento.
+[+]Aprender a usar sistemas de provisionamiento.
 
-[]Comenzar con sistemas de configuración.
+[+]Comenzar con sistemas de configuración.
 
 
  Lista de objetivos de la clase 24/1/2014
