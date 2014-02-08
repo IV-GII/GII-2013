@@ -117,3 +117,14 @@ Clase del día 17/01/2014
 
 - [X] Aprender a usar sistemas de provisionamiento.
 - [X] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+Clase del día 20/01/2014
+
+- [X] Aprender a usar sistemas de provisionamiento.
+- [X] Comenzar con sistemas de configuración.
+
+
+Clase del día 24/01/2014
+
+- [X] Usar sistemas de provisionamiento.
+- 
