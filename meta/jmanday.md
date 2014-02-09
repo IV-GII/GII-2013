@@ -177,5 +177,20 @@ Otros objetivos:
 
 ###Clase del 13 de enero###
 * **[x]** Resolver dudas y entregar la tercera práctica.
-* **[ ]** Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
-* **[ ]** Instalar y comenzar a utilizar un sistema de configuración.
+* **[x]** Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+* **[x]** Instalar y comenzar a utilizar un sistema de configuración.
+
+
+###Clase del 17 de enero###
+* **[x]** Aprender a usar sistemas de aprovisionamiento.
+* **[x]** Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+
+###Clase del 20 de enero###
+* **[x]** Aprender a usar sistemas de aprovisionamiento.
+* **[x]** Comenzar con sistemas de configuración.
+
+
+###Clase del 17 de enero###
+* **[x]** Usar sistemas de provisionamiento.
+* **[x]** Ponerlos en práctica en una aplicación real.
