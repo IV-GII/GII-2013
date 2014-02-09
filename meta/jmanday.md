@@ -191,6 +191,6 @@ Otros objetivos:
 * **[x]** Comenzar con sistemas de configuración.
 
 
-###Clase del 17 de enero###
+###Clase del 24 de enero###
 * **[x]** Usar sistemas de provisionamiento.
 * **[x]** Ponerlos en práctica en una aplicación real.
