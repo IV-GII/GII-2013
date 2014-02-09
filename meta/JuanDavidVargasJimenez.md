@@ -30,7 +30,7 @@
 <br>
 [x]Comprender el concepto de software as a service y comprender los criterios necesarios para su elección.
 <br>
-[x]Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+[x]Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.
 
 #Objetivos de la clase del 11 de octubre#
 
