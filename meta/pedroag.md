@@ -101,3 +101,63 @@ Clase del 16 de diciembre de 2013
 
 * [] Comprender cómo los conceptos de almacenamiento virtual se trasladan a la nube.
 * [] Aprender a usar el almacenamiento virtual en la nube.
+
+Seminario del 19 de diciembre de 2013
+---------------------------------
+
+* [x] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+* [x] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+* [x] Conocer las aplicaciones y programas que se usan.
+* [x] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+
+Clase del 20 de diciembre de 2013
+--------------------------------
+
+* [x] Comenzar la tercera práctica
+* [x] Entender los diferentes componentes de la infraestructura como servicio.
+* [x] Aprender a usar máquinas virtuales, localmente y en la nube.
+* [x] Comprender las bases físicas de las infraestructuras virtuales.
+
+Clase del 10 de enero de 2014
+-----------------------------
+
+* [x] Continuar con la tercera práctica
+* [x] Terminar los ejercicios hasta este tema.
+* [x] Aclarar dudas relacionadas con infraestructuras virtuales.
+
+Clase del 13 de enero de 2014
+-----------------------------
+
+* [x] Resolver dudas y entregar la tercera práctica.
+* [x] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+* [x] Instalar y comenzar a utilizar un sistema de configuración.
+* [x] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
+* [x] Poner los conocimientos de Ruby en práctica en el uso de Chef.
+* [x] Crear herramientas ágiles para configuración de nuevas máquinas virtuales.
+* [x] Comenzar a usar YAML
+
+Clase del 17 de enero de 2014
+-----------------------------
+
+* [x] Aprender a usar sistemas de provisionamiento.
+* [x] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+* [x] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
+* [x] Entender los conceptos básicos devops y cómo se usan en la práctica.
+* [x] Ver los errores generales cometidos en la 3ª práctica
+
+Clase del 20 de enero de 2014
+-----------------------------
+
+* [x] Aprender a usar sistemas de provisionamiento.
+* [] Comenzar con sistemas de configuración.
+* [] Saber trabajar con diferentes alternativas y ofrecer la más adecuada en cada caso.
+* [] Entender los conceptos básicos devops y cómo se usan en la práctica.
+
+Clase del 24 de enero 2014
+--------------------------
+
+* [] Usar sistemas de provisionamiento.
+* [] Ponerlos en práctica en una aplicación real.
+* [x] Trabajar en grupo en GitHub
+* [x] Entender los conceptos básicos devops y cómo se usan en la práctica.
+* [x] Resolver dudas relacionadas con los proyectos de la última práctica.

@@ -135,13 +135,13 @@ Lista de objetivos de la clase 18/11/2013
 Lista de objetivos de la clase 25/11/2013
 ------------------------------------------
 
-[] Conocer la historia y origenes de este lenguaje
+[x] Conocer la historia y origenes de este lenguaje
 
 [] Entender los conceptos principales detras del mismo
 
-[] Conocer y saber usar la sintaxis
+[x] Conocer y saber usar la sintaxis
 
-[] Aprender las estructuras de datos y control principales
+[x] Aprender las estructuras de datos y control principales
 
 [] Instalar y usar bibliotecas
 
@@ -175,8 +175,43 @@ Lista de objetivos de la clase 20/12/2013
 [X] Comprender las bases físicas de las infraestructuras virtuales.
 
 
-Lista de objetivos de la clase 10/1/2014
+Clase del 10 de Enero de 2014
 -----------------------------------------
 
-[X] Continuar con la tercera práctica
+[X] Terminar los ejercicios hasta este tema.
 
+[X] Aclarar dudas relacionadas con infraestructuras virtuales.
+
+
+Clase del 13 de Enero de 2014
+-----------------------------------------
+
+[X] Resolver dudas y entregar la tercera práctica.
+
+[X] Entender el concepto de sistemas de provisionamiento de máquinas virtuales.
+
+[X] Instalar y comenzar a utilizar un sistema de configuración.
+
+
+Clase del 17 de Enero de 2014
+-----------------------------------------
+
+[X] Aprender a usar sistemas de provisionamiento.
+
+[X] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+
+
+Clase del 20 de Enero de 2014
+-----------------------------------------
+
+[X] Aprender a usar sistemas de provisionamiento.
+
+[X] Comenzar con sistemas de configuración.
+
+
+Clase del 24 de Enero de 2014
+-----------------------------------------
+
+[X] Usar sistemas de provisionamiento.
+
+[X] Ponerlos en práctica en una aplicación real.

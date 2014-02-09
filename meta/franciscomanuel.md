@@ -218,17 +218,17 @@ Lista de objetivos de la clase 13/01/2014
 
 [x] Crear herramientas ágiles para configuración de nuevas máquinas virtuales.
 
-[] Comenzar a usar YAML
+[x] Comenzar a usar YAML
 
 
 Lista de objetivos de la clase 17/01/2014
 =========================================
 
-[] Aprender a usar sistemas de provisionamiento.
+[x] Aprender a usar sistemas de provisionamiento.
 
-[] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+[x] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
 
-[] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
+[x] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
 
 [] Entender los conceptos básicos devops y cómo se usan en la práctica.
 
@@ -237,7 +237,7 @@ Lista de objetivos de la clase 17/01/2014
 Lista de objetivos de la clase 20/01/2014
 =========================================
 
-[] Aprender a usar sistemas de provisionamiento.
+[x] Aprender a usar sistemas de provisionamiento.
 
 [] Comenzar con sistemas de configuración.
 
