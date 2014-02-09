@@ -187,3 +187,7 @@
 [X] Entender los conceptos básicos devops y cómo se usan en la práctica.
 
 [X] Resolver dudas relacionadas con los proyectos de la última práctica.
+
+###Resumen
+
+Todos los objetivos cumplidos. En general ha sido muy útil todo lo aprendido, y con total seguridad le sacaré probecho a partir de este moemento, en todo lo aprendido.
