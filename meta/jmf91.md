@@ -124,8 +124,6 @@ Objetivos de esta sesión
 [x]Usar esos conocimientos en la configuración de una jaula chroot.
 Otros objetivos
 
-[]Entender en qué casos una virtualización "débil" puede ser más conveniente que una "fuerte"
-
 [x]Comprobar las notas de la práctica anterior
 
 [x]Recordar como se registran los objetivos en clase.
