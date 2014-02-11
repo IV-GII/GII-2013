@@ -243,7 +243,7 @@ Lista de objetivos de la clase 20/01/2014
 
 [x] Saber trabajar con diferentes alternativas y ofrecer la más adecuada en cada caso.
 
-[] Entender los conceptos básicos devops y cómo se usan en la práctica.
+[x] Entender los conceptos básicos devops y cómo se usan en la práctica.
 
 
 Lista de objetivos de la clase 24/01/2014
