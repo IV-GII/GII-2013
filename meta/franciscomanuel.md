@@ -230,7 +230,7 @@ Lista de objetivos de la clase 17/01/2014
 
 [x] Usar sistemas básicos de provisionamiento y comprender los casos de aplicación de cada uno de ellos.
 
-[] Entender los conceptos básicos devops y cómo se usan en la práctica.
+[x] Entender los conceptos básicos devops y cómo se usan en la práctica.
 
 [x] Ver los errores generales cometidos en la 3ª práctica
 
@@ -239,9 +239,9 @@ Lista de objetivos de la clase 20/01/2014
 
 [x] Aprender a usar sistemas de provisionamiento.
 
-[] Comenzar con sistemas de configuración.
+[x] Comenzar con sistemas de configuración.
 
-[] Saber trabajar con diferentes alternativas y ofrecer la más adecuada en cada caso.
+[x] Saber trabajar con diferentes alternativas y ofrecer la más adecuada en cada caso.
 
 [] Entender los conceptos básicos devops y cómo se usan en la práctica.
 
@@ -249,9 +249,9 @@ Lista de objetivos de la clase 20/01/2014
 Lista de objetivos de la clase 24/01/2014
 =========================================
 
-[] Usar sistemas de provisionamiento.
+[x] Usar sistemas de provisionamiento.
 
-[] Ponerlos en práctica en una aplicación real.
+[x] Ponerlos en práctica en una aplicación real.
 
 [x] Trabajar en grupo en GitHub
 
