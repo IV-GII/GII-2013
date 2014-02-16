@@ -228,13 +228,20 @@ Lista de objetivos de la clase 13/01/2014
 Lista de objetivos de la clase 17/01/2014
 =========================================
 
-[] Aprender a usar sistemas de provisionamiento.
+[X] Aprender a usar sistemas de provisionamiento.
 
-[] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
+[X] Ver máquinas virtuales ligeras y cómo trabajar con ellas.
 
 Lista de objetivos de la clase 20/01/2014
 =========================================
 
-[] Aprender a usar sistemas de provisionamiento.
+[X] Aprender a usar sistemas de provisionamiento.
 
-[] Comenzar con sistemas de configuración.
+[X] Comenzar con sistemas de configuración.
+
+Lista de objetivos de la clase 24/01/2014
+=========================================
+
+[X] Usar sistemas de provisionamiento.
+
+[X] Ponerlos en práctica en una aplicación real.
