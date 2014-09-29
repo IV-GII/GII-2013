@@ -15,3 +15,6 @@ Se amortiza el 25 % los años siguientes.
 * 2019: 0 $
 * 2020: 0 $
 * 2021: 0 $
+
+
+## Ejercicio 2
