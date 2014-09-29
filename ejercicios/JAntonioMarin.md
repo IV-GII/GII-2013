@@ -8,7 +8,7 @@ Busco un servidor para hacer la amortización a 4 y 7 años:
 **Caracteristicas:**
 SERVIDOR HP PROLIANT ML350E G8 XEON E5-2407 2.2 GHz / 2GB DDR3
 /500GB SATA LFF / DVD-RW / MATROX G200
-
+```
 Fabricante: Hewlett-Packard
 Código de Fabricante: 470065-691
 Dirección Web de Fabricante: http://www.hp.es
@@ -112,5 +112,6 @@ Profundidad: 739,9 mm
 Peso (Aproximado): 25,95 kg
 Garantía
 Garantía limitada: 3 Año(s)
+```
 
 **Precio: 1035€**
