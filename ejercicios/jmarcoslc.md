@@ -1,5 +1,5 @@
-Prueba de git
-============================
+Prueba de github
+==================
 
 ## Sesión 29-sept-2014
 
