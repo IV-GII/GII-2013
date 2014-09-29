@@ -13,8 +13,9 @@ Año 2015, 2016, 2017, 2018 y 2019: 149, 75 €
 Para la amortización a 7 años imaginaremos que el ordenador lo compramos en mitad del año, en este caso el 6/07/2015,
 
 Añortización a 7 años:
-Año 2015: 74,875 €
-Año 2016, 2017, 2018, 2019, 2020, 2021: 149,75 €
+
+Año 2015: 74,875 €, 
+Año 2016, 2017, 2018, 2019, 2020, 2021: 149,75 €, 
 Año 2022: 74, 875 € 
 
 **Ejercicio 2**
