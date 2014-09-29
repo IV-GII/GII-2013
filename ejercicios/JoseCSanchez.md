@@ -1,4 +1,4 @@
-<h1>Prácticas sesión 1</h1>
+<h2>Prácticas sesión 1</h2>
 
 <strong>Ejercicio 1</strong>
 
