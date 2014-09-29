@@ -51,3 +51,37 @@ El primer año sería solo los meses de octubre, noviembre y diciembre, así que
 * Año 2019: 66,13€
 * Año 2020: 66,13€
 * Año 2021: 49,60€
+
+
+## Ejercicio 2 ##
+
+**Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.**
+
+[VPS Hostinger](http://www.hostinger.es/hosting-vps): Plan 4 que consta de:
+
+* 4 GB de RAM
+* 9,6 GHz de CPU (Supondré que son 3 cores)
+* 80 GB de almacenamiento
+* 27.99€ / mes
+
+[Servidor cloud dinámico de 1&1](http://www.1and1.es/servidor-cloud-dinamico) con la siguiente configuración:
+
+* 3 vCores
+* 4 GB de RAM
+* 100 GB de almacenamiento
+* Plan máxima flexibilidad
+* 57,60€ / mes (0,08€ / hora)
+
+**Si se usa sólo un 1% del tiempo:**
+
+
+Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado: 27,99€ * 12 meses = 335,88€
+
+Con 1&1 pagaríamos (57,60€ * 12 meses) * 1% = 6,91€
+
+
+**Si se usa sólo un 10% del tiempo:**
+
+Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado: 27,99€ * 12 meses = 335,88€
+
+Con 1&1 pagaríamos (57,60€ * 12 meses) * 10% = 69,12€
