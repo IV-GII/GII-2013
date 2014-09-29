@@ -8,7 +8,7 @@ Tomamos de ejemplo el siguiente ordenador: <a href="http://www.pccomponentes.com
 
 Este ordenador tiene un precio de 645€ con un IVA del 21% (135,45€) y tenemos que calcular su valor de amortización a 4 y 7 años con una amortización del 26%. Los resultados serían:
 
-2014: 
+<p>2014:</p> 
 2015:
 2016:
 2017:
