@@ -13,6 +13,13 @@
 * []Usar los métodos de entrega de ejercicios propuestos para la asignatura usando GitHub.
 * []Manejar de forma básica la línea de órdenes de Linux.
 * []Aprender a instalar software libre en Linux.
+* 
+
+#Ejercicios
+
+* Ejercicio 1
+
+Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.
 
 
 #Clase del 30 de septiembre de 2014
