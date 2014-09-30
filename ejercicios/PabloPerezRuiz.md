@@ -4,9 +4,9 @@
 
 ###**Ejercicio 1: Consultar precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años.**
 
-(http://www.dynos.es/servidor-hp-proliant-ml350p-gen8-e5-2620v2-2.1-ghz-8gb-ddr3-5u--4514953642119__736978-425.html "SERVIDOR HP PROLIANT ML350P GEN8 E5-2620V2 2.1 GHz 8GB DDR3 5U")
+[SERVIDOR HP PROLIANT ML350P GEN8 E5-2620V2 2.1 GHz 8GB DDR3 5U](http://www.dynos.es/servidor-hp-proliant-ml350p-gen8-e5-2620v2-2.1-ghz-8gb-ddr3-5u--4514953642119__736978-425.html)
 
-El coste del servidor es de 2569€. La quitamos previamente el IVA al precio total:
+El coste del servidor es de 2569€. Le quitamos previamente el IVA al precio total:
 
 2569*0.79= 2029.51€ Suponiendo que adquirimos el equipo a principios de año, contamos el año entero a la hora de amortizar:
 
