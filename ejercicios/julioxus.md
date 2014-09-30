@@ -83,4 +83,4 @@ Con Amazon pagaríamos (0,041€ * 24h * 30 días * 12 meses) * 1% = 3,54€
 
 Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado: 27,99€ * 12 meses = 335,88€
 
-Con Amazon pagaríamos (0,041€ * 24h * 30 días * 12 meses) * 10% = 354,24
+Con Amazon pagaríamos (0,041€ * 24h * 30 días * 12 meses) * 10% = 35,42€
