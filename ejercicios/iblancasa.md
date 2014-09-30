@@ -11,7 +11,7 @@ Lista de objetivos Israel Blancas Álvarez
 El servidor tiene un precio de 645€.
 
 
-+El precio sin IVA (base imponible) es de 533.06€. El IVA es de 645-533.06=111,94€.
++ El precio sin IVA (base imponible) es de 533.06€. El IVA es de 645-533.06=111,94€.
 
 
 
@@ -25,3 +25,17 @@ Amortización:
 * Año 2016: 133,265€
 * Año 2017: 133,265€
 * Año 2018: 11,106*9=99,954€
+
+
+
+######Amortización a 7 años######
+Se amortiza un 14,29% de la base imponible/año. Es decir, 76,15€/año. 
+Suponiendo que lo comprásemos ahora, en el año 2014 solo amortizaría los meses de octubre, noviembre y diciembre (la amortización por mes es de 6,35€).
+
+Amortización:
+* Año 2014: 6.35*3=19,05€
+* Año 2015: 76,15€
+* Año 2016: 76,15€
+* Año 2017: 76,15€
+* Año 2018: 6,35*9=57,15€
+
