@@ -45,3 +45,24 @@
 * [] Entender el concepto de sistema de ficheros virtual usado en Linux para diferentes menesteres.
 * [] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura
 * [] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.
+
+#Ejercicios
+
+* Ejercicio 5
+ Instala el sistema de gestión de fuentes git
+
+* Ejercicio 6
+ 1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
+ 
+ 2.Modificar el readme y subir el fichero modificado.
+
+* Ejercicio 7
+ 1. Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
+
+ 2. Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
+ 
+* Ejercicio 8
+ 1. Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+ 2. Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+ 3. Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+ 4.Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
