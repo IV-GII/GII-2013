@@ -23,3 +23,15 @@
 [] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura  
 [] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.  
 ***
+##Clase del 6 de octubre de 2014
+
+[] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.  
+[] Comprender los niveles de virtualización y sus denominaciones genéricas.  
+[] Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.  
+[] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones  
+
+###Otros objetivos
+
+[] Contestar a la encuesta sobre la metodología de clase  
+[] Usar ficheros en el repositorio para los ejercicios.  
+[] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.  
