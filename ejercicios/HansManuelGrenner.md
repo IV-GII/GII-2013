@@ -41,22 +41,25 @@ Nuestra opción elegida para el servidor dedicado:
 * Disco Duro     --> 500 GB (2 x 500 SATA)
 * **Precio** 	 --> 19,90 € / mes
 
-En el caso del servidor cloud, no se concreta exactamente el hardware de la máquina, pero dispondremos de forma similar de:
+En el caso del servidor cloud dispondremos de forma similar de:
 
 * 2 Cores
 * 2 GB de memoria RAM
 * 500 GB de almacenamiento
 * **Precio** 	--> 64,80 €* / mes ( * Este precio depende del consumo, 0,09 € / hora)
 
-
-Para un uso del 1% el coste del servidor dedicado nunca varia, 19,90 € / mes mientras que el servidor cloud serían solo 0,65 € / mes.
-Para un uso del 10%, de la misma forma el precio del servidor dedicado serian 19,90 € / mes mientras que el servidor cloud 6,48 € / mes.
-
 A lo largo de un año el gasto total supondría :
 
 * **Servidor dedicado** --> 19,90 € * 12 = 238,8 € 
 
-* **Servidor cloud** --> 64,80 € * 12 = 777,6 €
-	* Uso del 1%  --> 7,77 €
-	* Uso del 10% --> 77,76 €
- 
+* **Servidor cloud** --> 
+	* Uso del 1%  --> 64,80 € * 12 * 0,01 = 7,77 €
+	* Uso del 10% --> 64,80 € * 12 * 0,10 = 77,76 €
+
+En el caso de Microsoft Azure el precio de una [máquina virtual Linux (A-Series)](http://azure.microsoft.com/es-es/pricing/calculator/?scenario=virtual-machines), de 2 Cores y 3,5 GB de RAM, ronda los €48,76 € / mes. Su consumo anual al 1% y 10% respectivamente supondría el siguiente gasto.
+
+* **Microsoft Azure** --> 
+	* Uso del 1%  --> 48,76 € * 12 * 0,01 = 5,85 €
+	* Uso del 10% --> 48,76 € * 12 * 0,10 = 58,51 €
+
+
