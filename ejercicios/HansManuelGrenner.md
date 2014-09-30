@@ -11,20 +11,20 @@ Dado que el IVA se puede deducir al 100% los costes de amortización se calcular
 * Para 4 años - Aplicando el tipo máximo --> 459 € * 0,26 = 119,34 € ( Durante 3 años )
  					     459 € * 0,22 = 100,98 € ( Último año )
 
-  1º - 3º año --> 119,34 €
-  4º año      --> 100,98 €
+	* 1º - 3º año --> 119,34 €
+	* 4º año      --> 100,98 €
 
 * Para 4 años - Aplicando un tipo lineal --> 459 € * 0,25 = 114,75 €
 
-  1º - 4º año --> 114,75 €
+	* 1º - 4º año --> 114,75 €
 
 
 * Para 7 años - Aplicando un tipo lineal --> 100% / 7 = 14,2 % , Salvo el primer año que será un 14,8% debido al resto de 0,6%
 					 --> 459 € * 0,148 = 67,93 €
 					     459 € * 0,142 = 65,18 €
 
- 1º año      --> 65,93 €
- 2º - 7º año --> 65,18 €
+	* 1º año      --> 65,93 €
+	* 2º - 7º año --> 65,18 €
 
 
 ##Ejercicio 2
