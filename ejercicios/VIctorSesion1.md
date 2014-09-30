@@ -2,8 +2,8 @@
 
 #Objetivos de la clase
 
-*Comenzar a entender los conceptos fundamentales relacionados con la virtualización.
-*Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.
+* Comenzar a entender los conceptos fundamentales relacionados con la virtualización.
+* Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.
 
 #Otros objetivos
 
