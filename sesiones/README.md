@@ -4,3 +4,4 @@
 
 * [Clase del 23 de septiembre de 2014](1.md).
 * [Clase del 29 de septiembre de 2014](2.md).
+* [Clase del 30 de septiembre de 2014](3.md).
