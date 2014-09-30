@@ -18,13 +18,15 @@ Este ordenador tiene un precio de 645€ con un IVA del 21% (135,45€) y tenemo
 
 <strong> EJERCICIO 2: Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo. </strong>
 
-<strong> EJERCICIO 3: ¿Qué tipo de virtualización usarías en cada caso?
+<strong> EJERCICIO 3: ¿Qué tipo de virtualización usarías en cada caso? Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones. </strong>
 
-Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones. </strong>
+<strong> EJERCICIO 4: Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado: Instalarlo y crear una aplicación contenedorizada </strong>
 
-<strong> EJERCICIO 4:Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+<strong> EJERCICIO 5: Instala el sistema de gestión de fuentes git.</strong>
 
-Avanzado Instalarlo y crear una aplicación contenedorizada </strong>
+<strong> EJERCICIO 6: Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.</strong>
+
+<strong> EJERCICIO 7: Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado. Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.</strong>
 
 
 
