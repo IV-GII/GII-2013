@@ -2,14 +2,14 @@
 
 **Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.**
 
-* En la tienda online de DELL podemos encontrar una gran variedad de ordenadores orientados al uso como servidores, he optado por el modelo mejorado del DELL PowerEdge T20 que se ofrece al precio de 459 Euros (Sin IVA). Su precio total incluido el IVA, que en caso de dispositvos electrónicas sería del 21%, es de 555,39 €.
+En la tienda online de DELL podemos encontrar una gran variedad de ordenadores orientados al uso como servidores, he optado por el modelo mejorado del DELL PowerEdge T20 que se ofrece al precio de 459 Euros (Sin IVA). Su precio total incluido el IVA, que en caso de dispositvos electrónicas sería del 21%, es de 555,39 €.
 
-Costes de Amortización a 4 y 7 años.
+*Costes de Amortización a 4 y 7 años.*
 Dado que el IVA se puede deducir al 100% los costes de amortización se calcularán sobre el precio base del dispostivo que son 459 €. La ley establece que el porcentaje máximo de amortización es del 26% anual y el periodo máximo no puede superar los 10 años. ( Supondremos que el equipo se compró a comienzos de año )
 
 
 * Para 4 años - Aplicando el tipo máximo --> 459 € * 0,26 = 119,34 € ( Durante 3 años )
-				  							 459 € * 0,22 = 100,98 € ( Último año )
+ 					     459 € * 0,22 = 100,98 € ( Último año )
 
   1º - 3º año --> 119,34 €
   4º año      --> 100,98 €
