@@ -13,11 +13,11 @@ Primero habrá que calcular el precio de la máquina sin el iva:
 
 Ahora con ese precio calculo las amortizaciones.
 
-** Para cuatro años **
+<strong>Para cuatro años</strong>
 
 Cada año le aplico el 25%, por lo tanto cada año se amortiza 199.17 €
 
-** Para siete años **
+<strong>Para siete años</strong>
 
 Año 1 - 20% - 159.33
 Año 2 - 20% - 159.33
