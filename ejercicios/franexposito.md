@@ -24,3 +24,25 @@ Para ello nos deduciremos en un primer momento la mayor parte al principio puest
 * Quinto año: 3476,93 * 10% = 347,693<br />
 * Sexto año: 3476,93 * 5% = 173,8465<br />
 * Séptimo año: 3476,93 * 5% = 173,8465<br />
+
+###Ejercicio 2.
+Para la comparación voy a utilizar dos de los servicios más conocidos: [Amazon EC2](http://aws.amazon.com/es/ec2/) y [Google Compute Engine](https://cloud.google.com/products/compute-engine/)<br />
+Características de la máquina de Amazon m1.medium:
+* CPU: 1 core
+* Memoria: 3,75GB 
+* Disco duro: 410GB
+* Precio: 0,126714105 euros/hora
+
+Características de la máquina de Google n1-standard-1-d:
+* CPU: 1 core
+* Memoria: 3,75GB
+* Disco duro: 420GB
+* Precio por hora: 0,114834658 euros/hora
+
+######Cálculo de los precios al 1% de uso:
+Amazon: 0,126714105 * 87,6 horas = 11,15084124 euros.<br />
+Google: 0,114834658 * 87,6 horas = 10,105449904 euros.<br />
+
+######Cálculo de los precios al 10% de uso:
+Amazon: 0,126714105 * 876 = 111,00155598 euros<br />
+Google: 0,114834658 * 876 horas = 100,595160408 euros<br />
