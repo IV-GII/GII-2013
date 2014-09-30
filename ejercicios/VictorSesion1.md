@@ -26,6 +26,11 @@
 
  2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
+* Ejercicio 4:
+ 1. Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+
+ 2. Avanzado Instalarlo y crear una aplicación contenedorizada
+
 #Clase del 30 de septiembre de 2014
 
 #Objetivos de esta sesión
