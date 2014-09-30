@@ -8,13 +8,23 @@ Tomamos de ejemplo el siguiente ordenador: <a href="http://www.pccomponentes.com
 
 Este ordenador tiene un precio de 645€ con un IVA del 21% (135,45€) y tenemos que calcular su valor de amortización a 4 y 7 años con una amortización del 26%. Los resultados serían:
 
-<p>2014:</p> 
+<p>2014: </p> 
 <p>2015:</p>
 <p>2016:</p>
-2017:
-2018:
-2019:
-2020:
+<p>2017:</p>
+<p>2018:</p>
+<p>2019:</p>
+<p>2020:</p>
+
+<strong> EJERCICIO 2: Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo. </strong>
+
+<strong> EJERCICIO 3: ¿Qué tipo de virtualización usarías en cada caso?
+
+Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones. </strong>
+
+<strong> EJERCICIO 4:Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+
+Avanzado Instalarlo y crear una aplicación contenedorizada </strong>
 
 
 
