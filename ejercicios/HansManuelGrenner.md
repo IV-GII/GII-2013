@@ -52,13 +52,13 @@ A lo largo de un año el gasto total supondría :
 
 * **Servidor dedicado** --> 19,90 € * 12 = 238,8 € 
 
-* **Servidor cloud** --> 
+* **Servidor cloud**
 	* Uso del 1%  --> 64,80 € * 12 * 0,01 = 7,77 €
 	* Uso del 10% --> 64,80 € * 12 * 0,10 = 77,76 €
 
 En el caso de Microsoft Azure el precio de una [máquina virtual Linux (A-Series)](http://azure.microsoft.com/es-es/pricing/calculator/?scenario=virtual-machines), de 2 Cores y 3,5 GB de RAM, ronda los €48,76 € / mes. Su consumo anual al 1% y 10% respectivamente supondría el siguiente gasto.
 
-* **Microsoft Azure** --> 
+* **Microsoft Azure**
 	* Uso del 1%  --> 48,76 € * 12 * 0,01 = 5,85 €
 	* Uso del 10% --> 48,76 € * 12 * 0,10 = 58,51 €
 
