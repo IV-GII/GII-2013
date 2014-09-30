@@ -11,7 +11,8 @@ Este [servidor] que cuesta 1744 € podriamos amortizarlo de la siguiente manera
   Primero tenemos que calcular el servidor sin IVA:  
   Le quitamos el 21% a 1744€ -> 1744/1,21=1441,32€   
   
-**En cuatro años seria cada año 436€ al año de amortización. _Al 25% los 4 años_**  
+**En cuatro años seria cada año 436€ al año de amortización.**  
+_Al 25% los 4 años_
 * 2014->360,33€
 * 2015->360,33€
 * 2016->360,33€
@@ -19,7 +20,7 @@ Este [servidor] que cuesta 1744 € podriamos amortizarlo de la siguiente manera
  
 
 **En siete años seria cada año unos 250€ al año de amortización.**  
-Al 15% los primeros 6 años y aal 10% el ultimo:  
+Al 15% los primeros 6 años y al 10% el ultimo:  
 * 2014->216,19€
 * 2015->216,19€
 * 2016->216,19€
