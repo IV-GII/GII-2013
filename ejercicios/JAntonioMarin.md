@@ -1,4 +1,19 @@
 #Ejercicios de Juan Antonio Marin
+
+##Sesión 30-sept-2014
+
+###Ejercicio 2:
+
+El primer proveedor donde voy a comparar es en [Arsys](http://www.arsys.es)
+
+El precio de un servidor dedicado con las siguientes caracteristicas:
+*Procesador: 1x2Cores x 1,87Ghz, 2GB de RAM, 2X160GB de HD
+Precio: 125€/mes
+
+El precio del cloud con las siguientes caracteristicas similares al anterior:
+*Procesador: 1x2Cores x 1,87Ghz, 2GB de RAM, 350GB de HD
+Precio: 110€/mes
+
 ##Sesión 29-sept-2014
 
 ###Ejercicio 1:
