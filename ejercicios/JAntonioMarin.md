@@ -1,4 +1,27 @@
 #Ejercicios de Juan Antonio Marin
+
+##Sesión 30-sept-2014
+
+###Ejercicio 2:
+
+Vamos a comparar los dos proveedores de servicios Amazon AWS y Bluemix de IBM:
+
+Primero vamos a ver el numero de horas que tiene el 1% de un año y el 10% de un año.
+365 dias X 24 horas = 8,760 horas X 1% = 87,6 horas al año
+365 dias X 24 horas = 8,760 horas X 10% = 876 horas al año
+
+El procesador no queda claro en ninguna de las dos plataformas, solo en amazon puedes seleccionar mas procesadores, la memoria ram es de 1GB en el caso de amazon y de 2GB en el caso de Bluemix. 5GB de disco duro en el caso de Amazon y 2GB de disco duro en Bluemix.
+
+Para el 1% de procesamiento basicamente los dos servicios serian viables porque amazon dan 750 horas de procesamiento, y Bluemix 375 horas gratuitas (Aunque la cuenta es gratuita durante un mes).
+
+Para el 10% ya si tendremos que pagar en ambos servicios, vamos a calcular cuanto en cada uno:
+
+Amazon precio por hora 0,013 dolares por hora, 876 horas - 750 gratuitas = 123 horas a pagar = 1,599 dolares.
+Bluemix precio por hora 0,05 dolares por hora, 876 horas - 375 gratuitas = 501 hora a pagas = 25,05 dolares.
+
+Como podemos observar el precio de amazon es mucho mas economico pero sus caracteristicas son inferiores.
+
+
 ##Sesión 29-sept-2014
 
 ###Ejercicio 1:
