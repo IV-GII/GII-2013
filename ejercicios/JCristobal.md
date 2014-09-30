@@ -33,4 +33,24 @@ Variaremos el porcentage cada año, deduciendo los primeros años algo menos y a
 *Septimo año:  al 20%  175,62 €
 
 
+##Sesión 30-sept-2014
+
+##Ejercicio 5
+
+
+Lo instalo basándome en en [enlace a la presentación que nos proporciona el profesor](http://www.slideshare.net/jjmerelo/introduccin-al-uso-git-y-github-para-trabajo-colaborativo) 
+
+
+
+Algún comando útil para usar:
+
+Para descargarme todo: git pull 
+Modifico los ficheros que deseo y con git status veo que archivos he modificado para mayor seguridad
+git add [archivo y ruta] del archivo modificado
+git commit para indicar el comentario
+git push para enviar
+
+
+
+
 
