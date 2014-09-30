@@ -6,4 +6,6 @@
 Este [servidor] que cuesta 1744 € podriamos amortizarlo de la siguiente manera:
 
 
+  En cuatro años seria: 
+
 
