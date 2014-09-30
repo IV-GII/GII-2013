@@ -7,6 +7,25 @@ El equipo que he elegido para calcular su amortización es el siguiente, y su p�
 SERVIDOR HP PROLIANT ML350E G8 XEON E5-2403 1.8 GHz 2GB 500GB DISCO DURO HDD 3.5" MATROX G200 de HP
 Su precio es 964.00 €
 
+Primero habrá que calcular el precio de la máquina sin el iva:
+
+964 / 1.21 = 796.69 €
+
+Ahora con ese precio calculo las amortizaciones.
+
+** Para cuatro años **
+
+Cada año le aplico el 25%, por lo tanto cada año se amortiza 199.17 €
+
+** Para siete años **
+
+Año 1 - 20% - 159.33
+Año 2 - 20% - 159.33
+Año 3 - 20% - 159.33
+Año 4 - 10% - 47.80
+Año 5 - 10% - 47.80
+Año 6 - 10% - 47.80
+Año 7 - 10% - 47.80
 
 
 
