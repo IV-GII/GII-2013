@@ -1,13 +1,22 @@
-#Objetivos
+#Clase del 23 de septiembre de 2014
 
-* [X] Conocer la historia de la Computación Virtual, sus orígenes y razones de su existencia.
-* [X] Conocer los conceptos relacionados con el proceso de virtualización tanto de software como de hardware y ponerlos en práctica.
-* [ ] Comprender la diferencia entre infraestructura virtual y real.
-* [ ] Justificar la necesidad de procesamiento virtual frente a real en el contexto de una infraestructura TIC de una organización.
+##Objetivos
 
-##Objetivos específicos
+* [X] Entender la metodología docente, de evaluación y de interacción de la asignatura
+* [X] Darse de alta y comprender el funcionamiento básico de GitHub y la lista de correo de la asignatura; conocer el resto de los recursos de la asignatura.
+* [X] Entender el concepto de software libre y su aplicación práctica en clase.
+* [X] Vernos las caras.
 
-* [ ] Conocer diferentes tecnologías relacionadas con la virtualización (Computación nube, Utility Computing, Software as a Service o Google AppSpot)
-* [ ] Conocer el concepto de software libre y su importancia dentro de la computación nube.
-* [ ] Entender el concepto de DevOps y las técnicas y tecnologías que cubre.
-* [ ] Usar el sistema de control de fuentes gitpara desarrollo colaborativo y para despliegue de aplicaciones en la nube.
+##Clase del 29 de septiembre de 2014
+
+##Objetivos
+
+* [X] Comenzar a entender los conceptos fundamentales relacionados con la virtualización.
+* [X] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.
+
+##Otros objetivos
+
+* [X] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura.
+* [ ] Usar los métodos de entrega de ejercicios propuestos para la asignatura usando GitHub.
+* [X] Manejar de forma básica la línea de órdenes de Linux.
+* [X] Aprender a instalar software libre en Linux.
