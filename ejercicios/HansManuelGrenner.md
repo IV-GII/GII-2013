@@ -54,9 +54,9 @@ Para un uso del 10%, de la misma forma el precio del servidor dedicado serian 19
 
 A lo largo de un año el gasto total supondría :
 
-* Servidor dedicado --> 19,90 € * 12 = 238,8 € 
+* **Servidor dedicado** --> 19,90 € * 12 = 238,8 € 
 
-* Servidor cloud --> 64,80 € * 12 = 777,6 €
-  Uso del 1%  --> 7,77 €
-  Uso del 10% --> 77,76 €
+* **Servidor cloud** --> 64,80 € * 12 = 777,6 €
+	* Uso del 1%  --> 7,77 €
+	* Uso del 10% --> 77,76 €
  
