@@ -18,3 +18,38 @@ Se amortiza el 25 % los años siguientes.
 
 
 ## Ejercicio 2
+
+Usando la web de 
+http://azure.microsoft.com/es-es/pricing/calculator/
+he configurado esta opcion:
+D1 series 1
+1 core 3,5 GB de RAM, 10 GB de SSD - 1 instancia - 72,03 €
+1 GB de base de datos 7,44 €
+500 GB de ancho de banda 44,24 €
+Total:
+123,71 € / mes
+€0,097/hr
+
+Servidor VPS Classic 1
+https://www.ovh.es/vps/vps-classic.xml
+
+1 vCore
+1 GB de RAM
+10 GB RAID 1
+100 MBPS
+Garantizaos 100000 GB/mes
+
+2,41 € /mes
+
+Comparacion de coste durante 12 meses con un 1 % de uso.
+Microsoft Azure: 123,711 € x 12 x 0,01 = 14,84 €
+VPS Classic : 2,41 € x 12 = 28,92 €
+
+Comparacion de coste durante 12 meses con un 10 % de uso.
+Microsoft Azure: 123,711 € x 12 x 0,10 = 148,45 €
+VPS Classic : 2,41 € x 12 = 28,92 €
+
+
+
+
+
