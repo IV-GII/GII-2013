@@ -64,24 +64,23 @@ El primer año sería solo los meses de octubre, noviembre y diciembre, así que
 * 80 GB de almacenamiento
 * 27.99€ / mes
 
-[Servidor cloud dinámico de 1&1](http://www.1and1.es/servidor-cloud-dinamico) con la siguiente configuración:
+[Servidor cloud en Amazon EC2](http://aws.amazon.com/es/ec2/pricing/) tipo t2.medium:
 
-* 3 vCores
+* 2 vCores
 * 4 GB de RAM
-* 100 GB de almacenamiento
-* Plan máxima flexibilidad
-* 57,60€ / mes (0,08€ / hora)
+* Almacenamiento elástico
+* $0,052 por hora = 0,041€ / hora
 
 **Si se usa sólo un 1% del tiempo:**
 
 
 Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado: 27,99€ * 12 meses = 335,88€
 
-Con 1&1 pagaríamos (57,60€ * 12 meses) * 1% = 6,91€
+Con Amazon pagaríamos (0,041€ * 24h * 30 días * 12 meses) * 1% = 3,54€
 
 
 **Si se usa sólo un 10% del tiempo:**
 
 Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado: 27,99€ * 12 meses = 335,88€
 
-Con 1&1 pagaríamos (57,60€ * 12 meses) * 10% = 69,12€
+Con Amazon pagaríamos (0,041€ * 24h * 30 días * 12 meses) * 10% = 354,24
