@@ -57,7 +57,9 @@ Calculamos todo en funcion de las horas que se utilizaria en un 1% y en un 10%.
 
 Azure nos sale mas rentable como podemos ver.
 
+***
 
+####Ejercicio 4
 
 
 
