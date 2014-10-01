@@ -50,7 +50,6 @@ Voy a proceder a comparar dos de los servidores cloud más conocidos como son [M
 
 * 2 núcleos
 * 7 GB RAM
-* 250 GB de disco
 * SSD de 40GB
 
 Precio: 0.388€ por hora.
