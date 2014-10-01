@@ -37,9 +37,25 @@ Al 15% los primeros 6 años y al 10% el ultimo:
 Para la comparación utilizaremos [Windows Azure](http://azure.microsoft.com/es-es/pricing/details/cloud-services/)
 y [Hostinger](http://www.hostinger.es/hosting-vps).  
 
+
+
 En Azure nos proponen lo siguiente:
+![](https://dl.dropboxusercontent.com/u/23854876/IV/Ejer2Azure.png)  
+A 0.0149€ la hora. Al mes nos sale por 11.18€ x 12 = 134.16€ al año.
+En Hostinger nos proponen lo siguiente:   
+![](https://dl.dropboxusercontent.com/u/23854876/IV/Ejer2Hostinger.png)  
+6.99€ al mes x 12 meses= 83.88€ al año.  
+
+Calculamos todo en funcion de las horas que se utilizaria en un 1% y en un 10%.
+
+* **Azure**
+  + 134.16*0.01=1.342€ al año si sólo se usa un 1% al año.
+  + 134.16*0.1=13.42€ al año si sólo se usa un 10% al año.
+* **Hostinger**
+  + Aquí tenemos el problema de que no se paga por lo que se usa si no que es una cuota mensual se utilice o no el servicio, nos alquilan el servicio. Entonces ya utilicemos el 10 o el 1% pagaremos 83.88€ al año.  
 
 
+Azure nos sale mas rentable como podemos ver.
 
 
 
