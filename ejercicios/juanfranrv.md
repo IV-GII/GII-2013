@@ -48,18 +48,17 @@ Voy a proceder a comparar dos de los servidores cloud más conocidos como son [M
 
 **Microsoft Azure Serie D2 para Windows**
 
--2 núcleos
--7 GB RAM
--250 GB de disco
--SSD de 40GB
+* 2 núcleos
+* 7 GB RAM
+* SSD de 40GB
 
 Precio: 0.388€ por hora.
 
 **Amazon EC2 m3.large**
 
--2 núcleos
--7.5 GB RAM
--SSD de 32GB
+* 2 núcleos
+* 7.5 GB RAM
+* SSD de 32GB
 
 Precio:$0.140 por hora = 0.111€
 
@@ -79,13 +78,13 @@ Precio:$0.140 por hora = 0.111€
 
 En mi máquina virtual con Linux Mint instalado, me he bajado el CDE del repositorio de Github correspondiente y lo he instalado en el sistema. Posteriormente, he empaquetado un reloj que te trae de prueba llamado "xclock" con la siguiente orden:
 
-![captura1]:(http://i.imgur.com/3awd0EF.png)
+![captura1](http://i.imgur.com/3awd0EF.png)
 
-![captura2]:(http://i.imgur.com/SsYHtFy.png)
+![captura2](http://i.imgur.com/SsYHtFy.png)
 
 Una vez empaquetado con CDE, me he cambiado a otra máquina virtual con Ubuntu 13 y he desempaquetado el reloj:
 
-![captura3]:(http://i.imgur.com/wovTtPZ.png)
+![captura3](http://i.imgur.com/wovTtPZ.png)
 
 Podemos observar como se puede ejecutar correctamente sin la necesidad del propio paquete.
 
