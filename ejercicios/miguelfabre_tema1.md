@@ -32,4 +32,26 @@ Ahora si podríamos jugar con el % a imputar cada año ya que tenemos un margen 
 * 2020 -->  6% = 35,94
 * 2021 -->  4% = 23,96
 
-	
+##Ejercicio 2
+
+**Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.**
+
+Vamos a comparar los dos servicios en la nube más populares, [Microsoft Azure](http://azure.microsoft.com/es-es/pricing/calculator/?scenario=virtual-machines) y [Amazon EC2](http://aws.amazon.com/es/ec2/pricing/):
+
+**Microsoft Azure Serie D3 para Linux**
+* 4 núcleos, 14 GB RAM, 100 GB SSD
+* €0,626/hr = $0,791/hr
+
+**Amazon EC2 m3.xlarge**
+* 4 núcleos, 15 GiB RAM, 2 x 40 SSD
+* $0.280 por hora
+
+Si usamos un 1% del tiempo:
+ * **Azure:** ($0,791x24hx365dias)*0,01 = 69,2916$
+ * **Amazon EC2** ($0,280x24hx365dias)*0,01 = 24,528$ 
+ 
+Si usamos un 10% del tiempo:
+ * **Azure:** ($0,791x24hx365dias)*0,1 = 692,916$
+ * **Amazon EC2** ($0,280x24hx365dias)*0,1 = 245,28$ 
+ 
+ Luego la opción Amazon es casi 3 veces más barata que la opción Azure.
