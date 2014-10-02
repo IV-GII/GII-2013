@@ -84,3 +84,19 @@ Con Amazon pagaríamos (0,041€ * 24h * 30 días * 12 meses) * 1% = 3,54€
 Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado: 27,99€ * 12 meses = 335,88€
 
 Con Amazon pagaríamos (0,041€ * 24h * 30 días * 12 meses) * 10% = 35,42€
+
+
+## Ejercicio 3.2 ##
+
+**Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
+
+He utilizado un script de python sencillo (holamundo.py) que se puede ejecutar desde mi sistema anfitrión usando el intérprete de python que tengo instalado:
+
+[captura1]: http://i.imgur.com/C5hMFuK.png
+[captura2]: http://i.imgur.com/lVxz2pX.png
+
+Después he descargado, compilado e instalado CDE para empaquetar el script y hacerlo portable a otra distribución de Linux sin necesidad de instalar el intérprete de python ni sus dependencias. En este caso vamos a ejecutar el paquete en mi máquina virtual de Ubuntu con una instalación limpia.
+
+[captura3]: http://i.imgur.com/iGAfsZ6.png
+
+Como podemos ver se ejecuta perfectamente la aplicación sin necesidad de instalar programas ni dependencias.
