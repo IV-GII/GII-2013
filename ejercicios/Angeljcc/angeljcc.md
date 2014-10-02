@@ -63,7 +63,9 @@ Azure nos sale mas rentable como podemos ver.
 ######_Instala el sistema de gestión de fuentes git_
 
 
-Para ello sólo hay que ejecutar en el terminal "sudo apt-get install git"
+Para ello sólo hay que ejecutar en el terminal "sudo apt-get install git"  
+>![](capturas/InstalarGit2.png)
+
 ***
 ####Ejercicio 6
 ######_Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado._
