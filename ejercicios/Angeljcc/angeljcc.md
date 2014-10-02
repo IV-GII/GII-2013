@@ -64,15 +64,18 @@ Azure nos sale mas rentable como podemos ver.
 
 
 Para ello sólo hay que ejecutar en el terminal "sudo apt-get install git"  
->![](capturas/InstalarGit2.png)
-
+![](./capturas/InstalarGit2.png)
 ***
 ####Ejercicio 6
 ######_Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado._
 
+Utilizamos para clonar un proyecto en github, en este caso no lo he creado porque he utilizado el de la asignatura para tenerlo en el pc.
 
+```sh
+git clone https://github.com/angeljcc/GII-2014.git
+```
 
-probando ejreañkdfañlsdkfjñalksdjfñklajsd
+![](./capturas/Ejercicio6.png)
 ***
 
 
