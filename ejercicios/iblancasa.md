@@ -1,4 +1,4 @@
-Lista de objetivos Israel Blancas Álvarez
+Lista de ejercicios Israel Blancas Álvarez
 ============================
 
 ##Sesión 29-09-2014##
