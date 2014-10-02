@@ -13,12 +13,10 @@ Considerando que lo hemos comprado a principio de año:
 
 Habría que imputar el máximo permitido todos los años para poder cubrir el total del valor en los 4 años.
 
-2015 --> 25% = 149,75€
-2016 --> 25% = 149,75€
-2017 --> 25% = 149,75€
-2018 --> 25% = 149,75€
-
-a
+* 2015 --> 25% = 149,75€
+* 2016 --> 25% = 149,75€
+* 2017 --> 25% = 149,75€
+* 2018 --> 25% = 149,75€
 	
 ###Amortización a 7 años:
 
