@@ -12,22 +12,26 @@ Teniendo en cuenta esta definición, vamos a analizar cómo podemos amortizar el
 Considerando que lo hemos comprado a principio de año:
 
 Habría que imputar el máximo permitido todos los años para poder cubrir el total del valor en los 4 años.
-	* 2015 --> 25% = 149,75€
-	* 2016 --> 25% = 149,75€
-	* 2017 --> 25% = 149,75€
-	* 2018 --> 25% = 149,75€
+
+2015 --> 25% = 149,75€
+2016 --> 25% = 149,75€
+2017 --> 25% = 149,75€
+2018 --> 25% = 149,75€
+
+a
 	
 ###Amortización a 7 años:
 
 Considerando que lo hemos comprado a principio de año:
 
 Ahora si podríamos jugar con el % a imputar cada año ya que tenemos un margen de tiempo mayor, por lo tanto, vamos a amortizar el mayor porcentaje posible al principio (cuando el valor del producto aún no se ha devaluado) disminuyendo progresivamente conforme pasan los años (que el valor del producto irá decreciendo).
-	* 2015 --> 25% = 149,75
-	* 2017 --> 22% = 131,78
-	* 2018 --> 18% = 107,82
-	* 2018 --> 15% = 89,85
-	* 2019 --> 10% = 59,9
-	* 2020 -->  6% = 35,94
-	* 2021 -->  4% = 23,96
+
+* 2015 --> 25% = 149,75
+* 2017 --> 22% = 131,78
+* 2018 --> 18% = 107,82
+* 2018 --> 15% = 89,85
+* 2019 --> 10% = 59,9
+* 2020 -->  6% = 35,94
+* 2021 -->  4% = 23,96
 
 	
