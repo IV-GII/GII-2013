@@ -54,4 +54,39 @@ Si usamos un 10% del tiempo:
  * **Azure:** ($0,791x24hx365dias)*0,1 = 692,916$
  * **Amazon EC2** ($0,280x24hx365dias)*0,1 = 245,28$ 
  
- Luego la opción Amazon es casi 3 veces más barata que la opción Azure.
+Luego la opción Amazon es casi 3 veces más barata que la opción Azure.
+
+##Ejercicio 3
+
+**1.¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro**
+
+
+**2.Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
+
+
+##Ejercicio 4
+
+**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**
+
+- Mostrar la versión de docker instalada --> docker version
+- Buscar una imagen --> docker search <nombre_imagen>
+- Descargar una imagen --> docker pull learn/<nombre_imagen>
+- Ejecutar una imagen --> docker run learn/<nombre_imagen> <comando_a_ejecutar>
+- Instalar una utilidad en el contenedor de la imagen --> docker run learn/<nombre_imagen> apt-get install -y <utilidad>
+- Guardar cambios (al haber instalado alguna utilidad en el contenedor) --> commit <ID> learn/<utilidad>
+- Encontrar el ID del contenedor creado instalando una utilidad --> docker ps -l
+- Mostrar una lista con todos los contenedores que están siendo ejecutados --> docker ps
+- Compartir tu imagen con otros --> docker push learn/<nombre_imagen>
+
+##Ejercicio 5
+
+**Instala el sistema de gestión de fuentes git**
+
+Para instalar git en Linux, únicamente hay que proceder como se hace habitualmente:
+*sudo apt-get install git*
+Después, para obtener tu carpeta de GitHub
+*git clone https://github.com/miguelfabre/GII-2014.git*
+
+##Ejercicio 6
+
+
