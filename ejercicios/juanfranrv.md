@@ -19,24 +19,24 @@ El IVA es 21% que sería un precio de 85,32€ que deberiamos de restar al total
 
 Teniendo en cuenta que obtenemos un 25% (100%/4) del precio total del servidor cada año:
 
-*Año 2014: 20,03€ de 3 meses que quedan de 2014 contando desde el día 1/10/2014
-*Año 2015: 80,15€
-*Año 2016: 80,15€
-*Año 2017: 80,15€
-*Año 2018: 60,11€ de los 9 meses restantes para completar el cuarto año.
+* Año 2014: 20,03€ de 3 meses que quedan de 2014 contando desde el día 1/10/2014
+* Año 2015: 80,15€
+* Año 2016: 80,15€
+* Año 2017: 80,15€
+* Año 2018: 60,11€ de los 9 meses restantes para completar el cuarto año.
 
 **Coste de amortización a siete años:**
 
 Teniendo en cuenta que obtenemos un 14,28% (100%/7) del precio total del servidor cada año:
 
-*Año 2014: 11,44€ de 3 meses que quedan de 2014 contando desde el día 1/10/2014
-*Año 2015: 45,78€
-*Año 2016: 45,78€
-*Año 2017: 45,78€
-*Año 2018: 45,78€
-*Año 2019: 45,78€
-*Año 2020: 45,78€
-*Año 2021: 34,33€ de los 9 meses restante para completar el séptimo año.
+* Año 2014: 11,44€ de 3 meses que quedan de 2014 contando desde el día 1/10/2014
+* Año 2015: 45,78€
+* Año 2016: 45,78€
+* Año 2017: 45,78€
+* Año 2018: 45,78€
+* Año 2019: 45,78€
+* Año 2020: 45,78€
+* Año 2021: 34,33€ de los 9 meses restante para completar el séptimo año.
 
 ## Sesión 30-sept-2014 ##
 
@@ -65,13 +65,13 @@ Precio:$0.140 por hora = 0.111€
 
 **Usando sólo un 1% del tiempo:**
 
-*Con Azure pagaríamos (0.388€ * 24h * 30 días * 12 meses) * 0.01 = 33,52€
-*Con Amazons pagaríamos (0.111€ * 24h *30 días * 12 meses) * 0.01 = 9,59€
+* Con Azure pagaríamos (0.388€ * 24h * 30 días * 12 meses) * 0.01 = 33,52€
+* Con Amazons pagaríamos (0.111€ * 24h *30 días * 12 meses) * 0.01 = 9,59€
 
 **Usando el 10% del tiempo:**
 
-*Con Azure pagaríamos (0.388€ * 24h * 30 días * 12 meses) * 0.1 = 335,2€
-*Con Amazons pagaríamos (0.111€ * 24h *30 días * 12 meses) * 0.1 = 95,9€
+* Con Azure pagaríamos (0.388€ * 24h * 30 días * 12 meses) * 0.1 = 335,2€
+* Con Amazons pagaríamos (0.111€ * 24h *30 días * 12 meses) * 0.1 = 95,9€
 
 ### Ejercicio 3.2 ###
 
@@ -79,13 +79,13 @@ Precio:$0.140 por hora = 0.111€
 
 En mi máquina virtual con Linux Mint instalado, me he bajado el CDE del repositorio de Github correspondiente y lo he instalado en el sistema. Posteriormente, he empaquetado un reloj que te trae de prueba llamado "xclock" con la siguiente orden:
 
-[captura1]: http://i.imgur.com/3awd0EF.png
+![captura1]:(http://i.imgur.com/3awd0EF.png)
 
-[captura2]: http://i.imgur.com/SsYHtFy.png
+![captura2]:(http://i.imgur.com/SsYHtFy.png)
 
 Una vez empaquetado con CDE, me he cambiado a otra máquina virtual con Ubuntu 13 y he desempaquetado el reloj:
 
-[captura3]: http://i.imgur.com/wovTtPZ.png
+![captura3]:(http://i.imgur.com/wovTtPZ.png)
 
 Podemos observar como se puede ejecutar correctamente sin la necesidad del propio paquete.
 
