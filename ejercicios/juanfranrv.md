@@ -1,11 +1,11 @@
-Ejercicios de Juan Francisco Rodríguez Vílchez#
+Ejercicios de Juan Francisco Rodríguez Vílchez
 ================================================
 
 ## Sesión 29-sept-2014 ##
 
 ### Ejercicio 1 ###
 
-** Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema. **
+**Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.**
 
 Según la ley se establece que el porcentaje máximo de amortización es del 26% anual con un periodo máximo de 10 años.
 
@@ -71,6 +71,25 @@ Precio:$0.140 por hora = 0.111€
 
 * Con Azure pagaríamos (0.388€ * 24h * 30 días * 12 meses) * 0.1 = 335,2€
 * Con Amazons pagaríamos (0.111€ * 24h *30 días * 12 meses) * 0.1 = 95,9€
+
+### Ejercicio 3.2 ###
+
+**Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
+
+En mi máquina virtual con Linux Mint instalado, me he bajado el CDE del repositorio de Github correspondiente y lo he instalado en el sistema. Posteriormente, he empaquetado un reloj que te trae de prueba llamado "xclock" con la siguiente orden:
+
+![captura1](http://i.imgur.com/3awd0EF.png)
+
+![captura2](http://i.imgur.com/SsYHtFy.png)
+
+Una vez empaquetado con CDE, me he cambiado a otra máquina virtual con Ubuntu 13 y he desempaquetado el reloj:
+
+![captura3](http://i.imgur.com/wovTtPZ.png)
+
+Podemos observar como se puede ejecutar correctamente sin la necesidad del propio paquete.
+
+
+
 
 
 
