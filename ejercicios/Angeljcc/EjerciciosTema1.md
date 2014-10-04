@@ -74,8 +74,22 @@ Utilizamos para clonar un proyecto en github, en este caso no lo he creado porqu
 ```sh
 git clone https://github.com/angeljcc/GII-2014.git
 ```
-
 ![](./capturas/Ejercicio6.png)
+
+Añadimos al repo local el archivo README:
+```sh
+git add README.md 
+```
+Fijamos los cambios añadiendo un mensaje 
+```sh
+git commit -m "Primer cambio"
+```
+
+Subimos los cambios al repositorio remoto
+```sh
+git push origin master
+```
+
 ***
 
 
