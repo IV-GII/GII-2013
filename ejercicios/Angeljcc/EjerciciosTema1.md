@@ -89,21 +89,63 @@ Subimos los cambios al repositorio remoto
 ```sh
 git push origin master
 ```
+***
+####Ejercicio 7
+######_Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado._
+
+He creado tres grupos: buenos, malos y regular, y les he asignado los procesos chrome, kate y bash respectivamente.
+
+Tras unos minutos de uso, mostramos los resultados:  
+```sh
+cat buenos/cpuacct.usage
+1219132667
+``` 
+ 
+```sh
+cat malos/cpuacct.usage
+112038054
+``` 
+```sh
+cat regulares/cpuacct.usage
+111929791
+```   
+
+
+El navegador es el que más a consumido.
+
 
 ***
+####Ejercicio 9
+
+######_Comprobar si el procesador o procesadores instalados lo tienen. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?_
+
+- El modelo del procesador es un Intel(R) Core(TM) i7-2630QM CPU @ 2.00GHz  
+
+Comprobamos que la tecnologia que utiliza intel para la virtualización está activada:  
+
+![Ejercicio9](capturas/Ejercicio9.png)  
+***
+####Ejercicio 10
+######_Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok._
 
 
+```sh
+kvm-op
 
+```
+No estaba instalado en el SO, y me sugeria que lo instalase con la siguiente orden:
+```sh
+apt-get install cpu-checker
+```
+Una vez instalado esto es lo que nos muestra:
+![](./capturas/Ejercicio10.png)  
+Por lo tanto el módulo **KMV** esta activado en el kernel de mi SO.
+***
 
+####Ejercicio 12
+######_Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente)._
 
-
-
-
-
-
-
-
-
+Para instalar 
 
 
 
