@@ -15,13 +15,13 @@
 - [x] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux  
 - [x] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.  
 - [x] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa.  
-- [ ] Comenzar a usar git desde línea de órdenes y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.  
+- [x] Comenzar a usar git desde línea de órdenes y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.  
 
 ####Otros objetivos
 
 - [x] Entender el concepto de sistema de ficheros virtual usado en Linux para diferentes menesteres.  
 - [x] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura  
-- [ ] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.  
+- [x] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.  
 ***
 ##Clase del 6 de octubre de 2014
 
@@ -32,6 +32,6 @@
 
 ####Otros objetivos
 
-[] Contestar a la encuesta sobre la metodología de clase  
-[] Usar ficheros en el repositorio para los ejercicios.  
-[] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.  
+- [x] Contestar a la encuesta sobre la metodología de clase 
+- [x] Usar ficheros en el repositorio para los ejercicios.  
+- [] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.  
