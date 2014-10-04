@@ -58,6 +58,7 @@ Restricción y medición de recursos: cgroups #
 
 Este [vídeo de RedHat](http://www.youtube.com/watch?v=KX5QV4LId_c) explica cómo y en qué ocasiones se debe usar cgroups para gestionar los recursos de un servidor.
 ### Ejercicio 6
+Prueba modificación
 ### Ejercicio 7
 ### Ejercicio 8
 ### Ejercicio 9
