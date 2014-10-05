@@ -25,6 +25,9 @@ Para la elaboracíon del ejerccio he elegido dos servidores de la pagina 1&1 el 
    Haciendo uso del 1%: 2592.09 €
    Haciendo uso del 10%: 2356.45 €
 
+**Ejercicio 3.** 
+  **1.** ¿Qué tipo de virtualización utilizarias en cada caso?
+  **2.** ¿Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes           distribuciones.?
 
 
 
