@@ -15,6 +15,17 @@ Por lo tanto tenemos 599.61 * 14.28 = 85.62
 
 **Ejercicio 2.** Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
 
+Para la elaboracíon del ejerccio he elegido dos servidores de la pagina 1&1 el [servidor dedicado](http://www.1and1.es/servidores-dedicados?__lf=Order-Tariff&linkId=hd.subnav.servidores-dedicados) y el [servidor cloud](http://www.1and1.es/servidor-cloud-dinamico?__lf=Order-Tariff&linkId=hd.subnav.servidor-cloud-dinamico) tienen unos precios respectivamente de 19.99 €/mes y 218.79 €/mes.
+
+**Servidor dedicado:** 19.99 * 12 = 239.88 €
+  Haciendo uso del 1%: 237.48 €
+  Haciendo uso del 10%: 215.89 €
+  
+**Servidor cloud:** 218.79 * 12 = 2618.28 €
+   Haciendo uso del 1%: 2592.09 €
+   Haciendo uso del 10%: 2356.45 €
+
+
 
 
 
