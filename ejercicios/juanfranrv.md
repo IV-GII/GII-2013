@@ -9,9 +9,9 @@ Ejercicios de Juan Francisco Rodríguez Vílchez
 
 Según la ley se establece que el porcentaje máximo de amortización es del 26% anual con un periodo máximo de 10 años.
 
-Precio del servidor= 405,92€, incluido el IVA por lo que debemos de quitarselo:
+Precio del servidor= 405,92€, incluido el IVA por lo que deberemos de quitarselo:
 
-El IVA es de 21% que sería un precio de 85,32€ que deberiamos de restar al total, obteniendo un precio final de 320,6€.
+El IVA es 21% que sería un precio de 85,32€ que deberiamos de restar al total obteniendo un precio final de 320,6€.
 
 [Servidor elegido](http://www.amazon.es/HP-ProLiant-MicroServer-G8-Servidor/dp/B00DJVRVFE/ref=sr_1_8?ie=UTF8&qid=1411980980&sr=8-8&keywords=servidor )
 
@@ -91,9 +91,26 @@ Podemos observar como se puede ejecutar correctamente sin la necesidad del propi
 
 ### Ejercicio 4 ###
 
-**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.Avanzado Instalarlo y crear una aplicación contenedorizada.**
+**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado: Instalarlo y crear una aplicación contenedorizada.**
 
+He procedido a descargar docker siguiente el siguiente tutorial: http://codehero.co/como-instalar-y-usar-docker/ y he arreglado el siguiente fallo que me daba:
 
+"Cannot connect to the Docker daemon. Is 'docker -d' running on this host?"
+
+Instalando "sudo apt-get install apparmor" lo he conseguido arreglar.
+
+Después de instalarlo, he procedido a descargar la misma imagen del tutorial:
+
+![captura8](http://i.imgur.com/4qbbjYN.png)
+
+Una vez descargada, he ejecutado la terminal de la imagen:
+
+![captura9](http://i.imgur.com/JwrIemI.png)
+
+En dicha terminal he instalado Python y nano para escribir un script en Python que nos permite saber si un número es par o impar. Lo he guardado en usr/bin para ejecutarlo posteriormente.
+
+"docker commit" para guardar los cambios en una imagen y con "docker images" podemos ver las imágenes creadas
+[NO TERMINADO]
 
 ### Ejercicio 5 ###
 
@@ -105,13 +122,13 @@ Podemos observar como se puede ejecutar correctamente sin la necesidad del propi
 
 **Crear un proyecto y descargárselo con git: Al crearlo se marca la opción de incluir el fichero README y modificar el readme y subir el fichero modificado.**
 
-He creado un proyecto llamado "probando" en GitHub con el fichero README incluido.
+He creado un proyecto en GitHub con el fichero README incluido llamado "probando".
 
 Me lo he bajado con el siguiente comando y lo he modificado:
 
 ![captura5](http://i.imgur.com/tQVs1Qq.png)
 
-Para subirlo he ejecutado los siguiente comandos:
+Ahora para subirlo he ejecutado los siguiente comandos:
 
 ![captura6](http://i.imgur.com/oKZYwzJ.png)
 
