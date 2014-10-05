@@ -101,7 +101,7 @@ Instalando "sudo apt-get install apparmor" lo he conseguido arreglar.
 
 Después de instalarlo, he procedido a descargar la misma imagen del tutorial con:
 
-#sudo docker pull learn/tutorial
+# sudo docker pull learn/tutorial
 
 Una vez descargada, he ejecutado la terminal de la imagen:
 
