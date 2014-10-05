@@ -105,9 +105,11 @@ Avanzado Instalarlo y crear una aplicación contenedorizada.**
 
 ### Ejercicio 6 ###
 
-**Crear un proyecto y descargárselo con git:
+**
+Crear un proyecto y descargárselo con git:
 * Al crearlo se marca la opción de incluir el fichero README. 
-* Modificar el readme y subir el fichero modificado.**
+* Modificar el readme y subir el fichero modificado.
+**
 
 He creado un proyecto en GitHub con el fichero README incluido llamado "probando".
 
