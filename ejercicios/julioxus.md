@@ -130,3 +130,15 @@ En esta imagen podemos ver las imágenes que tenemos ya creadas con sus respecti
 Finalmente podremos ejecutar el script de esta forma:
 
 ![captura5](http://i.imgur.com/CWKDjjP.png)
+
+## Ejercicio 6 ##
+
+He creado un proyecto en GitHub con el fichero readme incluido.
+
+Lo he descargado con git, y he añadido información al README haciendo lo siguiente:
+
+![captura6](http://i.imgur.com/1egEtNj.png)
+
+Aquí podemos ver cómo se ve en GitHub actualizado:
+
+![captura7](http://i.imgur.com/dPMViHs.png)
