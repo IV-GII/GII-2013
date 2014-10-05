@@ -11,7 +11,7 @@ Según la ley se establece que el porcentaje máximo de amortización es del 26%
 
 Precio del servidor= 405,92€, incluido el IVA por lo que deberemos de quitarselo:
 
-El IVA es 21% que sería un precio de 85,32€ que deberiamos de restar al total obteniendo un precio final de 320,6€.
+El IVA es de 21% que sería un precio de 85,32€ que deberiamos de restar al total, obteniendo un precio final de 320,6€.
 
 [Servidor elegido](http://www.amazon.es/HP-ProLiant-MicroServer-G8-Servidor/dp/B00DJVRVFE/ref=sr_1_8?ie=UTF8&qid=1411980980&sr=8-8&keywords=servidor )
 
@@ -128,7 +128,7 @@ Me lo he bajado con el siguiente comando y lo he modificado:
 
 ![captura5](http://i.imgur.com/tQVs1Qq.png)
 
-Ahora para subirlo he ejecutado los siguiente comandos:
+Para subir el fichero modificado he ejecutado los siguiente comandos:
 
 ![captura6](http://i.imgur.com/oKZYwzJ.png)
 
