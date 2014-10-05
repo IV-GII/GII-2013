@@ -134,7 +134,7 @@ Para subir el fichero modificado he ejecutado los siguiente comandos:
 
 Finalmente, como podemos observar el fichero readme se ha modificado correctamente:
 
-![captura6](http://i.imgur.com/OKCxVaz.png)
+![captura6](http://i.imgur.com/3XYPqy0.png)
 
 
 
