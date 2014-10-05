@@ -24,17 +24,17 @@ Vamos a realizar una comparación de precios entre servicios de alojamiento en I
   * 4GB RAM
   * 600GB Disco
   
-- Precio anual en un *Servidor Dedicado*: 203,3€/mes * 12 = 2439,6€/año.
-- Precio anual en *Cloud Server*: 331,2€/mes (0.46€/hora) * 12 = 3974,4€/año.
+- Precio anual en un *Servidor Dedicado* : 203,3€/mes * 12 = 2439,6€/año.
+- Precio anual en *Cloud Server* : 331,2€/mes (0.46€/hora) * 12 = 3974,4€/año.
 
-Vamos a realizar comparaciones según el porcentaje de uso:
+Vamos a realizar comparaciones según el porcentaje de uso :
   Para un servidor dedicado pagaríamos siempre lo mismo, ya utilicemos un 1%, 10%. Ya que el pago se realiza por mes y   no por uso.
 
-* Si se utiliza un 1% del tiempo:
+* Si se utiliza un 1% del tiempo :
   - Servidor Dedicado: 2439,6€/año (203,3€ * 12, Pago fijo al mes).
   - Cloud Server: 40,296€/año (8760horas/año * 0.46€/h = 4029,6€ aproximadamente).
 
-*Si se utiliza un 10% del tiempo:
+*Si se utiliza un 10% del tiempo :
   - Servidor Dedicado: 2439,6€/año (203,3€ * 12, Pago fijo al mes).
   - Cloud Server: 402,96€/año (8760horas/año * 0.46€/h = 4029,6€ aproximadamente).
    
