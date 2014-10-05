@@ -91,9 +91,7 @@ Podemos observar como se puede ejecutar correctamente sin la necesidad del propi
 
 ### Ejercicio 4 ###
 
-**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
-
-Avanzado Instalarlo y crear una aplicación contenedorizada.**
+**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.Avanzado Instalarlo y crear una aplicación contenedorizada.**
 
 
 
@@ -105,10 +103,7 @@ Avanzado Instalarlo y crear una aplicación contenedorizada.**
 
 ### Ejercicio 6 ###
 
-**Crear un proyecto y descargárselo con git:
-
-* Al crearlo se marca la opción de incluir el fichero README. 
-* Modificar el readme y subir el fichero modificado.**
+**Crear un proyecto y descargárselo con git: Al crearlo se marca la opción de incluir el fichero README y modificar el readme y subir el fichero modificado.**
 
 He creado un proyecto en GitHub con el fichero README incluido llamado "probando".
 
