@@ -7,7 +7,7 @@ Para proceder al calculo de la amortización de este equipo para un periodo de 4
 Por lo tanto tenemos 759 * 0.26 = 197.34€ que es la perdida de valor de nuestro equipo cada año.
 
 
-**Ejercicio 2.**
+**Ejercicio 2.** Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
 
 
 
