@@ -104,7 +104,10 @@ Para arreglarlo he usado:
 ```
 
 Después de instalarlo, he procedido a descargar la misma imagen del tutorial con:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7219edfb1244868f344435d78dd5ab12b700108d
 ```sh
   sudo docker pull learn/tutorial
 ```
