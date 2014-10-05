@@ -17,7 +17,7 @@ Cada año se amortizaría un 14'3% lo que nos daría una cantidad aproximada de 
 
 #Ejercicio 2
 
-Vamos a realizar una comparación de precios entre servicios de alojamiento en Internet y de proveedores de servicios en la nube. Hemos escogido como proveedor a la compañía *Acens*.
+Vamos a realizar una comparación de precios entre servicios de alojamiento en Internet y de proveedores de servicios en la nube. Hemos escogido como proveedor a la compañía [*Acens*](http://www.acens.com/).
 
 - Características del servidor:
   * 4 cores
