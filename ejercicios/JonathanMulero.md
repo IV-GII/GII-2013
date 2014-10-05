@@ -18,9 +18,12 @@ elegiremos una amortización de:
 1er año: 26%  193,18€
 2º año:  25%  185,75€
 3er año: 25%  185,75€
-4º año:  24%  178,3#
+4º año:  24%  178,3€
+
+**Amortización en 7 años**
 
 Para 7 años:
+Haremos lo mismo que para 4 años:
 
 1er año: 26%  193,18€
 2º año:  20%  148,6€
