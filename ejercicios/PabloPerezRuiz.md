@@ -47,7 +47,7 @@ El coste del servidor es de 2569€. Le quitamos previamente el IVA al precio to
   
   
 
-###Ejercicio 2: 
+###Ejercicio 3: 
 ####¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
 ####Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
