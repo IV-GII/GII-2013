@@ -93,15 +93,21 @@ Podemos observar como se puede ejecutar correctamente sin la necesidad del propi
 
 **Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado: Instalarlo y crear una aplicación contenedorizada.**
 
-He procedido a descargar docker siguiente el siguiente tutorial: http://codehero.co/como-instalar-y-usar-docker/ y he arreglado el siguiente fallo que me daba:
+He procedido a descargar docker siguiendo el siguiente tutorial: http://codehero.co/como-instalar-y-usar-docker/ y me daba el siguiente fallo:
 
 "Cannot connect to the Docker daemon. Is 'docker -d' running on this host?"
 
-Instalando "sudo apt-get install apparmor" lo he conseguido arreglar.
+Para arreglarlo he usado:
+
+```sh
+ "sudo apt-get install apparmor" 
+```
 
 Después de instalarlo, he procedido a descargar la misma imagen del tutorial con:
 
+```sh
   sudo docker pull learn/tutorial
+```
 
 Una vez descargada, he ejecutado la terminal de la imagen:
 
@@ -109,8 +115,22 @@ Una vez descargada, he ejecutado la terminal de la imagen:
 
 En dicha terminal he instalado Python y nano para escribir un script en Python que nos permite saber si un número es par o impar. Lo he guardado en usr/bin para ejecutarlo posteriormente.
 
-"docker commit" para guardar los cambios en una imagen y con "docker images" podemos ver las imágenes creadas
-[NO TERMINADO]
+Para guardar los cambios en una imagen nueva:
+
+```sh
+  sudo docker commit [ID de la imagen] par
+```
+
+Podemos ver las imágenes creadas con:
+
+```sh
+  sudo docker images
+```
+y finalmente ejecutar el script con:
+
+```sh
+  sudo docker run -i -t par par
+```
 
 ### Ejercicio 5 ###
 
