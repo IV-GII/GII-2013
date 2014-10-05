@@ -28,10 +28,10 @@ El coste del servidor es de 2569€. Le quitamos previamente el IVA al precio to
 
 [VPS Hostinger:](http://www.hostinger.es/hosting-vps)
 
-  -Plan 4 (27.99€ al mes)
-  -4GB de RAM
-  -80GB de Almacenamiento
-  -CPU 9,6Ghz
+  Plan 4 (27.99€ al mes)
+  4GB de RAM
+  80GB de Almacenamiento
+  CPU 9,6Ghz
   
   **Si se usa sólo un 1% del tiempo:**
   
