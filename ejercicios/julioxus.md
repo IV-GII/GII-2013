@@ -100,3 +100,33 @@ Después he descargado, compilado e instalado CDE para empaquetar el script y ha
 ![captura3](http://i.imgur.com/iGAfsZ6.png)
 
 Como podemos ver se ejecuta perfectamente la aplicación sin necesidad de instalar programas ni dependencias.
+
+## Ejercicio 4 ##
+
+**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado Instalarlo y crear una aplicación contenedorizada**
+
+He realizado satisfactoriamente el tutorial de docker y ahora voy a probarlo en mi máquina virtual.
+
+He descargado la misma imagen del tutorial con:
+
+\# docker pull learn/tutorial
+
+A continuación he ejecutado el terminal de la imagen descargada con:
+
+\# docker run -i -t learn/tutorial /bin/bash
+
+Usando el terminal he instalado un intérprete de python y nano para escribir un script que compruebe si un número es primo. He metido dicho script en la carpeta /usr/bin para poder ejecutarlo con un comando.
+
+He salvado los cambios en una imagen nueva con:
+
+\# docker commit 8dbd primo
+
+(8dbd son los 4 primeros caracteres del ID de la imagen del tutorial)
+
+En esta imagen podemos ver las imágenes que tenemos ya creadas con sus respectivos IDs:
+
+![captura4](http://i.imgur.com/gRW7bGk.png)
+
+Finalmente podremos ejecutar el script de esta forma:
+
+![captura5](http://i.imgur.com/CWKDjjP.png)
