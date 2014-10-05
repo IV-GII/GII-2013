@@ -13,8 +13,8 @@ Dicho servidor tiene un coste de 619.00 € con IVA, y 511.57 € sin IVA, que e
 Deducimos una amortización máxima del 25% cada año:  
 511.57 * 0.25 = 127.89 € cada año  
   
-**Amortización a 7 años** 
-Amortizacmos el precio sin IVA entre los 7 años:
+**Amortización a 7 años**   
+Amortizaremos el precio sin IVA entre los 7 años:
 511.57 / 7 = 73.08 € cada año
 
 
