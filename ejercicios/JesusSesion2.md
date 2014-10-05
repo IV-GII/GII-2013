@@ -31,7 +31,9 @@ Para la elaboracíon del ejerccio he elegido dos servidores de la pagina 1&1 el 
 
   **2.** ¿Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes           distribuciones.?
 
+**Ejercicio 4.**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
 
+                Avanzado Instalarlo y crear una aplicación contenedorizada
 
 
 
