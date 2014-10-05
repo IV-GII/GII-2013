@@ -16,8 +16,11 @@ Para 4 años, como el coeficiente maximo es de 26%, en equipos para tratamiento 
 elegiremos una amortización de:
 
 1er año: 26%  193,18€
+
 2º año:  25%  185,75€
+
 3er año: 25%  185,75€
+
 4º año:  24%  178,3€
 
 **Amortización en 7 años**
@@ -26,11 +29,17 @@ Para 7 años:
 Haremos lo mismo que para 4 años:
 
 1er año: 26%  193,18€
+
 2º año:  20%  148,6€
+
 3er año: 16%  119€
+
 4º año:  13%  96,6€
+
 5º año:  11%  81,73€
+
 6º año:  8%   59,5€
+
 7º año:  6%   44,6€
 
 
