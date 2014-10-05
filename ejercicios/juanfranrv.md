@@ -9,9 +9,9 @@ Ejercicios de Juan Francisco Rodríguez Vílchez
 
 Según la ley se establece que el porcentaje máximo de amortización es del 26% anual con un periodo máximo de 10 años.
 
-Precio del servidor= 405,92€, incluido el IVA por lo que deberemos de quitarselo:
+Precio del servidor= 405,92€, incluido el IVA por lo que debemos de quitarselo:
 
-El IVA es 21% que sería un precio de 85,32€ que deberiamos de restar al total obteniendo un precio final de 320,6€.
+El IVA es de 21% que sería un precio de 85,32€ que deberiamos de restar al total, obteniendo un precio final de 320,6€.
 
 [Servidor elegido](http://www.amazon.es/HP-ProLiant-MicroServer-G8-Servidor/dp/B00DJVRVFE/ref=sr_1_8?ie=UTF8&qid=1411980980&sr=8-8&keywords=servidor )
 
@@ -105,13 +105,13 @@ Podemos observar como se puede ejecutar correctamente sin la necesidad del propi
 
 **Crear un proyecto y descargárselo con git: Al crearlo se marca la opción de incluir el fichero README y modificar el readme y subir el fichero modificado.**
 
-He creado un proyecto en GitHub con el fichero README incluido llamado "probando".
+He creado un proyecto llamado "probando" en GitHub con el fichero README incluido.
 
 Me lo he bajado con el siguiente comando y lo he modificado:
 
 ![captura5](http://i.imgur.com/tQVs1Qq.png)
 
-Ahora para subirlo he ejecutado los siguiente comandos:
+Para subirlo he ejecutado los siguiente comandos:
 
 ![captura6](http://i.imgur.com/oKZYwzJ.png)
 
