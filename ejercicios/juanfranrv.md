@@ -99,9 +99,9 @@ He procedido a descargar docker siguiente el siguiente tutorial: http://codehero
 
 Instalando "sudo apt-get install apparmor" lo he conseguido arreglar.
 
-Después de instalarlo, he procedido a descargar la misma imagen del tutorial:
+Después de instalarlo, he procedido a descargar la misma imagen del tutorial con:
 
-![captura8](http://i.imgur.com/4qbbjYN.png)
+#sudo docker pull learn/tutorial
 
 Una vez descargada, he ejecutado la terminal de la imagen:
 
