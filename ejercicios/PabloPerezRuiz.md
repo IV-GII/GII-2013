@@ -33,13 +33,13 @@ El coste del servidor es de 2569€. Le quitamos previamente el IVA al precio to
   80GB de Almacenamiento
   CPU 9,6Ghz
   
-  ####Si se usa sólo un 1% del tiempo:#### 
+  **Si se usa sólo un 1% del tiempo:**
   
   Amazon: 0.04155 * 24h * 365.25 dias * 0.01 = 3.6423€
   
   Hostinger: 27.99 * 12 meses = 335.88€ ( Ya que no cobra por tiempo sino por meses)
   
-  ####Si se usa sólo un 10% del tiempo:#### 
+  **Si se usa sólo un 10% del tiempo:** 
   
   Amazon: 0.04155 * 24h * 365.25 dias * 0.1 = 36.42273€
   
