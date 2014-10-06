@@ -84,6 +84,26 @@ Para modificarlo accedemos a el repositorio y al archivo readme y realizamos los
 
 ##Ejercicio sobre restricción y medición del uso de recursos: cgroups
 
+Accedo al direcotrio de cgroups  ( /sys/fs/cgroup )
+
+Monto el sistema de ficheros virtual:  sudo mount -t cgroup cgroup /sys/fs/cgroup/
+
+Crear un grupo de control: sudo mkdir buenos  (y compruebo que se crean subdirectorios específicos para cada grupo de control)
+
+creo también el grupo "malos" y asignamos las CPUs por omisión de las tareas
+
+echo 0 > /cgroup/malos/cpuset.cpus 
+echo 0 > /cgroup/malos/cpuset.mems 
+
+y en "buenos" también
+
+echo 0 > /cpuset.cpus 
+echo 0 > /cpuset.mems 
+
+
+##Ejercicio 7 
+
+
 
 
 
