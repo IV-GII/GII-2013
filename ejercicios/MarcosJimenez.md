@@ -49,9 +49,13 @@ Y ahora calculamos el coste de ambas infraestructuras en base a una utilización
 
 <strong> EJERCICIO 4: Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado: Instalarlo y crear una aplicación contenedorizada </strong>
 
-Tutorial de docker realidazo:
+Tutorial de docker realizado:
 
 <img src="http://i59.tinypic.com/27y30iu.png"></img>
+
+Para instalar Docker en Ubuntu escribimos el siguiente comando:
+
+sudo apt-get install docker.io
 
 <strong> EJERCICIO 5: Instala el sistema de gestión de fuentes git.</strong>
 
