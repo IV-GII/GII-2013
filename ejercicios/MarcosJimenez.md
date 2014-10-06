@@ -59,6 +59,10 @@ sudo apt-get install docker.io
 
 <strong> EJERCICIO 5: Instala el sistema de gestión de fuentes git.</strong>
 
+Para instalar Git en Ubuntu escribimos:
+
+sudo apt-get install git
+
 <strong> EJERCICIO 6: Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.</strong>
 
 <strong> EJERCICIO 7: Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado. Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.</strong>
