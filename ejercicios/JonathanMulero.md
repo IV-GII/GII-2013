@@ -25,8 +25,7 @@ elegiremos una amortización de:
 
 **Amortización en 7 años**
 
-Para 7 años:
-Haremos lo mismo que para 4 años:
+Para 7 años, haremos lo mismo que para 4 años:
 
 1er año: 26%  **193,18€**
 
@@ -41,6 +40,19 @@ Haremos lo mismo que para 4 años:
 6º año:  8%   **59,5€**
 
 7º año:  6%   **44,6€**
+
+###Ejercicio 2###
+
+Como servidor cloud, elegimos el A4 nivel standard de [Microsoft Azure](http://azure.microsoft.com/es-es/pricing/details/virtual-machines/#Linux)
+
+~265,86€/mes * 12 * 0,01=~31,9€
+~265,86€/mes * 12 * 0,1=~319€
+
+Como servidor dedicado, elegimos el A8i de [1&1](http://www.1and1.es/server-dedicated-l?linkOrigin=servidores-dedicados&linkId=ct.btn.server-dedicated-l)
+
+Desde 39,99€/mes *12=480€
+
+Como se puede observar, siendo mejor el servidor cloud que ofrece amazon ya que es flexible y casi dobla la ram del servidor dedicado de 1&1, si solo se usa un 1% o 10% del tiempo, sale más barato que el de 1&1, calculo que a partir del 15% ya saldria más baarato el de 1&1 aunque siendo este un poco peor.
 
 
 
