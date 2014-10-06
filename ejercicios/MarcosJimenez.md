@@ -8,15 +8,17 @@ Tomamos de ejemplo el siguiente ordenador: <a href="http://www.pccomponentes.com
 
 Este ordenador tiene un precio de 645€ con un IVA del 21% (135,45€) y tenemos que calcular su valor de amortización a 4 y 7 años con una amortización del 26%. Los resultados serían:
 
-<p>2014: </p> 
-<p>2015:</p>
-<p>2016:</p>
-<p>2017:</p>
-<p>2018:</p>
-<p>2019:</p>
-<p>2020:</p>
+<p>2014: 477,3€</p> 
+<p>2015: 353,2€</p>
+<p>2016: 261,4€</p>
+<p>2017: 193,4€</p>
+<p>2018: 143,1€</p>
+<p>2019: 105,9€</p>
+<p>2020: 78,4€</p>
 
-<strong> EJERCICIO 2: Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo. </strong>
+<strong> EJERCICIO 2: Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo. </strong>
+
+En primer lugar, seleccionamos las características que va a tener nuestro <a href="http://www.arsys.es/servidores/cloud">servidor cloud</a>:
 
 <strong> EJERCICIO 3: ¿Qué tipo de virtualización usarías en cada caso? Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones. </strong>
 
