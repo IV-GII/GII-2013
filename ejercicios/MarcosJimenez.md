@@ -65,6 +65,8 @@ sudo apt-get install git
 
 <strong> EJERCICIO 6: Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.</strong>
 
+Para crear un nuevo proyecto en git nos vamos a "New" e introducimos el nombre que va a tener nuestro proyecto
+
 <strong> EJERCICIO 7: Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado. Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.</strong>
 
 <strong> EJERCICIO 8: Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU. Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa). Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema). Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios. </strong>
