@@ -41,7 +41,7 @@ Ahora calculamos el precio total anual de cada una de las dos opciones:
 Y ahora calculamos el coste de ambas infraestructuras en base a una utilización del 1 y 10%:
 
 <strong> Servidor cloud: </strong> 210 * 12 * 0.01 = 25,2€
-210 * 12 * 0,1 = 252€
+210 * 12 * 0,1 = 252€</br>
 <strong> Servidor dedicdo: </strong> 161 * 12 * 0,01 = 19,32€
 161 * 12 * 0,1 = 193,2€
 
