@@ -101,7 +101,6 @@ echo 0 > /cpuset.cpus
 echo 0 > /cpuset.mems 
 
 
-##Ejercicio 7 
 
 
 
