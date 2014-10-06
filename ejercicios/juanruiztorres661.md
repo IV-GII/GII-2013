@@ -15,6 +15,7 @@ El precio del [servidor seleccionado](http://fujitsu-shop.anima-its.com/formato-
 4. Cuarto año (22%) 195,00€
 
 **Amortización a 7 años:**
+
 1. Primer año (26%) 230,46€
 2. Segundo año (14%) 124,09€
 3. Tercer año (12%) 106,36€
