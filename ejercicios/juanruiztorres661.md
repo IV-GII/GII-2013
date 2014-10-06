@@ -23,7 +23,3 @@ El precio del [servidor seleccionado](http://fujitsu-shop.anima-its.com/formato-
 5. Quinto año (12%) 106,36€
 6. Sexto año (12%) 106,36€
 7. Septimo año (12%) 106,36€
-
-
-
-
