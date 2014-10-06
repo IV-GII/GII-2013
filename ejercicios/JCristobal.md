@@ -44,7 +44,9 @@ Lo instalo basándome en en [enlace a la presentación que nos proporciona el pr
 
 Algún comando útil para usar:
 
-Para descargarme todo: git pull 
+Para descargarme todo: git clone
+
+Para actualizarlo todo: git pull 
 
 Modifico los ficheros que deseo y con git status veo que archivos he modificado para mayor seguridad
 
@@ -52,7 +54,40 @@ git add [archivo y ruta] del archivo modificado
 
 git commit para indicar el comentario
 
+(git commit -a para incluir el archivo en el commit)
+
 git push para enviar
+
+
+##Ejercicio 6
+
+Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado
+
+Creamos un readme.md con su commit correspondiente y lo añadimos al repositorio que queremos (objetivosIV en mi caso)
+Para ello introduzco en línea de comandos:
+
+touch README.md
+
+git init
+
+git add README.md
+
+git commit -m "first commit"
+
+git remote add origin https://github.com/JCristobal/objetivosIV.git
+
+git push -u origin master
+
+
+Para modificarlo accedemos a el repositorio y al archivo readme y realizamos los cambios (o mediante comandos de git mencionados antes).
+
+
+##Ejercicio sobre restricción y medición del uso de recursos: cgroups
+
+
+
+
+
 
 
 

@@ -18,7 +18,7 @@
 * [] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa.
 * [x] Comenzar a usar git desde línea de órdenes y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
 
-* [] Entender el concepto de sistema de ficheros virtual usado en Linux para diferentes menesteres.
+* [x] Entender el concepto de sistema de ficheros virtual usado en Linux para diferentes menesteres.
 * [x] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura
 * [x] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.
 
@@ -33,7 +33,7 @@
 
 * [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 * [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* [] Contestar a la encuesta sobre la metodología de clase
+* [x] Contestar a la encuesta sobre la metodología de clase
 * [] Usar ficheros en el repositorio para los ejercicios.
 * [] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
 
