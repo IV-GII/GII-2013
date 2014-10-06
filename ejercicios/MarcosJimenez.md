@@ -19,6 +19,31 @@ Este ordenador tiene un precio de 645€ con un IVA del 21% (135,45€) y tenemo
 <strong> EJERCICIO 2: Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo. </strong>
 
 En primer lugar, seleccionamos las características que va a tener nuestro <a href="http://www.arsys.es/servidores/cloud">servidor cloud</a>:
+- 4 núcleos.
+- 8GB de memoria RAM.
+- 250GB de disco duro.
+- Transferencia ilimitada de datos.
+- Windows Server 2008 R2 SP1 Enterprise.
+- Precio: 210€/mes.
+
+Ahora seleccionamos las características de nuestro <a href="https://www.ovh.es/servidores_dedicados/almacenamiento/2014-FS-30T.xml">servidor dedicado</a>:
+- Procesador Intel Atom C2750.
+- Velocidad del procesador: 2,4GHz.
+- 32GB de memoria RAM.
+- 5 discos de 6TB cada uno.
+- Precio: 161€/mes.
+
+Ahora calculamos el precio total anual de cada una de las dos opciones:
+
+<strong> Servidor cloud: </strong> 210 * 12 = 2.520€/año.
+<strong> Servidor dedicado: </strong> 161 * 12 = 1.932€/año.
+
+Y ahora calculamos el coste de ambas infraestructuras en base a una utilización del 1 y 10%:
+
+<strong> Servidor cloud: </strong> 210 * 12 * 0.01 = 25,2€
+210 * 12 * 0,1 = 252€
+<strong> Servidor dedicdo: </strong> 161 * 12 * 0,01 = 19,32€
+161 * 12 * 0,1 = 193,2€
 
 <strong> EJERCICIO 3: ¿Qué tipo de virtualización usarías en cada caso? Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones. </strong>
 
