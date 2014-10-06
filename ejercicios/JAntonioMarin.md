@@ -2,6 +2,22 @@
 
 ##Sesión 6-oct-2014
 
+###Ejercicio 6:
+
+He seguido la linea de comandos que marca github para crear un nuevo proyecto con su README.md.
+
+1. Creamos el fichero con: touch README.md.
+2. Añadimos el fichero README.md: git add README.md.
+3. Hacemos el commit del fichero: git commit -m "Primer commit".
+4. Lo añadimos a la ruta: git remote add origin https://github.com/JAntonioMarin/ejerciciosjj.git.
+5. Guardamos los cambios: git push -u origin master.
+
+La segunda parte para realizar los cambios lo hacemos como siempre:
+
+6. Cambiamos en el fichero y lo añadimos de nuevo: git add README.md.
+7. Hacemos el: git commit -am "Cambio de README.md".
+8. Hacemos el push: git push.
+
 ###Ejercicio 5:
 
 Primero instalo el git con el comando: sudo apt-get install git
