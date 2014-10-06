@@ -1,5 +1,12 @@
 #Ejercicios de Juan Antonio Marin
 
+##Sesión 6-oct-2014
+
+###Ejercicio 5:
+
+Primero instalo el git con el comando: sudo apt-get install git
+
+
 ##Sesión 30-sept-2014
 
 ###Ejercicio 2:
