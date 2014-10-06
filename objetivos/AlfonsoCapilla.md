@@ -15,7 +15,7 @@
 
 [X] Comenzar a entender los conceptos fundamentales relacionados con la virtualización.
 
-[] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso
+[X] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso
 
 ###Otros Objetivos
 [X] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura.
