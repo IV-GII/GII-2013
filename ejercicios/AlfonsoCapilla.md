@@ -50,3 +50,43 @@ En cada año se podrán amortizar un 14,29%, suponiendo que el servidor se ha co
 
 
 ###Ejercicio 2
+En este ejercicio voy a comparar los servicios ofrecidos por la empresa acens, concretamente el [servidor dedicado UNO que se expecidifica en esta página](http://www.acens.com/hosting/hosting-gestionado/servidores-dedicados/#precios) y el servicio de [cloud server especificado en esta página.](http://www.acens.com/cloud/cloud-servers/)
+
+**Características comunes del servidor dedicado y cloud server:**
+
+- IBM X3250 1x Quad Core 1.8Ghz
+- 2GB RAM
+- 2x500GB SATA RAID1
+
+**Precios anuales:**
+- Servidor dedicado: 1851,6€ al año.
+- Cloud server: 3196,8€ o 0,37€/h  al año.
+
+**Comparación según el porcentaje de uso:**
+
+***Uso del 1%:***
+El servidor dedicado no permite dividir el % de uso, por lo que se coste en cualquier caso siempre será el mismo.
+- Servidor dedicado: 1851,6€ al año.
+- Cloud server: 87.6 horas x 0.37/h = 32,412€ al año.
+
+***Uso del 10%:***
+El servidor dedicado no permite dividir el % de uso, por lo que se coste en cualquier caso siempre será el mismo.
+- Servidor dedicado: 1851,6€ al año.
+- Cloud server: 876 horas x 0.37/h = 324,12€ al año.
+
+Como se puede observar en ambos casos nos resultaría más económico la contratación del servicio de Cloud Server.
+
+
+###Ejercicio 3
+En este ejercicio he creado un pequeño programa en python.
+
+![Script python](http://i.imgur.com/MUxjpgy.png)
+
+He descargado he instalado el paquete CDE, una vez hecho esto he hecho el portable para poder ejecutarlo en otra instalación de linux.
+
+![ejecución del script python](http://i.imgur.com/WwKNRdk.png)
+
+Como podemos ver en la captura, el programa funciona correctamente.
+
+
+###Ejercicio 4
