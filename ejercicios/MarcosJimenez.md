@@ -49,6 +49,10 @@ Y ahora calculamos el coste de ambas infraestructuras en base a una utilización
 
 <strong> EJERCICIO 4: Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado: Instalarlo y crear una aplicación contenedorizada </strong>
 
+Tutorial de docker realidazo:
+
+<img src="http://i59.tinypic.com/27y30iu.png"></img>
+
 <strong> EJERCICIO 5: Instala el sistema de gestión de fuentes git.</strong>
 
 <strong> EJERCICIO 6: Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.</strong>
