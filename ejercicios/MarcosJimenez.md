@@ -35,7 +35,7 @@ Ahora seleccionamos las características de nuestro <a href="https://www.ovh.es/
 
 Ahora calculamos el precio total anual de cada una de las dos opciones:
 
-<strong> Servidor cloud: </strong> 210 * 12 = 2.520€/año.
+<strong> Servidor cloud: </strong> 210 * 12 = 2.520€/año.<br>
 <strong> Servidor dedicado: </strong> 161 * 12 = 1.932€/año.
 
 Y ahora calculamos el coste de ambas infraestructuras en base a una utilización del 1 y 10%:
