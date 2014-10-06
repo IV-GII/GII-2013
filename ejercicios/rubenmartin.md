@@ -30,7 +30,7 @@ Cálculo en Amazon EC2:
    Ahora debemos añadirle el uso de almacenamiento EBS, que se cobra aparte: suponiendo que usáramos como máximo los 50 GB del servidor dedicado, 50 * $0.10 (que es el precio que cobran al mes por GB usado en AmazonEC2) = $5 = 3.987 €/mes  
 
 Precios finales:  
-Amazon EC2: 0,15 + 3,99 = 4,14 €/mes -> 4,14 * 12 meses =  49,68 €
+Amazon EC2: 0,15 + 3,99 = 4,14 €/mes -> 4,14 * 12 meses =  49,68 €  
 Servidor dedicado: 18,71 €/mes -> 18,71 * 12 meses = 224,52 €
  
  
