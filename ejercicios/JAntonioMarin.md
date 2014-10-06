@@ -6,6 +6,23 @@
 
 Primero instalo el git con el comando: sudo apt-get install git
 
+Para bajar mi directorio completo: git clone https://github.com/JAntonioMarin/GII-2014.git
+
+Para actualizarlo normalmente utilizo: git pull
+
+Entro en el directorio con cd GII-2014/
+
+Para ver los cambios que he realizado en el fichero utilizo: git status
+
+Tras realizar todos los cambios pongo el fichero que quiero modificar: git add ejercicios/JAntonioMarin.md
+
+Me pide modificar las variables globales con mis datos: git config --global user.email avalanch.psp@gmail.com, git config --global user.name JAntonioMarin
+
+Hago el commit del fichero: git commit -am "Asunto para cambiar el fichero"
+
+Y finalmente hago un git pull para guardar los cambios
+
+
 
 ##Sesión 30-sept-2014
 
