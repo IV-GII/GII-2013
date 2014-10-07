@@ -2,6 +2,21 @@
 
 **Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.**
 
+[comentario]:http://www.tinkertry.com/superguide-home-virtualization-server-enthusiasts-colorful-variety-of-esxi-whiteboxes/
+[página]:http://www.amazon.com/gp/registry/wishlist/1S6RGAOHWS4BL/ref=cm_wl_rlist_go_o
+[img-serv]:http://ecx.images-amazon.com/images/I/41eG4jk2arL.jpg
+[enlace]:http://www.amazon.com/gp/registry/wishlist/1S6RGAOHWS4BL/ref=cm_wl_rlist_go_o
+[tabla]:http://www.infoautonomos.com/informacion-al-dia/fiscalidad/gastos-deducibles-autonomos-irpf-estimacion-directa/
+
+Tras buscar recomendaciones en varios foros sobre un buen servidor para virtualización me decanté por la elección que hacía un usuario en un [comentario] de una [página] dedicada a guiar a entusiastas de la virtualización.
+
+![img-serv]
+
+Dicho [enlace] redirecciona a una página de Amazon dando un precio total de 2238.9$, unos 1766.24€. Considerando que podemos deducir al 100% el IVA sobre el producto, que sería de un 21% en España, tenemos un precio final de 1571.95€ sobre el que calcular los costes de amortización correspondientes.
+
+Como sabemos que por ley como máximo podemos amortizar el 26% de equipos informáticos por una [tabla] que se da en una respuesta dentro del artículo del enunciado, en un máximo de 10 años, tenemos que:
+
+
 
 ##Ejercicio 2
 
