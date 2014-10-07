@@ -13,7 +13,7 @@ Lista de objetivos Israel Blancas Álvarez
 
 ##Sesión 29-09-2014##
 
-* [ ] Comenzar a entender los conceptos fundamentales relacionados con la virtualización.
+* [X] Comenzar a entender los conceptos fundamentales relacionados con la virtualización.
 * [X] Comprender las técnicas de cálculo del coste de amortización de un equipo informático y aplicarlo al cálculo del coste de uso de un recurso.
 
 ###Otros objetivos###
