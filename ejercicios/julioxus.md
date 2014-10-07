@@ -84,3 +84,61 @@ Con Amazon pagaríamos (0,041€ * 24h * 30 días * 12 meses) * 1% = 3,54€
 Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado: 27,99€ * 12 meses = 335,88€
 
 Con Amazon pagaríamos (0,041€ * 24h * 30 días * 12 meses) * 10% = 35,42€
+
+
+## Ejercicio 3.2 ##
+
+**Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
+
+He utilizado un script de python sencillo (holamundo.py) que se puede ejecutar desde mi sistema anfitrión usando el intérprete de python que tengo instalado:
+
+![captura1](http://i.imgur.com/C5hMFuK.png)
+![captura2](http://i.imgur.com/lVxz2pX.png)
+
+Después he descargado, compilado e instalado CDE para empaquetar el script y hacerlo portable a otra distribución de Linux sin necesidad de instalar el intérprete de python ni sus dependencias. En este caso vamos a ejecutar el paquete en mi máquina virtual de Ubuntu con una instalación limpia.
+
+![captura3](http://i.imgur.com/iGAfsZ6.png)
+
+Como podemos ver se ejecuta perfectamente la aplicación sin necesidad de instalar programas ni dependencias.
+
+## Ejercicio 4 ##
+
+**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado Instalarlo y crear una aplicación contenedorizada**
+
+He realizado satisfactoriamente el tutorial de docker y ahora voy a probarlo en mi máquina virtual.
+
+He descargado la misma imagen del tutorial con:
+
+\# docker pull learn/tutorial
+
+A continuación he ejecutado el terminal de la imagen descargada con:
+
+\# docker run -i -t learn/tutorial /bin/bash
+
+Usando el terminal he instalado un intérprete de python y nano para escribir un script que compruebe si un número es primo. He metido dicho script en la carpeta /usr/bin para poder ejecutarlo con un comando.
+
+He salvado los cambios en una imagen nueva con:
+
+\# docker commit 8dbd primo
+
+(8dbd son los 4 primeros caracteres del ID de la imagen del tutorial)
+
+En esta imagen podemos ver las imágenes que tenemos ya creadas con sus respectivos IDs:
+
+![captura4](http://i.imgur.com/gRW7bGk.png)
+
+Finalmente podremos ejecutar el script de esta forma:
+
+![captura5](http://i.imgur.com/CWKDjjP.png)
+
+## Ejercicio 6 ##
+
+He creado un proyecto en GitHub con el fichero readme incluido.
+
+Lo he descargado con git, y he añadido información al README haciendo lo siguiente:
+
+![captura6](http://i.imgur.com/1egEtNj.png)
+
+Aquí podemos ver cómo se ve en GitHub actualizado:
+
+![captura7](http://i.imgur.com/dPMViHs.png)
