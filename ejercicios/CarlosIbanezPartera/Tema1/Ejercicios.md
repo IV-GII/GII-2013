@@ -14,11 +14,15 @@ Tras buscar recomendaciones en varios foros sobre un buen servidor para virtuali
 
 Dicho [enlace] redirecciona a una página de Amazon dando un precio total de 2238.9$, unos 1766.24€. Considerando que hemos comprado a principios de año el servidor, podremos deducir el 100% del IVA sobre el producto, que sería de un 21% en España, teniendo un precio final de **1571.95€** sobre el que calcular los costes de amortización correspondientes.
 
-Como sabemos que por ley como máximo podemos amortizar el 26% de equipos informáticos por una [tabla] que se da en una respuesta dentro del artículo del enunciado, en un máximo de 10 años, tenemos que:
+Como sabemos que por ley como máximo podemos amortizar el 26% de equipos informáticos por una [tabla] que se da en una respuesta dentro del artículo del enunciado, en un máximo de 10 años, tenemos que, al amortizarlo en **4 años** (100/4 = 25 ) nos encontramos dentro del límite:
 
-1571.95 * 0.26 = 408.7
-...
-1226.121
+1571.95 * 0.25 = 392.9875 que se aplicará durante 4 años
+
+2014 - 392.9875
+2015 - 392.9875
+2016 - 392.9875
+2017 - 392.9875
+
 
 
 ##Ejercicio 2
