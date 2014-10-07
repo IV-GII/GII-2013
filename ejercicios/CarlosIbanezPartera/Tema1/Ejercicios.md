@@ -16,7 +16,9 @@ Dicho [enlace] redirecciona a una página de Amazon dando un precio total de 223
 
 Como sabemos que por ley como máximo podemos amortizar el 26% de equipos informáticos por una [tabla] que se da en una respuesta dentro del artículo del enunciado, en un máximo de 10 años, tenemos que:
 
-1571.95 * 0.26
+1571.95 * 0.26 = 408.7
+...
+1226.121
 
 
 ##Ejercicio 2
