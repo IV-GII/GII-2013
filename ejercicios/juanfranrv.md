@@ -65,12 +65,12 @@ Precio:$0.026 por hora = 0.016€
 **Usando sólo un 1% del tiempo:**
 
 * Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado independientemente del tiempo utilizado: 13.99€ * 12= 167.88€
-* Con Amazons pagaríamos (0.016€ * 24h *30 días * 12 meses) * 0.01 = 1.38€
+* Con Amazon pagaríamos (0.016€ * 24h *30 días * 12 meses) * 0.01 = 1.38€
 
 **Usando el 10% del tiempo:**
 
 * Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado independientemente del tiempo utilizado: 13.99€ * 12= 167.88€
-* Con Amazons pagaríamos (0.016€ * 24h *30 días * 12 meses) * 0.10 = 13.8€
+* Con Amazon pagaríamos (0.016€ * 24h *30 días * 12 meses) * 0.10 = 13.8€
 
 ### Ejercicio 3.2 ###
 
@@ -80,6 +80,8 @@ En mi máquina virtual con Linux Mint instalado, me he bajado el CDE del reposit
 
 ![captura1](http://i.imgur.com/3awd0EF.png)
 
+Reloj ejecutado:
+
 ![captura2](http://i.imgur.com/SsYHtFy.png)
 
 Una vez empaquetado con CDE, me he cambiado a otra máquina virtual con Ubuntu 13 y he desempaquetado el reloj:
@@ -87,6 +89,15 @@ Una vez empaquetado con CDE, me he cambiado a otra máquina virtual con Ubuntu 1
 ![captura3](http://i.imgur.com/wovTtPZ.png)
 
 Podemos observar como se puede ejecutar correctamente sin la necesidad del propio paquete.
+
+También he empaquetado con CDE un script de Python que nos dice si el número introducido es par o impar y lo he probado en ubuntu 13:
+
+![captura4](http://i.imgur.com/2BjlczI.png)
+
+Y en linux Mint:
+
+![captura5](http://i.imgur.com/2BjlczI.png)
+
 
 
 ### Ejercicio 4 ###
@@ -152,7 +163,7 @@ Para subir el fichero modificado he ejecutado los siguiente comandos:
 
 ![captura6](http://i.imgur.com/oKZYwzJ.png)
 
-Finalmente, como podemos observar el fichero readme se ha modificado correctamente:
+Finalmente, como podemos observar, el fichero readme se ha modificado correctamente:
 
 ![captura6](http://i.imgur.com/3XYPqy0.png)
 
