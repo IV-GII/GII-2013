@@ -96,7 +96,7 @@ También he empaquetado con CDE un script de Python que nos dice si el número i
 
 Y en linux Mint:
 
-![captura5](http://imgur.com/q4qPpTp)
+![captura5](http://i.imgur.com/q4qPpTp.png)
 
 
 
