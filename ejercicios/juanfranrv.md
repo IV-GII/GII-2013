@@ -90,13 +90,13 @@ Una vez empaquetado con CDE, me he cambiado a otra máquina virtual con Ubuntu 1
 
 Podemos observar como se puede ejecutar correctamente sin la necesidad del propio paquete.
 
-También he empaquetado con CDE un script de Python que nos dice si el número introducido es par o impar y lo he probado en ubuntu 13:
+También he empaquetado con CDE un script de Python que nos dice si el número introducido es par o impar y lo he probado en ubuntu 13, para ello he comprimido el cde-package y lo he pasado a otras distribuciones para comprobar que se puede ejecutar correctamente el script sin necesidad de ningún paquete o dependencia:
 
 ![captura4](http://i.imgur.com/2BjlczI.png)
 
 Y en linux Mint:
 
-![captura5](http://i.imgur.com/2BjlczI.png)
+![captura5](http://imgur.com/q4qPpTp)
 
 
 
