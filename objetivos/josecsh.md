@@ -29,7 +29,7 @@
 
 #Clase del 30 de septiembre de 2014
 
-##Objetivos de esta sesión
+##Objetivos de esta clase
 
 [] 1. Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.<br />
 [] 2. Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa.<br />
@@ -39,3 +39,4 @@
 
 [X] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura.<br />
 [] Usar git para hacer *check-in* en clase y [[CumpliendoObjetivos|expresar al final de la misma los objetivos alcanzados]].<br />
+
