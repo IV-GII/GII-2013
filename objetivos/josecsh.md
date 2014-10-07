@@ -39,3 +39,4 @@
 
 [X] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura.<br />
 [] Usar git para hacer *check-in* en clase y [[CumpliendoObjetivos|expresar al final de la misma los objetivos alcanzados]].<br />
+
