@@ -2,7 +2,7 @@
 #Alberto Mesa Navarro.
 #Fichero de seguimiento de objetivos.
 
-##Clase del 25 de Septiembre.
+##Clase del 23 de Septiembre.
 
 [X] Entender la metodología docente, de evaluación y de interacción de la asignatura
 [X] Darse de alta y comprender el funcionamiento básico de GitHub y la lista de correo de la asignatura; conocer el resto de los recursos de la asignatura.
