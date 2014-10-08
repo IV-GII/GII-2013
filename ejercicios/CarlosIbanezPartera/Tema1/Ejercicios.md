@@ -16,7 +16,7 @@ Dicho [enlace] redirecciona a una página de Amazon dando un precio total de 223
 
 Como sabemos que por ley como máximo podemos amortizar el 26% de equipos informáticos por una [tabla] que se da en una respuesta dentro del artículo del enunciado, en un máximo de 10 años, tenemos que, al amortizarlo en **4 años** (100/4 = 25 ) nos encontramos dentro del límite:
 
-1571.95 * 0.25 = 392.9875 que se aplicará durante 4 años
+1571.95 * 0.25 = 392.9875 que se aplicará durante **4 años**
 
 2014 - 392.9875
 2015 - 392.9875
