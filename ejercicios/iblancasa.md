@@ -151,3 +151,16 @@ He creado [un repositorio](https://github.com/iblancasa/iblancasaWordpressTheme)
 
 #####2. Modificar el readme y subir el fichero modificado.##########
 Como se puede ver en la [web de Github](https://github.com/iblancasa/iblancasaWordpressTheme), he realizado algunas modificacioens en el ["readme"](https://github.com/iblancasa/iblancasaWordpressTheme/blob/master/README.md).
+
+
+
+***
+***
+##Sesión 30-09-2014##
+
+###Ejercicio 7###
+
+#####Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.#####
++ He montado el sistema de archivos con "sudo mount -t tmpfs cgroup_root /sys/fs/cgroup"
++ He creado el directorio con "sudo mkdir /sys/fs/cgroup/cpuset", donde "cpuset" es el nombre del cgroup
++ Como dentro del directorio no se creó nada, he acudido a buscar en Internet y he encontrado [esto](http://serverfault.com/questions/478946/how-can-i-create-and-use-linux-cgroups-as-a-non-root-user). Al ejecutar el comando "sudo mount -t cgroup -o cpuset cpuset /sys/fs/cgroup/cpuset", para montar el sistema de archivos y "sudo mkdir /sys/fs/cgroup/cpuset/${USER}" y "sudo chown -R ${USER} /sys/fs/cgroup/cpuset/${USER}" para crear el cgroup con el usuario actual, si aparecen los ficheros que se describen en el material de clase.
