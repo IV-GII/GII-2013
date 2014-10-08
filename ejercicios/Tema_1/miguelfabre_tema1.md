@@ -62,6 +62,9 @@ Luego la opción Amazon es casi 3 veces más barata que la opción Azure.
 ![Texto alternativo](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio3-1.png)
 
 **2.Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
+Para esta actividad, en primer lugar he descargado [CDE](http://www.pgbovine.net/cde.html). Después, he seguido el [manual de usuario](http://www.pgbovine.net/cde/manual/). He abierto el programa de prueba (xclock) que viene por defecto con CDE en dos distribuciones de Linux diferentes y he comprobado como funciona en ambas.
+
+
 
 
 ##Ejercicio 4
