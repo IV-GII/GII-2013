@@ -40,6 +40,12 @@ Y para el caso de **7 años** tenemos una operación similar ( 100/7 = ~14,29 ):
 
 **Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.**
 
+[página de comparación]:http://cloud-hosting-review.toptenreviews.com/
+[Heroku]:https://www.heroku.com/
+[Amazon EC2]:http://aws.amazon.com/es/ec2/
+
+En primer lugar añadir que en ninguna de las páginas de información sobre los servidores hay constancia del tipo de procesador que usan. Guiándome por una [página de comparación] de servicios de alojamiento en la nube, me he decantado por comparar [Heroku] con [Amazon EC2].
+
 
 ##Ejercicio 3
 
