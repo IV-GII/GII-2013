@@ -33,7 +33,40 @@ Variaremos el porcentage cada año, deduciendo los primeros años algo menos y a
 * Septimo año:  al 20%  175,62 €
 
 
-##Sesión 30-sept-2014
+##Ejercicio 2
+
+Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
+
+
+El primer servicio que consulto es el de [Acens](http://www.acens.com/cloud/vps/) (opción VPS BUSINESS)con las características:
+
+* 50 GB espacio en disco
+* 2 GB memoria RAM
+* 1.000 GB de transferencia
+
+Con un precio de 15.75 €/mes. Un año costaría 188.40 €
+
+Si lo usamos un 1% quedaría en 188.40€/año *0.01 = 1.88 €/año
+
+y si lo usamos al el 10%: 188.40€/año * 0.1 = 18.84 €/año
+
+
+A continuación vemos un servicio similar en la página de [Hostinger](http://www.hostinger.es/hosting-vps) el "Plan 2":
+
+* 40 GB espacio en disco
+* 2048 MB (2 GB) de RAM
+* 2000 GB de transferencia
+
+Con un precio de 13.99 €/mes. Al año 167.88 €
+
+Si lo usaramos un 1% quedaría en 167.88€/año *0.01 = 1.67 €/año
+
+y usandolo el 10%: 167.88€/año * 0.1 =  16.78 €/año
+
+
+
+Ya que ofrecen servicios parecidos tienen un precio similar al mes, con lo que se traduce en un gasto parecido a lo largo del año como podemos ver en los resultados.
+
 
 ##Ejercicio 5
 
@@ -82,7 +115,7 @@ git push -u origin master
 Para modificarlo accedemos a el repositorio y al archivo readme y realizamos los cambios (o mediante comandos de git mencionados antes).
 
 
-##Ejercicio sobre restricción y medición del uso de recursos: cgroups
+##Instrucciones sobre restricción y medición del uso de recursos: cgroups
 
 Accedo al direcotrio de cgroups  ( /sys/fs/cgroup )
 
@@ -101,7 +134,6 @@ echo 0 > /cpuset.cpus
 echo 0 > /cpuset.mems 
 
 
-##Ejercicio 7 
 
 
 
