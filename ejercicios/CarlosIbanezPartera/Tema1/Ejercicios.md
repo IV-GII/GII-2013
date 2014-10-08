@@ -23,6 +23,17 @@ Como sabemos que por ley como máximo podemos amortizar el 26% de equipos inform
 2016 - 392.9875
 2017 - 392.9875
 
+Y para el caso de **7 años** tenemos una operación similar ( 100/7 = ~14,29 ):
+
+1571.95 * 0.1429 = 224.63 por año
+
+2014 - 224.63
+2015 - 224.63
+2016 - 224.63
+2017 - 224.63
+2018 - 224.63
+2019 - 224.63
+2020 - 224.63
 
 
 ##Ejercicio 2
