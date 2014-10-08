@@ -43,12 +43,10 @@ Y para el caso de **7 años** tenemos una operación similar ( 100/7 = ~14,29 ):
 [página de comparación]:http://cloud-hosting-review.toptenreviews.com/
 [Heroku]:https://www.heroku.com/
 [Amazon EC2]:http://aws.amazon.com/es/ec2/
-[base de datos gratuita]:https://addons.heroku.com/heroku-postgresql#hobby-dev
-[versión de pago estándar]:https://addons.heroku.com/heroku-postgresql#standard-0
 
-En primer lugar añadir que en ninguna de las páginas de información sobre los servidores hay constancia del tipo de procesador que usan. Guiándome por una [página de comparación] de servicios de alojamiento en la nube, me he decantado por comparar [Heroku] con [Amazon EC2].
+En primer lugar añadir que en ninguna de las páginas de información sobre los servidores hay constancia del tipo de procesador que usan. Guiándome por una [página de comparación] de servicios de alojamiento en la nube, me he decantado por comparar [Heroku] con [Amazon EC2] pese a ser servicios ligeramente distintos, Heroku es una Plataforma de servicio mientras que Amazon EC2 es una Infraestructura de servicio. La diferencia principal es que Heroku ofrece un entorno "preestablecido" para poner aplicaciones en funcionamiento de forma instantánea permitiendo solo personalización al añadir add-ons mientras que Amazon EC2 ofrece la posibilidad de poder construir tu propio entorno con las especificaciones que te ofrezcan al precio de tu tiempo.
 
-Con Heroku nos encontramos con la posibilidad de usar una [base de datos gratuita] con un máximo de 10000 filas y 20 conexiones simultaneas, algo que puede ser suficiente para simples aplicaciones pero consideraremos que usamos la [versión de pago estándar] que nos ofrece lo siguiente:
+
 
 
 ##Ejercicio 3
