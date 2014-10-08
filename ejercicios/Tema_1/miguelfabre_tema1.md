@@ -59,7 +59,7 @@ Luego la opción Amazon es casi 3 veces más barata que la opción Azure.
 ##Ejercicio 3
 
 **1.¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro**
-![Texto alternativo](/imagenes/ejercicio3-1.png "Comentario perteneciente al ejercicio 3.1")
+![Texto alternativo](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio3-1.png)
 
 **2.Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
 
