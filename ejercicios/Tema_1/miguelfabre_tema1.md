@@ -111,5 +111,9 @@ Por último, modificamos el fichero README.
 Y actualizamos:
 
 *git commit -a*
+
 *git push*
 
+Como vemos, la modificación ha resultado exitosa.
+
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio6-4.png)
