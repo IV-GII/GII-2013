@@ -116,9 +116,8 @@ Una vez comprobado que funciona,
 Al llevarlo a otra máquina, realizo el último paso y compruebo que funciona correctamente.
 
 
-
-
 ***
+
 ###Ejercicio 4###
 #####Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
 Avanzado Instalarlo y crear una aplicación contenedorizada#####
@@ -132,3 +131,23 @@ Tras hacer el tutorial, he procedido a realizar un empaquetado en mi PC.
 + He escrito un código PHP que escribe un mensaje en pantalla y lo he colocado en "/usr/bin" (esto es para que PHP pueda encontrarlo. Cuando he colocado el fichero en otra ruta, he tenido problemas por que no lo encontraba)
 + Tras salir de la imagen (ejecutando "exit"), guardo la imagen "sudo docker commit 71c3 hola"
 + Ejecuto el script desde fuera de la imagen escribiendo el comando "sudo docker run -i -t hola php hola.php"
+
+
+***
+
+###Ejercicio 5###
+#####Instala el sistema de gestión de fuentes git#####
+Como me encuentro en Ubuntu, simplemente hay que ejecutar:
+"sudo apt-get install git"
+
+
+***
+
+###Ejercicio 6###
+#####1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.#####
+
+He creado [un repositorio](https://github.com/iblancasa/iblancasaWordpressTheme) y lo he descargado utilizando:
+"git clone https://github.com/iblancasa/iblancasaWordpressTheme.git"
+
+#####2. Modificar el readme y subir el fichero modificado.##########
+Como se puede ver en la [web de Github](https://github.com/iblancasa/iblancasaWordpressTheme), he realizado algunas modificacioens en el ["readme"](https://github.com/iblancasa/iblancasaWordpressTheme/blob/master/README.md).
