@@ -9,8 +9,8 @@ El servidor elegido tiene el siguiente coste:
 * 3 476,93 euros precio neto
 
 ######Cálculo de la amortización en 4 años:
-Nos deduciremos hasta un máximo de un 25&% anual siguiendo la tabla de amortizaciones simplificada.<br />
-* Primera año: 3476,93 * 25% = 869,2325<br />
+Nos deduciremos hasta un máximo de un 25% anual siguiendo la tabla de amortizaciones simplificada.<br />
+* Primer año: 3476,93 * 25% = 869,2325<br />
 * Segundo año: 3476,93 * 25% = 869,2325<br />
 * Tercer año: 3476,93 * 25% = 869,2325<br />
 * Cuarto año: 3476,93 * 25% = 869,2325<br />
@@ -46,3 +46,21 @@ Google: 0,114834658 * 87,6 horas = 10,105449904 euros.<br />
 ######Cálculo de los precios al 10% de uso:
 Amazon: 0,126714105 * 876 = 111,00155598 euros<br />
 Google: 0,114834658 * 876 horas = 100,595160408 euros<br />
+
+###Ejercicio 3.
+######Apartado a
+[Comentario en el foro](https://github.com/JJ/GII-2014/issues/71)
+
+######Apartado b
+Para la realización de este ejercicio he optado por una sencilla aplicación en phyton desarrollada para la asignatura de Desarrollo de Aplicaciones en Internet. 
+
+[Programa](https://www.dropbox.com/s/d287zt39h4j5f3t/ejercicio1.py?dl=0)
+
+Una vez descargado el archivo binario de [cde](https://github.com/downloads/pgbovine/CDE/cde_2011-08-15_32bit) y darle permisos de ejecución, probamos a empaquetar el programa:
+![imagen1](http://i.imgur.com/KOecKJI.png)
+![imagen2](http://i.imgur.com/xdaSLlG.png)
+
+Finalmente probamos el paquete en otra distribución para ver que funciona correctamente:
+![imagen3]()
+
+###Ejercicio 4.
