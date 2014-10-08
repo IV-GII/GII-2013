@@ -36,6 +36,7 @@ Y para el caso de **7 años** tenemos una operación similar ( 100/7 = ~14,29 ):
 * 2020 - 224.63
 
 ***
+
 ##Ejercicio 2
 
 **Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.**
@@ -55,9 +56,17 @@ En cuanto a precios, en Heroku nos encontramos en su [documentación] con la sig
 Y para Amazon EC2 [igual]:
 ![](https://raw.githubusercontent.com/Xripa/GII-2014/master/ejercicios/CarlosIbanezPartera/Tema1/Imagenes/esp-amazon.png)
 
-Si para ambas tomamos el modelo más económico puede parecer que hay una diferencia a priori, que es el tema de la cantidad de RAM, la cual es superior en Amazon, pero si consideramos que Heroku oferta también una [base de datos gratuita]
+Si para ambas tomamos el modelo más económico puede parecer que hay una diferencia a priori, que es el tema de la cantidad de RAM, la cual es superior en Amazon, pero si consideramos que Heroku oferta también una [base de datos gratuita] y la posibilidad de los múltiples add-ons y muchos gratuitos, más o menos se nivela la balanza.
+
+Ahora, haciendo matemáticas, tenemos que Amazon EC2 tiene un precio de 0.013$ la hora mientras que el de Heroku es de 0.05$ la hora. Con estos datos ya sabemos que en cualquier caso, Amazon gana en cuanto a precio. Pero haciendo los cálculos:
+Estimando el uso por un año tenemos 365 días -> 8760 horas, un **1%** serían  87.6 horas al año y para el **10%** 876 horas luego:
+* Para el **1%** de uso, en *Amazon* es 87.6 * 0.013 = 1.1388$ mientras que en *Heroku* es 87.6 * 0.05 = 4.38$
+* Para el **10%** de uso, en *Amazon* es 876 * 0.013 = 11.338$ mientras que en *Heroku* es 87.6 * 0.05 = 43.8$
+
+Pese a que económicamente Amazon siempre salga mejor, yo personalmente para un uso del 1% usaría Heroku por la facilidad y rapidez a la hora de puesta en marcha ya que, como antes he comentado, no hay que configurar casi nada además de poseer unos comandos para la terminal muy intuitivos y poderosos. Por otro lado, para un uso más prolongado, se entiende que el tiempo que se ha empleado en la configuración de Amazon EC2 empieza a ser rentable a nivel de dispositivo como económico.
 
 
+***
 
 ##Ejercicio 3
 
