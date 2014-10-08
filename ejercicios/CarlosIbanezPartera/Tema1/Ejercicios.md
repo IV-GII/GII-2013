@@ -44,10 +44,18 @@ Y para el caso de **7 años** tenemos una operación similar ( 100/7 = ~14,29 ):
 [Heroku]:https://www.heroku.com/
 [Amazon EC2]:http://aws.amazon.com/es/ec2/
 [documentación]:https://devcenter.heroku.com/articles/dyno-size
+[igual]:http://aws.amazon.com/es/ec2/pricing/
+[base de datos gratuita]:https://addons.heroku.com/heroku-postgresql#dev
 
 En primer lugar añadir que en ninguna de las páginas de información sobre los servidores hay constancia del tipo de procesador que usan. Guiándome por una [página de comparación] de servicios de alojamiento en la nube, me he decantado por comparar [Heroku] con [Amazon EC2] pese a ser servicios ligeramente distintos, Heroku es una Plataforma de servicio mientras que Amazon EC2 es una Infraestructura de servicio. La diferencia principal es que Heroku ofrece un entorno "preestablecido" para poner aplicaciones en funcionamiento de forma instantánea permitiendo solo personalización al añadir add-ons mientras que Amazon EC2 ofrece la posibilidad de poder construir tu propio entorno con las especificaciones que te ofrezcan al precio de tu tiempo.
 
 En cuanto a precios, en Heroku nos encontramos en su [documentación] con la siguiente tabla:
+![](https://raw.githubusercontent.com/Xripa/GII-2014/master/ejercicios/CarlosIbanezPartera/Tema1/Imagenes/esp-heroku.png)
+
+Y para Amazon EC2 [igual]:
+![](https://raw.githubusercontent.com/Xripa/GII-2014/master/ejercicios/CarlosIbanezPartera/Tema1/Imagenes/esp-amazon.png)
+
+Si para ambas tomamos el modelo más económico puede parecer que hay una diferencia a priori, que es el tema de la cantidad de RAM, la cual es superior en Amazon, pero si consideramos que Heroku oferta también una [base de datos gratuita]
 
 
 
