@@ -16,7 +16,7 @@ Dicho [enlace] redirecciona a una página de Amazon dando un precio total de 223
 
 Como sabemos que por ley como máximo podemos amortizar el 26% de equipos informáticos por una [tabla] que se da en una respuesta dentro del artículo del enunciado, en un máximo de 10 años, tenemos que, al amortizarlo en **4 años** (100/4 = 25 ) nos encontramos dentro del límite:
 
-1571.95 * 0.25 = 392.9875 que se aplicará durante **4 años**:
+1571.95 * 0.25 = 392.9875€ que se aplicará durante **4 años**:
 
 * 2014 - 392.9875
 * 2015 - 392.9875
@@ -25,7 +25,7 @@ Como sabemos que por ley como máximo podemos amortizar el 26% de equipos inform
 
 Y para el caso de **7 años** tenemos una operación similar ( 100/7 = ~14,29 ):
 
-1571.95 * 0.1429 = 224.63 por año
+1571.95 * 0.1429 = 224.63€ por año
 
 * 2014 - 224.63
 * 2015 - 224.63
@@ -43,9 +43,11 @@ Y para el caso de **7 años** tenemos una operación similar ( 100/7 = ~14,29 ):
 [página de comparación]:http://cloud-hosting-review.toptenreviews.com/
 [Heroku]:https://www.heroku.com/
 [Amazon EC2]:http://aws.amazon.com/es/ec2/
+[documentación]:https://devcenter.heroku.com/articles/dyno-size
 
 En primer lugar añadir que en ninguna de las páginas de información sobre los servidores hay constancia del tipo de procesador que usan. Guiándome por una [página de comparación] de servicios de alojamiento en la nube, me he decantado por comparar [Heroku] con [Amazon EC2] pese a ser servicios ligeramente distintos, Heroku es una Plataforma de servicio mientras que Amazon EC2 es una Infraestructura de servicio. La diferencia principal es que Heroku ofrece un entorno "preestablecido" para poner aplicaciones en funcionamiento de forma instantánea permitiendo solo personalización al añadir add-ons mientras que Amazon EC2 ofrece la posibilidad de poder construir tu propio entorno con las especificaciones que te ofrezcan al precio de tu tiempo.
 
+En cuanto a precios, en Heroku nos encontramos en su [documentación] con la siguiente tabla:
 
 
 
