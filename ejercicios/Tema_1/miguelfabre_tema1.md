@@ -91,9 +91,25 @@ Xclock en CentOS
 
 Para instalar git en Linux, únicamente hay que proceder como se hace habitualmente:
 *sudo apt-get install git*
-Después, para obtener tu carpeta de GitHub
+Después, para obtener tu carpeta de GitHub, crea una nueva carpeta, accede a ella con la consola de comandos y ejecuta lo siguiente:
 *git clone https://github.com/miguelfabre/GII-2014.git*
 
 ##Ejercicio 6
 
+En primer lugar he creado un nuevo proyecto en GitHub añadiendo el fichero README tal como se indicaba en el enunciado.
+
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio6-1.png)
+
+Después, lo he descargado en mi carpeta local.
+
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio6-2.png)
+
+Por último, modificamos el fichero README.
+
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio6-3.png)
+
+Y actualizamos:
+
+*git commit -a*
+*git push*
 
