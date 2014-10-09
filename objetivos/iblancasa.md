@@ -10,6 +10,7 @@ Lista de objetivos Israel Blancas Álvarez
 
 
 ***
+***
 
 ##Sesión 29-09-2014##
 
@@ -22,6 +23,8 @@ Lista de objetivos Israel Blancas Álvarez
 * [X] Manejar de forma básica la línea de órdenes de Linux.
 * [X] Aprender a instalar software libre en Linux.
 
+
+***
 ***
 
 ##Sesión 30-09-2014##
@@ -36,4 +39,6 @@ Lista de objetivos Israel Blancas Álvarez
 * [X] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura
 * [ ] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.
 
+
+***
 ***
