@@ -94,5 +94,37 @@ Ejemplo de uso:
 1. **Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
 2. **Modificar el readme y subir el fichero modificado.**
 
+En primer lugar creamos un nuevo repositorio incluyendo el Readme:
+
+
+![](./Imagenes/prueba-ejer6.png)
+
+Accedemos a nuestro nuevo repositorio:
+
+![](./Imagenes/prueba-ejer6-2.png)
+
+Copiamos la URL de dicho repositorio pulsando el botón de la flechita:
+
+![](./Imagenes/prueba-ejer6-3.png)
+
+Ahora, en nuestra terminal, clonamos el nuevo repositorio en nuestro equipo mediante dicha URL:
+
+![](./Imagenes/prueba-ejer6-4.png)
+
+Editamos el archivo Readme.md con nuestro editor favorito para hacer constancia de nuestro cambio:
+
+![](./Imagenes/prueba-ejer6-5.png)
+
+Ahora debemos crear un commit con el archivo modificado ( yo he usado "." para que tomase todos los del directorio ) y le agregamos una información del cambio que hemos realizado.
+
+![](./Imagenes/prueba-ejer6-6.png)
+
+Introducimos nuestros datos de usuario de git tras el push:
+
+![](./Imagenes/prueba-ejer6-7.png)
+
+Y finalmente comprobamos que nuestros cambios por terminal realmente han sido almacenados en git:
+
+![](./Imagenes/prueba-ejer6-8.png)
 
 ***
