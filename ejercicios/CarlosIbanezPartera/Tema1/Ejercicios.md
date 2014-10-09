@@ -74,6 +74,9 @@ Pese a que económicamente Amazon siempre salga mejor, yo personalmente para un 
 
 **2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
 
+*2* 
+
+
 
 ##Ejercicio 4
 
