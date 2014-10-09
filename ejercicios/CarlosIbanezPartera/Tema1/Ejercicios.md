@@ -131,12 +131,15 @@ Y finalmente comprobamos que nuestros cambios por terminal realmente han sido al
 
 ##Ejercicio 7
 
-1. **Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
+ **Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
  
 [esta página]:http://tarifasgasluz.com/faq/precio-kwh/espana
  
-**1** He creado tres grupos con los nombres de los procesos sobre los que van a realizar la contabilidad de su uso en el sistema. Chromium, gedit y clementine que, respectivamente monitorizan el navegador de internet, un procesador de textos y un reproductor de música. A cada proceso se les ha asignado un nucleo distinto dentro del mismo procesador. Los resultados son los siguientes:
+He creado tres grupos con los nombres de los procesos sobre los que van a realizar la contabilidad de su uso en el sistema. Chromium, gedit y clementine que, respectivamente monitorizan el navegador de internet, un procesador de textos y un reproductor de música. A cada proceso se les ha asignado un nucleo distinto dentro del mismo procesador. Los resultados son los siguientes:
 
 ![](./Imagenes/resultado-cgroup.png)
 
 Clementine es el que más recursos usa puesto que estaba en funcionamiento mientras tomaba las medidas.
+
+***
+
