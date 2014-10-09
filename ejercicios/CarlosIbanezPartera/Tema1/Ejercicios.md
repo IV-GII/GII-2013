@@ -67,17 +67,17 @@ Pese a que económicamente Amazon siempre salga mejor, yo personalmente para un 
 
 
 ***
-
-##Ejercicio 3
-
-**1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro**
-
-**2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
-
-*2* 
-
-
-
 ##Ejercicio 4
 
 **Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**
+
+![](./Imagenes/docker-fin.png)
+
+***
+##Ejercicio 5
+
+**Instala el sistema de gestión de fuentes git**
+
+
+
+
