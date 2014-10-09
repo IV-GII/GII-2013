@@ -1,7 +1,6 @@
 #Ejercicios de JCristobal
 
 
-##Sesión 29-sept-2014
 
 ##Ejercicio 1
 
@@ -67,6 +66,12 @@ y usandolo el 10%: 167.88€/año * 0.1 =  16.78 €/año
 
 Ya que ofrecen servicios parecidos tienen un precio similar al mes, con lo que se traduce en un gasto parecido a lo largo del año como podemos ver en los resultados.
 
+
+##Ejercicio 3
+
+Parte 1: Se puede consultar en [comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-58538032)
+
+Parte 2:
 
 ##Ejercicio 5
 
