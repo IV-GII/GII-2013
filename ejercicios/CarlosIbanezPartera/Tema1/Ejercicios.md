@@ -88,3 +88,8 @@ Ejemplo de uso:
 ![](./Imagenes/git-uso.png)
 
 ***
+
+##Ejercicio 6
+
+1. **Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
+2. **Modificar el readme y subir el fichero modificado.**
