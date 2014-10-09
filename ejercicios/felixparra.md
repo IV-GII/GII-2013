@@ -35,3 +35,11 @@ Fuente: A0 [Azure](http://azure.microsoft.com/es-es/pricing/details/cloud-servic
   * Tiempo de uso 10%: 12,264 €
 
 La diferencia radica en las características que ofrecen cada una de las empresas por ese precio, como pueden ser servicios extra, horas gratuitas de uso, o almacenamiento extra.
+
+<hr />
+
+## Sesión 30-sept-2014
+**Ejercicio 3:** *¿Qué tipo de virtualización usarías en cada caso?* <br />
+
+
+*Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.*
