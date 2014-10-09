@@ -64,3 +64,9 @@ Finalmente probamos el paquete en otra distribución para ver que funciona corre
 ![imagen3]()
 
 ###Ejercicio 4.
+[x] Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+![imagen4](http://i.imgur.com/pYj8C4Y.png)
+
+###Ejercicio 5.
+[x] Instala el sistema de gestión de fuentes **git**
+![imagen5](http://i.imgur.com/VeQayLD.png)
