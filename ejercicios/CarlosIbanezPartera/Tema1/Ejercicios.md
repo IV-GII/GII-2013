@@ -84,6 +84,7 @@ El sistema lo instalé a partir del segundo ejercicio. Para ello usé el comando
 *sudo apt-get install git* y seguí el apartado de [ayuda] de github para su configuración.
 
 Ejemplo de uso:
+
 ![](./Imagenes/git-uso.png)
 
 
