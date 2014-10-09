@@ -72,3 +72,12 @@ Pese a que económicamente Amazon siempre salga mejor, yo personalmente para un 
 **Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**
 
 ![](./Imagenes/docker-fin.png)
+
+***
+##Ejercicio 5
+
+**Instala el sistema de gestión de fuentes git**
+
+
+
+
