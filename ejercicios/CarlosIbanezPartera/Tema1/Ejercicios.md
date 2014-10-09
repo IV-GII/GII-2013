@@ -78,6 +78,12 @@ Pese a que económicamente Amazon siempre salga mejor, yo personalmente para un 
 
 **Instala el sistema de gestión de fuentes git**
 
+[ayuda]:https://help.github.com/articles/set-up-git/
 
+El sistema lo instalé a partir del segundo ejercicio. Para ello usé el comando:
+*sudo apt-get install git* y seguí el apartado de [ayuda] de github para su configuración.
+
+Ejemplo de uso:
+![](./Imagenes/git-uso.png)
 
 
