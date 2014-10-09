@@ -22,10 +22,16 @@ Servidor: [Link del servidor](http://www.dynos.es/servidor-hp-proliant-ml350e-g8
 <br />
 **Ejercicio 2:** *Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.* <br />
 
-* Vendedor 1:
-  * Tiempo de uso 1%:
-  * Tiempo de uso 10%:
 
-* Vendedor 2:
-  * Tiempo de uso 1%:
-  * Tiempo de uso 10%:
+Fuente: t2.mircro [Amazon](http://aws.amazon.com/es/ec2/pricing/ "Amazon")
+Fuente: A0 [Azure](http://azure.microsoft.com/es-es/pricing/details/cloud-services/ "Azure")
+
+* Vendedor 1: Azure 0,0148€/h
+  * Tiempo de uso 1%: 1,29648 €
+  * Tiempo de uso 10%: 12,9648 €
+
+* Vendedor 2: Amazon 0,014€/hora
+  * Tiempo de uso 1%: 1,2264 €
+  * Tiempo de uso 10%: 12,264 €
+
+La diferencia radica en las características que ofrecen cada una de las empresas por ese precio, como pueden ser servicios extra, horas gratuitas de uso, o almacenamiento extra.
