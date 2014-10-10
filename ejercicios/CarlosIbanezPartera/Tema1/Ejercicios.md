@@ -153,7 +153,7 @@ Poseo un procesador de 8 nucleos, he aquí la salida de *cat /proc/cpuinfo*:
 
 Y la correspondiente salida para *egrep '^flags.*(vmx|svm)' /proc/cpuinfo* :
 
-![](.Imagenes/captura-flags.png)
+![](./Imagenes/captura-flags.png)
 
 ***
 
