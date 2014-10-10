@@ -143,3 +143,17 @@ Clementine es el que más recursos usa puesto que estaba en funcionamiento mient
 
 ***
 
+##Ejercicio 9
+
+**Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
+Poseo un procesador de 8 nucleos, he aquí la salida de *cat /proc/cpuinfo*:
+
+![](./Imagenes/captura-procesador.png)
+
+Y la correspondiente salida para *egrep '^flags.*(vmx|svm)' /proc/cpuinfo* :
+
+![](.Imagenes/captura-flags.png)
+
+***
+
