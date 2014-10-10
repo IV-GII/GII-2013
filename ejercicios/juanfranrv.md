@@ -337,7 +337,7 @@ También me he dado de alta en Openshift para el ejercicio 14:
 
 ### Ejercicio 14 ###
 
-**Crear una aplicación en OpenShift y dentro de ella instalar WordPress. **
+**Crear una aplicación en OpenShift y dentro de ella instalar WordPress.**
 
 Una vez registrado en Openshift, buscamos en la interfaz lo siguiente:
 
