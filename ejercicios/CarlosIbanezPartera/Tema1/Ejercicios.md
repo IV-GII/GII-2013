@@ -147,7 +147,7 @@ Clementine es el que más recursos usa puesto que estaba en funcionamiento mient
 
 **Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
 
-Poseo un procesador de 8 nucleos, he aquí la salida de *cat /proc/cpuinfo*:
+Poseo un procesador de 8 nucleos, he aquí la salida de uno de los nucleos a partir de *cat /proc/cpuinfo*:
 
 ![](./Imagenes/captura-procesador.png)
 
@@ -157,3 +157,18 @@ Y la correspondiente salida para *egrep '^flags.*(vmx|svm)' /proc/cpuinfo* :
 
 ***
 
+##Ejercicio 10
+
+**Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden *kvm-ok*.**
+
+La orden no está instalada: 
+
+![](./Imagenes/no-instalado-kvm-ok.png)
+
+Tras la instalación de *cpu-checker*, la orden produce la siguiente salida:
+
+![](./Imagenes/salida-kvm-ok.png)
+
+Demostrando que la tecnología está disponible.
+
+***
