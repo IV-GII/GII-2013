@@ -72,6 +72,19 @@ Precio:$0.026 por hora = 0.016€
 * Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado independientemente del tiempo utilizado: 13.99€ * 12= 167.88€
 * Con Amazon pagaríamos (0.016€ * 24h *30 días * 12 meses) * 0.10 = 13.8€
 
+
+### Ejercicio 3.1 ###
+
+**¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro**
+
+Lo he comentado en el foro, pero también lo indico aqui:
+
+1- Para alojar varios clientes en un sólo servidor, coincido con mis compañeros, y usaría la virtualización a nivel de sistema operativo, debido a que permite que solamente el anfitrión y el cliente usen el mismo sistema operativo pero con invitados aislados del anfitrión y entre sí. De esta forma, se puede mejorar el rendimiento porque hay un solo sistema operativo encargándose de los avisos de hardware, aunque también presenta alguna desventaja como por ejemplo,que cada invitado debe utilizar el mismo sistema operativo que utiliza el host.
+
+2- La virtualización que usaría para crear un sistema eficiente de web+middleware+base de datos sería la virtualización plena ya que nos permitiría virtualizar todos los aspectos de un ordenador para poder ejecutar sistemas operativos y otros programas sin modificar.
+
+3- Por último,la virtualización más adecuada para un sistema de prueba de software e integración continua, obviamente, es la virtualización de entornos de desarrollo ya que nos permite reproducir de la forma más fiable posible entornos de producción.
+
 ### Ejercicio 3.2 ###
 
 **Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
@@ -159,19 +172,196 @@ Me lo he bajado con el siguiente comando y lo he modificado:
 
 ![captura5](http://i.imgur.com/tQVs1Qq.png)
 
-Para subir el fichero modificado he ejecutado los siguiente comandos:
+Para subir el fichero modificado he ejecutado los siguiente comandos: (git add, git commit -m, git push)
 
 ![captura6](http://i.imgur.com/oKZYwzJ.png)
 
-Finalmente, como podemos observar, el fichero readme se ha modificado correctamente:
+Finalmente, como podemos observar [aqui](https://github.com/juanfranrv/probando), el fichero readme se ha modificado correctamente:
 
 ![captura6](http://i.imgur.com/3XYPqy0.png)
 
+### Ejercicio 7.1 ###
+
+**Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
+
+(PENDIENTE POR HACER)
+
+### Ejercicio 7.2 ###
+    
+**Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.**
+
+(PENDIENTE POR HACER)
+
+### Ejercicio 8.1 ###
+
+**Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.**
+
+(PENDIENTE POR HACER)
+
+### Ejercicio 8.2 ###
+
+**Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).**
+
+(PENDIENTE POR HACER)
+
+### Ejercicio 8.3 ###
+
+**Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
+
+(PENDIENTE POR HACER)
+
+### Ejercicio 8.4 ###
+
+**Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.**
+
+(PENDIENTE POR HACER)
+
+### Ejercicio 9 ###
+
+**Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
+He ejecutado la instrucción:
+
+```sh
+egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+```
+
+/proc/cpuinfo es el fichero del sistema de ficheros virtual /proc que da acceso mediante “ficheros” a las estructuras de datos del núcleo de Linux; cpuinfo lista las características de la CPU y vmx es el flag que se usa para indicar que el procesador usa esta tecnología; smd es el flag para AMD-V. egrep busca líneas de un fichero que contengan la expresión regular indicada, y si aparecen los flags listará la línea completa. 
+
+Según la siguiente captura:
+
+![captura13](http://i.imgur.com/lRgjts6.png)
+
+La expresión no devuelve nada, por lo que el procesador no tiene esa funcionalidad o está desactivada.
 
 
+### Ejercicio 10 ###
 
+**Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
 
+Para poder usar la orden kvm-ok he tenido que instalar lo siguiente:
 
+![captura14](http://i.imgur.com/4TLeaBc.png)
 
+Posteriormente he ejecutado la orden y me ha dado como resultado:
 
+![captura15](http://i.imgur.com/ndRs9CC.png)
+
+Me indica que use otra orden para más información:
+
+![captura16](http://i.imgur.com/4meXfEI.png)
+
+Por lo que se puede observar que mi ordenador no contiene este módulo del kernel.
+
+### Ejercicio 11 ###
+
+**Comentar diferentes soluciones de Software as a Service de uso habitual.**
+
+En general son muchas las soluciones de Software as a Service (SaaS) y además se suelen usar frecuentemente.
+
+Los ejemplos más comunes son algunos ERP (Sistemas de planificación de recursos empresariales) y CRM (Software para la administración basada en la relación con los clientes), aunque otros ejemplos de uso serían los siguientes:
+
+* Aplicaciones web: CMS o gestores de contenidos, CRMs, WebOS (Webdesktops o escritorios basados en web),  correo, mensajería instantánea, plataforma educativa, comercio electrónico, sistemas de pago, herramientas colaborativas…
+
+* Otras aplicaciones: acceso a BBDD, como nuestro ERP, aplicaciones mixtas (ej: Adobe AIR)
+
+* Almacenamiento Remoto y backup
+
+* Control Remoto para soporte y formación
+
+* Alquiler de la plataforma para servicios/aplicaciones de terceros o soluciones tradicionales de hosting (y servicios relacionados como registro de dominios).
+
+* Repositorio de software
+
+* Servicios Web (propios y de terceros)
+
+### Ejercicio 12 ###
+
+**Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).**
+
+Antes de poder instalar el entorno virtual es necesario la instalación de "pip":
+
+![captura17](http://i.imgur.com/Mm1eCVX.png)
+
+Posteriormente, procedo a instalar virtualenv para Python:
+
+![captura18](http://i.imgur.com/1AOm7u4.png)
+
+Lo configuro con :
+
+![captura19](http://i.imgur.com/Dflmjnl.png)
+
+Lo que hace es crear "ENV/lib/pythonX.X/site-packages",para que funcione cualquier librería. También crea "ENV/bin/python", que es un intérprete de Python que usará el entorno.
+
+Finalmente, he probado a ver si funciona correctamente:
+
+![captura20](http://i.imgur.com/lr07SFE.png)
+
+Tutorial seguido para crear proyecto: http://rukbottoland.com/blog/tutorial-de-python-virtualenv/
+
+Como se puede ver en la captura anterior, con:
+
+```sh
+virtualenv mi_proyecto
+```
+Crea nuestro proyecto con las carpetas 
+
+mi_proyecto/
+    bin/
+    include/
+    lib/
+    
+Por lo que tenemos el entorno virtual de Python listo para ser utilizado.
+
+### Ejercicio 13 ###
+
+**Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
+
+He elegido registrarme en Heroku.
+
+Primero nos piden poner el correo para enviarnos el enlace de validación y poder registrarnos:
+
+![captura21](http://i.imgur.com/4FtvoZ2.png)
+
+Luego hay que acceder al correo y aceptar el enlace que nos llevará al registro en la página de Heroku:
+
+![captura22](http://i.imgur.com/VjeyQyO.png)
+
+Una vez registrado, ya puedo acceder correctamente a la interfaz de Heroku:
+
+![captura23](http://i.imgur.com/cZiWnfg.png)
+
+También me he dado de alta en Openshift para el ejercicio 14:
+
+![captura24](http://i.imgur.com/55v20qM.png)
+
+### Ejercicio 14 ###
+
+**Crear una aplicación en OpenShift y dentro de ella instalar WordPress. **
+
+Una vez registrado en Openshift, buscamos en la interfaz lo siguiente:
+
+![captura25](http://i.imgur.com/n0AmxOq.png)
+
+y le damos a WordPress.
+
+Elegimos la url que queramos:
+
+![captura26](http://i.imgur.com/BR3ZuhF.png)
+
+Y aceptamos. Ya tenemos la aplicación creada:
+
+![captura27](http://i.imgur.com/97SJEMT.png)
+
+Posteriormente, ya se encuentra WordPress listo para usarse (previamente hay que registrarse):
+
+![captura28](http://i.imgur.com/F9VRxrS.png)
+
+Ya tenemos la aplicación de WordPress lista para ser usada y poder crear entradas:
+
+![captura29](http://i.imgur.com/LQbWg0t.png)
+
+Aqui muestro un ejemplo de creación de una entrada en WordPress:
+
+![captura30](http://i.imgur.com/0OpvoAM.png)
 
