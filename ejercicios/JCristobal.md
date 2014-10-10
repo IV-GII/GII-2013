@@ -71,13 +71,30 @@ Ya que ofrecen servicios parecidos tienen un precio similar al mes, con lo que s
 
 Parte 1: Se puede consultar en [comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-58538032)
 
-Parte 2:
+Parte 2: Aprovecho un programa de la asignatura DAI en python para empaquetarlo con CDE.
+
+Primero lo instalo: ejecuto sudo apt-get install cde
+
+Y lo empaqueto con CDE: cde python act1.py
+
+En el directorio: "~/Escritorio/cde-package/cde-root/home/cristobal/Escritorio$"  ejecuto  ./python.cde act1.py 
+
+Pantallazo de los pasos anteriores: ![imagen1](http://i.imgur.com/dn1qoxB.png)
+
+
+##Ejercicio 4
+
+Tutorial de línea de órdenes de docker realizado:
+![imagen2](http://i.imgur.com/UevZw5O.png)
+
+
 
 ##Ejercicio 5
 
 
 Lo instalo basándome en en [enlace a la presentación que nos proporciona el profesor](http://www.slideshare.net/jjmerelo/introduccin-al-uso-git-y-github-para-trabajo-colaborativo) 
 
+Simplemente ejecuto: sudo apt-get install git
 
 
 Algún comando útil para usar:
