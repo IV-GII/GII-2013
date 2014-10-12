@@ -85,7 +85,7 @@ Como podemos observar, el precio de amazon es casi tres veces mejor que el de az
 
 * Para un sistema de prueba de software e integración considero que la mejor virtualización es la de "Entornos de desarrollo". De esa forma se podrá analizar el software en un entorno lo más cercano posible a la realidad por lo que el desarrollo podrá ser mucho más eficiente.
 
-#### Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+#### 2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
 
 # Ejercicio 4
