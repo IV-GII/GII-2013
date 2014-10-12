@@ -99,7 +99,7 @@ Hacemos esto mediante la orden:
 
 * sudo apt-get install git
 
-Una vez hecho esto, debemos clonar la carpeta de GitHub en nuestro ordenador. Para ello ponemos "git clone " y a continuación el enlace a nuestro GitHub. EN mi caso:
+Una vez hecho esto, debemos clonar la carpeta de GitHub en nuestro ordenador. Para ello ponemos "git clone " y a continuación el enlace a nuestro GitHub. En mi caso:
 
 * git clone [https://github.com/FranciscoPorcel/GII-2014.git](https://github.com/FranciscoPorcel/GII-2014.git)
 
