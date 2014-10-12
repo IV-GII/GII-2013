@@ -79,11 +79,6 @@ Como podemos observar, el precio de amazon es casi tres veces mejor que el de az
 
 ![Respuesta en el foro](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/3_1.png)
 
-* Para alojar varios clientes en un sólo servidor considero que la mejor opción sería la "virtualización a nivel de sistema operativo", ya que tanto anfitrión como cliente tendrían el mismo sistema operativo, lo que facilitaría en gran medida la comunicación y las actualizaciones y eliminaría posibles conflictos.
-
-* Para crear un sistema eficiente de web + middleware + BD creo que la mejor opción sería optar por una "virtualización plena", ya que son muchos los recursos necesarios para crear este entorno eficiente, por lo que necesitaremos todos los recursos posibles.
-
-* Para un sistema de prueba de software e integración considero que la mejor virtualización es la de "Entornos de desarrollo". De esa forma se podrá analizar el software en un entorno lo más cercano posible a la realidad por lo que el desarrollo podrá ser mucho más eficiente.
 
 #### 2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
@@ -91,6 +86,46 @@ Como podemos observar, el precio de amazon es casi tres veces mejor que el de az
 # Ejercicio 4
 
 #### Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+
+Después de realizar el tutorial nos sale un mensaje de felicitación:
+
+![Mensaje de felicitación](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/4.png)
+
+# Ejercicio 5
+
+#### Instala el sistema de gestión de fuentes git
+
+Hacemos esto mediante la orden:
+
+* sudo apt-get install git
+
+Una vez hecho esto, debemos clonar la carpeta de GitHub en nuestro ordenador. Para ello ponemos "git clone " y a continuación el enlace a nuestro GitHub. EN mi caso:
+
+* git clone [https://github.com/FranciscoPorcel/GII-2014.git](https://github.com/FranciscoPorcel/GII-2014.git)
+
+
+# Ejercicio 6
+
+En primer lugar creamos el nuevo proyecto. En mi caso lo he nombrado "Nuevo Proyecto".
+
+![Creación de un nuevo proyecto](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/6_1.png)
+
+A continuación nos descargamos la carpeta a nuestro pc.
+
+![Descarga de los archivos](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/6_2.png)
+
+Modificamos el archivo README.md.
+
+![Modificación del archivo README.md](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/6_3.png)
+
+Subimos la carpeta modificada a GitHub.
+
+![Subimos la carpeta a GitHub](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/6_4.png)
+
+Como podemos observar, los cambios se han realizado:
+
+![Cambios realizados en GitHub](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/6_5.png)
+
 
 
 
