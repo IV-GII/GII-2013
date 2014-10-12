@@ -58,8 +58,8 @@ En este caso el número de horas que pagaríamos sería:
 
 Por tanto tendríamos un precio total para ambas opciones de:
 
-* Servidor amazon = 87.6 horas * 0.1341 euros = 11.74716 euros
-* Servidor azure = 87.6 horas * 0.04 euros =  3.504 euros
+* Servidor azure = 87.6 horas * 0.1341 euros = 11.74716 euros
+* Servidor amazon = 87.6 horas * 0.04 euros =  3.504 euros
 
 ### Para un uso de un 10% en un año:
 
@@ -68,12 +68,29 @@ En este caso el número de horas que pagaríamos sería:
 
 Por tanto tendríamos un precio total para ambas opciones de:
 
-* Servidor VPS = 876 horas * 0.1341 euros =  117.4716 euros
-* Servidor cloud = 876 horas * 0.04 euros = 35.04 euros
+* Servidor azure = 876 horas * 0.1341 euros =  117.4716 euros
+* Servidor amazon = 876 horas * 0.04 euros = 35.04 euros
 
 Como podemos observar, el precio de amazon es casi tres veces mejor que el de azure, teniendo amazon unas prestaciones algo superiores.
 
+#Ejercicio 3
 
+#### 1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro. (¿Qué tipo de virtualización es la más adecuada para: alojar varios clientes en un sólo servidor, crear un sistema eficiente de web + middleware + base de datos, un sistema de prueba de software e integración continua? Responder aquí y razonar.)
+
+![Respuesta en el foro](/home/franps32/Escritorio/IV/Seleccion_001.png)
+
+* Para alojar varios clientes en un sólo servidor considero que la mejor opción sería la "virtualización a nivel de sistema operativo", ya que tanto anfitrión como cliente tendrían el mismo sistema operativo, lo que facilitaría en gran medida la comunicación y las actualizaciones y eliminaría posibles conflictos.
+
+* Para crear un sistema eficiente de web + middleware + BD creo que la mejor opción sería optar por una "virtualización plena", ya que son muchos los recursos necesarios para crear este entorno eficiente, por lo que necesitaremos todos los recursos posibles.
+
+* Para un sistema de prueba de software e integración considero que la mejor virtualización es la de "Entornos de desarrollo". De esa forma se podrá analizar el software en un entorno lo más cercano posible a la realidad por lo que el desarrollo podrá ser mucho más eficiente.
+
+#### Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+
+
+# Ejercicio 4
+
+#### Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
 
 
 
