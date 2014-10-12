@@ -27,6 +27,7 @@ RAID: Hardware RAID 5
 
 Precio 149,99€ / Mes
 
+Servidor nube:
 vCPU (Cores)8 0,08€/hora
 Memoria RAM 31 GB 0,31€/hora
 Espacio de almacenamiento 800 GB 0,08€/hora
@@ -35,7 +36,7 @@ Sistema OperativoLinux0€/hora
 
 338,40 € al mes* (Dependiendo del consumo)
 
-Servidor dedicado: 149,99 € * 12 = 1799.88 € 
+Servidor dedicado: 149,99 € * 12 = 1799.88 €
 
 Servidor Cloud
 - Uso del 1%: 338,40€ * 12 * 0,01 = 40.608€
@@ -51,7 +52,7 @@ Para alojar varios clientes en un sólo servidor en mi opinión la opción más 
 
 Para crear un sistema eficiente de web + middleware + base de datos optaría por una virtualización plena ya que visualiza todos los aspectos de un ordenador permitiéndonos tener un sistema eficiente y completo.
 
-Para el sistema de prueba de software e integración continua no estoy muy seguro de que virtualización se aplicaría. El proceso de este sistema según he leído suele ser que cada cierto tiempo (horas) descarga las fuentes del software desde el control de versiones (por ejemplo CVS, Git, Subversion, Mercurial o Microsoft Visual SourceSafe) lo compila, ejecuta pruebas y genera informes. 
+Para el sistema de prueba de software e integración continua no estoy muy seguro de que virtualización se aplicaría. El proceso de este sistema según he leído suele ser que cada cierto tiempo (horas) descarga las fuentes del software desde el control de versiones (por ejemplo CVS, Git, Subversion, Mercurial o Microsoft Visual SourceSafe) lo compila, ejecuta pruebas y genera informes.
 
 Respuesta de un compañero:
 
@@ -62,6 +63,18 @@ Para crear un sistema eficiente de web + middleware + base de datos utilizaría 
 Y para un sistema de prueba de software e integración continua utilizaría la virtualización de entornos de desarrollo para reproducir entornos de producción de la forma más fiel posible.
 
 2.Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+
+Se he utilizado un sencillo ejemplo en python.
+1. Instalamos CDE con la orden ==$sudo apt-get 2 install cde==
+2. Ejecutamos el programa con la orden ==$cde python "nombre_del_programa".py== tal como se ve en la imagen.
+
+![CDE1.png](./Capturas/CDE1.png)
+
+![CDE2.png](./Capturas/CDE2.png)
+
+Si accedemos al directorio /cde-package podemos ver el empaquetado que posteriormente podremos ejecutarlo en otra máquina mediane la orden ==$./python.cde "nombre_del_programa".py==.
+
+![CDE3.png](./Capturas/CDE3.png)
 
 ### Ejercicio 4
 Hacer el [tutorial de línea de órdenes de docker](http://https://www.docker.com/tryit/) para comprender cómo funciona.
@@ -124,7 +137,56 @@ samuel@hp007:~/Escritorio/Variado$
 ### Ejercicio 7
 1. Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
 
+	Como root he montado el sistema de ficheros con la orden:
+==$mount -t cgroup cgroup /sys/fs/cgroup/==
+He creado diferentes grupos navegador,gedit y bash mediante mkdir "grupo".
 
-2. Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
+    Les he asignado los procesos firefox, gedit y bash.
+
+    cat navegador/cpuacct.usage
+    1229162667
+
+    cat gedit/cpuacct.usage
+    112033014
+
+    cat bash/cpuacct.usage
+    111939431
+
+    El navegador ha consumido más recursos.
+
+1. Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
 ### Ejercicio 8
+    1. Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+    2. Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+    3. Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+    4. Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
+
 ### Ejercicio 9
+Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+
+Modelo de procesador:
+Intel(R) Core(TM)2 Quad CPU    Q8400  @ 2.66GHz
+
+Salida de la orden:
+![ejercicio9.png](./Capturas/ejercicio9.png)
+
+### Ejercicio 10
+Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+![ejercicio10.png](./Capturas/ejercicio10.png)
+
+KVM si está activado en mi SO.
+
+### Ejercicio 11
+Comentar diferentes soluciones de Software as a Service de uso habitual.
+
+## Creando aplicaciones en la nube: Uso de PaaS
+
+### Ejercicio 1
+Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).
+
+### Ejercicio 2
+Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
+
+### Ejercicio 3
+Crear una aplicación en OpenShift y dentro de ella instalar WordPress. 
