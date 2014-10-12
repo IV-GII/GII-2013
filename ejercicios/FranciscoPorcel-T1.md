@@ -77,7 +77,7 @@ Como podemos observar, el precio de amazon es casi tres veces mejor que el de az
 
 #### 1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro. (¿Qué tipo de virtualización es la más adecuada para: alojar varios clientes en un sólo servidor, crear un sistema eficiente de web + middleware + base de datos, un sistema de prueba de software e integración continua? Responder aquí y razonar.)
 
-![Respuesta en el foro](/home/franps32/Escritorio/IV/Seleccion_001.png)
+![Respuesta en el foro](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/imagenes/3_1.png)
 
 * Para alojar varios clientes en un sólo servidor considero que la mejor opción sería la "virtualización a nivel de sistema operativo", ya que tanto anfitrión como cliente tendrían el mismo sistema operativo, lo que facilitaría en gran medida la comunicación y las actualizaciones y eliminaría posibles conflictos.
 
