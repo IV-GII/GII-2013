@@ -1,3 +1,20 @@
+# Clase del 6 de octubre de 2014
+
+## Objetivos de la clase
+
+    []Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+    []Comprender los niveles de virtualización y sus denominaciones genéricas.
+    []Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
+
+## Otros objetivos
+    []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+    []Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    []Contestar a la encuesta sobre la metodología de clase
+    []Usar ficheros en el repositorio para los ejercicios.
+    []Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
+
+<hr />
+
 # Clase del 30 de septiembre de 2014
 
 ## Objetivos de la clase
