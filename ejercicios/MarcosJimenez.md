@@ -65,24 +65,76 @@ sudo apt-get install git
 
 <strong> EJERCICIO 6: Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.</strong>
 
-Para crear un nuevo proyecto en git nos vamos a "New" e introducimos el nombre que va a tener nuestro proyecto
+Una vez que hayamos instalado git escribimos lo siguiente para clonar un proyecto:
+
+git clone "URL del directorio a clonar"
+
+Como queremos añadir el archivo README al proyecto hacemos lo siguiente:
+
+git add README.md
+
+Y para modificar el contenido de ese archivo hacemos lo siguiente:
+
+git commit -m "Modificando el archivo README"
+
+Para guardar los cambios hacemos lo siguiente:
+
+git push origin master
 
 <strong> EJERCICIO 7: Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado. Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.</strong>
+
+Creamos el primer grupo de control para el navegador:
+
+mkdir cgroup/chrome
 
 <strong> EJERCICIO 8: Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU. Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa). Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema). Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios. </strong>
 
 <strong> EJERCICIO 9: Comprobar si el procesador o procesadores instalados lo tienen. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden? </strong>
 
+Al ejecutar la orden <strong>egrep '^flags.*(vmx|svm)' /proc/cpuinfo</strong> nos aparece lo siguiente:<br>
+
+<img src="http://i62.tinypic.com/29z7wd0.png"></img>
+
+Si entramos en el fichero proc/cpuinfo podemos ver el modelo de procesador que tenemos:<br>
+
+<img src="http://i59.tinypic.com/2qvvy54.png"></img>
+
 <strong> EJERCICIO 10: Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok. </strong>
+
+Para usar ese comando hay que instalar previamente un programa llamado CPU-Checker. Se instala de la siguiente forma:
+
+sudo apt-get install cpu-checker
+
+Hecho esto ya podemos ejecutar en nuestro terminal el comando kvm-ok. Vemos que nuestro módulo de kernel lo tiene instalado:
+
+<img src="http://i60.tinypic.com/qyd251.png"></img>
 
 <strong> EJERCICIO 11: Comentar diferentes soluciones de Software as a Service de uso habitual. </strong>
 
-<strong> EJERCICIO 12: Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente). </strong>
+Podemos definir "Software as a Service" como un modelo de distribución de software donde el soporte lógico y los datos que maneja se alojan en servidores de una compañía de tecnologías de información y comunicación (TIC), a los que se accede via Internet desde un cliente (vía Wikipedia).
 
-<strong> EJERCICIO 13: Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.</strong>
+Como ejemplos de SaaS podríamos citar cualquier tipo de servicio de alojamiento de archivos e información como puede ser Dropbox o MEGA, donde alojamos nuestros datos en un servidor y accedemos vía Internet a toda esa información. 
 
-<strong> EJERCICIO 14: Crear una aplicación en OpenShift y dentro de ella instalar WordPress. </strong>
+<h2> Creando aplicaciones en la nube: Uso de PaaS </h2>
 
+<strong> EJERCICIO 1: Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).</strong>
 
+Debido a que voy a tener que programar en Ruby este cuatrimestre, voy a instalar rbenv para Ruby. Para instalarlo ejecutamos el siguiente comando:
 
+sudo apt-get install rbenv
 
+<strong> EJERCICIO 2: Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift. </strong>
+
+Nos damos de alta en OpenShift:
+
+<img src="http://i60.tinypic.com/2ltpt3s.png"></img>
+
+<strong> EJERCICIO 3: Crear una aplicación en OpenShift y dentro de ella instalar WordPress.</strong>
+
+A la aplicación de WordPress le vamos a dar el nombre de infraestructuravirtual:
+
+<img src="http://i62.tinypic.com/o6d542.png"></img>
+
+Y este sería el resultado final:
+
+<img src="http://i60.tinypic.com/izqexi.png"></img>
