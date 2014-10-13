@@ -65,7 +65,21 @@ sudo apt-get install git
 
 <strong> EJERCICIO 6: Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.</strong>
 
-Para crear un nuevo proyecto en git nos vamos a "New" e introducimos el nombre que va a tener nuestro proyecto
+Una vez que hayamos instalado git escribimos lo siguiente para clonar un proyecto:
+
+git clone "URL del directorio a clonar"
+
+Como queremos añadir el archivo README al proyecto hacemos lo siguiente:
+
+git add README.md
+
+Y para modificar el contenido de ese archivo hacemos lo siguiente:
+
+git commit -m "Modificando el archivo README"
+
+Para guardar los cambios hacemos lo siguiente:
+
+git push origin master
 
 <strong> EJERCICIO 7: Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado. Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.</strong>
 
