@@ -184,7 +184,25 @@ Finalmente, como podemos observar [aqui](https://github.com/juanfranrv/probando)
 
 **Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
 
-(PENDIENTE POR HACER)
+Tras seguir el guión de la sesión 1 al pie de la letra y probando numerosos casos, no conseguía que al crear una carpeta en "cgroup" ( y al montarla) se crearan todos los ficheros necesarios dentro de ella, tal y como se muestra en la captura del guión. Sin embargo, informándome por diversos foros como Stackoverflow encontré la solución, consistió en la creación de la carpeta en el interior del fichero "cpu" dentro de cgroups, de esta forma, se crearon todos los ficheros necesarios para poder ver el uso de cpu de los procesos y poder hacer este ejercicio correctamente.
+
+Para crear los diferentes grupos de control, he creado tres carpetas diferentes dentro de /cgroup/cpu:
+
+* Como navegador he usado Mozilla Firefox: He creado una carpeta llamada firefox,dentro de ella, he realizado los siguientes pasos:
+
+![captura30](http://i.imgur.com/5Rvhzm8.png)
+
+Búsqueda del PID del proceso,añadir el PID al fichero tasks, y ver el uso de CPU.
+
+* Como procesador de textos he usado Retext: He creado una carpeta llamada Retext, dentro de ella, he realizado los mismos pasos que antes:
+
+![captura31](http://i.imgur.com/cqm2NrE.png)
+
+* Como otro proceso he usado Brasero: He creado una carpeta llamada brasero, dentro de ella, he realizado los mismos pasos que antes:
+
+![captura32](http://i.imgur.com/xRb1M09.png)
+
+El que más consume es Mozilla firefox, seguido de la aplicación "Brasero" y por último, el editor de textos Retext.
 
 ### Ejercicio 7.2 ###
     
@@ -219,6 +237,8 @@ Finalmente, como podemos observar [aqui](https://github.com/juanfranrv/probando)
 ### Ejercicio 9 ###
 
 **Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
+Modelo del procesador: Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz
 
 He ejecutado la instrucción:
 
