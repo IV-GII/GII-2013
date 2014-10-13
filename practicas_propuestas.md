@@ -26,9 +26,16 @@ La [oficina](http://osl.ugr.es) está en el edificio CEVUG en Real de Cartuja. E
 
 El UGR Aerospace Program es un proyecto para colocar un rover en una isla en el pantano de Canales. [Samuel Romero hizo esta presentación](https://speakerdeck.com/jjmerelo/presentacion-de-ugrasp-para-infraestructura-virtual).
 
-El proyecto está por definir, pero básicamente se trataría de una infraestuctura para recoger datos del rover. En la presentación se definen otros posibles proyectos, pero la descripción y el tipo dependería de los alumnos que lo elijan.
+El proyecto está por definir, pero básicamente se trataría de una infraestuctura para recoger datos del *rover*. En la presentación se definen otros posibles proyectos, pero la descripción y el tipo dependería de los alumnos que lo elijan.
 
 ## Nubbius
 
 Se trata de un proyecto nube [para clusterización de resultados de búsqueda en gestores de documentos](https://docs.google.com/a/nubbius.com/presentation/d/11E0OGUcb1PYpU4kPOd68iiXMXO2JUnrYj64GMqgtTkM/edit?usp=sharing). Contactad con él para solicitarle más detalles.
+
+## Si2.info
+
+[si2.info](http://si2.info) es una empresa, dirigida por Ángel Moreno, que se dedica principalmente a desarrollo móvil y de webs. Propone el siguiente proyecto: Se trataría de construir el backend de un sistema de mensajería para móviles (tipo WhatsApp / Telegram), exponiendo un API que nos permita autenticar al usuario, crear grupos, mensajes 1 a 1, gestionar imágenes y otros archivos de medios, enviar notificaciones push (Android/iOS/Amazon SNS)... El servidor de Telegram, vamos (creo, no estoy seguro, que solo los clientes son libres, y lo que estamos buscando es crear un producto específico para determinados clientes, necesitamos un servidor). Incluso pensamos en algún tipo de "garantía de entrega", un "mensaje certificado", algún conector con un sistema de terceros que pueda hacer de "notario".
+
+Podría ser tanto un proyecto de tipo *nube* creando un backend basado en alguna plataforma SaaS como un proyecto de tipo *devops* tomando cualquier sistema a medio desarrollar que necesitara una infraestructura virtual. El contacto de este proyecto es Ángel Moreno.
+
 
