@@ -411,10 +411,9 @@ Ya tenemos la aplicación de WordPress lista para ser usada y poder crear entrad
 
 ![captura29](http://i.imgur.com/LQbWg0t.png)
 
-
-***
-
 Aqui muestro un ejemplo de creación de una entrada en WordPress:
 
 ![captura30](http://i.imgur.com/0OpvoAM.png)
+
+***
 
