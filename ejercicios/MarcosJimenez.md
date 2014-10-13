@@ -73,6 +73,10 @@ Para crear un nuevo proyecto en git nos vamos a "New" e introducimos el nombre q
 
 <strong> EJERCICIO 9: Comprobar si el procesador o procesadores instalados lo tienen. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden? </strong>
 
+Al ejecutar la orden <strong>egrep '^flags.*(vmx|svm)' /proc/cpuinfo</strong> nos aparece lo siguiente:<br>
+
+<img src="https://www.dropbox.com/s/bg0dhstvuwoh4gy/Captura.PNG?dl=0"></img>
+
 <strong> EJERCICIO 10: Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok. </strong>
 
 <strong> EJERCICIO 11: Comentar diferentes soluciones de Software as a Service de uso habitual. </strong>
