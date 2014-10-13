@@ -137,4 +137,4 @@ A la aplicación de WordPress le vamos a dar el nombre de infraestructuravirtual
 
 Y este sería el resultado final:
 
-<img src"http://i60.tinypic.com/izqexi.png"></img>
+<img src="http://i60.tinypic.com/izqexi.png"></img>
