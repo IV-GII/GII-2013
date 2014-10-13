@@ -77,6 +77,10 @@ Al ejecutar la orden <strong>egrep '^flags.*(vmx|svm)' /proc/cpuinfo</strong> no
 
 <img src="http://i62.tinypic.com/29z7wd0.png"></img>
 
+Si entramos en el fichero proc/cpuinfo podemos ver el modelo de procesador que tenemos:<br>
+
+<img src="http://i59.tinypic.com/2qvvy54.png"></img>
+
 <strong> EJERCICIO 10: Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok. </strong>
 
 <strong> EJERCICIO 11: Comentar diferentes soluciones de Software as a Service de uso habitual. </strong>
