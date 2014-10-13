@@ -75,7 +75,7 @@ Para crear un nuevo proyecto en git nos vamos a "New" e introducimos el nombre q
 
 Al ejecutar la orden <strong>egrep '^flags.*(vmx|svm)' /proc/cpuinfo</strong> nos aparece lo siguiente:<br>
 
-<img src="https://www.dropbox.com/s/bg0dhstvuwoh4gy/Captura.PNG"></img>
+<img src="https://www.dropbox.com/sc/qjw8o4pum1pbf27/AACr6cXArMRP0poZ1cLilih2a"></img>
 
 <strong> EJERCICIO 10: Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok. </strong>
 
