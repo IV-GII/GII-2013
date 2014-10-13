@@ -93,6 +93,10 @@ Hecho esto ya podemos ejecutar en nuestro terminal el comando kvm-ok. Vemos que 
 
 <strong> EJERCICIO 11: Comentar diferentes soluciones de Software as a Service de uso habitual. </strong>
 
+Podemos definir "Software as a Service" como un modelo de distribución de software donde el soporte lógico y los datos que maneja se alojan en servidores de una compañía de tecnologías de información y comunicación (TIC), a los que se accede via Internet desde un cliente (vía Wikipedia).
+
+Como ejemplos de SaaS podríamos citar cualquier tipo de servicio de alojamiento de archivos e información como puede ser Dropbox o MEGA, donde alojamos nuestros datos en un servidor y accedemos vía Internet a toda esa información. 
+
 <strong> EJERCICIO 12: Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente). </strong>
 
 <strong> EJERCICIO 13: Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.</strong>
