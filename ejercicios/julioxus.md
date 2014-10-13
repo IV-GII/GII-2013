@@ -131,7 +131,18 @@ Finalmente podremos ejecutar el script de esta forma:
 
 ![captura5](http://i.imgur.com/CWKDjjP.png)
 
+## Ejercicio 5 ##
+
+**Instala el sistema de gestión de fuentes git**
+
+Para instalar git basta con ejecutar la orden:
+
+\# sudo apt-get install git
+
 ## Ejercicio 6 ##
+
+1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
+2. Modificar el readme y subir el fichero modificado.
 
 He creado un proyecto en GitHub con el fichero readme incluido.
 
@@ -142,3 +153,31 @@ Lo he descargado con git, y he añadido información al README haciendo lo sigui
 Aquí podemos ver cómo se ve en GitHub actualizado:
 
 ![captura7](http://i.imgur.com/dPMViHs.png)
+
+## Ejercicio 9 ##
+
+**Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
+Mi procesador tiene activados estos flags. El modelo de mi procesador es: Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz
+
+La salida de esta orden es la siguiente:
+
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+
+## Ejercicio 10 ##
+
+**Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
+
+La salida de la ejecución del comando ha sido:
+
+INFO: /dev/kvm exists
+KVM acceleration can be used
+
+Lo que quiere decir que mi ordenador contiene este módulo del kernel y puedo usar la virtualización kvm.
+
