@@ -277,13 +277,13 @@ Por lo que se puede observar que mi ordenador no contiene este módulo del kerne
 
 **Comentar diferentes soluciones de Software as a Service de uso habitual.**
 
-En general son muchas las soluciones de Software as a Service (SaaS) y además se suelen usar frecuentemente.
+Todas las aplicaciones que se ejecutan en servidores remotos y son accedidas generalmente través de un navegador web, son SaaS.
 
 Los ejemplos más comunes son algunos ERP (Sistemas de planificación de recursos empresariales) y CRM (Software para la administración basada en la relación con los clientes), aunque otros ejemplos de uso serían los siguientes:
 
-* Aplicaciones web: CMS o gestores de contenidos, CRMs, WebOS (Webdesktops o escritorios basados en web),  correo, mensajería instantánea, plataforma educativa, comercio electrónico, sistemas de pago, herramientas colaborativas…
+* Aplicaciones web: CMS o gestores de contenidos, WebOS (Webdesktops o escritorios basados en web),  correo, mensajería instantánea, plataforma educativa, comercio electrónico, sistemas de pago, herramientas colaborativas…
 
-* Otras aplicaciones: acceso a BBDD, como nuestro ERP, aplicaciones mixtas (ej: Adobe AIR)
+* Aplicaciones mixtas (ej: Adobe AIR)
 
 * Almacenamiento Remoto y backup
 
@@ -291,9 +291,8 @@ Los ejemplos más comunes son algunos ERP (Sistemas de planificación de recurso
 
 * Alquiler de la plataforma para servicios/aplicaciones de terceros o soluciones tradicionales de hosting (y servicios relacionados como registro de dominios).
 
-* Repositorio de software
+Son soluciones SaaS, debido a que ofrecen aplicaciones o soluciones software que están almacenada en servidores de empresas, lo cuál, hace que no tengamos que preocuparnos por el mantenimiento o la realización de copias de seguridad entre otras cosas. Sin embargo, el principal inconveniente de las soluciones SaaS es el problema de la privacidad de datos, ya que estas empresas tienen acceso a numerosos datos personales del cliente, de tal forma que si alguien consigue acceder a esa información, nos podría poner en peligro.
 
-* Servicios Web (propios y de terceros)
 
 ### Ejercicio 12 ###
 
