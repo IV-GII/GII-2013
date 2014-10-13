@@ -39,3 +39,6 @@ Se trata de un proyecto nube [para clusterización de resultados de búsqueda en
 Podría ser tanto un proyecto de tipo *nube* creando un backend basado en alguna plataforma SaaS como un proyecto de tipo *devops* tomando cualquier sistema a medio desarrollar que necesitara una infraestructura virtual. El contacto de este proyecto es Ángel Moreno.
 
 
+## Otros proyectos
+
+Se puede plantear cualquier otro proyecto, siempre que se adapte a alguno de los dos tipos anteriores y sea un proyecto con un fin real.
