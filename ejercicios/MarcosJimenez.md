@@ -83,6 +83,14 @@ Si entramos en el fichero proc/cpuinfo podemos ver el modelo de procesador que t
 
 <strong> EJERCICIO 10: Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok. </strong>
 
+Para usar ese comando hay que instalar previamente un programa llamado CPU-Checker. Se instala de la siguiente forma:
+
+sudo apt-get install cpu-checker
+
+Hecho esto ya podemos ejecutar en nuestro terminal el comando kvm-ok. Vemos que nuestro módulo de kernel lo tiene instalado:
+
+<img src="http://i60.tinypic.com/qyd251.png"></img>
+
 <strong> EJERCICIO 11: Comentar diferentes soluciones de Software as a Service de uso habitual. </strong>
 
 <strong> EJERCICIO 12: Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente). </strong>
