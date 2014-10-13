@@ -40,6 +40,8 @@ Teniendo en cuenta que obtenemos un 14,28% (100%/7) del precio total del servido
 
 ## Sesión 30-sept-2014 ##
 
+***
+
 ### Ejercicio 2 ###
 
 **Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.**
@@ -72,6 +74,7 @@ Precio:$0.026 por hora = 0.016€
 * Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado independientemente del tiempo utilizado: 13.99€ * 12= 167.88€
 * Con Amazon pagaríamos (0.016€ * 24h *30 días * 12 meses) * 0.10 = 13.8€
 
+***
 
 ### Ejercicio 3.1 ###
 
@@ -84,6 +87,8 @@ Lo he comentado en el foro, pero también lo indico aqui:
 2- La virtualización que usaría para crear un sistema eficiente de web+middleware+base de datos sería la virtualización plena ya que nos permitiría virtualizar todos los aspectos de un ordenador para poder ejecutar sistemas operativos y otros programas sin modificar.
 
 3- Por último,la virtualización más adecuada para un sistema de prueba de software e integración continua, obviamente, es la virtualización de entornos de desarrollo ya que nos permite reproducir de la forma más fiable posible entornos de producción.
+
+***
 
 ### Ejercicio 3.2 ###
 
@@ -111,7 +116,7 @@ Y en linux Mint:
 
 ![captura5](http://i.imgur.com/q4qPpTp.png)
 
-
+***
 
 ### Ejercicio 4 ###
 
@@ -156,11 +161,15 @@ y finalmente ejecutar el script con:
   sudo docker run -i -t par par
 ```
 
+***
+
 ### Ejercicio 5 ###
 
 **Instala el sistema de gestión de fuentes git**
 
 ![captura4](http://i.imgur.com/M6Io3nv.png)
+
+***
 
 ### Ejercicio 6 ###
 
@@ -179,6 +188,8 @@ Para subir el fichero modificado he ejecutado los siguiente comandos: (git add, 
 Finalmente, como podemos observar [aqui](https://github.com/juanfranrv/probando), el fichero readme se ha modificado correctamente:
 
 ![captura6](http://i.imgur.com/3XYPqy0.png)
+
+***
 
 ### Ejercicio 7.1 ###
 
@@ -204,11 +215,15 @@ Búsqueda del PID del proceso,añadir el PID al fichero tasks, y ver el uso de C
 
 El que más consume es Mozilla firefox, seguido de la aplicación "Brasero" y por último, el editor de textos Retext.
 
+***
+
 ### Ejercicio 7.2 ###
     
 **Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.**
 
 (PENDIENTE POR HACER)
+
+***
 
 ### Ejercicio 8.1 ###
 
@@ -216,11 +231,15 @@ El que más consume es Mozilla firefox, seguido de la aplicación "Brasero" y po
 
 (PENDIENTE POR HACER)
 
+***
+
 ### Ejercicio 8.2 ###
 
 **Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).**
 
 (PENDIENTE POR HACER)
+
+***
 
 ### Ejercicio 8.3 ###
 
@@ -228,11 +247,15 @@ El que más consume es Mozilla firefox, seguido de la aplicación "Brasero" y po
 
 (PENDIENTE POR HACER)
 
+***
+
 ### Ejercicio 8.4 ###
 
 **Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.**
 
 (PENDIENTE POR HACER)
+
+***
 
 ### Ejercicio 9 ###
 
@@ -254,6 +277,7 @@ Según la siguiente captura:
 
 La expresión no devuelve nada, por lo que el procesador no tiene esa funcionalidad o está desactivada.
 
+***
 
 ### Ejercicio 10 ###
 
@@ -272,6 +296,8 @@ Me indica que use otra orden para más información:
 ![captura16](http://i.imgur.com/4meXfEI.png)
 
 Por lo que se puede observar que mi ordenador no contiene este módulo del kernel.
+
+***
 
 ### Ejercicio 11 ###
 
@@ -293,6 +319,7 @@ Los ejemplos más comunes son algunos ERP (Sistemas de planificación de recurso
 
 Son soluciones SaaS, debido a que ofrecen aplicaciones o soluciones software que están almacenada en servidores de empresas, lo cuál, hace que no tengamos que preocuparnos por el mantenimiento o la realización de copias de seguridad entre otras cosas. Sin embargo, el principal inconveniente de las soluciones SaaS es el problema de la privacidad de datos, ya que estas empresas tienen acceso a numerosos datos personales del cliente, de tal forma que si alguien consigue acceder a esa información, nos podría poner en peligro.
 
+***
 
 ### Ejercicio 12 ###
 
@@ -332,6 +359,8 @@ mi_proyecto/
     
 Por lo que tenemos el entorno virtual de Python listo para ser utilizado.
 
+***
+
 ### Ejercicio 13 ###
 
 **Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
@@ -353,6 +382,8 @@ Una vez registrado, ya puedo acceder correctamente a la interfaz de Heroku:
 También me he dado de alta en Openshift para el ejercicio 14:
 
 ![captura24](http://i.imgur.com/55v20qM.png)
+
+***
 
 ### Ejercicio 14 ###
 
@@ -379,6 +410,9 @@ Posteriormente, ya se encuentra WordPress listo para usarse (previamente hay que
 Ya tenemos la aplicación de WordPress lista para ser usada y poder crear entradas:
 
 ![captura29](http://i.imgur.com/LQbWg0t.png)
+
+
+***
 
 Aqui muestro un ejemplo de creación de una entrada en WordPress:
 
