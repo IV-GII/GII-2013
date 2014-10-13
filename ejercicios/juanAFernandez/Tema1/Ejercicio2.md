@@ -8,7 +8,7 @@ Partamos de la hipótesis de que necesitamos un servidor para alojar la web de u
 
 La oferta de 1and1 en servidores virtuales puede verse resumida en el siguiente extracto de su página:
 
-![Gama Servidores Virtuales](1and1GamaServidoresVirtuales.jpg "gamaServidoresVirtuales")
+![Gama Servidores Virtuales](imagenes/1and1GamaServidoresVirtuales.jpg "gamaServidoresVirtuales")
 
 En nuestro caso elegiremos la opción XL que tiene un precio de 20€/mes (9,99€ es el precio de contrataciónd el servicio a 24meses) ya que sólo lo vamos a necesitar seis meses. Eligiendo esta opción al final acabaremos pagando:
 
@@ -19,7 +19,7 @@ Y esto será independientemente del uso que hagamos del mismo.
 Por otra parte podemos elegir el servicio bajo demanda que ofrecen. Mediante la calculadora de coste podemos configurar una máquina de prestaciones similares a la XL.
 
 
-![Configurador Cloud](1and1ConfiguradorCloud.jpg "configuradorCloud")
+![Configurador Cloud](imagenes/1and1ConfiguradorCloud.jpg "configuradorCloud")
 
 Como se puede observar si la máquina estuviera encendida las 24h como el servidor virtual el precio es claramente superior, pero como se dice en el enunciado, supongamos que el uso de esta máquina será del 1% o 10% del total contratado (imaginemos que sólo conectaremos el servidor para hacer pruebas de producción y que sólo se conectará de forma continua el día del congreso). En ese caso:
 

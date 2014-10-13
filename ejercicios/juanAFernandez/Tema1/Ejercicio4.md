@@ -1,7 +1,7 @@
 Docker
 ======
 
-![Imagen1](docker.png)
+![Imagen1](imagenes/docker.png)
 
 Contenedor para correr aplicaciones. Extiende los contenedores LXC de Linux con una API de alto nivel que proporciona una solución de virtualización ligera aislando los procesos.
 Docker utiliza LXC, cgroups y el propio kernel de Linux.
