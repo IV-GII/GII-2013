@@ -40,6 +40,8 @@ Teniendo en cuenta que obtenemos un 14,28% (100%/7) del precio total del servido
 
 ## Sesión 30-sept-2014 ##
 
+***
+
 ### Ejercicio 2 ###
 
 **Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.**
@@ -72,6 +74,7 @@ Precio:$0.026 por hora = 0.016€
 * Con Hostinger pagaríamos lo mismo, porque el servicio se cobra por mes contratado independientemente del tiempo utilizado: 13.99€ * 12= 167.88€
 * Con Amazon pagaríamos (0.016€ * 24h *30 días * 12 meses) * 0.10 = 13.8€
 
+***
 
 ### Ejercicio 3.1 ###
 
@@ -84,6 +87,8 @@ Lo he comentado en el foro, pero también lo indico aqui:
 2- La virtualización que usaría para crear un sistema eficiente de web+middleware+base de datos sería la virtualización plena ya que nos permitiría virtualizar todos los aspectos de un ordenador para poder ejecutar sistemas operativos y otros programas sin modificar.
 
 3- Por último,la virtualización más adecuada para un sistema de prueba de software e integración continua, obviamente, es la virtualización de entornos de desarrollo ya que nos permite reproducir de la forma más fiable posible entornos de producción.
+
+***
 
 ### Ejercicio 3.2 ###
 
@@ -111,7 +116,7 @@ Y en linux Mint:
 
 ![captura5](http://i.imgur.com/q4qPpTp.png)
 
-
+***
 
 ### Ejercicio 4 ###
 
@@ -156,11 +161,15 @@ y finalmente ejecutar el script con:
   sudo docker run -i -t par par
 ```
 
+***
+
 ### Ejercicio 5 ###
 
 **Instala el sistema de gestión de fuentes git**
 
 ![captura4](http://i.imgur.com/M6Io3nv.png)
+
+***
 
 ### Ejercicio 6 ###
 
@@ -180,11 +189,33 @@ Finalmente, como podemos observar [aqui](https://github.com/juanfranrv/probando)
 
 ![captura6](http://i.imgur.com/3XYPqy0.png)
 
+***
+
 ### Ejercicio 7.1 ###
 
 **Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
 
-(PENDIENTE POR HACER)
+Tras seguir el guión de la sesión 1 al pie de la letra y probando numerosos casos, no conseguía que al crear una carpeta en "cgroup" ( y al montarla) se crearan todos los ficheros necesarios dentro de ella, tal y como se muestra en la captura del guión. Sin embargo, informándome por diversos foros como Stackoverflow encontré la solución, consistió en la creación de la carpeta en el interior del fichero "cpu" dentro de cgroups, de esta forma, se crearon todos los ficheros necesarios para poder ver el uso de cpu de los procesos y poder hacer este ejercicio correctamente.
+
+Para crear los diferentes grupos de control, he creado tres carpetas diferentes dentro de /cgroup/cpu:
+
+* Como navegador he usado Mozilla Firefox: He creado una carpeta llamada firefox,dentro de ella, he realizado los siguientes pasos:
+
+![captura30](http://i.imgur.com/5Rvhzm8.png)
+
+Búsqueda del PID del proceso,añadir el PID al fichero tasks, y ver el uso de CPU.
+
+* Como procesador de textos he usado Retext: He creado una carpeta llamada Retext, dentro de ella, he realizado los mismos pasos que antes:
+
+![captura31](http://i.imgur.com/cqm2NrE.png)
+
+* Como otro proceso he usado Brasero: He creado una carpeta llamada brasero, dentro de ella, he realizado los mismos pasos que antes:
+
+![captura32](http://i.imgur.com/xRb1M09.png)
+
+El que más consume es Mozilla firefox, seguido de la aplicación "Brasero" y por último, el editor de textos Retext.
+
+***
 
 ### Ejercicio 7.2 ###
     
@@ -192,11 +223,15 @@ Finalmente, como podemos observar [aqui](https://github.com/juanfranrv/probando)
 
 (PENDIENTE POR HACER)
 
+***
+
 ### Ejercicio 8.1 ###
 
 **Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.**
 
 (PENDIENTE POR HACER)
+
+***
 
 ### Ejercicio 8.2 ###
 
@@ -204,11 +239,15 @@ Finalmente, como podemos observar [aqui](https://github.com/juanfranrv/probando)
 
 (PENDIENTE POR HACER)
 
+***
+
 ### Ejercicio 8.3 ###
 
 **Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
 
 (PENDIENTE POR HACER)
+
+***
 
 ### Ejercicio 8.4 ###
 
@@ -216,9 +255,13 @@ Finalmente, como podemos observar [aqui](https://github.com/juanfranrv/probando)
 
 (PENDIENTE POR HACER)
 
+***
+
 ### Ejercicio 9 ###
 
 **Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
+Modelo del procesador: Intel(R) Core(TM) i7-3612QM CPU @ 2.10GHz
 
 He ejecutado la instrucción:
 
@@ -234,6 +277,7 @@ Según la siguiente captura:
 
 La expresión no devuelve nada, por lo que el procesador no tiene esa funcionalidad o está desactivada.
 
+***
 
 ### Ejercicio 10 ###
 
@@ -253,17 +297,19 @@ Me indica que use otra orden para más información:
 
 Por lo que se puede observar que mi ordenador no contiene este módulo del kernel.
 
+***
+
 ### Ejercicio 11 ###
 
 **Comentar diferentes soluciones de Software as a Service de uso habitual.**
 
-En general son muchas las soluciones de Software as a Service (SaaS) y además se suelen usar frecuentemente.
+Todas las aplicaciones que se ejecutan en servidores remotos y son accedidas generalmente través de un navegador web, son SaaS.
 
 Los ejemplos más comunes son algunos ERP (Sistemas de planificación de recursos empresariales) y CRM (Software para la administración basada en la relación con los clientes), aunque otros ejemplos de uso serían los siguientes:
 
-* Aplicaciones web: CMS o gestores de contenidos, CRMs, WebOS (Webdesktops o escritorios basados en web),  correo, mensajería instantánea, plataforma educativa, comercio electrónico, sistemas de pago, herramientas colaborativas…
+* Aplicaciones web: CMS o gestores de contenidos, WebOS (Webdesktops o escritorios basados en web),  correo, mensajería instantánea, plataforma educativa, comercio electrónico, sistemas de pago, herramientas colaborativas…
 
-* Otras aplicaciones: acceso a BBDD, como nuestro ERP, aplicaciones mixtas (ej: Adobe AIR)
+* Aplicaciones mixtas (ej: Adobe AIR)
 
 * Almacenamiento Remoto y backup
 
@@ -271,9 +317,9 @@ Los ejemplos más comunes son algunos ERP (Sistemas de planificación de recurso
 
 * Alquiler de la plataforma para servicios/aplicaciones de terceros o soluciones tradicionales de hosting (y servicios relacionados como registro de dominios).
 
-* Repositorio de software
+Son soluciones SaaS, debido a que ofrecen aplicaciones o soluciones software que están almacenada en servidores de empresas, lo cuál, hace que no tengamos que preocuparnos por el mantenimiento o la realización de copias de seguridad entre otras cosas. Sin embargo, el principal inconveniente de las soluciones SaaS es el problema de la privacidad de datos, ya que estas empresas tienen acceso a numerosos datos personales del cliente, de tal forma que si alguien consigue acceder a esa información, nos podría poner en peligro.
 
-* Servicios Web (propios y de terceros)
+***
 
 ### Ejercicio 12 ###
 
@@ -313,6 +359,8 @@ mi_proyecto/
     
 Por lo que tenemos el entorno virtual de Python listo para ser utilizado.
 
+***
+
 ### Ejercicio 13 ###
 
 **Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
@@ -334,6 +382,8 @@ Una vez registrado, ya puedo acceder correctamente a la interfaz de Heroku:
 También me he dado de alta en Openshift para el ejercicio 14:
 
 ![captura24](http://i.imgur.com/55v20qM.png)
+
+***
 
 ### Ejercicio 14 ###
 
@@ -364,4 +414,6 @@ Ya tenemos la aplicación de WordPress lista para ser usada y poder crear entrad
 Aqui muestro un ejemplo de creación de una entrada en WordPress:
 
 ![captura30](http://i.imgur.com/0OpvoAM.png)
+
+***
 
