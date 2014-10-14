@@ -35,3 +35,13 @@ Primero calculamos las horas que estaria activo el servidor para el 1% y el 10%,
 | Linux | n1-standar8 | 8 | 30 GB | Europa | 0,39$ | 9,30$ | 278,98$ | 3347,76$  | 34,16$  | 341,64$ |
 | Linux | n1-standar16 | 16 | 60 GB | Europa | 0,78$ | 18,60$ | 557,96$ | 6695,52$  | 68,32$  | 683,28$ |
 
+
+[Arsys:](www.arsys.es/servidores/dedicados)
+
+| Sistema Operativo | Tipo | CPU Cores | RAM | €/hora | €/mes | €/año | Precio 1% | Precio 10% |
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| CentOS 6 | Servidor S2 | 1 x 2 Core | 2 GB | 0,17€ | 125€ | 1500€ |  14,90€ | 148,92€ |
+| CentOS 6 | Servidor S4 | 1 x 4 Core | 4 GB | 0,24€ | 175€ | 2100€ |  21,02€ | 210,24€ |
+| CentOS 6 | Servidor S6 | 1 x 6 Core | 8 GB | 0,31€ | 225€ | 2700€ | 27,16€  | 271,56€ |
+| CentOS 6 | Servidor S8 | 2 x 4 Core | 8 GB | 0,38€ | 275€ | 3300€ | 33,29€  | 332,88€ |
+
