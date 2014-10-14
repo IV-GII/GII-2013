@@ -198,3 +198,19 @@ Amortización:
 * Año 2019: 8.3*8 = 66.7€ + 2.7€ *8 = 88.3€
 
 Precio total: 660.1€
+
+
+***
+
+###Ejercicio 8###
+#####8.1 Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.#####
+--
+
+#####8.2 Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).#####
+Por hacer
+
+#####8.3 Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).#####
+Desconozco cómo se migra la carga de un procesador a otro. El uso de memoria se incrementaría (incluso podría necesitarse memoria de SWAP) y uno de los procesadores aumentaría su uso a la vez que el del otro descendería. 
+![Ejecución de la orden htop](http://fotos.subefotos.com/1c350c29f3bacd01e2f11dd5a3251566o.jpg)
+
+#####8.4 Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.#####
