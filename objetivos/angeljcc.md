@@ -25,16 +25,16 @@
 ***
 ##Clase del 6 de octubre de 2014
 
-- [ ] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.  
-- [ ] Comprender los niveles de virtualización y sus denominaciones genéricas.  
-- [ ] Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.  
-- [ ] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones  
+- [x] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.  
+- [x] Comprender los niveles de virtualización y sus denominaciones genéricas.  
+- [x] Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.  
+- [x] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones  
 
 ####Otros objetivos
 
 - [x] Contestar a la encuesta sobre la metodología de clase 
 - [x] Usar ficheros en el repositorio para los ejercicios.  
-- [ ] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.  
+- [x] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.  
 ***
 ##Clase-seminario del 7 de octubre de 2014
 
