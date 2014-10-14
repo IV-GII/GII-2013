@@ -160,7 +160,7 @@ Como se puede ver en la [web de Github](https://github.com/iblancasa/iblancasaWo
 
 ###Ejercicio 7###
 
-#####Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.#####
+#####7.1 Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.#####
 + He montado el sistema de archivos con "sudo mount -t tmpfs cgroup_root /sys/fs/cgroup"
 + He creado el directorio con "sudo mkdir /sys/fs/cgroup/cpuset", donde "cpuset" es el nombre del cgroup
 + Como dentro del directorio no se creó nada, he acudido a buscar en Internet y he encontrado [esto](http://serverfault.com/questions/478946/how-can-i-create-and-use-linux-cgroups-as-a-non-root-user). Al ejecutar el comando "sudo mount -t cgroup -o cpuset cpuset /sys/fs/cgroup/cpuset", para montar el sistema de archivos y "sudo mkdir /sys/fs/cgroup/cpuset/${USER}" y "sudo chown -R ${USER} /sys/fs/cgroup/cpuset/${USER}" para crear el cgroup con el usuario actual, si aparecen los ficheros que se describen en el material de clase.
@@ -176,3 +176,25 @@ Gedit
 
 Firefox
 ![Firefox](http://fotos.subefotos.com/1c44d0a2747e297b650ab0ce830138f4o.jpg)
+
+
+
+
+#####7.2 Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.#####
+En primer lugar hay que [tener en cuenta el gasto medio de un PC](http://www.leantricity.es/es/2012/07/11/cuanta-energia-gasta-un-ordenador-aproximaciones/)
+Coste eléctrico por año:
+365 días x (0,437 kWh + 0,1524 kWh) = 215 kWh 
+0,15 € * 215 kWh = 32€/año
+
+Teniendo en cuenta que la vida media de un ordenador (con cierto uso) está en torno a los 5 años y suponiendo un precio de 500€.
+
+
+Amortización:
+* Año 2014: 8.3*4 = 33.2€ + 2.7€ *4 = 43.8€
+* Año 2015: 100€ + 32€ = 132€
+* Año 2016: 100€ + 32€ = 132€
+* Año 2017: 100€ + 32€ = 132€
+* Año 2018: 100€ + 32€ =  132€
+* Año 2019: 8.3*8 = 66.7€ + 2.7€ *8 = 88.3€
+
+Precio total: 660.1€
