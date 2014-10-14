@@ -1,5 +1,34 @@
 #Ejercicios de Juan Antonio Marin
 
+##Sesión 14-oct-2014
+
+###Ejercicio 3:
+
+1. ¿Qué tipo de virtualización es la más adecuada para: alojar varios clientes en un sólo servidor, crear un sistema eficiente de web + middleware + base de datos, un sistema de prueba de software e integración continua? Responder aquí y razonar.
+
+Varios clientes en un solo servidor: Para este usaría un entorno de virtualización a nivel se sistema operativo, ya que tendría al servidor como anfitrión y a los clientes aislados en los contenedores.
+
+Crear un sistema eficiente de web +  middleware + base de datos: un sistema de virtualización plena ya que tiene estructuras de control llamadas hipervisores para controlar los diferentes aspectos de web y base de datos.
+
+Un sistema de prueba de software e integración continua: dado que es un sistema de prueba simplemente debe usarse una virtualización de entornos de desarrollo para así probar las diferentes versiones y por tanto así tenemos cubierta una integración continua.
+
+2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+
+Primero creamos el programa mas simple que podemos crear:
+
+´´´
+#!/bin/bash
+echo "Esto es una prueba"
+´´´
+Descargamos del repositorio el CDE: git clone git://github.com/pgbovine/CDE.git
+Instalamos entrando en el directorio y con el comando make para ejecutar el Makefile
+Copiamos el programa creado en la carpeta CDE, y le cambiamos los permisos: chmod u+x prueba.sh
+Ahora simplemente ejecutamos ./cde ./prueba.sh
+Y se nos crea el CDE en mi caso en: cde-package/cde-root/home/juanaco/CDE/prueba.sh.cde el archivo, junto a todo el cde-package. Este podemos comprimirlo y llevarlo a otros sistemas.
+
+![Imagen CDE](http://imageshack.com/a/img537/4091/NN0CGy.png"IMAGEN CDE")
+
+
 ##Sesión 6-oct-2014
 
 ###Ejercicio 6:
