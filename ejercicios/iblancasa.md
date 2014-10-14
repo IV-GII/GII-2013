@@ -164,3 +164,15 @@ Como se puede ver en la [web de Github](https://github.com/iblancasa/iblancasaWo
 + He montado el sistema de archivos con "sudo mount -t tmpfs cgroup_root /sys/fs/cgroup"
 + He creado el directorio con "sudo mkdir /sys/fs/cgroup/cpuset", donde "cpuset" es el nombre del cgroup
 + Como dentro del directorio no se creó nada, he acudido a buscar en Internet y he encontrado [esto](http://serverfault.com/questions/478946/how-can-i-create-and-use-linux-cgroups-as-a-non-root-user). Al ejecutar el comando "sudo mount -t cgroup -o cpuset cpuset /sys/fs/cgroup/cpuset", para montar el sistema de archivos y "sudo mkdir /sys/fs/cgroup/cpuset/${USER}" y "sudo chown -R ${USER} /sys/fs/cgroup/cpuset/${USER}" para crear el cgroup con el usuario actual, si aparecen los ficheros que se describen en el material de clase.
++Finalmente, utilizando también la solución del perfil de Twitter de la asignatura, he conseguido que se generen todos los ficheros.
+
+
+######Comparación######:
+Eclipse
+![Eclipse](http://fotos.subefotos.com/e71196d3fc3adee4683fccdd4e4d5712o.jpg)
+
+Gedit
+![Gedit](http://fotos.subefotos.com/54acfab06e6a06d063c8c89df653f4b2o.jpg)
+
+Firefox
+![Firefox](http://fotos.subefotos.com/1c44d0a2747e297b650ab0ce830138f4o.jpg)
