@@ -14,14 +14,14 @@ Para realizar este ejercicio he usado el siguiente [servidor](http://www.lambda-
  - 3039.48€ precio bruto
 
 ####Cálculo de la amortización en 4 años:
-Nos deduciremos hasta un máximo de un 25% anual siguiendo la tabla de amortizaciones simplificada.  
-* Primer año: 3476,93 * 25% = 869,2325  
-* Segundo año: 3476,93 * 25% = 869,2325  
-* Tercer año: 3476,93 * 25% = 869,2325  
-* Cuarto año: 3476,93 * 25% = 869,2325  
+Vamos a deducirnos el 25% por año que es lo máximo que podemos.
+* Primer año: 3039.48€ * 25% = 869,2325  
+* Segundo año: 3039.48€ * 25% = 869,2325  
+* Tercer año: 3039.48€ * 25% = 869,2325  
+* Cuarto año: 3039.48€ * 25% = 869,2325  
 
-######Cálculo de la amortización en 7 años: 
-Para ello nos deduciremos en un primer momento la mayor parte al principio puesto que es cuando se realiza la inversión.  
+####Cálculo de la amortización en 7 años: 
+Vamos a ir deduciendonos cada año un cierto porcentaje, pero los primeros años más ya que es inversión.  
 * Primer año: 3476,93 * 25% = 869,2325  
 * Segundo año: 3476,93 * 20% = 695,386  
 * Tercer año: 3476,93 * 20% = 695,386  
