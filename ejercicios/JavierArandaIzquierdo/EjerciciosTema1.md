@@ -29,7 +29,9 @@ Primero calculamos las horas que estaria activo el servidor para el 1% y el 10%,
 
 | Sistema Operativo | Tipo | CPU Cores | RAM | Datacenter | €/dia | €/mes | €/año | Precio 1% | Precio 10% |
 |--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
-| Linux | n1-standar1 | 1 | 3,75 GB | Europa | 1,16$ | 34,87$ |   |   |  |
-| Linux | n1-standar2 | 2 | 7,5 GB | Europa |  | 69,75$ |   |   |  |
-
+| Linux | n1-standar1 | 1 | 3,75 GB | Europa | 1,16$ | 34,87$ | $  |   |  |
+| Linux | n1-standar2 | 2 | 7,5 GB | Europa | $ | 69,75$ | $  |  $ | $ |
+| Linux | n1-standar4 | 4 | 15 GB | Europa | $ | 139,49$ |  $ | $  | $ |
+| Linux | n1-standar8 | 8 | 30 GB | Europa | $ | 278,98$ | $  | $  | $ |
+| Linux | n1-standar16 | 16 | 60 GB | Europa | $ | 557,96$ | $  | $  |$  |
 
