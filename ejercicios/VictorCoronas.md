@@ -22,13 +22,13 @@ Vamos a deducirnos el 25% por año que es lo máximo que podemos.
 
 ####Cálculo de la amortización en 7 años: 
 Vamos a ir deduciendonos cada año un cierto porcentaje, pero los primeros años más ya que es inversión.  
-* Primer año: 3039.48€ * 25% = 759,87€ 
-* Segundo año: 3039.48€ * 25% = 759,87€  
-* Tercer año: 3039.48€ * 15% = 455,922€  
-* Cuarto año: 3039.48€ * 15% = 455,922€  
-* Quinto año: 3039.48€ * 10% = 303,948€  
-* Sexto año: 3039.48€ * 5% = 151,974€  
-* Séptimo año: 3039.48€ * 5% = 151,974€
+ - Primer año: 3039.48€ * 25% = 759,87€ 
+ - Segundo año: 3039.48€ * 25% = 759,87€  
+ - Tercer año: 3039.48€ * 15% = 455,922€  
+ - Cuarto año: 3039.48€ * 15% = 455,922€  
+ - Quinto año: 3039.48€ * 10% = 303,948€  
+ - Sexto año: 3039.48€ * 5% = 151,974€  
+ - Séptimo año: 3039.48€ * 5% = 151,974€
 
 
 * Ejercicio 2: 
