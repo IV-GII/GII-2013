@@ -156,10 +156,39 @@ echo 0 > /cpuset.cpus
 echo 0 > /cpuset.mems 
 
 
+##Ejercicio 7
+
+Accedo al direcotrio de cgroups  ( /sys/fs/cgroup ) y monto el sistema de ficheros virtual: sudo mount -t cgroup cgroup /sys/fs/cgroup/
+
+![imagen1](http://i.imgur.com/BgE1uJe.png)
+
+
+Creo un grupo de control para el navegador con una carpeta con este nombre en cgroup y accedo a ella:
+
+![imagen2](http://i.imgur.com/mgjOmzm.png)
+
+
+y abro una ventana del navegador, creando un proceso y accediendo a su id en consola con:
+
+firefox &
+
+echo $!
+ 
+![imagen3](http://i.imgur.com/iYw4QV0.png)  
+
+Y esa id iría a "tasks", pero no me deja añadirla, he probado dandole permisos pero no es eso lo que falla.
+
+![imagen4](http://i.imgur.com/RZ2xFM5.png)    
 
 
 
+Si funcionara correctamente podríamos consultar el uso de recursos accediendo a cpuacct.usage. Si lo hacemos nos resulta 0:
 
+![imagen5](http://i.imgur.com/SObrTb4.png)  
+
+Aunque para comprobar la consulta de recursos veo la total:
+
+![imagen6](http://i.imgur.com/fOceyRU.png)  
 
 
 
