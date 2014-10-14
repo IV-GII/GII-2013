@@ -90,3 +90,13 @@ Como podemos ver en la captura, el programa funciona correctamente.
 
 
 ###Ejercicio 4
+Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+
+Avanzado Instalarlo y crear una aplicación contenedorizada
+
+###Ejercicio 5
+Instala el sistema de gestión de fuentes git
+
+###Ejercicio 6
+Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
+Modificar el readme y subir el fichero modificado.
