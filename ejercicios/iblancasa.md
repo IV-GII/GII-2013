@@ -207,7 +207,52 @@ Precio total: 660.1€
 --
 
 #####8.2 Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).#####
-Por hacer
+
+   
+```
+mount {
+    cpu = /cgroup/cpumem;
+    cpuset = /cgroup/cpumem;
+    memory = /cgroup/cpumem;
+}
+
+
+group $USER { 
+    cpu {
+    # 75% de CPU disponible para los procesos
+        cpu.shares="750"; 
+    }
+    cpuset {
+    # Todas las CPU disponibles
+        cpuset.cpus="0-7"; 
+    }
+    memory {
+    # 2GB de memoria como límite
+        memory.limit_in_bytes="2G"; 
+	# 2GB de memoria y SWAP
+        memory.memsw.limit_in_bytes="4G";  
+    }
+}
+
+group system { 
+    cpu {
+    # 25% de CPU disponible para los procesos
+        cpu.shares="250"; 
+    }
+    cpuset {
+        # 1 CPU como máximo
+        cpuset.cpus="0,1"; 
+    }
+    memory {
+    # 1GB de memoria como límite	
+        memory.limit_in_bytes="1G"; 
+	# 2GB de memoria y SWAP
+        memory.memsw.limit_in_bytes="2G"; 
+    }
+}
+```
+
+
 
 #####8.3 Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).#####
 Desconozco cómo se migra la carga de un procesador a otro. El uso de memoria se incrementaría (incluso podría necesitarse memoria de SWAP) y uno de los procesadores aumentaría su uso a la vez que el del otro descendería. 
