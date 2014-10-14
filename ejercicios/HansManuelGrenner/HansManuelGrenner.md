@@ -73,7 +73,6 @@ Instalamos CDE en nuestro sistema linux:
 * ```make```
 
 ![figura1](Imagenes/ejercicio3_1.jpg)
-
 Figura 1. Instalando CDE.
 
 Una vez instalado procedemos a crear un script, usaremos python en nuestro caso, y no nos olvidemos de indicar en la primera línea las directrices para convertir el archivo en ejecutable directamente.
@@ -125,13 +124,11 @@ Finalziado el tutorial procedemos a la instalación de docker en nuestro sistema
 Nos descargamos la imagen del tutorial como se habia indicado:
 
 ```docker pull learn/tutorial```
-
 ![figura2](Imagenes/ejercicio4_1.png)
 
 Figura 2. Descargando la imagen del tutorial.
 
 Una vez descargada podemos hacer la comprobación de que funciona lanzando un mensaje "hello world".
-
 ![figura3](Imagenes/ejercicio4_2.png)
 
 Figura 3. Prueba de funcionamiento.
