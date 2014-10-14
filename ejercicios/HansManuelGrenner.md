@@ -200,6 +200,21 @@ Para un [tutorial extensivo](http://git-scm.com/docs/gittutorial) podemos accede
 
 **Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.**
 
+En primer lugar generamos el nuevo repositorio para hacer la prueba.
+
+![figura5](/Imagenes/ejercicio6_1.png)
+Figura 5. Creando un nuevo proyecto.
+
+Procedemos a descargarlo en nuestra máquina mediante git usando ```git clone``` y comprobamos que efectivamente tenemos acceso.
+
+![figura6](/Imagenes/ejercicio6_2.png)
+Figura 6. Descargando el proyecto.
+
+Realizmos una ligera modificación en el fichero README y subimos los cambios añadiendo el fichero y salvamos todo mediante un commit.
+
+![figura7](/Imagenes/ejercicio6_3.png)
+Figura 7. Subiendo el archivo README modificado.
+
 
 ##Ejercicio 9
 
@@ -209,7 +224,8 @@ Lanzamos el comando indicado.
 
 ```egrep '^flags.*(vmx|svm)' /proc/cpuinfo```
 
-[img-] ejercicio9.jpg
+![figuraX1](/Imagenes/ejercicio9_1.png)
+Figura X. Comprobando la actividad de flags.
 
 Al no listar nada podemos decir que o bien el procesador no posee dicha funcionalidad o está desactivada.
 El modelo de procesador usado es el "Intel Core i7-4702MQ".
@@ -220,7 +236,8 @@ El modelo de procesador usado es el "Intel Core i7-4702MQ".
 
 Mi sistema no soporta las extension KVM, por tanto no puede usar la aceleración por hardware del procesador.
 
-[img-] ejercio10.jpg
+![figuraX2](/Imagenes/ejercicio10_1.png)
+Figura X. Resultado de kvm-ok en mi sistema.
 
 ##Ejercicio 12
 
@@ -232,19 +249,20 @@ El enterno visual de desarrollo elegido es para el lenaguaje de programación Py
 
 Si no disponemos de pip : ```sudo apt-get install python-pip.```
 
-[img-] ejercicio12.png
-
 Finalizada la instalación lanzamos el comando "virtualenv ENV" que creará el directorio "ENV/lib/pythonX.X/site-packages", donde se almacenarán todas las librerias que instalemos. Y además creará el directorio "ENV/bin/python", el cual es el intérprete de Python que usará este entorno creado.
 
 ###Crear y activar un proyecto
 
 *Creamos un proyecto. ```virtualenv test```
+![figuraX3](/Imagenes/ejercicio12_1.png)
+Figura X. 
 *Activamos el proyecto. ```source bin/activate```
+![figuraX4](/Imagenes/ejercicio12_2.png)
+Figura X. 
 
 ##Ejercicio 13
 
 **Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
-
 
 Openshift. Procedeemos a su página web ttps://www.openshift.com, y en mi caso elegiré la opción gratuita.
 
@@ -252,18 +270,20 @@ Openshift. Procedeemos a su página web ttps://www.openshift.com, y en mi caso e
 
 Siguiendo el tutorial ofrecido por el siguiente [enlace](http://www.hongkiat.com/blog/setup-wordpress-openshift/)
 
-[img-]
+![figuraX5](/Imagenes/ejercicio14_1.png)
+Figura X. Creando una nueva aplicación en openshift.
 
 Creamos la aplicación con las opciones por defecto.
 
-[img-]
+![figuraX6](/Imagenes/ejercicio14_1.png)
+Figura X. Usar la app de Wordpress.
 
 De momento indicaremos que no deseamos modificar el código, pulsando "Not now, continue.".
 
-
-[img-] ejercicio14_3
-
+![figuraX7](/Imagenes/ejercicio14_3.png)
+Figura X. 
 
 Y ya tendremos todo instalado y podremos configurar Wordpress accediendo a la página web indicada.
 
-[img-]  ejercicio14_4 
+![figuraX8](/Imagenes/ejercicio14_4.png)
+Figura X. Wordpress instalado y listo para configurarse.
