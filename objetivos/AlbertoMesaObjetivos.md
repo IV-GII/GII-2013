@@ -24,8 +24,8 @@
 
 []  Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux
 []  Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
-[]  Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa.
-[]  Comenzar a usar git desde línea de órdenes y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
+[X]  Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa.
+[X]  Comenzar a usar git desde línea de órdenes y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.
 
 ###Otros Objetivos
 [X] Entender el concepto de sistema de ficheros virtual usado en Linux para diferentes menesteres.
@@ -41,12 +41,21 @@
 
 ###Otros Objetivos
 []  Revisar algún ejercicio de un compañero y sugerir cambios o mejoras.
-[]  Contestar a la encuesta sobre la metodología de clase.
-[]  Usar ficheros en el repositorio para los ejercicios.
+[X]  Contestar a la encuesta sobre la metodología de clase.
+[X]  Usar ficheros en el repositorio para los ejercicios.
 []  Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
 
 ##Clase del 7 de Octubre.
-[]  Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
+[X]  Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
 []  Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull   request, en este caso al repo del compañero.
 []  Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-[] Contestar a la encuesta sobre la metodología de clase.
+[X] Contestar a la encuesta sobre la metodología de clase.
+
+##Clase del 13 de Octubre.
+[]  Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
+[]  Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el     final de la sesión del 26 de octubre.
+
+###Otros Objetivos
+[]  Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull     request, en este caso al repo del compañero.
+[]  Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+[X]  Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
