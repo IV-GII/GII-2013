@@ -263,7 +263,7 @@ Finalizada la instalación lanzamos el comando "virtualenv ENV" que creará el d
 
 **Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
 
-Openshift. Procedeemos a su página web ttps://www.openshift.com, y en mi caso elegiré la opción gratuita.
+Openshift. Procedeemos a su página web https://www.openshift.com, y en mi caso elegiré la opción gratuita.
 
 ##Ejercicio 14
 
