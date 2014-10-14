@@ -28,6 +28,6 @@ Primero calculamos las horas que estaria activo el servidor para el 1% y el 10%,
 [Google Compute Engine:](https://cloud.google.com/products/calculator/)
 
 | Sistema Operativo | Tipo | CPU Cores | RAM | Datacenter | €/hora | €/mes | €/año | Precio 1% | Precio 10% |
-|--------|--------|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
 | Linux | n1-standar1 | 1 | 3,75 GB | Europa | 
 
