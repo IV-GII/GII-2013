@@ -72,7 +72,7 @@ Instalamos CDE en nuestro sistema linux:
 * ```cd CDE``` 
 * ```make```
 
-![figura1](/Imagenes/ejercicio3_1.jpg)
+![figura1](Imagenes/ejercicio3_1.jpg)
 Figura 1. Instalando CDE.
 
 Una vez instalado procedemos a crear un script, usaremos python en nuestro caso, y no nos olvidemos de indicar en la primera línea las directrices para convertir el archivo en ejecutable directamente.
