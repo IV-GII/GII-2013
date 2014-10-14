@@ -62,6 +62,57 @@ En el caso de Microsoft Azure el precio de una [máquina virtual Linux (A-Series
 	* Uso del 1%  --> 48,76 € * 12 * 0,01 = 5,85 €
 	* Uso del 10% --> 48,76 € * 12 * 0,10 = 58,51 €
 
+##Ejercicio 3
+
+**¿Qué tipo de virtualización es la más adecuada para: alojar varios clientes en un sólo servidor, crear un sistema efiiciente de web + middleware + base de datos, un sistema de prueba de software e integración continua? Responder aquí y razonar.**
+
+
+Instalamos cde en nuestro sistema linux:
+
+```git clone git://github.com/pgbovine/CDE.git```
+```cd CDE```
+``make```
+
+Una vez instalado procedemos a crear un script, usaremos python en nuestro caso, y no nos olvidemos de indicar en la primera línea las directrices para convertir el archivo en ejecutable directamente.
+
+#! /usr/bin/env python
+
+El código utilizado para este ejemplo es el siguiente:
+
+	#! /usr/bin/env python
+	# -*- coding: utf-8 -*-
+	import random
+	
+	num = random.randrange(100)+1
+	
+	
+	print "Introduzca un número :"
+	num_adivinado = input()
+	num_intento=0
+	
+	while (num != num_adivinado and num_intento < 10 ):
+	  num_intento= num_intento+1
+	  if(num > num_adivinado):
+	    print "Se ha equivocado. El número es MAYOR. Introduzca otro número."
+	    num_adivinado = input()
+	  else:
+	    print "Se ha equivocado. El número es MENOR. Introduzca otro número."
+	    num_adivinado = input()
+	
+	if(num_intento < 10):
+	  print ("¡ENHORABUENA! Has adivinado el número de la máquina : ", num_adivinado)
+	else:
+	  print("¡HAS PERDIDO! Has superado el máximo de 10 intentos.")
+
+
+Además habrá que darle al fichero los permisos de ejecución correspondientes. Ya podremos usar cde para crear el paquete portable.
+
+```cde ./adivinar.py```
+
+Se habrán creado los archivos correspondientes en el directorio cde-packages/ con las dependecias necesarias para poder ejecutar el programa que deseamos portar.
+Dicho directorio lo podemos comprimir y usarlo en cualquier distribución linux que deseemos, ejecutando el fichero "adivinar.py.cde" que creó.
+
+
 ##Ejercicio4
 
 **Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado Instalarlo y crear una aplicación contenedorizada**
@@ -93,24 +144,24 @@ Lanzamos el programa recién instalado y comprobamos que todo funciona.
 Como podemos ver en el siguiente [tutorial](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-12-04), existen dos formas de instalar git en nuestro sistema de distribución linux ( Ubuntu 12.04 en mi caso ).
 O bien usando 'apt-get' o bien descargar e instalar los archivos fuente.
 
-###Apt-get
+###Instalación mediante apt-get
 
 ```sudo apt-get install git-core```
 
-###Código fuente
+###Instalación mediante el código fuente
 
-1) Actualizamos nuestros repositorios. sudo apt-get update
-2) Instalamos todas las dependencias necesarias. 
+* Actualizamos nuestros repositorios. sudo apt-get update
+* Instalamos todas las dependencias necesarias. 
 ```sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential```
-3) Descargamos la última versión de git que se ofrece en la página de [google code](https://code.google.com/p/git-core/). Ej. ```wget https://git-core.googlecode.com/files/git-1.8.1.2.tar.gz```
-4) Descomprimimos el archivo descargado. 
+* Descargamos la última versión de git que se ofrece en la página de [google code](https://code.google.com/p/git-core/). Ej. ```wget https://git-core.googlecode.com/files/git-1.8.1.2.tar.gz```
+* Descomprimimos el archivo descargado. 
 ```tar -zxf git-1.8.1.2.tar.gz```
-5) Nos colocamos en su directorio. 
+* Nos colocamos en su directorio. 
 ```cd git-1.8.1.2```
-6) Instalamos los archivos. 
+* Instalamos los archivos. 
 ```make prefix=/usr/local all```
 ```sudo make prefix=/usr/local install```
-7) Si desea actualizar git en el futuro, puede usar el mismo git para hacerlo. 
+* Si desea actualizar git en el futuro, puede usar el mismo git para hacerlo. 
 ```git clone git://git.kernel.org/pub/scm/git/git.git```
 
 ###Configurar git
