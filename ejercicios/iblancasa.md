@@ -167,14 +167,17 @@ Como se puede ver en la [web de Github](https://github.com/iblancasa/iblancasaWo
 +Finalmente, utilizando también la solución del perfil de Twitter de la asignatura, he conseguido que se generen todos los ficheros.
 
 
-######Comparación######:
+###### Comparación ######
 Eclipse
+
 ![Eclipse](http://fotos.subefotos.com/e71196d3fc3adee4683fccdd4e4d5712o.jpg)
 
 Gedit
+
 ![Gedit](http://fotos.subefotos.com/54acfab06e6a06d063c8c89df653f4b2o.jpg)
 
 Firefox
+
 ![Firefox](http://fotos.subefotos.com/1c44d0a2747e297b650ab0ce830138f4o.jpg)
 
 
@@ -288,4 +291,5 @@ group usuarios {
 #####Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?#####
 El procesador es "Intel(R) Core(TM) i5-2410M CPU @ 2.30GHz".
 La salida del comando es la siguiente:
+
 ![Comprobación de flags](http://fotos.subefotos.com/23e6b32485a62eba2036dfb96d019585o.jpg)
