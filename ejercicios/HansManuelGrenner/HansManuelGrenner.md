@@ -73,6 +73,7 @@ Instalamos CDE en nuestro sistema linux:
 * ```make```
 
 ![figura1](Imagenes/ejercicio3_1.jpg)
+
 Figura 1. Instalando CDE.
 
 Una vez instalado procedemos a crear un script, usaremos python en nuestro caso, y no nos olvidemos de indicar en la primera línea las directrices para convertir el archivo en ejecutable directamente.
@@ -126,11 +127,13 @@ Nos descargamos la imagen del tutorial como se habia indicado:
 ```docker pull learn/tutorial```
 
 ![figura2](Imagenes/ejercicio4_1.png)
+
 Figura 2. Descargando la imagen del tutorial.
 
 Una vez descargada podemos hacer la comprobación de que funciona lanzando un mensaje "hello world".
 
 ![figura3](Imagenes/ejercicio4_2.png)
+
 Figura 3. Prueba de funcionamiento.
 
 Dado que todo está en funcionamiento podemos pasar a instalar programas en nuestro nuevo contenedor. Instalaremos nano para disponer de un editor de textos.
@@ -146,6 +149,7 @@ Lanzamos el programa recién instalado y comprobamos que todo funciona.
 ```docker run -i -t learn/nano nano```
 
 ![figura4](Imagenes/ejercicio4_4.png)
+
 Figura 4. Ejecutando nano.
 
 ##Ejercicio 5
@@ -203,16 +207,19 @@ Para un [tutorial extensivo](http://git-scm.com/docs/gittutorial) podemos accede
 En primer lugar generamos el nuevo repositorio para hacer la prueba.
 
 ![figura5](Imagenes/ejercicio6_1.png)
+
 Figura 5. Creando un nuevo proyecto.
 
 Procedemos a descargarlo en nuestra máquina mediante git usando ```git clone``` y comprobamos que efectivamente tenemos acceso.
 
 ![figura6](Imagenes/ejercicio6_2.png)
+
 Figura 6. Descargando el proyecto.
 
 Realizmos una ligera modificación en el fichero README y subimos los cambios añadiendo el fichero y salvamos todo mediante un commit.
 
 ![figura7](Imagenes/ejercicio6_3.png)
+
 Figura 7. Subiendo el archivo README modificado.
 
 
@@ -225,6 +232,7 @@ Lanzamos el comando indicado.
 ```egrep '^flags.*(vmx|svm)' /proc/cpuinfo```
 
 ![figuraX1](Imagenes/ejercicio9_1.png)
+
 Figura X. Comprobando la actividad de flags.
 
 Al no listar nada podemos decir que o bien el procesador no posee dicha funcionalidad o está desactivada.
