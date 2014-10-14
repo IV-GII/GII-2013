@@ -45,3 +45,5 @@ Primero calculamos las horas que estaria activo el servidor para el 1% y el 10%,
 | CentOS 6 | Servidor S6 | 1 x 6 Core | 8 GB | 0,31€ | 225€ | 2700€ | 27,16€  | 271,56€ |
 | CentOS 6 | Servidor S8 | 2 x 4 Core | 8 GB | 0,38€ | 275€ | 3300€ | 33,29€  | 332,88€ |
 
+Con esta comparación, se ve como la virtualizacion es mucho mas barato que los servidores dedicados.
+
