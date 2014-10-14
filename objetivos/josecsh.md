@@ -40,3 +40,19 @@
 [X] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura.<br />
 [] Usar git para hacer *check-in* en clase y [[CumpliendoObjetivos|expresar al final de la misma los objetivos alcanzados]].<br />
 
+
+#Clase del 6 de octubre de 2014
+
+##Objetivos de esta sesión
+
+[] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.<br />
+[] Comprender los niveles de virtualización y sus denominaciones genéricas.<br />
+[] Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.<br />
+
+##Otros objetivos
+
+[] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.<br />
+[] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.<br />
+[] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform)<br />
+[] Usar ficheros en el repositorio para los ejercicios.<br />
+[] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.<br />
