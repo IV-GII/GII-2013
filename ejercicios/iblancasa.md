@@ -288,4 +288,4 @@ group usuarios {
 #####Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?#####
 El procesador es "Intel(R) Core(TM) i5-2410M CPU @ 2.30GHz".
 La salida del comando es la siguiente:
-[Comprobación de flags](http://fotos.subefotos.com/23e6b32485a62eba2036dfb96d019585o.jpg)
+![Comprobación de flags](http://fotos.subefotos.com/23e6b32485a62eba2036dfb96d019585o.jpg)
