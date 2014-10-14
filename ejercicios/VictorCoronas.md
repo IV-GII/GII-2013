@@ -13,7 +13,7 @@ Para realizar este ejercicio he usado el siguiente [servidor](http://www.lambda-
  - 3647.38€ precio neto
  - 3039.48€ precio bruto
 
-######Cálculo de la amortización en 4 años:
+####Cálculo de la amortización en 4 años:
 Nos deduciremos hasta un máximo de un 25% anual siguiendo la tabla de amortizaciones simplificada.  
 * Primer año: 3476,93 * 25% = 869,2325  
 * Segundo año: 3476,93 * 25% = 869,2325  
