@@ -70,21 +70,21 @@ Finalziado el tutorial procedemos a la instalación de docker en nuestro sistema
 
 Nos descargamos la imagen del tutorial como se habia indicado:
 
-```sh docker pull learn/tutorial```
+```docker pull learn/tutorial```
 
 Una vez descargada podemos hacer la comprobación de que funciona lanzando un mensaje "hello world".
 
 Dado que todo está en funcionamiento podemos pasar a instalar programas en nuestro nuevo contenedor. Instalaremos nano para disponer de un editor de textos.
 
-```sh docker run learn/tutorial apt-get install -y nano```
+```docker run learn/tutorial apt-get install -y nano```
 
 A continuación usamos el comando docker ps -l para concoer la ID del contenedor creado al instalar nano. Entonces ya podremos guardar este contenedor con el nombre de repositorio 'learn/nano'.
 
-```sh docker commit b54 learn/nano```
+```docker commit b54 learn/nano```
 
 Lanzamos el programa recién instalado y comprobamos que todo funciona.
 
-```sh docker run -i -t learn/nano nano```
+```docker run -i -t learn/nano nano```
 
 ##Ejercicio 5
 
@@ -95,33 +95,44 @@ O bien usando 'apt-get' o bien descargar e instalar los archivos fuente.
 
 ###Apt-get
 
-```sh sudo apt-get install git-core```
+```sudo apt-get install git-core```
 
 ###Código fuente
 
 1) Actualizamos nuestros repositorios. sudo apt-get update
-2) Instalamos todas las dependencias necesarias. ```sh sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential```
-3) Descargamos la última versión de git que se ofrece en la página de [google code](https://code.google.com/p/git-core/). Ej. ```sh wget https://git-core.googlecode.com/files/git-1.8.1.2.tar.gz```
-4) Descomprimimos el archivo descargado. ```sh tar -zxf git-1.8.1.2.tar.gz```
-5) Nos colocamos en su directorio. ```sh cd git-1.8.1.2```
-6) Instalamos los archivos. ```sh make prefix=/usr/local all```
-                            ```sh sudo make prefix=/usr/local install```
-7) Si desea actualizar git en el futuro, puede usar el mismo git para hacerlo. ```sh git clone git://git.kernel.org/pub/scm/git/git.git```
+2) Instalamos todas las dependencias necesarias. 
+```sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential```
+3) Descargamos la última versión de git que se ofrece en la página de [google code](https://code.google.com/p/git-core/). Ej. ```wget https://git-core.googlecode.com/files/git-1.8.1.2.tar.gz```
+4) Descomprimimos el archivo descargado. 
+```tar -zxf git-1.8.1.2.tar.gz```
+5) Nos colocamos en su directorio. 
+```cd git-1.8.1.2```
+6) Instalamos los archivos. 
+```make prefix=/usr/local all```
+```sudo make prefix=/usr/local install```
+7) Si desea actualizar git en el futuro, puede usar el mismo git para hacerlo. 
+```git clone git://git.kernel.org/pub/scm/git/git.git```
 
 ###Configurar git
 
-* Podemos modificar el archivo de configuración de git. ```sh sudo nano ~/.gitconfig```
-* O introducimos nuestros datos de usuario. ```sh git config --global user.name "NewUser"```
-                                            ```sh git config --global user.email newuser@example.com```
-* Todas las configuraciones realizadas se pueden ver con el siguiente comando.  ```sh git config --list```
+* Podemos modificar el archivo de configuración de git. 
+```sudo nano ~/.gitconfig```
+* O introducimos nuestros datos de usuario.
+```git config --global user.name "NewUser"```
+```git config --global user.email newuser@example.com```
+* Todas las configuraciones realizadas se pueden ver con el siguiente comando.  
+```git config --list```
 
 ###Uso básico de git
 
 Para un [tutorial extensivo](http://git-scm.com/docs/gittutorial) podemos acceder a la propia página web de git y descrubir toda su funcionalidad. Los comandos básicos que necesitaremos usar son los siguientes:
 
-* Descargar un repositorio en nuestra máquina. ```sh git clone https://github.com/JJ/GII-2014 <directorio-local>```
-* Añadir un cambio. ```sh git add .```
-* Para añadir de forma permanente los cambios en el repositorio hacemos un commit. ```shgit commit -m "Comentario.."```
+* Descargar un repositorio en nuestra máquina. 
+``` git clone https://github.com/JJ/GII-2014 <directorio-local>```
+* Añadir un cambio. 
+```git add .```
+* Para añadir de forma permanente los cambios en el repositorio hacemos un commit. 
+```git commit -m "Comentario.."```
 
 ##Ejercicio 6
 
@@ -134,7 +145,7 @@ Para un [tutorial extensivo](http://git-scm.com/docs/gittutorial) podemos accede
 
 Lanzamos el comando indicado. 
 
-```shegrep '^flags.*(vmx|svm)' /proc/cpuinfo```
+```egrep '^flags.*(vmx|svm)' /proc/cpuinfo```
 
 [img-] ejercicio9.jpg
 
@@ -155,9 +166,9 @@ Mi sistema no soporta las extension KVM, por tanto no puede usar la aceleración
 
 El enterno visual de desarrollo elegido es para el lenaguaje de programación Python. Procedemos por tanto a la isntalación de "virtualenv".
 
-```sh sudo pip install virtualenv```
+```sudo pip install virtualenv```
 
-Si no disponemos de pip : ```sh sudo apt-get install python-pip.```
+Si no disponemos de pip : ```sudo apt-get install python-pip.```
 
 [img-] ejercicio12.png
 
@@ -165,7 +176,7 @@ Finalizada la instalación lanzamos el comando "virtualenv ENV" que creará el d
 
 ###Crear y activar un proyecto
 
-*Creamos un proyecto. ```sh virtualenv test```
+*Creamos un proyecto. ```virtualenv test```
 *Activamos el proyecto. ```source bin/activate```
 
 ##Ejercicio 13
