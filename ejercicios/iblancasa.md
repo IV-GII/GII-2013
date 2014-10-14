@@ -259,3 +259,25 @@ Desconozco cómo se migra la carga de un procesador a otro. El uso de memoria se
 ![Ejecución de la orden htop](http://fotos.subefotos.com/1c350c29f3bacd01e2f11dd5a3251566o.jpg)
 
 #####8.4 Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.#####
+
+He utilizado NGINX como servidor
+
+```
+mount {
+    blkio = /cgroup/iolimit;
+}
+
+group nginx {
+    blkio  {
+    	#Pone como prioridad 75%
+        blkio.weight_device="750"; 
+    }
+}
+
+group usuarios {
+    blkio  {
+    	#Pone como prioridad 25%
+        blkio.weight_device="250"; 
+    }
+}
+```
