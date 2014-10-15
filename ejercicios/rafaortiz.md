@@ -27,8 +27,8 @@ Amortizacion a 7 años:
 6 año → 77,7
 7 año → 77,7
 
-Ejercicio 2
-Usando las tablas de precios de servicios de alojamiento en internet y de proveedores de servicios en la nube, comparar el coste  en varios vendedores, durante un año de un ordenador con un procesador estandar y el resto de caracteristicas similares, si la infraestrutura comprada se usa solo el 1% o el 10% del tiempo.
+##Ejercicio 2
+###Usando las tablas de precios de servicios de alojamiento en internet y de proveedores de servicios en la nube, comparar el coste  en varios vendedores, durante un año de un ordenador con un procesador estandar y el resto de caracteristicas similares, si la infraestrutura comprada se usa solo el 1% o el 10% del tiempo.
 
 Por ejemplo azure se ofrece un servicio de:
 Un nucleo,  1,75GB de ram y 70GB de disco duro por unos 49,90€ al mes. A 0,0671€/h.
