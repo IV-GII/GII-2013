@@ -63,12 +63,12 @@ Como se puede observar, siendo mejor el servidor cloud que ofrece amazon ya que 
 
 Mi programa simple, ha consistido en hacer el "hola mundo" en python.
 
-Primero le damos permisos de ejecución con chmod +x, luego he instalado el CDE en mi version de ubuntu mediante: 
-sudo aptitude install cde
+Primero le damos permisos de ejecución con `chmod +x holamundo.py`, luego he instalado el CDE en mi version de ubuntu mediante: 
+`sudo aptitude install cde`
 
-Para empaquetar utilizamos la órden cde ./holamundo.py
+Para empaquetar utilizamos la órden cde `./holamundo.py`
 
-Por último lo comprimimos con: tar czvf holamundo.tar.gz cde-package/
+Por último lo comprimimos con: `tar czvf holamundo.tar.gz cde-package/`
 
 Lo pasamos a otra distribución (por ejemplo a la de una máquina virtual), descomprimimos y ejecutamos el holamundo.py.cde
 
