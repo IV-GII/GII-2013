@@ -19,13 +19,13 @@ Cada año le aplico el 25%, por lo tanto cada año se amortiza 199.17 €
 
 <strong>Para siete años</strong>
 
-<p>Año 1 - 20% - 159.33</p>
-<p>Año 2 - 20% - 159.33</p>
-<p>Año 3 - 20% - 159.33</p>
-<p>Año 4 - 10% - 47.80</p>
-<p>Año 5 - 10% - 47.80</p>
-<p>Año 6 - 10% - 47.80</p>
-<p>Año 7 - 10% - 47.80</p>
+Año 1 - 20% - 159.33<br>
+Año 2 - 20% - 159.33<br>
+Año 3 - 20% - 159.33<br>
+Año 4 - 10% - 47.80<br>
+Año 5 - 10% - 47.80<br>
+Año 6 - 10% - 47.80<br>
+Año 7 - 10% - 47.80<br>
 
 
 
