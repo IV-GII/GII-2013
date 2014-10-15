@@ -44,7 +44,7 @@ Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se rea
 
 <strong>10% del tiempo de uso:</strong><br>
 Para el servicio de Amazon EC2, seria (0,041€ * 24h * 30 días * 12 meses) * 10% = 35,42€ <br>
-Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se realiza mensualmente: 12€/mes * 12 meses = 144€/año.<br>
+Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se realiza mensualmente: 12€/mes * 12 meses = 144€/año.<br><br>
 
 
 <h4>Ejercicio 3</h4>
