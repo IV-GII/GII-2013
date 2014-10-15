@@ -63,11 +63,11 @@
  1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
    [Comentario en el foro](https://github.com/JJ/GII-2014/issues/71)
 
- * Si queremos alojar varios clientes en un servidor, utilizaría la virtualización a nivel de sistema operativo, ya que esta nos permite aislar las cuentas de cada usuario por separado, nos permite a la vez que el anfitrión y el cliente usen el mismo sistema operativo pero aislandose entre si y por último el administrados de sistema puede gestionar todo.
+ -Si queremos alojar varios clientes en un servidor, utilizaría la virtualización a nivel de sistema operativo, ya que esta nos permite aislar las cuentas de cada usuario por separado, nos permite a la vez que el anfitrión y el cliente usen el mismo sistema operativo pero aislandose entre si y por último el administrados de sistema puede gestionar todo.
   
- *Para la creación de un sistema eficiente de web + middleware + base de datos, elegiría una virtualización plena, ya que nos permite virtualizar todo el sistema por completo, para la ejecución tanto de sistemas operativos, así como cualquier tipo de aplicación.
+ -Para la creación de un sistema eficiente de web + middleware + base de datos, elegiría una virtualización plena, ya que nos permite virtualizar todo el sistema por completo, para la ejecución tanto de sistemas operativos, así como cualquier tipo de aplicación.
   
- *Para un sistema de prueba de software e integracion continua, yo usaria la virtualizacion de entornos de desarrollo para probar en las diferentes versiones de forma más rápida, ya que consigue reproducir cada entorno de producción de la forma parecída posible.
+ -Para un sistema de prueba de software e integracion continua, yo usaria la virtualizacion de entornos de desarrollo para probar en las diferentes versiones de forma más rápida, ya que consigue reproducir cada entorno de producción de la forma parecída posible.
 
 
  2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
