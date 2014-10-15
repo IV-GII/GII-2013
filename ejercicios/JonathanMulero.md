@@ -55,5 +55,31 @@ Desde 39,99€/mes *12=480€
 Como se puede observar, siendo mejor el servidor cloud que ofrece amazon ya que es flexible y casi dobla la ram del servidor dedicado de 1&1, si solo se usa un 1% o 10% del tiempo, sale más barato que el de 1&1, calculo que a partir del 15% ya saldria más baarato el de 1&1 aunque siendo este un poco peor.
 
 
+###Ejercicio 3###
 
+* [X] ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.
 
+-Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+
+Mi programa simple, ha consistido en hacer el "hola mundo" en python.
+
+Primero le damos permisos de ejecución con `chmod +x holamundo.py`, luego he instalado el CDE en mi version de ubuntu mediante: 
+`sudo aptitude install cde`
+
+Para empaquetar utilizamos la órden cde `./holamundo.py`
+
+Por último lo comprimimos con: `tar czvf holamundo.tar.gz cde-package/`
+
+Lo pasamos a otra distribución (por ejemplo a la de una máquina virtual), descomprimimos y ejecutamos el holamundo.py.cde
+
+###Ejercicio 4###
+
+* [X] Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+
+Avanzado Instalarlo y crear una aplicación contenedorizada
+
+###Ejercicio 5###
+
+En mi versión de ubuntu lo he instalado con la orden: `sudo aptitude install git`
+
+###Ejercicio 6###
