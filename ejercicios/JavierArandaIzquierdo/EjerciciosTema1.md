@@ -62,3 +62,8 @@ El codigo del programa es un simple HolaMundo en Python:
 print "Hola mundo en Python"
 ```
 
+- Instalamos CDE con apt-get install cde
+- Ejecuto el programa con "cde python holamundo"
+- Me voy a mi directorio "/cde-package/cde-root/home/javi/Escritorio"
+- Ejecuto "./python.cde holamundo" y funciona
+
