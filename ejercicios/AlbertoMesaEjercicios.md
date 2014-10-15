@@ -87,6 +87,11 @@ Y por último lo pruebo en la otra máquina para asegurarnos de que funciona, co
 ###Ejercicio 4
 Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
 
+Se han seguido los pasos del tutorial y se ha completado la tarea correctamente:
+
+![4](http://s29.postimg.org/cfsgj31x3/Tutorial_Docker.png) .
+
+
 Avanzado Instalarlo y crear una aplicación contenedorizada.
 
 ###Ejercicio 5
