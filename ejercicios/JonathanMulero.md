@@ -74,7 +74,7 @@ Lo pasamos a otra distribución (por ejemplo a la de una máquina virtual), desc
 
 ###Ejercicio 4###
 
-* [X]Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+* [X] Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
 
 Avanzado Instalarlo y crear una aplicación contenedorizada
 
