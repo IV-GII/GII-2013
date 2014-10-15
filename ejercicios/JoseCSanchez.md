@@ -49,7 +49,7 @@ Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se rea
 
 <h4>Ejercicio 3</h4>
 
-
+Parte 1: [Mi comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-59239961)
 
 
 
