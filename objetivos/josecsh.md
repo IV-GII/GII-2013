@@ -46,56 +46,56 @@
 ##Objetivos de esta sesión
 
 * [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
-* [] Comprender los niveles de virtualización y sus denominaciones genéricas.
-* [] Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
+* [X] Comprender los niveles de virtualización y sus denominaciones genéricas.
+* [X] Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
 
 ##Otros objetivos
 
 * [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 * [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* [] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform)
-* [] Usar ficheros en el repositorio para los ejercicios.<br />
-* [] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
+* [X] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform)
+* [] Usar ficheros en el repositorio para los ejercicios.
+* [X] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
 
 
 #Clase-seminario del 7 de octubre de 2014
 
 ##Objetivos de esta sesión
 
-* [] Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
+* [X] Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
 
 
 ##Otros objetivos
 
 * [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 * [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* [] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform)
+* [X] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform)
 
 
 #Clase del 13 de octubre de 2014
 
 ##Objetivos de esta sesión
 
-* [] [Leer los proyectos propuestos y elegir uno](../practicas_propuestas.md). Si ninguno encaja, se puede proponer otro (mediante edición y pull request). 
-* [] [Comenzar con la primera práctica: elección de proyecto y grupo](http://jj.github.io/IV/documentos/practicas/1.Infraestructura). El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre. 
+* [X] [Leer los proyectos propuestos y elegir uno](../practicas_propuestas.md). Si ninguno encaja, se puede proponer otro (mediante edición y pull request). 
+* [X] [Comenzar con la primera práctica: elección de proyecto y grupo](http://jj.github.io/IV/documentos/practicas/1.Infraestructura). El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre. 
 
 ##Otros objetivos
 
 * [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 * [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* [] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform) si no lo has hecho todavía.
+* [X] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform) si no lo has hecho todavía.
 
 
 #Clase del 14 de octubre de 2014
 
 ##Objetivos de esta sesión
 
-* [] Si todavía no se ha hecho, [leer los proyectos propuestos y elegir uno](../practicas_propuestas.md). Si ninguno encaja, se puede proponer otro (mediante edición y pull request). 
-* [] [Continuar con la primera práctica: elección de proyecto y grupo](http://jj.github.io/IV/documentos/practicas/1.Infraestructura). El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre. 
+* [X] Si todavía no se ha hecho, [leer los proyectos propuestos y elegir uno](../practicas_propuestas.md). Si ninguno encaja, se puede proponer otro (mediante edición y pull request). 
+* [X] [Continuar con la primera práctica: elección de proyecto y grupo](http://jj.github.io/IV/documentos/practicas/1.Infraestructura). El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre. 
 
 ##Otros objetivos
 
 * [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 * [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* [] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform) si no lo has hecho todavía.
+* [X] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform) si no lo has hecho todavía.
 
