@@ -7,28 +7,28 @@
 * Ejercicio 1: 
  1. Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.
 
-Para realizar este ejercicio he usado el siguiente [servidor](http://www.lambda-tek.com/N12000PRO-Thecus-N12000PRO-12-Bay-NAS-Intel-Xeon-E3-1275-3-4GHz-Quad-Core-8GB-DDR3-SDRAM-3-x-1GbE-upgradeable-to-10GbE-SATA-III-and-SAS-6G-~csES/B1611704&origin=gbaseES14.4?gclid=CjwKEAjwk_OhBRD06abu3qSoxlwSJACt7sZ78IJ-fmymrW9xgsNDK9HuX8r032jrGU7uTbTSydYPahoC6SPw_wcB).
+    Para realizar este ejercicio he usado el siguiente [servidor](http://www.lambda-tek.com/N12000PRO-Thecus-N12000PRO-12-Bay-NAS-Intel-Xeon-E3-1275-3-4GHz-Quad-Core-8GB-DDR3-SDRAM-3-x-1GbE-upgradeable-to-10GbE-SATA-III-and-SAS-6G-~csES/B1611704&origin=gbaseES14.4?gclid=CjwKEAjwk_OhBRD06abu3qSoxlwSJACt7sZ78IJ-fmymrW9xgsNDK9HuX8r032jrGU7uTbTSydYPahoC6SPw_wcB).
 
- Este servidor tiene un coste de:
- - 3647.38€ precio neto
- - 3039.48€ precio bruto
+    Este servidor tiene un coste de:
+    - 3647.38€ precio neto
+    - 3039.48€ precio bruto
 
 ####Cálculo de la amortización en 4 años:
-Vamos a deducirnos el 25% por año que es lo máximo que podemos.
- - Primer año: 3039.48€ * 25% = 759,87€  
- - Segundo año: 3039.48€ * 25% = 759,87€ 
- - Tercer año: 3039.48€ * 25% = 759,87€  
- - Cuarto año: 3039.48€ * 25% = 759,87€  
+    Vamos a deducirnos el 25% por año que es lo máximo que podemos.
+     - Primer año: 3039.48€ * 25% = 759,87€  
+     - Segundo año: 3039.48€ * 25% = 759,87€ 
+     - Tercer año: 3039.48€ * 25% = 759,87€  
+     - Cuarto año: 3039.48€ * 25% = 759,87€  
 
 ####Cálculo de la amortización en 7 años: 
-Vamos a ir deduciendonos cada año un cierto porcentaje, pero los primeros años más ya que es inversión.  
- - Primer año: 3039.48€ * 25% = 759,87€ 
- - Segundo año: 3039.48€ * 25% = 759,87€  
- - Tercer año: 3039.48€ * 15% = 455,922€  
- - Cuarto año: 3039.48€ * 15% = 455,922€  
- - Quinto año: 3039.48€ * 10% = 303,948€  
- - Sexto año: 3039.48€ * 5% = 151,974€  
- - Séptimo año: 3039.48€ * 5% = 151,974€
+    Vamos a ir deduciendonos cada año un cierto porcentaje, pero los primeros años más ya que es inversión.  
+     - Primer año: 3039.48€ * 25% = 759,87€ 
+     - Segundo año: 3039.48€ * 25% = 759,87€  
+     - Tercer año: 3039.48€ * 15% = 455,922€  
+     - Cuarto año: 3039.48€ * 15% = 455,922€  
+     - Quinto año: 3039.48€ * 10% = 303,948€  
+     - Sexto año: 3039.48€ * 5% = 151,974€  
+     - Séptimo año: 3039.48€ * 5% = 151,974€
 
 
 * Ejercicio 2: 
