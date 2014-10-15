@@ -67,3 +67,7 @@ print "Hola mundo en Python"
 - Me voy a mi directorio "/cde-package/cde-root/home/javi/Escritorio"
 - Ejecuto "./python.cde holamundo" y funciona
 
+### Ejercicio 4
+#### Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.Avanzado Instalarlo y crear una aplicación contenedorizada
+
+
