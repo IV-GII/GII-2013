@@ -47,3 +47,18 @@ Primero calculamos las horas que estaria activo el servidor para el 1% y el 10%,
 
 Con esta comparación, se ve como la virtualizacion es mucho mas barato que los servidores dedicados.
 
+### Ejercicio 3
+#### 1.¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.
+#### 2.Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+
+#####[Primera parte](https://github.com/JJ/GII-2014/issues/71)
+
+##### Segunda parte
+
+El codigo del programa es un simple HolaMundo en Python:
+
+```
+#!/usr/bin/env python
+print "Hola mundo en Python"
+```
+
