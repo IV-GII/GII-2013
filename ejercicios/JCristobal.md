@@ -192,6 +192,23 @@ Aunque para comprobar la consulta de recursos veo la total:
 
 
 
+##Ejercicio 8 (sin realizar todavía)
+
+##8.1 
+Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+
+##8.2 
+Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+
+##8.3 
+Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+
+##8.4 
+Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
+
+
+
+
 ##Ejercicio 9
 
 Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
@@ -225,6 +242,17 @@ La ejecutamos pero primero instalamos cpu-cheker.
 
 Ejecutamos kvm-ok y nos dice que sí está utlizado, lo podemos usar.
 
-![imagen2](http://i.imgur.com/gL3pjaL.png)  
+![imagen2](http://i.imgur.com/gL3pjaL.png)
+
+
+##Ejercicio 11
+
+Comentar diferentes soluciones de Software as a Service de uso habitual
+
+Aquí el enlace al [comentario](https://github.com/JJ/GII-2014/issues/72#issuecomment-59173713)
+
+
+
+
 
 
