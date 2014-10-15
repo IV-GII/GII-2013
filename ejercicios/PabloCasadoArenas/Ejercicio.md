@@ -49,7 +49,20 @@ Comparacion de coste durante 12 meses con un 10 % de uso.
 Microsoft Azure: 123,711 € x 12 x 0,10 = 148,45 €
 VPS Classic : 2,41 € x 12 = 28,92 €
 
+## Ejercicio 3
 
 
+```
+x=1
+if x==1:
+	print "x es 1"
+else:
+	print "x no es 1"
+```
 
+Para empaquetarlo con cde:
+cde python ejemplo.py
 
+Esto me crea un paquete CDE portable.
+Para ejecutarlo
+cde-exec python ejemplo.py
