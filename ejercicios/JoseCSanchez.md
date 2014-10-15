@@ -25,9 +25,7 @@ Año 3 - 20% - 159.33<br>
 Año 4 - 10% - 47.80<br>
 Año 5 - 10% - 47.80<br>
 Año 6 - 10% - 47.80<br>
-Año 7 - 10% - 47.80<br>
-
-
+Año 7 - 10% - 47.80<br><br>
 
 
 <h4>Ejercicio 2</h4>
@@ -36,19 +34,20 @@ En este ejercicio, comparo los precios de servicios de alojamiento en Internet y
 
 Para el servicio de cloud he elegido el Servidor cloud t2.medium de [Amazon EC2](http://aws.amazon.com/es/ec2/pricing/). Su precio es de 0,041€/hora.
 
-Para el servicio de alojamiento web he elegido 
+Para el servicio de alojamiento web he elegido la empresa [arsys](http://www.arsys.es/hosting?gclid=CIaA-tz5rsECFQgXwwodo30AOw). El precio mas caro de todos sus presuspuestos, es el de 12€/mes.
 
 
-<strong>1% del tiempo de uso:</strong>
-Para el servicio de Amazon EC2, sería (0,041€ * 24h * 30 días * 12 meses) * 1% = 3,54€
+<strong>1% del tiempo de uso:</strong><br>
+Para el servicio de Amazon EC2, sería (0,041€ * 24h * 30 días * 12 meses) * 1% = 3,54€<br>
+Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se realiza mensualmente: 12€/mes * 12 meses = 144€/año.<br>
 
 
-<strong>10% del tiempo de uso:</strong>
-Para el servicio de Amazon EC2, seria (0,041€ * 24h * 30 días * 12 meses) * 10% = 35,42€
+<strong>10% del tiempo de uso:</strong><br>
+Para el servicio de Amazon EC2, seria (0,041€ * 24h * 30 días * 12 meses) * 10% = 35,42€ <br>
+Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se realiza mensualmente: 12€/mes * 12 meses = 144€/año.<br>
 
 
-
-
+<h4>Ejercicio 3</h4>
 
 
 
