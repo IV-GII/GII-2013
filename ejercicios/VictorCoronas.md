@@ -71,6 +71,7 @@
 
 
  2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+ [Programa de prueba](https://www.dropbox.com/s/hqujnclc8qesgrt/ejemplo.py?dl=0)
 
 * Ejercicio 4:
  1. Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
