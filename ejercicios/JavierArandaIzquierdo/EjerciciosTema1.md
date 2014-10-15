@@ -75,3 +75,13 @@ Realizado el tutorial de ordenes Docker
 ### Ejercicio 5
 #### Instala el sistema de gestion de fuentes git
 Para instalarlo en Ubuntu basta con escribir esto en la linea de comandos "sudo apt-get install git"
+
+### Ejercicio 6
+#### 1.Crear un proyecto y descargarselo con git. Al crearlo se marca la opcion de incluir el fichero README.
+#### 2.Modificar el README y subir el fichero modificado
+He creado un repositorio llamado "ejercicio6" en mi perfil de github.
+
+Para descargarlo he utilizado "git clone https://github.com/JavideBaza/ejercicio6.git"
+
+Se puede ver como ha sido modificado [aqui](https://github.com/JavideBaza/ejercicio6/blob/master/README.md)
+
