@@ -70,4 +70,8 @@ print "Hola mundo en Python"
 ### Ejercicio 4
 #### Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.Avanzado Instalarlo y crear una aplicación contenedorizada
 
+Realizado el tutorial de ordenes Docker
 
+### Ejercicio 5
+#### Instala el sistema de gestion de fuentes git
+Para instalarlo en Ubuntu basta con escribir esto en la linea de comandos "sudo apt-get install git"
