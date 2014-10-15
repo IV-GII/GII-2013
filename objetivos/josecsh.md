@@ -85,3 +85,17 @@
 * [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 * [] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform) si no lo has hecho todavía.
 
+
+#Clase del 14 de octubre de 2014
+
+##Objetivos de esta sesión
+
+* [] Si todavía no se ha hecho, [leer los proyectos propuestos y elegir uno](../practicas_propuestas.md). Si ninguno encaja, se puede proponer otro (mediante edición y pull request). 
+* [] [Continuar con la primera práctica: elección de proyecto y grupo](http://jj.github.io/IV/documentos/practicas/1.Infraestructura). El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre. 
+
+##Otros objetivos
+
+* [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+* [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform) si no lo has hecho todavía.
+
