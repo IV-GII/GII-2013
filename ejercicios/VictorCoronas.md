@@ -40,21 +40,23 @@
     * CPU: 1 core
     * Memoria: 3,75GB
     * Disco duro: 420GB
-    * Precio por hora: 0,114834658 euros/hora
+    * Precio por hora: 0,114834658 €/hora
     
     Características de la máquina de Amazon m3.medium:
     * CPU: 1 core
     * Memoria: 3,75GB 
     * Disco duro: 410GB
-    * Precio: 0,126714105 euros/hora
+    * Precio: 0,126714105 €/hora
 
    ####Cálculo de los precios al 1% de uso:
-    Amazon: 0,126714105 * 87,6 horas = 11,15084124 euros.  
-    Google: 0,114834658 * 87,6 horas = 10,105449904 euros.  
+    Google: 0,114834658 * 87,6 horas = 10,105449904 €.
+    Amazon: 0,126714105 * 87,6 horas = 11,15084124 €.  
+      
     
    ####Cálculo de los precios al 10% de uso:
-    Amazon: 0,126714105 * 876 = 111,00155598 euros  
-    Google: 0,114834658 * 876 horas = 100,595160408 euros  
+    Google: 0,114834658 * 876 horas = 100,595160408 €
+    Amazon: 0,126714105 * 876 = 111,00155598 €
+      
 
 
 * Ejercicio 3: 
