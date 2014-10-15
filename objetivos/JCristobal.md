@@ -28,7 +28,7 @@
 
 * [x] consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 * [x] Comprender los niveles de virtualización y sus denominaciones genéricas.
-* [] Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
+* [x] Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
 
 
 * [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
@@ -36,5 +36,16 @@
 * [x] Contestar a la encuesta sobre la metodología de clase
 * [] Usar ficheros en el repositorio para los ejercicios.
 * [] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
+
+
+##Objetivos de sesión 5
+
+* [x] Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
+* [x] Contestar a la encuesta sobre la metodología de clase
+
+##Objetivos de sesión 6 y 7
+
+* [x] Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
+* [] Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
 
 
