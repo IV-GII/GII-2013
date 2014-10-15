@@ -65,7 +65,9 @@ Me pide modificar las variables globales con mis datos: git config --global user
 
 Hago el commit del fichero: git commit -am "Asunto para cambiar el fichero"
 
-Y finalmente hago un git pull para guardar los cambios
+Y finalmente hago un git push para guardar los cambios.
+
+Para actualizar el repositorio: git pull https://github.com/JJ/GII-2014.git master
 
 
 
