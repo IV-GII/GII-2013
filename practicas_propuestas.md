@@ -38,6 +38,9 @@ Se trata de un proyecto nube [para clusterización de resultados de búsqueda en
 
 Podría ser tanto un proyecto de tipo *nube* creando un backend basado en alguna plataforma SaaS como un proyecto de tipo *devops* tomando cualquier sistema a medio desarrollar que necesitara una infraestructura virtual. El contacto de este proyecto es Ángel Moreno.
 
+## Infraestructura virtual para la Diputación de Granada
+
+La Diputación de Granada está migrando el escritorio a Linux. Se trataría de describir de forma abstracta esta configuración y crear scripts para instalar, modificar y monitorizar la instalación de los usuarios. El contacto es Alberto Avidad.
 
 ## Otros proyectos
 
