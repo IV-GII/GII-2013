@@ -39,11 +39,11 @@ Para el servicio de cloud he elegido el Servidor cloud t2.medium de [Amazon EC2]
 Para el servicio de alojamiento web he elegido 
 
 
-# 1% del tiempo de uso:
+<strong>1% del tiempo de uso:</strong>
 Para el servicio de Amazon EC2, sería (0,041€ * 24h * 30 días * 12 meses) * 1% = 3,54€
 
 
-# 10% del tiempo de uso:
+<strong>10% del tiempo de uso:</strong>
 Para el servicio de Amazon EC2, seria (0,041€ * 24h * 30 días * 12 meses) * 10% = 35,42€
 
 
