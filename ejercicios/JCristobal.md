@@ -156,19 +156,75 @@ echo 0 > /cpuset.cpus
 echo 0 > /cpuset.mems 
 
 
+##Ejercicio 7
+
+Accedo al direcotrio de cgroups  ( /sys/fs/cgroup ) y monto el sistema de ficheros virtual: sudo mount -t cgroup cgroup /sys/fs/cgroup/
+
+![imagen1](http://i.imgur.com/BgE1uJe.png)
+
+
+Creo un grupo de control para el navegador con una carpeta con este nombre en cgroup y accedo a ella:
+
+![imagen2](http://i.imgur.com/mgjOmzm.png)
+
+
+y abro una ventana del navegador, creando un proceso y accediendo a su id en consola con:
+
+firefox &
+
+echo $!
+ 
+![imagen3](http://i.imgur.com/iYw4QV0.png)  
+
+Y esa id iría a "tasks", pero no me deja añadirla, he probado dandole permisos pero no es eso lo que falla.
+
+![imagen4](http://i.imgur.com/RZ2xFM5.png)    
 
 
 
+Si funcionara correctamente podríamos consultar el uso de recursos accediendo a cpuacct.usage. Si lo hacemos nos resulta 0:
+
+![imagen5](http://i.imgur.com/SObrTb4.png)  
+
+Aunque para comprobar la consulta de recursos veo la total:
+
+![imagen6](http://i.imgur.com/fOceyRU.png)  
 
 
 
+##Ejercicio 9
+
+Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+
+Ejectuamos la orden: egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+y nos devuelve:
+
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
 
 
+Como aparecen varias líneas en la búsqueda dentro de cpuinfo podemos decir que tiene instalados los flags.
 
 
+Es un procesador Inter Core i5-450M (2.4GHz, 3MB L3 cache)
 
 
+##Ejercicio 10
 
 
+Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+La ejecutamos pero primero instalamos cpu-cheker.
+
+![imagen1](http://i.imgur.com/CaGepKD.png)
+
+Ejecutamos kvm-ok y nos dice que sí está utlizado, lo podemos usar.
+
+![imagen2](http://i.imgur.com/gL3pjaL.png)  
 
 
