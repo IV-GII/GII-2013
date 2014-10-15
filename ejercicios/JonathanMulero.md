@@ -57,7 +57,7 @@ Como se puede observar, siendo mejor el servidor cloud que ofrece amazon ya que 
 
 ###Ejercicio 3###
 
-[X] ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.
+* [X] ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.
 
 -Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
@@ -74,6 +74,12 @@ Lo pasamos a otra distribución (por ejemplo a la de una máquina virtual), desc
 
 ###Ejercicio 4###
 
-[X]Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+* [X]Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
 
 Avanzado Instalarlo y crear una aplicación contenedorizada
+
+###Ejercicio 5###
+
+En mi versión de ubuntu lo he instalado con la orden: `sudo aptitude install git`
+
+###Ejercicio 6###
