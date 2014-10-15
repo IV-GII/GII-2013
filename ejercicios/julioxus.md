@@ -154,6 +154,39 @@ Aquí podemos ver cómo se ve en GitHub actualizado:
 
 ![captura7](http://i.imgur.com/dPMViHs.png)
 
+## Ejercicio 7.1 ##
+
+**Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
+
+He creado dos grupos en la carpeta /sys/fs/cgroup/cpu:
+
+![captura8](http://i.imgur.com/YPl18Kn.png)
+
+A cada uno de ellos le he asignado un proceso (Chrome y Firefox):
+
+![captura9](http://i.imgur.com/uvHKi7g.png)
+
+Finalmente he comprobado el tiempo de cpu consumido por cada grupo:
+
+![captura10](http://i.imgur.com/0rQqRHc.png)
+
+## Ejercicio 7.2 ##
+
+**Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.**
+
+Según [este artículo](http://www.pcsilencioso.com/recursos/bdd/73-alimentacion/45-gasto-electricidad) suponiendo que disponemos de un PC Core i7-920 + GTX260 Extreme
+y dándole un uso de 8 horas idle + 8 horas load tendríamos un coste mensual aproximado de 12,54€.
+
+Coste anual = 12,54€/mes * 12 meses = 150,48€
+
+Supongamos que el ordenador costó 1000€ y lo amortizamos a 5 años, que es la vida media de un ordenador de sobremesa normal.
+
+Costes de amortización = 5 años * 200€ = 1000€
+
+Costes por consume eléctrico = 5 años * 150,48€ = 752,4€
+
+TOTAL = 1752,40€
+
 ## Ejercicio 9 ##
 
 **Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
@@ -180,4 +213,3 @@ INFO: /dev/kvm exists
 KVM acceleration can be used
 
 Lo que quiere decir que mi ordenador contiene este módulo del kernel y puedo usar la virtualización kvm.
-
