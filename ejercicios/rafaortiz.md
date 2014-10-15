@@ -1,5 +1,6 @@
-Ejercicio 1
-Consultar el precio de un equipo servidor y calcular su coste de amortizacion a 4 y 7 años.
+# Sesion 29 de septiembre de 2014
+##Ejercicio 1
+###Consultar el precio de un equipo servidor y calcular su coste de amortizacion a 4 y 7 años.
 
 El servidor elegido es HP ProLiant ML310e G8 XE E3-1220/8GB/2TB,  su precio en pccomponentes es de 688€ con iva incluido.
 El equipo se puede consultar en http://www.pccomponentes.com/hp_proliant_ml310e_g8_xe_e3_1220_8gb_2tb.html
