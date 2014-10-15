@@ -35,23 +35,23 @@
  1. Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
  
     Para la comparación voy a utilizar dos de los servicios más conocidos: [Amazon EC2](http://aws.amazon.com/es/ec2/) y [Google Compute Engine](https://cloud.google.com/products/compute-engine/)  
-Características de la máquina de Amazon m1.medium:
-* CPU: 1 core
-* Memoria: 3,75GB 
-* Disco duro: 410GB
-* Precio: 0,126714105 euros/hora
+    Características de la máquina de Amazon m1.medium:
+    * CPU: 1 core
+    * Memoria: 3,75GB 
+    * Disco duro: 410GB
+    * Precio: 0,126714105 euros/hora
 
-Características de la máquina de Google n1-standard-1-d:
-* CPU: 1 core
-* Memoria: 3,75GB
-* Disco duro: 420GB
-* Precio por hora: 0,114834658 euros/hora
+    Características de la máquina de Google n1-standard-1-d:
+    * CPU: 1 core
+    * Memoria: 3,75GB
+    * Disco duro: 420GB
+    * Precio por hora: 0,114834658 euros/hora
 
-######Cálculo de los precios al 1% de uso:
+####Cálculo de los precios al 1% de uso:
 Amazon: 0,126714105 * 87,6 horas = 11,15084124 euros.  
 Google: 0,114834658 * 87,6 horas = 10,105449904 euros.  
 
-######Cálculo de los precios al 10% de uso:
+####Cálculo de los precios al 10% de uso:
 Amazon: 0,126714105 * 876 = 111,00155598 euros  
 Google: 0,114834658 * 876 horas = 100,595160408 euros  
 
