@@ -1,7 +1,5 @@
 #Ejercicios de Pablo Pérez Ruiz
 
-##Sesión 30-sept-2014
-
 ###Ejercicio 1: 
 ####Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años.
 
@@ -49,8 +47,16 @@ El coste del servidor es de 2569€. Le quitamos previamente el IVA al precio to
 
 ###Ejercicio 3: 
 ####¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
+Leer el comentario en el foro [aquí.](https://github.com/JJ/GII-2014/issues/71#issuecomment-59169569)
 ####Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
 
+
+###Ejercicio 4:
+####Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+####Avanzado Instalarlo y crear una aplicación contenedorizada.
+
+###Ejercicio 5
+####Instala el sistema de gestión de fuentes git:
 
 
