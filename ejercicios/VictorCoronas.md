@@ -87,7 +87,8 @@
 
 * Ejercicio 5
  Instala el sistema de gestión de fuentes git
-
+  Una vez instalado git "sudo apt-get install git" comprobamos que esta instalado con la orden "git version".
+  [imagen1](https://www.dropbox.com/s/o9k9vpk29dvc3d9/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2010.02.40.png?dl=0)
 * Ejercicio 6
  1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
  
