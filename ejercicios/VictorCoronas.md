@@ -126,7 +126,7 @@
 -Al introducir el comando "kvm-ok", me dice que no se puede usar el comando y que instale "apt-get install cpu-checker", una vez instalado ejecutamos el comando "kvm-ok" y me dice que no esta soportado.
 [Imagen](https://www.dropbox.com/s/gra5sown1f7y5sf/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2010.52.43.png?dl=0)
 
-* Ejercicio 11
+* [+]Ejercicio 11
  - A) Comentar diferentes soluciones de Software as a Service de uso habitual
  [Comentario](https://github.com/JJ/GII-2014/issues/72#issuecomment-58912586). 
 
