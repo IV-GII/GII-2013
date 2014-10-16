@@ -120,9 +120,11 @@
 
 -Después ejecutamos la ordem: "egrep '^flags.*(vmx|svm)' /proc/cpuinfo", pero no aparece nada ya que no esta acticada esa opción.
 
-* Ejercicio 10
+* [+]Ejercicio 10
  1. Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
--Al introducir el comando "kvm-ok", me dice que no se puede usar el comando y que instale "apt-get install cpu-checker", una vez instalado ejecutamos el comando "kvm-ok" y me dice que no esta soportado.[imagen](https://www.dropbox.com/s/gra5sown1f7y5sf/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2010.52.43.png?dl=0)
+-Al introducir el comando "kvm-ok", me dice que no se puede usar el comando y que instale "apt-get install cpu-checker", una vez instalado ejecutamos el comando "kvm-ok" y me dice que no esta soportado.
+[Imagen](https://www.dropbox.com/s/gra5sown1f7y5sf/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2010.52.43.png?dl=0)
 
 * Ejercicio 11
  1. Comentar diferentes soluciones de Software as a Service de uso habitual
+ [Comentario](https://github.com/JJ/GII-2014/issues/72#issuecomment-58912586). 
