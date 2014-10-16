@@ -7,7 +7,7 @@ Para hacer una comparación de alojamiento web con servicios en cloud me he deca
 * [OVH](http://www.ovh.es/hosting/index.xml)
 * [Hostalia](http://www.hostalia.com/alojamiento/)
 
-En cuanto OVH, ofrece los siguiente servicios:
+En cuanto **OVH**, ofrece los siguiente **servicios**:
 
 Recomendado para los sitios desarrollados en PHP, que utilizan bases de datos MySQL o Postgre y con actividad profesional moderada. Esta empresa, en cuanto alojamiento web, en su tarifa intermedia (Profesional), ofrece principalmente:
 
@@ -19,7 +19,7 @@ Recomendado para los sitios desarrollados en PHP, que utilizan bases de datos My
 Para más información consultar el siguiente enlace a [OVH]: 
 [OVH]: http://www.ovh.es/hosting/hosting-profesional.xml
 
-En cuanto Hostalia, en su plan economicamente más equivalente, ofrece:
+En cuanto **Hostalia**, en su plan economicamente más equivalente, ofrece estos *servicios**:
 
 * 100 GB de espacio web.
 * 1 dominio gratuito.
@@ -29,17 +29,17 @@ En cuanto Hostalia, en su plan economicamente más equivalente, ofrece:
 Para más información consultar el siguiente enlace de [Hostalia]: 
 [Hostalia]: http://www.hostalia.com/alojamiento/comparativa-linux.html
 
-El plan de OVH 4,99€ sin IVA, por tanto 6,04€ con IVA, mientras que el plan de Hostalia son 4,99€ IVA incluido. Por tanto, OVH nos ofrece un plan anual por 72,48€ y Hostalia nos lo ofrece por 59,88€.
+El plan de OVH 4,99€ sin IVA, por tanto 6,04€ con IVA, mientras que el plan de Hostalia son 4,99€ IVA incluido. Por tanto, **OVH** nos ofrece un plan anual por **72,48€** y **Hostalia** nos lo ofrece por **59,88€**.
 
-Para OVH:
+Para **OVH**:
 
-* Usando solo un 1% de la infraestructura, obtenemos un coste de 72,48€/año * 0,01 = 0,7248€/año
-* Usando solo un 10% de la infraestructura, obtenemos un coste de 72,48€/año * 0,1 = 7,248€/año
+* Usando solo un 1% de la infraestructura, obtenemos un coste de 72,48€/año * 0,01 = **0,7248€/año**
+* Usando solo un 10% de la infraestructura, obtenemos un coste de 72,48€/año * 0,1 = **7,248€/año**
 
-Para Hostalia:
+Para **Hostalia**:
 
-* Usando solo un 1% de la infraestructura, obtenemos un coste de 59,88€/año * 0,01 = 0,5988€/año
-* Usando solo un 10% de la infraestructura, obtenemos un coste de 59,88€/año * 0,1 = 5,988€/año
+* Usando solo un 1% de la infraestructura, obtenemos un coste de 59,88€/año * 0,01 = **0,5988€/año**
+* Usando solo un 10% de la infraestructura, obtenemos un coste de 59,88€/año * 0,1 = **5,988€/año**
 
 
 
