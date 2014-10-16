@@ -4,7 +4,7 @@
 
 #Ejercicios
 
-- [+]Ejercicio 1: 
+* [+]Ejercicio 1: 
  1. Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.
 
      Para realizar este ejercicio he usado el siguiente [servidor](http://www.lambda-tek.com/N12000PRO-Thecus-N12000PRO-12-Bay-NAS-Intel-Xeon-E3-1275-3-4GHz-Quad-Core-8GB-DDR3-SDRAM-3-x-1GbE-upgradeable-to-10GbE-SATA-III-and-SAS-6G-~csES/B1611704&origin=gbaseES14.4?gclid=CjwKEAjwk_OhBRD06abu3qSoxlwSJACt7sZ78IJ-fmymrW9xgsNDK9HuX8r032jrGU7uTbTSydYPahoC6SPw_wcB).
@@ -31,7 +31,7 @@
      - Séptimo año: 3039.48€ * 5% = 151,974€
 
 
-* Ejercicio 2: 
+* [+]Ejercicio 2: 
  1. Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
  
     Para la comparación voy a utilizar dos de los servicios más conocidos:  [Google Compute Engine](https://cloud.google.com/products/compute-engine/) y [Amazon EC2](http://aws.amazon.com/es/ec2/)
@@ -59,7 +59,7 @@
       
 
 
-* Ejercicio 3: 
+* [+]Ejercicio 3: 
  1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
    [Comentario en el foro](https://github.com/JJ/GII-2014/issues/71)
 
@@ -77,7 +77,7 @@
 [imagen1](https://www.dropbox.com/s/zdpyscmwd5bfupu/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2009.50.17.png?dl=0)
 [imagen2](https://www.dropbox.com/s/a1lb65uf082rtcb/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2009.47.01.png?dl=0)
 
-* Ejercicio 4:
+* [+]Ejercicio 4:
  1. Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
  - [imagen1](https://www.dropbox.com/s/z9bk890uv05nqth/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2009.58.31.png?dl=0)
 
@@ -85,7 +85,7 @@
 
 #Ejercicios
 
-* Ejercicio 5
+* [+]Ejercicio 5
  Instala el sistema de gestión de fuentes git
   Una vez instalado git "sudo apt-get install git" comprobamos que esta instalado con la orden "git version".
   [imagen1](https://www.dropbox.com/s/o9k9vpk29dvc3d9/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2010.02.40.png?dl=0)
