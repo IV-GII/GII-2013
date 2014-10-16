@@ -91,8 +91,10 @@
   [imagen1](https://www.dropbox.com/s/o9k9vpk29dvc3d9/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2010.02.40.png?dl=0)
 * Ejercicio 6
  1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
- 
+  -En mi repositorio de [GITHUB](https://github.com/VictorCoronas) he creado un nuevo [proyecto "Prueba"](https://github.com/VictorCoronas/Prueba).
  2.Modificar el readme y subir el fichero modificado.
+  -He realizado una modificación del archivo [README.md](https://github.com/VictorCoronas/Prueba/blob/master/README.md).
+
 
 * Ejercicio 7
  1. Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
