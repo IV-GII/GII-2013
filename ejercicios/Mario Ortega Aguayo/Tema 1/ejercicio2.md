@@ -19,7 +19,7 @@ Recomendado para los sitios desarrollados en PHP, que utilizan bases de datos My
 Para más información consultar el siguiente enlace a [OVH]: 
 [OVH]: http://www.ovh.es/hosting/hosting-profesional.xml
 
-En cuanto **Hostalia**, en su plan economicamente más equivalente, ofrece estos *servicios**:
+En cuanto **Hostalia**, en su plan economicamente más equivalente, ofrece estos **servicios**:
 
 * 100 GB de espacio web.
 * 1 dominio gratuito.
