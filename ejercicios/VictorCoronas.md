@@ -95,12 +95,12 @@
   
 -En mi repositorio de [GITHUB](https://github.com/VictorCoronas) he creado un nuevo [proyecto "Prueba"](https://github.com/VictorCoronas/Prueba).
 
-touch README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/VictorCoronas/prueba.git
-git push -u origin master
+    touch README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git remote add origin https://github.com/VictorCoronas/prueba.git
+    git push -u origin master
  
  - B) Modificar el readme y subir el fichero modificado.
   
