@@ -60,7 +60,7 @@
 
 
 * [+]Ejercicio 3: 
- 1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
+ - A) ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
    [Comentario en el foro](https://github.com/JJ/GII-2014/issues/71)
 
  -Si queremos alojar varios clientes en un servidor, utilizaría la virtualización a nivel de sistema operativo, ya que esta nos permite aislar las cuentas de cada usuario por separado, nos permite a la vez que el anfitrión y el cliente usen el mismo sistema operativo pero aislandose entre si y por último el administrados de sistema puede gestionar todo.
@@ -69,7 +69,7 @@
   
  -Para un sistema de prueba de software e integracion continua, yo usaria la virtualizacion de entornos de desarrollo para probar en las diferentes versiones de forma más rápida, ya que consigue reproducir cada entorno de producción de la forma parecída posible.
 
- 2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con [CDE](http://www.pgbovine.net/cde.html) y probarlo en diferentes distribuciones.
+ - B) Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con [CDE](http://www.pgbovine.net/cde.html) y probarlo en diferentes distribuciones.
 
   -He usado un programa de prueba muy sencillo, usa en la asignatura DAI en el lenguaje PYTHON.
   [Programa de prueba](https://www.dropbox.com/s/xkl4fdvnuw4lpuy/ejer1.py?dl=0)
