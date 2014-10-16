@@ -109,6 +109,9 @@
 
 * Ejercicio 7
  - A) Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
+Tenemos que acceder al direcotrio de cgroups ( /sys/fs/cgroup ) y montamos el sistema de ficheros virtual: sudo mount -t cgroup cgroup /sys/fs/cgroup/, una vex hecho esto hacemos "cd .." y "cd cgroup" para actualizar la carpeta y aparezcan todos los archivos montados.
+Creo un grupo de control para las pruebas en cgroup y accedo a ella. La llamaré "pruebas" "sudo mkdir pruebas"
+ 
 
  - B) Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
  
