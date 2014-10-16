@@ -16,7 +16,8 @@ Recomendado para los sitios desarrollados en PHP, que utilizan bases de datos My
 * 100 cuentas de correo de 5 GB.
 * 4 bases de datos.
 
-Para más información consultar el siguiente enlace: [info - OVH](http://www.ovh.es/hosting/hosting-profesional.xml)
+Para más información consultar el siguiente enlace a [OVH]: 
+[OVH]: http://www.ovh.es/hosting/hosting-profesional.xml
 
 En cuanto Hostalia, en su plan economicamente más equivalente, ofrece:
 
@@ -25,7 +26,8 @@ En cuanto Hostalia, en su plan economicamente más equivalente, ofrece:
 * Alojamiento de dominios adicionales ilimitado.
 * 50 cuentas de correo electronico.
 
-Para más información consultar el siguiente enlace: [info - Hostalia](http://www.hostalia.com/alojamiento/comparativa-linux.html)
+Para más información consultar el siguiente enlace de [Hostalia]: 
+[Hostalia]: http://www.hostalia.com/alojamiento/comparativa-linux.html
 
 El plan de OVH 4,99€ sin IVA, por tanto 6,04€ con IVA, mientras que el plan de Hostalia son 4,99€ IVA incluido. Por tanto, OVH nos ofrece un plan anual por 72,48€ y Hostalia nos lo ofrece por 59,88€.
 
