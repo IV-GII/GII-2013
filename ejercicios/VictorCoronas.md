@@ -73,6 +73,9 @@
 
   -He usado un programa de prueba muy sencillo, usa en la asignatura DAI en el lenguaje PYTHON.
   [Programa de prueba](https://www.dropbox.com/s/xkl4fdvnuw4lpuy/ejer1.py?dl=0)
+  Se descargar el archivo CDE, se le dan permisos de ejecución y lo ejecutamos junto con le programa.
+![imagen1](https://www.dropbox.com/s/zdpyscmwd5bfupu/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2009.50.17.png?dl=0)
+![imagen2](http://i.imgur.com/xdaSLlG.png)
 
 * Ejercicio 4:
  1. Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
