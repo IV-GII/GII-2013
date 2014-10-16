@@ -1,6 +1,6 @@
 ###Ejercicio 1
 
-Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años.
+**Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años.**
 
 * **Servidor**
 
@@ -19,19 +19,19 @@ Consultar en el catálogo de alguna tienda de informática el precio de un orden
 
 * **Amortización a cuatro años**
 
-	Sobre el precio total tenemos que descontar un 21%, ya que presuponemos que este servidor fué comprado a principios de este año.
-	Por tanto, esto nos deja el precio del servidor en 1132,06€ sobre el que vamos a calcular los costes de amortización.
+	Sobre el precio total tenemos que descontar un **21% de IVA**, ya que presuponemos que este servidor fué comprado a principios de este año.
+	Por tanto, esto nos deja el precio del servidor en **1132,06€** sobre el que vamos a calcular los **costes de amortización**.
 
-* 1132,06€ / 4 = 283,015€
+	* 1132,06€ / 4 = 283,015€
 
-	Por tanto, el coste de amortización en 4 años es de 283,015€.
+	Por tanto, el coste de amortización en **4 años** es de **283,015€**.
 	
 
 * **Amortización a siete años**
 
-	Descontando igualmente al anterior un 21% de IVA, el coste de amortización quedaría de la siguiente forma:
+	Descontando igualmente al anterior un **21% de IVA**, el **coste de amortización** quedaría de la siguiente forma:
 
-* 1132,06€ / 7 = 161,72285€ 
+	* 1132,06€ / 7 = 161,72285€ 
 
-	Por tanto, el coste de amortización en 7 años es de 161,72285€. 
+	Por tanto, el coste de amortización en **7 años** es de **161,72285€**. 
 	
