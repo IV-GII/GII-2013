@@ -130,5 +130,7 @@
  - A) Comentar diferentes soluciones de Software as a Service de uso habitual
  [Comentario](https://github.com/JJ/GII-2014/issues/72#issuecomment-58912586). 
 
-
-
+El concepto de SaaS existe desde hace tiempo, solo que en estos últimos años se ha hablado mucho más de ello y se a definido que és. Es todo aquel software como servicio(SaaS), son un modelo de distribibución software en el cual, tanto los datos y soportos lógicos que se usan se alojan en servidores remotos, a los que se pueden acceder através de internet haciendo uso de un cliente. 
+Algunos ejemplos sencillos son: Webmail de Gmail, los CRM onlines. En este tipo de servicios nosotros accedemos normalmente a través del navegador sin atender al software. Todo el desarrollo, mantenimiento, actualizaciones, copias de seguridad es responsabilidad del proveedor.
+Por lo que tenemos poco control, nosotros nos situamos en la parte más arriba de la capa del servicio. Si el servicio se cae es responsabilidad de proveedor hacer que vuelva a funcionar.
+Ejemplos más conocidos de Saas son Google Docs, Salesforce, Dropbox, Gmail…
