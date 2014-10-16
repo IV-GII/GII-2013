@@ -69,7 +69,6 @@
   
  -Para un sistema de prueba de software e integracion continua, yo usaria la virtualizacion de entornos de desarrollo para probar en las diferentes versiones de forma más rápida, ya que consigue reproducir cada entorno de producción de la forma parecída posible.
 
-
  2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
   -He usado un programa de prueba muy sencillo, usa en la asignatura DAI en el lenguaje PYTHON.
