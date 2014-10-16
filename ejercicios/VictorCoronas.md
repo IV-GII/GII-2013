@@ -79,7 +79,7 @@
 
 * Ejercicio 4:
  1. Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
- [imagen1](https://www.dropbox.com/s/zdpyscmwd5bfupu/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2009.50.17.png?dl=0)
+ - [imagen1](https://www.dropbox.com/s/z9bk890uv05nqth/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2009.58.31.png?dl=0)
 
 #Clase del 30 de septiembre de 2014
 
