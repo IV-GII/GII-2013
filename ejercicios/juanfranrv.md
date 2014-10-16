@@ -94,6 +94,8 @@ Lo he comentado en el foro, pero también lo indico aqui:
 
 **Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
 
+Tutorial seguido: http://blog.desdelinux.net/como-crear-aplicaciones-portables-de-linux/
+
 En mi máquina virtual con Linux Mint instalado, me he bajado el CDE del repositorio de Github correspondiente y lo he instalado en el sistema. Posteriormente, he empaquetado un reloj que te trae de prueba llamado "xclock" con la siguiente orden:
 
 ![captura1](http://i.imgur.com/3awd0EF.png)
@@ -144,7 +146,7 @@ Una vez descargada, he ejecutado la terminal de la imagen:
 
 En dicha terminal he instalado Python y nano para escribir un script en Python que nos permite saber si un número es par o impar. Lo he guardado en usr/bin para ejecutarlo posteriormente.
 
-Para guardar los cambios en una imagen nueva:
+Para guardar los cambios en una imagen nueva donde el ID de la imagen lo consultamos con "docker ps -l" y añadimos los 3 primeros dígitos de dicho ID:
 
 ```sh
   sudo docker commit [ID de la imagen] par
@@ -177,7 +179,7 @@ y finalmente ejecutar el script con:
 
 He creado un proyecto en GitHub con el fichero README incluido llamado "probando".
 
-Me lo he bajado con el siguiente comando y lo he modificado:
+Me lo he bajado con el siguiente comando y he modificado el README:
 
 ![captura5](http://i.imgur.com/tQVs1Qq.png)
 
@@ -221,7 +223,19 @@ El que más consume es Mozilla firefox, seguido de la aplicación "Brasero" y po
     
 **Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.**
 
-(PENDIENTE POR HACER)
+Según este [artículo](http://www.leantricity.es/es/2012/07/11/cuanta-energia-gasta-un-ordenador-aproximaciones/), el consumo energético total anual sin descontar días festivos de un ordenador sería:
+
+365 días x (0,437 kWh + 0,1524 kWh) = 215 kWh anuales por ordenador.
+
+Si multiplicamos por el coste actual de la energía en España: 0,15 € * 215 kWh = 32€ anuales en consumo eléctrico de un ordenador.
+
+Suponiendo que nuestro ordenador ha costado 1000 euros y que la vida media de un ordenador suele estar rondando los 5 años, los costes de amortización serían los siguientes:
+
+Si comenzamos contando los años desde principios del año 2015: 5 años * 200€ = 1000€
+
+Por otro lado, los costes eléctricos serían 32€ anuales * 5 años = 160€
+
+Coste total = 1160€
 
 ***
 
@@ -269,7 +283,7 @@ He ejecutado la instrucción:
 egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 ```
 
-/proc/cpuinfo es el fichero del sistema de ficheros virtual /proc que da acceso mediante “ficheros” a las estructuras de datos del núcleo de Linux; cpuinfo lista las características de la CPU y vmx es el flag que se usa para indicar que el procesador usa esta tecnología; smd es el flag para AMD-V. egrep busca líneas de un fichero que contengan la expresión regular indicada, y si aparecen los flags listará la línea completa. 
+/proc/cpuinfo es el fichero del sistema de ficheros virtual /proc que da acceso mediante “ficheros” a las estructuras de datos del núcleo de Linux; cpuinfo lista las características de la CPU y vmx es el flag que se usa para indicar que el procesador usa esta tecnología. egrep busca líneas de un fichero que contengan la expresión regular indicada, y si aparecen los flags listará la línea completa. 
 
 Según la siguiente captura:
 
@@ -303,7 +317,7 @@ Por lo que se puede observar que mi ordenador no contiene este módulo del kerne
 
 **Comentar diferentes soluciones de Software as a Service de uso habitual.**
 
-Todas las aplicaciones que se ejecutan en servidores remotos y son accedidas generalmente través de un navegador web, son SaaS.
+Todas las aplicaciones que se ejecutan en servidores remotos y son accedidas generalmente a través de un navegador web, son SaaS.
 
 Los ejemplos más comunes son algunos ERP (Sistemas de planificación de recursos empresariales) y CRM (Software para la administración basada en la relación con los clientes), aunque otros ejemplos de uso serían los siguientes:
 
@@ -339,7 +353,7 @@ Lo configuro con :
 
 Lo que hace es crear "ENV/lib/pythonX.X/site-packages",para que funcione cualquier librería. También crea "ENV/bin/python", que es un intérprete de Python que usará el entorno.
 
-Finalmente, he probado a ver si funciona correctamente:
+Finalmente, he comprobado si funciona correctamente:
 
 ![captura20](http://i.imgur.com/lr07SFE.png)
 
@@ -407,7 +421,7 @@ Posteriormente, ya se encuentra WordPress listo para usarse (previamente hay que
 
 ![captura28](http://i.imgur.com/F9VRxrS.png)
 
-Ya tenemos la aplicación de WordPress lista para ser usada y poder crear entradas:
+Llegados a este paso, tenemos la aplicación de WordPress lista para ser usada y poder crear entradas:
 
 ![captura29](http://i.imgur.com/LQbWg0t.png)
 
