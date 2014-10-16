@@ -89,12 +89,12 @@
  Instala el sistema de gestión de fuentes git
   Una vez instalado git "sudo apt-get install git" comprobamos que esta instalado con la orden "git version".
   [imagen1](https://www.dropbox.com/s/o9k9vpk29dvc3d9/Captura%20de%20pantalla%202014-10-16%20a%20la%28s%29%2010.02.40.png?dl=0)
-* Ejercicio 6
+* [+]Ejercicio 6
  1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
   
 -En mi repositorio de [GITHUB](https://github.com/VictorCoronas) he creado un nuevo [proyecto "Prueba"](https://github.com/VictorCoronas/Prueba).
  
-2.Modificar el readme y subir el fichero modificado.
+ 2.Modificar el readme y subir el fichero modificado.
   
 -He realizado una modificación del archivo [README.md](https://github.com/VictorCoronas/Prueba/blob/master/README.md).
 
@@ -114,8 +114,11 @@
 
 #Ejercicios
 
-* Ejercicio 9
+* [+]Ejercicio 9
  1. Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+-Con el comando "cat /proc/cpuinfo", vemos la CPu que tenemos: Intel(R) Core(TM) i5 CPU M 520 @ 2.40GHZ
+
+-Después ejecutamos la ordem: "egrep '^flags.*(vmx|svm)' /proc/cpuinfo", pero no aparece nada ya que no esta acticada esa opción.
 
 * Ejercicio 10
  1. Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
