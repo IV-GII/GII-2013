@@ -94,9 +94,65 @@ Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona
 
 Avanzado Instalarlo y crear una aplicación contenedorizada
 
+
 ###Ejercicio 5
 Instala el sistema de gestión de fuentes git
+
 
 ###Ejercicio 6
 Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
 Modificar el readme y subir el fichero modificado.
+
+Clono el proyecto con
+git clone https://github.com/Capy87/GII-2014.git
+
+Hacemos un touch del fichero README.md
+
+Y realizamos el primer commit con:
+git commit -m "Primer commit"
+
+Para guardarlo todo realizamos:
+git push
+
+
+###Ejercicio 7
+Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.
+
+Primero accedo al direcotrio de cgroups donde monto el sistema de ficheros virtual: 
+sudo mount -t cgroup cgroup /sys/fs/cgroup/
+
+![Contenido de cgroup](http://i.imgur.com/D7Kfr90.png)
+
+
+###Ejercicio 8 (Pendiente)
+- Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
+- Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
+
+
+###Ejercicio 9
+####Ejercicio 9.1
+Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+####Ejercicio 9.2
+Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+####Ejercicio 9.3
+Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+####Ejercicio 9.4
+Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
+
+
+###Ejercicio 10
+Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+
+Ejecutamos el comando "egrep '^flags.*(vmx|svm)' /proc/cpuinfo" para comprobar si la virtualización a nivel de hardware está activa.
+
+En la ejecución del comando he tenido que quitar el filtro de las extensiones vmx y svm ya que si lo dejaba no aparecía ningún resultado.
+En la captura podemos comprobar que existen los flags en nuestro sistema
+![Flags del sistema](http://i.imgur.com/4vkScbZ.png)
+
+Para conocer el modelo del procesador lo hacemos en /proc/cpuinfor
+![Modelo del procesador](http://i.imgur.com/JmBn4NV.png)
+
+En la captura podemos ver que aparece la marca, el modelo, número de cores que tenemos disponibles, velocidad de CPU y cantidad de memoria cache.
+
+
+###Ejercicio 11
