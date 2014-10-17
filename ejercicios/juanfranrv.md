@@ -80,7 +80,7 @@ Precio:$0.026 por hora = 0.016€
 
 **¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro**
 
-Lo he comentado en el foro, pero también lo indico aqui:
+Lo he comentado en el [foro](https://github.com/JJ/GII-2014/issues/72#issuecomment-58931811), pero también lo indico aqui:
 
 1- Para alojar varios clientes en un sólo servidor, coincido con mis compañeros, y usaría la virtualización a nivel de sistema operativo, debido a que permite que solamente el anfitrión y el cliente usen el mismo sistema operativo pero con invitados aislados del anfitrión y entre sí. De esta forma, se puede mejorar el rendimiento porque hay un solo sistema operativo encargándose de los avisos de hardware, aunque también presenta alguna desventaja como por ejemplo,que cada invitado debe utilizar el mismo sistema operativo que utiliza el host.
 
@@ -243,7 +243,12 @@ Coste total = 1160€
 
 **Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.**
 
-(PENDIENTE POR HACER)
+Podemos limitar el uso de recursos por ejemplo, en entornos de producción en los que estuvieramos probando como se comporta un programa para un usuario y nos interesaría saber cuanto consume de nuestro sistema, para ello podríamos limitar la velocidad de CPU al navegador por ejemplo, ya que no nos interesaría que afectara al desarrollo de nuestra aplicación.
+
+También podríamos limitar los recursos en función del tipo de usuario, es decir, si un usuario está pagando mas que otro por el mismo servicio, es lógico pensar que el que paga mas debería tener mas recursos para su uso.
+
+Por otro lado, el administrador debería de tener más recursos que un usuario que pueda usar sus programas, por lo que sería interesante una mayor asignación para el administración que para el usuario.
+
 
 ***
 
@@ -251,15 +256,52 @@ Coste total = 1160€
 
 **Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).**
 
-(PENDIENTE POR HACER)
+El fichero de configuración de cgcreate es "/etc/cgconfig.conf", pero para poder realizar esta configuración tenemos que tener instalado el paquete "libcgroup" si usamos una distribución basada en Red Hat o "libcgroup-dev" si usamos una basada en Debian.
+
+Para poder asignar correctamente la prioridad del proceso según el grupo asignado,tenemos que utilizar el parámetro "cpu.shares", para ello debemos de indicar al principio del fichero de configuración dónde está montado el subsistema de cgroup, que en este caso será "cpu=/sys/fs/cgroup/cpu".
+
+Posteriormente procedemos a definir cada uno de los grupos:
+
+* Para procesos del usuario: "user_proc"
+* Para procesos del sistema: "sys_proc"
+
+Indicamos que "user_proc" tendrá una prioridad del 40% frente a "sys_proc" que tendrá una prioridad el 80%. Como el valor de "cpu.shares" es 1024, usaremos un valor de 207 para procesos de usuario y 817 para procesos del sistema:
+
+mount {
+   cpu = /sys/fs/cgroup/cpu;
+}
+
+group user_proc {
+    cpu {
+        cpu.shares = "207";
+    }
+}
+
+group sys_proc {
+    cpu {
+        cpu.shares = "817";
+    }
+}
+
 
 ***
 
 ### Ejercicio 8.3 ###
 
-**Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
+**Usar un programa que muestre en tiempo real la carga del sistema tal como htop y comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
 
-(PENDIENTE POR HACER)
+He instalado htop mediante la orden:
+
+```sh
+sudo apt-get install htop
+```
+
+Y he estado observando en tiempo real la carga del sistema:
+
+![captura31](http://i.imgur.com/irutUio.png)
+
+Sin embargo, no se como migrar en tiempo real una tarea pesada de un procesador a otro.
+
 
 ***
 
@@ -267,7 +309,21 @@ Coste total = 1160€
 
 **Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.**
 
-(PENDIENTE POR HACER)
+Dentro de "/etc/cgconfig.conf" usaremos el parámetro "blkio.weight", previamente debemos de indicar donde se encuentra el controlador de bloqueo E/S, que en este caso será "blkio=/sys/fs/cgroup/blkio".
+
+Ahora procedemos a crear un grupo para los servidores que llamaremos "servers" y en su interior indicaremos la prioridad de E/S que le vamos a asignar, que en este caso sería mayor que la del resto de usuarios. El rango para este parámetro estaría entre 100-1000, por lo que he dicidido dar un "peso" de 800. El archivo de configuración, finalmente, quedaría de la siguiente forma:
+
+mount {
+   blkio = /sys/fs/cgroup/blkio;
+}
+
+group servers {
+    blkio {
+        blkio.weight = "800";
+    }
+}
+
+Si el servidor que tenemos funcionando es un servidor Apache, deberemos añadir la directiva de configuración "CGROUP_DAEMON="blkio:/http" al fichero de configuración "/etc/apache2/apache2.conf" para que éste tenga conocimiento de que pertenece a un grupo de control.
 
 ***
 
@@ -316,6 +372,8 @@ Por lo que se puede observar que mi ordenador no contiene este módulo del kerne
 ### Ejercicio 11 ###
 
 **Comentar diferentes soluciones de Software as a Service de uso habitual.**
+
+Lo he comentado en el [foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-58328756), pero también lo indico aqui:
 
 Todas las aplicaciones que se ejecutan en servidores remotos y son accedidas generalmente a través de un navegador web, son SaaS.
 
