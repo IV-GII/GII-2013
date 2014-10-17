@@ -247,7 +247,7 @@ Podemos limitar el uso de recursos por ejemplo, en entornos de producción en lo
 
 También podríamos limitar los recursos en función del tipo de usuario, es decir, si un usuario está pagando mas que otro por el mismo servicio, es lógico pensar que el que paga mas debería tener mas recursos para su uso.
 
-Por otro lado, el administrador debería de tener más recursos que un usuario que pueda usar sus programas, por lo que sería interesante una mayor asignación para el administración que para el usuario.
+Por otro lado, el administrador debería de tener más recursos que un usuario que pueda usar sus programas, por lo que sería interesante una mayor asignación para el administrador que para el usuario.
 
 
 ***
