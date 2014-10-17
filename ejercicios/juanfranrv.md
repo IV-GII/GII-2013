@@ -1,8 +1,6 @@
 Ejercicios de Juan Francisco Rodríguez Vílchez
 ================================================
 
-## Sesión 29-sept-2014 ##
-
 ### Ejercicio 1 ###
 
 **Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.**
@@ -37,8 +35,6 @@ Teniendo en cuenta que obtenemos un 14,28% (100%/7) del precio total del servido
 * Año 2019: 45,78€
 * Año 2020: 45,78€
 * Año 2021: 34,33€ de los 9 meses restante para completar el séptimo año.
-
-## Sesión 30-sept-2014 ##
 
 ***
 
@@ -267,6 +263,7 @@ Posteriormente procedemos a definir cada uno de los grupos:
 
 Indicamos que "user_proc" tendrá una prioridad del 40% frente a "sys_proc" que tendrá una prioridad el 80%. Como el valor de "cpu.shares" es 1024, usaremos un valor de 207 para procesos de usuario y 817 para procesos del sistema:
 
+```
 mount {
    cpu = /sys/fs/cgroup/cpu;
 }
@@ -283,6 +280,7 @@ group sys_proc {
     }
 }
 
+```
 
 ***
 
@@ -312,7 +310,7 @@ Sin embargo, no se como migrar en tiempo real una tarea pesada de un procesador 
 Dentro de "/etc/cgconfig.conf" usaremos el parámetro "blkio.weight", previamente debemos de indicar donde se encuentra el controlador de bloqueo E/S, que en este caso será "blkio=/sys/fs/cgroup/blkio".
 
 Ahora procedemos a crear un grupo para los servidores que llamaremos "servers" y en su interior indicaremos la prioridad de E/S que le vamos a asignar, que en este caso sería mayor que la del resto de usuarios. El rango para este parámetro estaría entre 100-1000, por lo que he dicidido dar un "peso" de 800. El archivo de configuración, finalmente, quedaría de la siguiente forma:
-
+```
 mount {
    blkio = /sys/fs/cgroup/blkio;
 }
@@ -322,7 +320,7 @@ group servers {
         blkio.weight = "800";
     }
 }
-
+```
 Si el servidor que tenemos funcionando es un servidor Apache, deberemos añadir la directiva de configuración "CGROUP_DAEMON="blkio:/http" al fichero de configuración "/etc/apache2/apache2.conf" para que éste tenga conocimiento de que pertenece a un grupo de control.
 
 ***
