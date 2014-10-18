@@ -114,49 +114,56 @@ Voy a usar el paquete cgroup-bin puesto permite un control por línea de órdene
 
 En primer lugar lo que debemos hacer es instalar este paquete:
 
-sudo apt-get install cgroup-bin
+    sudo apt-get install cgroup-bin
+
 Lo siguiente es crear un grupo que contendrá varios subgrupos. Para crearlo usamos la siguiente orden:
 
-sudo cgcreate -a francisco -g memory,cpu,cpuacct:ejercicio7
+    sudo cgcreate -a francisco -g memory,cpu,cpuacct:ejercicio7
+
 Este grupo se encarga de controlar la memoria, CPU y de contabilizar el uso de recursos de CPU y da permiso al usuario francisco para que trabaje con el.
 
 Creado el grupo, vamos a crear varios subgrupos: uno encargado de ejecutar el navegador, otro de ejecutar el procesador de textos y otro de ejecutar el cliente de correo electrónico Mozilla Thunderbird.
 
-sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/navegador
-sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/editor
-sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/correo
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/navegador
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/editor
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/correo
+
 Con cgexec asignamos los procesos de cada subgrupo.
 
-sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox
-sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit
-sudo cgexec -g memory,cpu,cpuacct:ejercicio7/correo thunderbird
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/correo thunderbird
+
 Para comparar el uso de recursos visualizamos los resultados en:
 
-/sys/fs/cgroup/(memory|cpu|cpuacct)/ejercicio7/(navegador|editor|correo)
+    /sys/fs/cgroup/(memory|cpu|cpuacct)/ejercicio7/(navegador|editor|correo)
+
 Resultados para el navegador:
 
-- cpuacct.usage --> 2943724935
-- cpuacct.stat:
-       user 244
-       system 38
-- cpuacct.usage_percpu --> 422363850 1046168504 1273224787 205078078 
-- memory.max_usage_in_bytes --> 327741440
+    - cpuacct.usage --> 2943724935
+    - cpuacct.stat:
+           user 244
+           system 38
+    - cpuacct.usage_percpu --> 422363850 1046168504 1273224787 205078078 
+    - memory.max_usage_in_bytes --> 327741440
+
 Resultado para el editor:
 
-- cpuacct.usage --> 2345308237
-- cpuacct.stat:
-       user 201
-       system 21
-- cpuacct.usage_percpu --> 747258934 1008912121 407984020 181153162 
-- memory.max_usage_in_bytes --> 153321472
+    - cpuacct.usage --> 2345308237
+    - cpuacct.stat:
+           user 201
+           system 21
+    - cpuacct.usage_percpu --> 747258934 1008912121 407984020 181153162 
+    - memory.max_usage_in_bytes --> 153321472
+    
 Resultados para el correo:
 
-- cpuacct.usage --> 0
-- cpuacct.stat:
-      user 0
-      system 0
-- cpuacct.usage_percpu --> 0 0 0 0
-- memory.max_usage_in_bytes --> 0
+    - cpuacct.usage --> 0
+    - cpuacct.stat:
+          user 0
+          system 0
+    - cpuacct.usage_percpu --> 0 0 0 0
+    - memory.max_usage_in_bytes --> 0
 
  - B) Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
  
