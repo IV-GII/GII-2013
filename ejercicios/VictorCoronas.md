@@ -235,6 +235,9 @@ Instalamos htop, ya que no viene instalado por defecto:
 
 Enlace de referencia para usar [HTOP](http://bitelia.com/2010/03/comando-linux-htop-administra-interactivamente-los-procesos-del-sistema)
 
+Una vez instalado "htop", lo ejecutamos con "htop", y nos mostraria lo [siguiente](https://www.dropbox.com/s/r0otmlznc22536b/Captura%20de%20pantalla%202014-10-18%20a%20la%28s%29%2016.50.48.png?dl=0).
+Como se puede apreciar en la imagen, solo tiene una cpu por lo que no puedo probar al migración de una cpu a otro, aunque sinceramente no se como se haría migrarar de una cpu a otra.
+
  - D) Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
 
 Para poder realizar esta modificación, tenemos que modificar los parámetros de blkio(block I/O) que esta dentro del grupo que anteriormente hemos metido el servidor web (nginx, apache,..)
