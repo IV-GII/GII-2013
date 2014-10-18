@@ -199,8 +199,52 @@ Las funciones de control de recursos de Oracle Solaris permiten que se comparta 
 [Enlace a oracle](http://docs.oracle.com/cd/E26921_01/html/E25833/gewag.html)
 
  - B) Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
- - C) Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+
+Para cambiar la prioridad a los procesos de usuario y a los del sistema debemos modificar el archivo:
+
+    /etc/cgconfig.conf
+
+Antes de empezar a modificar nada, tenemos que crear dos grupos, uno que sería para lo usuarios y otro para los procesos.
+Para ello hacemos:
+
+    sudo cgcreate -g memory,cpu,cpuacct:usuario
+    sudo cgcreate -g memory,cpu,cpuacct:sistema
+
+Una vez que hemos realizado el paso anterior ya si podemos modificar el archivo "/etc/cgconfig.conf", donde podremos modificar las prioridades.
+
+    group usuario {
+        cpu {
+            ## 10% de CPU disponible para los procesos
+            cpu.shares = 100;
+        }
+    }
+    group sistema {
+        cpu {
+            # 90% de CPU disponible para los procesos
+            cpu.shares = 900; 
+        }
+    }
+
+En este caso lo que estamos haciendo es dándole menos prioridad a los procesos de usuario (20%) con respecto a los procesos del sistema (80%).
+
+ - C) Usar un programa que muestre en tiempo real la carga del sistema tal como htop y comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+
+Instalamos htop, ya que no viene instalado por defecto:
+
+    apt-get install htop
+
  - D) Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
+
+Para poder realizar esta modificación, tenemos que modificar los parámetros de blkio(block I/O) que esta dentro del grupo que anteriormente hemos metido el servidor web (nginx, apache,..)
+
+    group web{
+       blkio{
+             blkio.weight = 150 
+       } 
+    }
+   
+// Asignación por defecto 500 [Informacion de blkio](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Resource_Management_Guide/ch-Subsystems_and_Tunable_Parameters.html)
+
 
 #Clase del 6 de octubre de 2014
 
