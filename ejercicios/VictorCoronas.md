@@ -194,6 +194,10 @@ Amortización:
   
 * Ejercicio 8
  - A) Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+ 
+Las funciones de control de recursos de Oracle Solaris permiten que se comparta el ancho de banda entre las VNIC en la red virtual de un sistema. También puede utilizar funciones de control de recursos para asignar y gestionar el ancho de banda en una interfaz física sin VNIC ni máquinas virtuales. 
+[Enlace a oracle](http://docs.oracle.com/cd/E26921_01/html/E25833/gewag.html)
+
  - B) Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
  - C) Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
  - D) Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
