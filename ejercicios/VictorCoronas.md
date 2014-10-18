@@ -233,6 +233,8 @@ Instalamos htop, ya que no viene instalado por defecto:
 
     apt-get install htop
 
+Enlace de referencia para usar [HTOP](http://bitelia.com/2010/03/comando-linux-htop-administra-interactivamente-los-procesos-del-sistema)
+
  - D) Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
 
 Para poder realizar esta modificación, tenemos que modificar los parámetros de blkio(block I/O) que esta dentro del grupo que anteriormente hemos metido el servidor web (nginx, apache,..)
