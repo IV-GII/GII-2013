@@ -204,9 +204,9 @@ Amortización:
 
 * [+]Ejercicio 9
  - A) Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
--Con el comando "cat /proc/cpuinfo", vemos la CPu que tenemos: Intel(R) Core(TM) i5 CPU M 520 @ 2.40GHZ
+-Con el comando "cat /proc/cpuinfo", vemos la CPU que tenemos: Intel(R) Core(TM) i5 CPU M 520 @ 2.40GHZ
 
--Después ejecutamos la ordem: "egrep '^flags.*(vmx|svm)' /proc/cpuinfo", pero no aparece nada ya que no esta acticada esa opción.
+-Después ejecutamos la ordem: "egrep '^flags.*(vmx|svm)' /proc/cpuinfo", pero no aparece nada ya que no esta activada esa opción.
 
 * [+]Ejercicio 10
  - A) Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
