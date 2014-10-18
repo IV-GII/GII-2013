@@ -167,6 +167,26 @@ Resultados para el correo:
 
  - B) Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
  
+En primer lugar hay que [tener en cuenta el gasto medio de un PC](http://www.leantricity.es/es/2012/07/11/cuanta-energia-gasta-un-ordenador-aproximaciones/) 
+
+Coste eléctrico por año:
+
+    365 días x (0,437 kWh + 0,1524 kWh) = 215 kWh 
+    0,15 € * 215 kWh = 32€/año
+
+Teniendo en cuenta que la vida media de un ordenador (con cierto uso) está en torno a los 5 años y suponiendo un precio de 500€.
+
+Amortización:
+    * Año 2014: 8.3*4 = 33.2€ + 2.7€ *4 = 43.8€
+    * Año 2015: 100€ + 32€ = 132€
+    * Año 2016: 100€ + 32€ = 132€
+    * Año 2017: 100€ + 32€ = 132€
+    * Año 2018: 100€ + 32€ =  132€
+    * Año 2019: 8.3*8 = 66.7€ + 2.7€ *8 = 88.3€
+    
+    Precio total: 660.1€
+
+
 * Ejercicio 8
  - A) Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
  - B) Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
