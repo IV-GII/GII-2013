@@ -207,7 +207,7 @@ En cuanto a la limitación de recursos nos podemos fijar en varios factores: com
 
 Prioridad del usuario: un usuario con más prioridad, como el administrador o un usuario de pago frente a otro normal, deberían tener más recursos asignados. 
 
-Según el uso: Podríamos limitar los recursos según el usuario que use la CPU, asignando más a la memoria gráfica si está diseñando figuras 3D o al navegador si es un desarrollador web, por ejemplo
+Según el uso: Podríamos limitar los recursos según el usuario que los use, asignando más a la memoria gráfica si está diseñando figuras 3D o al navegador si es un desarrollador web, por ejemplo
 
 
 ##9.2 
