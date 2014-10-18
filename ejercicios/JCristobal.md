@@ -203,6 +203,13 @@ Aunque para comprobar la consulta de recursos veo la total:
 ##9.1 
 Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
 
+En cuanto a la limitación de recursos nos podemos fijar en varios factores: como prioridad del usuario o uso que éste le va a dar.
+
+Prioridad del usuario: un usuario con más prioridad, como el administrador o un usuario de pago frente a otro normal, deberían tener más recursos asignados. 
+
+Según el uso: Podríamos limitar los recursos según el usuario que use la CPU, asignando más a la memoria gráfica si está diseñando figuras 3D o al navegador si es un desarrollador web, por ejemplo
+
+
 ##9.2 
 Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
 
