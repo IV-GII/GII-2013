@@ -104,6 +104,14 @@ Instala el sistema de gestión de fuentes git.
 1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. <br />
 2. Modificar el readme y subir el fichero modificado. <br />
 
+Para este ejercicio se ha utilizado un proyecto creado para la realización de la práctica. Los pasos que se han seguido se ilustran a continuación:
+
+![6](http://s3.postimg.org/mfouvrrbn/Captur_Files.png)
+
+Al modificar ejecutaremos git commit -m "modificado", y finalmente lo subimos:
+
+![7](http://s15.postimg.org/aldx08wiz/Captur_Files_1.png)
+
 
 ###Ejercicio 7
 1. Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado. <br />
@@ -120,10 +128,33 @@ Instala el sistema de gestión de fuentes git.
 ###Ejercicio 9
 Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 
+Para comprobar si está activada (disponible) la virtualización a nivel de hardware deberemos ejecutar el siguiente comando: <br />
+egrep '^flags.*(vmx|svm)' /proc/cpuinfo, y vemos su salida en la siguiente captura. El comando muestra las líneas con la expresión que le pasamos (que es la que nos interesa hallar); al mostrar todo el listado de flags comprobamos que la funcionalidad existe y está activada, como vemos en la captura a continuación:
+
+![8](http://s29.postimg.org/scckvd4s7/Captur_Files.png)
+
+Respecto al modelo de procesador, podemos consultar /proc/cpuinfo:
+
+![9](http://s18.postimg.org/x1obovell/Captur_Files_1.png)
+
+En este caso sólo he recogido en la captura la información respecto al procesador 0, ya que no es necesario incluir información no relevante y de por sí es suficientemente aclaratorio.
+
 ###Ejercicio 10
 Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 
+Vamos a comprobar que el núcleo KVM esté instalado. Usaremos el comando kvm-ok (necesitaremos instalar cpu-checker si no lo tenemos instalado):
+
+![10](http://s30.postimg.org/65ftqvb9d/Captur_Files.png)
+
+Vemos que, efectivamente, existe y la aceleración se puede usar.
+
 ###Ejercicio 11
-Comentar diferentes soluciones de Software as a Service de uso habitual
+Comentar diferentes soluciones de Software as a Service de uso habitual.
 
+Vamos a comentar 3 ejemplos de soluciones SaaS comunes. Si queremos más información podemos consultar este útil enlace con los [20 principales proveedores](http://www.clouds360.com/saas.php)
 
+1.  Oracle on Demand. Permite a los usuarios flexibilidad al desplegar su software CRM, basándose en las necesidades específicas y las restricciones de presupuesto. <br />
+
+2. Cloud9 Analytics. Herramienta para la gestión de ventas, volúmenes y comportamientos de parámetros económicos como salarios y tasas e informes de ventas. Todo ello con visibilidad en tiempo real. <br />
+
+3. Intacct. Pone al alcance de los usuarios un sistema de cuentas SaaS ligado a Salesforce.com. Consigue que las finanzas sean más productivas y gestiona parámetros como facturación, pedidos, contabilidad y ofrece software de informes financieros. <br />

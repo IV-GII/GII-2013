@@ -1,8 +1,6 @@
 Ejercicios de Juan Francisco Rodríguez Vílchez
 ================================================
 
-## Sesión 29-sept-2014 ##
-
 ### Ejercicio 1 ###
 
 **Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.**
@@ -37,8 +35,6 @@ Teniendo en cuenta que obtenemos un 14,28% (100%/7) del precio total del servido
 * Año 2019: 45,78€
 * Año 2020: 45,78€
 * Año 2021: 34,33€ de los 9 meses restante para completar el séptimo año.
-
-## Sesión 30-sept-2014 ##
 
 ***
 
@@ -80,7 +76,7 @@ Precio:$0.026 por hora = 0.016€
 
 **¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro**
 
-Lo he comentado en el foro, pero también lo indico aqui:
+Lo he comentado en el [foro](https://github.com/JJ/GII-2014/issues/72#issuecomment-58931811), pero también lo indico aqui:
 
 1- Para alojar varios clientes en un sólo servidor, coincido con mis compañeros, y usaría la virtualización a nivel de sistema operativo, debido a que permite que solamente el anfitrión y el cliente usen el mismo sistema operativo pero con invitados aislados del anfitrión y entre sí. De esta forma, se puede mejorar el rendimiento porque hay un solo sistema operativo encargándose de los avisos de hardware, aunque también presenta alguna desventaja como por ejemplo,que cada invitado debe utilizar el mismo sistema operativo que utiliza el host.
 
@@ -93,6 +89,8 @@ Lo he comentado en el foro, pero también lo indico aqui:
 ### Ejercicio 3.2 ###
 
 **Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
+
+Tutorial seguido: http://blog.desdelinux.net/como-crear-aplicaciones-portables-de-linux/
 
 En mi máquina virtual con Linux Mint instalado, me he bajado el CDE del repositorio de Github correspondiente y lo he instalado en el sistema. Posteriormente, he empaquetado un reloj que te trae de prueba llamado "xclock" con la siguiente orden:
 
@@ -144,7 +142,7 @@ Una vez descargada, he ejecutado la terminal de la imagen:
 
 En dicha terminal he instalado Python y nano para escribir un script en Python que nos permite saber si un número es par o impar. Lo he guardado en usr/bin para ejecutarlo posteriormente.
 
-Para guardar los cambios en una imagen nueva:
+Para guardar los cambios en una imagen nueva donde el ID de la imagen lo consultamos con "docker ps -l" y añadimos los 3 primeros dígitos de dicho ID:
 
 ```sh
   sudo docker commit [ID de la imagen] par
@@ -177,7 +175,7 @@ y finalmente ejecutar el script con:
 
 He creado un proyecto en GitHub con el fichero README incluido llamado "probando".
 
-Me lo he bajado con el siguiente comando y lo he modificado:
+Me lo he bajado con el siguiente comando y he modificado el README:
 
 ![captura5](http://i.imgur.com/tQVs1Qq.png)
 
@@ -221,7 +219,19 @@ El que más consume es Mozilla firefox, seguido de la aplicación "Brasero" y po
     
 **Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.**
 
-(PENDIENTE POR HACER)
+Según este [artículo](http://www.leantricity.es/es/2012/07/11/cuanta-energia-gasta-un-ordenador-aproximaciones/), el consumo energético total anual sin descontar días festivos de un ordenador sería:
+
+365 días x (0,437 kWh + 0,1524 kWh) = 215 kWh anuales por ordenador.
+
+Si multiplicamos por el coste actual de la energía en España: 0,15 € * 215 kWh = 32€ anuales en consumo eléctrico de un ordenador.
+
+Suponiendo que nuestro ordenador ha costado 1000 euros y que la vida media de un ordenador suele estar rondando los 5 años, los costes de amortización serían los siguientes:
+
+Si comenzamos contando los años desde principios del año 2015: 5 años * 200€ = 1000€
+
+Por otro lado, los costes eléctricos serían 32€ anuales * 5 años = 160€
+
+Coste total = 1160€
 
 ***
 
@@ -229,7 +239,12 @@ El que más consume es Mozilla firefox, seguido de la aplicación "Brasero" y po
 
 **Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.**
 
-(PENDIENTE POR HACER)
+Podemos limitar el uso de recursos por ejemplo, en entornos de producción en los que estuvieramos probando como se comporta un programa para un usuario y nos interesaría saber cuanto consume de nuestro sistema, para ello podríamos limitar la velocidad de CPU al navegador por ejemplo, ya que no nos interesaría que afectara al desarrollo de nuestra aplicación.
+
+También podríamos limitar los recursos en función del tipo de usuario, es decir, si un usuario está pagando mas que otro por el mismo servicio, es lógico pensar que el que paga mas debería tener mas recursos para su uso.
+
+Por otro lado, el administrador debería de tener más recursos que un usuario que pueda usar sus programas, por lo que sería interesante una mayor asignación para el administrador que para el usuario.
+
 
 ***
 
@@ -237,15 +252,54 @@ El que más consume es Mozilla firefox, seguido de la aplicación "Brasero" y po
 
 **Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).**
 
-(PENDIENTE POR HACER)
+El fichero de configuración de cgcreate es "/etc/cgconfig.conf", pero para poder realizar esta configuración tenemos que tener instalado el paquete "libcgroup" si usamos una distribución basada en Red Hat o "libcgroup-dev" si usamos una basada en Debian.
+
+Para poder asignar correctamente la prioridad del proceso según el grupo asignado,tenemos que utilizar el parámetro "cpu.shares", para ello debemos de indicar al principio del fichero de configuración dónde está montado el subsistema de cgroup, que en este caso será "cpu=/sys/fs/cgroup/cpu".
+
+Posteriormente procedemos a definir cada uno de los grupos:
+
+* Para procesos del usuario: "user_proc"
+* Para procesos del sistema: "sys_proc"
+
+Indicamos que "user_proc" tendrá una prioridad del 40% frente a "sys_proc" que tendrá una prioridad el 80%. Como el valor de "cpu.shares" es 1024, usaremos un valor de 207 para procesos de usuario y 817 para procesos del sistema:
+
+```
+mount {
+   cpu = /sys/fs/cgroup/cpu;
+}
+
+group user_proc {
+    cpu {
+        cpu.shares = "207";
+    }
+}
+
+group sys_proc {
+    cpu {
+        cpu.shares = "817";
+    }
+}
+
+```
 
 ***
 
 ### Ejercicio 8.3 ###
 
-**Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
+**Usar un programa que muestre en tiempo real la carga del sistema tal como htop y comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
 
-(PENDIENTE POR HACER)
+He instalado htop mediante la orden:
+
+```sh
+sudo apt-get install htop
+```
+
+Y he estado observando en tiempo real la carga del sistema:
+
+![captura31](http://i.imgur.com/irutUio.png)
+
+Sin embargo, no se como migrar en tiempo real una tarea pesada de un procesador a otro.
+
 
 ***
 
@@ -253,7 +307,21 @@ El que más consume es Mozilla firefox, seguido de la aplicación "Brasero" y po
 
 **Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.**
 
-(PENDIENTE POR HACER)
+Dentro de "/etc/cgconfig.conf" usaremos el parámetro "blkio.weight", previamente debemos de indicar donde se encuentra el controlador de bloqueo E/S, que en este caso será "blkio=/sys/fs/cgroup/blkio".
+
+Ahora procedemos a crear un grupo para los servidores que llamaremos "servers" y en su interior indicaremos la prioridad de E/S que le vamos a asignar, que en este caso sería mayor que la del resto de usuarios. El rango para este parámetro estaría entre 100-1000, por lo que he dicidido dar un "peso" de 800. El archivo de configuración, finalmente, quedaría de la siguiente forma:
+```
+mount {
+   blkio = /sys/fs/cgroup/blkio;
+}
+
+group servers {
+    blkio {
+        blkio.weight = "800";
+    }
+}
+```
+Si el servidor que tenemos funcionando es un servidor Apache, deberemos añadir la directiva de configuración "CGROUP_DAEMON="blkio:/http" al fichero de configuración "/etc/apache2/apache2.conf" para que éste tenga conocimiento de que pertenece a un grupo de control.
 
 ***
 
@@ -269,7 +337,7 @@ He ejecutado la instrucción:
 egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 ```
 
-/proc/cpuinfo es el fichero del sistema de ficheros virtual /proc que da acceso mediante “ficheros” a las estructuras de datos del núcleo de Linux; cpuinfo lista las características de la CPU y vmx es el flag que se usa para indicar que el procesador usa esta tecnología; smd es el flag para AMD-V. egrep busca líneas de un fichero que contengan la expresión regular indicada, y si aparecen los flags listará la línea completa. 
+/proc/cpuinfo es el fichero del sistema de ficheros virtual /proc que da acceso mediante “ficheros” a las estructuras de datos del núcleo de Linux; cpuinfo lista las características de la CPU y vmx es el flag que se usa para indicar que el procesador usa esta tecnología. egrep busca líneas de un fichero que contengan la expresión regular indicada, y si aparecen los flags listará la línea completa. 
 
 Según la siguiente captura:
 
@@ -303,7 +371,9 @@ Por lo que se puede observar que mi ordenador no contiene este módulo del kerne
 
 **Comentar diferentes soluciones de Software as a Service de uso habitual.**
 
-Todas las aplicaciones que se ejecutan en servidores remotos y son accedidas generalmente través de un navegador web, son SaaS.
+Lo he comentado en el [foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-58328756), pero también lo indico aqui:
+
+Todas las aplicaciones que se ejecutan en servidores remotos y son accedidas generalmente a través de un navegador web, son SaaS.
 
 Los ejemplos más comunes son algunos ERP (Sistemas de planificación de recursos empresariales) y CRM (Software para la administración basada en la relación con los clientes), aunque otros ejemplos de uso serían los siguientes:
 
@@ -339,7 +409,7 @@ Lo configuro con :
 
 Lo que hace es crear "ENV/lib/pythonX.X/site-packages",para que funcione cualquier librería. También crea "ENV/bin/python", que es un intérprete de Python que usará el entorno.
 
-Finalmente, he probado a ver si funciona correctamente:
+Finalmente, he comprobado si funciona correctamente:
 
 ![captura20](http://i.imgur.com/lr07SFE.png)
 
@@ -407,7 +477,7 @@ Posteriormente, ya se encuentra WordPress listo para usarse (previamente hay que
 
 ![captura28](http://i.imgur.com/F9VRxrS.png)
 
-Ya tenemos la aplicación de WordPress lista para ser usada y poder crear entradas:
+Llegados a este paso, tenemos la aplicación de WordPress lista para ser usada y poder crear entradas:
 
 ![captura29](http://i.imgur.com/LQbWg0t.png)
 
