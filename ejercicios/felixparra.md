@@ -46,16 +46,17 @@ La diferencia radica en las características que ofrecen cada una de las empresa
 
 ## Sesión 30-sept-2014
 
-**Ejercicio 4: Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**
+**Ejercicio 4: Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**<br />
 ![imagen EJ_4](http://imageshack.com/a/img673/3176/c3IQoX.png)
-<br />
 
-**Ejercicio 5: Instala el sistema de gestión de fuentes git**
-<br />
+<br />**Ejercicio 5: Instala el sistema de gestión de fuentes git**<br />
+
 ![imagen Ej_5](http://imageshack.com/a/img538/9873/rqrgai.png)
-<br />
-**Ejercicio 6:** 
-<br />**1.Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
 
-<br />**2.Modificar el readme y subir el fichero modificado.**
+<br />**Ejercicio 6:** <br />
+######6.1.Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.<br />
+![imagen Ej_6_1_1](http://imageshack.com/a/img673/1894/CtkfwI.png)<br />
+![imagen Ej_6_1_2](http://imageshack.com/a/img538/5820/BICLPq.png)<br />
+######6.2.Modificar el readme y subir el fichero modificado.<br />
+![imagen Ej_6_1_2](http://imageshack.com/a/img674/9550/CLdz4f.png)
 <br />
