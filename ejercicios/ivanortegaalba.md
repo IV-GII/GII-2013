@@ -10,4 +10,19 @@ Para que esta máquina sea amortizada en el plazo de 4 años, nos ha de dar un 2
 Para esto ha de darnos: 645 * 0.25 = 161.25€ por año.
 
 Por tanto, para amortizarlo en 7 años, volvemos a hacer: 645 / 7 = 92.142 € por año.
-   
+
+##Ejercicio 2
+
+Vamos a hacer una comparativa entre 2 servicios de hosting, estos van a ser
+
+##Ejercicio 3
+
+Siguiendo con la tradición, vamos a hacer un "Hola Mundo" para BASH, el nombre del fichero sera HolaMundo.sh:
+
+````````````
+#!/bin/bash 
+echo "¡Hola mundo!"
+````````````
+
+Damos permisos de ejecución ( ```sudo chmod +x ./HolaMundo.sh ```)y ya tenemos listo nuestro script.
+
