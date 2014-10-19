@@ -1,6 +1,7 @@
 ###Ejercicio 6
 
 **1-Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
+
 **2-Modificar el readme y subir el fichero modificado.**
 
 Desde la web https://github.com/mortega87, la que hace referencia a mi perfil git, creo un nuevo repositorio llamado Infraestructura_Virtual y marcando la opcion de crear fichero README.md.
@@ -14,4 +15,4 @@ Los pasos a seguir son los siguientes:
 
 * En siguiente lugar, realizamos el commit: git commit -m "Modificacion de README.md"
 
-*Por último, aplicamos los cambios realizados en nuestro repositorio de git: git push origin master
+* Por último, aplicamos los cambios realizados en nuestro repositorio de git: git push origin master
