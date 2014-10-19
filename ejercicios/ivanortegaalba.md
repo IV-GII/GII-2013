@@ -52,6 +52,8 @@ Para instalarlo basta que sigamos el libro oficial de [Git Pro](http://git-scm.c
 Hay tres maneras de instalarlo:
 - Con el instaler [descargandolo de SourceForge](http://sourceforge.net/projects/git-osx-installer/).
 - Con MacPorts:
-´´´sudo port install git-core +svn +doc +bash_completion +gitweb´´´
--Con Homebrew:
+´´´
+sudo port install git-core +svn +doc +bash_completion +gitweb
+´´´
+- Con Homebrew:
 ´´´ brew install git´´
