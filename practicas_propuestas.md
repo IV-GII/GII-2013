@@ -42,6 +42,13 @@ Podría ser tanto un proyecto de tipo *nube* creando un backend basado en alguna
 
 La Diputación de Granada está migrando el escritorio a Linux. Se trataría de describir de forma abstracta esta configuración y crear scripts para instalar, modificar y monitorizar la instalación de los usuarios. El contacto es Alberto Avidad.
 
+## Periodismo de datos con Incho Cordero
+
+Se trata de recoger datos automáticamente de algún equipo deportivo,
+usando Google App Engine o algún otro SaaS, y realizar algún tipo de
+análisis estadístico sobre ellos. El contacto es
+[Incho Cordero](https://plus.google.com/+InchoCordero/posts).
+
 ## Otros proyectos
 
 Se puede plantear cualquier otro proyecto, siempre que se adapte a alguno de los dos tipos anteriores y sea un proyecto con un fin real.
