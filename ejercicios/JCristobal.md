@@ -157,7 +157,13 @@ echo 0 > /cpuset.mems
 
 
 ##Ejercicio 7
+Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene. 
 
+En la captura lo usamos y vemos que esta instalado correctamente y que está montado en /sys/fs/cgroup. También muestro su contenido con "ls"
+![imagen1](http://i.imgur.com/BgE1uJe.png)
+
+
+##Ejercicio 8
 Accedo al direcotrio de cgroups  ( /sys/fs/cgroup ) y monto el sistema de ficheros virtual: sudo mount -t cgroup cgroup /sys/fs/cgroup/
 
 ![imagen1](http://i.imgur.com/BgE1uJe.png)
@@ -192,24 +198,87 @@ Aunque para comprobar la consulta de recursos veo la total:
 
 
 
-##Ejercicio 8 (sin realizar todavía)
+##Ejercicio 9
 
-##8.1 
+##9.1 
 Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
 
-##8.2 
+En cuanto a la limitación de recursos nos podemos fijar en varios factores: como prioridad del usuario o uso que éste le va a dar.
+
+Prioridad del usuario: un usuario con más prioridad, como el administrador o un usuario de pago frente a otro normal, deberían tener más recursos asignados. 
+
+Según el uso: Podríamos limitar los recursos según el usuario que los use, asignando más a la memoria gráfica si está diseñando figuras 3D o al navegador si es un desarrollador web, por ejemplo
+
+
+##9.2 
 Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
 
-##8.3 
+instalamos cgcreate:
+sudo apt-get install cgroup-bin
+
+Y en el fichero de configuración (etc/cgconfig.conf) indicamos dónde está montado el subsistema de cgroup:
+añadimos al fichero "cpu=/sys/fs/cgroup/cpu"
+
+Habrá 2 grupos, proc-sist y proc-usu y antes de asignarles más o menos prioridad vemos el valor de cpu.shares, que es de 1024.
+Le daremos una prioridad de 30% (1024*0.3=307) y a los de sistema del resto (1024*0.7=717)
+
+```
+
+mount {
+   cpu = /sys/fs/cgroup/cpu;
+}
+
+group proc-usu {
+    cpu {
+        cpu.shares = "307";
+    }
+}
+
+group proc-sist {
+    cpu {
+        cpu.shares = "717";
+    }
+}
+
+```
+
+##9.3 
 Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
 
-##8.4 
+Instalamos htop con sudo apt-get install htop
+
+y lo ejecutamos para ver la carga a tiempo real:
+
+![imagen](http://i.imgur.com/itj7rNT.png)
+
+
+##9.4 
 Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
 
+Configuramos el servidor de NGINX que tenemos, con los grupos "servidor"(80% de prioridad) y "usuarios":
+
+```
+
+mount {
+    blkio = /cgroup/iolimit;
+}
+
+group servidor {
+    blkio  {
+        blkio.weight_device="800"; 
+    }
+}
+
+group usuarios {
+    blkio  {
+        blkio.weight_device="200"; 
+    }
+}
+
+```
 
 
-
-##Ejercicio 9
+##Ejercicio 10
 
 Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 
@@ -231,7 +300,7 @@ Como aparecen varias líneas en la búsqueda dentro de cpuinfo podemos decir que
 Es un procesador Inter Core i5-450M (2.4GHz, 3MB L3 cache)
 
 
-##Ejercicio 10
+##Ejercicio 11
 
 
 Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
@@ -245,7 +314,7 @@ Ejecutamos kvm-ok y nos dice que sí está utlizado, lo podemos usar.
 ![imagen2](http://i.imgur.com/gL3pjaL.png)
 
 
-##Ejercicio 11
+##Ejercicio 12
 
 Comentar diferentes soluciones de Software as a Service de uso habitual
 
