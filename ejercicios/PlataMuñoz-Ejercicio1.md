@@ -46,3 +46,14 @@ He empaquetado el programa y vemos como funciona perfectamente:
 
 
 [Comprobando que ejecuta](http://imgur.com/Rch8uM9)
+
+# Ejercicio 4
+
+
+Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+
+He realizado el tutorial, aquí una imagen para demostrarlo.
+
+[Docker](http://imgur.com/Q2yCQvU)
+
+
