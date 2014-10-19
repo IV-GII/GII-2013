@@ -80,5 +80,5 @@ Finalmente podemos comprobar nuestra información con:
 ````````````
 $ git config --list
 ````````````
-![Resultado comando config list]()
+![Resultado comando config list](./images/Captura de pantalla 2014-10-19 a las 18.30.36.png)
 
