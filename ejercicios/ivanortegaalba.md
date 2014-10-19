@@ -30,19 +30,19 @@ Ahora vamos a descargar el CDE e instalarlo. Para ello podemos seguir el [manual
 
 Para ello, clonamos el repositorio desde:
 
-´´´
+````````````
 git clone http://sourceforge.net/p/cdesktopenv/wiki/LinuxBuild/
-´´´
+````````````
 Ahora solo queda ejecutar la instalación y ya tendremos nuestro CDE:
 
-´´´
+````````````
 cd cdesktopenv-code/cde/admin/IntegTools/dbTools
 sudo ./installCDE -s /path/to/cdesktopenv-code/cde/
-´´´
+````````````
 Para que CDE funcione correctamente, hemos de dar permisos de escritura al directorio:
-´´´
+````````````
 sudo chmod -R a+rwx /var/dt
-´´´
+````````````
 
 ##Ejercicio 5
 
@@ -52,8 +52,8 @@ Para instalarlo basta que sigamos el libro oficial de [Git Pro](http://git-scm.c
 Hay tres maneras de instalarlo:
 - Con el instaler [descargandolo de SourceForge](http://sourceforge.net/projects/git-osx-installer/).
 - Con MacPorts:
-´´´
+````````````
 sudo port install git-core +svn +doc +bash_completion +gitweb
-´´´
+````````````
 - Con Homebrew:
-´´´ brew install git´´
+```````````` brew install  Git ````````````
