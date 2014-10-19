@@ -35,4 +35,14 @@ Precio: 55,95€ al mes
 
 Son precios fijos por lo tantos pagaremos lo mismo utlicemos lo que utilicemos. Obviamente si solo se va a utilizar un 1% del tiempo o un 10%, nos interesaría mas una empresa que nos de la opción de pagar por utilización. Normalmente con ese tiempo de utilización saldrá mas barato un Cloud Server que un VPS.
 
+# Ejercicio 3.2
+Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
+He utilizado un programa simple que imprime una cadena de texto. He descargado CDE:
+
+[Carpeta de CDE](http://imgur.com/1MXynFt)
+
+He empaquetado el programa y vemos como funciona perfectamente:
+
+
+[Comprobando que ejecuta](http://imgur.com/Rch8uM9)
