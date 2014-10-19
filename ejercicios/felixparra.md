@@ -40,17 +40,22 @@ La diferencia radica en las características que ofrecen cada una de las empresa
 
 ######Apartado 3.2: Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 <br />
-![imagen EJ_3](https://lh3.googleusercontent.com/UEQFdiVpjqWUSUo_A_OCAVqpIBHhrLgY_y655C7Wgr4V0ZWjg3UaU8Pe9Frh9w9Y9Ljw3lPLjOc=w1256-h819)
+![imagen EJ_3](http://imageshack.com/a/img909/4383/9U1I1A.png)
 
 <hr />
 
 ## Sesión 30-sept-2014
 
 **Ejercicio 4: Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**
-![imagen EJ_4](https://lh6.googleusercontent.com/5RvyDCu4x9EB60Bh9aJkkAHz2nGXXmWMvUvcRUYlTlLdo6_L5vaN-XTUQfWguwo2grLan51bHW0=w1256-h819)
+![imagen EJ_4](http://imageshack.com/a/img673/3176/c3IQoX.png)
 <br />
 
 **Ejercicio 5: Instala el sistema de gestión de fuentes git**
 <br />
-![imagen Ej_5](https://lh3.googleusercontent.com/wcISJG-SZqJ4keCtvnJ_YTlG-juso4H2frBN7HrUekFa9SD_c_9zlFy4fY2ujyWj-Vqp2IMl2lo=w1256-h819)
+![imagen Ej_5](http://imageshack.com/a/img538/9873/rqrgai.png)
+<br />
+**Ejercicio 6:** 
+<br />**1.Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
+
+<br />**2.Modificar el readme y subir el fichero modificado.**
 <br />
