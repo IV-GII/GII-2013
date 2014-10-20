@@ -87,3 +87,12 @@ git commit
 
 git push
 
+## Ejercicio 7
+
+Usando Debian, lo montamos con:
+
+mount -t cgroup cgroup /sys/fs/cgroup
+
+Con un ls /sys/fs/cgroup vemos los distintos ficheros.
+
+
