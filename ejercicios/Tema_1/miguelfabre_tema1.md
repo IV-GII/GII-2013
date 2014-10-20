@@ -96,6 +96,10 @@ Después, para obtener tu carpeta de GitHub, crea una nueva carpeta, accede a el
 
 ##Ejercicio 6
 
+**1.Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
+**2.Modificar el readme y subir el fichero modificado.** 
+   
+
 En primer lugar he creado un nuevo proyecto en GitHub añadiendo el fichero README tal como se indicaba en el enunciado.
 
 ![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio6-1.png)
@@ -117,4 +121,18 @@ Y actualizamos:
 Como vemos, la modificación ha resultado exitosa.
 
 ![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio6-4.png)
+
+##Ejercicio 7
+
+**Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
+
+Primero he comprobado si inicialmente el sistema de ficheros virtual estaba ya activado utilizando la orden: 
+
+*/sys/fs/cgroups*
+
+Dado que no existía dicho sistema de ficheros, he procedido a montarlo para poder visualizar lo que tiene.
+
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio7-1.png)
+
+Lo que podemos ver son archivos de soporte a grupos de tareas en el Kernel de Linux.
 
