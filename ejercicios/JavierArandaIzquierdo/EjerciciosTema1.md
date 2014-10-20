@@ -87,9 +87,21 @@ Se puede ver como ha sido modificado [aqui](https://github.com/JavideBaza/ejerci
 
 ###Ejercicio 7
 ####1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
--Primeramente voy a crear un grupo para mi usuario Javi (deberemos estar como administrador para hacerlo):
+-Primeramente voy a crear un grupo para mi usuario javi que se encargara de  controlar la memoria, CPU y de contabilizar el uso de los recursos de la CPU (deberemos estar como administrador para hacerlo):
 
 	cgcreate -a oskyar -g memory,cpu,cpuacct:ejercicio7
+El siguiente paso es crear 3 subgrupos para ejecutar el navegador, un procesador de textos y el centro de software de ubuntu:
+
+	sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/navegador
+	sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/textos
+	sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/centroSoftware
+    
+Tras esto, ejecutamos las ordenes con cgexec:
+
+	sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox
+	sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit
+	sudo cgexec -g memory,cpu,cpuacct:ejercicio7/reproductorMusica 
+
 ####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
 
 
