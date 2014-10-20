@@ -57,6 +57,7 @@ Si se usa la infraestructura un 10%:
 
 ### Ejercicios 4. 
 **Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**
+Realizado.
 
 **Avanzado Instalarlo y crear una aplicación contenedorizada**
 
