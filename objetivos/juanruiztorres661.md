@@ -50,8 +50,8 @@ Objetivos de Juan Antonio Ruiz.
 * [ ] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 * [ ] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 * [X] Contestar a la encuesta sobre la metodología de clase.
-* [ ] Usar ficheros en el repositorio para los ejercicios.
-* [ ] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
+* [X] Usar ficheros en el repositorio para los ejercicios.
+* [X] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
 
 * * *
 
@@ -63,7 +63,7 @@ Objetivos de Juan Antonio Ruiz.
 
 * [ ] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 * [ ] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* [ ] Contestar a la encuesta sobre la metodología de clase
+* [X] Contestar a la encuesta sobre la metodología de clase
 
 * * *
 

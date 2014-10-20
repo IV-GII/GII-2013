@@ -60,7 +60,9 @@ Si se usa la infraestructura un 10%:
 * * *
 ### Ejercicio 5. 
 **Instala el sistema de gestión de fuentes git**
-![Captura de pantalla en la que se ve el comando utilzado para instalar git, aunque en mi caso ya lo tenía instalado](./imagenes/installGit.png)
+
+Captura de pantalla en la que se ve el comando utilzado para instalar git, aunque en mi caso ya lo tenía instalado.
+![](./imagenes/installGit.png)
 
 * * *
 
@@ -71,14 +73,14 @@ Si se usa la infraestructura un 10%:
 * * *
 
 ###Ejercicios 7. 
-**Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene. **
+**Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
 
 * * *
 
 ###Ejercicios 8. 
-**1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado. **
+**1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
 
-**2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes. **
+**2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.**
 
 * * *
 
