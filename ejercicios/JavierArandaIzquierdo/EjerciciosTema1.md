@@ -87,7 +87,11 @@ Se puede ver como ha sido modificado [aqui](https://github.com/JavideBaza/ejerci
 
 ###Ejercicio 7
 ####1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
-####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes. 
+-Primeramente voy a crear un grupo para mi usuario Javi (deberemos estar como administrador para hacerlo):
+
+	cgcreate -a oskyar -g memory,cpu,cpuacct:ejercicio7
+####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
+
 
 ###Ejercicio 8
 ####1.Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
