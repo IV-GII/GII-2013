@@ -58,4 +58,4 @@
 
 * [X]  Usar ficheros en el repositorio para los ejercicios.
 
-* []  Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
+* [X]  Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
