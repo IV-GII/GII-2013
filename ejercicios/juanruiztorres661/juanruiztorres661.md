@@ -1,5 +1,5 @@
 #Ejercicios de Juan Antonio Ruiz.
-### Ejercicio 1
+### Ejercicio 1.
 **Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor
 y calcular su coste de amortización a cuatro y siete años. [Consultar este artículo en Infoautónomos sobre el tema.](http://www.infoautonomos.com/consultas-a-la-comunidad/988)**
 
@@ -48,6 +48,9 @@ Si se usa la infraestructura un 10%:
 ### Ejercicios 3.
 **1.¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.**
 
+[Comentario](https://github.com/JJ/GII-2014/issues/71#issuecomment-59784692) realizado en el foro.
+
+
 **2.Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
 
 * * *
@@ -84,12 +87,12 @@ Modificando el fichero README.md desde la consola y subiendo a github.
 
 * * *
 
-###Ejercicios 7. 
+### Ejercicios 7. 
 **Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
 
 * * *
 
-###Ejercicios 8. 
+### Ejercicios 8. 
 **1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
 
 **2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.**
@@ -107,17 +110,17 @@ Modificando el fichero README.md desde la consola y subiendo a github.
 
 * * *
 
-###Ejercicios 10. 
+### Ejercicios 10. 
 **Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
 
 * * *
 
-###Ejercicios 11. 
+### Ejercicios 11. 
 **Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
 
 * * *
 
-###Ejercicios 12. 
+### Ejercicios 12. 
 **Comentar diferentes soluciones de Software as a Service de uso habitual**
 
 * * *
