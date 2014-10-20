@@ -350,6 +350,9 @@ Mi [respuesta en el foro](https://github.com/JJ/GII-2014/issues/72#issuecomment-
 He instalado el de Python (virtualenv) mediante:
 >sudo pip install virtualenv
 
+Después, he probado a crear el entorno virtual escribiendo en consola:
+>virtualenv proyecto
+
 
 ***
 
@@ -357,3 +360,11 @@ He instalado el de Python (virtualenv) mediante:
 
 #####Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.#####
 Me he registrado en OpenShift.
+
+
+***
+
+##Ejercicio 2##
+#####Crear una aplicación en OpenShift y dentro de ella instalar WordPress.#####
+Tras solicitar crear una aplicación, se nos permite desplegar una aplicación de las que ya hay predefinidas. Insertando en el buscador "Wordpress". Después de esto, se nos pedirán algunos datos, como el nombre de dominio o el repositorio Git donde tenemos el código.
+Finalmente, se nos darán los datos necesarios para entrar a administrar nuestro Wordpress.
