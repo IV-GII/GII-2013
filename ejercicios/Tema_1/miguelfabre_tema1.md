@@ -152,3 +152,10 @@ Ejecutamos la orden indicada en el guión y vemos que efectivamente el procesado
 
 El procesador del que hablamos es un Intel(R) Core(TM) i3 CPU M 370  @ 2.40GHz
 
+##Ejercicio 11
+
+**Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
+
+Ejecutamos la orden tal como indica el enunciado y tal como podemos ver el núcleo de mi ordenador no contiene este módulo del kernel.
+
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio11-1.png)
