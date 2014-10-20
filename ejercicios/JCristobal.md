@@ -1,6 +1,7 @@
 #Ejercicios de JCristobal
 
 
+# Tema 1
 
 ##Ejercicio 1
 
@@ -319,6 +320,39 @@ Ejecutamos kvm-ok y nos dice que sí está utlizado, lo podemos usar.
 Comentar diferentes soluciones de Software as a Service de uso habitual
 
 Aquí el enlace al [comentario](https://github.com/JJ/GII-2014/issues/72#issuecomment-59173713)
+
+
+
+# Tema 2
+
+
+##Ejercicio 1
+###Instalar un entorno virtual para tu lenguaje de programación favorito
+
+Instalaremos [nodeenv para node.js](https://pypi.python.org/pypi/nodeenv/), accediendo al enlace proporcionado por el profesor para consultar sobre la instalación de éste.
+
+sudo easy_install nodeenv
+
+Creamos un nuevo entonro y lo activamos:
+
+virtualenv env
+. env/bin/activate
+
+(env) $ pip install nodeenv
+(env) $ nodeenv --version
+
+Con esto vemos la versión, en mi caso la 0.11.1:
+
+![imagen](http://i.imgur.com/Uz6bN2M.png)
+
+
+##Ejercicio 2
+###Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
+
+Accedemos a la página de [Heroku](https://www.heroku.com/). Introducimos nuestro e-mail y confirmamos el alta al correo que nos mandan, nos registramos y ya podemos usarlo:
+
+![imagen](http://i.imgur.com/Jr80VGt.png)
+
 
 
 
