@@ -32,7 +32,8 @@ El precio del [servidor seleccionado](http://fujitsu-shop.anima-its.com/formato-
 Comparando costes de [Hostalia](http://www.hostalia.com/dedicados/) y [Azure](http://azure.microsoft.com/es-es/pricing/details/virtual-machines/#Windows).
 
 ![Captura de pantalla de precios en Hostalia:](./imagenes/hostalia.png)
-![Captura de pantalla de precios en Azure:](/imagenes/azure.png)
+
+![Captura de pantalla de precios en Azure:](./imagenes/azure.png)
 
 
 
