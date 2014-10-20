@@ -169,9 +169,9 @@ Donde cada carpeta es un grupo de control.
 
 ***
 
-###Ejercicio 7###
+###Ejercicio 8###
 
-#####7.1 Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.#####
+#####8.1 Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.#####
 + He montado el sistema de archivos con "sudo mount -t tmpfs cgroup_root /sys/fs/cgroup"
 + He creado el directorio con "sudo mkdir /sys/fs/cgroup/cpuset", donde "cpuset" es el nombre del cgroup
 + Como dentro del directorio no se creó nada, he acudido a buscar en Internet y he encontrado [esto](http://serverfault.com/questions/478946/how-can-i-create-and-use-linux-cgroups-as-a-non-root-user). Al ejecutar el comando "sudo mount -t cgroup -o cpuset cpuset /sys/fs/cgroup/cpuset", para montar el sistema de archivos y "sudo mkdir /sys/fs/cgroup/cpuset/${USER}" y "sudo chown -R ${USER} /sys/fs/cgroup/cpuset/${USER}" para crear el cgroup con el usuario actual, si aparecen los ficheros que se describen en el material de clase.
@@ -194,7 +194,7 @@ Firefox
 
 
 
-#####7.2 Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.#####
+#####8.2 Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.#####
 En primer lugar hay que [tener en cuenta el gasto medio de un PC](http://www.leantricity.es/es/2012/07/11/cuanta-energia-gasta-un-ordenador-aproximaciones/)
 Coste eléctrico por año:
 365 días x (0,437 kWh + 0,1524 kWh) = 215 kWh 
@@ -216,11 +216,11 @@ Precio total: 660.1€
 
 ***
 
-###Ejercicio 8###
-#####8.1 Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.#####
+###Ejercicio 9###
+#####9.1 Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.#####
 --
 
-#####8.2 Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).#####
+#####9.2 Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).#####
 
    
 ```
@@ -268,11 +268,11 @@ group system {
 
 
 
-#####8.3 Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).#####
+#####9.3 Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).#####
 Desconozco cómo se migra la carga de un procesador a otro. El uso de memoria se incrementaría (incluso podría necesitarse memoria de SWAP) y uno de los procesadores aumentaría su uso a la vez que el del otro descendería. 
 ![Ejecución de la orden htop](http://fotos.subefotos.com/1c350c29f3bacd01e2f11dd5a3251566o.jpg)
 
-#####8.4 Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.#####
+#####9.4 Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.#####
 
 He utilizado NGINX como servidor
 
