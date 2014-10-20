@@ -134,5 +134,21 @@ Dado que no existía dicho sistema de ficheros, he procedido a montarlo para pod
 
 ![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio7-1.png)
 
-Lo que podemos ver son archivos de soporte a grupos de tareas en el Kernel de Linux.
+Lo que podemos ver son archivos de soporte a grupos de tareas en el Kernel de Linux, que permiten controlar y monitorizar la actividad de los diferentes grupos de control.
+
+##Ejercicio 8
+
+
+##Ejercicio 9
+
+
+##Ejercicio 10
+
+**Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
+Ejecutamos la orden indicada en el guión y vemos que efectivamente el procesador tiene activos estos flags.
+
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio10-1.png)
+
+El procesador del que hablamos es un Intel(R) Core(TM) i3 CPU M 370  @ 2.40GHz
 
