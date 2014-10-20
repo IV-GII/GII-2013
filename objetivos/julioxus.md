@@ -99,7 +99,7 @@ Lista de objetivos de Julio Martínez Martínez-Checa
 
 * [X] Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
 
-* [] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+* [X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
-* [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+* [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
 Comprender el método de entrega de las prácticas de la asignatura.

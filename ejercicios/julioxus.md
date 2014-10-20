@@ -313,3 +313,19 @@ Ahora puedo logearme en OpenShift usando esa cuenta:
 
 **Crear una aplicación en OpenShift y dentro de ella instalar WordPress.**
 
+Accedemos a [OpenShift](https://www.openshift.com/) y nos logeamos con nuestra cuenta.
+
+A continuación pulsamos sobre "Create my first app".
+
+Buscamos "Wordpress" y nos saldrá algo como esto:
+
+![captura17](http://i.imgur.com/bu5RrKc.png)
+
+Seleccionamos Wordpress 4 y rellenamos el formulario seleccionando el nombre de la URL que tendrá la aplicación entre otras cosas.
+Al finalizar nos dirá que se ha completado la instalación y podremos ver qué versión de PHP y MySQL tenemos, el usuario y contraseña de la base de datos y el espacio de almacenamiento del que disponemos.
+
+![captura18](http://i.imgur.com/d0nQlMY.png)
+
+Finalmente si accedemos al sitio podremos empezar a configurar Wordpress para usarlo:
+
+![captura19](http://i.imgur.com/kKUrHcl.png)
