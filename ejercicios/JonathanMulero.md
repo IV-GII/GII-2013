@@ -95,3 +95,7 @@ Modificamos el readme y para subirlo:
 `git commit -a -m "COMENTARIO"`
 
 `git push origin master`
+
+###Ejercicio 7###
+
+Está montado en /sys/fs/cgroup y contiene una carpeta, systemdmque a su vez contiene los archivos cgroup.
