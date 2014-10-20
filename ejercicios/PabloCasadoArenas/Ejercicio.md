@@ -82,6 +82,8 @@ Modificado con vi README.md.
 Lo añadimos para hacer commit y luego hacemos el push.
 
 git add README.md
+
 git commit
+
 git push
 
