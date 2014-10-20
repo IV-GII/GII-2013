@@ -98,4 +98,4 @@ Modificamos el readme y para subirlo:
 
 ###Ejercicio 7###
 
-Está montado en /sys/fs/cgroup y contiene una carpeta, systemdmque a su vez contiene los archivos cgroup.
+Está montado en /sys/fs/cgroup y contiene una carpeta, systemd que a su vez contiene los archivos cgroup.
