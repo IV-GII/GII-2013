@@ -1,7 +1,7 @@
 Ejercicios de Juan Francisco Rodríguez Vílchez
 ================================================
 
-#### Ejercicios Tema 2: Creando aplicaciones en la nube: Uso de PaaS ####
+## Ejercicios Tema 2: Creando aplicaciones en la nube: Uso de PaaS ##
 
 ### Ejercicio 1 ###
 
