@@ -72,8 +72,8 @@ Instalamos CDE en nuestro sistema linux:
 * ```cd CDE``` 
 * ```make```
 
-![figura1](/Imagenes/ejercicio3_1.jpg)
-Figura 1. Instalando CDE.
+![figura1](Imagenes/ejercicio3_1.jpg)
+> Figura 1. Instalando CDE.
 
 Una vez instalado procedemos a crear un script, usaremos python en nuestro caso, y no nos olvidemos de indicar en la primera línea las directrices para convertir el archivo en ejecutable directamente.
 
@@ -124,14 +124,12 @@ Finalziado el tutorial procedemos a la instalación de docker en nuestro sistema
 Nos descargamos la imagen del tutorial como se habia indicado:
 
 ```docker pull learn/tutorial```
-
-![figura2](/Imagenes/ejercicio4_1.png)
-Figura 2. Descargando la imagen del tutorial.
+![figura2](Imagenes/ejercicio4_1.png)
+> Figura 2. Descargando la imagen del tutorial.
 
 Una vez descargada podemos hacer la comprobación de que funciona lanzando un mensaje "hello world".
-
-![figura3](/Imagenes/ejercicio4_2.png)
-Figura 3. Prueba de funcionamiento.
+![figura3](Imagenes/ejercicio4_2.png)
+> Figura 3. Prueba de funcionamiento.
 
 Dado que todo está en funcionamiento podemos pasar a instalar programas en nuestro nuevo contenedor. Instalaremos nano para disponer de un editor de textos.
 
@@ -145,8 +143,8 @@ Lanzamos el programa recién instalado y comprobamos que todo funciona.
 
 ```docker run -i -t learn/nano nano```
 
-![figura4](/Imagenes/ejercicio4_4.png)
-Figura 4. Ejecutando nano.
+![figura4](Imagenes/ejercicio4_4.png)
+> Figura 4. Ejecutando nano.
 
 ##Ejercicio 5
 
@@ -202,18 +200,18 @@ Para un [tutorial extensivo](http://git-scm.com/docs/gittutorial) podemos accede
 
 En primer lugar generamos el nuevo repositorio para hacer la prueba.
 
-![figura5](/Imagenes/ejercicio6_1.png)
-Figura 5. Creando un nuevo proyecto.
+![figura5](Imagenes/ejercicio6_1.png)
+> Figura 5. Creando un nuevo proyecto.
 
 Procedemos a descargarlo en nuestra máquina mediante git usando ```git clone``` y comprobamos que efectivamente tenemos acceso.
 
-![figura6](/Imagenes/ejercicio6_2.png)
-Figura 6. Descargando el proyecto.
+![figura6](Imagenes/ejercicio6_2.png)
+> Figura 6. Descargando el proyecto.
 
 Realizmos una ligera modificación en el fichero README y subimos los cambios añadiendo el fichero y salvamos todo mediante un commit.
 
-![figura7](/Imagenes/ejercicio6_3.png)
-Figura 7. Subiendo el archivo README modificado.
+![figura7](Imagenes/ejercicio6_3.png)
+> Figura 7. Subiendo el archivo README modificado.
 
 ##Ejercicio 7
 
@@ -254,15 +252,6 @@ Con un uso de 24 horas/dia supone un consumo eléctrico de aproximadamente 420 e
 
 
 
-
-
-
-
-
-##Ejercicio 8
-
-
-
 ##Ejercicio 9
 
 **Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
@@ -271,8 +260,8 @@ Lanzamos el comando indicado.
 
 ```egrep '^flags.*(vmx|svm)' /proc/cpuinfo```
 
-![figuraX1](/Imagenes/ejercicio9_1.png)
-Figura X. Comprobando la actividad de flags.
+![figuraX1](Imagenes/ejercicio9_1.png)
+> Figura X. Comprobando la actividad de flags.
 
 Al no listar nada podemos decir que o bien el procesador no posee dicha funcionalidad o está desactivada.
 El modelo de procesador usado es el "Intel Core i7-4702MQ".
@@ -283,55 +272,7 @@ El modelo de procesador usado es el "Intel Core i7-4702MQ".
 
 Mi sistema no soporta las extension KVM, por tanto no puede usar la aceleración por hardware del procesador.
 
-![figuraX2](/Imagenes/ejercicio10_1.png)
-Figura X. Resultado de kvm-ok en mi sistema.
+![figuraX2](Imagenes/ejercicio10_1.png)
+> Figura X. Resultado de kvm-ok en mi sistema.
 
-##Ejercicio 12
-
-**Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).**
-
-El enterno visual de desarrollo elegido es para el lenaguaje de programación Python. Procedemos por tanto a la isntalación de "virtualenv".
-
-```sudo pip install virtualenv```
-
-Si no disponemos de pip : ```sudo apt-get install python-pip.```
-
-Finalizada la instalación lanzamos el comando "virtualenv ENV" que creará el directorio "ENV/lib/pythonX.X/site-packages", donde se almacenarán todas las librerias que instalemos. Y además creará el directorio "ENV/bin/python", el cual es el intérprete de Python que usará este entorno creado.
-
-###Crear y activar un proyecto
-
-*Creamos un proyecto. ```virtualenv test```
-![figuraX3](/Imagenes/ejercicio12_1.png)
-Figura X. 
-*Activamos el proyecto. ```source bin/activate```
-![figuraX4](/Imagenes/ejercicio12_2.png)
-Figura X. 
-
-##Ejercicio 13
-
-**Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
-
-Openshift. Procedeemos a su página web ttps://www.openshift.com, y en mi caso elegiré la opción gratuita.
-
-##Ejercicio 14
-
-Siguiendo el tutorial ofrecido por el siguiente [enlace](http://www.hongkiat.com/blog/setup-wordpress-openshift/)
-
-![figuraX5](/Imagenes/ejercicio14_1.png)
-Figura X. Creando una nueva aplicación en openshift.
-
-Creamos la aplicación con las opciones por defecto.
-
-![figuraX6](/Imagenes/ejercicio14_1.png)
-Figura X. Usar la app de Wordpress.
-
-De momento indicaremos que no deseamos modificar el código, pulsando "Not now, continue.".
-
-![figuraX7](/Imagenes/ejercicio14_3.png)
-Figura X. 
-
-Y ya tendremos todo instalado y podremos configurar Wordpress accediendo a la página web indicada.
-
-![figuraX8](/Imagenes/ejercicio14_4.png)
-Figura X. Wordpress instalado y listo para configurarse.
 
