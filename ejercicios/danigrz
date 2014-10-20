@@ -21,4 +21,21 @@ Si sólo usaramos el 10% del tiempo, pagaríamos 242,47€ con Windows y 167,88�
 
 
 
+Ejercicio 3:
+  -1 : ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro**
+  Esta comentado en el foro: [link](https://github.com/JJ/GII-2014/issues/71#issuecomment-59713877)
+  
+-En primer caso usaria la virtualizacion a nivel de sistema operativo, coincidiendo con mis compañeros, por las ventajas que esto permite en la gestion de cuentas de usuarios
+
+-Para el sistema eficiente de middleware+web+BD usaria la virtualizacion de aplicaciones, ya que solo habria que configurar las aplicaciones necesarias y evitamos con esto más complicaciones que si tuvieramos que virtualizar el sistema operativo completo y configurarlo a nuestro requisito
+
+-Para un sistema de prueba de software e integración continua,  usaria una virtualizacion de entornos de desarrollo ya que vamos a realizar pruebas de software y este tipo de virtualizacion esta diseñado para este aspecto
+
+
+
+
+
+
+
+
 
