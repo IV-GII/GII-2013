@@ -34,8 +34,7 @@ Variaremos el porcentage cada año, deduciendo los primeros años algo menos y a
 
 
 ##Ejercicio 2
-
-Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
+###Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
 
 
 El primer servicio que consulto es el de [Acens](http://www.acens.com/cloud/vps/) (opción VPS BUSINESS)con las características:
@@ -116,8 +115,7 @@ git push para enviar
 
 
 ##Ejercicio 6
-
-Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado
+###Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado
 
 Creamos un readme.md con su commit correspondiente y lo añadimos al repositorio que queremos (objetivosIV en mi caso)
 Para ello introduzco en línea de comandos:
@@ -158,7 +156,7 @@ echo 0 > /cpuset.mems
 
 
 ##Ejercicio 7
-Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene. 
+###Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene. 
 
 En la captura lo usamos y vemos que esta instalado correctamente y que está montado en /sys/fs/cgroup. También muestro su contenido con "ls"
 ![imagen1](http://i.imgur.com/BgE1uJe.png)
@@ -202,7 +200,7 @@ Aunque para comprobar la consulta de recursos veo la total:
 ##Ejercicio 9
 
 ##9.1 
-Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+###Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
 
 En cuanto a la limitación de recursos nos podemos fijar en varios factores: como prioridad del usuario o uso que éste le va a dar.
 
@@ -212,7 +210,7 @@ Según el uso: Podríamos limitar los recursos según el usuario que los use, as
 
 
 ##9.2 
-Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+###Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
 
 instalamos cgcreate:
 sudo apt-get install cgroup-bin
@@ -244,7 +242,7 @@ group proc-sist {
 ```
 
 ##9.3 
-Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+###Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
 
 Instalamos htop con sudo apt-get install htop
 
@@ -254,7 +252,7 @@ y lo ejecutamos para ver la carga a tiempo real:
 
 
 ##9.4 
-Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
+###Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
 
 Configuramos el servidor de NGINX que tenemos, con los grupos "servidor"(80% de prioridad) y "usuarios":
 
@@ -280,8 +278,8 @@ group usuarios {
 
 
 ##Ejercicio 10
+###Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 
-Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 
 Ejectuamos la orden: egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 y nos devuelve:
@@ -302,9 +300,8 @@ Es un procesador Inter Core i5-450M (2.4GHz, 3MB L3 cache)
 
 
 ##Ejercicio 11
+###Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 
-
-Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 
 La ejecutamos pero primero instalamos cpu-cheker.
 
@@ -316,8 +313,7 @@ Ejecutamos kvm-ok y nos dice que sí está utlizado, lo podemos usar.
 
 
 ##Ejercicio 12
-
-Comentar diferentes soluciones de Software as a Service de uso habitual
+###Comentar diferentes soluciones de Software as a Service de uso habitual
 
 Aquí el enlace al [comentario](https://github.com/JJ/GII-2014/issues/72#issuecomment-59173713)
 
@@ -325,6 +321,7 @@ Aquí el enlace al [comentario](https://github.com/JJ/GII-2014/issues/72#issueco
 
 # Tema 2
 
+[Enlace al tema](http://jj.github.io/IV/documentos/temas/PaaS)
 
 ##Ejercicio 1
 ###Instalar un entorno virtual para tu lenguaje de programación favorito
@@ -336,10 +333,13 @@ sudo easy_install nodeenv
 Creamos un nuevo entonro y lo activamos:
 
 virtualenv env
+
 . env/bin/activate
 
 (env) $ pip install nodeenv
+
 (env) $ nodeenv --version
+
 
 Con esto vemos la versión, en mi caso la 0.11.1:
 
