@@ -71,9 +71,11 @@ Captura de pantalla en la que se ve el comando utilzado para instalar git, aunqu
 
 Creo el proyecto:
 ![](./imagenes/6.1.png)
+=======================
 
 Descardando el proyecto desde la consola:
 ![](./imagenes/6.2.png)
+=======================
 
 **2.Modificar el readme y subir el fichero modificado.**
 
