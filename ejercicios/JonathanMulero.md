@@ -83,3 +83,15 @@ Avanzado Instalarlo y crear una aplicación contenedorizada
 En mi versión de ubuntu lo he instalado con la orden: `sudo aptitude install git`
 
 ###Ejercicio 6###
+
+Desde GitHub nos vamos a Repositories->New y marcamos la opción "Initialize this repository with a README" para incluir el readme.
+
+Para descargarlo `git clone https://github.com/yonatan24891/NOMBRE_DEL_REPOSITORIO.git`
+
+Modificamos el readme y para subirlo:
+
+`git add README.md`
+
+`git commit -a -m "COMENTARIO"`
+
+`git push origin master`
