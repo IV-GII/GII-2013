@@ -29,22 +29,98 @@ El precio del [servidor seleccionado](http://fujitsu-shop.anima-its.com/formato-
 ### Ejercicio 2. 
 **Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.**
 
-Comparando costes de [Hostalia](http://www.hostalia.com/dedicados/) y [Azure](http://azure.microsoft.com/es-es/pricing/details/virtual-machines/#Windows).
+Comparando costes de [Hostalia](http://www.hostalia.com/dedicados/) desde 99€/mes y [Azure](http://azure.microsoft.com/es-es/pricing/details/virtual-machines/#Windows) con características similares 99,79€/mes (0,1341€/h).
 
-![Captura de pantalla de precios en Hostalia:](/imagenes/hostalia.png)
-![Captura de pantalla de precios en Azure:](/imagenes/azure.png)
+![Captura de pantalla de precios en Hostalia:](./imagenes/hostalia.png)
+========================================================================
+![Captura de pantalla de precios en Azure:](./imagenes/azure.png)
 
+Si se usa la infraestructura un 1%:
+- Azure: 99,79€ * 12meses *0.01 = 11,97€/año.
+- Hostalia: 99€ * 12meses = 1188€/año independientemente del tiempo que se utilice.
 
-
-
+Si se usa la infraestructura un 10%:
+- Azure: 99,79€ * 12meses *0.10 = 119,75€/año.
+- Hostalia: 99€*12meses = 1188€/año independientemente del tiempo que se utilice.
 
 * * *
+
 ### Ejercicios 3.
 **1.¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.**
 
 **2.Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
 
 * * *
+
+### Ejercicios 4. 
+**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**
+
+**Avanzado Instalarlo y crear una aplicación contenedorizada**
+
+* * *
+### Ejercicio 5. 
+**Instala el sistema de gestión de fuentes git**
+![Captura de pantalla en la que se ve el comando utilzado para instalar git, aunque en mi caso ya lo tenía instalado](./imagenes/installGit.png)
+
+* * *
+
+### Ejercicios 6. 
+**1.Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
+**2.Modificar el readme y subir el fichero modificado.**
+
+* * *
+
+###Ejercicios 7. 
+**Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene. **
+
+* * *
+
+###Ejercicios 8. 
+**1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado. **
+
+**2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes. **
+
+* * *
+
+### Ejercicios 9. 
+**1.Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.**
+
+**2.Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).**
+
+**3.Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
+
+**4.Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.**
+
+* * *
+
+###Ejercicios 10. 
+**Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
+* * *
+
+###Ejercicios 11. 
+**Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
+
+* * *
+
+###Ejercicios 12. 
+**Comentar diferentes soluciones de Software as a Service de uso habitual**
+
+* * *
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
 
 
