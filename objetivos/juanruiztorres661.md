@@ -42,7 +42,7 @@ Objetivos de Juan Antonio Ruiz.
 ##Clase del 6 de octubre de 2014.##
 
 * [ ] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
-* [ ] Comprender los niveles de virtualización y sus denominaciones genéricas.
+* [X] Comprender los niveles de virtualización y sus denominaciones genéricas.
 * [ ] Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
 
 ###Otros objetivos.###
