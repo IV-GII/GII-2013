@@ -10,3 +10,50 @@ Precio: 189€
  [Enlace para Comprar](http://www.pccomponentes.com/hp_proliant_g7_microserver_amd_turion_ii_n54l_2gb_250gb.html)
 
 Si suponemos que amortizamos un 10% anual por ejemplo. Tendremos que en 4 años, habremos amortizado 75.6€ del total. Y en 7 años 132.3€. Obviamente en 10 años habremos amortizado el total del servidor.
+
+
+# Ejercicio 2
+
+Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
+
+Hemos elegido un servidor cloud en axarnet:
+
+[Cloud Server ] (https://www.axarnet.es/servidores-cloud/?gclid=CjwKEAjwwo2iBRCurdSQy9y8xWcSJABrrLiSKhtPgebREZQF8Mo23TswdK0qg16YDXxdOOXuYo7jnBoCpwjw_wcB)
+
+8 GB RAM
+2 vCPU
+250GB Disco
+Precio: 49,95 € al mes
+
+[Server VPS](http://www.hostinger.es/hosting-vps)
+
+8GB RAM
+180GB Disco
+6000GB ancho de banda
+Precio: 55,95€ al mes
+
+
+Son precios fijos por lo tantos pagaremos lo mismo utlicemos lo que utilicemos. Obviamente si solo se va a utilizar un 1% del tiempo o un 10%, nos interesaría mas una empresa que nos de la opción de pagar por utilización. Normalmente con ese tiempo de utilización saldrá mas barato un Cloud Server que un VPS.
+
+# Ejercicio 3.2
+Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+
+He utilizado un programa simple que imprime una cadena de texto. He descargado CDE:
+
+[Carpeta de CDE](http://imgur.com/1MXynFt)
+
+He empaquetado el programa y vemos como funciona perfectamente:
+
+
+[Comprobando que ejecuta](http://imgur.com/Rch8uM9)
+
+# Ejercicio 4
+
+
+Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+
+He realizado el tutorial, aquí una imagen para demostrarlo.
+
+[Docker](http://imgur.com/Q2yCQvU)
+
+
