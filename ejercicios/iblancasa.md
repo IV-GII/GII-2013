@@ -328,7 +328,7 @@ Entiendo que puedo utilizar KVM.
 
 ***
 
-### Ejercicio 12###
+###Ejercicio 12###
 #####Comentar diferentes soluciones de Software as a Service de uso habitual#####
 Mi [respuesta en el foro](https://github.com/JJ/GII-2014/issues/72#issuecomment-59820896).
 
@@ -343,3 +343,8 @@ Mi [respuesta en el foro](https://github.com/JJ/GII-2014/issues/72#issuecomment-
 
 
 ##Sesión 2-10-2014##
+
+##Ejercicio 1##
+#####Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).#####
+He instalado el de Python (virtualenv) mediante:
+>sudo pip install virtualenv
