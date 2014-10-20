@@ -197,11 +197,11 @@ Finalmente, como podemos observar [aqui](https://github.com/juanfranrv/probando)
 
 En la ruta /sys/fs/ como podemos ver se encuentra montada la carpeta cgroup:
 
-[!captura7](http://i.imgur.com/Qy0iGGY.png)
+![captura7](http://i.imgur.com/Qy0iGGY.png)
 
 Dentro de ella se puede observar su contenido con un "ls":
 
-[!captura8](http://i.imgur.com/asgCwJ1.png)
+![captura8](http://i.imgur.com/asgCwJ1.png)
 
 ***
 
