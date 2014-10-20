@@ -1,6 +1,9 @@
 Lista de ejercicios Israel Blancas Álvarez
 ============================
 
+#TEMA 1: Introducción a la infraestructura virtual: concepto y soporte físico#
+
+
 ##Sesión 29-09-2014##
 
 ###Ejercicio 1###
@@ -328,3 +331,15 @@ Entiendo que puedo utilizar KVM.
 ### Ejercicio 12###
 #####Comentar diferentes soluciones de Software as a Service de uso habitual#####
 Mi [respuesta en el foro](https://github.com/JJ/GII-2014/issues/72#issuecomment-59820896).
+
+
+
+***
+***
+***
+
+
+#TEMA 2: Introducción a la infraestructura virtual: concepto y soporte físico#
+
+
+##Sesión 2-10-2014##
