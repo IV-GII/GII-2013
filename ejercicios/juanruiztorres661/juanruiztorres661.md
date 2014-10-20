@@ -68,7 +68,17 @@ Captura de pantalla en la que se ve el comando utilzado para instalar git, aunqu
 
 ### Ejercicios 6. 
 **1.Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
+
+Creo el proyecto:
+![](./imagenes/6.1.png)
+
+Descardando el proyecto desde la consola:
+![](./imagenes/6.2.png)
+
 **2.Modificar el readme y subir el fichero modificado.**
+
+Modificando el fichero README.md desde la consola y subiendo a github.
+![](./imagenes/6.3.png)
 
 * * *
 
