@@ -134,6 +134,32 @@ release_agent
 tasks
 
 ## Ejercicio 8
+Crear un grupo para navegador:
+
+Como root, desde /sys/fs/cgroup hacemos:
+
+mkdir navegador
+
+mkdir texto
+
+mkdir personalizado
+
+Para iceweasel ps aux | grep iceweasel
+
+echo 0 > cpuset.cpus 
+echo 0 > cpuset.mems
+
+Esto nos da permiso para escrbir en el archivo tasks, ponemos el PID de iceweasel
+
+echo 5851 > tasks
+
+El proceso es el mismo para los demas, cada uno con su PID.
+
+cat cpuacct.usage nos da el uso de cada cgroup.
+
+Navegador: 1084481435
+LibreOffice: 4166749
+GIMP: 299319669
 
 
 Usando esta web para tener una estimacion del consumo medio: http://www.pcsilencioso.com/recursos/bdd/73-alimentacion/45-gasto-electricidad
