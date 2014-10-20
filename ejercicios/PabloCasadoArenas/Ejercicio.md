@@ -152,3 +152,13 @@ Con una configuración de ordenador de 600 €, ya podemos amortizarlo de la sig
 
 2019 20 % de 600 € = 120 € + costes electricos= 259,43 €
 
+## Ejercicio 9
+
+
+## Ejercicio 10
+
+[Imgur](http://i.imgur.com/a3rBVmi.png)
+
+## Ejercicio 11
+
+La orden proviene del paquete cpu-checker que no se encuentra para debian por lo tanto da error.
