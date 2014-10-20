@@ -95,4 +95,41 @@ mount -t cgroup cgroup /sys/fs/cgroup
 
 Con un ls /sys/fs/cgroup vemos los distintos ficheros.
 
+blkio.io_merged
+blkio.io_queued
+blkio.io_service_bytes
+blkio.io_serviced
+blkio.io_service_time
+blkio.io_wait_time
+blkio.reset_stats
+blkio.sectors
+blkio.time
+blkio.weight
+blkio.weight_device
+cgroup.clone_children
+cgroup.event_control
+cgroup.procs
+cpuacct.stat
+cpuacct.usage
+cpuacct.usage_percpu
+cpuset.cpu_exclusive
+cpuset.cpus
+cpuset.mem_exclusive
+cpuset.mem_hardwall
+cpuset.memory_migrate
+cpuset.memory_pressure
+cpuset.memory_pressure_enabled
+cpuset.memory_spread_page
+cpuset.memory_spread_slab
+cpuset.mems
+cpuset.sched_load_balance
+cpuset.sched_relax_domain_level
+cpu.shares
+devices.allow
+devices.deny
+devices.list
+net_cls.classid
+notify_on_release
+release_agent
+tasks
 
