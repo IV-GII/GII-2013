@@ -364,7 +364,7 @@ Me he registrado en OpenShift.
 
 ***
 
-##Ejercicio 2##
+##Ejercicio 3##
 #####Crear una aplicación en OpenShift y dentro de ella instalar WordPress.#####
 Tras solicitar crear una aplicación, se nos permite desplegar una aplicación de las que ya hay predefinidas. Insertando en el buscador "Wordpress". Después de esto, se nos pedirán algunos datos, como el nombre de dominio o el repositorio Git donde tenemos el código.
 Finalmente, se nos darán los datos necesarios para entrar a administrar nuestro Wordpress.
