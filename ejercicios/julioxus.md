@@ -154,6 +154,16 @@ Aquí podemos ver cómo se ve en GitHub actualizado:
 
 ![captura7](http://i.imgur.com/dPMViHs.png)
 
+## Ejercicio 7 ##
+
+**Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
+
+Está montado en /sys/fs/cgroup. Contiene lo siguiente:
+
+![captura13](http://i.imgur.com/C4zsdNd.png)
+
+Como podemos ver se divide en carpetas diferenciando los recursos. Cada una de ellas contiene los ficheros necesarios que administran el recurso, y los grupos se deberán hacer dentro de cada uno de ellos.
+
 ## Ejercicio 8.1 ##
 
 **Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
