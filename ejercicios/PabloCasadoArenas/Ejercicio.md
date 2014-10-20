@@ -133,3 +133,22 @@ notify_on_release
 release_agent
 tasks
 
+## Ejercicio 8
+
+
+Usando esta web para tener una estimacion del consumo medio: http://www.pcsilencioso.com/recursos/bdd/73-alimentacion/45-gasto-electricidad
+
+Con unas 8 horas diarias y un PC con un consumo medio de 300 W al año serian 139,43 €.
+
+Con una configuración de ordenador de 600 €, ya podemos amortizarlo de la siguiente forma:
+
+2015 10 % de 600 € = 60 € + costes electricos = 199,43 €
+
+2016 25 % de 600 € = 150 € + costes electricos = 289,43 €
+
+2017 20 % de 600 € = 120 € + costes electricos = 259,43 €
+
+2018 25 % de 600 € = 150 € + costes electricos =  289,43 €
+
+2019 20 % de 600 € = 120 € + costes electricos= 259,43 €
+
