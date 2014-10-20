@@ -150,13 +150,24 @@ He creado [un repositorio](https://github.com/iblancasa/iblancasaWordpressTheme)
 "git clone https://github.com/iblancasa/iblancasaWordpressTheme.git"
 
 #####2. Modificar el readme y subir el fichero modificado.##########
-Como se puede ver en la [web de Github](https://github.com/iblancasa/iblancasaWordpressTheme), he realizado algunas modificacioens en el ["readme"](https://github.com/iblancasa/iblancasaWordpressTheme/blob/master/README.md).
+Como se puede ver en la [web de Github](https://github.com/iblancasa/iblancasaWordpressTheme), he realizado algunas modificaciones en el ["readme"](https://github.com/iblancasa/iblancasaWordpressTheme/blob/master/README.md).
 
 
 
 ***
 ***
 ##Sesión 30-09-2014##
+###Ejercicio 7###
+#####Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.#####
+Utilizo Ubuntu 14.04. Como se especifica en el enunciado unas líneas más arriba, se encuentra montado por defecto en "/sys/fs/cgroup".
+Contiene las siguientes carpetas:
+blkio  cpuacct  devices  hugetlb  perf_event
+cpu    cpuset   freezer  memory   systemd
+
+Donde cada carpeta es un grupo de control.
+
+
+***
 
 ###Ejercicio 7###
 
