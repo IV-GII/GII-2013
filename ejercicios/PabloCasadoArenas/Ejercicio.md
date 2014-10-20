@@ -66,3 +66,21 @@ cde python ejemplo.py
 Esto me crea un paquete CDE portable.
 Para ejecutarlo
 cde-exec python ejemplo.py
+
+## Ejercicio 4
+
+Hecho el tutorial de docker.
+
+## Ejercicio 5
+
+Como root, apt-get install git
+
+## Ejercicio 6
+
+Creado proyecto y descargado con git clone https://github.com/ramako/IV.git
+Modificado con vi README.md.
+Lo añadimos para hacer commit y luego hacemos el push.
+git add README.md
+git commit
+git push
+
