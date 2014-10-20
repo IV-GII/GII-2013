@@ -93,4 +93,13 @@ Lista de objetivos de Julio Martínez Martínez-Checa
 
 * [X] Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
 
+#Clase del 20 de octubre de 2014
 
+* [X] Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
+
+* [X] Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
+
+* [] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+* [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+Comprender el método de entrega de las prácticas de la asignatura.

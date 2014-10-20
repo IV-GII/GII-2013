@@ -1,7 +1,7 @@
 Ejercicios de Julio Martínez Martínez-Checa
 ============================
 
-## Sesión 29-sept-2014
+## Tema 1
 
 ### Ejercicio 1 ###
 
@@ -286,3 +286,30 @@ INFO: /dev/kvm exists
 KVM acceleration can be used
 
 Lo que quiere decir que mi ordenador contiene este módulo del kernel y puedo usar la virtualización kvm.
+
+## Tema 2
+
+## Ejercicio 1 ##
+
+**Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).**
+
+He instalado virtualenv con apt-get:
+
+![captura14](http://i.imgur.com/uGPZOZ5.png)
+
+## Ejercicio 2 ##
+
+**Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
+
+Me he dado de alta en RedHat rellenando el formulario.
+
+![captura15](http://i.imgur.com/b6qMry2.png)
+
+Ahora puedo logearme en OpenShift usando esa cuenta:
+
+![captura16](http://i.imgur.com/umMyBS8.png)
+
+## Ejercicio 3 ##
+
+**Crear una aplicación en OpenShift y dentro de ella instalar WordPress.**
+
