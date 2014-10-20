@@ -102,4 +102,8 @@ Lista de objetivos Israel Blancas Álvarez
 ##Clase del 20 de octubre de 2014##
 * [ ] Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
 * [ ] Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
-* [ ] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+* [ ] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
+
+###Otros objetivos###
+* [ ] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+* [ ] Comprender el método de entrega de las prácticas de la asignatura.
