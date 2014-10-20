@@ -321,3 +321,10 @@ Al intentar ejecutarlo, el sistema me ha solicitado que instalase un paquete. Tr
 >KVM acceleration can be used
 
 Entiendo que puedo utilizar KVM.
+
+
+***
+
+### Ejercicio 12###
+#####Comentar diferentes soluciones de Software as a Service de uso habitual#####
+Mi [respuesta en el foro](https://github.com/JJ/GII-2014/issues/72#issuecomment-59820896).
