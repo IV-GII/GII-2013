@@ -3,8 +3,10 @@
 
 # Tema 1
 
-##Ejercicio 1
+[Enlace al tema](http://jj.github.io/IV/documentos/temas/Intro_concepto_y_soporte_fisico)
 
+##Ejercicio 1
+###Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años
 Consulto el servidor TS-670 NAS 6 discos - Intel Atom Doble núcleo 2.6GHz, RAM 2GB
 
 [Enlace al producto](http://qloudea.com/catalog/product/view/id/2481?gclid=CjwKEAjwhqShBRDS95LciqqaonISJADj1rgaQfhaESZeoiISz-U8dcOQ74W02TrdbISaoKDFUQjPLBoCjHfw_wcB)
@@ -68,10 +70,11 @@ Ya que ofrecen servicios parecidos tienen un precio similar al mes, con lo que s
 
 
 ##Ejercicio 3
+###¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
+Se puede consultar en [comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-58538032)
 
-Parte 1: Se puede consultar en [comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-58538032)
-
-Parte 2: Aprovecho un programa de la asignatura DAI en python para empaquetarlo con CDE.
+###Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+Aprovecho un programa de la asignatura DAI en python para empaquetarlo con CDE.
 
 Primero lo instalo: ejecuto sudo apt-get install cde
 
@@ -83,6 +86,7 @@ Pantallazo de los pasos anteriores: ![imagen1](http://i.imgur.com/dn1qoxB.png)
 
 
 ##Ejercicio 4
+###Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
 
 Tutorial de línea de órdenes de docker realizado:
 ![imagen2](http://i.imgur.com/UevZw5O.png)
@@ -90,7 +94,7 @@ Tutorial de línea de órdenes de docker realizado:
 
 
 ##Ejercicio 5
-
+###Instala el sistema de gestión de fuentes git
 
 Lo instalo basándome en en [enlace a la presentación que nos proporciona el profesor](http://www.slideshare.net/jjmerelo/introduccin-al-uso-git-y-github-para-trabajo-colaborativo) 
 
@@ -136,7 +140,7 @@ git push -u origin master
 Para modificarlo accedemos a el repositorio y al archivo readme y realizamos los cambios (o mediante comandos de git mencionados antes).
 
 
-##Instrucciones sobre restricción y medición del uso de recursos: cgroups
+###Instrucciones sobre restricción y medición del uso de recursos: cgroups
 
 Accedo al direcotrio de cgroups  ( /sys/fs/cgroup )
 
@@ -163,6 +167,7 @@ En la captura lo usamos y vemos que esta instalado correctamente y que está mon
 
 
 ##Ejercicio 8
+### Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
 Accedo al direcotrio de cgroups  ( /sys/fs/cgroup ) y monto el sistema de ficheros virtual: sudo mount -t cgroup cgroup /sys/fs/cgroup/
 
 ![imagen1](http://i.imgur.com/BgE1uJe.png)
@@ -330,18 +335,20 @@ Instalaremos [nodeenv para node.js](https://pypi.python.org/pypi/nodeenv/), acce
 
 sudo easy_install nodeenv
 
-Creamos un nuevo entonro y lo activamos:
+Creamos un nuevo entorno y lo activamos:
 
 virtualenv env
 
 . env/bin/activate
 
+
+Con esto vemos la versión, en mi caso la 0.11.1:
+
+
 (env) $ pip install nodeenv
 
 (env) $ nodeenv --version
 
-
-Con esto vemos la versión, en mi caso la 0.11.1:
 
 ![imagen](http://i.imgur.com/Uz6bN2M.png)
 
@@ -354,6 +361,30 @@ Accedemos a la página de [Heroku](https://www.heroku.com/). Introducimos nuestr
 ![imagen](http://i.imgur.com/Jr80VGt.png)
 
 
+También de igual manera, nos damos de alta en OpenShift para realizar la siguiente actividad.
+
+##Ejercicio 3
+###Crear una aplicación en OpenShift y dentro de ella instalar WordPress. 
+
+Nos registramos en OpenShift y vamos al enlace para crear nuestra primera apliación.
+
+![imagen1](http://i.imgur.com/UsZPFdQ.png)
+
+Escogemos de la lista WordPress:
+
+![imagen2](http://i.imgur.com/s9qNHF4.png)
+
+Escogemos el nombre y la url que queremos, con lo que nos queda:
+
+![imagen3](http://i.imgur.com/1D3rnqF.png)
+
+Después nos registramos en WordPress y accedemos:
+
+![imagen4](http://i.imgur.com/X9XsxNj.png)
+
+Creamos una nueva entrada para probarlo:
+
+![imagen5](http://i.imgur.com/75qlAHv.png)
 
 
 
