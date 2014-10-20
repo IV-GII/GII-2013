@@ -217,6 +217,7 @@ Precio total: 660.1€
 ***
 
 ###Ejercicio 9###
+
 #####9.1 Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.#####
 --
 
@@ -296,7 +297,9 @@ group usuarios {
 }
 ```
 
+
 ***
+
 ### Ejercicio 10###
 
 #####Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?#####
@@ -305,3 +308,16 @@ La salida del comando es la siguiente:
 
 ![Comprobación de flags](http://fotos.subefotos.com/23e6b32485a62eba2036dfb96d019585o.jpg)
 
+Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+
+***
+
+### Ejercicio 11###
+
+#####Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.#####
+Al intentar ejecutarlo, el sistema me ha solicitado que instalase un paquete. Tras instalarlo utilizando "sudo apt-get install cpu-checker", he ejecutado "kvm-ok" y he obtenido la siguiente salida:
+>INFO: /dev/kvm exists
+>KVM acceleration can be used
+
+Entiendo que puedo utilizar KVM.
