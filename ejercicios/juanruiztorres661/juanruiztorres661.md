@@ -60,6 +60,7 @@ Si se usa la infraestructura un 10%:
 * * *
 ### Ejercicio 5. 
 **Instala el sistema de gestión de fuentes git**
+![Captura de pantalla en la que se ve el comando utilzado para instalar git, aunque en mi caso ya lo tenía instalado](./imagenes/installGit.png)
 
 * * *
 
