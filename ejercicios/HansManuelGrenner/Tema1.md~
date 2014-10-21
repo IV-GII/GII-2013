@@ -79,6 +79,7 @@ Al tratarse de una aplicación web donde el objetivo es llegar al mayor número 
  - Dado que querremos disponer de entornos de producción simulados para poder realizar pruebas sobre el software en desarrollo, lo más recomendado en este caso sería una virtualización de entornos de desarollo.
 
 
+
 **Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
 
 Instalamos CDE en nuestro sistema linux:
