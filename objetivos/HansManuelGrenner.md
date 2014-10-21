@@ -3,7 +3,7 @@ Hans-Manuel Grenner Noguerón
 Lista de objetivos 
 ==================
 
-#Clase del 23 de septiembre
+###Clase del 23 de septiembre
 
 * [X] Entender el soporte en hardware de las técnicas de virtualización
       y cómo se extiende ese soporte al núcleo de los sistemas
@@ -20,7 +20,7 @@ Lista de objetivos
 
 ------
 
-#Clase del 29 de septiembre
+###Clase del 29 de septiembre
 
 * [X] Comenzar a entender los conceptos fundamentales relacionados con
       la virtualización.
@@ -47,7 +47,7 @@ Lista de objetivos
 
 ------
 
-#Clase del 30 de septiembre
+###Clase del 30 de septiembre
 
 * [X] Consolidar el uso de técnicas de aislamiento y control de
       tareas en Linux que se usarán más adelante en la creación de
@@ -68,7 +68,7 @@ Lista de objetivos
 
 ------
 
-#Clase del 6 de octubre
+###Clase del 6 de octubre
 
 * [X] Consolidar el uso de técnicas de aislamiento y control de tareas
       en Linux que se usarán más adelante en la creación de
@@ -92,7 +92,7 @@ Lista de objetivos
 
 ------
 
-#Clase del 7 de octubre
+###Clase del 7 de octubre
 
 * [X] Revisar algún ejercicio de un compañero y sugerir cambios o
       mejoras. Se puede hacer, de la misma forma, mediante un pull
@@ -105,7 +105,7 @@ Lista de objetivos
 
 ------
 
-#Clase del 13 de octubre de 2014
+###Clase del 13 de octubre de 2014
 
 * [X] Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede
       proponer otro (mediante edición y pull request).
@@ -126,7 +126,7 @@ Lista de objetivos
 
 ------
 
-#Clase del 14 de octubre de 2014
+###Clase del 14 de octubre de 2014
 
 * [X] Si todavía no se ha hecho, leer los proyectos propuestos y elegir
       uno. Si ninguno encaja, se puede proponer otro (mediante edición y
