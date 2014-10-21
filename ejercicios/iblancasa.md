@@ -309,6 +309,7 @@ La salida del comando es la siguiente:
 
 ![Comprobación de flags](http://fotos.subefotos.com/23e6b32485a62eba2036dfb96d019585o.jpg)
 
+
 Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 
 
@@ -380,6 +381,7 @@ Finalmente, se nos darán los datos necesarios para entrar a administrar nuestro
 #####Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.#####
 He cambiado el nombre del menú y le he puesto una función que crea un cuadro de diálogo y pregunta por una respuesta de usuario.
 ![Google Drive](http://fotos.subefotos.com/3d7f1666becd3469f68ff662d506fcd3o.jpg)
+
 Aquí podemos ver cómo aparece el menú nuevo.
 
 ```javascript
@@ -405,4 +407,3 @@ function hola() {
   }
 }
 ```
-
