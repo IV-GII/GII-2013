@@ -235,11 +235,8 @@ Realizmos una ligera modificación en el fichero README y subimos los cambios a�
 
 Una vez instalado el directorio de cgroup se halla en /sys/fs/cgroup. La jerarquía de carpetas generada incluye diferentes recursos del sistema, tales como CPU, memoria, uso de disco, etc. los cuales podemos analizar, limitar e asignar a diferentes grupos de procesos.
 
-<<<<<<< HEAD
-![figura8](Imagenes/ejercicio7_1.png)
-=======
+
 ![figura7](Imagenes/ejercicio7_1.png)
->>>>>>> cf7e9da247a07cf61d14c7d1a8d19e2c97393a6a
 > Figura 8. Directorios de cgroup.
 
 
@@ -260,12 +257,7 @@ Tras crear los tres grupos, asignados a cada uno una tarea diferente.
 ![figura10](Imagenes/ejercicio8_2.png)
 > Figura 10. Asignando tareas
 
-<<<<<<< HEAD
 Ahora podemos comparar el uso de recursos ( se expresa en nanosegundos ).
-=======
-![figura9](Imagenes/ejercicio8_1.png)
-> Figura 9. Creando grupos en cgroup.
->>>>>>> cf7e9da247a07cf61d14c7d1a8d19e2c97393a6a
 
 ![figura11](Imagenes/ejercicio8_3.png)
 > Figura 11. Comparando uso de recursos

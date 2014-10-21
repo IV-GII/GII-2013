@@ -260,12 +260,9 @@ Tras crear los tres grupos, asignados a cada uno una tarea diferente.
 ![figura10](Imagenes/ejercicio8_2.png)
 > Figura 10. Asignando tareas
 
-<<<<<<< HEAD
+
 Ahora podemos comparar el uso de recursos ( se expresa en nanosegundos ).
-=======
-![figura9](Imagenes/ejercicio8_1.png)
-> Figura 9. Creando grupos en cgroup.
->>>>>>> cf7e9da247a07cf61d14c7d1a8d19e2c97393a6a
+
 
 ![figura11](Imagenes/ejercicio8_3.png)
 > Figura 11. Comparando uso de recursos
