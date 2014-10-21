@@ -95,9 +95,11 @@ He logrado que medio funcione.
 
 [Comandos utilizados para realizar el montaje](http://imgur.com/nZRw81w)
 
+Aquí podemos comprobar como al principio aparece el proceso gedit y luego vemos como se le asigna a un grupo y ya no se encuentra en la carpeta tareas del inicial.
 
 
+[Imagen](http://imgur.com/KBVrZAV)
 
-
+Procediendo de esa forma añadimos otros procesos a los grupos creados.
 
 
