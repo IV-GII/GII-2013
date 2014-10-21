@@ -271,13 +271,19 @@ Podemos observar que el navegador Chromium es bastante más ligero que Firefox e
 
 Reutilizando los datos del ejercicio 2
 
+Servidor con un precio de 555,39 €.
+
 * Para 4 años - Aplicando un tipo lineal --> 459 € * 0,25 = 114,75 €
 
 	* 1º - 4º año --> 114,75 €
 
-Con un uso de 24 horas/dia supone un consumo eléctrico de aproximadamente 420 euros/año.
+Realizamos los cálculos correspondientes para un uso de 24 horas al dia.
 
-420 € / 12 = 35 €/mes
+![figura12](Imagenes/ejercicio8_4.png)
+> Figura 12. Gasto eléctrico del servidor
+
+El consumo eléctrico del servidor supondría por tanto 421,61 € para una tiempo de vida de 6 años estimado. Lo que implica un gasto anual eléctrico de 70.60 €.
+Por tanto el gasto total anual supondria 114,75 € + 70.60 € = **185,35 € / año**.
 
 ##Ejercicio 9
 
@@ -288,7 +294,65 @@ Escenarios posibles existen varios, principalmente basados en querer ahorrar rec
 
 **Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).**
 
+En primer lugar localizamos el fichero de configuración de cgcreate que se encuentra en el directorio '/etc', nombrado como 'cgconfig.conf'.
 
+El siguiente paso es crear los dos grupos dentro del fichero los cuales serán dos : uno para procesos de **usuario** y otro para procesos de **sistema**. Asignaremos una mayor prioridad de los procesos de sistema.
+
+
+```
+mount {
+	cpu = /sys/fs//cgroup/cpu;
+	cpuacct = /sys/fs/cgroup/cpuacct;
+	devices = /sys/fs/cgroup/devices;
+	memory = /sys/fs/cgroup/memory;
+	freezer = /sys/fs/cgroup/freezer;
+}
+
+#cpu.shares es un parámetro que determina el reparto de CPU disponible para cada proceso en todos los cgroups
+#Los recursos para la CPU se repartirán en un ratio 1:3 para los usuarios y sistema respectivamente
+
+#memory.limit_in_bytes es un parámetro que representa la cantidad de memoria que está disponible para cada proceso dentro de un determinado cgroup
+#El grupo de usuarios dispondrá de 1GB, mientras que el del sistema de 2GB
+
+group usuario{
+	cpu{
+		cpu.shares="250"
+	}
+	memory {
+                memory.limit_in_bytes="1G";
+        }
+
+}
+
+group sistema{
+
+	cpu{
+		cpu.shares="750"
+	}
+	memory {
+                memory.limit_in_bytes="2G";
+
+        }
+
+}
+```
+
+El siguiente paso es crear las reglas de modo que el demonio cgrulesengd pueda mover los procesos a su grupo correspondiente. Para ello abrimos el fichero de configuración **/etc/cgrules.conf** y añadimos las dos nuevas reglas.
+
+#<usuario>      <controladores>     <cgroup>   
+usuario            cpu                /sys/fs/cgroup/cpu/usuario   
+sistema            cpu                /sys/fs/cgroup/cpu/sistema  
+
+Y finalmente para aplicar los cambios reiniciamos el servicio.
+
+```sudo service config restart``` 
+
+Si queremos que los cambios sean permamentes tenemos que configurar los servicios de cgconfig y cgred para que se inicien por defecto.
+
+```
+sudo chkconfig cgconfig on
+sudo chkconfig cgred on
+```
 
 **Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
 
