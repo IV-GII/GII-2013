@@ -59,4 +59,19 @@ La diferencia radica en las características que ofrecen cada una de las empresa
 ![imagen Ej_6_1_2](http://imageshack.com/a/img538/5820/BICLPq.png)<br />
 ######6.2.Modificar el readme y subir el fichero modificado.<br />
 ![imagen Ej_6_1_2](http://imageshack.com/a/img674/9550/CLdz4f.png)
-<br />
+
+<br />**Ejercicio 7:** <br />
+**Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**<br />
+-La instalación esta hecha y se ha montado en /sys/fs/cgroup<br />
+-Actualmente no contiene nada
+
+<hr />
+
+## Sesión 6-oct-2014
+
+**Ejercicio 8:**
+######8.1 - Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
+
+######8.2 - Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes
+
+
