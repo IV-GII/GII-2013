@@ -180,6 +180,7 @@ Con una configuración de ordenador de 600 €, ya podemos amortizarlo de la sig
 
 ## Ejercicio 9
 
+![alt tag](http://imgur.com/jBmub9j)
 
 ## Ejercicio 10
 
