@@ -359,21 +359,49 @@ sudo chkconfig cgconfig on
 sudo chkconfig cgred on
 ```
 
-**Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
+**Usar un programa que muestre en tiempo real la carga del sistema tal como htop comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
 
+Instalamos el programa htop para monitorizar en directo la actividad de los recursos de nuestro sistema.
 
+```sudo apt-get install htop```
+
+![figura13](Imagenes/ejercicio9_2.png)
+> Figura 13. Ejecución de htop.
+
+Al usar una máquina virtual solo tengo asignada 1 core, de modo que para la migración de tareas entre cores primero añadiré un nuevo core a la máquina virtual.
+
+![figura14](Imagenes/ejercicio9_3.png)
+> Figura 14. Ejecución de htop con 2 cores.
+
+Para la asginación de tareas a cores específicos he seguido el siguiente [tutorial](http://xmodulo.com/run-program-process-specific-cpu-cores-linux.html). En él se hace uso de la herramienta 'taskset'.
+
+Con esta herramienta se permite la planificación manual de la CPU. Asignaremos al primer core una serie de tareas para ver como aumenta su consume respecto al segundo core que no se alterará debido a dichas nuevas tareas. Usaremos Firefox, pero al no ser una tarea muy pesada asignaremos la misma aplicación varias veces.
+
+```
+taskset 0x1 firefox
+```
+
+![figura15](Imagenes/ejercicio9_4.png)
+> Figura 15. Consumo del primer core tras asginar más tareas.
 
 
 **Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.**
 
+Haciendo uso del servidor web apache procedemos a crear un grupo para nuestro servidor. Para indicar la prioridad en cuanto a entradas salidas tenemos que hacer uso del parámetro 'blkio.weight' en el archivo de configuración de cgconfig.
+Dándole a dicho parámetro un valor de 750 le estamos asignando un 75% de los recursos correspondientes disponibles al servidor.
 
 
- 
+```
+mount {
+   blkio = /sys/fs/cgroup/blkio;
+}
 
-
-
-
-
+group apache {
+    blkio {
+        blkio.weight = "750";
+    }
+}
+```
 
 ##Ejercicio 10
 
