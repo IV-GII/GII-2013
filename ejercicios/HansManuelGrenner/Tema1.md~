@@ -339,13 +339,18 @@ group sistema{
 
 El siguiente paso es crear las reglas de modo que el demonio cgrulesengd pueda mover los procesos a su grupo correspondiente. Para ello abrimos el fichero de configuración **/etc/cgrules.conf** y añadimos las dos nuevas reglas.
 
+```
 #<usuario>      <controladores>     <cgroup>   
 usuario            cpu                /sys/fs/cgroup/cpu/usuario   
 sistema            cpu                /sys/fs/cgroup/cpu/sistema  
+```
 
-Y finalmente para aplicar los cambios reiniciamos el servicio.
+Y finalmente para aplicar los cambios reiniciamos el servicio de cgconfig e iniciamos el cgred, para que se puedan aplicar las reglas anteriores de asignar los procesos a sus grupos correspondientes.
 
-```sudo service config restart``` 
+```
+sudo service cgconfig restart
+sudo cgred start
+``` 
 
 Si queremos que los cambios sean permamentes tenemos que configurar los servicios de cgconfig y cgred para que se inicien por defecto.
 
