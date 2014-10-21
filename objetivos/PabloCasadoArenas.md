@@ -46,3 +46,5 @@
 [X]Si todavía no se ha hecho, leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
 
 [X]Continuar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
+
+[X]Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
