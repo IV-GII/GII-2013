@@ -72,3 +72,31 @@ Hacemos en la terminal: sudo apt-get install git
 ####Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.
 
 
+###Ejercicio7:
+####Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.
+
+
+###Ejercicio8:
+####1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
+
+####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
+
+
+
+###Ejercicio 9:
+####Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+####Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+####Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+####Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
+
+
+###Ejercicio 10:
+####Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+
+
+###Ejercicio 11:
+####Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+
+###Ejercicio12:
+####Comentar diferentes soluciones de Software as a Service de uso habitual
