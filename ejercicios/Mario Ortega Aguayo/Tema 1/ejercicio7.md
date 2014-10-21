@@ -5,6 +5,6 @@
 Comprobación realizada sobre un sistema operativo Linux Mint 17.
 Cgroup se monta por defecto y está en /sys/fs/cgroup. En la siguiente imagen podemos comprobarlo.
 
-![](/img/7_1.png)
+![](./img/7_1.png)
 
 
