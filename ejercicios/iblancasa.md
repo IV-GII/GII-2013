@@ -119,8 +119,7 @@ Al llevarlo a otra máquina, realizo el último paso y compruebo que funciona co
 ***
 
 ###Ejercicio 4###
-#####Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
-Avanzado Instalarlo y crear una aplicación contenedorizada#####
+#####Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado Instalarlo y crear una aplicación contenedorizada#####
 
 Tras hacer el tutorial, he procedido a realizar un empaquetado en mi PC.
 
