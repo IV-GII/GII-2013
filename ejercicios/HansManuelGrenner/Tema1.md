@@ -209,7 +209,7 @@ Para un [tutorial extensivo](http://git-scm.com/docs/gittutorial) podemos accede
 ```git add .```
 * Para añadir de forma permanente los cambios en el repositorio hacemos un commit (local) . 
 ```git commit -m "Comentario.."```
-* Transferir los commits del repositorio local al repositorio remoto
+* Transferir los commits del repositorio local al repositorio remoto.
 ```git push origin master```
 
 
