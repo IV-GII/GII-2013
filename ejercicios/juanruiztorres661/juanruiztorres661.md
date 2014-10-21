@@ -24,8 +24,37 @@ El precio del [servidor seleccionado](http://fujitsu-shop.anima-its.com/formato-
 6. Sexto año (12%) 106,36€
 7. Septimo año (12%) 106,36€
 
+* * *
 
 ### Ejercicio 2. 
 **Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.**
+
+Comparando costes de [Hostalia](http://www.hostalia.com/dedicados/) desde 99€/mes y [Azure](http://azure.microsoft.com/es-es/pricing/details/virtual-machines/#Windows) con características similares 99,79€/mes (0,1341€/h).
+
+![Captura de pantalla de precios en Hostalia:](./imagenes/hostalia.png)
+
+![Captura de pantalla de precios en Azure:](./imagenes/azure.png)
+
+Si se usa la infraestructura un 1%:
+- Azure: 99,79€ * 12meses *0.01 = 11,97€/año.
+- Hostalia: 99€ * 12meses = 1188€/año independientemente del tiempo que se utilice.
+
+Si se usa la infraestructura un 10%:
+- Azure: 99,79€ * 12meses *0.10 = 119,75€/año.
+- Hostalia: 99€*12meses = 1188€/año independientemente del tiempo que se utilice.
+
+* * *
+### Ejercicios 3.
+**1.¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.**
+
+**2.Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
+
+* * *
+ 
+
+
+
+
+
 
 
