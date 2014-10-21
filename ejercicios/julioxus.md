@@ -1,7 +1,7 @@
 Ejercicios de Julio Martínez Martínez-Checa
 ============================
 
-## Sesión 29-sept-2014
+## Tema 1
 
 ### Ejercicio 1 ###
 
@@ -286,3 +286,46 @@ INFO: /dev/kvm exists
 KVM acceleration can be used
 
 Lo que quiere decir que mi ordenador contiene este módulo del kernel y puedo usar la virtualización kvm.
+
+## Tema 2
+
+## Ejercicio 1 ##
+
+**Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).**
+
+He instalado virtualenv con apt-get:
+
+![captura14](http://i.imgur.com/uGPZOZ5.png)
+
+## Ejercicio 2 ##
+
+**Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
+
+Me he dado de alta en RedHat rellenando el formulario.
+
+![captura15](http://i.imgur.com/b6qMry2.png)
+
+Ahora puedo logearme en OpenShift usando esa cuenta:
+
+![captura16](http://i.imgur.com/umMyBS8.png)
+
+## Ejercicio 3 ##
+
+**Crear una aplicación en OpenShift y dentro de ella instalar WordPress.**
+
+Accedemos a [OpenShift](https://www.openshift.com/) y nos logeamos con nuestra cuenta.
+
+A continuación pulsamos sobre "Create my first app".
+
+Buscamos "Wordpress" y nos saldrá algo como esto:
+
+![captura17](http://i.imgur.com/bu5RrKc.png)
+
+Seleccionamos Wordpress 4 y rellenamos el formulario seleccionando el nombre de la URL que tendrá la aplicación entre otras cosas.
+Al finalizar nos dirá que se ha completado la instalación y podremos ver qué versión de PHP y MySQL tenemos, el usuario y contraseña de la base de datos y el espacio de almacenamiento del que disponemos.
+
+![captura18](http://i.imgur.com/d0nQlMY.png)
+
+Finalmente si accedemos al sitio podremos empezar a configurar Wordpress para usarlo:
+
+![captura19](http://i.imgur.com/kKUrHcl.png)
