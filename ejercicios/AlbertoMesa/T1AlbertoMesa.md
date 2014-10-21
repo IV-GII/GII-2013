@@ -1,6 +1,7 @@
 
 #Alberto Mesa Navarro
-##Introducción a la infraestructura virtual:concepto y soporte físico
+##Introducción a la infraestructura virtual:concepto y soporte físico.
+##Ejercicios del Tema 1.
 
 ###Ejercicio 1
 Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar artículo en Infoautónomos sobre el tema.

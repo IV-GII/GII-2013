@@ -1,6 +1,8 @@
 Ejercicios de Juan Francisco Rodríguez Vílchez
 ================================================
 
+## Ejercicios Tema 1: Introducción a la infraestructura virtual: concepto y soporte físico ##
+
 ### Ejercicio 1 ###
 
 **Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.**
@@ -189,7 +191,21 @@ Finalmente, como podemos observar [aqui](https://github.com/juanfranrv/probando)
 
 ***
 
-### Ejercicio 7.1 ###
+### Ejercicio 7 ###
+
+**Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
+
+En la ruta /sys/fs/ como podemos ver se encuentra montada la carpeta cgroup:
+
+![captura7](http://i.imgur.com/Qy0iGGY.png)
+
+Dentro de ella se puede observar su contenido con un "ls":
+
+![captura8](http://i.imgur.com/asgCwJ1.png)
+
+***
+
+### Ejercicio 8.1 ###
 
 **Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
 
@@ -215,7 +231,7 @@ El que más consume es Mozilla firefox, seguido de la aplicación "Brasero" y po
 
 ***
 
-### Ejercicio 7.2 ###
+### Ejercicio 8.2 ###
     
 **Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.**
 
@@ -235,7 +251,7 @@ Coste total = 1160€
 
 ***
 
-### Ejercicio 8.1 ###
+### Ejercicio 9.1 ###
 
 **Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.**
 
@@ -248,7 +264,7 @@ Por otro lado, el administrador debería de tener más recursos que un usuario q
 
 ***
 
-### Ejercicio 8.2 ###
+### Ejercicio 9.2 ###
 
 **Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).**
 
@@ -284,7 +300,7 @@ group sys_proc {
 
 ***
 
-### Ejercicio 8.3 ###
+### Ejercicio 9.3 ###
 
 **Usar un programa que muestre en tiempo real la carga del sistema tal como htop y comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
 
@@ -303,7 +319,7 @@ Sin embargo, no se como migrar en tiempo real una tarea pesada de un procesador 
 
 ***
 
-### Ejercicio 8.4 ###
+### Ejercicio 9.4 ###
 
 **Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.**
 
@@ -325,7 +341,7 @@ Si el servidor que tenemos funcionando es un servidor Apache, deberemos añadir 
 
 ***
 
-### Ejercicio 9 ###
+### Ejercicio 10 ###
 
 **Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
 
@@ -347,7 +363,7 @@ La expresión no devuelve nada, por lo que el procesador no tiene esa funcionali
 
 ***
 
-### Ejercicio 10 ###
+### Ejercicio 11 ###
 
 **Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
 
@@ -367,7 +383,7 @@ Por lo que se puede observar que mi ordenador no contiene este módulo del kerne
 
 ***
 
-### Ejercicio 11 ###
+### Ejercicio 12 ###
 
 **Comentar diferentes soluciones de Software as a Service de uso habitual.**
 
@@ -389,101 +405,6 @@ Los ejemplos más comunes son algunos ERP (Sistemas de planificación de recurso
 
 Son soluciones SaaS, debido a que ofrecen aplicaciones o soluciones software que están almacenada en servidores de empresas, lo cuál, hace que no tengamos que preocuparnos por el mantenimiento o la realización de copias de seguridad entre otras cosas. Sin embargo, el principal inconveniente de las soluciones SaaS es el problema de la privacidad de datos, ya que estas empresas tienen acceso a numerosos datos personales del cliente, de tal forma que si alguien consigue acceder a esa información, nos podría poner en peligro.
 
-***
 
-### Ejercicio 12 ###
 
-**Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).**
-
-Antes de poder instalar el entorno virtual es necesario la instalación de "pip":
-
-![captura17](http://i.imgur.com/Mm1eCVX.png)
-
-Posteriormente, procedo a instalar virtualenv para Python:
-
-![captura18](http://i.imgur.com/1AOm7u4.png)
-
-Lo configuro con :
-
-![captura19](http://i.imgur.com/Dflmjnl.png)
-
-Lo que hace es crear "ENV/lib/pythonX.X/site-packages",para que funcione cualquier librería. También crea "ENV/bin/python", que es un intérprete de Python que usará el entorno.
-
-Finalmente, he comprobado si funciona correctamente:
-
-![captura20](http://i.imgur.com/lr07SFE.png)
-
-Tutorial seguido para crear proyecto: http://rukbottoland.com/blog/tutorial-de-python-virtualenv/
-
-Como se puede ver en la captura anterior, con:
-
-```sh
-virtualenv mi_proyecto
-```
-Crea nuestro proyecto con las carpetas 
-
-mi_proyecto/
-    bin/
-    include/
-    lib/
-    
-Por lo que tenemos el entorno virtual de Python listo para ser utilizado.
-
-***
-
-### Ejercicio 13 ###
-
-**Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
-
-He elegido registrarme en Heroku.
-
-Primero nos piden poner el correo para enviarnos el enlace de validación y poder registrarnos:
-
-![captura21](http://i.imgur.com/4FtvoZ2.png)
-
-Luego hay que acceder al correo y aceptar el enlace que nos llevará al registro en la página de Heroku:
-
-![captura22](http://i.imgur.com/VjeyQyO.png)
-
-Una vez registrado, ya puedo acceder correctamente a la interfaz de Heroku:
-
-![captura23](http://i.imgur.com/cZiWnfg.png)
-
-También me he dado de alta en Openshift para el ejercicio 14:
-
-![captura24](http://i.imgur.com/55v20qM.png)
-
-***
-
-### Ejercicio 14 ###
-
-**Crear una aplicación en OpenShift y dentro de ella instalar WordPress.**
-
-Una vez registrado en Openshift, buscamos en la interfaz lo siguiente:
-
-![captura25](http://i.imgur.com/n0AmxOq.png)
-
-y le damos a WordPress.
-
-Elegimos la url que queramos:
-
-![captura26](http://i.imgur.com/BR3ZuhF.png)
-
-Y aceptamos. Ya tenemos la aplicación creada:
-
-![captura27](http://i.imgur.com/97SJEMT.png)
-
-Posteriormente, ya se encuentra WordPress listo para usarse (previamente hay que registrarse):
-
-![captura28](http://i.imgur.com/F9VRxrS.png)
-
-Llegados a este paso, tenemos la aplicación de WordPress lista para ser usada y poder crear entradas:
-
-![captura29](http://i.imgur.com/LQbWg0t.png)
-
-Aqui muestro un ejemplo de creación de una entrada en WordPress:
-
-![captura30](http://i.imgur.com/0OpvoAM.png)
-
-***
 
