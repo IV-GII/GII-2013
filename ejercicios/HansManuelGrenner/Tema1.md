@@ -207,8 +207,11 @@ Para un [tutorial extensivo](http://git-scm.com/docs/gittutorial) podemos accede
 ``` git clone https://github.com/JJ/GII-2014 <directorio-local>```
 * Añadir un cambio. 
 ```git add .```
-* Para añadir de forma permanente los cambios en el repositorio hacemos un commit. 
+* Para añadir de forma permanente los cambios en el repositorio hacemos un commit (local) . 
 ```git commit -m "Comentario.."```
+* Transferir los commits del repositorio local al repositorio remoto
+```git push origin master```
+
 
 ##Ejercicio 6
 
