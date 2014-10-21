@@ -78,6 +78,7 @@ Al tratarse de una aplicación web donde el objetivo es llegar al mayor número 
 3) Sistema de prueba de software e integración continua.
  - Dado que querremos disponer de entornos de producción simulados para poder realizar pruebas sobre el software en desarrollo, lo más recomendado en este caso sería una virtualización de entornos de desarollo.
 
+-----------
 
 **Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
 
@@ -234,25 +235,39 @@ Realizmos una ligera modificación en el fichero README y subimos los cambios a�
 
 Una vez instalado el directorio de cgroup se halla en /sys/fs/cgroup. La jerarquía de carpetas generada incluye diferentes recursos del sistema, tales como CPU, memoria, uso de disco, etc. los cuales podemos analizar, limitar e asignar a diferentes grupos de procesos.
 
-![figura8](/Imagenes/ejercicio7_1.png)
-Figura 8. Directorios de cgroup.
+![figura8](Imagenes/ejercicio7_1.png)
+> Figura 8. Directorios de cgroup.
 
 
 ##Ejercicio 8
 
 **Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
 
+Generemos los diferentes grupos de control en el directorio /sys/fs/cgroup/cpuact para poder analizar el uso de cpu.
+
+![figura9](Imagenes/ejercicio8_1.png)
+> Figura 9. Creando grupos en cgroup.
+
+Tras crear los tres grupos, asignados a cada uno una tarea diferente.
+* Grupo 1. Navegador Chromium
+* Grupo 2. Editor de textos gedit
+* Grupo 3. Navegador Firefox
+
+![figura10](Imagenes/ejercicio8_2.png)
+> Figura 10. Asignando tareas
+
+Ahora podemos comparar el uso de recursos ( se expresa en nanosegundos ).
+
+![figura11](Imagenes/ejercicio8_3.png)
+> Figura 11. Comparando uso de recursos
+
+Podemos observar que el navegador Chromium es bastante más ligero que Firefox en cuanto a consumo de CPU.
+
+---------------
+
 **Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.**
 
 
-Generemos los diferentes grupos de control en el directorio /sys/fs/cgroup/cpuact para poder analizar el uso de cpu.
-
-![figura9](/Imagenes/ejercicio8_1.png)
-Figura 9. Creando grupos en cgroup.
-
-
-
----------------
 Reutilizando los datos del ejercicio 2
 
 * Para 4 años - Aplicando un tipo lineal --> 459 € * 0,25 = 114,75 €
@@ -265,17 +280,25 @@ Con un uso de 24 horas/dia supone un consumo eléctrico de aproximadamente 420 e
 
 ##Ejercicio 9
 
- 1. **Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.**
-2. **Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).**
-3. **Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
-4. **Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.**
+**Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.**
 
-1. Escenarios posibles existen varios, principalmente basados en querer ahorrar recursos. Ejemplos posibles serían el de un servidor cuyo nivel de uso en determinadas fechas sea muy reducido, pudiendo asignar los procesos a una CPU de menores prestaciones o bien limitar el uso de sus recursos, y en fechas de alto uso usar una política diferente. Otro escenario sería el de una empresa de que dispone de una serie de empleados que tendrán una determinada cantidad de recursos asignada de un servidor con el cual trabajarían.
+Escenarios posibles existen varios, principalmente basados en querer ahorrar recursos. Ejemplos posibles serían el de un servidor cuyo nivel de uso en determinadas fechas sea muy reducido, pudiendo asignar los procesos a una CPU de menores prestaciones o bien limitar el uso de sus recursos, y en fechas de alto uso usar una política diferente. Otro escenario sería el de una empresa de que dispone de una serie de empleados que tendrán una determinada cantidad de recursos asignada de un servidor con el cual trabajarían.
 
-2. 
+
+**Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).**
 
 
 
+**Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).**
+
+
+
+
+**Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.**
+
+
+
+ 
 
 
 
