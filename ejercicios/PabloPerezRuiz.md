@@ -61,4 +61,10 @@ Hacemos sudo apt-get install docker.io en la terminal.
 ###Ejercicio 5
 ####Instala el sistema de gestión de fuentes git:
 
+Hacemos en la terminal: sudo apt-get install git
+<img src="http://i62.tinypic.com/244bryq.png"></img>
+
+###Ejercicio 6:
+####Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.
+
 
