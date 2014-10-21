@@ -49,6 +49,17 @@ usando Google App Engine o algún otro SaaS, y realizar algún tipo de
 análisis estadístico sobre ellos. El contacto es
 [Incho Cordero](https://plus.google.com/+InchoCordero/posts).
 
+## Proyectos en la nube con Codeko.com
+
+[Codeko.com](http://codeko.com) es una empresa granadina dedicada al desarrollo de aplicaciones web y Android. Propone los siguientes proyectos. L
+
+###Gestor de claves en la nube
+
+El proyecto consistiría en crear un repositorio de claves online. La idea es un gestor de claves como KeePass pero basado en la nube y con algunas funcionalidades extra.
+
+###Pizarra virtual para Android
+Este proyecto estaría realmente formado por diferentes subproyectos. El concepto general es crear una aplicación que permita que diferentes dispositivos puedan escribir/dibujar sobre una pizarra y que el contenido de esta se compartar entre el resto de los dispositivos sobre la pizarra "real".
+
 ## Otros proyectos
 
 Se puede plantear cualquier otro proyecto, siempre que se adapte a alguno de los dos tipos anteriores y sea un proyecto con un fin real.
