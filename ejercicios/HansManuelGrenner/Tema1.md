@@ -235,7 +235,7 @@ Realizmos una ligera modificación en el fichero README y subimos los cambios a�
 Una vez instalado el directorio de cgroup se halla en /sys/fs/cgroup. La jerarquía de carpetas generada incluye diferentes recursos del sistema, tales como CPU, memoria, uso de disco, etc. los cuales podemos analizar, limitar e asignar a diferentes grupos de procesos.
 
 ![figura7](Imagenes/ejercicio7_1.png)
-Figura 8. Directorios de cgroup.
+> Figura 8. Directorios de cgroup.
 
 
 ##Ejercicio 8
@@ -248,7 +248,7 @@ Figura 8. Directorios de cgroup.
 Generemos los diferentes grupos de control en el directorio /sys/fs/cgroup/cpuact para poder analizar el uso de cpu.
 
 ![figura9](Imagenes/ejercicio8_1.png)
-Figura 9. Creando grupos en cgroup.
+> Figura 9. Creando grupos en cgroup.
 
 
 
