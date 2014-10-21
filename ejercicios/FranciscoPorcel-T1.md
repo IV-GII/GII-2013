@@ -68,8 +68,8 @@ En este caso el número de horas que pagaríamos sería:
 
 Por tanto tendríamos un precio total para ambas opciones de:
 
-* Servidor azure = 876 horas * 0.1341 euros =  117.4716 euros
-* Servidor amazon = 876 horas * 0.04 euros = 35.04 euros
+* Servidor VPS = 876 horas * 0.1341 euros =  117.4716 euros
+* Servidor cloud = 876 horas * 0.04 euros = 35.504 euros
 
 Como podemos observar, el precio de amazon es casi tres veces mejor que el de azure, teniendo amazon unas prestaciones algo superiores.
 
