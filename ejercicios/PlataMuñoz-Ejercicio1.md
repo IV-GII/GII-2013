@@ -77,6 +77,16 @@ git push
 ![En GitHub](http://imgur.com/79pV29I)
 
 
+# Ejercicio 7
 
+Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.
+
+[Montado en /sys/fs/cgroup](http://imgur.com/6Gvpb4s)
+
+En la imagen se aprecia lo que contiene.
+
+# Ejercicio 8
+
+Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
 
 
