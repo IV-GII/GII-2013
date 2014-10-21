@@ -48,6 +48,7 @@ El coste del servidor es de 2569€. Le quitamos previamente el IVA al precio to
 ###Ejercicio 3: 
 ####¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
 Leer el comentario en el foro [aquí.](https://github.com/JJ/GII-2014/issues/71#issuecomment-59169569)
+
 <img src=http://i57.tinypic.com/5cgcwo.png></img>
 ####Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
@@ -59,11 +60,13 @@ Tutorial realizado. <img src="http://i62.tinypic.com/o77mo0.png"></img>
 ####Avanzado Instalarlo y crear una aplicación contenedorizada.
 Hacemos sudo apt-get install docker.io en la terminal.
 
+
 ###Ejercicio 5
 ####Instala el sistema de gestión de fuentes git:
 
 Hacemos en la terminal: sudo apt-get install git
 <img src="http://i62.tinypic.com/244bryq.png"></img>
+
 
 ###Ejercicio 6:
 ####Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.
