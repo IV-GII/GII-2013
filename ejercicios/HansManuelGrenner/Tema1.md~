@@ -411,8 +411,8 @@ Lanzamos el comando indicado.
 
 ```egrep '^flags.*(vmx|svm)' /proc/cpuinfo```
 
-![figuraX1](Imagenes/ejercicio9_1.png)
-> Figura X. Comprobando la actividad de flags.
+![figura16](Imagenes/ejercicio9_1.png)
+> Figura 16. Comprobando la actividad de flags.
 
 Al no listar nada podemos decir que o bien el procesador no posee dicha funcionalidad o está desactivada.
 El modelo de procesador usado es el "Intel Core i7-4702MQ".
@@ -423,8 +423,8 @@ El modelo de procesador usado es el "Intel Core i7-4702MQ".
 
 Mi sistema no soporta las extension KVM, por tanto no puede usar la aceleración por hardware del procesador.
 
-![figuraX2](Imagenes/ejercicio10_1.png)
-> Figura X. Resultado de kvm-ok en mi sistema.
+![figura17](Imagenes/ejercicio10_1.png)
+> Figura 17. Resultado de kvm-ok en mi sistema.
 
 ##Ejercicio 12
 
