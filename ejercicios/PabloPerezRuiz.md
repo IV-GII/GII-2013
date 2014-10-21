@@ -54,7 +54,9 @@ Leer el comentario en el foro [aquí.](https://github.com/JJ/GII-2014/issues/71#
 
 ###Ejercicio 4:
 ####Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+Tutorial realizado. <img src="http://i62.tinypic.com/o77mo0.png"></img>
 ####Avanzado Instalarlo y crear una aplicación contenedorizada.
+Hacemos sudo apt-get install docker.io en la terminal.
 
 ###Ejercicio 5
 ####Instala el sistema de gestión de fuentes git:
