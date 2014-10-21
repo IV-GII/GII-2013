@@ -219,3 +219,9 @@ group groupname/system {
 ## Ejercicio 11
 
 La orden proviene del paquete cpu-checker que no se encuentra para debian por lo tanto da error.
+
+# Tema 2
+
+## Ejercicio 2
+
+Registrado en Heroku.
