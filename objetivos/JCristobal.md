@@ -56,8 +56,8 @@
 * [x] Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
 * [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
-* [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
-* [] Comprender el método de entrega de las prácticas de la asignatura.
+* [x] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+* [x] Comprender el método de entrega de las prácticas de la asignatura.
 
 
 

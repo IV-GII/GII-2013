@@ -200,6 +200,16 @@ Aunque para comprobar la consulta de recursos veo la total:
 
 ![imagen6](http://i.imgur.com/fOceyRU.png)  
 
+### Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
+
+Supondremos un ordenador con Core i7-920 + GTX295, de un precio aproximado de 1000€. Para los gastos eléctricos supondremos una consumo de 2 horas en reposo y 4 horas de trabajo diarios,  108.32 € anuales de gasto eléctrico. (calculado [aquí](http://www.pcsilencioso.com/recursos/bdd/73-alimentacion/45-gasto-electricidad))
+
+En una amortización de 5 años, ya que el mínimos son 4 años, al 20% cada año se queda:
+
+1000€ + (108.32€ * 5 años) = 1541,60 € en total
+
+ó 1000€/5 años + 108.32 = 308,32€ anual
+
 
 
 ##Ejercicio 9
