@@ -89,9 +89,15 @@ En la imagen se aprecia lo que contiene.
 
 Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
 
-[Grupos de Control creados](http://imgur.com/GUpsC2j)
+Después de tener bastantes problemas, siguiendo el siguiente tutorial: [Tutorial](http://elpuig.xeill.net/Members/vcarceler/articulos/introduccion-a-los-grupos-de-control-cgroups-de-linux)
 
-Asignamos firefox al group0 [Screen](http://imgur.com/dIX3jf0)
+He logrado que medio funcione.
+
+[Comandos utilizados para realizar el montaje](http://imgur.com/nZRw81w)
+
+
+
+
 
 
 
