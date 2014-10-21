@@ -56,4 +56,24 @@ He realizado el tutorial, aquí una imagen para demostrarlo.
 
 [Docker](http://imgur.com/Q2yCQvU)
 
+# Ejercicio 5
+
+Instala el sistema de gestión de fuentes git
+
+Simplemente ponemos:
+
+sudo apt-get install git
+
+# Ejercicio 6
+
+Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
+Modificar el readme y subir el fichero modificado.
+
+gedit README.md &
+clear
+git commit -a -m "README.md"
+git push
+
+![En GitHub](http://imgur.com/79pV29I)
+
 
