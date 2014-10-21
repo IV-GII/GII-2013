@@ -1,7 +1,8 @@
 # Ejercicios de FelixParra
 ## Sesión 29-sept-2014
 
-**Ejercicio 1: Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años.**<br /><br />
+**Ejercicio 1:**<br />
+**Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años.**<br /><br />
 Servidor: [Link del servidor](http://www.dynos.es/servidor-hp-proliant-ml350e-g8-xeon-e5-2407-2.2-ghz-2gb-ddr3-500gb-sata-lff-dvd-rw-matrox-g200-array-b120i-887111422231__470065-691.html "Servidor")
 
 <br />Precio total: 1035€
@@ -22,7 +23,8 @@ Servidor: [Link del servidor](http://www.dynos.es/servidor-hp-proliant-ml350e-g8
 <br />Año 2021 (10%): 85,57€
 <br />
 
-**Ejercicio 2: Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.** <br />
+**Ejercicio 2:**<br />
+**Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.** <br />
 
 Fuente: t2.mircro [Amazon](http://aws.amazon.com/es/ec2/pricing/ "Amazon")<br />
 Fuente: A0 [Azure](http://azure.microsoft.com/es-es/pricing/details/cloud-services/ "Azure")<br />
@@ -35,7 +37,8 @@ Fuente: A0 [Azure](http://azure.microsoft.com/es-es/pricing/details/cloud-servic
 La diferencia radica en las características que ofrecen cada una de las empresas por ese precio, como pueden ser servicios extra, horas gratuitas de uso, o almacenamiento extra.
 <br />
 
-**Ejercicio 3: ¿Qué tipo de virtualización usarías en cada caso?** <br />
+**Ejercicio 3:**<br />
+**¿Qué tipo de virtualización usarías en cada caso?** <br />
 ######Apartado 3.1: [Foro](https://github.com/JJ/GII-2014/issues/71 "Respuesta") 
 
 ######Apartado 3.2: Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
@@ -46,7 +49,8 @@ La diferencia radica en las características que ofrecen cada una de las empresa
 
 ## Sesión 30-sept-2014
 
-**Ejercicio 4: Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**<br />
+**Ejercicio 4:**<br />
+**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**<br />
 ![imagen EJ_4](http://imageshack.com/a/img673/3176/c3IQoX.png)
 
 <br />**Ejercicio 5: Instala el sistema de gestión de fuentes git**<br />
@@ -74,4 +78,17 @@ La diferencia radica en las características que ofrecen cada una de las empresa
 
 ######8.2 - Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes
 
+<br />**Ejercicio 9:**<br>
+######9.1 - Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.<br />
+######9.2 - Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).<br />
+######9.3 - Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema). <br />
+######9.4 - Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.<br />
 
+**Ejercicio 10:**<br />
+**Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**<br />
+
+**Ejercicio 11:**<br />
+**Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**<br />
+
+**Ejercicio 12:**<br />
+**Comentar diferentes soluciones de Software as a Service de uso habitual**<br />
