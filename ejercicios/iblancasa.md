@@ -369,3 +369,10 @@ Me he registrado en OpenShift.
 Tras solicitar crear una aplicación, se nos permite desplegar una aplicación de las que ya hay predefinidas. Insertando en el buscador "Wordpress". Después de esto, se nos pedirán algunos datos, como el nombre de dominio o el repositorio Git donde tenemos el código.
 Finalmente, se nos darán los datos necesarios para entrar a administrar nuestro Wordpress.
 [Ir a mi aplicación](http://wordpress-iblancasa.rhcloud.com/)
+
+
+
+***
+***
+
+##Sesión 2-10-2014##
