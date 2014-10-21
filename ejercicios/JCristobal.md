@@ -1,4 +1,4 @@
-#Ejercicios de JCristobal
+#Ejercicios de JCristobal (José Cristóbal López Zafra)
 
 
 # Tema 1
@@ -333,6 +333,9 @@ Ejecutamos kvm-ok y nos dice que sí está utlizado, lo podemos usar.
 Aquí el enlace al [comentario](https://github.com/JJ/GII-2014/issues/72#issuecomment-59173713)
 
 
+***
+***
+
 
 # Tema 2
 
@@ -395,6 +398,31 @@ Después nos registramos en WordPress y accedemos:
 Creamos una nueva entrada para probarlo:
 
 ![imagen5](http://i.imgur.com/75qlAHv.png)
+
+
+
+##Ejercicio 4
+###Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama. 
+
+En un documento de Google Drive accedemos a Herramientas -> Editor de secuencias de comandos
+
+Creamos una nueva función (miFuncion()):
+
+![imagen1](http://i.imgur.com/DTDlxEQ.png)
+
+y la añadimos al menú, compilamos y la subimos a la nube pulsando el botón del menú.
+
+Después, dentro del documento, nos vamos a ese menú (Sample) y seleccionamos nuestra función:
+
+![imagen2](http://i.imgur.com/9Zdmuaz.png)
+
+
+
+
+
+
+
+
 
 
 
