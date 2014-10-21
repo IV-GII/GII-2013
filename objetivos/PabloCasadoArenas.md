@@ -26,7 +26,7 @@
 [X]Comprender los niveles de virtualización y sus denominaciones genéricas.
 
 
-[]Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
+[X]Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
 
 
 ## 07/10/2014
