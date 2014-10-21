@@ -71,9 +71,8 @@ Amortización:
 ***
 
 ###Ejercicio 3###
-#####
-1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
-2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.#####
+##### 1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro#####
+#####2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.#####
 
 ######[Parte 1ª](https://github.com/JJ/GII-2014/issues/71#issuecomment-58189129)######
 ######Parte 2ª#####
@@ -122,8 +121,7 @@ Al llevarlo a otra máquina, realizo el último paso y compruebo que funciona co
 ***
 
 ###Ejercicio 4###
-#####Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
-Avanzado Instalarlo y crear una aplicación contenedorizada#####
+#####Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona. Avanzado Instalarlo y crear una aplicación contenedorizada#####
 
 Tras hacer el tutorial, he procedido a realizar un empaquetado en mi PC.
 
@@ -376,3 +374,35 @@ Finalmente, se nos darán los datos necesarios para entrar a administrar nuestro
 ***
 
 ##Sesión 2-10-2014##
+
+##Ejercicio 4##
+
+#####Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.#####
+He cambiado el nombre del menú y le he puesto una función que crea un cuadro de diálogo y pregunta por una respuesta de usuario.
+![Google Drive](http://fotos.subefotos.com/3d7f1666becd3469f68ff662d506fcd3o.jpg)
+Aquí podemos ver cómo aparece el menú nuevo.
+
+```javascript
+
+function onOpen() {
+  // Add a menu with some items, some separators, and a sub-menu.
+  DocumentApp.getUi().createMenu('Menú probado')
+      .addItem('Hola mundo', 'hola')
+      .addToUi();
+}
+
+
+function hola() {
+  var result = DocumentApp.getUi().alert(
+      'Hola',
+      '¿Es esto lo que buscabas?',
+      DocumentApp.getUi().ButtonSet.YES_NO);
+
+  if (result == DocumentApp.getUi().Button.YES) {
+    DocumentApp.getUi().alert('Pues ya lo has encontrado');
+  } else {
+    DocumentApp.getUi().alert('Pues adiós');
+  }
+}
+```
+
