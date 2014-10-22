@@ -111,6 +111,7 @@ Podemos ver los resultados en la carpeta
 	/sys/fs/cgroup/(memory|cpu)/ejercicio7/(navegador|editor|centroSoftware)
 #####Estas son las capuras de dichos archivos:
 Para el navegador:
+
 ![foto](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/cpuacct-navegador.png)
 
 ####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
