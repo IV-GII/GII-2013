@@ -91,6 +91,15 @@ Modificando el fichero README.md desde la consola y subiendo a github.
 ### Ejercicios 7. 
 **Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
 
+Verifico que el kernel soporte cgroup:
+
+![](./imagenes/cgroup1.png)
+===========================
+
+Comprobando la versión de ubuntu instalada y el contenido de /sys/fs/cgroup que es el punto de montaje por defecto para ubuntu 14.04.
+![](./imagenes/cgroup.png)
+==========================
+
 * * *
 
 ### Ejercicios 8. 
