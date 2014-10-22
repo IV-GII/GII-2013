@@ -100,11 +100,9 @@ Comprobando la versión de ubuntu instalada y el contenido de /sys/fs/cgroup que
 ![](./imagenes/cgroup.png)
 ==========================
 
-En mi caso tengo instalado cgroup-lite como puede verse en la siguiente ![imagen](./imagenes/cgroup2.png) por lo que para crear grupos hay que hacerlo dentro de directorios determinados.
-
+En mi caso tengo instalado cgroup-lite como puede verse en la siguiente imagen por lo que para crear grupos hay que hacerlo dentro de directorios determinados.
 
 ![](./imagenes/cgroup2.png)
-
 ===========================
 
 * * *
