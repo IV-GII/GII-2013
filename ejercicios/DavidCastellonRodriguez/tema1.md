@@ -42,8 +42,22 @@ Depende del tiempo de uso que vayamos a tener y la potencia requerida nos saldr�
 ---
 #Ejercicio 3
 
-1.- ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
+###### 1.- ¿Qué tipo de virtualización usarías en cada caso?
 
-2.- Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+<>Comentar en el foro<>
+###### 2.- Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+
+En primer lugar instalo CDE con el comando:
+
+`sudo apt-get install cde`
+
+tras esto creo un programa en Linux, por ejemplo un `echo "Hello World!"`
+
+Para empaquetar el programa ejecuto el siguiente comando:
+`./cde ./hello.sh`
+
+y para ejecutarlo con CDE deberemos introducir la ruta hasta el archivo hello.sh.cde que será el que llame al programa cde-exec y ejecutará el programa que hemos empaquetado con CDE.
+
+[Referencia](https://github.com/germaaan/IV_GMM/blob/master/TEMA1/ejercicio03.md)
 
 ---
