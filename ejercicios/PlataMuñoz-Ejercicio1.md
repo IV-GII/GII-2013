@@ -102,4 +102,30 @@ Aquí podemos comprobar como al principio aparece el proceso gedit y luego vemos
 
 Procediendo de esa forma añadimos otros procesos a los grupos creados.
 
+Nota: No he podido comparar el tiempo de cpu consumido, ya que cuando fuí a hacerlo al día siguiente, al montarlos no me dejaba añadir procesos a los grupos, me decía que no había suficiente espacio. Estuve mirando por stackoverflow, pregunté a compañeros pero no fuí capaz de solucionarlo. Para comprobar el tiempo consumido bastaría con mirar en cpuacct.usage que esta dentro de la carpeta de cada grupo.
+
+
+# 8.2 
+
+Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
+
+Según esta [página](http://www.kemisa.es/cuanto_gasta_el_ordenador.php), podemos ver que un ordenador bastante bueno, como un:
+Core i7-920 + GTX295 , poniendo como caso el mio propio particular estando 8h encendido. (un servidor por ejemplo)
+
+Tendría un consumo de 15,88€/mes. 
+-190.56€/año
+
+Con un precio de 700€ y una amortización a 4 años, a un 25% al año. (suponemos compra en enero de 2015)
+
+Nos daría un total de 175€ al año.
+
+El consumo eléctrico en 5 años sería: 190.56 * 4 = 762,24€
+
+En total: 762.24 + 700 = 1462.24€
+
+
+
+
+
+
 
