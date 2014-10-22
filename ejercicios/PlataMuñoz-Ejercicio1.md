@@ -70,11 +70,11 @@ Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de in
 Modificar el readme y subir el fichero modificado.
 
 gedit README.md &
-clear
+
 git commit -a -m "README.md"
 git push
 
-![En GitHub](http://imgur.com/79pV29I)
+[En GitHub](http://imgur.com/79pV29I)
 
 
 # Ejercicio 7
@@ -185,9 +185,9 @@ sudo apt-get install cpu-checker
 
 La salida ahora es:
 
-ariacus@Ariacus:~$ kvm-ok
+`ariacus@Ariacus:~$ kvm-ok
 INFO: /dev/kvm exists
-KVM acceleration can be used
+KVM acceleration can be used`
 
 
 
