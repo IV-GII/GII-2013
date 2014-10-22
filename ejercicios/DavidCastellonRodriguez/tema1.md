@@ -1,6 +1,6 @@
 #Ejercicio 1
 
-Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.
+###### Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.
 
 El [servidor elegido](http://www.dynos.es/servidor-blade-hp-proliant-bl460c-gen8-xeon-e5-2640v2-2ghz-32gb-ddr3--4514953608993__724085-B21.html) es un HP Blade Proliant con CPU	Intel Xeon E5-2640V2 / 2 GHz, 32GB de RAM hasta máx 256GB... con un precio de 3230,00€
 
@@ -28,7 +28,16 @@ La amortización a siete años sería:
 ---
 #Ejercicio 2
 
-Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
+###### Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
+
+Como proveedor de servicios en la nube he consultado Google Compute Engine:
+
+Por una máquina standard con 2 cores y 8 gigas de ram y al 10% del tiempo el coste mensual es de 9.97$/mes ~ 120$/año, y un uso del 1% serían 1$/mes = 12$/año
+
+Como proveedor de alojamiento en internet he chequeado [Hostminio](http://hostminio.es/alojamiento-web/)
+cuyo plan más caro son 5,99€/mes = 72€/mes y el servicio de hosting es del 100%.
+
+Depende del tiempo de uso que vayamos a tener y la potencia requerida nos saldrá más beneficioso una opción u otra.
 
 ---
 #Ejercicio 3
