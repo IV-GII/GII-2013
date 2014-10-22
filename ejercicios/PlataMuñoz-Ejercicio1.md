@@ -124,7 +124,60 @@ El consumo eléctrico en 5 años sería: 190.56 * 4 = 762,24€
 En total: 762.24 + 700 = 1462.24€
 
 
+# Ejercicio 9.2
 
+Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+
+Primero tenemos que instalarlo usando:
+
+sudo apt-get install libcgroup-dev
+
+Tenemos que modificar el archivo "/etc/cgconfig.conf"
+
+(Resultado final del fichero)[http://imgur.com/1n7tpJ6]
+
+# Ejercicio 9.3
+
+Usar un programa que muestre en tiempo real la carga del sistema tal como htop y comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema)
+
+
+Después de probar varias opciones y hablar con algunos compañeros, no he sido capaz de migrar una tarea de un procesador a otro.
+
+# Ejercicio 9.4
+
+Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
+
+Para ello tenemos que crear un grupo para los servidores. Editamos el archivo "/etc/cgconfig.conf" y usamos "blkio.weight" para indicar la prioridad.
+
+
+mount {
+   blkio = /sys/fs/cgroup/blkio;
+}
+
+group apache {
+    blkio {
+        blkio.weight = "900";
+    }
+}
+
+# Ejercicio 10
+
+
+Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+
+
+Procesador: Intel(R) Core(TM) i5 CPU       M 460  @ 2.53GHz
+
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt lahf_lm ida arat dtherm tpr_shadow vnmi flexpriority ept vpid
+
+# Ejercicio 11
+
+Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+El programa «kvm-ok» no está instalado.
 
 
 
