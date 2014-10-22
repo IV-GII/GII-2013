@@ -9,15 +9,13 @@ En primer lugar creamos los directorios de estos tres grupos, llamados **primer_
 
 Despues, logueandonos como root con la orden "sudo su", vamos a asignarle **memoria y CPU** a cada grupo creado anteriormente, de la siguiente forma:
 
-* **Primer grupo:**
+	**Primer grupo:**
 	echo 0 > primer_grupo/cpuset.cpus
 	echo 0 > segundo_grupo/cpuset.mems
-
-* **Segundo Grupo**
+	**Segundo Grupo**
 	echo 0 > segundo_grupo/cpuset.cpus
 	echo 0 > segundo_grupo/cpuset.mems
-
-* **Tercer grupo**
+	**Tercer grupo**
 	echo 0 > tercer_grupo/cpuset.cpus
 	echo 0 > tercer_grupo/cpuset.mems
 
