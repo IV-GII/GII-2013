@@ -179,6 +179,17 @@ Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kern
 
 El programa «kvm-ok» no está instalado.
 
+Asi que usando:
+
+sudo apt-get install cpu-checker
+
+La salida ahora es:
+
+ariacus@Ariacus:~$ kvm-ok
+INFO: /dev/kvm exists
+KVM acceleration can be used
+
+
 
 
 
