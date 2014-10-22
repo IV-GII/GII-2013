@@ -112,13 +112,23 @@ Podemos ver los resultados en la carpeta
 #####Estas son las capuras de dichos archivos:
 Para el navegador, podemos ver el tiempo consumido por el usuario y por el sistema en el archivo cpuacct.stat:
 
-![navegador memory](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/cpuacct-navegador.png)
+![navegador cpuacct](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/cpuacct-navegador.png)
 
 Aqui podemos ver el archivo memory.stat para ver la memoria consumida en Bytes:
-![navegador cpuacct](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/memory-navegador.png)
+![navegador memory](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/memory-navegador.png)
 
 Las capturas para el editor de texto son las siguientes:
+
+![editor cpuacct](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/cpuacct-editor.png)
+
 ![editor memory](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/memory-editor.png)
+
+Las capturas para el software center de texto son las siguientes:
+
+![editor cpuacct](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/cpuacct-softwareCenter.png)
+
+![editor memory](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/memory-softwareCenter.png)
+
 
 ####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
 
