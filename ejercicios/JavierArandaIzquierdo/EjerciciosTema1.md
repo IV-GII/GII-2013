@@ -85,31 +85,47 @@ Para descargarlo he utilizado "git clone https://github.com/JavideBaza/ejercicio
 
 Se puede ver como ha sido modificado [aqui](https://github.com/JavideBaza/ejercicio6/blob/master/README.md)
 
-###Ejercicio 7
-####1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
--Primeramente voy a crear un grupo para mi usuario javi que se encargara de  controlar la memoria, CPU y de contabilizar el uso de los recursos de la CPU (deberemos estar como administrador para hacerlo):
+### Ejercicio 7
+#### Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene. 
+Se encuentra en la carpeta /sys/fs/cgroup y las carpetas que contiene son: blkio, cpu, cpuset, devices, freezer, hugetlb, memory, perf_event, systemd.
 
-	cgcreate -a oskyar -g memory,cpu,cpuacct:ejercicio7
+
+###Ejercicio 8
+####1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
+-Primeramente voy a crear un grupo para mi usuario javi que se encargara de  controlar la memoria y CPU (deberemos estar como administrador para hacerlo):
+
+	cgcreate -a javi -g memory,cpu:ejercicio7
 El siguiente paso es crear 3 subgrupos para ejecutar el navegador, un procesador de textos y el centro de software de ubuntu:
 
-	sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/navegador
-	sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/textos
-	sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/centroSoftware
+	sudo cgcreate -g memory,cpu:ejercicio7/navegador
+	sudo cgcreate -g memory,cpu:ejercicio7/textos
+	sudo cgcreate -g memory,cpu:ejercicio7/centroSoftware
     
 Tras esto, ejecutamos las ordenes con cgexec:
 
-	sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox
-	sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit
-	sudo cgexec -g memory,cpu,cpuacct:ejercicio7/reproductorMusica 
+	sudo cgexec -g memory,cpu:ejercicio7/navegador firefox
+	sudo cgexec -g memory,cpu:ejercicio7/editor gedit
+	sudo cgexec -g memory,cpu:ejercicio7/reproductorMusica 
+Podemos ver los resultados en la carpeta
+
+	/sys/fs/cgroup/(memory|cpu)/ejercicio7/(navegador|editor|centroSoftware)
+#####Estas son las capuras de dichos archivos:
+Para el navegador:
+![foto]()
 
 ####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
 
 
-###Ejercicio 8
+###Ejercicio 9
 ####1.Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
 ####2.Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
 ####3.Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
 ####4.Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
+
+### Ejercicio 10
+#### Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+
+
 
 
 
