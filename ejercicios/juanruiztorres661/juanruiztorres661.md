@@ -132,6 +132,9 @@ En mi caso tengo instalado cgroup-lite como puede verse en la siguiente imagen p
 
 ### Ejercicios 11. 
 **Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
+Al encontrarme trabajando desde una máquina virtual, mi configuración hace que no pueda usar KVM.ç
+
+![](./imagenes/kvm-ok.png)
 
 * * *
 
