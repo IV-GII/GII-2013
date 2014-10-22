@@ -125,9 +125,9 @@ Las capturas para el editor de texto son las siguientes:
 
 Las capturas para el software center de texto son las siguientes:
 
-![editor cpuacct](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/cpuacct-softwareCenter.png)
+![editor cpuacct](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/cpuacct-centroSoftware.png)
 
-![editor memory](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/memory-softwareCenter.png)
+![editor memory](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/memory-centroSoftware.png)
 
 
 ####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
