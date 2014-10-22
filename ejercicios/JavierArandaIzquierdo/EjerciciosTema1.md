@@ -98,7 +98,7 @@ Se encuentra en la carpeta /sys/fs/cgroup y las carpetas que contiene son: blkio
 El siguiente paso es crear 3 subgrupos para ejecutar el navegador, un procesador de textos y el centro de software de ubuntu:
 
 	sudo cgcreate -g memory,cpu:ejercicio7/navegador
-	sudo cgcreate -g memory,cpu:ejercicio7/textos
+	sudo cgcreate -g memory,cpu:ejercicio7/editor
 	sudo cgcreate -g memory,cpu:ejercicio7/centroSoftware
     
 Tras esto, ejecutamos las ordenes con cgexec:
@@ -111,7 +111,7 @@ Podemos ver los resultados en la carpeta
 	/sys/fs/cgroup/(memory|cpu)/ejercicio7/(navegador|editor|centroSoftware)
 #####Estas son las capuras de dichos archivos:
 Para el navegador:
-![foto]()
+![foto](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/cpuacct-navegador.png)
 
 ####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
 
