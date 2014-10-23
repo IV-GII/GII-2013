@@ -7,6 +7,7 @@ ordenador tipo servidor y calcular su coste de amortización a cuatro y siete a�
  en Infoautónomos sobre el tema.**
 
 Ejemplo de un servidor:Dell PowerEdge T110 II
+
 [Página del servidor](http://www.dell.com/es/empresas/p/poweredge-t110-2/fs)
 
 Para el servidor escogido de 699 con una amortización del 26% a 10 años, sería:
@@ -23,7 +24,9 @@ similares (tamaño de disco duro equivalente a transferencia de disco duro)
 si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.**
 
 [Página Amazón EC2](http://aws.amazon.com/es/ec2/purchasing-options/dedicated-instances/)
+
 [Página Amazón modelo C3](http://aws.amazon.com/es/ec2/instance-types/)
+
 [Página VPS Hostinger](http://www.hostinger.es/hosting-vps)
 
 Comparación de uso de 1% (3.65 días):
@@ -45,8 +48,7 @@ cloud de amazon, cobran por el uso que se de al servicio mientras que
 VPS Hostinger cobra por meses, independientemente de cuanto uses el servicio.
 
 **Ejercicio 3.
-1.¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
-
+1.¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.
 2.Crear un programa simple en cualquier lenguaje interpretado para Linux,
  empaquetarlo con CDE y probarlo en diferentes distribuciones.**
 
@@ -79,8 +81,7 @@ podemos comprobar que funciona al ejecutar el comando " docker run -i -t prueba 
 -------- imagen 3
 
 **Ejercicio 5.
-Instala el sistema de gestión de fuentes git
-**
+Instala el sistema de gestión de fuentes git**
 Es tan simple como ejecutar el comando " sudo apt-get install git " en la terminal.
 
 **Ejercicio 6.
@@ -95,8 +96,8 @@ Y aquí se ve la actualización:
 ----------------imagen 2
 
 **Ejercicio 7.
-Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.
-**
+Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
+
  En ubuntu 12.04 no esta montado por defecto puesto que estaba vacío cuando lo he mirado con el comando ls asique me he dispuesto a montarlo con la orden " sudo mount -t cgroup cgroup /sys/fs/cgroup/ ".
 Comprobandolo de nuevo podemos ver que ya si hay contenido:
 
@@ -106,9 +107,9 @@ En la imagen podemos ver los diferentes archivos con la información de los dife
 
 **Ejercicio 8.
 1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
-
 2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
 **
+
 1.He procedido ha crear los tres grupos especificados en el enunciado del problema en el directorio de cgroup. Dentro se encuentran los archivos necesarios para configurar las tareas. Una vez realizado esto, miramos los ids de las tareas a asociar a cada grupo en el orden de :
 
 grupo1 -> firefox
@@ -124,20 +125,18 @@ Por último solo queda comparar los tiempos que se muestran en los archivos cpua
 
 **Ejercicio 9.
 1.Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
-
 2.Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
-
 3.Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+4.Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.**
 
-4.Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
-**
+
 **Ejercicio 10.
-Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
-**
+Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
 **Ejercicio 11.
-Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
-**
+Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
+
 **Ejercicio 12.
-Comentar diferentes soluciones de Software as a Service de uso habitual
-**
+Comentar diferentes soluciones de Software as a Service de uso habitual**
+
 
