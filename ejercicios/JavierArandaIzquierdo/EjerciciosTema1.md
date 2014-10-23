@@ -155,6 +155,12 @@ la salida es la siguiente:
 
 ![egrep](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/egrep.png)
 
+### Ejercicio 11
+#### Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+Al ejecutar el comando kvm-ok el resultado es el siguiente:
+
+![kvm](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/kmv-ok.png)
 
 
 
