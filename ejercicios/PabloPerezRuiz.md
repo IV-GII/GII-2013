@@ -76,7 +76,7 @@ Como vemos a continuación:
 
 A continuación, aprovechando un programa hecho en la asignatura DAI el año pasado, creamos el script:
 
-<img src="http://i61.tinypic.com/15qzpd1.png"></img>
+<img src="http://i57.tinypic.com/w87494.png"></img>
 
 Creamos el paquete correspondiente mediante: 
 
