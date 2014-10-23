@@ -116,21 +116,24 @@ Todas las órdenes necesarias se encuentran en el [tutorial.](http://git-scm.com
 * Para actualizar el repositorio hacemos: git pull https://github.com/JJ/GII-2014.git master.
 
 
-
 ###Ejercicio 6:
 ####Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.
 
 Para crear el repositorio, hacemos click en "+" en esquina superior derecha de github:
+
 <img src="http://i58.tinypic.com/2w2lrio.png"></img>
 
 Le ponemos nombre a nuestro nuevo repositorio y marcamos la casilla para que se le incluya archivo readme:
+
 <img src="http://i57.tinypic.com/2v2wlsm.png"></img>
 
 Descargamos nuestro repositorio a nuestra terminal y accedemos al fichero README.md: 
+
 <img src="http://i57.tinypic.com/21lkcoi.png"></img>
 
 Modificamos el fichero, lo subimos y confirmamos finalmente: 
-<img src="http://i58.tinypic.com/v5erlf.png"></img>
+
+<img src="http://i59.tinypic.com/vown5f.png"></img>
 
 
 ###Ejercicio7:
