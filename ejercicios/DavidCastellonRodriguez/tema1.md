@@ -101,3 +101,16 @@ Una vez dentro, iniciemos el servicio de Nginx:
 Ahora podemos comprobar que nginx está funcionando desde su propio contenedor autosuficiente.
 
 [Referencia](http://codehero.co/como-instalar-y-usar-docker/)
+
+#Ejercicio 5
+
+###### Instala el sistema de gestión de fuentes git
+
+Para realizar la instalación de git simplemente tendremos que ejecutar el comando apt correspondiente:
+
+`sudo apt-get install git`
+
+[Ver algunos comandos básicos de git](http://www.slideshare.net/jjmerelo/introduccin-al-uso-git-y-github-para-trabajo-colaborativo)
+
+#Ejercicio 6
+
