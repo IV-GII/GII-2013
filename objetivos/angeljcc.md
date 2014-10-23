@@ -35,7 +35,9 @@
 - [x] Contestar a la encuesta sobre la metodología de clase 
 - [x] Usar ficheros en el repositorio para los ejercicios.  
 - [x] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.  
+
 ***
+
 ##Clase-seminario del 7 de octubre de 2014
 
 - [x] Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
@@ -79,6 +81,7 @@
 
 - [x] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
 - [x] Comprender el método de entrega de las prácticas de la asignatura.
+
 ***
 
 ##Clase del 21 de Octubre
