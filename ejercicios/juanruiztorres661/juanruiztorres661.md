@@ -91,6 +91,20 @@ Modificando el fichero README.md desde la consola y subiendo a github.
 ### Ejercicios 7. 
 **Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
 
+Verifico que el kernel soporte cgroup:
+
+![](./imagenes/cgroup1.png)
+===========================
+
+Comprobando la versión de ubuntu instalada y el contenido de /sys/fs/cgroup que es el punto de montaje por defecto para ubuntu 14.04.
+![](./imagenes/cgroup.png)
+==========================
+
+En mi caso tengo instalado cgroup-lite como puede verse en la siguiente imagen por lo que para crear grupos hay que hacerlo dentro de directorios determinados.
+
+![](./imagenes/cgroup2.png)
+===========================
+
 * * *
 
 ### Ejercicios 8. 
@@ -118,6 +132,9 @@ Modificando el fichero README.md desde la consola y subiendo a github.
 
 ### Ejercicios 11. 
 **Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
+Al encontrarme trabajando desde una máquina virtual, mi configuración hace que no pueda usar KVM.ç
+
+![](./imagenes/kvm-ok.png)
 
 * * *
 
