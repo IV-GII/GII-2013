@@ -146,6 +146,25 @@ Comprobamos que el directorio de cgroup se encuentra en /sys/fs/cgroup. Para mos
 ###Ejercicio8:
 ####1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
 
+Creamos los grupos en el directorio gruposcontrol:
+
+<img src="http://i59.tinypic.com/2s7bbll.png"></img>
+
+Una vez creados le asignamos una tarea a cada uno:
+
+* A grupo1 le asignamos el navegador Firefox.
+* A grupo2 le asignamos el editor de textos sublimeText2
+* A grupo3 le asignamos el depurador ddd
+
+Me da un error por falta de espacio:
+
+<img src="http://i60.tinypic.com/kuwzp.png"></img>
+
+Con lo que comprobamos al menos el uso de recursos total:
+
+<img src="http://i62.tinypic.com/2dtredz.png"></img>
+
+
 ####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
 
 
