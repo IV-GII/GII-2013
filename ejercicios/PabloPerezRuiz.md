@@ -139,6 +139,9 @@ Modificamos el fichero, lo subimos y confirmamos finalmente:
 ###Ejercicio7:
 ####Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.
 
+Comprobamos que el directorio de cgroup se encuentra en /sys/fs/cgroup. Para mostrar su contenido hacemos ls:
+
+<img src="http://i60.tinypic.com/24qs5tu.png"></img>
 
 ###Ejercicio8:
 ####1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
