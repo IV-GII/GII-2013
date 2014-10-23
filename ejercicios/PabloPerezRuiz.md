@@ -26,8 +26,6 @@ Año 2018: 2029.51*0.714 = 1449.07€
 Año 2018: 2029.51*0.8568 = 1738.88€
 Año 2018: 2029.51*1 = 2029.51€
 
-###**Ejercicio 2: Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.**###
-
 
 ###Ejercicio 2: 
 ####Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
@@ -66,7 +64,25 @@ Leer el comentario en el foro [aquí.](https://github.com/JJ/GII-2014/issues/71#
 
 <img src=http://i57.tinypic.com/5cgcwo.png></img>
 ####Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+En primer lugar instalamos CDE en nuestro terminal mediante las ordenes:
+    
+    git clonet git://github.com/pgbovine/CDE.git
+    cd CDE
+    make
 
+Como vemos a continuación:
+
+<img src="http://i57.tinypic.com/25svlz7.png"></img>
+
+A continuación, aprovechando un programa hecho en la asignatura DAI el año pasado, creamos el script:
+
+<img src="http://i61.tinypic.com/15qzpd1.png"></img>
+
+Creamos el paquete correspondiente mediante: 
+
+cde ./ej_01_03.py
+
+Una vez hecho esto, se han creado los archivos correspondientes en el directorio cde-packages para poder ejecutar el programa que queramos. Para portarlo a otra distribución, simplemente comprimimos el directorio y lo ejecutamos usando el archivo creado ( ej_01_03.py.cde )
 
 
 ###Ejercicio 4:
