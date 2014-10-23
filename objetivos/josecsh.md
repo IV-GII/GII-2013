@@ -99,3 +99,32 @@
 * [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 * [X] [Contestar a la encuesta sobre la metodología de clase](https://docs.google.com/forms/d/1IgOx4ANDaXN5Kt5Br-n6we7Y2XdRXNlRw2SmnC9Ou2w/viewform) si no lo has hecho todavía.
 
+
+#Clase del 20 de octubre de 2014
+
+##Objetivos de esta sesión
+
+* [] Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
+* [] Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
+* [] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+##Otros objetivos
+
+* [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+* [] Comprender el método de entrega de las prácticas de la asignatura.
+
+
+#Clase del 21 de octubre de 2014
+
+##Objetivos de esta sesión
+
+* [] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+* [] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
+* [] Crear nuevas funciones en un SaaS.
+
+##Otros objetivos
+
+* [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+* [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+* [] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
