@@ -78,6 +78,7 @@
 - [x] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
 - [x] Comprender el método de entrega de las prácticas de la asignatura.
 ***
+
 ##Clase del 21 de Octubre
 - [x] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
 - [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
