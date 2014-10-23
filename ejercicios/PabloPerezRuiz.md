@@ -109,11 +109,11 @@ Para ver las configuraciones que hemos hecho hacemos: git config --list
 
 Todas las órdenes necesarias se encuentran en el [tutorial.](http://git-scm.com/docs/gittutorial) Las que vamos a usar nosotros son las siguientes: 
 
-Para descargar un repositorio a nuestro terminal hacemos: git clone https://github.com/JJ/GII-2014. 
+* Para descargar un repositorio a nuestro terminal hacemos: git clone https://github.com/JJ/GII-2014. 
 
-Para actualizar los commits de nuestro repositorio al repositorio externo hacemos: git push origin master.
+* Para actualizar los commits de nuestro repositorio al repositorio externo hacemos: git push origin master.
 
-Para actualizar el repositorio hacemos: git pull https://github.com/JJ/GII-2014.git master.
+* Para actualizar el repositorio hacemos: git pull https://github.com/JJ/GII-2014.git master.
 
 
 
