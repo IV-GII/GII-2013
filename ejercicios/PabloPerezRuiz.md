@@ -167,6 +167,9 @@ Con lo que comprobamos al menos el uso de recursos total:
 
 ####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
 
+Nos basaremos en un ejemplo de la siguiente [página](http://www.pcsilencioso.com/recursos/bdd/73-alimentacion/45-gasto-electricidad):
+
+Core i7-920 + GTX260 Extreme 	150W (est.) 	312W (est.) 	14,81€ 	7,60€ 	12,54€ 	30,81€
 
 
 ###Ejercicio 9:
