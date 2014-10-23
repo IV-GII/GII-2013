@@ -98,9 +98,9 @@ Hacemos sudo apt-get install docker.io en la terminal.
 Hacemos en la terminal: sudo apt-get install git
 <img src="http://i62.tinypic.com/244bryq.png"></img>
 
-Para modificar el archivo de configuración de git hacemos: sudo nano ~/.gitconfig
 
 Para introducir nuestros datos de usuario hacemos:
+
 git config --global user.name "ppruiz" 
 git config --global user.email ppruiz@correo.ugr.es
 
@@ -108,9 +108,9 @@ Para ver las configuraciones que hemos hecho hacemos: git config --list
 
 Todas las órdenes necesarias se encuentran en el [tutorial.](http://git-scm.com/docs/gittutorial) Las que vamos a usar nosotros son las siguientes: 
 
-Para descargar un repositorio a nuestro terminal hacemos: git clone https://github.com/JJ/GII-2014 
-Para actualizar los commits de nuestro repositorio al repositorio externo hacemos: git push origin master
-Para actualizar el repositorio hacemos: git pull https://github.com/JJ/GII-2014.git master
+*Para descargar un repositorio a nuestro terminal hacemos: git clone https://github.com/JJ/GII-2014. 
+*Para actualizar los commits de nuestro repositorio al repositorio externo hacemos: git push origin master.
+*Para actualizar el repositorio hacemos: git pull https://github.com/JJ/GII-2014.git master.
 
 
 
