@@ -1,4 +1,4 @@
-Ejercicio 1:
+*Ejercicio 1:
 
 [Servidor buscado](http://www.dynos.es/servidor-blade-hp-proliant-bl460c-gen8-xeon-e5-2640v2-2ghz-32gb-ddr3--4514953608993__724085-B21.html)
 Precio 3230€; Amortizacón 15% = 484,5€
@@ -7,7 +7,7 @@ En 4 años se amortiza 1938,8€
 En 7 años se amortiza 3391,9€ 
 
 
-Ejercicio 2:
+*Ejercicio 2:
 Comparando las tablas de [Windows Azure](http://azure.microsoft.com/en-us/pricing/calculator/?scenario=virtual-machines)
 y la de [Hostinger](http://www.hostinger.es/hosting-vps)
 
@@ -21,8 +21,8 @@ Si sólo usaramos el 10% del tiempo, pagaríamos 242,47€ con Windows y 167,88�
 
 
 
-Ejercicio 3:
-  -1 : ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro**
+*Ejercicio 3:
+  -1 : ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
   Esta comentado en el foro: [link](https://github.com/JJ/GII-2014/issues/71#issuecomment-59713877)
   
 -En primer caso usaria la virtualizacion a nivel de sistema operativo, coincidiendo con mis compañeros, por las ventajas que esto permite en la gestion de cuentas de usuarios
@@ -36,12 +36,15 @@ Ejercicio 3:
 		He creado un programa simple en python. He descargado CDE:
 
 		[Aqui](http://i.imgur.com/GgMOOOm.png) muestra la captura del programa empaquetado y ejecutado.
-
-
-
-
-
-
-
-
+		
+*Ejercicio 4
+	Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+	
+	[Aqui](http://i.imgur.com/RbE84Wx.png) muestra el final del tutorial de docker
+	
+*Ejercicio 5
+	Instala el sistema de gestión de fuentes git
+		 Lo instalamos con el comando **sudo apt-get install git git-core**
+		 [Aqui](http://i.imgur.com/GtVQQFx.png) muestra la captura mostrando la version de git instalada
+		 
 
