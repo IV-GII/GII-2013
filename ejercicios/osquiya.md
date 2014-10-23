@@ -1,9 +1,8 @@
 # Ejercicios de Óscar Sánchez Martínez #
-## Sesión del día 29/09/2014 ##
+
 
 ** Ejercicio 1.
-Consultar en el catálogo de alguna tienda de informática el precio de un 
-ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo
+Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo
  en Infoautónomos sobre el tema.**
 
 Ejemplo de un servidor:Dell PowerEdge T110 II
@@ -64,7 +63,7 @@ VPS Hostinger cobra por meses, independientemente de cuanto uses el servicio.
 Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.Avanzado= Instalarlo y crear una aplicación contenedorizada**
 
 Realizado
-[Imgur](http://i.imgur.com/XYu94sm.jpg)
+[Pantallazo](http://i.imgur.com/XYu94sm.jpg)
 
 Primero hemos instalado la versión de windows que nos proporciona docker, una vez descargado, abrimos el exe y realizamos la instalación.
 
@@ -82,6 +81,7 @@ podemos comprobar que funciona al ejecutar el comando " docker run -i -t prueba 
 
 **Ejercicio 5.
 Instala el sistema de gestión de fuentes git**
+
 Es tan simple como ejecutar el comando " sudo apt-get install git " en la terminal.
 
 **Ejercicio 6.
@@ -123,6 +123,11 @@ Por último solo queda comparar los tiempos que se muestran en los archivos cpua
 ------imagen2
 
 
+PENDIENTEEEEEE
+2.
+
+
+
 **Ejercicio 9.
 1.Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
 2.Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
@@ -133,8 +138,15 @@ Por último solo queda comparar los tiempos que se muestran en los archivos cpua
 **Ejercicio 10.
 Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
 
+Mi procesador es Intel(R) Core(TM) i7-4702MQ CPU @ 2.20GHz y al ejecutar la orden indicada no da ninguna salida lo que presupone que esta desabilitada para la máquina virtual que estoy utilizando, ya que yo mismo he habilitado dicha funcionalidad en la bios.
+
 **Ejercicio 11.
 Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
+
+-------------imagen
+
+COmo se puede observar en la imagen no esta habilitado dicho modulo, lo que es comprensible ya que en la virtualbox no esta habilitada la aceleración por hardware.
+
 
 **Ejercicio 12.
 Comentar diferentes soluciones de Software as a Service de uso habitual**
