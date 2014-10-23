@@ -160,7 +160,7 @@ la salida es la siguiente:
 
 Al ejecutar el comando kvm-ok el resultado es el siguiente:
 
-![kvm](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/kmv-ok.png)
+![kvm](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/kvm-ok.png)
 
 
 
