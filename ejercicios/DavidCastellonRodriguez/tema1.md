@@ -30,6 +30,8 @@ La amortización a siete años sería:
 
 ###### Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
 
+
+
 Como proveedor de servicios en la nube he consultado Google Compute Engine:
 
 Por una máquina standard con 2 cores y 8 gigas de ram y al 10% del tiempo el coste mensual es de 9.97$/mes ~ 120$/año, y un uso del 1% serían 1$/mes = 12$/año
@@ -61,3 +63,41 @@ y para ejecutarlo con CDE deberemos introducir la ruta hasta el archivo hello.sh
 [Referencia](https://github.com/germaaan/IV_GMM/blob/master/TEMA1/ejercicio03.md)
 
 ---
+
+#Ejercicio 4
+
+###### Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+
+Docker es una herramienta que nos permite crear lo que ellos denominan contenedores, lo cual son aplicaciones empaquetadas auto-suficientes, muy livianas que son capaces de funcionar en prácticamente cualquier ambiente, ya que tiene su propio sistema de archivos, librerías, terminal, etc.
+
+Para su instalación primero añadimos el repositorio de Docker y sus llaves lista local de fuentes y llavero local:
+
+`sudo sh -c "curl https://get.docker.io/gpg | apt-key add -"`
+
+`sudo sh -c "echo deb https://get.docker.io/ubuntu docker main > /etc/apt/sources.list.d/docker.list"`
+
+Ahora instalamos el programa:
+
+`sudo apt-get install lxc-docker`
+
+Tras instalarlo primero debemos especificar la imagen base del sistema que utilizará el contenedor, para esto haremos:
+
+`docker pull base`
+
+Una vez teniendo la imagen base podemos empezar a trabajar sobre ella, probemos meternos a su terminal:
+
+`docker run -i -t base /bin/bash
+
+Tras esto estaremos dentro del terminarl del contenedor. Ya tenemos nuestro contenedor auto-suficiente de Nginx, ahora debemos crear una nueva imagen con los cambios que hemos hecho.
+
+Con esto ya tenemos una imagen con Nginx instalado, probemos ahora la magia de Docker. Iniciemos el contenedor de la siguiente manera:
+
+`docker run -p 80 -i -t jonathanwiesel/nginx /bin/bash `
+
+Una vez dentro, iniciemos el servicio de Nginx:
+
+`service nginx start`
+
+Ahora podemos comprobar que nginx está funcionando desde su propio contenedor autosuficiente.
+
+[Referencia](http://codehero.co/como-instalar-y-usar-docker/)
