@@ -101,9 +101,9 @@ Hacemos en la terminal: sudo apt-get install git
 
 Para introducir nuestros datos de usuario hacemos:
 
-git config --global user.name "ppruiz" 
+* git config --global user.name "ppruiz" 
 
-git config --global user.email ppruiz@correo.ugr.es
+* git config --global user.email ppruiz@correo.ugr.es
 
 Para ver las configuraciones que hemos hecho hacemos: git config --list
 
@@ -119,6 +119,18 @@ Todas las órdenes necesarias se encuentran en el [tutorial.](http://git-scm.com
 
 ###Ejercicio 6:
 ####Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.
+
+Para crear el repositorio, hacemos click en "+" en esquina superior derecha de github:
+<img src="http://i58.tinypic.com/2w2lrio.png"></img>
+
+Le ponemos nombre a nuestro nuevo repositorio y marcamos la casilla para que se le incluya archivo readme:
+<img src="http://i57.tinypic.com/2v2wlsm.png"></img>
+
+Descargamos nuestro repositorio a nuestra terminal y accedemos al fichero README.md: 
+<img src="http://i57.tinypic.com/21lkcoi.png"></img>
+
+Modificamos el fichero, lo subimos y confirmamos finalmente: 
+<img src="http://i58.tinypic.com/v5erlf.png"></img>
 
 
 ###Ejercicio7:
