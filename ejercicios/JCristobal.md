@@ -1,9 +1,12 @@
-#Ejercicios de JCristobal
+#Ejercicios de JCristobal (José Cristóbal López Zafra)
 
 
+# Tema 1
+
+[Enlace al tema](http://jj.github.io/IV/documentos/temas/Intro_concepto_y_soporte_fisico)
 
 ##Ejercicio 1
-
+###Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años
 Consulto el servidor TS-670 NAS 6 discos - Intel Atom Doble núcleo 2.6GHz, RAM 2GB
 
 [Enlace al producto](http://qloudea.com/catalog/product/view/id/2481?gclid=CjwKEAjwhqShBRDS95LciqqaonISJADj1rgaQfhaESZeoiISz-U8dcOQ74W02TrdbISaoKDFUQjPLBoCjHfw_wcB)
@@ -33,8 +36,7 @@ Variaremos el porcentage cada año, deduciendo los primeros años algo menos y a
 
 
 ##Ejercicio 2
-
-Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
+###Usando las tablas de precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube, Comparar el coste durante un año de un ordenador con un procesador estándar (escogerlo de forma que sea el mismo tipo de procesador en los dos vendedores) y con el resto de las características similares (tamaño de disco duro equivalente a transferencia de disco duro) si la infraestructura comprada se usa sólo el 1% o el 10% del tiempo.
 
 
 El primer servicio que consulto es el de [Acens](http://www.acens.com/cloud/vps/) (opción VPS BUSINESS)con las características:
@@ -68,10 +70,11 @@ Ya que ofrecen servicios parecidos tienen un precio similar al mes, con lo que s
 
 
 ##Ejercicio 3
+###¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro
+Se puede consultar en [comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-58538032)
 
-Parte 1: Se puede consultar en [comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-58538032)
-
-Parte 2: Aprovecho un programa de la asignatura DAI en python para empaquetarlo con CDE.
+###Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+Aprovecho un programa de la asignatura DAI en python para empaquetarlo con CDE.
 
 Primero lo instalo: ejecuto sudo apt-get install cde
 
@@ -83,6 +86,7 @@ Pantallazo de los pasos anteriores: ![imagen1](http://i.imgur.com/dn1qoxB.png)
 
 
 ##Ejercicio 4
+###Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
 
 Tutorial de línea de órdenes de docker realizado:
 ![imagen2](http://i.imgur.com/UevZw5O.png)
@@ -90,7 +94,7 @@ Tutorial de línea de órdenes de docker realizado:
 
 
 ##Ejercicio 5
-
+###Instala el sistema de gestión de fuentes git
 
 Lo instalo basándome en en [enlace a la presentación que nos proporciona el profesor](http://www.slideshare.net/jjmerelo/introduccin-al-uso-git-y-github-para-trabajo-colaborativo) 
 
@@ -115,8 +119,7 @@ git push para enviar
 
 
 ##Ejercicio 6
-
-Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado
+###Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado
 
 Creamos un readme.md con su commit correspondiente y lo añadimos al repositorio que queremos (objetivosIV en mi caso)
 Para ello introduzco en línea de comandos:
@@ -137,7 +140,7 @@ git push -u origin master
 Para modificarlo accedemos a el repositorio y al archivo readme y realizamos los cambios (o mediante comandos de git mencionados antes).
 
 
-##Instrucciones sobre restricción y medición del uso de recursos: cgroups
+###Instrucciones sobre restricción y medición del uso de recursos: cgroups
 
 Accedo al direcotrio de cgroups  ( /sys/fs/cgroup )
 
@@ -157,13 +160,14 @@ echo 0 > /cpuset.mems
 
 
 ##Ejercicio 7
-Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene. 
+###Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene. 
 
 En la captura lo usamos y vemos que esta instalado correctamente y que está montado en /sys/fs/cgroup. También muestro su contenido con "ls"
 ![imagen1](http://i.imgur.com/BgE1uJe.png)
 
 
 ##Ejercicio 8
+### Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
 Accedo al direcotrio de cgroups  ( /sys/fs/cgroup ) y monto el sistema de ficheros virtual: sudo mount -t cgroup cgroup /sys/fs/cgroup/
 
 ![imagen1](http://i.imgur.com/BgE1uJe.png)
@@ -196,12 +200,22 @@ Aunque para comprobar la consulta de recursos veo la total:
 
 ![imagen6](http://i.imgur.com/fOceyRU.png)  
 
+### Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
+
+Supondremos un ordenador con Core i7-920 + GTX295, de un precio aproximado de 1000€. Para los gastos eléctricos supondremos una consumo de 2 horas en reposo y 4 horas de trabajo diarios,  108.32 € anuales de gasto eléctrico. (calculado [aquí](http://www.pcsilencioso.com/recursos/bdd/73-alimentacion/45-gasto-electricidad))
+
+En una amortización de 5 años, ya que el mínimos son 4 años, al 20% cada año se queda:
+
+1000€ + (108.32€ * 5 años) = 1541,60 € en total
+
+ó 1000€/5 años + 108.32 = 308,32€ anual
+
 
 
 ##Ejercicio 9
 
 ##9.1 
-Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+###Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
 
 En cuanto a la limitación de recursos nos podemos fijar en varios factores: como prioridad del usuario o uso que éste le va a dar.
 
@@ -211,7 +225,7 @@ Según el uso: Podríamos limitar los recursos según el usuario que los use, as
 
 
 ##9.2 
-Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+###Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
 
 instalamos cgcreate:
 sudo apt-get install cgroup-bin
@@ -243,7 +257,7 @@ group proc-sist {
 ```
 
 ##9.3 
-Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+###Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
 
 Instalamos htop con sudo apt-get install htop
 
@@ -253,7 +267,7 @@ y lo ejecutamos para ver la carga a tiempo real:
 
 
 ##9.4 
-Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
+###Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
 
 Configuramos el servidor de NGINX que tenemos, con los grupos "servidor"(80% de prioridad) y "usuarios":
 
@@ -279,8 +293,8 @@ group usuarios {
 
 
 ##Ejercicio 10
+###Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 
-Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 
 Ejectuamos la orden: egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 y nos devuelve:
@@ -301,9 +315,8 @@ Es un procesador Inter Core i5-450M (2.4GHz, 3MB L3 cache)
 
 
 ##Ejercicio 11
+###Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 
-
-Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
 
 La ejecutamos pero primero instalamos cpu-cheker.
 
@@ -315,10 +328,100 @@ Ejecutamos kvm-ok y nos dice que sí está utlizado, lo podemos usar.
 
 
 ##Ejercicio 12
-
-Comentar diferentes soluciones de Software as a Service de uso habitual
+###Comentar diferentes soluciones de Software as a Service de uso habitual
 
 Aquí el enlace al [comentario](https://github.com/JJ/GII-2014/issues/72#issuecomment-59173713)
+
+
+***
+***
+
+
+# Tema 2
+
+[Enlace al tema](http://jj.github.io/IV/documentos/temas/PaaS)
+
+##Ejercicio 1
+###Instalar un entorno virtual para tu lenguaje de programación favorito
+
+Instalaremos [nodeenv para node.js](https://pypi.python.org/pypi/nodeenv/), accediendo al enlace proporcionado por el profesor para consultar sobre la instalación de éste.
+
+sudo easy_install nodeenv
+
+Creamos un nuevo entorno y lo activamos:
+
+virtualenv env
+
+. env/bin/activate
+
+
+Con esto vemos la versión, en mi caso la 0.11.1:
+
+
+(env) $ pip install nodeenv
+
+(env) $ nodeenv --version
+
+
+![imagen](http://i.imgur.com/Uz6bN2M.png)
+
+
+##Ejercicio 2
+###Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
+
+Accedemos a la página de [Heroku](https://www.heroku.com/). Introducimos nuestro e-mail y confirmamos el alta al correo que nos mandan, nos registramos y ya podemos usarlo:
+
+![imagen](http://i.imgur.com/Jr80VGt.png)
+
+
+También de igual manera, nos damos de alta en OpenShift para realizar la siguiente actividad.
+
+##Ejercicio 3
+###Crear una aplicación en OpenShift y dentro de ella instalar WordPress. 
+
+Nos registramos en OpenShift y vamos al enlace para crear nuestra primera apliación.
+
+![imagen1](http://i.imgur.com/UsZPFdQ.png)
+
+Escogemos de la lista WordPress:
+
+![imagen2](http://i.imgur.com/s9qNHF4.png)
+
+Escogemos el nombre y la url que queremos, con lo que nos queda:
+
+![imagen3](http://i.imgur.com/1D3rnqF.png)
+
+Después nos registramos en WordPress y accedemos:
+
+![imagen4](http://i.imgur.com/X9XsxNj.png)
+
+Creamos una nueva entrada para probarlo:
+
+![imagen5](http://i.imgur.com/75qlAHv.png)
+
+
+
+##Ejercicio 4
+###Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama. 
+
+En un documento de Google Drive accedemos a Herramientas -> Editor de secuencias de comandos
+
+Creamos una nueva función (miFuncion()):
+
+![imagen1](http://i.imgur.com/DTDlxEQ.png)
+
+y la añadimos al menú, compilamos y la subimos a la nube pulsando el botón del menú.
+
+Después, dentro del documento, nos vamos a ese menú (Sample) y seleccionamos nuestra función:
+
+![imagen2](http://i.imgur.com/9Zdmuaz.png)
+
+
+
+
+
+
+
 
 
 

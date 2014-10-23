@@ -1,7 +1,7 @@
 # Ejercicios de Samuel Hernández Ballesteros
 ## Introducción a la infraestructura virtual: concepto y soporte físico.
 ### Ejercicio 1
-**Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar [este artículo](http://http://www.infoautonomos.com/consultas-a-la-comunidad/988/) en Infoautónomos sobre el tema. **
+**Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar [este artículo](http://www.infoautonomos.com/consultas-a-la-comunidad/988/) en Infoautónomos sobre el tema. **
 _ _ _
 
 Si compramos un servidor la ley establece que el porcentaje máximo que se puede aplicar como un gasto de amortización es de un 26% anual.
