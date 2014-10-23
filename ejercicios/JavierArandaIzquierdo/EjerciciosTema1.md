@@ -131,7 +131,10 @@ Las capturas para el software center de texto son las siguientes:
 
 
 ####2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
+Primero eligiremos un ordenador de cualquier tienda, en mi caso he elegido [este](http://www.redcoon.es/B538778-Acer-Aspire-E1-572G-74508G1TMnii_Port%C3%A1tiles). Contando con que un portatil tiene una vida media de 7 años y que el consumo de electricidad de un portatil es de unos [30 € al año](http://www.pcsilencioso.com/recursos/bdd/73-alimentacion/45-gasto-electricidad):
 
+1 año serian 100€ + 30€ de energia= 130€
+7 años serian 700€ + 210€ de energia = 910€
 
 
 
