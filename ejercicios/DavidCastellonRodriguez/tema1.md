@@ -114,3 +114,28 @@ Para realizar la instalación de git simplemente tendremos que ejecutar el coman
 
 #Ejercicio 6
 
+###### 1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
+
+Tomaremos como ejemplo el proyecto de la asignatura, GII-2014. Para descargarlo usaremos el siguiente comando:
+
+`git pull git@github.com:JJ/GII-2014.git master`
+
+Tras su ejecución tendremos una copia del repositorio 'padre' en nuestro repositorio.
+
+Si quisieramos crear un nuevo repositorio desde la terminal emplearíamos el comando:
+
+`git init`
+
+###### 2. Modificar el readme y subir el fichero modificado.
+
+Modificar el fichero es bien sencillo, se hará con cualquier editor de textos. Una vez modificado lo añadimos a los ficheros modificados:
+
+`git add readme.md`
+
+Aceptaremos los cambios:
+
+`git commit -m "modificando el readme"`
+
+y subiremos los cambios:
+
+`git push origin master`
