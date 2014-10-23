@@ -31,6 +31,12 @@ Ejercicio 3:
 
 -Para un sistema de prueba de software e integración continua,  usaria una virtualizacion de entornos de desarrollo ya que vamos a realizar pruebas de software y este tipo de virtualizacion esta diseñado para este aspecto
 
+-2:Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
+
+		He creado un programa simple en python. He descargado CDE:
+
+		[Aqui](http://i.imgur.com/GgMOOOm.png) muestra la captura del programa empaquetado y ejecutado.
+
 
 
 
