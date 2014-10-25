@@ -234,10 +234,12 @@ Ejecutamos para ver la carga total:
 Asignaremos al core 2 (que es el mas ocioso) una serie de tareas para ver como aumenta su consumo con respecto a los
 demás. Para ello asignaremos varias tareas varias veces:
 
-taskset 0x2 firefox.
-taskset 0x2 ddd.
-taskset 0x2 geany.
-taskset 0x2 geany.
+````
+taskset 0x2 firefox
+taskset 0x2 ddd
+taskset 0x2 geany
+taskset 0x2 geany
+````
 
 <img src="http://i60.tinypic.com/2uidi5t.png"></img>
 
