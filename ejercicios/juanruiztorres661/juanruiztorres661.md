@@ -53,6 +53,58 @@ Si se usa la infraestructura un 10%:
 
 **2.Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
 
+En caso de no tener CDE instalado, en Ubuntu puede hacerse con el comando:
+
+`` sudo apt-get install cde ``
+
+Para este ejercicio utilizo un programa en python que ordena una lista aleatoria de 10000 elementos con el método de burbuja y muestra el tiempo que emplea en hacerlo cuyo código es el siguiente:
+
+```
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import time
+import random
+
+# Genera lista de numeros aleatorios.
+def generaListaAleatoria():
+  tamLista = 10000;
+
+  lista = []
+
+  for i in range(tamLista):
+    lista.append(random.randint(0, 10000000));
+    
+  return lista
+
+# Ordenacion burbuja
+def burbuja(lista):
+  for i in range(len(lista)):
+    for h in range(i, len(lista) - 1):
+      if (lista[h] > lista[h+1]):
+        aux = lista[h]
+        lista[h] = lista[h + 1]
+        lista[h + 1] = aux
+
+# lista aleatoria.
+lista = generaListaAleatoria()
+
+# print lista1
+start = time.clock()
+burbuja(lista)
+end = time.clock()
+
+# print tiempo empleado en lista.
+print "El método de burbuja ha tardado %f segundos" %(end - start)
+```
+
+Para empaquetarlo con CDE utilizo:
+
+`` cde ./burbuja.py ``
+
+
+
+
 * * *
 
 ### Ejercicios 4. 
