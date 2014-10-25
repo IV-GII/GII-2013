@@ -102,6 +102,8 @@ Ahora podemos comprobar que nginx está funcionando desde su propio contenedor a
 
 [Referencia](http://codehero.co/como-instalar-y-usar-docker/)
 
+---
+
 #Ejercicio 5
 
 ###### Instala el sistema de gestión de fuentes git
@@ -111,6 +113,8 @@ Para realizar la instalación de git simplemente tendremos que ejecutar el coman
 `sudo apt-get install git`
 
 [Ver algunos comandos básicos de git](http://www.slideshare.net/jjmerelo/introduccin-al-uso-git-y-github-para-trabajo-colaborativo)
+
+---
 
 #Ejercicio 6
 
@@ -139,3 +143,29 @@ Aceptaremos los cambios:
 y subiremos los cambios:
 
 `git push origin master`
+
+---
+
+#Ejercicio 7
+
+###### Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.
+
+Para comprobar si está montado comprobamos si se encuentra en el directorio por defecto: `/sys/fs/cgroup/`
+
+En mi caso está instalado y contiene el directorio `systemd` dentro del cual hay los siguientes ficheros:
+
+```
+cgroup.clone_children  
+cgroup.sane_behavior  
+tasks  
+cgroup.event_control   
+notify_on_release  
+user/  
+cgroup.procs  
+release_agent
+```
+[Referencia](http://elpuig.xeill.net/Members/vcarceler/articulos/introduccion-a-los-grupos-de-control-cgroups-de-linux)
+
+---
+
+#Ejercicio 8
