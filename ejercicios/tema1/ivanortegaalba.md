@@ -1,7 +1,7 @@
 Sesión 29 Septiembre
 ======================
-#Practica 1
-##Ejercicio 1
+# Practica 1
+## Ejercicio 1
 
 El servidor a amortizar es [HP ProLiant ML310e G8 XE E3-1220/8GB/2TB](http://www.pccomponentes.com/hp_proliant_ml310e_g8_xe_e3_1220_8gb_2tb.html)
 Precio: *645€*
@@ -11,7 +11,7 @@ Para esto ha de darnos: 645 * 0.25 = 161.25€ por año.
 
 Por tanto, para amortizarlo en 7 años, volvemos a hacer: 645 / 7 = 92.142 € por año.
 
-##Ejercicio 2
+## Ejercicio 2
 
 Vamos a hacer una comparativa entre 2 servicios de hosting, estos van a ser
 
@@ -150,7 +150,7 @@ $ ls /sys/fs/cgroup/systemd/
 cgroup.clone_children  cgroup.event_control  cgroup.procs  cgroup.sane_behavior  notify_on_release  release_agent  tasks  user
 ```
 
-## Ejercicio 9
+## Ejercicio 10
 
 El procesador con el que esta corriendo Linux es:
 Intel Core i5-4200M
@@ -163,3 +163,15 @@ $ egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 Y vemos que no nos ha devuelto nada, por lo que no tenemos los flags activados.
 
 Cuenta con la tecnología VT-x de Intel, pero al estar corriendo Linux (provisionalmente) en una maquina virtual, este no esta activo.
+
+## Ejercicio 11
+
+Para comprobar si nuestro sistema soporta KVM ejecutamos el comando:
+
+```
+$ kvm-ok
+INFO: Your CPU does not support KVM extensions
+INFO: For more detailed results, you should run this as root
+HINT:   sudo /usr/sbin/kvm-ok
+```
+Como podemos ver, indica que no está activado. Esto puede ser a causa de que la máquina virtual no puede usar la aceleración por hardware del procesador, solo la máquina anfitrión.
