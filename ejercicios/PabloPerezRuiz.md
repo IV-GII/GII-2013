@@ -229,7 +229,7 @@ group proc-syst {
 En primer lugar instalamos htop mediante sudo apt-get install htop.
 Ejecutamos para ver la carga total:
 
-<img src="http://es.tinypic.com/r/2qcnvjb/8"></img>
+<img src="http://i61.tinypic.com/2qcnvjb.jpg"></img>
 
 Asignaremos al core 2 (que es el mas ocioso) una serie de tareas para ver como aumenta su consumo con respecto a los
 demás. Para ello asignaremos varias tareas varias veces:
