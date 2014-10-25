@@ -180,6 +180,11 @@ En mi caso tengo instalado cgroup-lite como puede verse en la siguiente imagen p
 ### Ejercicios 10. 
 **Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
 
+Como puede verse en la siguiente captura de pantalla, se trata de un procesador Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz. y como salida de la orden ``egrep '^flags.*(vmx|svm)' /proc/cpuinfo`` no aparece nada puesto que los flags no están en el fichero y por tanto el procesador tiene la funcionalidad desactivada.
+
+![](./imagenes/cpuinfo.png)
+
+
 * * *
 
 ### Ejercicios 11. 
