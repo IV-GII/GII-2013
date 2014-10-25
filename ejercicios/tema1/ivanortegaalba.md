@@ -20,7 +20,7 @@ Vamos a hacer una comparativa entre 2 servicios de hosting, estos van a ser
 Siguiendo con la tradición, vamos a hacer un "Hola Mundo" para BASH, el nombre del fichero sera HolaMundo.sh:
 
 ````````````
-#!/bin/bash 
+#!/bin/bash
 echo "¡Hola mundo!"
 ````````````
 
@@ -43,8 +43,11 @@ Para que CDE funcione correctamente, hemos de dar permisos de escritura al direc
 ````````````
 sudo chmod -R a+rwx /var/dt
 ````````````
+## Ejercicio 4
 
-##Ejercicio 5
+![Resultado terminado tutorial](./images/Captura de pantalla 2014-10-25 a las 15.00.41.png)
+
+## Ejercicio 5
 
 La instalación de Git, vamos a hacerla sobre OS X. Git puede instalarse en cualquier SO de los comunes. Yo he escogido OS X, porque on estoy acostumbrado a usarlo para desarrollar y quiero aprender su funcionamiento, que más adelante veremos que es prácticamente igual.
 Para instalarlo basta que sigamos el libro oficial de [Git Pro](http://git-scm.com/book/es/Empezando-Instalando-Git).
@@ -56,7 +59,7 @@ Hay tres maneras de instalarlo:
 sudo port install git-core +svn +doc +bash_completion +gitweb
 ````````````
 - Con Homebrew:
-```````````` 
+````````````
 brew install  Git
  ````````````
  En mi caso he optado por la tercera opción, y es simplemente ejecutar ese comando.
@@ -80,5 +83,56 @@ Finalmente podemos comprobar nuestra información con:
  ````````````
 $ git config --list
  ````````````
-![Resultado comando config list](./images/Captura de pantalla 2014-10-19 a las 18.30.36.png)
+![Resultado comando config list](./images/Captura de pantalla 2014-10-19 a las 18.30.36.png)  
 
+## Ejercicio 6
+
+Vamos a crear un proyecto desde GitHub, aunque también podríamos hacerlo desde nuestro equipo y despues ejecutar ```git init```para iniciar el repositorio.
+
+![Crear el repositorio](./images/Captura de pantalla 2014-10-25 a las 15.36.11.png)  
+
+Ahora vamos a descargarlo. Tememos varias opciones, pero las típicas son por http y ssh.
+
+Yo ya tengo configurado mi ssh para poder hacer cambios en mi repositorio remoto sin tener que autenticarme.
+
+Por lo que voy a descargar la versión SSH
+
+![Crear el repositorio 2](./images/Captura de pantalla 2014-10-25 a las 15.37.45.png)  
+
+Para tenerlo en nuestro local, nos movemos hasta la carpeta donde queremos clonarlo y ejecutamos el comando:
+```
+$ git clone git@github.com:ivanortegaalba/pruebaEjercicio6.git
+Cloning into 'pruebaEjercicio6'...
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (4/4), 6.96 KiB | 0 bytes/s, done.
+Checking connectivity... done.
+```
+Ahora voy a modificar el README.md.
+```
+$ echo "hola mundo " >> pruebaEjercicio6/README.md
+```
+Después añado el archivo para que lo trackee el git con el comando
+
+```
+$ git add README.md
+```
+
+Una vez git sabe de su existencia, ya podemos hacer commit con los cambios. Es necesario añadir un comentario:
+```
+$ git commit -m "Modificación del README.md"
+[master d018945] Modificación del README.md
+ 1 file changed, 2 insertions(+)
+```
+Ya lo tenemos en nuestro HEAD listo para ser enviado. Solo falta enviarlo al servidor remoto con:
+```
+$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 341 bytes | 0 bytes/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To git@github.com:ivanortegaalba/pruebaEjercicio6.git
+   bd7fdb4..d018945  master -> master
+```
