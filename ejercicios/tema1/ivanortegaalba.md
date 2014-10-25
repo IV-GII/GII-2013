@@ -163,7 +163,7 @@ Y vemos que no nos ha devuelto nada, por lo que no tenemos los flags activados.
 
 Cuenta con la tecnología VT-x de Intel, pero al estar corriendo Linux (provisionalmente) en una maquina virtual, este no esta activo.
 
-## Ejercicio 111
+## Ejercicio 11
 
 Para comprobar si nuestro sistema soporta KVM ejecutamos el comando:
 
