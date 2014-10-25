@@ -85,11 +85,13 @@ cde ./ej_01_03.py
 Una vez hecho esto, se han creado los archivos correspondientes en el directorio cde-packages para poder ejecutar el programa que queramos. Para portarlo a otra distribución, simplemente comprimimos el directorio y lo ejecutamos usando el archivo creado ( ej_01_03.py.cde )
 
 
+
 ###Ejercicio 4:
 ####Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
 Tutorial realizado. <img src="http://i62.tinypic.com/o77mo0.png"></img>
 ####Avanzado Instalarlo y crear una aplicación contenedorizada.
 Hacemos sudo apt-get install docker.io en la terminal.
+
 
 
 ###Ejercicio 5
@@ -116,6 +118,7 @@ Todas las órdenes necesarias se encuentran en el [tutorial.](http://git-scm.com
 * Para actualizar el repositorio hacemos: git pull https://github.com/JJ/GII-2014.git master.
 
 
+
 ###Ejercicio 6:
 ####Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README. Modificar el readme y subir el fichero modificado.
 
@@ -136,12 +139,15 @@ Modificamos el fichero, lo subimos y confirmamos finalmente:
 <img src="http://i59.tinypic.com/vown5f.png"></img>
 
 
+
 ###Ejercicio7:
 ####Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.
 
 Comprobamos que el directorio de cgroup se encuentra en /sys/fs/cgroup. Para mostrar su contenido hacemos ls:
 
 <img src="http://i60.tinypic.com/24qs5tu.png"></img>
+
+
 
 ###Ejercicio8:
 ####1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
@@ -181,6 +187,7 @@ Si el pc nos ha costado aproximadamente 1000€, el precio total sería:
 Total: 902.88+1000= 1902.88€
 
 
+
 ###Ejercicio 9:
 ####Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
 ####Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
@@ -192,8 +199,10 @@ Total: 902.88+1000= 1902.88€
 ####Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
 
 
+
 ###Ejercicio 11:
 ####Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
 
 
 ###Ejercicio12:
