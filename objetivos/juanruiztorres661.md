@@ -35,7 +35,7 @@ Objetivos de Juan Antonio Ruiz.
 
 * [X] Entender el concepto de sistema de ficheros virtual usado en Linux para diferentes menesteres.
 * [X] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura.
-* [ ] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.
+* [X] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.
 
 * * *
 
@@ -62,7 +62,7 @@ Objetivos de Juan Antonio Ruiz.
 ###Otros objetivos.###
 
 * [ ] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
-* [ ] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 * [X] Contestar a la encuesta sobre la metodología de clase
 
 * * *
