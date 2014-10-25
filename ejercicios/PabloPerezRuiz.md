@@ -530,6 +530,7 @@ Mi CPU no soporta las extensiones KVM por lo tanto no puede usar aceleración ha
 
 ###Ejercicio12:
 ####Comentar diferentes soluciones de Software as a Service de uso habitual
+Puede leerse el comentario en el foro [aquí.](https://github.com/JJ/GII-2014/issues/72#issuecomment-60486358)
 
 Existen un montón de servicios en la nube disponibles, tanto para el acceso remoto como para una copia de seguridad de tus datos. Algunas de la reglas generales que deben seguir son las siguientes:
   
