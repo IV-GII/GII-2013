@@ -524,8 +524,25 @@ Lo ejecutamos y nos dice que primero debemos instalar cpu-checker:
 <img src="http://i59.tinypic.com/121wp6q.png"></img>
 
 Mi CPU no soporta las extensiones KVM por lo tanto no puede usar aceleración hardware:
+
 <img src="http://i57.tinypic.com/fxcpiu.png"></img>
 
 
 ###Ejercicio12:
 ####Comentar diferentes soluciones de Software as a Service de uso habitual
+
+Existen un montón de servicios en la nube disponibles, tanto para el acceso remoto como para una copia de seguridad de tus datos. Algunas de la reglas generales que deben seguir son las siguientes:
+    
+     * La compañía "nube" le ofrece un software para trabajar según su necesidad;
+     * No tienes que cambiar el funcionamiento del software en ningún momento excepto las opciones de personalización       que se suministran con el software;
+     * Tienes la opción de descargar o no el software en tu pc local, de todas formas el software y los resultados se       almacenan en la nube (por ejemplo: copia de seguridad, sincronización, recopilación de datos, etc.)
+     
+     * El software como servicio debe ser lo suficientemente rápido como para proporcionar servicios a las personas.         Por ejemplo, si se trata de un software de almacenamiento, debe ser capaz de proporcionar el espacio como y          cuando sea necesario. Del mismo modo, cuando la necesidad de espacio se reduce, el software debe liberar espacio       extra.
+     * Se te tiene que cobrar sólo por el servicio que utiliza; no debería haber una tarifa plana definida. 
+
+Algunos ejemplos de Saas son:
+
+* Cualquier aplicación de Microsfot Web Office.
+* Mozy, en el que tienes que bajarte el software en tu terminal, aunque puedes utilizar backups en cualquier otro pc mientras recuerdes tus credenciales.
+* OneDrive Sync: el software establece que directorios necesitan ser respaldados o más bien sincronizados. Una vez ajustado, puedes olvidarte de él ya que lo sincronizará a medida que se suman a la carpeta OneDrive o medida que cambian.
+* Prey, un software que rastrea tu portátil, tablet o teléfono móvil. Guarda capturas de pantalla y otros datos en la nube. Puedes ver los datos usando cualquier pc mediante tu cuenta de Prey. Muy útil para recuperar portátiles y móviles robados.
