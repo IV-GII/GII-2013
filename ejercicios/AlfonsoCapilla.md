@@ -22,7 +22,7 @@ Búsqueda de servidor para la amortización a 4 y 7 años
 
 ***Chasis:*** PowerEdge T110 II Tower Chassis, Up to 4x 3.5" Cabled HDDs.
 
-***Precio sin IVA:*** 1579€ 
+***Precio sin IVA:*** 1579€  
 
 ***IVA:*** 331,59€
 
