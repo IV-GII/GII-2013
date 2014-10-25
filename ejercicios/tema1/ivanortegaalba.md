@@ -158,7 +158,6 @@ Intel Core i5-4200M
 Para ver los flags ejecutamos:
 ```
 $ egrep '^flags.*(vmx|svm)' /proc/cpuinfo
-
 ```
 Y vemos que no nos ha devuelto nada, por lo que no tenemos los flags activados.
 
