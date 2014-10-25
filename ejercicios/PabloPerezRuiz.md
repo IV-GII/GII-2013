@@ -88,9 +88,10 @@ Una vez hecho esto, se han creado los archivos correspondientes en el directorio
 
 ###Ejercicio 4:
 ####Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
-Tutorial realizado. <img src="http://i62.tinypic.com/o77mo0.png"></img>
 ####Avanzado Instalarlo y crear una aplicación contenedorizada.
-Hacemos sudo apt-get install docker.io en la terminal.
+Tutorial realizado. <img src="http://i62.tinypic.com/o77mo0.png"></img>
+
+
 
 
 
