@@ -169,7 +169,16 @@ Con lo que comprobamos al menos el uso de recursos total:
 
 Nos basaremos en un ejemplo de la siguiente [página](http://www.pcsilencioso.com/recursos/bdd/73-alimentacion/45-gasto-electricidad):
 
-Core i7-920 + GTX260 Extreme 	150W (est.) 	312W (est.) 	14,81€ 	7,60€ 	12,54€ 	30,81€
+Tenemos el caso de un PC sobremesa con las siguientes características:
+Core i7-920 + GTX260 Extreme , con un uso estimado de 8 horas de idle y 8 horas de carga nos da un coste de 12.54€ al mes. Al año serian unos: 12.54*12= 150.48€.
+
+Si ponemos una amortización a 6 años(cada año amortizamos 166.66€), considerando ésta la vida media de un pc de sobremesa, tenemos un cosumo de: 
+
+6*150.48=902.88€
+
+Si el pc nos ha costado aproximadamente 1000€, el precio total sería:
+
+Total: 902.88+1000= 1902.88€
 
 
 ###Ejercicio 9:
