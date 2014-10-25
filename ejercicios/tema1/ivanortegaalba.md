@@ -136,3 +136,30 @@ Total 3 (delta 1), reused 0 (delta 0)
 To git@github.com:ivanortegaalba/pruebaEjercicio6.git
    bd7fdb4..d018945  master -> master
 ```
+
+## Ejercicio 7
+
+Para ver los archivos montados de cgroups, en mi caso en Ubuntu, hemos de ejecutar:
+```
+$ ls /sys/fs/cgroup/
+systemd
+```
+En mi casa solo sale systemd y dentro de este encontramos:
+```
+$ ls /sys/fs/cgroup/systemd/
+cgroup.clone_children  cgroup.event_control  cgroup.procs  cgroup.sane_behavior  notify_on_release  release_agent  tasks  user
+```
+
+## Ejercicio 9
+
+El procesador con el que esta corriendo Linux es:
+Intel Core i5-4200M
+
+Para ver los flags ejecutamos:
+```
+$ egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+
+```
+Y vemos que no nos ha devuelto nada, por lo que no tenemos los flags activados.
+
+Cuenta con la tecnología VT-x de Intel, pero al estar corriendo Linux (provisionalmente) en una maquina virtual, este no esta activo.
