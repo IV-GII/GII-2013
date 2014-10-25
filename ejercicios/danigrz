@@ -57,3 +57,17 @@ Si sólo usaramos el 10% del tiempo, pagaríamos 242,47€ con Windows y 167,88�
 		Aqui muestra la captura de pantalla del comando push y el correspondiente archivo visto en la web de github.
 		![Captura ejercicio 6](http://i.imgur.com/CpJKuXo.png)
 		
+		
+*Ejercicio 10 
+		Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+		Procesador Intel® Core™ i3-3217U CPU @ 1.80GHz × 4 
+		![Flags activados](http://i.imgur.com/ljp9mim.png)
+		
+*Ejercicio 11
+		Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+		![Modulo kvm acivado](http://i.imgur.com/kVDiGY8.png)
+		
+*Ejercicio 12
+		Comentar diferentes soluciones de Software as a Service de uso habitual
+		Comentado en el foro [Aqui en link](https://github.com/JJ/GII-2014/issues/72#issuecomment-60413764)
+		
