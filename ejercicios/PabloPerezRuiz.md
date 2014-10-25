@@ -238,10 +238,9 @@ demás. Para ello asignaremos varias tareas varias veces:
 taskset 0x2 firefox
 taskset 0x2 ddd
 taskset 0x2 geany
-taskset 0x2 geany
 ````
 
-<img src="http://i60.tinypic.com/2uidi5t.png"></img>
+<img src="http://i61.tinypic.com/11t8nbd.png"></img>
 
 ####Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
 
