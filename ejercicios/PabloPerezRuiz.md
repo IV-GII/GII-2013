@@ -190,8 +190,41 @@ Total: 902.88+1000= 1902.88€
 
 ###Ejercicio 9:
 ####Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+Distingo varios escenarios posibles:
+
+* **Escenario 1:** En el que una empresa durante unos meses en concreto se dedique a desarrollar un proyecto y haga uso mas intensivo de los recursos de los terminales, por lo que se deberían asignar lógicamente más recursos.
+
+* **Escenario 2:** En el que un administrador desarrolla una aplicación. Deberá tener asignados más recursos que el usuario al que va destinada ésta.
+
+* **Escenario 3:** Según las necesidades del usuario, se deberán asignar más recursos al tipo de función que esté desempeñando, por ejemplo si usa más el navegador deberá destinar más recursos a éste.
+
 ####Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+
+En primer lugar instalamos cgcreate mediante el comando: sudo atp-get install cgroup-bin
+El fichero de configuración de cgcreate, "cgconfig.conf" lo encontramos en el directorio /etc.
+Indicamos donde está montado el subsistema de cgroup añadiendo a dicho fichero "cpu=/sys/fs/cgroup/cpu"
+
+Crearemos dos grupos en concreto: proc-user y proc-syst. Vemos mediante cpu.shares su valor, siendo de 1024. Con lo que le asignaremos 75% (1024x0.75=768) y 25% (1024x0.25=256) respectivamente:
+
+mount {
+   cpu = /sys/fs/cgroup/cpu;
+}
+
+group proc-user {
+    cpu {
+        cpu.shares = "768";
+    }
+}
+
+group proc-syst {
+    cpu {
+        cpu.shares = "256";
+    }
+}
+
 ####Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+
+
 ####Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
 
 
