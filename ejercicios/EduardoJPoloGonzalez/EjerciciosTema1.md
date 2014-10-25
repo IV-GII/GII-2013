@@ -12,6 +12,7 @@ El servidor que he escogido para realizar este ejercicio es el siguiente [servid
   21% iva: 381,90€
 
 **-A cuatro años: 25% cada año.**
+
 	 Cada año se pagaría 454.65€ 
 
 **-A siete años: los tres primeros años al 20 % y los cuatro siguientes al 10%.**
@@ -24,6 +25,7 @@ El servidor que he escogido para realizar este ejercicio es el siguiente [servid
 ![](./capturas/1.png)
 
 http://azure.microsoft.com/es-es/pricing/details/virtual-machines/
+
 Microsoft Azure: el precio al año sería de 134,16€.
 
 ![](./capturas/2.png)
@@ -33,6 +35,7 @@ En Vadavo: el precio al año sería de 300€.
 https://www.vadavo.com/hosting-para-empresas/
 
 **Tiempo de uso**
+
 **Azure:**
 
 -134,16€*0,01 = 1,3416€ al año usándolo 1% del tiempo.
@@ -78,6 +81,7 @@ Por último comprobar que funciona:
 ####_Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.Avanzado Instalarlo y crear una aplicación contenedorizada.Alguna imagen del tutorial:_
 
 Paso 1:
+
 ![](./capturas/6.png)
 
 Paso 2:
@@ -198,6 +202,7 @@ El navegador es el que más consume, por detrás viene el procesador de textos(l
 
 
 ###_2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes._
+
 -Ordenador Multimedia cuesta  1200€ y gasta lo siguiente:
 
 -Modo encendido 67W.
@@ -251,7 +256,9 @@ Una vez instalado ese paquete, ya si funciona el comando  kvm-ok:
 Mi respuesta en el foro:
 
 Ejemplos claros de soluciones SaaS:
+
 -En lugar de vender una copia de Microsoft Word por una cantidad por la licencia, puedes usar el modelo de "rentar" el software de procesamiento de textos por unos 5 euros al mes (por poner una cifra). De esta forma no tienes que instalar ningún software, ni estarías confinado a una sola computadora para utilizar este producto. Sólo tienes que utilizar tu navegador de Internet e iniciar sesión desde cualquier computadora con conexión a Internet, y de igual forma puedes acceder a tus documentos. Un buen ejemplo de cómo funciona SaaS es el de Google Docs (la diferencia es que éste es gratuito).
+
 -Un pequeño negocio de venta de automóviles podría gastar miles de euros en una base de datos de ventas. En cambio, si los propietarios de la empresa ​"rentan" el acceso a una base de datos de ventas en línea sofisticada, todos los vendedores de automóviles tendrían acceso a esa información a través de sus computadoras con acceso a Internet o, mejor aún, desde sus dispositivos móviles. 
 
 
