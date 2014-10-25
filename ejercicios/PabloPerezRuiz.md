@@ -204,26 +204,41 @@ En primer lugar instalamos cgcreate mediante el comando: sudo atp-get install cg
 El fichero de configuración de cgcreate, "cgconfig.conf" lo encontramos en el directorio /etc.
 Indicamos donde está montado el subsistema de cgroup añadiendo a dicho fichero "cpu=/sys/fs/cgroup/cpu"
 
-Crearemos dos grupos en concreto: proc-user y proc-syst. Vemos mediante cpu.shares su valor, siendo de 1024. Con lo que le asignaremos 75% (1024x0.75=768) y 25% (1024x0.25=256) respectivamente:
+Crearemos dos grupos en concreto: proc-user y proc-syst. Vemos mediante cpu.shares su valor, siendo de 1024. Con lo que le asignaremos 25% (1024x0.25=256) y 75% (1024x0.75=768) respectivamente:
 
+```
 mount {
    cpu = /sys/fs/cgroup/cpu;
 }
 
 group proc-user {
     cpu {
-        cpu.shares = "768";
+        cpu.shares = "256";
     }
 }
 
 group proc-syst {
     cpu {
-        cpu.shares = "256";
+        cpu.shares = "768";
     }
 }
+```
 
-####Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+####Usar un programa que muestre en tiempo real la carga del sistema tal como htop y comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
 
+En primer lugar instalamos htop mediante sudo apt-get install htop.
+Ejecutamos para ver la carga total:
+
+<img src="http://es.tinypic.com/r/2qcnvjb/8"></img>
+
+Asignaremos al core 2 (que es el mas ocioso) una serie de tareas para ver como aumenta su consumo con respecto a los
+demás. Para ello asignaremos varias tareas varias veces:
+
+taskset 0x2 firefox
+taskset 0x2 ddd
+taskset 0x2 geany
+
+<img src="http://i60.tinypic.com/2uidi5t.png"></img>
 
 ####Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
 
