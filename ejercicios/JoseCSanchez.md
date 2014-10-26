@@ -84,3 +84,14 @@ Previamente instalo cpu-checker, y una vez instalado, con el comando kvm-ok comp
 
 ![5](http://fotos.subefotos.com/4998074add857be744e96e033c769477o.png)
 
+
+## Ejercicio 12
+
+De entre las muchas que he encontrado por internet, destaco las tres siguientes:
+
+**Akamai**: tiene grandes planes en la nube, ya sean de seguridad, almacenamiento o una multitud de otras capacidades. Su optimización de la nube ofrece mejorar el rendimiento, incrementar la disponibilidad e incrementar la seguridad de las aplicaciones y los datos prestados (o compartidos) en la nube.
+
+**Cloud9 Analytics**: aplicación simple pero potente para ayudar a los gerentes de ventas en la predicción de ventas de forma más precisa, en el comportamiento del personal de ventas, hace mas efectivas las reuniones de ventas semanales y finalmente aumenta los porcentajes de ganancias. CLoud9 incorpora visibilidad a tiempo real de  la previsión de ventas.
+
+**FinancialForce**: es un software como un servicio de sistema de contabilidad e innovador sistema de gestión financiera que tiene un enfoque fresco a una función de negocio tradicional. La aplicacion fue creada junto a force.com y distribuido en estrecha integracion con salesforce.com.
+
