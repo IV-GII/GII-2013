@@ -2,8 +2,7 @@
 
 
 ** Ejercicio 1.
-Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo
- en Infoautónomos sobre el tema.**
+Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar este artículo en Infoautónomos sobre el tema.**
 
 Ejemplo de un servidor:Dell PowerEdge T110 II
 
@@ -117,8 +116,7 @@ En la imagen podemos ver los diferentes archivos con la información de los dife
 
 **Ejercicio 8.
 1.Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
-2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.
-**
+2.Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.**
 
 1.He procedido ha crear los tres grupos especificados en el enunciado del problema en el directorio de cgroup. Dentro se encuentran los archivos necesarios para configurar las tareas. Una vez realizado esto, miramos los ids de las tareas a asociar a cada grupo en el orden de :
 
@@ -168,4 +166,6 @@ COmo se puede observar en la imagen no esta habilitado dicho modulo, lo que es c
 **Ejercicio 12.
 Comentar diferentes soluciones de Software as a Service de uso habitual**
 
+Los SaaS son servicios que ofrecen algunas empresas ,como han dicho muchos de mis compañeros , google o Spotify. 
+Este tipo de software presenta bastantes ventajas conforme al cliente ya que no tiene que requerir demasiados recursos ni requisitos para utilizar el servicio ya que se concentra el trabajo en la empresa o emisor del servicio, permite flexibilidad de uso en cualquier sistema operativo y la mayoria suelen ofrecer software gratuito del servicio, ofreciendo mas calidad a aquel que opta por el sistema de pago , si lo hubiera. Por contra, presenta la necesidad de disponer de una red, lo que conlleva a depender del ISP en el caso de que la red caiga, los datos o archivos estan en servidores remotos lo que son inaccesibles directamente y puede dar a problemas de privacidad o de disponibilidad de ellos.
 
