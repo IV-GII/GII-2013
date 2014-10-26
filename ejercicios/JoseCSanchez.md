@@ -1,4 +1,4 @@
-# Prácticas sesión 1
+# Ejercicios tema 1
 
 ## Ejercicio 1
 
