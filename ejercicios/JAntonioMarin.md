@@ -153,19 +153,85 @@ Montamos el cgroup y lo examinamos:
 
 ###Ejercicio 8:
 
+Creamos el grupo de control:
+
+````
+sudo mkdir grupoDeControl
+cd grupoDeControl
+sudo mkdir g1
+sudo mkdir g2
+sudo mkdir g3
+````
+
+<img src="http://i58.tinypic.com/28amf5c.png"></img>
+
+Ahora miro los PIDS de los procesos:
+
+<img src="http://i58.tinypic.com/2s8sbnq.png"></img>
+
+Y dado que me da un error de espacio no puedo completar el ejercicio, pero he mirado como se hace básicamente:
+
+<img src="http://i61.tinypic.com/fxe34m.png"></img>
+
+Después veríamos cada proceso:
+
+````
+cat /sys/fs/cgroup/g1/cpuacct.usage
+cat /sys/fs/cgroup/g2/cpuacct.usage
+cat /sys/fs/cgroup/g3/cpuacct.usage
+````
+
+####Parte 2:
+
+Para calcular el gasto de energia de un PC utilizo la siguiente calculadora: http://www.eu-energystar.org/es/es_008.shtml
+
+<img src="http://i58.tinypic.com/2litroj.png"></img>
+
+
+Pongo el calculo a 7 años:
+
+Año 2014: 128.30€ + 189,6€ = 317,9€
+
+Año 2015: 128.30€ + 189,6€ = 317,9€
+
+Año 2016: 128.30€ + 189,6€ = 317,9€
+
+Año 2017: 128.30€ + 189,6€ = 317,9€
+
+Año 2018: 128.30€ + 189,6€ = 317,9€
+
+Año 2019: 128.30€ + 189,6€ = 317,9€
+
+Año 2020: 85,57€ + 189,6€ = 275,17€
+
+
 ###Ejercicio 9:
+
+#### Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+
+1. Escenario 1: El ejemplo es un servidor compartido para el alojamiento de paginas web, los recursos deben dividirse equitativamente entre los clientes, pero uno de los clientes en un momento puntual necesita mas proceso que los demás no están usando, el servidor debería asignar mas cpu al cliente y avisarle de que debería de tener cuidado con el uso de la cpu.
+
+2. Escenario 2: Un servidor sobre los resultados de fútbol, tendrán un acceso mayor durante las horas en que se juegan los partidos, se deberían asignar mas CPUs a el proceso de resultado durante estas horas.
+
+3. Escenario 3: Un usuario necesita agilidad en un programa en especifico por que su uso es mayor y de mayor utilidad, podria dar mas prioridad a este proceso.
+
+#### Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+
+#### Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+
+#### Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
 
 ###Ejercicio 10:
 
 Primer hago el egrep '^flags.*(vmx|svm)' /proc/cpuinfo
-Ahora puedo ver mediante un cat /proc/cpuinfo las caracteristicas de mi procesador
+Ahora puedo ver mediante un cat /proc/cpuinfo las características de mi procesador
 
 ````
 egrep '^flags.*(vmx|svm)' /proc/cpuinfo
 /proc/cpuinfo
 ````
 
-Aqui el resultado del cat
+Aquí el resultado del cat
 
 ````
 processor	: 0
@@ -224,6 +290,13 @@ Ejecutamos pero mi procesador probablemente dado que es una virtualización lo q
 Captura de todo el proceso:
 
 <img src="http://i58.tinypic.com/dcd16r.png"></img>
+
+
+###Ejercicio 12
+
+Comentar en el foro:
+
+<img src="http://i61.tinypic.com/2efq2h5.png"></img>
 
 
 
