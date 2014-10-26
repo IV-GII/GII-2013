@@ -159,3 +159,13 @@ El procesador del que hablamos es un Intel(R) Core(TM) i3 CPU M 370  @ 2.40GHz
 Ejecutamos la orden tal como indica el enunciado y tal como podemos ver el núcleo de mi ordenador no contiene este módulo del kernel.
 
 ![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_1/imagenes/ejercicio11-1.png)
+
+##Ejercicio 12
+
+**Comentar diferentes soluciones de Software as a Service de uso habitual**
+
+SaaS (del inglés "Software as a Service") es el término empleado para denominar a aquellos servicios que son empleados en línea, es decir, que el usuario no necesita instalar en su propio equipo. Existen múltiples ejemplos de SaaS que todos empleamos habitualmente, como los servicios online de correo electrónico (gmail,yahoo,outlook), los servicios de almacenamiento en la nube (Mega,Dropbox,iCloud) y, en el caso de muchos estudiantes, el servicio de impresión empleado en la UGR denominado Copicloud. 
+
+Como ventajas, podemos destacar el hecho de poder hacer uso de estas aplicaciones desde cualquier dispositivo con acceso a internet, además de que el soporte de la aplicación es 24 horas e inmediato. También, tus archivos están más seguros en cuanto a disponibilidad, es decir, díficilmente dichos SaaS de almacenamiento masivo perderán todos los datos almacenados, siendo más probable perderlos si los tienes en tu PC y éste sufre algún imprevisto irreversible.
+
+Por otro lado, como desventajas, el hecho de acceder a estos servicios mediante internet puede conllevar algunos peligros en cuanto a confidencialidad y privacidad, por parte tanto del proveedor del servicio así como de otros usuarios con malas intenciones.
