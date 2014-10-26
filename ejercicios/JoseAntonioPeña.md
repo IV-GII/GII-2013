@@ -81,11 +81,9 @@ Para instalar el sistema de gestión de fuentes tenemos que escribir en la linea
 apt-get install -y git
 
 ###Ejercicio 6
-Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
-Modificar el readme y subir el fichero modificado.
 
 Clono el proyecto con
-git clone https://github.com/Capy87/GII-2014.git
+git clone https://github.com/JosePV/GII-2014
 
 Hacemos un touch del fichero README.md
 
