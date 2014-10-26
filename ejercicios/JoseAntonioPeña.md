@@ -1,5 +1,3 @@
-EJERCICIOS DE JOSE ANTONIO PEÑA VALDEARENAS
-
-TEMA 1
-
--Ejercicio 1
+Ejercicios de Jose Antonio Peña
+Tema 1
+Ejercicio 1
