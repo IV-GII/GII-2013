@@ -33,4 +33,70 @@ En cada año se podrán amortizar un 14,29%, suponiendo que el servidor se ha co
 -	Años 2015, 2016, 2017, 2018, 2020 y 2021 amortización de 98.38€
 -	Año 2022 deducción de 49.15€
 
-### Ejercicio 2:
+###Ejercicio 2
+En este ejercicio voy a comparar los servicios ofrecidos por la empresa acens para el servicio cloud, especificamos las caracteristicas del servicio en [esta pagina](http://www.acens.com/cloud/cloud-servers/). Y lo comparamos con el servidor dedicado [S8](http://www.arsys.es/servidores/dedicados) de la empresa Arsys.
+
+**Características comunes del servidor dedicado y cloud server:**
+
+- CPU: 2 x 4 Core x 1,8 GHz
+- 8GB RAM
+- Unos 1000GB de disco
+
+**Precios anuales:**
+- Servidor dedicado: 3300€ al año.
+- Cloud server: 7.084.8€ al año o 0.82€ por hora.
+
+**Comparación según el porcentaje de uso:**
+
+***Uso del 1%:***
+El servidor dedicado no permite dividir el % de uso, por lo que se coste en cualquier caso siempre será el mismo.
+- Servidor dedicado: 3300€ al año.
+- Cloud server: 87.6 horas x 0.82€/h = 71.832€ al año.
+
+***Uso del 10%:***
+El servidor dedicado no permite dividir el % de uso, por lo que se coste en cualquier caso siempre será el mismo.
+- Servidor dedicado: 3300€ al año.
+- Cloud server: 876 horas x 0.82/h = 718.32€ al año.
+
+Como se puede observar en ambos casos nos resultaría más económico la contratación del servicio de Cloud Server.
+
+
+###Ejercicio 3
+En este ejercicio he creado un pequeño programa en python.
+
+![Script python](http://i.imgur.com/MUxjpgy.png)
+
+He descargado he instalado el paquete CDE, una vez hecho esto he hecho el portable para poder ejecutarlo en otra instalación de linux.
+
+![ejecución del script python](http://i.imgur.com/WwKNRdk.png)
+
+Como podemos ver en la captura, el programa funciona correctamente.
+
+
+###Ejercicio 4
+Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
+
+Avanzado Instalarlo y crear una aplicación contenedorizada
+
+
+###Ejercicio 5
+Instala el sistema de gestión de fuentes git
+
+
+###Ejercicio 6
+Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
+Modificar el readme y subir el fichero modificado.
+
+Clono el proyecto con
+git clone https://github.com/Capy87/GII-2014.git
+
+Hacemos un touch del fichero README.md
+
+Y realizamos el primer commit con:
+git commit -m "Primer commit"
+
+Para guardarlo todo realizamos:
+git push
+
+
+###Ejercicio 7
