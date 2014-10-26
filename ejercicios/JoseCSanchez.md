@@ -37,12 +37,12 @@ Para el servicio de cloud he elegido el Servidor cloud t2.medium de [Amazon EC2]
 Para el servicio de alojamiento web he elegido la empresa [arsys](http://www.arsys.es/hosting?gclid=CIaA-tz5rsECFQgXwwodo30AOw). El precio mas caro de todos sus presuspuestos, es el de 12€/mes.
 
 
-<strong>1% del tiempo de uso:</strong><br>
+**1% del tiempo de uso:**
 Para el servicio de Amazon EC2, sería (0,041€ * 24h * 30 días * 12 meses) * 1% = 3,54€<br>
 Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se realiza mensualmente: 12€/mes * 12 meses = 144€/año.<br>
 
 
-<strong>10% del tiempo de uso:</strong><br>
+**10% del tiempo de uso:**
 Para el servicio de Amazon EC2, seria (0,041€ * 24h * 30 días * 12 meses) * 10% = 35,42€ <br>
 Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se realiza mensualmente: 12€/mes * 12 meses = 144€/año.<br><br>
 
@@ -56,14 +56,36 @@ Parte 1: [Mi comentario en el foro](https://github.com/JJ/GII-2014/issues/71#iss
 
 En la siguiente captura, muestro el final del tutorial despues de haberlo completado:
 
-![1](http://fotos.subefotos.com/0029a057e1f60509746b245257751ff9o.png)
+![](http://fotos.subefotos.com/0029a057e1f60509746b245257751ff9o.png)
 
 
 ## Ejercicio 5
 
 En la siguiente foto muestro como ya tengo instalado git, y en su versión mas reciente.
 
-![2](http://fotos.subefotos.com/af847187f58a79b87f61633d42991fcao.png)
+![](http://fotos.subefotos.com/af847187f58a79b87f61633d42991fcao.png)
+
+
+## Ejercicio 6
+
+Uso mi repositorio como proyecto para clonar:
+
+![](http://fotos.subefotos.com/3984f4f7823df7bdb04e66b429f185e1o.png)
+
+Añado el archivo README.md
+```sh
+git add README.md 
+```
+
+Realizo cambios en el archivo. Seguidamente le hago un commit con un mensaje:
+```sh
+git commit -m "README actualizado"
+```
+
+Subimos los cambios al repositorio remoto de github
+```sh
+git push origin master
+```
 
 
 ## Ejercicio 10
@@ -71,18 +93,18 @@ En la siguiente foto muestro como ya tengo instalado git, y en su versión mas r
 Para comprobarlo ejecuto el siguiente comando:
 egrep '^flags.*(vmx|svm)' /proc/cpuinfo, cuya salida se muestra en la siguiente captura:
 
-![3](http://fotos.subefotos.com/8b68f45c82ade1dc0057fb70d3a6a679o.png)
+![](http://fotos.subefotos.com/8b68f45c82ade1dc0057fb70d3a6a679o.png)
 
 Para consultar el modelo del procesador accedemos a la información de /proc/cpuinfo:
 
-![4](http://fotos.subefotos.com/00c4d661a26fe4de3e89147946e6e941o.png)
+![](http://fotos.subefotos.com/00c4d661a26fe4de3e89147946e6e941o.png)
 
 
 ## Ejercicio 11
 
 Previamente instalo cpu-checker, y una vez instalado, con el comando kvm-ok compruebo que el núcleo KVM está en mi máquina. En la siguiente captura se puede observar que efectivamente está instalado:
 
-![5](http://fotos.subefotos.com/4998074add857be744e96e033c769477o.png)
+![](http://fotos.subefotos.com/4998074add857be744e96e033c769477o.png)
 
 
 ## Ejercicio 12
