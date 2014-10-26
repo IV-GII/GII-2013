@@ -24,3 +24,16 @@ Vamos a realizar una comparacion entre un servicio de alojamiento en un servidor
 
 *Servidor Dedicado 270/año.
 *Servidor Cloud 342€/año.
+
+#Ejercicio 3.1
+
+
+
+*Alojar varios clientes:
+Utilizaria una virtualizacion a nivel de sistema operativo por el gran poder de aislamiento entre la parte anfitrion y las diferentes cuentas de cada usuario.Toda las cuenta estaran aisladas unas de otras con la particuliaridad de que la cuenta anfitrion tendran acceso a la administracion de la misma cuenta.
+
+*Para un sistema eficiente de web + middleware + base de datos:
+Utilizaria una virtualizacion plena por que necesitariamos muchos recursos y este tipo de virtualizacion nos facilita dichos recuercos para dedicalos a procesos de carga muy pesada.
+
+*Un sistema de prueba se software e integracion continua:
+Utilizaria una vitualizacion de entornos por que nos facilita reproducir entornos de la forma mas fiel posible y realizando algunos testeos sobre nuestro sistema.
