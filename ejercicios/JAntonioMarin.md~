@@ -78,24 +78,32 @@ Un sistema de prueba de software e integración continua: dado que es un sistema
 
 Primero creamos el programa mas simple que podemos crear:
 
-´´´
+````
 #!/bin/bash
 echo "Esto es una prueba"
-´´´
+````
 Descargamos del repositorio el CDE: git clone git://github.com/pgbovine/CDE.git
-Instalamos entrando en el directorio y con el comando make para ejecutar el Makefile
-Copiamos el programa creado en la carpeta CDE, y le cambiamos los permisos: chmod u+x prueba.sh
-Ahora simplemente ejecutamos ./cde ./prueba.sh
+
+Instalamos entrando en el directorio y con el comando make para ejecutar el Makefile.
+
+Copiamos el programa creado en la carpeta CDE, y le cambiamos los permisos: chmod u+x prueba.sh.
+
+Ahora simplemente ejecutamos ./cde ./prueba.sh.
+
 Y se nos crea el CDE en mi caso en: cde-package/cde-root/home/juanaco/CDE/prueba.sh.cde el archivo, junto a todo el cde-package. Este podemos comprimirlo y llevarlo a otros sistemas.
 
-<img src"http://imageshack.com/a/img537/4091/NN0CGy.png"></img>
+<img src="http://i58.tinypic.com/2w7fznb.png"></img>
 
 ###Ejercicio 4:
 
-1. Poniendo en consola docker nos sale la lista de comandos que podemos utlizar.
-2. Para buscar en el docker hub utilizamos el comando: docker search <palabra a buscar>
-3. El contenedor de imagenes pueden ser descargados usando por ejemplo para descargar la imagen de ubuntu: docker pull ubuntu
-4.
+Tutorial realizado completamente:
+
+<img src="http://i59.tinypic.com/2vvswsn.jpg"></img>
+
+Aqui el tutorial finalizado:
+
+<img src="http://i61.tinypic.com/1jm42x.png"></img>
+
 
 
 ###Ejercicio 5:
@@ -138,6 +146,7 @@ La segunda parte para realizar los cambios lo hacemos como siempre:
 7. Hacemos el: git commit -am "Cambio de README.md".
 8. Hacemos el push: git push.
 
+###Ejercicio 7:
 
 
 
