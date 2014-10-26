@@ -1,6 +1,6 @@
-<h2>Prácticas sesión 1</h2>
+# Prácticas sesión 1
 
-<h4>Ejercicio 1</h4>
+## Ejercicio 1
 
 El equipo que he elegido para calcular su amortización es el siguiente, y su página web se puede consultar pinchando <a href=http://www.dynos.es/servidor-hp-proliant-ml350e-g8-xeon-e5-2403-1.8-ghz-2gb-500gb-disco-duro-hdd-3.5-matrox-g200-887111422361__470065-695.html:>aquí</a>
 
@@ -13,11 +13,11 @@ Primero habrá que calcular el precio de la máquina sin el iva:
 
 Ahora con ese precio calculo las amortizaciones.
 
-<strong>Para cuatro años</strong>
+**Para cuatro años**
 
 Cada año le aplico el 25%, por lo tanto cada año se amortiza 199.17 €
 
-<strong>Para siete años</strong>
+**Para siete años**
 
 Año 1 - 20% - 159.33<br>
 Año 2 - 20% - 159.33<br>
@@ -28,7 +28,7 @@ Año 6 - 10% - 47.80<br>
 Año 7 - 10% - 47.80<br><br>
 
 
-<h4>Ejercicio 2</h4>
+## Ejercicio 2
 
 En este ejercicio, comparo los precios de servicios de alojamiento en Internet y de proveedores de servicios en la nube.
 
@@ -47,26 +47,26 @@ Para el servicio de Amazon EC2, seria (0,041€ * 24h * 30 días * 12 meses) * 1
 Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se realiza mensualmente: 12€/mes * 12 meses = 144€/año.<br><br>
 
 
-<h4>Ejercicio 3</h4>
+## Ejercicio 3
 
 Parte 1: [Mi comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-59239961)
 
 
-<h4>Ejercicio 4</h4>
+## Ejercicio 4
 
 En la siguiente captura, muestro el final del tutorial despues de haberlo completado:
 
 ![1](http://fotos.subefotos.com/0029a057e1f60509746b245257751ff9o.png)
 
 
-<h4>Ejercicio 5</h4>
+## Ejercicio 5
 
 En la siguiente foto muestro como ya tengo instalado git, y en su versión mas reciente.
 
 ![2](http://fotos.subefotos.com/af847187f58a79b87f61633d42991fcao.png)
 
 
-<h4>Ejercicio 10</h4>
+## Ejercicio 10
 
 Para comprobarlo ejecuto el siguiente comando:
 egrep '^flags.*(vmx|svm)' /proc/cpuinfo, cuya salida se muestra en la siguiente captura:
@@ -78,7 +78,7 @@ Para consultar el modelo del procesador accedemos a la información de /proc/cpu
 ![4](http://fotos.subefotos.com/00c4d661a26fe4de3e89147946e6e941o.png)
 
 
-<h4>Ejercicio 11</h4>
+## Ejercicio 11
 
 Previamente instalo cpu-checker, y una vez instalado, con el comando kvm-ok compruebo que el núcleo KVM está en mi máquina. En la siguiente captura se puede observar que efectivamente está instalado:
 
