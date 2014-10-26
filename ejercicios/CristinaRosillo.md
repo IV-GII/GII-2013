@@ -38,4 +38,40 @@ Vamos a realizar comparaciones según el porcentaje de uso :
   - Servidor Dedicado: 2439,6€/año (203,3€ * 12, Pago fijo al mes).
   - Cloud Server: 402,96€/año (8760horas/año * 0.46€/h = 4029,6€ aproximadamente).
    
-    
+
+
+#Ejercicio 3
+
+*Parte 2:
+ 
+Se ha realizado un pequeño programa en python que suma dos valores introducidos por teclado.
+
+Una vez creado, hemos instalado el paquete CDE, con la siguiente instrucción:
+	> sudo apt-get install cde
+
+A continuación hemos dado permisos de ejecución (chmod +x suma.py) al programa.
+
+Por último hemos ejecutado una serie de comandos para realizar el empaquetado en CDE.
+Hemos realizado una copia del fichero suma.py en los siguientes directorios:
+	- /usr/games
+	- /usr/bin
+
+Una vez tenemos la copia en ese directorio ejecutamos:
+	> cde suma.py
+
+Se ejecutará y a continuación realizaremos un ls, para ver como se han creado en nuestro directorio una serie de ficheros y una carpeta. Accederemos a la carpeta "cde-packages" y ejecutaremos otro ls.
+
+Nos saldrán un listado de los archivos que se han creado al ejecutar la orden cde anterior.
+
+Comprobamos que ejecutando el fichero (./suma.py.cde) el programa se ejecuta correctamente.
+
+
+
+#Ejercicio 4
+
+Vamos a realizar el tutorial de docker que se encuentra en el siguiente enlace [*Tutorial*](https://www.docker.com/tryit/)
+
+
+
+
+
