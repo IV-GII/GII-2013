@@ -83,3 +83,9 @@ Para realizar este ejercicio he usado el [Manual CDE](http://linuxzone.es/2012/0
 ![EJ3_CDE2.png](./capturas/t1/EJ3_CDE2.png)
 
 
+Ejercicio 4
+-----------
+
+**Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**
+
+![EJ4Docker1.png](./capturas/t1/EJ4Docker1.png)
