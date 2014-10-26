@@ -49,7 +49,7 @@ Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se rea
 
 <h4>Ejercicio 3</h4>
 
-Parte 1: [Mi comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-59239961)
+Parte 1: [Mi comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-59239961)<br>
 
 
 <h4>Ejercicio 4</h4>
@@ -64,6 +64,15 @@ En la siguiente foto muestro como ya tengo instalado git, y en su versión mas r
 ![2](http://fotos.subefotos.com/af847187f58a79b87f61633d42991fcao.png)
 
 
+<h4>Ejercicio 10</h4>
 
+Para comprobarlo ejecuto el siguiente comando:
+egrep '^flags.*(vmx|svm)' /proc/cpuinfo, cuya salida se muestra en la siguiente captura:
+
+![3](http://fotos.subefotos.com/8b68f45c82ade1dc0057fb70d3a6a679o.png)
+
+Para consultar el modelo del procesador accedemos a la información de /proc/cpuinfo:
+
+![4](http://fotos.subefotos.com/00c4d661a26fe4de3e89147946e6e941o.png)
 
 
