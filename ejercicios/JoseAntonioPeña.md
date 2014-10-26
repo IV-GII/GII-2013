@@ -64,10 +64,10 @@ Como se puede observar en ambos casos nos resultaría más económico la contrat
 ###Ejercicio 3
 En este ejercicio he creado un pequeño programa en python.
 
-![Script python](http://imgur.com/ZeKD33l)
+![Script python](http://i.imgur.com/ZeKD33l.png)
 
 Ahora descargamos el paquete CDE:
-![Instalacion](http://imgur.com/TUbQjdn)
+![Instalacion](http://i.imgur.com/TUbQjdn.png)
 
 Ya tenemos instalado el paquete CDE, una vez hecho esto he hecho el portable para poder ejecutarlo en otra instalación de linux.
 
