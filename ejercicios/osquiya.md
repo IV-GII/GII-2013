@@ -9,10 +9,10 @@ Ejemplo de un servidor:Dell PowerEdge T110 II
 
 [Página del servidor](http://www.dell.com/es/empresas/p/poweredge-t110-2/fs)
 
-Para el servidor escogido de 699 con una amortización del 26% a 10 años, sería:
+Para el servidor escogido de 699 euros con una amortización del 26% a 10 años, sería:
 
-* Amortización a 4 años: 72,696
-* Amortización a 7 años: 127,218
+* Amortización a 4 años: 72,696 euros
+* Amortización a 7 años: 127,218 euros
 
 **Ejercicio 2.
 Usando las tablas de precios de servicios de alojamiento en Internet y de 
@@ -57,7 +57,17 @@ VPS Hostinger cobra por meses, independientemente de cuanto uses el servicio.
 -Para crear un sistema eficiente de web + middleware + base de datos: utilizaría la virtualización plena ya que permite adaptar todos los aspectos del ordenador para utilizar programas y sistemas operativos sin necesidad de hacer cambios, lo que permite que sea eficiente.
 -Para un sistema de prueba de software e integración continua: utilizaría una virtualización de entornos de desarrollo, ya que esta pensada para proporcionarnos un entorno de pruebas y producción para desarrollar nuestros programas de forma más fácil y sencilla dado que incluye versiones y librerías utilizadas para ese entorno.
 
-2-
+2-Para instalar CDE seguimos los pasos de la [página oficial](http://www.pgbovine.net/cde.html)
+-clonamos el repositorio.
+-accedemos a la carpeta 
+-ejecutamos el make
+
+Una vez instalado, desde la carpeta de CDE ejecutamos: 
+
+- ./cde aplicación (antes hay que darle permisos de ejcución con chmod u+x a la aplicacion)
+
+ y se crearán los sub-directorios para poder ejecutar la aplicación en cualquier distribución linux. Lo último que hay que hacer
+es empaquetar el sub-directorio creado en la anterior sentencia.
 
 **Ejercicio 4.
 Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.Avanzado= Instalarlo y crear una aplicación contenedorizada**
@@ -69,15 +79,15 @@ Primero hemos instalado la versión de windows que nos proporciona docker, una v
 
 Una vez instalado nos abrirá una imagen del terminal BOOT2DOCKER,y procederemos a descargar la imagen del tutorial con un " docker pull learn/tutorial " y procedemos a comprobar que funciona escribiendo un simple hello world:
 
-------imagen 1
+[Pantallazo](http://i.imgur.com/KRrL1QC.jpg)
 
 una vez hecho esto procedemos a instalar nano en la imagen descargada y guardamos los cambios con el nombre de prueba:
 
--------imagen 2
+[Pantallazo](http://i.imgur.com/JPsM0Xr.png)
 
 podemos comprobar que funciona al ejecutar el comando " docker run -i -t prueba nano "
 
--------- imagen 3
+[Pantallazo](http://i.imgur.com/F064Rfw.png)
 
 **Ejercicio 5.
 Instala el sistema de gestión de fuentes git**
@@ -89,11 +99,11 @@ Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de in
 
 He creado un proyecto llamado ejercicios con su respectivo README.md, he realizado la clonacion con el comando git clone y accediendo al directorio ejercicios lo he modificado. Solamente queda realizar un commit y el push respectivo como se verá en la imagen.
 
-----------------imagen 1
+[Pantallazo](http://i.imgur.com/jzc2Ywp.png)
 
 Y aquí se ve la actualización:
 
-----------------imagen 2
+[Pantallazo](http://i.imgur.com/BKvXOY0.png)
 
 **Ejercicio 7.
 Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
@@ -101,7 +111,7 @@ Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto es
  En ubuntu 12.04 no esta montado por defecto puesto que estaba vacío cuando lo he mirado con el comando ls asique me he dispuesto a montarlo con la orden " sudo mount -t cgroup cgroup /sys/fs/cgroup/ ".
 Comprobandolo de nuevo podemos ver que ya si hay contenido:
 
------ imagen
+[Pantallazo](http://i.imgur.com/1Ab2ak2.png)
 
 En la imagen podemos ver los diferentes archivos con la información de los diferentes recursos del sistema.
 
@@ -116,17 +126,24 @@ grupo1 -> firefox
 grupo2 -> gedit
 grupo3 -> calculadora
 
----------imagen1
+[Pantallazo](http://i.imgur.com/EKBLbuJ.png)
 
 Por último solo queda comparar los tiempos que se muestran en los archivos cpuacct.usage de cada grupo con lo que nos queda:
 
-------imagen2
+[Pantallazo](http://i.imgur.com/VmKfk24.png)
 
 
-PENDIENTEEEEEE
-2.
+2.Usando la calculadora que indico en el siguiente [enlace](http://www.pcsilencioso.com/recursos/bdd/73-alimentacion/45-gasto-electricidad) hemos hecho calculado los gastos de un ordenador con las características que se muestran [aquí](http://i.imgur.com/CKDZwbm.png)
 
+Si el ordenador vale 699 euros:
+* A los 7 años el consumo es: 7 años*12meses*7'88 euros/mes=661,92 euros que añadidos al precio del ordenador hace un total de 1360,92 euros
 
+Aplicando los ratios del ejercicio 1, obtenemos
+
+* Amortización a 4 años: 141,54 euros
+* Amortización a 7 años: 247,69 euros
+
+Esta es la amortización con el coste eléctrico añadido.
 
 **Ejercicio 9.
 1.Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
@@ -143,7 +160,7 @@ Mi procesador es Intel(R) Core(TM) i7-4702MQ CPU @ 2.20GHz y al ejecutar la orde
 **Ejercicio 11.
 Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
 
--------------imagen
+[Pantallazo](http://i.imgur.com/PHLWMGk.png)
 
 COmo se puede observar en la imagen no esta habilitado dicho modulo, lo que es comprensible ya que en la virtualbox no esta habilitada la aceleración por hardware.
 
