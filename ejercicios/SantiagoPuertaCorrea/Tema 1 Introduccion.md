@@ -4,6 +4,7 @@ Introducción a la infraestructura virtual: concepto y soporte físico
 
 Ejercicio 1
 -----------
+
 **Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años. Consultar artículo en Infoautónomos sobre el tema.**
 
 
@@ -52,5 +53,33 @@ Voy a comparar un servidor en nube con un VPS, para ello, he elegido como VPS [G
 
 - Con Amazon EC2 pagaría (0.0409658487 €/h * 24 h * 30 dias * 12 meses) * 0.1 = 35.3 €
 
+
+Ejercicio 3
+-----------
+
+**1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro**
+
+Comentario en el foro: [https://github.com/JJ/GII-2014/issues/71#issuecomment-60533869](https://github.com/JJ/GII-2014/issues/71#issuecomment-60533869)
+
+- Para alojar a varios clientes en un sólo servidor, creo que lo más adecuado es la virtualización a nivel de sistema operativo, porque solo el administrador administraría el sistema evitando a los usuarios esa tarea.
+
+- Para crear un sistema eficiente de web + middleware + base de datos, creo que lo correcto sería una virtualización plena, puesto que con ella tendríamos todos los aspectos de un ordenador para poder ejecutar otros programas sin modificar.
+
+- Para un sistema de prueba de software e integración continua, claramente usaría la virtualización de entornos de desarrollo, ya que se reproduciría el entorno de producción de la forma más real.
+
+
+**2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
+
+Para realizar este ejercicio he usado el [Manual CDE](http://linuxzone.es/2012/06/04/creando-aplicaciones-portables-en-gnulinux/).
+
+* Descargo el binario de CDE.
+* Cambio permisos. `chmod u+x cde_2011-08-15_64bit`
+* Tras esto genero un ejecutable Hola mundo escrito en c++.
+
+![EJ3_CDE1.png](./capturas/t1/EJ3_CDE1.png)
+
+* Comprimo la carpeta cde-package generada con CDE y la copio a una máquina con Ubuntu y lo pruebo.
+
+![EJ3_CDE2.png](./capturas/t1/EJ3_CDE2.png)
 
 
