@@ -136,12 +136,6 @@ Dado que no existía dicho sistema de ficheros, he procedido a montarlo para pod
 
 Lo que podemos ver son archivos de soporte a grupos de tareas en el Kernel de Linux, que permiten controlar y monitorizar la actividad de los diferentes grupos de control.
 
-##Ejercicio 8
-
-
-##Ejercicio 9
-
-
 ##Ejercicio 10
 
 **Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
