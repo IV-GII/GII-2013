@@ -54,6 +54,8 @@ Parte 1: [Mi comentario en el foro](https://github.com/JJ/GII-2014/issues/71#iss
 
 <h4>Ejercicio 4</h4>
 
+En la siguiente captura, muestro el final del tutorial despues de haberlo completado:
+
 ![1](http://fotos.subefotos.com/0029a057e1f60509746b245257751ff9o.png)
 
 
