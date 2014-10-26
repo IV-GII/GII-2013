@@ -72,14 +72,13 @@ Ahora descargamos el paquete CDE:
 Ya tenemos instalado el paquete CDE, una vez hecho esto he hecho el portable para poder ejecutarlo en otra instalación de linux.
 
 ###Ejercicio 4
-Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
-
-Avanzado Instalarlo y crear una aplicación contenedorizada
+Tutorial realizado.
+![Tutorial](http://i.imgur.com/FQL5JDe.png)
 
 
 ###Ejercicio 5
-Instala el sistema de gestión de fuentes git
-
+Para instalar el sistema de gestión de fuentes tenemos que escribir en la linea de ordenes lo siguiente:
+apt-get install -y git
 
 ###Ejercicio 6
 Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.
