@@ -64,14 +64,12 @@ Como se puede observar en ambos casos nos resultaría más económico la contrat
 ###Ejercicio 3
 En este ejercicio he creado un pequeño programa en python.
 
-![Script python](http://i.imgur.com/MUxjpgy.png)
+![Script python](http://imgur.com/ZeKD33l)
 
-He descargado he instalado el paquete CDE, una vez hecho esto he hecho el portable para poder ejecutarlo en otra instalación de linux.
+Ahora descargamos el paquete CDE:
+![Instalacion](http://imgur.com/TUbQjdn)
 
-![ejecución del script python](http://i.imgur.com/WwKNRdk.png)
-
-Como podemos ver en la captura, el programa funciona correctamente.
-
+Ya tenemos instalado el paquete CDE, una vez hecho esto he hecho el portable para poder ejecutarlo en otra instalación de linux.
 
 ###Ejercicio 4
 Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.
