@@ -52,6 +52,18 @@ Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se rea
 Parte 1: [Mi comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-59239961)
 
 
+<h4>Ejercicio 4</h4>
+
+![1](http://fotos.subefotos.com/0029a057e1f60509746b245257751ff9o.png)
+
+
+<h4>Ejercicio 5</h4>
+
+En la siguiente foto muestro como ya tengo instalado git, y en su versión mas reciente.
+
+![2](http://fotos.subefotos.com/af847187f58a79b87f61633d42991fcao.png)
+
+
 
 
 
