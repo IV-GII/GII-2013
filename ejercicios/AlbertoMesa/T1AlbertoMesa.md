@@ -65,8 +65,7 @@ Dimension Data: 0,06072 euros/hora. * 876 horas = 53,19072 euros.<br />
 
 ###Ejercicio 3
 3.1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro.
-
-### RECORDATORIO: Poner comentarios en el foro. ###
+Comentario añadido al foro.
 
 3.2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.
 
