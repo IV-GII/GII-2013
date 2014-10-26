@@ -67,7 +67,8 @@ La diferencia radica en las características que ofrecen cada una de las empresa
 <br />**Ejercicio 7:** <br />
 **Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**<br />
 -La instalación esta hecha y se ha montado en /sys/fs/cgroup<br />
--Actualmente no contiene nada
+-Lo que contiene es:<br />
+![imagen Ej_7](http://imageshack.com/a/img661/4265/QVSZsN.png)
 
 <hr />
 
@@ -86,9 +87,13 @@ La diferencia radica en las características que ofrecen cada una de las empresa
 
 **Ejercicio 10:**<br />
 **Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**<br />
+Al trabajar desde una máquina virtual la orden egrep '^flags.*(vmx|svm)' /proc/cpuinfo no funciona. El archivo cpuinfo es el siguiente: <br /> 
+![imagen Ej_10](http://imageshack.com/a/img910/3717/q2bvds.png)
 
 **Ejercicio 11:**<br />
 **Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**<br />
+![imagen Ej_11](http://imageshack.com/a/img674/6798/6sq8cp.png)
 
 **Ejercicio 12:**<br />
 **Comentar diferentes soluciones de Software as a Service de uso habitual**<br />
+Foro: [Contestación](https://github.com/JJ/GII-2014/issues/72 "Contestación")
