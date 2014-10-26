@@ -49,7 +49,7 @@ Para el servicio de arsys, siempre se pagará lo mismo puesto que el pago se rea
 
 <h4>Ejercicio 3</h4>
 
-Parte 1: [Mi comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-59239961)<br>
+Parte 1: [Mi comentario en el foro](https://github.com/JJ/GII-2014/issues/71#issuecomment-59239961)
 
 
 <h4>Ejercicio 4</h4>
@@ -75,4 +75,10 @@ Para consultar el modelo del procesador accedemos a la información de /proc/cpu
 
 ![4](http://fotos.subefotos.com/00c4d661a26fe4de3e89147946e6e941o.png)
 
+
+<h4>Ejercicio 11</h4>
+
+Previamente instalo cpu-checker, y una vez instalado, con el comando kvm-ok compruebo que el núcleo KVM está en mi máquina. En la siguiente captura se puede observar que efectivamente está instalado:
+
+![5](http://fotos.subefotos.com/4998074add857be744e96e033c769477o.png)
 
