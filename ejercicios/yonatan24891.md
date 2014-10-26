@@ -99,3 +99,22 @@ Modificamos el readme y para subirlo:
 ###Ejercicio 7###
 
 Está montado en /sys/fs/cgroup y contiene una carpeta, systemd que a su vez contiene los archivos cgroup.
+
+###Ejercicio 10###
+
+Mi procesador es un Intel Core2Duo 3.0 Ghz
+
+"Imagen"
+
+Se ve el flag vmx y el smd no al ser un intel y no amd
+
+###Ejercicio11###
+Despues de instalar el paquete cpu-checker y ejecutar la orden con sudo:
+
+"Imagen"
+
+Si lo contiene
+
+###Ejercicio12###
+
+* [X] Comentar diferentes soluciones de Software as a Service de uso habitual
