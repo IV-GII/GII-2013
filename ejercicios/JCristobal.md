@@ -449,6 +449,10 @@ Consultado en el [foro de Heroku](https://blog.heroku.com/archives/2014/5/21/int
 ##Ejercicio 7
 ###Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
 
-http://en.wikipedia.org/wiki/Test_Anything_Protocol#Usage_examples
+Un entorno de pruebas para node.js podría ser [Express.js](http://expressjs.com/).
+
+En este [blog](http://blog.solucionex.com/javascript/expressjs-un-framework-para-nodejs) habla sobre él, explica como instalarlo y a darle algunos usos.
+
+
 
 

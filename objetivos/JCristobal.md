@@ -71,8 +71,8 @@
 
 ##Objetivos de sesión 10
 
-* [] Consolidar el uso de PaaS/SaaS
-* [] Entender los sistemas de automatización de la construcción de aplicaciones
+* [x] Consolidar el uso de PaaS/SaaS
+* [x] Entender los sistemas de automatización de la construcción de aplicaciones
 
 * [x] Último día de entrega de la primera práctica.
 
