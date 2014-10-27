@@ -130,7 +130,19 @@ Una vez hecho, haremos un ls para ver su contenido.
 
 
 
-#Ejercicio 8
+#Ejercicio 10
+
+Si tiene instalados los flags, podemos comprobarlo ejecutando la siguiente orden:
+
+	> egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+
+El procesador del equipo es:
+
+![Ejercicio_10_1](http://i.imgur.com/YXYxnHg.png)
+
+La salida que produce la ejecución de la primera orden es la siguiente.
+
+![Ejercicio_10_2](http://i.imgur.com/W8XzkM3.png)
 
 
 
