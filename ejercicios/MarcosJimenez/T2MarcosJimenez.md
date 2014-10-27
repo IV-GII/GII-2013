@@ -43,3 +43,5 @@ Como comentamos anteriormente, el script manda un correo al usuario que se encue
 <strong> EJERCICIO 6: Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.</strong>
 
 <strong> EJERCICIO 7: Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.</strong>
+
+Por ejemplo, para Java, podemos usar <a href=http://jmeter.apache.org/>JMeter</a>.
