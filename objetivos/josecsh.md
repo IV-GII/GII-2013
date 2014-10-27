@@ -128,3 +128,18 @@
 * [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 * [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
 * [] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
+
+
+#Clase del 27 de octubre de 2014
+
+##Objetivos de esta sesión
+
+* [] Consolidar el uso de PaaS/SaaS
+* [] Entender los sistemas de automatización de la construcción de aplicaciones
+
+##Otros objetivos
+
+* [X] Último día de entrega de la primera práctica. 
+* [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request *directamente a su copia del repositorio*, no al repositorio principal de la asignatura. 
+* [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
