@@ -95,3 +95,86 @@ git push
 
 
 ###Ejercicio 7
+A)
+Hacemos un ls en el directorio donde la hemos montado para ver que la instalación ha funcionado:
+![cgroup](http://i.imgur.com/acCjsZI.png).
+
+###Ejercicio 8
+
+Instalamos el paquete cgroup-bin porque es mas facil trabajar con el 
+![cgroup-bin](http://i.imgur.com/FS4HtTD.png)
+
+Creamos un grupo que contenga los subgrupos que nos pide el ejercicio haciendo sudo cgcreate -a josepv -g memory,cpu,cpuacct:ejercicio7
+
+Este grupo se encarga de controlar la memoria, CPU y de contabilizar el uso de recursos de CPU y da permiso al usuario josepv para que trabaje con el.
+
+Creado el grupo, vamos a crear varios subgrupos: uno encargado de ejecutar el navegador, otro de ejecutar el procesador de textos y otro de ejecutar el cliente de correo electrónico Mozilla Thunderbird.
+
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/navegador
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/editor
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/correo
+
+Con cgexec asignamos los procesos de cada subgrupo.
+
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/correo thunderbird
+
+Para comparar el uso de recursos visualizamos los resultados en:
+
+    /sys/fs/cgroup/(memory|cpu|cpuacct)/ejercicio7/(navegador|editor|correo)
+
+Resultados para el navegador:
+
+    - cpuacct.usage --> 2943724935
+    - cpuacct.stat:
+           user 244
+           system 38
+    - cpuacct.usage_percpu --> 422363850 1046168504 1273224787 205078078 
+    - memory.max_usage_in_bytes --> 327741440
+
+Resultado para el editor:
+
+    - cpuacct.usage --> 2345308237
+    - cpuacct.stat:
+           user 201
+           system 21
+    - cpuacct.usage_percpu --> 747258934 1008912121 407984020 181153162 
+    - memory.max_usage_in_bytes --> 153321472
+    
+Resultados para el correo:
+
+    - cpuacct.usage --> 0
+    - cpuacct.stat:
+          user 0
+          system 0
+    - cpuacct.usage_percpu --> 0 0 0 0
+    - memory.max_usage_in_bytes --> 0
+
+B)
+ 
+He localizado una página web que explica muy bien el consúmo eléctrico de un ordenador aproximado que tiene durante un sin desconectarlo de la corriente,
+
+En primer lugar hay que [LeanTricity](http://www.leantricity.es/es/2012/07/11/cuanta-energia-gasta-un-ordenador-aproximaciones/)
+Basandome en estos valores de la página paso a realizar el calculo de costes de amortización.
+
+Coste eléctrico por año:
+
+    365 días x (0,437 kWh + 0,1524 kWh) = 215 kWh (Aproximación)
+    
+    0,20 € * 215 kWh = 43€/año (Anual)
+
+La vida media de un PC esta rondando los 5 años y suponiendo un precio de 1000€.
+
+Amortización:
+
+     Año 2014: 120€ + 43€ = 143€
+     Año 2015: 200€ + 43€ = 243€
+     Año 2016: 200€ + 43€ = 243€
+     Año 2017: 200€ + 43€ = 243€
+     Año 2018: 200€ + 43€ = 243€
+     Año 2019: 57€ + 43€ =  100€
+     
+     Precio total: 1215€
+
+  
