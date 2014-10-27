@@ -236,7 +236,10 @@ Contestada en el foro.
 
 ## Ejercicio 1
 
-POR REALIZAR
+sudo apt-get install python-setuptools
+sudo easy_install pip
+sudo pip install virtualenv
+virtualenv prueba
 
 ## Ejercicio 2
 
