@@ -89,3 +89,19 @@ Ejercicio 4
 **Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**
 
 ![EJ4Docker1.png](./capturas/t1/EJ4Docker1.png)
+
+**Avanzado Instalarlo y crear una aplicación contenedorizada**
+
+Para instalar docker he seguido el siguiente manual: [Manual de instalación de Docker para fedora](https://docs.docker.com/installation/fedora/).
+
+* `sudo yum -y install docker-io`
+![EJ41Docker1.png](./capturas/t1/EJ41Docker1.png)
+
+* `sudo systemctl start docker`
+
+* `sudo systemctl enable docker`
+
+* `sudo docker run -i -t fedora /bin/bash`
+
+* Añadir el usuario `usermod -a -G docker administrador`
+
