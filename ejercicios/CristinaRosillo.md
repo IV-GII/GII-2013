@@ -117,6 +117,21 @@ comandos y actualizandolo.
 ![Ejercicio_6_5](http://i.imgur.com/m5EWt99.png)
 
 
+#Ejercicio 7
+
+Para verificar si está montado, comprobaremos que el directorio /sys/fs/cgroup
+no esté vacío. Si lo está como en mi caso tendremos que montarlo ejecutando lo siguente:
+
+	>sudo mount -t cgroup cgroup /sys/fs/cgroup
+	
+Una vez hecho, haremos un ls para ver su contenido.
+
+![Ejercicio_7](http://i.imgur.com/945l6hG.png)
+
+
+
+#Ejercicio 8
+
 
 
 
