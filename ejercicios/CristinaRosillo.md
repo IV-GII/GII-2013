@@ -42,7 +42,7 @@ Vamos a realizar comparaciones según el porcentaje de uso :
 
 #Ejercicio 3
 
-*Parte 2:
+- Parte 2:
  
 Se ha realizado un pequeño programa en python que suma dos valores introducidos por teclado.
 
@@ -71,7 +71,7 @@ Comprobamos que ejecutando el fichero (./suma.py.cde) el programa se ejecuta cor
 
 Vamos a realizar el tutorial de docker que se encuentra en el siguiente enlace [*Tutorial*](https://www.docker.com/tryit/)
 
-
+![Ejercicio_4](http://i.imgur.com/1I2UHzW.png)
 
 
 
