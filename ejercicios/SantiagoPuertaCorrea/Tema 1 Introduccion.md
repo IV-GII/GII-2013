@@ -76,6 +76,20 @@ Para realizar este ejercicio he usado el [Manual CDE](http://linuxzone.es/2012/0
 * Cambio permisos. `chmod u+x cde_2011-08-15_64bit`
 * Tras esto genero un ejecutable Hola mundo escrito en c++.
 
+```c++
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    cout << "Hola Mundo" << endl;
+
+    return 0;
+
+}
+```
+
 ![EJ3_CDE1.png](./capturas/t1/EJ3_CDE1.png)
 
 * Comprimo la carpeta cde-package generada con CDE y la copio a una máquina con Ubuntu y lo pruebo.
@@ -94,14 +108,31 @@ Ejercicio 4
 
 Para instalar docker he seguido el siguiente manual: [Manual de instalación de Docker para fedora](https://docs.docker.com/installation/fedora/).
 
-* `sudo yum -y install docker-io`
+```shell
+# Instalar docker
+sudo yum -y install docker-io
+
+# Iniciar docker
+sudo systemctl start docker
+
+# Encender el servicio
+sudo systemctl enable docker
+
+# Probar docker
+sudo docker run -i -t fedora /bin/bash
+
+# Añadir usuario al grupo
+usermod -a -G docker administrador
+```
+
 ![EJ41Docker1.png](./capturas/t1/EJ41Docker1.png)
 
-* `sudo systemctl start docker`
 
-* `sudo systemctl enable docker`
+Ejercicio 5
+-----------
 
-* `sudo docker run -i -t fedora /bin/bash`
+**Instala el sistema de gestión de fuentes git**
 
-* Añadir el usuario `usermod -a -G docker administrador`
-
+```shell
+sudo yum install git
+```
