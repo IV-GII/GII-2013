@@ -1,5 +1,21 @@
 #Lista de objetivos de Juan Antonio Marin Sanchez
 
+##27-oct-2014
+
+
+   [] Consolidar el uso de PaaS/SaaS.
+
+   [] Entender los sistemas de automatización de la construcción de aplicaciones.
+
+   [] Último día de entrega de la primera práctica.
+
+   [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
+
+   [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+
+   [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+
+
 ##21-oct-2014
 
    [X] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones.

@@ -1,5 +1,7 @@
 #Ejercicios de Juan Antonio Marin
 
+##Tema 1:
+
 ###Ejercicio 1:
 Busco un servidor para hacer la amortización a 4 y 7 años:
 
@@ -297,6 +299,42 @@ Captura de todo el proceso:
 Comentar en el foro:
 
 <img src="http://i61.tinypic.com/2efq2h5.png"></img>
+
+
+##Tema 2:
+
+###Ejercicio 1
+
+Este procedimiento lo utilizé el año pasado en DAI para trabajar en la asignatura:
+
+Primero instalamos el aptitude para instalar el virtual env:
+
+````
+sudo apt-get install aptitude
+sudo aptitude install libc6-dev python-dev python-virtualenv
+````
+
+Ahora vamos a crear el entorno virtual para python:
+
+````
+mkdir ./virtualenv
+virtualenv --python=/usr/bin/python2.7 python2.7
+````
+
+Ya solo nos queda activarlo
+
+´´´´
+source ./python2.7/bin/activate
+´´´´
+
+Comprobamos que funciona haciendo por ejemplo un echo 'Hola'
+
+
+<img src="http://i60.tinypic.com/1e6xbp.png"></img>
+
+###Ejercicio 2
+
+
 
 
 
