@@ -274,6 +274,9 @@ Para python existe Paver, http://paver.github.io/paver/
 
 ## Ejercicio 6
 
+En Heroku se usa /apps/:app/builds
+
+https://blog.heroku.com/archives/2014/5/21/introducing_programmatic_builds_on_heroku
 
 ## Ejercicio 7
 
