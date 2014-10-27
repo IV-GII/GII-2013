@@ -136,3 +136,21 @@ Ejercicio 5
 ```shell
 sudo yum install git
 ```
+
+
+Ejercicio 6
+-----------
+
+**1. Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
+
+* Ya tengo varios proyectos en github, voy a usar [https://github.com/santiagopuerta/Blog](https://github.com/santiagopuerta/Blog)
+* Lo clono `git clone https://github.com/santiagopuerta/Blog`
+
+![EJ61.png](./capturas/t1/EJ61.png)
+
+
+**2. Modificar el readme y subir el fichero modificado.**
+
+![EJ62.png](./capturas/t1/EJ62.png)
+
+
