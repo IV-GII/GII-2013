@@ -27,6 +27,8 @@ Para amortizarlo en siete años, usando una amortización de forma lineal, anota
 - La amortización lineal 706,45 Euros / 7 Años = **100,90 Euros a amortizar.**
 
 
+-----
+
 Ejercicio 2
 -----------
 
@@ -53,6 +55,8 @@ Voy a comparar un servidor en nube con un VPS, para ello, he elegido como VPS [G
 
 - Con Amazon EC2 pagaría (0.0409658487 €/h * 24 h * 30 dias * 12 meses) * 0.1 = 35.3 €
 
+
+-----
 
 Ejercicio 3
 -----------
@@ -97,6 +101,8 @@ int main() {
 ![EJ3_CDE2.png](./capturas/t1/EJ3_CDE2.png)
 
 
+-----
+
 Ejercicio 4
 -----------
 
@@ -128,6 +134,8 @@ usermod -a -G docker administrador
 ![EJ41Docker1.png](./capturas/t1/EJ41Docker1.png)
 
 
+-----
+
 Ejercicio 5
 -----------
 
@@ -137,6 +145,8 @@ Ejercicio 5
 sudo yum install git
 ```
 
+
+-----
 
 Ejercicio 6
 -----------
@@ -152,5 +162,17 @@ Ejercicio 6
 **2. Modificar el readme y subir el fichero modificado.**
 
 ![EJ62.png](./capturas/t1/EJ62.png)
+
+
+-----
+
+Ejercicio 7
+-----------
+
+**Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene.**
+
+Como estoy usando ubuntu, ya viene montada por defecto la carpeta `/sys/fs/cgroup`.
+
+![EJ7.png](./capturas/t1/EJ7.png)
 
 
