@@ -32,6 +32,12 @@ Para comenzar a programar nuestro script nos vamos a https://script.google.com/m
 
 Se puede ver cómo se ha cambiado el nombre de la función y el nombre del archivo. Ambos se llaman "ejemploScriptGoogle" y realiza una función bastante sencilla como es mandar un correo al mismo usuario que se encuentra identificado.
 
+Para probarlo, y sin salir de la pantalla de edición del script, pulsamos sobre "Ejecutar". Cuando nos pida autorización para correr la aplicación pulsamos sobre "Continuar".
+
+Como comentamos anteriormente, el script manda un correo al usuario que se encuentra identificado en Gmail con el mensaje "Hola, mundo". Este es el resultado:
+
+<img src=http://i60.tinypic.com/2cwk1oo.png></img>
+
 <strong> EJERCICIO 5: Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.</strong>
 
 <strong> EJERCICIO 6: Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.</strong>
