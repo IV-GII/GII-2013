@@ -417,14 +417,38 @@ Después, dentro del documento, nos vamos a ese menú (Sample) y seleccionamos n
 ![imagen2](http://i.imgur.com/9Zdmuaz.png)
 
 
+##Ejercicio 5
+###Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+Algunos sistemas para la automatización de la construccion de node.js pueden ser [gulp.js](http://frontend-labs.com/1669--gulp-js-en-espanol-tutorial-basico-primeros-pasos-y-ejemplos) o [Grunt](http://www.yukei.net/2014/07/automatizar-tareas-de-traduccion-de-wordpress-con-grunt/). En mi caso usaré gulp.js.
+
+Tenemos que tener [instalado node.js](http://frontend-labs.com/232--como-instalar-nodejs-debian-linux) como único requisito.
+
+Para instalarlo ejecutamos simplemente "npm install -g gulp"
+
+Y podemos por ejemplo ver la versión: "gulp -v"
+
+
+##Ejercicio 6
+###Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma. 
+
+El fichero de automatización  de construcción de Heroku es /apps/:app/builds 
+
+El proceso que sigue es: 
+
+Un nombre de la aplicación se pasa al guión junto con una URL a un archivo comprimido que contiene el código fuente. 
+
+El script toma estas entradas y utiliza  /apps/:app/builds para crear una nueva estructura en Heroku. La API de la plataforma responde con la identificación de la nueva estructura. Pasa a estado "pendiente" y después a "construcción".
+
+Una vez que la estructura se ha completado, pasa a estado de "éxito" o "fracaso". Obtiene la salida según los resultados y se imprime en el terminal. La estructura se despliega automáticamente
+
+Consultado en el [foro de Heroku](https://blog.heroku.com/archives/2014/5/21/introducing_programmatic_builds_on_heroku).
 
 
 
+##Ejercicio 7
+###Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
 
-
-
-
-
-
+http://en.wikipedia.org/wiki/Test_Anything_Protocol#Usage_examples
 
 
