@@ -87,7 +87,7 @@ Subimos los cambios al repositorio remoto de github
 git push origin master
 ```
 
-## Ejercicio 6
+## Ejercicio 7
 
 En mi máquina uso el ubuntu 14.04, por lo que ya tengo instalado el /sys/fs/cgroup. Lo compruebo mediante la terminal, y lo muestro en la siguiente captura:
 
