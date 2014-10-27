@@ -212,6 +212,14 @@ group groupname/system {
 
 ![alt tag](http://i.imgur.com/jBmub9j.png)
 
+Para cambiar la prioridad de entrada y salida de un servidor web, tenemos que modificar el grupo en el que esta el servidor web, y editar el archivo modificando el parametro blkio.
+Ejemplo:
+group Sweb{ 
+	blkio{ 
+		blkio.weight = 140
+	} 
+}
+
 ## Ejercicio 10
 
 ![alt tag](http://i.imgur.com/a3rBVmi.png)
@@ -219,6 +227,10 @@ group groupname/system {
 ## Ejercicio 11
 
 La orden proviene del paquete cpu-checker que no se encuentra para debian por lo tanto da error.
+
+## Ejercicio 12
+
+Contestada en el foro.
 
 # Tema 2
 
