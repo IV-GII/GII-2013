@@ -234,6 +234,45 @@ Contestada en el foro.
 
 # Tema 2
 
+## Ejercicio 1
+
+POR REALIZAR
+
 ## Ejercicio 2
 
 Registrado en Heroku.
+
+## Ejercicio 3
+
+Tras registrarse en OpenShift, tenemos un menú de opciones donde podemos seleccionar wordpress. Luego podemos ajustar la configuracion de nuestro wordpress y al darle create application terminamos de crear la aplicación.
+Luego nos vamos a la pagina web que hemos escrito en el paso anterior, seleccionamos idioma, nombre de usuario y password y tendremos instalado wordpress. 
+
+https://iv-ejercicio3.rhcloud.com/
+
+## Ejercicio 4
+```
+function onOpen() {
+  // Add a menu with some items, some separators, and a sub-menu.
+  DocumentApp.getUi().createMenu('Menu de IV')
+      .addItem('Ejercicio IV', 'prueba')
+      .addToUi();
+}
+
+function prueba() {
+  var result = DocumentApp.getUi().alert(
+      'Prueba realizada con exito')
+} 
+
+```
+## Ejercicio 5
+
+Para python existe Paver, http://paver.github.io/paver/
+
+## Ejercicio 6
+
+Para python existe Nose :
+
+https://nose.readthedocs.org/en/latest/
+
+
+
