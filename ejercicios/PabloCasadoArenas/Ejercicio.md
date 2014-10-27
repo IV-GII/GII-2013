@@ -268,11 +268,19 @@ function prueba() {
 
 Para python existe Paver, http://paver.github.io/paver/
 
+
 ## Ejercicio 6
 
-Para python existe Nose :
+
+## Ejercicio 7
+
+Para python existe Nose  :
 
 https://nose.readthedocs.org/en/latest/
+
+y Tox :
+
+https://tox.readthedocs.org/en/latest/
 
 
 
