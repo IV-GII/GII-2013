@@ -25,15 +25,41 @@ Vamos a realizar una comparacion entre un servicio de alojamiento en un servidor
 *Servidor Dedicado 270/año.
 *Servidor Cloud 342€/año.
 
-#Ejercicio 3.1
+#Ejercicio 3.2
+
+Realizamos un script sencillo para realizar una [suma](http://imgur.com/R7GIvGx).Seguidamente con CDE [empaquetamos](http://imgur.com/96CUB6p) el programa y finalmente lanzamos el archivo que se nos creo en la carpeta cde-package para ver si se [ejecuta](http://imgur.com/8oreLxN) sin necesidad de tener instalado python en otra maquina.
+
+#Ejecicio 4
+
+Realizamos el tutorial para comprender el funcionamiento de [docker](http://imgur.com/9kgsvVD) en lenguaje de comandos.
+
+#Ejercicio 5
+
+Instalamos el sistema de gestion de fuentes [git](http://imgur.com/vMqcjaM).
+
+#Ejercicio 6
+
+Creamos un que lo llamaremos Practica y lo descargaremos con git teniendo en cuenta que dicho proyecto debe contener el fichero README.Seguidamente [modificaremos](http://imgur.com/qCVnsAY) el fichero README y actualizamos obteniendo del siguiente [resultado](http://imgur.com/ixOkHtU)
+
+#Ejercicio 7
+
+Comprobamos si en la instalacion se encuentra instalado [cgroups](http://imgur.com/kRI8qFa),y en caso contrario lo montaremos.Una vez realizado el paso anterior procedemos a comprobar el contenido.
+
+#Ejercicio 10
+
+Comprobamos los flags, el tipo de procesador y el resultado a la orden realizada.
+
+-¿Que modelo de procesador es?
+  model name	: Intel(R) Core(TM)2 Duo CPU     T6600  @ 2.20GHz
+
+-¿Cual es el resultado a la orden?
+  flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc arch_perfmon pebs bts rep_good aperfmperf pni dtes64 monitor ds_cpl est tm2 ssse3 cx16 xtpr pdcm sse4_1 xsave lahf_lm
+
+#Ejercicio 11
+
+Comprobamos si el modulo para kvm-ok esta instalado en nuestro sistema,obteniendo el siguiente resultado:
+
+miguel@ubuntu:~$ kvm-ok INFO: Your CPU does not support KVM extensions
+KVM acceleration can NOT be used
 
 
-
-*Alojar varios clientes:
-Utilizaria una virtualizacion a nivel de sistema operativo por el gran poder de aislamiento entre la parte anfitrion y las diferentes cuentas de cada usuario.Toda las cuenta estaran aisladas unas de otras con la particuliaridad de que la cuenta anfitrion tendran acceso a la administracion de la misma cuenta.
-
-*Para un sistema eficiente de web + middleware + base de datos:
-Utilizaria una virtualizacion plena por que necesitariamos muchos recursos y este tipo de virtualizacion nos facilita dichos recuercos para dedicalos a procesos de carga muy pesada.
-
-*Un sistema de prueba se software e integracion continua:
-Utilizaria una vitualizacion de entornos por que nos facilita reproducir entornos de la forma mas fiel posible y realizando algunos testeos sobre nuestro sistema.
