@@ -71,7 +71,7 @@ Comprobamos que ejecutando el fichero (./suma.py.cde) el programa se ejecuta cor
 
 Vamos a realizar el tutorial de docker que se encuentra en el siguiente enlace [*Tutorial*](https://www.docker.com/tryit/)
 
-![Ejercicio_4](http://i.imgur.com/1I2UHzW.png)
+![Ejercicio_4](http://i.imgur.com/1I2UHzW.png?1)
 
 
 
