@@ -75,3 +75,48 @@ Vamos a realizar el tutorial de docker que se encuentra en el siguiente enlace [
 
 
 
+#Ejercicio 5
+
+Para comenzar la instalación del sistemas de fuentes Git, lo primero que
+vamos a hacer es actualizar el listado de los paquetes.
+	
+	> sudo apt-get update
+
+A continuación instalaremos el paquete.
+	
+	> sudo apt-get install git
+	
+Por último vamos a realizar la configuración de algunos parámetros que
+servirán para identificarnos a la hora de realizar gestiones en nuestros
+repositorios. Primero configuraremos el nombre y a continuación el email.
+
+	> git config --global user.name "Cristina Rosillo"
+	> git config --global user.email "cristy.blk@gmail.com"
+	
+Si queremos comprobar el estado de todos estos valores, podemos ejecutar:
+	
+	> git config --list
+	
+![Ejercicio_5](http://i.imgur.com/O5S6Kiu.png)
+
+
+
+#Ejercicio 6
+
+Vamos a crear un proyecto nuevo y a descargarlo desde git, modificando al el fichero README desde linea de 
+comandos y actualizandolo.
+
+![Ejercicio_6_1](http://i.imgur.com/Wrq19vn.png)
+
+![Ejercicio_6_2](http://i.imgur.com/oMLMGms.png)
+
+![Ejercicio_6_3](http://i.imgur.com/mhvsWgI.png)
+
+![Ejercicio_6_4](http://i.imgur.com/5sCygPW.png)
+
+![Ejercicio_6_5](http://i.imgur.com/m5EWt99.png)
+
+
+
+
+
