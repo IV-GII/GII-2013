@@ -323,9 +323,9 @@ virtualenv --python=/usr/bin/python2.7 python2.7
 
 Ya solo nos queda activarlo
 
-´´´´
+````
 source ./python2.7/bin/activate
-´´´´
+````
 
 Comprobamos que funciona haciendo por ejemplo un echo 'Hola'
 
