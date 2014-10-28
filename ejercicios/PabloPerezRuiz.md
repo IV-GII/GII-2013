@@ -1,5 +1,7 @@
 #Ejercicios de Pablo Pérez Ruiz
 
+##1.Introducción: conceptos y soporte físico
+
 ###Ejercicio 1: 
 ####Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años.
 
@@ -547,3 +549,76 @@ Algunos ejemplos de SaaS son:
 * Mozy, en el que tienes que bajarte el software en tu terminal, aunque puedes utilizar backups en cualquier otro pc mientras recuerdes tus credenciales.
 * OneDrive Sync: el software establece que directorios necesitan ser respaldados o más bien sincronizados. Una vez ajustado, puedes olvidarte de él ya que lo sincronizará a medida que se suman a la carpeta OneDrive o medida que cambian.
 * Prey, un software que rastrea tu portátil, tablet o teléfono móvil. Guarda capturas de pantalla y otros datos en la nube. Puedes ver los datos usando cualquier pc mediante tu cuenta de Prey. Muy útil para recuperar portátiles y móviles robados.
+* 
+
+#2.Platform as a Service.
+
+
+###Ejercicio 1:
+####Instalar un entorno virtual para tu lenguaje de programación favorito.
+
+Aprovecho lo realizado en DAI el curso anterior:
+
+Instalamos aptitude para instalar virtual env. Hacemos: 
+
+sudo apt-get install aptitude
+sudo aptitude install libc6-dev python-dev python-virtualenv
+
+Para crear el entorno virtual para Python hacemos: 
+
+mkdir ./virtualenv
+virtualenv --python=/usr/bin/python2.7 python2.7
+
+Y para activarlo hacemos:
+
+source ./python2.7/bin/activate
+
+<img src="http://i59.tinypic.com/2qvgktd.png"></img>
+
+###Ejercicio 2:
+####Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
+
+Me he registrado en Heroku. 
+
+<img src="http://i62.tinypic.com/2qsbceb.png"></img>
+
+Una vez confirmamos el email, metemos los datos y aceptamos:
+
+<img src="http://i61.tinypic.com/1zgbymg.png"></img>
+
+Una vez hecho esto ya he podido acceder al Dashboard:
+
+<img src="http://i57.tinypic.com/34s2s78.png"></img>
+
+
+###Ejercicio 3:
+####Crear una aplicación en OpenShift y dentro de ella instalar WordPress. 
+
+Una vez registrado y confirmado mi email, le damos a crear nuestra primera aplicación y nos vamos con el scroll abajo a la izquierda y seleccionamos WordPress4:
+
+<img src="http://i57.tinypic.com/6fuzgn.png"></img>
+
+
+Introducimos la dirección deseada y le damos a Create Application:
+
+<img src="http://i61.tinypic.com/scdd7q.png"></img>
+
+Ya está creada:
+
+<img src="http://i57.tinypic.com/w705yv.png"></img>
+
+Una vez registrado en WordPress, lo instalamos:
+
+<img src="http://i62.tinypic.com/nf5e15.png"></img>
+
+
+###Ejercicio 4:
+####Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama. 
+
+
+
+
+
+
+
+
