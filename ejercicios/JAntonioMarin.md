@@ -353,6 +353,36 @@ Y finalmente se instala correctamente:
 <img src="http://i61.tinypic.com/2j60j1f.png"></img>
 
 
+###Ejercicio 4
+
+Primero creo el archivo dentro del google drive, como por ejemplo un Documento, ahora voy a Herramientas >> Editor de secuencia de comandos
+
+Ahora creo un pequeño script del tipo "Hola mundo" llamando a la funcion onOpen para que se ejecute al abrir:
+
+<img src="http://i59.tinypic.com/akv0vd.png"></img>
+
+Comprobamos el script actualizando el documento:
+
+<img src="http://i61.tinypic.com/20afej6.png"></img>
+
+El segundo paso es utilizar un menu para que lo ejecute:
+
+<img src="http://i60.tinypic.com/1q0t53.png"></img>
+
+<img src="http://i57.tinypic.com/j953pw.png"></img>
+
+Y comprobamos que funciona:
+
+<img src="http://i59.tinypic.com/15g5myq.png"></img>
+
+
+###Ejercicio 5
+
+
+
+
+
+
 
 
 
