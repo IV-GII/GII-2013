@@ -16,51 +16,51 @@
 # Clase del 20 de octubre de 2014
 
 ## Objetivos de la clase
-    []Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
-    []Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
-    []Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+    [X]Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
+    [X]Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
+    [X]Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
 ## Otros objetivos
-    []Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
-    []Comprender el método de entrega de las prácticas de la asignatura.
+    [X]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+    [X]Comprender el método de entrega de las prácticas de la asignatura.
 
 <hr />
 
 # Clase del 14 de octubre de 2014
 
 ## Objetivos de la clase
-    []Si todavía no se ha hecho, leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
-    []Continuar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
+    [X]Si todavía no se ha hecho, leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
+    [X]Continuar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
 
 ## Otros objetivos
     []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
     []Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-    []Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
+    [X]Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
 
 <hr />
 
 # Clase del 13 de octubre de 2014
 
 ## Objetivos de la clase
-    []Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
-    []Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
+    [X]Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
+    [X]Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
 
 ## Otros objetivos
     []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
-    []Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-    []Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
 
 <hr />
 
 # Clase del 7 de octubre de 2014
 
 ## Objetivos de la clase
-    []Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
+    [X]Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
 
 ## Otros objetivos
     []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
-    []Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-    []Contestar a la encuesta sobre la metodología de clase
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Contestar a la encuesta sobre la metodología de clase
 
 <hr />
 
