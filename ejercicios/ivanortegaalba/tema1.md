@@ -1,5 +1,4 @@
-Sesión 29 Septiembre
-======================
+
 # Practica 1
 ## Ejercicio 1
 
