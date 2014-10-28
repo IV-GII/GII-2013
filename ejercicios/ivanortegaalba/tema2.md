@@ -39,3 +39,5 @@ Podemos configurar nuestro entorno a nuestro gusto, y poder probar versiones y f
 Para la ubicación del código fuente del proyecto, no es importante.
 Puede ser colocado inclusive dentro del directorio del virtualenv.
 Una vez que el virtualenv está activado, todas las librerías de Python que instalen solo podrán ser usadas al activar ese virtualenv específico.
+
+## Ejercicio 2
