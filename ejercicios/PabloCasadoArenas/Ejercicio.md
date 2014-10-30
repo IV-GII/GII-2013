@@ -234,6 +234,59 @@ Contestada en el foro.
 
 # Tema 2
 
+## Ejercicio 1
+
+sudo apt-get install python-setuptools
+sudo easy_install pip
+sudo pip install virtualenv
+virtualenv prueba
+
 ## Ejercicio 2
 
 Registrado en Heroku.
+
+## Ejercicio 3
+
+Tras registrarse en OpenShift, tenemos un menú de opciones donde podemos seleccionar wordpress. Luego podemos ajustar la configuracion de nuestro wordpress y al darle create application terminamos de crear la aplicación.
+Luego nos vamos a la pagina web que hemos escrito en el paso anterior, seleccionamos idioma, nombre de usuario y password y tendremos instalado wordpress. 
+
+https://iv-ejercicio3.rhcloud.com/
+
+## Ejercicio 4
+```
+function onOpen() {
+  // Add a menu with some items, some separators, and a sub-menu.
+  DocumentApp.getUi().createMenu('Menu de IV')
+      .addItem('Ejercicio IV', 'prueba')
+      .addToUi();
+}
+
+function prueba() {
+  var result = DocumentApp.getUi().alert(
+      'Prueba realizada con exito')
+} 
+
+```
+## Ejercicio 5
+
+Para python existe Paver, http://paver.github.io/paver/
+
+
+## Ejercicio 6
+
+En Heroku se usa /apps/:app/builds
+
+https://blog.heroku.com/archives/2014/5/21/introducing_programmatic_builds_on_heroku
+
+## Ejercicio 7
+
+Para python existe Nose  :
+
+https://nose.readthedocs.org/en/latest/
+
+y Tox :
+
+https://tox.readthedocs.org/en/latest/
+
+
+
