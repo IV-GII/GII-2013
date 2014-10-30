@@ -1,5 +1,4 @@
-Sesión 29 Septiembre
-======================
+
 # Practica 1
 ## Ejercicio 1
 
@@ -27,7 +26,7 @@ $ cat hello-CDE.sh
 
 ````````````
 
-Damos permisos de ejecución ( ```sudo chmod +x ./hello-CDE.sh  ```)y ya tenemos listo nuestro script.
+Damos permisos de ejecución ( ``` sudo chmod +x ./hello-CDE.sh ``` )y ya tenemos listo nuestro script.
 
 Ahora vamos a instalar el cde:
 ```
