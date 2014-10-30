@@ -75,7 +75,7 @@
 * [X]  Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
 ###Otros Objetivos
-* [ ]   Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+* [X]   Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
 * [X]   Comprender el método de entrega de las prácticas de la asignatura.
 
 ##Clase del 21 de Octubre.
@@ -86,6 +86,25 @@
 ###Otros Objetivos
 * [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 * [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* [ ] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+* [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
 * [X] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
 
+##Clase del 27 de Octubre.
+* [ ] Consolidar el uso de PaaS/SaaS.
+* [ ] Entender los sistemas de automatización de la construcción de aplicaciones.
+
+###Otros Objetivos
+* [ ] Último día de entrega de la primera práctica.
+* [ ] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura
+* [ ] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [ ] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+
+##Clase del 28 de Octubre.
+* [ ] Consolidar el uso de PaaS/SaaS.
+* [ ] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones.
+* [ ] Comenzar con la segunda práctica.
+
+###Otros Objetivos
+* [ ] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
+* [ ] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [ ] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
