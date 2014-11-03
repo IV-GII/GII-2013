@@ -407,3 +407,16 @@ function hola() {
   }
 }
 ```
+
+
+
+***
+***
+
+##Sesión 27-10-2014##
+
+##Ejercicio 5##
+
+#####Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.#####
+
+Para probar uno de estos sistemas (y aprovecharlo para el trabajo de la asignatura), he instalado GruntJS. Para ello, hay que instalar "NodeJS", "NPM" y, utilizando este último, "GruntJS".
