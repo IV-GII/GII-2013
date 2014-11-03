@@ -76,5 +76,15 @@
 
 * [x] Último día de entrega de la primera práctica.
 
+##Objetivos de sesión 11
+
+* [x] Comenzar con la segunda práctica
+
+##Objetivos de sesión 12
+
+* [] Consolidar el uso de PaaS/SaaS
+* [] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+* [x] Continuar con la segunda práctica
+
 
 
