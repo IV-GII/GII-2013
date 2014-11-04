@@ -454,5 +454,20 @@ Un entorno de pruebas para node.js podría ser [Express.js](http://expressjs.com
 En este [blog](http://blog.solucionex.com/javascript/expressjs-un-framework-para-nodejs) habla sobre él, explica como instalarlo y a darle algunos usos.
 
 
+***
+***
+
+
+# Tema 3
+
+[Enlace al tema](http://jj.github.io/IV/documentos/temas/Tecnicas_de_virtualizacion)
+
+
+##Ejercicio 1
+###Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback
+
+(sin hacer todavía)
+
+
 
 
