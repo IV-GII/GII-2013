@@ -95,3 +95,163 @@ git push
 
 
 ###Ejercicio 7
+A)
+Hacemos un ls en el directorio donde la hemos montado para ver que la instalación ha funcionado:
+![cgroup](http://i.imgur.com/acCjsZI.png).
+
+###Ejercicio 8
+
+Instalamos el paquete cgroup-bin porque es mas facil trabajar con el 
+![cgroup-bin](http://i.imgur.com/FS4HtTD.png)
+
+Creamos un grupo que contenga los subgrupos que nos pide el ejercicio haciendo sudo cgcreate -a josepv -g memory,cpu,cpuacct:ejercicio7
+
+Este grupo se encarga de controlar la memoria, CPU y de contabilizar el uso de recursos de CPU y da permiso al usuario josepv para que trabaje con el.
+
+Creado el grupo, vamos a crear varios subgrupos: uno encargado de ejecutar el navegador, otro de ejecutar el procesador de textos y otro de ejecutar el cliente de correo electrónico Mozilla Thunderbird.
+
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/navegador
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/editor
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/correo
+
+Con cgexec asignamos los procesos de cada subgrupo.
+
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/correo thunderbird
+
+Para comparar el uso de recursos visualizamos los resultados en:
+
+    /sys/fs/cgroup/(memory|cpu|cpuacct)/ejercicio7/(navegador|editor|correo)
+
+Resultados para el navegador:
+
+    - cpuacct.usage --> 2943724935
+    - cpuacct.stat:
+           user 244
+           system 38
+    - cpuacct.usage_percpu --> 422363850 1046168504 1273224787 205078078 
+    - memory.max_usage_in_bytes --> 327741440
+
+Resultado para el editor:
+
+    - cpuacct.usage --> 2345308237
+    - cpuacct.stat:
+           user 201
+           system 21
+    - cpuacct.usage_percpu --> 747258934 1008912121 407984020 181153162 
+    - memory.max_usage_in_bytes --> 153321472
+    
+Resultados para el correo:
+
+    - cpuacct.usage --> 0
+    - cpuacct.stat:
+          user 0
+          system 0
+    - cpuacct.usage_percpu --> 0 0 0 0
+    - memory.max_usage_in_bytes --> 0
+
+B)
+ 
+He localizado una página web que explica muy bien el consúmo eléctrico de un ordenador aproximado que tiene durante un sin desconectarlo de la corriente,
+
+En primer lugar hay que [LeanTricity](http://www.leantricity.es/es/2012/07/11/cuanta-energia-gasta-un-ordenador-aproximaciones/)
+Basandome en estos valores de la página paso a realizar el calculo de costes de amortización.
+
+Coste eléctrico por año:
+
+    365 días x (0,437 kWh + 0,1524 kWh) = 215 kWh (Aproximación)
+    
+    0,20 € * 215 kWh = 43€/año (Anual)
+
+La vida media de un PC esta rondando los 5 años y suponiendo un precio de 1000€.
+
+Amortización:
+
+     Año 2014: 120€ + 43€ = 143€
+     Año 2015: 200€ + 43€ = 243€
+     Año 2016: 200€ + 43€ = 243€
+     Año 2017: 200€ + 43€ = 243€
+     Año 2018: 200€ + 43€ = 243€
+     Año 2019: 57€ + 43€ =  100€
+     
+     Precio total: 1215€
+
+  
+###Ejercicio 9
+####Ejercicio 9.1
+Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+
+A la hora de limitar los recursos de una máquina lo primero que tenemos que conocer es el uso que se le va a dar a la misma, no podemos por ejemplo, limitar el uso de CPU en una máquina usada para codificación de vídeo que requiere una intensiva carga de CPU.
+
+Por ejemplo es posible limitar el uso de CPU para sistemas dedicados únicamente a ofimática o tareas administrativas con uso de e-mail o similares, estas tareas no requieren una gran carga del sistema por lo que una limitación en la CPU no les afectaría negativamente.
+
+####Ejercicio 9.2
+Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+
+Hacemos dos grupos, uno con un 40% (409,6) de carga y otro con el resto (614,4)
+
+mount {
+   cpu = /sys/fs/cgroup/cpu;
+}
+
+group proc-usu {
+    cpu {
+        cpu.shares = "410";
+    }
+}
+
+group proc-sist {
+    cpu {
+        cpu.shares = "614";
+    }
+}
+
+####Ejercicio 9.3
+Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+
+Instalamos htop y lo ejecutamos
+
+![Ejecución de Htop](http://i.imgur.com/ezuRA2Q.png)
+
+####Ejercicio 9.4
+Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
+
+mount {
+    blkio = /cgroup/iolimit;
+}
+
+group servidor {
+    blkio  {
+        blkio.weight_device="700"; 
+    }
+}
+
+group usuarios {
+    blkio  {
+        blkio.weight_device="300"; 
+    }
+}
+
+
+###Ejercicio 10
+Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+
+Ejecutamos el comando "egrep '^flags.*(vmx|svm)' /proc/cpuinfo" para comprobar si la virtualización a nivel de hardware está activa.
+
+En la ejecución del comando he tenido que quitar el filtro de las extensiones vmx y svm ya que si lo dejaba no aparecía ningún resultado.
+En la captura podemos comprobar que existen los flags en nuestro sistema
+![Flags del sistema](http://i.imgur.com/oBbwPSd.png)
+
+Para conocer el modelo del procesador lo hacemos en /proc/cpuinfor
+![Modelo del procesador](http://i.imgur.com/MZ5zYNG.png)
+
+En la captura podemos ver que aparece la marca, el modelo, número de cores que tenemos disponibles, velocidad de CPU y cantidad de memoria cache.
+
+
+###Ejercicio 11
+Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+Vemos en la captura que mi ordanador no dispone de aceleración KVM
+
+![Aceleración KVM](http://i.imgur.com/6lcO7pj.png)
