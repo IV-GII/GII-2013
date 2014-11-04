@@ -1,5 +1,4 @@
-Sesión 29 Septiembre
-======================
+
 # Practica 1
 ## Ejercicio 1
 
@@ -15,34 +14,42 @@ Por tanto, para amortizarlo en 7 años, volvemos a hacer: 645 / 7 = 92.142 € p
 
 Vamos a hacer una comparativa entre 2 servicios de hosting, estos van a ser
 
-##Ejercicio 3
+## Ejercicio 3
 
-Siguiendo con la tradición, vamos a hacer un "Hola Mundo" para BASH, el nombre del fichero sera HolaMundo.sh:
-
-````````````
-#!/bin/bash
-echo "¡Hola mundo!"
-````````````
-
-Damos permisos de ejecución ( ```sudo chmod +x ./HolaMundo.sh ```)y ya tenemos listo nuestro script.
-
-Ahora vamos a descargar el CDE e instalarlo. Para ello podemos seguir el [manual oficial](http://sourceforge.net/p/cdesktopenv/wiki/LinuxBuild/).
-
-Para ello, clonamos el repositorio desde:
+Siguiendo con la tradición, vamos a hacer un "Hola CDE" para BASH, el nombre del fichero sera hello-CDE.sh:
 
 ````````````
-git clone http://sourceforge.net/p/cdesktopenv/wiki/LinuxBuild/
-````````````
-Ahora solo queda ejecutar la instalación y ya tendremos nuestro CDE:
+$ cat hello-CDE.sh
+
+  #!/bin/bash
+  echo "Hello CDE";
 
 ````````````
-cd cdesktopenv-code/cde/admin/IntegTools/dbTools
-sudo ./installCDE -s /path/to/cdesktopenv-code/cde/
-````````````
-Para que CDE funcione correctamente, hemos de dar permisos de escritura al directorio:
-````````````
-sudo chmod -R a+rwx /var/dt
-````````````
+
+Damos permisos de ejecución ( ``` sudo chmod +x ./hello-CDE.sh ``` )y ya tenemos listo nuestro script.
+
+Ahora vamos a instalar el cde:
+```
+sudo apt-get install cde
+```
+Para crear nuestro paquete de la aplicación con todas las dependencias, usamos:
+```
+$ cde hello-CDE.sh
+```
+Comprimimos nuestro fichero y lo mandamos por ftp a nuestro otro equipo(es una VM) con la distribución Kali:
+
+```
+tar -cvf cde-hello-CDE.tar cde-package/
+$ sftp kali@192.168.56.102
+$ put cde-hello-CDE.tar
+```
+Ya solo falta descromprimir y ejecutarlo:
+```
+$ tar -zxvf cde-hello-CDE.tar
+$ ./cde-package/hello-CDE.cde
+  Hello CDE!
+```
+
 ## Ejercicio 4
 
 ![Resultado terminado tutorial](./images/Captura de pantalla 2014-10-25 a las 15.00.41.png)
