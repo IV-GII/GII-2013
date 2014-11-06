@@ -89,12 +89,16 @@ Vemos como en el menú aparece con distinto nombre:
 ###Ejercicio 5:
 ####Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
 
-- El sistema de automatización de la construcción para python sería PyQGIS.
+- El sistema de automatización de la construcción que uso es Ant para java.
 
-PyQGIS pertenece a la librería QGIS, tiene soporte para ejecutar scripts utilizando el lenguaje Python.
+	es una herramienta usada en programación para la realización de tareas 		mecánicas y repetitivas, normalmente durante la fase de compilación y 		construcción (build). Es, por tanto, un software para procesos de 			automatización de compilación, similar a Make pero desarrollado en 			lenguaje Java y requiere la plataforma Java, así que es más apropiado para 	   la construcción de proyectos Java.
 
-- Tenemos dos opciones para ejecutar código Python en QGIS:
+    Esta herramienta, hecha en el lenguaje de programación Java, tiene la      	   ventaja de no depender de las órdenes del shell de cada sistema operativo, 	  sino que se basa en archivos de configuración XML y clases Java para la 		realización de las distintas tareas, siendo idónea como solución multi-		plataforma.
 
-   - Desde el propio QGIS podemos utilizar la consola de Python que está integrada. Para ello debemos ir a complementos > Consola de python > mostrar el editor, escribir el código y ejecutar el script.
-   - Utilizar un IDE (un interprete de) como puede ser PyScripter, PyDev o Eclipse. En este caso en primer lugar debemos  importar el módulo qgis, estableciendo la ruta en la que se encuentra QGIS e iniciar la aplicación.
+	La diferencia más notable entre Ant y Make es que Ant utiliza XML para 		describir el proceso de generación y sus dependencias, mientras que Make 	 utiliza formato makefile. Por defecto, el archivo XML se denomina 		 	 build.xml.
 
+###Ejercicio 6:
+####Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.
+
+###Ejercicio 7:
+####Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
