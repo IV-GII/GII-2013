@@ -13,4 +13,10 @@ Para instalarlo he utilizado los siguientes comandos:
 #####Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
 Para este ejercicio me he dado de alta en la plaataforma [OpenShift](https://www.openshift.com/). Primero creamos un nuevo perfil:
 ![altaOpenShift](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/altaOpenShift.png)
+Confirmamos el email y ya estamos registrados:
+![welcomeOpenshift](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/welcomeOpenshift.png)
+
+###Ejercicio 3
+#####Crear una aplicación en OpenShift y dentro de ella instalar WordPress.
+
     
