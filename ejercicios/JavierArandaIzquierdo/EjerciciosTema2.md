@@ -32,6 +32,7 @@ Esta es mi [App](http://appjavi-ejer3.rhcloud.com)
 Para trabajar con Apps script nos iremos a [esta](http://www.google.com/script/start/) pagina y pulsamos en Start Scripting. Para empezar, elegimos un proyecto en blanco.
 
 He utilizado un ejemplo de script de Google, que es el suguiente:
+
 ```
 function createAndSendDocument() {
   // Create a new Google Doc named 'Hello, world!'
@@ -56,3 +57,5 @@ function createAndSendDocument() {
   GmailApp.sendEmail(email, subject, body);
 }
 ```
+Tras guardarlo, lo ejecutamos y nos pedira que lo autoricemos:
+![autorizacion](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/wordpress.png)
