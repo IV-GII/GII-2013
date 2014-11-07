@@ -31,32 +31,32 @@ Esta es mi [App](http://appjavi-ejer3.rhcloud.com)
 
 Para trabajar con Apps script nos iremos a [esta](http://www.google.com/script/start/) pagina y pulsamos en Start Scripting. Para empezar, elegimos un proyecto en blanco.
 
-He utilizado un ejemplo de script de Google, que es el suguiente:
+Este es el script para agregar un menu y dos items:
 
 ```
-function createAndSendDocument() {
-  // Create a new Google Doc named 'Hello, world!'
-  var doc = DocumentApp.create('Hello, world!');
+function onOpen() {
+  var ui = DocumentApp.getUi();
+  // Or DocumentApp or FormApp.
+  ui.createMenu('Menu IV')
+      .addItem('First item', 'menuItem1')
+      .addSeparator()
+      .addSubMenu(ui.createMenu('Sub-menu')
+          .addItem('Second item', 'menuItem2'))
+      .addToUi();
+}
 
-  // Access the body of the document, then add a paragraph.
-  doc.getBody().appendParagraph('This document was created by Google Apps Script.');
+function menuItem1() {
+  DocumentApp.getUi() // Or DocumentApp or FormApp.
+     .alert('Has pulsado el primer Item!');
+}
 
-  // Get the URL of the document.
-  var url = doc.getUrl();
-
-  // Get the email address of the active user - that's you.
-  var email = Session.getActiveUser().getEmail();
-
-  // Get the name of the document to use as an email subject line.
-  var subject = doc.getName();
-
-  // Append a new string to the "url" variable to use as an email body.
-  var body = 'Link to your doc: ' + url;
-
-  // Send yourself an email with a link to the document.
-  GmailApp.sendEmail(email, subject, body);
+function menuItem2() {
+  DocumentApp.getUi() // Or DocumentApp or FormApp.
+     .alert('has pulsado el segundo Item!');
 }
 ```
 Tras guardarlo, lo ejecutamos y nos pedira que lo autoricemos:
 
 ![autorizacion](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/autorizacion.png)
+
+Despues de autorizarlo podemos ver como se crea el menu en cualquier documento que tengamos en Google drive.
