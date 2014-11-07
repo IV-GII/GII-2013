@@ -128,4 +128,37 @@ function createAndSendDocument() {
 }
 ```
 
+Pinchamos en el botón de *play* para poner en marcha el script y nos saldrá un aviso de guardado:
+
+![](./Imagenes/googlescript-guardar.png)
+
+Le ponemos un nombre al proyecto:
+
+![](./Imagenes/googlescript-nombreproyecto.png)
+
+Y, ahora nos pedirá autorización:
+
+![](./Imagenes/googlescript-autorizacion.png)
+
+Le damos autorización:
+
+![](./Imagenes/googlescript-autorizar.png)
+
+Y finalmente podremos ejecutar el script.
+
+Nuestro resultado lo tendremos en [gmail](https://mail.google.com/) tal y como dice el [tutorial de google]:
+
+![](./Imagenes/googlescript-resultado-helloworld.png)
+
+![](./Imagenes/googlescript-resultado-helloworld-doc.png)
+
+Ahora, si queremos cambiarle el nombre al script, o bien desde [script.google.com](https://script.google.com/) clicamos en el título o bien en la derecha, en la flechita:
+
+![](./Imagenes/googlescript-cambiarnombre.png)
+
+Y para cambiarle el nombre a la función, podemos usar la herramienta de buscar y reemplazar:
+
+![](./Imagenes/googlescript-cambiarnombre-funcion.png)
+
+***
 
