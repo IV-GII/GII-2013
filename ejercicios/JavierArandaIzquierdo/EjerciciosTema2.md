@@ -60,3 +60,14 @@ Tras guardarlo, lo ejecutamos y nos pedira que lo autoricemos:
 ![autorizacion](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/autorizacion.png)
 
 Despues de autorizarlo podemos ver como se crea el menu en cualquier documento que tengamos en Google drive.
+
+###Ejercicio 5
+#####Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+Uno de los sistemas de automatizacion que uso (y que no sabia que estaba usando) es Ant para java.
+
+Ant es una herramienta usada en programación para la realización de tareas mecánicas y repetitivas, normalmente durante la fase de compilación y construcción. Es un software para procesos de automatización de compilación, similar a Make pero desarrollado en lenguaje Java y requiere la plataforma Java.
+
+Ant tiene la ventaja de no depender de las órdenes del shell de cada sistema operativo, sino que se basa en archivos de configuración XML y clases Java para la realización de las distintas tareas, siendo idónea como solución multi- plataforma.
+
+La diferencia más notable entre Ant y Make es que Ant utiliza XML para describir el proceso de generación y sus dependencias, mientras que Make utiliza formato makefile. Por defecto, el archivo XML se denomina build.xml.
