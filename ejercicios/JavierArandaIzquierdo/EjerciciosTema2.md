@@ -18,5 +18,13 @@ Confirmamos el email y ya estamos registrados:
 
 ###Ejercicio 3
 #####Crear una aplicación en OpenShift y dentro de ella instalar WordPress.
+OpenShift nos deja crear Apps basicas gratuitas. Estos son los pasos de como he creado la mia: 
+
+-Buscamos la App que viene por defecto de Wordpress:
+![wordpress](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/wordpress.png)
+Y pulsamos en install y ya tenemos una App simple funcionando.
+
+Esta es mi [App](http://appjavi-ejer3.rhcloud.com/wp-admin/install.php)
+
 
     
