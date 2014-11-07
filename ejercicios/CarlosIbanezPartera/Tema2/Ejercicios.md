@@ -39,3 +39,10 @@ deactivate_node
 ###Ejercicio 2
 #####Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
 
+**Nota**: *Este ejercicio pertenece a la relación de ejercicios anterior, por eso lo copiaré tal cual*
+
+Me di de alta en Heroku en el ejercicio 2 del Tema 1. Muestro una captura en la interfaz tras crear una aplicación:
+
+![](./Imagenes/registrado-heroku.png)
+
+***
