@@ -97,3 +97,68 @@ Y, en mi caso he realizado una entrada nueva con una imagen para comprobar su us
 Al sitio se puede acceder a través de [esta dirección].
 
 ***
+###Ejercicio 4
+######Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.
+
+[tutorial de google]:https://developers.google.com/apps-script/overview#your_first_script
+
+En primer lugar he seguido el [tutorial de google] para poner en marcha el script. Por eso lo que he hecho ha sido acceder a [script.google.com](https://script.google.com/) y copiar el código del [tutorial de google] que viene a ser un elaborado *Hello World*:
+```javascript
+function createAndSendDocument() {
+  // Create a new Google Doc named 'Hello, world!'
+  var doc = DocumentApp.create('Hello, world!');
+
+  // Access the body of the document, then add a paragraph.
+  doc.getBody().appendParagraph('This document was created by Google Apps Script.');
+
+  // Get the URL of the document.
+  var url = doc.getUrl();
+
+  // Get the email address of the active user - that's you.
+  var email = Session.getActiveUser().getEmail();
+
+  // Get the name of the document to use as an email subject line.
+  var subject = doc.getName();
+
+  // Append a new string to the "url" variable to use as an email body.
+  var body = 'Link to your doc: ' + url;
+
+  // Send yourself an email with a link to the document.
+  GmailApp.sendEmail(email, subject, body);
+}
+```
+
+Pinchamos en el botón de *play* para poner en marcha el script y nos saldrá un aviso de guardado:
+
+![](./Imagenes/googlescript-guardar.png)
+
+Le ponemos un nombre al proyecto:
+
+![](./Imagenes/googlescript-nombreproyecto.png)
+
+Y, ahora nos pedirá autorización:
+
+![](./Imagenes/googlescript-autorizacion.png)
+
+Le damos autorización:
+
+![](./Imagenes/googlescript-autorizar.png)
+
+Y finalmente podremos ejecutar el script.
+
+Nuestro resultado lo tendremos en [gmail](https://mail.google.com/) tal y como dice el [tutorial de google]:
+
+![](./Imagenes/googlescript-resultado-helloworld.png)
+
+![](./Imagenes/googlescript-resultado-helloworld-doc.png)
+
+Ahora, si queremos cambiarle el nombre al script, o bien desde [script.google.com](https://script.google.com/) clicamos en el título o bien en la derecha, en la flechita:
+
+![](./Imagenes/googlescript-cambiarnombre.png)
+
+Y para cambiarle el nombre a la función, podemos usar la herramienta de buscar y reemplazar:
+
+![](./Imagenes/googlescript-cambiarnombre-funcion.png)
+
+***
+
