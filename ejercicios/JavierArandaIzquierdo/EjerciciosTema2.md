@@ -71,3 +71,12 @@ Ant es una herramienta usada en programación para la realización de tareas mec
 Ant tiene la ventaja de no depender de las órdenes del shell de cada sistema operativo, sino que se basa en archivos de configuración XML y clases Java para la realización de las distintas tareas, siendo idónea como solución multi- plataforma.
 
 La diferencia más notable entre Ant y Make es que Ant utiliza XML para describir el proceso de generación y sus dependencias, mientras que Make utiliza formato makefile. Por defecto, el archivo XML se denomina build.xml.
+
+###Ejercicio 6
+#####Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.
+
+ 
+
+###Ejercicio 7
+#####Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+Dos entornos de pruebas para python son [Tox](https://pypi.python.org/pypi/tox) y [Nose](http://pythontesting.net/framework/nose/nose-introduction/)
