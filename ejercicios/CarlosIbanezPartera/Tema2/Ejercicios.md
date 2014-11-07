@@ -97,3 +97,35 @@ Y, en mi caso he realizado una entrada nueva con una imagen para comprobar su us
 Al sitio se puede acceder a través de [esta dirección].
 
 ***
+###Ejercicio 4
+######Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.
+
+[tutorial de google]:https://developers.google.com/apps-script/overview#your_first_script
+
+En primer lugar he seguido el [tutorial de google] para poner en marcha el script. Por eso lo que he hecho ha sido acceder a [script.google.com](https://script.google.com/) y copiar el código del [tutorial de google] que viene a ser un elaborado *Hello World*:
+```javascript
+function createAndSendDocument() {
+  // Create a new Google Doc named 'Hello, world!'
+  var doc = DocumentApp.create('Hello, world!');
+
+  // Access the body of the document, then add a paragraph.
+  doc.getBody().appendParagraph('This document was created by Google Apps Script.');
+
+  // Get the URL of the document.
+  var url = doc.getUrl();
+
+  // Get the email address of the active user - that's you.
+  var email = Session.getActiveUser().getEmail();
+
+  // Get the name of the document to use as an email subject line.
+  var subject = doc.getName();
+
+  // Append a new string to the "url" variable to use as an email body.
+  var body = 'Link to your doc: ' + url;
+
+  // Send yourself an email with a link to the document.
+  GmailApp.sendEmail(email, subject, body);
+}
+```
+
+
