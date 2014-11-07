@@ -36,3 +36,6 @@ deactivate_node
 ```
 
 ***
+###Ejercicio 2
+#####Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
+
