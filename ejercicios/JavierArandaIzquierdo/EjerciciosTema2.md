@@ -26,5 +26,33 @@ Y pulsamos en install y ya tenemos una App simple funcionando.
 
 Esta es mi [App](http://appjavi-ejer3.rhcloud.com)
 
+###Ejercicio 4
+#####Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.
 
-    
+Para trabajar con Apps script nos iremos a [esta](http://www.google.com/script/start/) pagina y pulsamos en Start Scripting. Para empezar, elegimos un proyecto en blanco.
+
+He utilizado un ejemplo de script de Google, que es el suguiente:
+```
+function createAndSendDocument() {
+  // Create a new Google Doc named 'Hello, world!'
+  var doc = DocumentApp.create('Hello, world!');
+
+  // Access the body of the document, then add a paragraph.
+  doc.getBody().appendParagraph('This document was created by Google Apps Script.');
+
+  // Get the URL of the document.
+  var url = doc.getUrl();
+
+  // Get the email address of the active user - that's you.
+  var email = Session.getActiveUser().getEmail();
+
+  // Get the name of the document to use as an email subject line.
+  var subject = doc.getName();
+
+  // Append a new string to the "url" variable to use as an email body.
+  var body = 'Link to your doc: ' + url;
+
+  // Send yourself an email with a link to the document.
+  GmailApp.sendEmail(email, subject, body);
+}
+```
