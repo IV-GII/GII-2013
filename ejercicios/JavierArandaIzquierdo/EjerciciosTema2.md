@@ -58,4 +58,5 @@ function createAndSendDocument() {
 }
 ```
 Tras guardarlo, lo ejecutamos y nos pedira que lo autoricemos:
+
 ![autorizacion](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/autorizacion.png)
