@@ -12,5 +12,5 @@ Para instalarlo he utilizado los siguientes comandos:
 ###Ejercicio 2
 #####Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
 Para este ejercicio me he dado de alta en la plaataforma [OpenShift](https://www.openshift.com/). Primero creamos un nuevo perfil:
-![altaOpenShift](http://)
+![altaOpenShift](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/altaOpenShift.png)
     
