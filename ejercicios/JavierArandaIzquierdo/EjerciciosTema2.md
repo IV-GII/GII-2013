@@ -24,7 +24,7 @@ OpenShift nos deja crear Apps basicas gratuitas. Estos son los pasos de como he 
 ![wordpress](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/wordpress.png)
 Y pulsamos en install y ya tenemos una App simple funcionando.
 
-Esta es mi [App](http://appjavi-ejer3.rhcloud.com/wp-admin/install.php)
+Esta es mi [App](http://appjavi-ejer3.rhcloud.com)
 
 
     
