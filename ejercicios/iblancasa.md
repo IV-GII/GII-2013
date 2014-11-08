@@ -422,6 +422,7 @@ function hola() {
 Para probar uno de estos sistemas (y aprovecharlo para el trabajo de la asignatura), he instalado GruntJS. Para ello, hay que instalar "NodeJS", "NPM" y, utilizando este último, "GruntJS". Para ello he utilizado el [manual de esta web](http://codehero.co/como-utilizar-gruntjs/) donde además se explica cómo realizar un ejemplo de funcionamiento.
 
 
+***
 
 ##Ejercicio 6##
 
@@ -433,9 +434,13 @@ En este fichero se indican distinas cosas, como puede ser el nombre de la aplica
 En [esta página (de la documentación de Heroku)](https://devcenter.heroku.com/articles/app-json-schema) hay más información.
 
 
+***
 
+##Ejercicio 7##
 
+#####Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.#####
 
+He estado buscando uno que sea útil para el [proyecto de la asignatura](https://github.com/iblancasa/BackendSI2-IV). El que he encontrado ha sido "Mocha".
 [Guía hecha por UnitJS](http://unitjs.com/guide/mocha.html).
 [Guía hecha por Brian Stoner](https://brianstoner.com/blog/testing-in-nodejs-with-mocha/)
 [Guía de Web App Blog](http://webapplog.com/test-driven-development-in-node-js-with-mocha/)
