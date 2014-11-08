@@ -122,3 +122,4 @@ Lista de objetivos Israel Blancas Álvarez
 * [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 * [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
 * [X] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
+

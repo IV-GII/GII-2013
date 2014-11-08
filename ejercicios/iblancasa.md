@@ -419,4 +419,23 @@ function hola() {
 
 #####Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.#####
 
-Para probar uno de estos sistemas (y aprovecharlo para el trabajo de la asignatura), he instalado GruntJS. Para ello, hay que instalar "NodeJS", "NPM" y, utilizando este último, "GruntJS".
+Para probar uno de estos sistemas (y aprovecharlo para el trabajo de la asignatura), he instalado GruntJS. Para ello, hay que instalar "NodeJS", "NPM" y, utilizando este último, "GruntJS". Para ello he utilizado el [manual de esta web](http://codehero.co/como-utilizar-gruntjs/) donde además se explica cómo realizar un ejemplo de funcionamiento.
+
+
+
+##Ejercicio 6##
+
+#####Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.#####
+
+El PaaS que utilizo es Heroku. Estudiando los ficheros que hay en [un repositorio para descargar una aplicación y practicar su despliegue en Heroku](https://github.com/iblancasa/BackendSI2-IV/wiki/C%C3%B3mo-realizar-un-despliegue-en-Heroku), he visto que el fichero al que se refiere el enunciado se llama "app.json".
+Para crear/editar este fichero, se puede utilizar un editor de textos cualquiera.
+En este fichero se indican distinas cosas, como puede ser el nombre de la aplicación, palabras claves o, incluso, un logotipo de la misma.
+En [esta página (de la documentación de Heroku)](https://devcenter.heroku.com/articles/app-json-schema) hay más información.
+
+
+
+
+
+[Guía hecha por UnitJS](http://unitjs.com/guide/mocha.html).
+[Guía hecha por Brian Stoner](https://brianstoner.com/blog/testing-in-nodejs-with-mocha/)
+[Guía de Web App Blog](http://webapplog.com/test-driven-development-in-node-js-with-mocha/)
