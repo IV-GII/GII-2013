@@ -169,3 +169,37 @@ release_agent
 ---
 
 #Ejercicio 8
+
+###### Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
+
+En primer lugar he creado 3 grupos (grupoA, grupoB, grupoC). Luego les he asignado los procesos navegador (chrome), procesador de textos (office) y otro (dropbox).
+
+Tras la ejecución durante el mismo período de tiempo por cada proceso han tenido el siguiente consumo:
+```
+$ cat cgroup/grupoA/cpuacct.usage
+1530485730
+$ cat cgroup/grupoB/cpuacct.usage
+1322458601
+$ cat cgroup/grupoC/cpuacct.usage
+1042875295
+```
+
+Vemos que el proceso 'chrome' es el que más a consumido
+
+---
+
+#Ejercicio 10
+
+###### Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+
+Procesador (con cat /proc/cpuinfo): Intel(R) Celeron(R) CPU          743  @ 1.30GHz
+
+La orden `egrep '^flags.*(vmx|svm)' /proc/cpuinfo` no muestra nada por pantalla por lo que el procesador no tiene la funcionalidad o está desactivada
+
+---
+
+#Ejercicio 11
+
+######Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+No está instalado y tras instalarlo sigue diciendo que no está instalado, interpreto que el "problema" está en que como hemos visto en el ejercicio anterior no está activada la virtualización de hardware

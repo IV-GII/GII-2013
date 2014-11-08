@@ -96,4 +96,12 @@ Al trabajar desde una máquina virtual la orden egrep '^flags.*(vmx|svm)' /proc/
 
 **Ejercicio 12:**<br />
 **Comentar diferentes soluciones de Software as a Service de uso habitual**<br />
-Foro: [Contestación](https://github.com/JJ/GII-2014/issues/72 "Contestación")
+Foro: [Contestación](https://github.com/JJ/GII-2014/issues/72 "Contestación")<br />
+
+<hr />
+
+## Sesión 20-oct-2014
+
+**Ejercicio 1:**<br />
+**Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba,obviamente).**<br />
+Instalación de virtualenv para python.
