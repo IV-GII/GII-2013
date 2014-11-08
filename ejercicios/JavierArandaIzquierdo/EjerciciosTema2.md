@@ -76,7 +76,7 @@ La diferencia más notable entre Ant y Make es que Ant utiliza XML para describi
 #####Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.
 La plataforma que hemos utilizado en el proyecto es OpenShift y he encontrado dos formas para automatizar las tareas:
 - **Usando Jenkins**: Servidor con todas las funciones de integración continua (CI) que puede ejecutar, construir, testear y programar tareas que se integran con las aplicaciones de OpenShift.
-- **Usando hot deploymen**t: Con hot deployment se aplican los cambios al código de la aplicación sin necesidad de reiniciar la aplicación, lo que aumenta la velocidad de despliegue y minimiza el tiempo de inactividad de la aplicación.
+- **Usando hot deployment**: Con hot deployment se aplican los cambios al código de la aplicación sin necesidad de reiniciar la aplicación, lo que aumenta la velocidad de despliegue y minimiza el tiempo de inactividad de la aplicación.
  
 
 ###Ejercicio 7
