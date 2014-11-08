@@ -274,3 +274,14 @@ El concepto de SaaS existe desde hace tiempo, solo que en estos últimos años s
 Algunos ejemplos sencillos son: Webmail de Gmail, los CRM onlines. En este tipo de servicios nosotros accedemos normalmente a través del navegador sin atender al software. Todo el desarrollo, mantenimiento, actualizaciones, copias de seguridad es responsabilidad del proveedor.
 Por lo que tenemos poco control, nosotros nos situamos en la parte más arriba de la capa del servicio. Si el servicio se cae es responsabilidad de proveedor hacer que vuelva a funcionar.
 Ejemplos más conocidos de Saas son Google Docs, Salesforce, Dropbox, Gmail…
+
+#Clase del 20 de octubre de 2014
+
+#Objetivos de esta sesión
+
+* [+]Ejercicio 1
+Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).
+
+
+* [+]Ejercicio 2
+Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
