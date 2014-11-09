@@ -378,6 +378,129 @@ Y comprobamos que funciona:
 
 ###Ejercicio 5
 
+Actualmente el lenguaje de programación que mas uso es c++, por ejemplo para las practica de Informatica Grafica utilizo un sistema basado en Makefile,
+para ello vamos a ver por ejemplo como lo construyo para la practica 2 de IG:
+
+<img src="http://i58.tinypic.com/suycer.png"></img>
+
+Aqui pego el codigo con algunos comentarios:
+
+````
+# fichero Makefile
+#
+# nombre del fichero ejecutable
+#
+TARGETS= practica2
+
+# banderas para el compilador (C y C++). Se indican los directorios donde se puenden
+# encontrar ficheros para incluir mediante la opcion -I
+# la opcion -g sirve para permitir la depuración
+#
+CFLAGS=    -g -DXWINDOWS -DSHM -I/usr/include -I.
+CXXFLAGS=  -g -DXWINDOWS -DSHM -I/usr/include -I.
+
+# banderas pra el enlazador
+# Se indica directorios donde encontrar las funciontecas con -L. Usando -l seguido del
+# nombre se indica la funcionteca que se desea enlazar.
+#
+LDFLAGS=  -lGLU -lGL -lglut
+
+# definicion del compilador
+#
+CC = g++
+
+# orden que sera ejecutada por defecto
+#
+default : $(TARGETS)
+
+# regla de ejecucion
+#
+$(TARGETS) : file_ply_stl.o _ply.o _object3D.o _triangles_object3D.o _cube.o _tetrahedron.o user_code.o practica2.o
+	$(CC) -o $@ $(CXXFLAGS) file_ply_stl.o _ply.o _object3D.o _triangles_object3D.o _cube.o _tetrahedron.o user_code.o practica2.o $(LDFLAGS)
+
+#
+#
+clean:
+	rm -f *.o
+	rm -f $(TARGETS)
+
+#
+#
+redo:
+	touch *.cc
+	make
+
+#
+#
+superclean:
+	rm -f *.o
+	rm *~
+	rm -f $(TARGETS)
+
+#
+#
+tgz:
+	rm -f *.o
+	rm *~
+	rm -f $(TARGETS)
+	tar -zcvf $(TARGETS).tgz *
+````
+
+Aqui ya tenemos todo el sistema automatizado para compilar rapidamente en el entorno de trabajo. Simplemente ejecuto el comando make y me genera el ejecutable practica2, simplemte ejecuto ./practica2
+
+
+###Ejercicio 6
+
+Dado que he trabajado con OpenShift vamos a installar el entorno en Ubuntu, para ello sigo el tutorial de la pagina de openshift:
+
+````
+https://developers.openshift.com/en/getting-started-client-tools.html#ubuntu
+````
+
+Primero instalo el rubygems y el rhc:
+<img src="http://i61.tinypic.com/al3qqu.png"></img>
+````
+sudo apt-get install ruby-full rubygems git-core
+sudo gem install rhc
+````
+Instalo rhc:
+
+````
+rhc setup
+````
+<img src="http://i58.tinypic.com/2whr1py.png"></img>
+
+Y simplemente sigo los pasos:
+<img src="http://i57.tinypic.com/vd0ort.jpg"></img>
+
+Y finalmente:
+<img src="http://i58.tinypic.com/313rdza.png"></img>
+
+
+###Ejercicio 7
+
+Para este ejercicio he utilizado por ejemplo el JUnit de Netbeans, ya que utilizo tambien mucho este entorno de programación:
+
+Cojo un proyecto cualquiera de los que tengo y simplemente vamos a crearle unos test simples:
+
+<img src="http://i58.tinypic.com/15ro9ki.jpg"></img>
+
+Y nos sale una pantalla con los distintos test que podemos seleccionar, selecciono JUnit y el acceso a todo.
+
+<img src="http://i59.tinypic.com/j63jx4.jpg"></img>
+
+Ahora cojo y le hago dos test simples lo suyo es usar elementos del programa para hacer los test, como funciones y todo ese tipo de elementos.
+
+Para comprobar simplemente hago dos funciones a testear con un hola mundo que rellenare con mis datos:
+
+<img src="http://i62.tinypic.com/ek582v.jpg"></img>
+
+Cambio los parametros y hago un test sobre el programa:
+
+<img src="http://i57.tinypic.com/2dv21rb.jpg"></img>
+
+
+
 
 
 
