@@ -615,10 +615,72 @@ Una vez registrado en WordPress, lo instalamos:
 ###Ejercicio 4:
 ####Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama. 
 
+Nos vamos a nuestro Drive.google y le damos a create y abajo del todo: connect more apps. Escribimos en "Search Apps" script y le damos a Google Apss Script/Connect:
+
+<img src="http://i58.tinypic.com/n2zf5c.jpg"></img>
+
+Cuando conecte, le damos a crear script y pegamos el codigo que previamente hayamos desarrollado.
+
+Mi script crea un menu con un item, seguido de un separador visual, más un submenu que contiene otro item.
+
+<img src="http://i58.tinypic.com/2ez5us2.png"></img>
+
+Al ejecutarlo nos sale un aviso en rojo diciendo que el metodo getUi() no esta disponible en la nueva version de Google Sheet, luego no he podido probarlo.
+
+
+###Ejercicio 5:
+####Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente. 
+
+Uno de los que he usado ha sido Ant para java. 
+Es una herramienta usada en programación para la realización de tareas mecánicas y repetitivas, normalmente durante la fase de compilación y construcción (build). Es, por tanto, un software para procesos de automatización de compilación, similar a Make pero desarrollado en lenguaje Java y requiere la plataforma Java, así que es más apropiado para la construcción de proyectos Java.
+
+Esta herramienta, hecha en el lenguaje de programación Java, tiene la ventaja de no depender de las órdenes del shell de cada sistema operativo, sino que se basa en archivos de configuración XML y clases Java para la realización de las distintas tareas, siendo idónea como solución multi-plataforma.
+
+La diferencia más notable entre Ant y Make es que Ant utiliza XML para describir el proceso de generación y sus dependencias, mientras que Make utiliza formato makefile. Por defecto, el archivo XML se denomina
+
+
+###Ejercicio 6:
+####Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma. 
+
+El PaaS elegido ha sido OpenShift. 
+
+[Installing Client Tools](https://developers.openshift.com/en/getting-started-client-tools.html?sc_cid=70160000000UJArAAO&gclid=CjwKEAiAvvyiBRDzrYuuldy6wB8SJABPJWObcPhYR8u5pRzNr0-s2FeiymkqmzCZTYXD3FDnfL1OohoCYGbw_wcB)
 
 
 
 
 
+
+
+
+###Ejercicio 7
+####Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+Utilizaremos el entorno de pruebas Nose: https://nose.readthedocs.org/en/latest/
+
+Procederemos a instalarlo en nuestra máquina:
+
+<img src="http://i58.tinypic.com/51oow3.png"></img>
+
+Con esto se instalarán las librerias de nose. Para ejecutar test desde tu proyecto primero nos vamos al directorio de nuestro proyecto: 
+
+``cd path/to/project``
+
+y posteriormente hacemos:
+
+``nosetests``
+
+Nos tendría que salir algo asi:
+
+
+````..................................
+----------------------------------------------------------------------
+Ran 34 tests in 1.440s
+
+OK
+````
+
+
+Con lo que sabremos que ha detectado a nose y ejecutó el test.
 
 
