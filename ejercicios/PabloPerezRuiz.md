@@ -647,9 +647,29 @@ El PaaS elegido ha sido OpenShift.
 [Installing Client Tools](https://developers.openshift.com/en/getting-started-client-tools.html?sc_cid=70160000000UJArAAO&gclid=CjwKEAiAvvyiBRDzrYuuldy6wB8SJABPJWObcPhYR8u5pRzNr0-s2FeiymkqmzCZTYXD3FDnfL1OohoCYGbw_wcB)
 
 
+Setting up the OpenShift Environment on Ubuntu:
 
+Primeramente necesitaremos gems para instalar rhc:
 
+<img src="http://i58.tinypic.com/2qc45ld.png"></img>
 
+Ahora podemos instalar rhc. Para ello hacemos:
+
+<img src="http://i61.tinypic.com/2rdexb6.png"></img>
+
+Finalmente hacemos rhc setup y tras logearnos, podremos tener acceso a nuestras aplicaciones, en mi caso tengo una:
+
+<img src="http://i62.tinypic.com/2vmhut3.png"></img>
+
+Posteriormente si usamos git podremos descargar nuestra aplicación. Además se podrá desplegar de forma automática la aplicación mediante el archivo build, en el path: .openshift/action_hooks/build
+
+<img src="http://i61.tinypic.com/2m3g3zk.png"></img>
+
+Ésta ha sido una forma de automatización de nuestra aplicación, podemos sin embargo, utilizar Jenkins o Hot Deployment en lugar de la anterior.
+
+**Jenkins** proporciona integración continua para el desarrollo de software. Es un sistema corriendo en un servidor que es un contenedor de servlets, como Apache Tomcat. Soporta herramientas de control de versiones como CVS, Subversion, Git, Mercurial, Perforce y Clearcase y puede ejecutar proyectos basados en Apache Ant y Apache Maven, así como scripts de shell y programas batch de Windows.
+
+**Hot Deployment** Se ahorra un tiempo grandísimo en el despliegue e inactividad de la aplicación sin tener que rehacer el codigo o reiniciar la aplicación por parte de los desarrolladores.
 
 
 
