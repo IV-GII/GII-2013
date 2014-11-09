@@ -327,12 +327,65 @@ Ya solo nos queda activarlo
 source ./python2.7/bin/activate
 ````
 
-Comprobamos que funciona haciendo por ejemplo un echo 'Hola'
-
-
 <img src="http://i60.tinypic.com/1e6xbp.png"></img>
 
 ###Ejercicio 2
+
+Me he registrado en Openshift ya que me hara falta para la actividad 3:
+
+<img src="http://i60.tinypic.com/23saxqp.png"></img>
+
+###Ejercicio 3
+
+Primero le doy a crear nueva aplicación:
+
+<img src="http://i61.tinypic.com/2nv83va.png"></img>
+
+Relleno los datos necesarios:
+
+<img src="http://i59.tinypic.com/291fa83.png"></img>
+<img src="http://i62.tinypic.com/k9ggoj.png"></img>
+<img src="http://i61.tinypic.com/16715yx.png"></img>
+
+Y finalmente se instala correctamente:
+
+<img src="http://i62.tinypic.com/n47b0y.png"></img>
+<img src="http://i61.tinypic.com/2j60j1f.png"></img>
+
+
+###Ejercicio 4
+
+Primero creo el archivo dentro del google drive, como por ejemplo un Documento, ahora voy a Herramientas >> Editor de secuencia de comandos
+
+Ahora creo un pequeño script del tipo "Hola mundo" llamando a la funcion onOpen para que se ejecute al abrir:
+
+<img src="http://i59.tinypic.com/akv0vd.png"></img>
+
+Comprobamos el script actualizando el documento:
+
+<img src="http://i61.tinypic.com/20afej6.png"></img>
+
+El segundo paso es utilizar un menu para que lo ejecute:
+
+<img src="http://i60.tinypic.com/1q0t53.png"></img>
+
+<img src="http://i57.tinypic.com/j953pw.png"></img>
+
+Y comprobamos que funciona:
+
+<img src="http://i59.tinypic.com/15g5myq.png"></img>
+
+
+###Ejercicio 5
+
+
+
+
+
+
+
+
+
 
 
 

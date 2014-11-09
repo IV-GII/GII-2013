@@ -1,19 +1,69 @@
 #Lista de objetivos de Juan Antonio Marin Sanchez
 
+
+##4-nov-2014
+
+
+    [] Entender los objetivos de este tema.
+
+    [] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador.
+
+    [] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux.
+
+    [] Entender y saber llevar a cabo la virtualización de dispositivos de red.
+
+    [] Usar herramientas de administración y monitorización de red en línea de órdenes.
+
+    [] Contestar a la encuesta sobre la asignatura.
+
+    [] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii.
+
+    [X] Dejar de usar Sublime Text por estas 7 razones.
+
+
+##3-nov-2014
+
+   [X] Consolidar el uso de PaaS/SaaS.
+
+   [X] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones.
+
+   [] Continuar con la segunda práctica.
+
+   [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
+
+   [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+
+
+##28-oct-2014
+
+
+   [X] Consolidar el uso de PaaS/SaaS.
+
+   [X] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones.
+
+   [] Comenzar con la segunda práctica.
+
+   [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
+
+   [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+
+   [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+
+
 ##27-oct-2014
 
 
-   [] Consolidar el uso de PaaS/SaaS.
+   [X] Consolidar el uso de PaaS/SaaS.
 
-   [] Entender los sistemas de automatización de la construcción de aplicaciones.
+   [X] Entender los sistemas de automatización de la construcción de aplicaciones.
 
-   [] Último día de entrega de la primera práctica.
+   [X] Último día de entrega de la primera práctica.
 
-   [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
+   [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
 
-   [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+   [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
-   [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+   [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
 
 
 ##21-oct-2014
