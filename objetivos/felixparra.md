@@ -1,17 +1,84 @@
-# Clase del 6 de octubre de 2014
+# Clase del 21 de octubre de 2014
 
 ## Objetivos de la clase
-
-    []Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
-    []Comprender los niveles de virtualización y sus denominaciones genéricas.
-    []Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
+    []Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+    []Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
+    []Crear nuevas funciones en un SaaS.
 
 ## Otros objetivos
     []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
     []Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-    []Contestar a la encuesta sobre la metodología de clase
-    []Usar ficheros en el repositorio para los ejercicios.
-    []Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
+    []Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+    []Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
+
+<hr />
+
+# Clase del 20 de octubre de 2014
+
+## Objetivos de la clase
+    [X]Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
+    [X]Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
+    [X]Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+## Otros objetivos
+    [X]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+    [X]Comprender el método de entrega de las prácticas de la asignatura.
+
+<hr />
+
+# Clase del 14 de octubre de 2014
+
+## Objetivos de la clase
+    [X]Si todavía no se ha hecho, leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
+    [X]Continuar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
+
+## Otros objetivos
+    []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
+
+<hr />
+
+# Clase del 13 de octubre de 2014
+
+## Objetivos de la clase
+    [X]Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
+    [X]Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
+
+## Otros objetivos
+    []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
+
+<hr />
+
+# Clase del 7 de octubre de 2014
+
+## Objetivos de la clase
+    [X]Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
+
+## Otros objetivos
+    []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Contestar a la encuesta sobre la metodología de clase
+
+<hr />
+
+
+# Clase del 6 de octubre de 2014
+
+## Objetivos de la clase
+
+    [X]Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
+    [X]Comprender los niveles de virtualización y sus denominaciones genéricas.
+    [X]Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
+
+## Otros objetivos
+    []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+    [X]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+    [X]Contestar a la encuesta sobre la metodología de clase
+    [X]Usar ficheros en el repositorio para los ejercicios.
+    [X]Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
 
 <hr />
 

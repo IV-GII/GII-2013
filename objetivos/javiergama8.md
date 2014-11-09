@@ -24,7 +24,7 @@ conocer el resto de los recursos de la asignatura. <br/>
 [] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux.<br/> 
 [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.<br/> 
 [] Entender el soporte en hardware de las técnicas de virtualización y cómo se extiende ese soporte al núcleo de los sistemas operativos. Saber si el ordenador habitual lo usa.<br/> 
-[]Comenzar a usar git desde línea de órdenes y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.<br/> 
+[X]Comenzar a usar git desde línea de órdenes y comprender su papel como sistema para trabajo colaborativo y despliegue de aplicaciones.<br/> 
 
 ## Otros objetivos ##
 
@@ -37,7 +37,7 @@ conocer el resto de los recursos de la asignatura. <br/>
 # Clase del 6 de Octubre. #
 
 [] Consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
-[] Comprender los niveles de virtualización y sus denominaciones genéricas.
+[X] Comprender los niveles de virtualización y sus denominaciones genéricas.
 [] Comprender el concepto de ''software as a service'' y comprender los criterios necesarios para su elección.
 
 ## Otros objetivos ##
@@ -45,7 +45,7 @@ conocer el resto de los recursos de la asignatura. <br/>
 [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 [X] Contestar a la encuesta sobre la metodología de clase
-[] Usar ficheros en el repositorio para los ejercicios.
+[X] Usar ficheros en el repositorio para los ejercicios.
 [] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
 
 
@@ -87,7 +87,7 @@ conocer el resto de los recursos de la asignatura. <br/>
 
 # Clase del 20 de Octubre. #
 
-[] Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
+[X] Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
 [] Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
 [] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
