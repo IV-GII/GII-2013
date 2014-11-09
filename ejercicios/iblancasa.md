@@ -432,7 +432,9 @@ El PaaS que utilizo es Heroku. Estudiando los ficheros que hay en [un repositori
 Para crear/editar este fichero, se puede utilizar un editor de textos cualquiera.
 En este fichero se indican distinas cosas, como puede ser el nombre de la aplicación, palabras claves o, incluso, un logotipo de la misma.
 En [esta página (de la documentación de Heroku)](https://devcenter.heroku.com/articles/app-json-schema) hay más información.
-
+Aunque este fichero es importante, más lo es "Profile". Un fichero que nos permite decir qué órdenes son precisas para la ejecución de nuestra aplicación (probablemente este segundo fichero se acerque más a lo que se pide). En Heroku, de momento (para NodeJS), solo ha sido necesario escribir:
+`web: node index.js`
+Más sobre [Profile](https://devcenter.heroku.com/articles/procfile)
 
 ***
 
