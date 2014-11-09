@@ -1,6 +1,8 @@
 Ejercicio 1 .
 -------
-Producto: HP ProLiant ML350p Gen8 E5-2650 Coste: 4.825,00 € Web: http://www.senetic.es/product/678237-051
+Producto: HP ProLiant ML350p Gen8 E5-2650 
+Coste: 4.825,00 € 
+Web: http://www.senetic.es/product/678237-051
 
 Amortización a 4 años = 25% (100/4) = 1206.25 €
 Amortización a 7 años = 14'285% (100/7) = 689.2515 €
