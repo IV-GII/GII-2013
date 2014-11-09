@@ -281,16 +281,37 @@ Ejemplos más conocidos de Saas son Google Docs, Salesforce, Dropbox, Gmail…
 
 * [+]Ejercicio 1
  - A) Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).
- El entorno virtual que he instalado ha sido virtualenv para Python. Los pasos para instalarlo han sido:
-
-    [sudo] pip install virtualenv
  
-Previamente he tenido que instalar pip.
+- Voy a instalar el entorno virtual "virtualenv" para Python. Para ello vemos a instalar PIP, que nos sirve apra instalar paquetes de python.
+
+    sudo apt-get install python-setuptools python-dev build-essential
+    sudo easy_install pip
+
+Una vez realizado estos pasos damos el definitivo para la instalación de "virtualenv".
+
+    sudo pip install --upgrade virtualenv 
 
 La forma de usarlo y activarlo es la siguiente:
 
     virtualenv ENV
     source bin/activate
+
+El uso de "virtualenv" es muy sencillo, para ello simplemente creamos una entorno virtual:
+
+    virtualenv mi_entorno
+
+Una vez creado, entramos en el y lo activamos:
+
+    cd mi_entorno
+    source mi_entorno/bin/activate
+
+Sabremos que estamos en el entorno virtual, porque nuestra terminal cambia de:
+
+    $
+ 
+ a
+ 
+    (mi_entorno)$
 
 * [+]Ejercicio 2
  - A) Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
