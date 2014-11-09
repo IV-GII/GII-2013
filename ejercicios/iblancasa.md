@@ -407,3 +407,42 @@ function hola() {
   }
 }
 ```
+
+
+
+***
+***
+
+##Sesión 27-10-2014##
+
+##Ejercicio 5##
+
+#####Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.#####
+
+Para probar uno de estos sistemas (y aprovecharlo para el trabajo de la asignatura), he instalado GruntJS. Para ello, hay que instalar "NodeJS", "NPM" y, utilizando este último, "GruntJS". Para ello he utilizado el [manual de esta web](http://codehero.co/como-utilizar-gruntjs/) donde además se explica cómo realizar un ejemplo de funcionamiento.
+
+
+***
+
+##Ejercicio 6##
+
+#####Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.#####
+
+El PaaS que utilizo es Heroku. Estudiando los ficheros que hay en [un repositorio para descargar una aplicación y practicar su despliegue en Heroku](https://github.com/iblancasa/BackendSI2-IV/wiki/C%C3%B3mo-realizar-un-despliegue-en-Heroku), he visto que el fichero al que se refiere el enunciado se llama "app.json".
+Para crear/editar este fichero, se puede utilizar un editor de textos cualquiera.
+En este fichero se indican distinas cosas, como puede ser el nombre de la aplicación, palabras claves o, incluso, un logotipo de la misma.
+En [esta página (de la documentación de Heroku)](https://devcenter.heroku.com/articles/app-json-schema) hay más información.
+Aunque este fichero es importante, más lo es "Profile". Un fichero que nos permite decir qué órdenes son precisas para la ejecución de nuestra aplicación (probablemente este segundo fichero se acerque más a lo que se pide). En Heroku, de momento (para NodeJS), solo ha sido necesario escribir:
+`web: node index.js`
+Más sobre [Profile](https://devcenter.heroku.com/articles/procfile)
+
+***
+
+##Ejercicio 7##
+
+#####Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.#####
+
+He estado buscando uno que sea útil para el [proyecto de la asignatura](https://github.com/iblancasa/BackendSI2-IV). El que he encontrado ha sido "Mocha".
+[Guía hecha por UnitJS](http://unitjs.com/guide/mocha.html).
+[Guía hecha por Brian Stoner](https://brianstoner.com/blog/testing-in-nodejs-with-mocha/)
+[Guía de Web App Blog](http://webapplog.com/test-driven-development-in-node-js-with-mocha/)
