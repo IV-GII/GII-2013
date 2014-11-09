@@ -315,4 +315,7 @@ Sabremos que estamos en el entorno virtual, porque nuestra terminal cambia de:
 
 * [+]Ejercicio 2
  - A) Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
-  Ya que en el ejercicio dos nos piden el uso de un Paas, y darse de alta 
+
+ Por probar diferentes servicios, me voya dar de alta en Heroku. Para ello nos damos de alta en [Registro Heroku](https://signup.heroku.com/www-home-top). Simplemente con introducir el correo electrónico es más que suficiente.
+ Una vez registrado, te mandarán un correo para verificar el registro. Cuando le demos al enlace nos llevará a una página donde podremos elegir [nuestra contraseña](https://www.dropbox.com/s/uz8ysumr44kgw4s/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.02.26.png?dl=0). Una vez aceptada nuestra contraseña nos aparecera la siguiente página en la cual ya podremos proceder a usar [Heroku](https://www.dropbox.com/s/hxpdhmn704ugkzm/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.04.15.png?dl=0). [Panel de Heroku](https://www.dropbox.com/s/j74vla3g9eg9kpk/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.05.37.png?dl=0).
+
