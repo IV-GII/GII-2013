@@ -91,6 +91,14 @@ git push origin master
 ```
 ***
 ####Ejercicio 7
+######_Comprobar si en la instalación hecha se ha instalado cgroups y en qué punto está montado, así como qué contiene._
+
+Podemos ver como está montado en:
+```sh
+/sys/fs/cgroups
+```
+[Terminal en directo](http://showterm.io/f64ec2630665eef11989a) para ver el contenido de la carpeta cgroups.
+####Ejercicio 8
 ######_Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado._
 
 He creado tres grupos: buenos, malos y regular, y les he asignado los procesos chrome, kate y bash respectivamente.
@@ -115,7 +123,7 @@ El navegador es el que más a consumido.
 
 
 ***
-####Ejercicio 9
+####Ejercicio 10
 
 ######_Comprobar si el procesador o procesadores instalados lo tienen. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?_
 
@@ -125,7 +133,7 @@ Comprobamos que la tecnologia que utiliza intel para la virtualización está ac
 
 ![Ejercicio9](capturas/Ejercicio9.png)  
 ***
-####Ejercicio 10
+####Ejercicio 11
 ######_Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok._
 
 
@@ -142,31 +150,5 @@ Una vez instalado esto es lo que nos muestra:
 Por lo tanto el módulo **KMV** esta activado en el kernel de mi SO.
 ***
 
-####Ejercicio 12
-######_Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente)._
-
-Para instalar el entorno virtual virtualenv de Python, primero instalé python-pip con el siguiente comando:
-```sh
-sudo apt-get install python-pip
-```
-y a continuación:
-```sh
-pip install virtualenv
-
-```
-y luego ejecutamos la orden:
-```sh
-sudo pip virtualenv
-```
-***
-####Ejercicio 13 y 14 
-######_Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift._
-######_Crear una aplicación en OpenShift y dentro de ella instalar WordPress._
-Estos dos ejercicios los he puesto juntos ya que me he dado de alta en OpenShift directamente y he creado una aplicación para poder utilizar WordPress.
-
-Una Vez dado de alta en OpenShift, creamos una aplicacion nueva, en este caso será WordPress, en este caso le he puesto de nombre blog.  
-![](capturas/Ejercicio13.png)  
-Para poder acceder al blog pincha en el siguiente [enlace](http://blog-angeljcc.rhcloud.com/).  
-![](capturas/Ejercicio14.png)
 
 

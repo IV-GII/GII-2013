@@ -67,14 +67,190 @@ Pese a que económicamente Amazon siempre salga mejor, yo personalmente para un 
 
 
 ***
-
-##Ejercicio 3
-
-**1. ¿Qué tipo de virtualización usarías en cada caso? Comentar en el foro**
-
-**2. Crear un programa simple en cualquier lenguaje interpretado para Linux, empaquetarlo con CDE y probarlo en diferentes distribuciones.**
-
-
 ##Ejercicio 4
 
 **Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**
+
+![](./Imagenes/docker-fin.png)
+
+***
+##Ejercicio 5
+
+**Instala el sistema de gestión de fuentes git**
+
+[ayuda]:https://help.github.com/articles/set-up-git/
+
+El sistema lo instalé a partir del segundo ejercicio. Para ello usé el comando:
+*sudo apt-get install git* y seguí el apartado de [ayuda] de github para su configuración.
+
+Ejemplo de uso:
+
+![](./Imagenes/git-uso.png)
+
+***
+
+##Ejercicio 6
+
+1. **Crear un proyecto y descargárselo con git. Al crearlo se marca la opción de incluir el fichero README.**
+2. **Modificar el readme y subir el fichero modificado.**
+
+En primer lugar creamos un nuevo repositorio incluyendo el Readme:
+
+
+![](./Imagenes/prueba-ejer6.png)
+
+Accedemos a nuestro nuevo repositorio:
+
+![](./Imagenes/prueba-ejer6-2.png)
+
+Copiamos la URL de dicho repositorio pulsando el botón de la flechita:
+
+![](./Imagenes/prueba-ejer6-3.png)
+
+Ahora, en nuestra terminal, clonamos el nuevo repositorio en nuestro equipo mediante dicha URL:
+
+![](./Imagenes/prueba-ejer6-4.png)
+
+Editamos el archivo Readme.md con nuestro editor favorito para hacer constancia de nuestro cambio:
+
+![](./Imagenes/prueba-ejer6-5.png)
+
+Ahora debemos crear un commit con el archivo modificado ( yo he usado "." para que tomase todos los del directorio ) y le agregamos una información del cambio que hemos realizado.
+
+![](./Imagenes/prueba-ejer6-6.png)
+
+Introducimos nuestros datos de usuario de git tras el push:
+
+![](./Imagenes/prueba-ejer6-7.png)
+
+Y finalmente comprobamos que nuestros cambios por terminal realmente han sido almacenados en git:
+
+![](./Imagenes/prueba-ejer6-8.png)
+
+***
+
+##Ejercicio 7
+
+ **Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.**
+ 
+[esta página]:http://tarifasgasluz.com/faq/precio-kwh/espana
+ 
+He creado tres grupos con los nombres de los procesos sobre los que van a realizar la contabilidad de su uso en el sistema. Chromium, gedit y clementine que, respectivamente monitorizan el navegador de internet, un procesador de textos y un reproductor de música. A cada proceso se les ha asignado un nucleo distinto dentro del mismo procesador. Los resultados son los siguientes:
+
+![](./Imagenes/resultado-cgroup.png)
+
+Clementine es el que más recursos usa puesto que estaba en funcionamiento mientras tomaba las medidas.
+
+***
+
+##Ejercicio 9
+
+**Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
+Poseo un procesador de 8 nucleos, he aquí la salida de uno de los nucleos a partir de *cat /proc/cpuinfo*:
+
+![](./Imagenes/captura-procesador.png)
+
+Y la correspondiente salida para *egrep '^flags.*(vmx|svm)' /proc/cpuinfo* :
+
+![](./Imagenes/captura-flags.png)
+
+***
+
+##Ejercicio 10
+
+**Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden *kvm-ok*.**
+
+La orden no está instalada: 
+
+![](./Imagenes/no-instalado-kvm-ok.png)
+
+Tras la instalación de *cpu-checker*, la orden produce la siguiente salida:
+
+![](./Imagenes/salida-kvm-ok.png)
+
+Demostrando que la tecnología está disponible.
+
+***
+
+##Ejercicio 12
+
+**Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).**
+
+[nodeenv para node.js]:https://pypi.python.org/pypi/nodeenv/
+[guía]:https://pypi.python.org/pypi/nodeenv/
+[virtualenv]:https://github.com/pypa/virtualenv
+
+Voy a instalar [nodeenv para node.js] para ello primero instalo *python-pip*: **sudo apt-get install python-pip**
+Ahora, siguiendo la [guía], instalamos *nodeenv*: **sudo pip install nodeenv**
+Ahora, ejecutamos **nodeenv**: 
+
+Creamos un nuevo entorno: *nodeenv env* 
+
+Activamos el nuevo entorno: *. env/bin/activate*
+
+En un entorno podemos instalar paquetes. Ver la [guía].
+
+Para desactivar el entorno tan solo hacemos: *deactivate_node*
+
+***
+
+##Ejercicio 13
+
+**Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
+
+Me di de alta en Heroku en el ejercicio 2. Muestro una captura en la interfaz tras crear una aplicación:
+
+![](./Imagenes/registrado-heroku.png)
+
+***
+
+##Ejercicio 14
+
+**Crear una aplicación en OpenShift y dentro de ella instalar WordPress.**
+
+[esta dirección]:https://wordpress-xripa.rhcloud.com/
+
+En primer lugar nos registramos en OpenShift:
+
+![](./Imagenes/registrado-openshift.png)
+
+Elegimos la opción de WordPress:
+
+![](./Imagenes/openshift-1.png)
+
+Indicamos nuestro nombre de aplicación y de sitio wordpress:
+
+![](./Imagenes/openshift-2.png)
+
+Seleccionamos la región:
+
+![](./Imagenes/openshift-3.png)
+
+Una vez creado WordPress a través de Openshift nos encontramos con:
+
+![](./Imagenes/openshift-4.png)
+
+Accedemos desde esa página de creación a nuestro WordPress para empezar a configurarlo:
+
+![](./Imagenes/openshift-6.png)
+
+Introducimos datos del sitio y de administrador:
+
+![](./Imagenes/openshift-7.png)
+
+Y terminamos con su creación:
+
+![](./Imagenes/openshift-8.png)
+
+Tras ésta, recibiremos un mensaje confirmando la creación:
+
+![](./Imagenes/registrado-wordpress.png)
+
+Y, en mi caso he realizado una entrada nueva con una imagen para comprobar su uso:
+
+![](./Imagenes/openshift-9.png)
+
+Al sitio se puede acceder a través de [esta dirección].
+
+***
