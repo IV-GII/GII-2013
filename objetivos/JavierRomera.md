@@ -2,13 +2,13 @@ Clase del 23 de septiembre de 2014
 ====
 Objetivos a cubrir en la sesión
 ---
-[x]Entender la metodología docente, de evaluación y de interacción de la asignatura
+- [x] Entender la metodología docente, de evaluación y de interacción de la asignatura
 
-[x]Darse de alta y comprender el funcionamiento básico de GitHub y la lista de correo de la asignatura; conocer el resto de los recursos de la asignatura.
+- [x] Darse de alta y comprender el funcionamiento básico de GitHub y la lista de correo de la asignatura; conocer el resto de los recursos de la asignatura.
 
-[x] Entender el concepto de software libre y su aplicación práctica en clase.
+- [x] Entender el concepto de software libre y su aplicación práctica en clase.
 
-[x] Vernos las caras.
+- [x] Vernos las caras.
 
 
 Clase del 29 de septiembre de 2014
@@ -87,3 +87,8 @@ Objetivos a cubrir en la sesión
 [x] Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
 
 [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+Otros objetivos
+[x] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+[x] Comprender el método de entrega de las prácticas de la asignatura.
+
