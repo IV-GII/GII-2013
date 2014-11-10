@@ -100,5 +100,19 @@ Vemos como en el menú aparece con distinto nombre:
 ###Ejercicio 6:
 ####Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.
 
+- Las aplicaciones en OpenShift se construyen alrededor de un flujo de trabajo de control de código fuente en Git. Se codifica locálmente y luego sube los cambios al servidor. Opcionalmente también se pueden construirse usando Jenkins o, usando hot deployment lo que acelera el despliegue del código en OpenShift.
+
+- OpenShift ejecutará archivos de script controlados en un repositorio de Git en puntos específicos durante el proceso de implementación. Si no existe el archivo de script correspondiente, el proceso de implementación continuará normalmente. Todos los enlaces se deben de colocar en el .openshift/action_hooks/ que es el repositorio de sus aplicaciones. Las fases de construcción son:
+
+	- Pre-Receive: Durante el push, OpenShift comprueba que la aplicación se encuentra en un estado coherente.
+	- Pre-Build: Ocurre cuando la aplicación está detenida y el nuevo repo dir se ha deplegado antes de la construcción. Ejecuta .openshift/action_hooks/pre_build script
+	- Build: Construye la aplicación, descarga los deps necesarios, ejecuta el .openshift/action_hooks/build script y lo prepara para el despliegue.
+	- Deploy: Ocurre justo antes de que la aplicación se inicie. Se realiza el trabajo de preparación necesario para conseguir que la aplicación esté lista para ser iniciada, esto se realiza en el .openshift/action_hooks/deploy hook.
+	- Post-Deploy: Lo pueden necesitar algunas aplicaciones iniciadas para completar el proceso de implementación. Cuando se inicia la aplicación, se ejecutará el .openshift/action_hooks/post_deploy hook.
+
+Para la construcción con Jekins: pulsar [enlace](https://developers.openshift.com/en/managing-continuous-integration.html)
+
 ###Ejercicio 7:
 ####Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+Para Python el entorno de pruebas que utiliza es PyUnit, que es un estándar unit testing framework. Es la versión de JUnit para python. El autor es Steve Purcell
