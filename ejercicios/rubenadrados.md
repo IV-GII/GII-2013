@@ -42,3 +42,48 @@ Ejecutando la orden:
 kvm-ok
 
 Muestra que no esta instalado.
+
+## Tema 2
+
+### Ejercicio 1
+
+He optado por la instalacion de la maquina virtual de python dado que tambien trabajamos con este lenguage en la asignatura DAI.
+
+Instalacion:
+```sh
+sudo apt-get install python-pip
+pip install virtualenv
+```
+
+Ejecutamos:
+```sh
+sudo pip virtualenv
+```
+
+### Ejercicio 2 y 3
+
+[enlace]:https://ejercicioiv-rubenadrados.rhcloud.com/
+
+Dado que el ejercicio 3 es sobre OpenShift he decidido hacer los dos juntos.
+
+Una vez registrados siguiendo unos sencillos pasos creamos nuestra aplicacion de WordPress.
+
+Podemos ver la pagina en el siguiente [enlace].
+
+
+### Ejercicio 4
+
+Accedemos a nuestro GoogleDrive. Si queremos crear por primera vez un script tendremos que conectar dicha aplicacion dado que no viene por defecto, una vez conectada aparacera siempre.
+
+He creado un pequeño script para cambiar el nombre de los documentos:
+
+```sh
+function myFunction() {
+  var files = DriveApp.getFilesByName('Archivo');
+  while(files.hasNext()) {
+    var fichero = files.next();
+    fichero.setName('NuevoArchivo');
+  }
+}
+```
+
