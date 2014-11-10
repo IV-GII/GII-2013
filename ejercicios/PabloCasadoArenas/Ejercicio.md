@@ -289,4 +289,13 @@ y Tox :
 https://tox.readthedocs.org/en/latest/
 
 
+# TEMA 3
+
+## Ejercicio 1
+
+Disasociamos el espacio de nombres actual
+sudo unshare -m /bin/bash
+Creamos mnt/disk y lo montamos.
+sudo mkdir /mnt/disk
+mount -o loop dsl-4.11.rc1.iso /mnt/disk
 
