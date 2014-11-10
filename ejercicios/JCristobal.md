@@ -466,7 +466,27 @@ En este [blog](http://blog.solucionex.com/javascript/expressjs-un-framework-para
 ##Ejercicio 1
 ###Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback
 
-(sin hacer todavía)
+Creamos el archivo iso con:  sudo dd if=cdrom of=isoprueba.iso
+
+Creo la carpeta donde voy a montar el disco (disk en mnt) y lo monto: sudo mount -o loop -t iso9660  isoprueba.iso /mnt/disk
+
+(pero la imagen iso no es del todo correcta y da fallo, por lo que monto una que tengo ya, ubuntu 14.04.1 server)
+
+sudo mount -o loop -t iso9660  ubuntu-14.04.1-server-i386.iso /mnt/disk
+
+![imagen1]()
+
+
+Consulto los enlaces: [crear un archivo iso](http://serverfault.com/questions/5689/creating-an-iso-file-in-linux)
+[montar la iso](http://serverfault.com/questions/198135/how-to-mount-an-iso-file-in-linux)
+
+
+(sin acabar)
+
+
+
+
+
 
 
 
