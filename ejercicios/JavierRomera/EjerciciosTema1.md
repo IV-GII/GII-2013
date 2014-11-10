@@ -87,11 +87,9 @@ Página usada para calcular costes: http://www.eu-energystar.org/es/es_008.shtml
 
 Ejercicio 9.
 ------
-*[Prioridad a los procesos de usuario que a los procesos del sistema](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.2.jpg)
-
-*[Usar un programa que muestre en tiempo real la carga del sistema](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.3.jpg)
-
-*[Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.4.jpg)
+* [Prioridad a los procesos de usuario que a los procesos del sistema](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.2.jpg)
+* [Usar un programa que muestre en tiempo real la carga del sistema](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.3.jpg)
+* [Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.4.jpg)
 
 Ejercicio 10.
 ------
