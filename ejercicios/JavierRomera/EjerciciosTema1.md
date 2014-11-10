@@ -52,18 +52,18 @@ Ejercicio 5.
 Ejercicio 6.
 ------
 1. Creamos la carpeta en Github
-2. [Clonamos la carpeta](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/6.2.jpg)
+2. [Hacemos *clone* del directorio](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/6.2.jpg)
 3. [Editamos el README.md](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/6.3.jpg)
 4. [Comprobamos el estado antes y después de hacer *git add .*](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/6.4.jpg)
 5. [Hacemos commit y escribimos el mensaje correspondiente](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/6.5.jpg)
 6. [*git commit*](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/6.6.jpg)
 7. [Hacemos push](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/3.7.jpg)
-8. [Comprobamos que READMe.md se ha modificado](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/6.8.jpg)
+8. [Comprobamos que READMe.md se ha modificado.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/6.8.jpg)
 
 Ejercicio 7.
 ------
-1. [Comprobamos la instalación](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/7.1.jpg)
-2. [Comprobamos lo que contiene](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/7.2.jpg)
+1. [Comprobamos la instalación.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/7.1.jpg)
+2. [Comprobamos lo que contiene.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/7.2.jpg)
 
 Ejercicio 8.2.
 ------
@@ -71,7 +71,7 @@ Ordenador usado: http://www.senetic.es/product/678237-051
 
 Página usada para calcular costes: http://www.eu-energystar.org/es/es_008.shtml
 
-[valores obtenidos](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/8.2.jpg)
+[Valores usados.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/8.2.jpg)
 
 **Amortización año 1:** 4.825€ + €323,9€ = 5.148,9€
 
