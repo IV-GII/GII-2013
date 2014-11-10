@@ -66,3 +66,5 @@ Mi PaaS elegido es OpenShift pero no encuentro el fichero de automatización. (B
 
 ###### Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
 
+(Terminar)
+
