@@ -40,10 +40,11 @@ Para confirmar la cuenta recibiremos un email en el correo donde nos hemos regis
 
 -	Lo primero que tenemos que hacer es logearnos en la página.
 -	Una vez logeados ya podemos crear una aplicación:
+
 ![](./capturas2/6.png)
 
 -	Escogemos instalar WordPress
--	
+
 ![](./capturas2/7.png)
 
 -	El siguiente paso es configurar la aplicación y crearla.
@@ -55,6 +56,7 @@ Para confirmar la cuenta recibiremos un email en el correo donde nos hemos regis
 ![](./capturas2/15.png)
 
 - Si le damos a la dirección de arriba nos muestra lo siguiente:
+
 ![](./capturas2/13.png)
 
 ![](./capturas2/16.png)
@@ -116,3 +118,5 @@ Para la construcción con Jekins: pulsar [enlace](https://developers.openshift.c
 ####Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
 
 Para Python el entorno de pruebas que utiliza es PyUnit, que es un estándar unit testing framework. Es la versión de JUnit para python. El autor es Steve Purcell
+
+Virtualenv dispone de entornos para realizar pruebas. Para realizar pruebas basta con utilizar el siguiente comando: python setup.py testprueba
