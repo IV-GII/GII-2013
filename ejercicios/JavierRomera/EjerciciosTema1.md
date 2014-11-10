@@ -13,7 +13,7 @@ Ejercicio 1 .
 
 Ejercicio 2.
 ------
-***Nube: 4vCore/ 4GB /50GB**
+* **Nube: 4vCore/ 4GB /50GB**
 
 |**Mes**: 15.99€ - 19.35€(con IVA)|**Año**: 191.88€ - 232.17€(con IVA)|
 |-----------------------|-----------------------|
@@ -21,14 +21,14 @@ Ejercicio 2.
 |Uso 10% al mes= 1.935€ | Uso 10% al año= 23.217€|	
 
 
-***Físico: 4vCore/ 8GB /100GB**
+* **Físico: 4vCore/ 8GB /100GB**
 
 |**Mes**: 14.99€ - 18.14€(con IVA)|**Año**: 179.88€ - 217.65€(con IVA)|
 |-----------------------|-----------------------|
 |Uso 1% al mes= 0.1814€ | Uso 1% al año= 2.1765€|	
 |Uso 10% al mes= 1.814€ | Uso 10% al año= 21.765€|
 
-***Físico: 3vCore/ 4GB /50GB**
+* **Físico: 3vCore/ 4GB /50GB**
 
 |**Mes**: 7.99€ - 9.67€(con IVA)|**Año**: 95.88€ - 116.01€(con IVA)|
 |-----------------------|-----------------------|
@@ -87,11 +87,11 @@ Página usada para calcular costes: http://www.eu-energystar.org/es/es_008.shtml
 
 Ejercicio 9.
 ------
-[Prioridad a los procesos de usuario que a los procesos del sistema](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.2.jpg)
+*[Prioridad a los procesos de usuario que a los procesos del sistema](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.2.jpg)
 
-[Usar un programa que muestre en tiempo real la carga del sistema](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.3.jpg)
+*[Usar un programa que muestre en tiempo real la carga del sistema](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.3.jpg)
 
-[Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.4.jpg)
+*[Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/9.4.jpg)
 
 Ejercicio 10.
 ------
