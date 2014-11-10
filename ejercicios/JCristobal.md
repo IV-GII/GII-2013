@@ -474,15 +474,18 @@ Creo la carpeta donde voy a montar el disco (disk en mnt) y lo monto: sudo mount
 
 sudo mount -o loop -t iso9660  ubuntu-14.04.1-server-i386.iso /mnt/disk
 
-![imagen1]()
+![imagen1](http://i.imgur.com/7qmjoQ2.png)
 
 
 Consulto los enlaces: [crear un archivo iso](http://serverfault.com/questions/5689/creating-an-iso-file-in-linux)
 [montar la iso](http://serverfault.com/questions/198135/how-to-mount-an-iso-file-in-linux)
 
 
-(sin acabar)
 
+##Ejercicio 2
+###Mostrar los puentes configurados en el sistema operativo.
+
+###Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
 
 
 
