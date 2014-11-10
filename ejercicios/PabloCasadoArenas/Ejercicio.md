@@ -308,6 +308,7 @@ mount -o loop dsl-4.11.rc1.iso /mnt/disk
 brctl show nos muestra todos los puentes. No muestra ninguno porque ninguno esta configurado todavia.
 
 Creamos un puente y lo asignamos a la interfaz eth0.
+
 brctl addbr pablo
 
 brctl addif pablo eth0
