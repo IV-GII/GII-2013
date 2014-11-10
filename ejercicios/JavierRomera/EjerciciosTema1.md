@@ -76,6 +76,7 @@ Ejercicio 9.
 Ejercicio 10.
 ------
 [Mi procesador no tiene esos flags instalados.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/10.1.jpg)
+
 [Características de mi CPU.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/10.2.jpg)
 
 Ejercicio 11.
