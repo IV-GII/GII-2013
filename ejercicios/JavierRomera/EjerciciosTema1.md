@@ -2,13 +2,13 @@ Ejercicio 1 .
 -------
 **Producto:** HP ProLiant ML350p Gen8 E5-2650 
 
-**Coste:** 4.825,00 € 
-
 **Web:** http://www.senetic.es/product/678237-051
 
-**Amortización a 4 años** = 25% (100/4) = 1206.25 €
+**Coste:** 4.825,00 € 
 
-**Amortización a 7 años** = 14'285% (100/7) = 689.2515 €
+**Amortización a 4 años** (25%) = 1206.25 €
+
+**Amortización a 7 años** (14'285%) = 689.2515 €
 
 
 Ejercicio 2.
@@ -64,6 +64,20 @@ Ejercicio 7.
 ------
 1. [Comprobamos la instalación](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/7.1.jpg)
 2. [Comprobamos lo que contiene](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/7.2.jpg)
+
+Ejercicio 8.2.
+------
+Ordenador usado: http://www.senetic.es/product/678237-051
+Página usada para calcular costes: http://www.eu-energystar.org/es/es_008.shtml
+
+[valores obtenidos](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/8.2.jpg)
+
+**Amortización año 1:** 4.825€ + €323,9€ = 5.148,9€
+**Amortización año 2:** 2.412.5€ + €323,9€ = 2.736,4€
+**Amortización año 3:** 1.592.25€ + €323,9€ = 1.916,25€
+**Amortización año 4:** 1206.25 € + €323,9€ = 1.530,15
+**Amortización año 5:** 965€ + €323,9€ = 1.288,9€
+**Amortización año 6:** 772 + €323,9 = 1.095,9€
 
 Ejercicio 9.
 ------
