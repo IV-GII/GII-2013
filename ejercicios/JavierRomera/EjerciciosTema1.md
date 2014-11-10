@@ -68,15 +68,21 @@ Ejercicio 7.
 Ejercicio 8.2.
 ------
 Ordenador usado: http://www.senetic.es/product/678237-051
+
 Página usada para calcular costes: http://www.eu-energystar.org/es/es_008.shtml
 
 [valores obtenidos](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/8.2.jpg)
 
 **Amortización año 1:** 4.825€ + €323,9€ = 5.148,9€
+
 **Amortización año 2:** 2.412.5€ + €323,9€ = 2.736,4€
+
 **Amortización año 3:** 1.592.25€ + €323,9€ = 1.916,25€
+
 **Amortización año 4:** 1206.25 € + €323,9€ = 1.530,15
+
 **Amortización año 5:** 965€ + €323,9€ = 1.288,9€
+
 **Amortización año 6:** 772 + €323,9 = 1.095,9€
 
 Ejercicio 9.
