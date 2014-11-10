@@ -43,7 +43,7 @@ Ejercicio 3.
 
 Ejercicio 4.
 ------
-Se ha realizado el tutorial de Docker.
+[Se ha realizado el tutorial de Docker.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema1_Imagenes/4.jpg)
 
 Ejercicio 5.
 ------
