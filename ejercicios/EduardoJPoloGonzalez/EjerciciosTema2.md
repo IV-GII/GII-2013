@@ -48,7 +48,7 @@ Para confirmar la cuenta recibiremos un email en el correo donde nos hemos regis
 ![](./capturas2/7.png)
 
 -	El siguiente paso es configurar la aplicación y crearla.
--	
+
 ![](./capturas2/8.png)
 
 -	Una vez creada nos muestra lo siguiente:
