@@ -308,4 +308,24 @@ Ejecutamos la aplicación mediante el menú Ejecutar.
 
 ![Aplicacion funcionando](http://i.imgur.com/iVPqBjV.png)
 
+##Ejercicio 5
 
+Un sistema de automatización de la construcción  para python  es **web.py** (orientado a aplicaciones en Internet), que pueden descargarlo del siguiente repositorio http://github.com/webpy/webpy
+
+
+* * *
+
+**Buildbot**,también sistema de automatización de la construcción  para python (entre otros lenguajes), y pueden instalarlo siguiendo los pasos de su página [web](http://docs.buildbot.net/0.8.7p1/manual/installation.html)
+
+##Ejercicio 6
+
+En OpenShift por ejemplo el fichero de automatización se encuentra en `.openshift/action_hooks/build` tal y como viene especificado la[ web oficial](https://developers.openshift.com/en/getting-started-modifying-applications.html#making-changes-to-your-application) . 
+
+El sistema de construcción es un sistema de una serie de hooks (según el tipo de aplicación) que al ejecutarse construyen y configuran la aplicación con todo lo necesario.
+
+##Ejercicio 7
+
+El entorno de desarollo virtualenv, dispone de entornos aislados de pruebas como se nos indica en su[ página web ](https://virtualenv.pypa.io/en/latest/virtualenv.html#usage)  con el siguiente comando: `python setup.py test` dónde `setup.py `, es el código que se pasará a prueba.
+
+* * *
+También disponemos de **Buildbot** (que ya mencione en el ejercicio 5), con el que disponemos también de herramientas para realizar test.
