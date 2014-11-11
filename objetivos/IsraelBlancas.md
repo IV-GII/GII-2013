@@ -165,3 +165,36 @@ Lista de objetivos Israel Blancas Álvarez
 
 * [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
 * [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+
+
+***
+***
+
+##Clase del 3 de noviembre de 2014##
+
+* [X] Consolidar el uso de PaaS/SaaS
+* [X] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+* [X] Continuar con la segunda práctica
+
+###Otros objetivos###
+
+* [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
+* [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+
+
+***
+***
+
+##Clase del 4 de noviembre de 2014##
+
+* [X] Entender los objetivos de este tema
+* [X] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+* [X] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+* [X] Entender y saber llevar a cabo la virtualización de dispositivos de red
+
+###Otros objetivos###
+
+* [X] Usar herramientas de administración y monitorización de red en línea de órdenes
+* [X] Contestar a la encuesta sobre la asignatura
+* [X] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
+* [X] Dejar de usar Sublime Text por estas 7 razones.
