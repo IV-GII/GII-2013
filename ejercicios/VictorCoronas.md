@@ -279,8 +279,6 @@ Ejemplos más conocidos de Saas son Google Docs, Salesforce, Dropbox, Gmail…
 
 #Clase del 20 de octubre de 2014
 
-#Objetivos de esta sesión
-
 * [+]Ejercicio 1
  - A) Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).
  
@@ -321,3 +319,15 @@ Sabremos que estamos en el entorno virtual, porque nuestra terminal cambia de:
  Por probar diferentes servicios, me voya dar de alta en Heroku. Para ello nos damos de alta en [Registro Heroku](https://signup.heroku.com/www-home-top). Simplemente con introducir el correo electrónico es más que suficiente.
  Una vez registrado, te mandarán un correo para verificar el registro. Cuando le demos al enlace nos llevará a una página donde podremos elegir [nuestra contraseña](https://www.dropbox.com/s/uz8ysumr44kgw4s/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.02.26.png?dl=0). Una vez aceptada nuestra contraseña nos aparecera la siguiente página en la cual ya podremos proceder a usar [Heroku](https://www.dropbox.com/s/hxpdhmn704ugkzm/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.04.15.png?dl=0). [Panel de Heroku](https://www.dropbox.com/s/j74vla3g9eg9kpk/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.05.37.png?dl=0).
 
+
+#Clase del 20 de octubre de 2014
+
+* [+]Ejercicio 3
+ - A) Crear una aplicación en OpenShift y dentro de ella instalar WordPress.
+ 
+Lo primero que tenemos que hacer es registrarnos como en el caso de Heroku, para ello vamos a la página de [registro de OpenShift](https://openshift.redhat.com/app/account/new?__utma=222392261.655486696.1381573316.1381573316.1381573316.1&__utmb=222392261.2.10.1381573316&__utmc=222392261&__utmx=-&__utmz=222392261.1381573316.1.1.utmcsr=google%7Cutmccn=(organic)%7Cutmcmd=organic%7Cutmctr=(not%20provided)&__utmv=-&__utmk=111961607). Una vez que hemos rellenado todos los campos y nos hemos registrado satisfactoriamente, nos mandarán un correo para verificar nuestro resgistro, le damos al enlacen de verificación y nos aparecera la siguiente [página](https://www.dropbox.com/s/7gq23aihktadbo3/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.10.33.png?dl=0) y le damos a "Aceptar los términos". Cuando hayamos aceptado nos aparecera la siguiente página, donde le daremos a [Create your first application now](https://www.dropbox.com/s/ajekyxx09xkt4ch/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.12.12.png?dl=0) que nos mostrará el [panel de trabajo](https://www.dropbox.com/s/frizikrl9wpzkja/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.17.49.png?dl=0). Ahora unavez estemos ya en este panel de trabajo, nos encontraremos con una sección de [Instant app](https://www.dropbox.com/s/1itxucid9kocvi4/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.18.53.png?dl=0), donde seleccionaremos "WordPress4".
+Una vez seleccionado "WordPress4", tendremos que rellenar el campo con la [dirección](https://www.dropbox.com/s/azit2zq4n1yobs2/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.25.22.png?dl=0) que queremos tener, el resto de opciones se quedan como estan, y le damos a "Create Application".
+Cuando se haya creado, aparece lo [siguiente](https://www.dropbox.com/s/f06b29n2qdirhbu/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.27.38.png?dl=0), y le damos a "Not now, continue".[Ya esta creada](https://www.dropbox.com/s/dg9654hrycclidl/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.29.27.jpg?dl=0).
+
+Ahora tenemos que registrarnos en [WordPress](https://www.dropbox.com/s/ancwhqe88zuvqgb/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.42.05.png?dl=0). Entraremos en el [panel de control de WordPress](https://www.dropbox.com/s/4scyktk2kutwx5d/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.43.36.png?dl=0).
+Creo una ueva entrada, ya estaria todo [terminado](https://php-walkerazos.rhcloud.com/).
