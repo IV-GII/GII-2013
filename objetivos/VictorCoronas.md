@@ -45,74 +45,77 @@
 * [+]Usar ficheros en el repositorio para los ejercicios.
 * [+]Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
 
+#TEMA 2
+
 #Clase del 20 de octubre de 2014
 
 #Objetivos de esta sesión
 
-* []Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
-* []Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
-*  []Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+* [+]Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
+* [+]Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
+*  [+]Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
 #Otros objetivos
 
-* []Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
-* []Comprender el método de entrega de las prácticas de la asignatura.
+* [+]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+* [+]Comprender el método de entrega de las prácticas de la asignatura.
 
 #Clase del 21 de octubre de 2014
 
 #Objetivos de esta sesión
 
-* []Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
-* []Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
-* []Crear nuevas funciones en un SaaS.
+* [+]Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+* [+]Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
+* [+]Crear nuevas funciones en un SaaS.
 
 #Otros objetivos
 
 * []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
-* []Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* []Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
-* []Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
+* [+]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [+]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+* [+]Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
 
 #Clase del 27 de octubre de 2014
 
 ##Objetivos de esta sesión
 
-* []Consolidar el uso de PaaS/SaaS
-* []Entender los sistemas de automatización de la construcción de aplicaciones
+* [+]Consolidar el uso de PaaS/SaaS
+* [+]Entender los sistemas de automatización de la construcción de aplicaciones
 
 #Otros objetivos
 
-* []Último día de entrega de la primera práctica. 
+* [+]Último día de entrega de la primera práctica. 
 * []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request *directamente a su copia del repositorio*, no al repositorio principal de la asignatura. 
-* []Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* []Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+* [+]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [+]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
 
 #Clase del 28 de octubre de 2014
 
 #Objetivos de esta sesión
 
-* []Consolidar el uso de PaaS/SaaS
-* []Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
-* []Comenzar con [la segunda práctica](https://github.com/JJ/IV/blob/master/documentos/practicas/2.XaaS.md)
+* [+]Consolidar el uso de PaaS/SaaS
+* [+]Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+* [+]Comenzar con [la segunda práctica](https://github.com/JJ/IV/blob/master/documentos/practicas/2.XaaS.md)
 
 #Otros objetivos
 
 * []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request *directamente a su copia del repositorio*, no al repositorio principal de la asignatura. 
-* []Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* []Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+* [+]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [+]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
 
 #Clase del 3 de noviembre de 2014
 
 #Objetivos de esta sesión
 
-* []Consolidar el uso de PaaS/SaaS
-* []Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
-* []Continuar con [la segunda práctica](https://github.com/JJ/IV/blob/master/documentos/practicas/2.XaaS.md)
+* [+]Consolidar el uso de PaaS/SaaS
+* [+]Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+* [+]Continuar con [la segunda práctica](https://github.com/JJ/IV/blob/master/documentos/practicas/2.XaaS.md)
 
 #Otros objetivos
 
 * []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request *directamente a su copia del repositorio*, no al repositorio principal de la asignatura. 
-* []Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+* [+]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
+
 
 #Clase del 4 de noviembre de 2014
 
