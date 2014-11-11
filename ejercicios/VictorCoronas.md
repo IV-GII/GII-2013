@@ -331,3 +331,12 @@ Cuando se haya creado, aparece lo [siguiente](https://www.dropbox.com/s/f06b29n2
 
 Ahora tenemos que registrarnos en [WordPress](https://www.dropbox.com/s/ancwhqe88zuvqgb/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.42.05.png?dl=0). Entraremos en el [panel de control de WordPress](https://www.dropbox.com/s/4scyktk2kutwx5d/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.43.36.png?dl=0).
 Creo una ueva entrada, ya estaria todo [terminado](https://php-walkerazos.rhcloud.com/).
+
+
+* [+]Ejercicio 4
+ - A) Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.
+
+Nos vamos a [Google Drive](https://www.dropbox.com/s/aptx9tbfm7ys7l4/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.54.46.png?dl=0) y creamos un nuevo documento de texto. Una vez creado el documento nos vamos a [Herrramientas -->Editor de secuencia de comandos..](https://www.dropbox.com/s/zttpeyothwvqndj/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.51.45.png?dl=0)
+Ahora creamos el nuevo [Script](https://www.dropbox.com/s/ew3jmx20ah2kvaw/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.56.32.png?dl=0)
+
+Una vez terminado nuestro [Script](https://www.dropbox.com/s/bbwj4y30pl7txxs/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2017.05.38.png?dl=0), lo ejecutamos, y en nuestro documento [aparecerá](https://www.dropbox.com/s/pvxyx4dmjnm6nde/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2017.08.45.png?dl=0).
