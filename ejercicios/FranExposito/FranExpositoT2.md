@@ -70,3 +70,17 @@ function createAndSendDocument() {
   GmailApp.sendEmail(email, subject, body);
 }
 ```
+
+Concedemos los permisos necesarios para ejecutar el script:  
+
+![G1](imagenes/g1.png)
+
+Y finalmente ejecutamos el script y vemos que recibimos un correo con el nuevo documento tal y como pone en nuestro código:  
+![G2](imagenes/g2.png)
+
+###Ejercicio 5.
+
+###Ejercicio 6.
+
+###Ejercicio 7.
+
