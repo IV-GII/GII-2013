@@ -364,3 +364,10 @@ construcción es:
 EL proceso que sigue es que el nombre de la aplicación se le pasa un guión con la URL, a un archivo que contiene el código fuente, todo ello comprimo en dicho archivo.
 
 Dicho Script coge las entradas y para ello usa "/apps/:app/builds", para poder crear así una nueva estructura dentro de "Heroku". Dentro de la plataforma de Heroku se identifica la nueva estructura, seuidamente pasa a estar en el estado "pendiente" y el siguiente paso sería a "Contrucción". Cuando la estructura se haya creado, pasaría a estar en estado "Éxito" o "Fracaso". De la salida se obtienen los resultados y se muestra por nuestra ventana de trabajo, si ha sido "Éxitosa", la estructura se despliega sola.
+
+* [+]Ejercicio 7
+ - A) Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+Hay varios entornos de pruebas para node.js, pero es uno de los que más se suelen usar, [Sails.js](http://sailsjs.org/#/).
+
+Aquí dejo como [instalarlo en diferentes sistemas](http://sailsjs.org/#/getStarted) y un poco más de infomación sobre él.
