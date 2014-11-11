@@ -275,6 +275,8 @@ Algunos ejemplos sencillos son: Webmail de Gmail, los CRM onlines. En este tipo 
 Por lo que tenemos poco control, nosotros nos situamos en la parte más arriba de la capa del servicio. Si el servicio se cae es responsabilidad de proveedor hacer que vuelva a funcionar.
 Ejemplos más conocidos de Saas son Google Docs, Salesforce, Dropbox, Gmail…
 
+##TEMA 2
+
 #Clase del 20 de octubre de 2014
 
 #Objetivos de esta sesión
