@@ -320,7 +320,7 @@ Sabremos que estamos en el entorno virtual, porque nuestra terminal cambia de:
  Una vez registrado, te mandarán un correo para verificar el registro. Cuando le demos al enlace nos llevará a una página donde podremos elegir [nuestra contraseña](https://www.dropbox.com/s/uz8ysumr44kgw4s/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.02.26.png?dl=0). Una vez aceptada nuestra contraseña nos aparecera la siguiente página en la cual ya podremos proceder a usar [Heroku](https://www.dropbox.com/s/hxpdhmn704ugkzm/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.04.15.png?dl=0). [Panel de Heroku](https://www.dropbox.com/s/j74vla3g9eg9kpk/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.05.37.png?dl=0).
 
 
-#Clase del 20 de octubre de 2014
+#Clase del 21 de octubre de 2014
 
 * [+]Ejercicio 3
  - A) Crear una aplicación en OpenShift y dentro de ella instalar WordPress.
@@ -332,11 +332,35 @@ Cuando se haya creado, aparece lo [siguiente](https://www.dropbox.com/s/f06b29n2
 Ahora tenemos que registrarnos en [WordPress](https://www.dropbox.com/s/ancwhqe88zuvqgb/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.42.05.png?dl=0). Entraremos en el [panel de control de WordPress](https://www.dropbox.com/s/4scyktk2kutwx5d/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.43.36.png?dl=0).
 Creo una ueva entrada, ya estaria todo [terminado](https://php-walkerazos.rhcloud.com/).
 
-
 * [+]Ejercicio 4
  - A) Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.
 
 Nos vamos a [Google Drive](https://www.dropbox.com/s/aptx9tbfm7ys7l4/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.54.46.png?dl=0) y creamos un nuevo documento de texto. Una vez creado el documento nos vamos a [Herrramientas -->Editor de secuencia de comandos..](https://www.dropbox.com/s/zttpeyothwvqndj/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.51.45.png?dl=0)
-Ahora creamos el nuevo [Script](https://www.dropbox.com/s/ew3jmx20ah2kvaw/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.56.32.png?dl=0)
+Ahora creamos el nuevo [Script](https://www.dropbox.com/s/ew3jmx20ah2kvaw/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.56.32.png?dl=0).
 
 Una vez terminado nuestro [Script](https://www.dropbox.com/s/bbwj4y30pl7txxs/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2017.05.38.png?dl=0), lo ejecutamos, y en nuestro documento [aparecerá](https://www.dropbox.com/s/pvxyx4dmjnm6nde/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2017.08.45.png?dl=0).
+
+
+#Clase del 27 de octubre de 2014
+
+* [+]Ejercicio 5
+ - A) Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+Lo primero que tenemos que tener es tener [node.js](http://nodejs.org/), para ello aqui dejo un tutorial de como [instalar](http://geekytheory.com/instalacion-de-nodejs/).
+
+Uno de los automatizadores de construcción de "node.js" es [Grunt](http://gruntjs.com/). Hay que [instalarlo](http://gruntjs.com/getting-started).
+Para ello usamos el comando:
+
+    npm install -g grunt-cli
+
+* [+]Ejercicio 6
+ - A) Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.
+
+Como yo he usado tanto Heroku como OpenShift, en este caso voy a usar Heroku, por lo que el fichero de automatización de 
+construcción es:
+
+[/apps/:app/builds](https://blog.heroku.com/archives/2014/5/21/introducing_programmatic_builds_on_heroku)
+
+EL proceso que sigue es que el nombre de la aplicación se le pasa un guión con la URL, a un archivo que contiene el código fuente, todo ello comprimo en dicho archivo.
+
+Dicho Script coge las entradas y para ello usa "/apps/:app/builds", para poder crear así una nueva estructura dentro de "Heroku". Dentro de la plataforma de Heroku se identifica la nueva estructura, seuidamente pasa a estar en el estado "pendiente" y el siguiente paso sería a "Contrucción". Cuando la estructura se haya creado, pasaría a estar en estado "Éxito" o "Fracaso". De la salida se obtienen los resultados y se muestra por nuestra ventana de trabajo, si ha sido "Éxitosa", la estructura se despliega sola.
