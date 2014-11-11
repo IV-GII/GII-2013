@@ -255,3 +255,57 @@ Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kern
 Vemos en la captura que mi ordanador no dispone de aceleración KVM
 
 ![Aceleración KVM](http://i.imgur.com/6lcO7pj.png)
+
+***
+***
+
+#Tema 2
+
+##Ejercicio 1
+###Instalar un entorno virtual para tu lenguaje de programación favorito.
+Vamos a instalar el entorno virutal virtualenv para Python.
+Lo primero que hacemos es instalar Pip, que es la herramienta para instalar paquetes de python, lo hacemos escribiendo la orden sudo apt-get install python-pip python-dev build-essential
+
+Despues escribiemos lo siguiente y ya tendremos el entorno virtual instalado:
+![Virtualenv](http://i.imgur.com/gnvPdPN.png)
+
+##Ejercicio 2
+###Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
+Me he dado de alta en [Heroku](https://www.heroku.com/).
+
+![Heroku](http://i.imgur.com/m7QL2AI.png)
+
+##Ejercicio 3
+###Crear una aplicación en OpenShift y dentro de ella instalar WordPress.
+
+Primero nos registramos en Opensift donde vamos a instalar WordPress.
+
+Lo siguiente que hacemos es pinchar en crear una aplicación y despues en la sección de instant app pinchamos 
+en wordpress.
+
+Configuramos la página que nos aparece de la siguiente forma:
+![Wordpress](http://i.imgur.com/nKOGln2.png)
+
+Despues nos pregunta que si queremos cambiar el código de la aplicación, elegimos que no porque la que viene por defecto nos vale.
+
+En este momento nuestra aplicación ya está creada:
+![app](http://i.imgur.com/a7SuBJx.png)
+
+Por último solo nos queda comprobar si todo está correcto, esto lo hacemos pinchando en el enlace que hemos creado y si todo ha ido bien nos saldra el instalador de wordpress. 
+![instalacion word](http://i.imgur.com/fvU5kJL.png)
+
+##Ejercicio 4
+###Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.
+
+Para crear un script en un documento de Google tenemos que crear un documento y acceder a 
+Herramientas >> Editor de secuencias de comandos
+Dentro seleccionamos la opción de Crear secuencia de comandos como aplicación web.
+Una vez hecho esto ya podemos crear una función para comprobar que funciona correctamente. EN este caso he creado una función que lanza un dialogo con el texto "Hello World"
+
+![Hola mundo](http://i.imgur.com/FCODUSX.png)
+
+Ejecutamos la aplicación mediante el menú Ejecutar.
+
+![Aplicacion funcionando](http://i.imgur.com/iVPqBjV.png)
+
+
