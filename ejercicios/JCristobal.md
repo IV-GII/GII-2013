@@ -472,7 +472,7 @@ Creo un espacio de nombres con sudo unshare -u /bin/bash , y cambio el nombre co
 También hay que crear la carpeta donde voy a montar el disco (disk en mnt) 
 
 
-Y lo monto con: sudo mount -o loop - ubuntu-14.04.1-server-i386.iso /mnt/disk
+Y lo monto con: `sudo mount -o loop - ubuntu-14.04.1-server-i386.iso /mnt/disk`
 
 ![imagen1](http://i.imgur.com/tEnEQGi.png)
 
@@ -485,11 +485,28 @@ Consulto los enlaces: [crear un archivo iso](http://serverfault.com/questions/56
 ##Ejercicio 2
 ###Mostrar los puentes configurados en el sistema operativo.
 
+Primero hay que instalar la utilidad para consultarlo `sudo apt-get install bridge-utils`
+
+Y lo consultamos con el comando `sudo brctl show`
+
+Muestro mi salida al comando:
+![imagen1](http://i.imgur.com/6IQnYun.png)
+
 ###Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
 
+Creamos un interfaz virtual `sudo brctl addbr interfazprueba`
+
+Y borramos la que creamos en los ejemplos (alcantara) porque está ocupando la red cableada (eth0) 
+`sudo brctl delbr alcantara`
 
 
+Asignamos esa interfaz a eth0
 
+`sudo brctl addif interfazprueba eth0`
+
+Ya esta asignada, muestro la salida de `sudo brctl show` y veo que el puente del ejemplo (alcantara) está borrado y la recién creada asignada
+
+![imagen2](http://i.imgur.com/4Ht6YOd.png)
 
 
 
