@@ -1,4 +1,5 @@
 # Ejercicios de FelixParra
+# Modulo I
 ## Sesión 29-sept-2014
 
 **Ejercicio 1:**<br />
@@ -100,8 +101,21 @@ Foro: [Contestación](https://github.com/JJ/GII-2014/issues/72 "Contestación")<
 
 <hr />
 
+# Modulo II
 ## Sesión 20-oct-2014
 
 **Ejercicio 1:**<br />
 **Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba,obviamente).**<br />
 Instalación de virtualenv para python.
+
+**Ejercicio 2:**<br />
+**Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**<br />
+![imagen EJ_2_2](http://imageshack.com/a/img911/5276/OiDENR.png)
+
+**Ejercicio 3:**<br />
+**Crear una aplicación en OpenShift y dentro de ella instalar WordPress.**<br />
+[Link web](http://felix-parra.rhcloud.com/ "Web") 
+![imagen EJ_2_3](http://imageshack.com/a/img674/7789/FPOF8Z.png)
+
+**Ejercicio 4:**<br />
+**Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.**<br />
