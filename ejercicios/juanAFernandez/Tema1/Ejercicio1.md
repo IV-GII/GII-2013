@@ -1,10 +1,3 @@
-sesión 29 de septiembre de 2014
-=========
-
-Introducción a la infraestructura virtual: concepto y soporte físico
-
-
-
 ###Ejercicio 1
 
 ++Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo
@@ -16,7 +9,7 @@ La amortización es la forma en la que se expresa la perdida de valor de un equi
 
 Existen varias formas de calcular esta amortización pero en nuestro caso aplicaremos la forma ++constante++ en la que se estima que la perdida de valor es constante cada año y no varía.
 
-#####Calculo de amortización a 4 años:
+#####Cálculo de amortización a 4 años:
 
 Simplificando mucho el cálculo vamos a usar el precio final suponiendo que incluye el IVA y el coste de la puesta en marcha del equipo en caso de que esta fuera necesaria. Asumiremos también que el valor residual estimado del equipo una vez que cese su vida útil será de 100€ (valor que el equipo tendría si quisiéramos venderlo). Además la amortización la realizaremos como si el equipo lo hubieramos comprado el 1 de Enero, para simplificar los cálculos.
 
@@ -40,7 +33,7 @@ Esto podemos resumirlo en el siguiente cuadro:
 
 Así para que nuestro equipo fuera amortizándose deberíamos de ir obteniendo de el unos resultados convertidos para nosotros en beneficios de 193.525 € como mínimo, cada año para que este no supusiera pérdidas.
 
-#####Calculo de amortización a 7 años:
+#####Cálculo de amortización a 7 años:
 
 Este se realiza de la misma forma que el anterior pero esta vez el valor residual estimado será sólo de 50€, entonces:
 
