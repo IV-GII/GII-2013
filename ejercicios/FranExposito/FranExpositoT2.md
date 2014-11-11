@@ -21,6 +21,24 @@ Ya podemos comenzar a utilizar el entorno de desarrollo.
 ##Ejercicio 2.
 He decidido crear una cuenta en Heroku:  
 
-![Heroku](/imagenes/heroku.png)  
+![Heroku](../imagenes/heroku.png)  
 
 ##Ejercicio 3.
+En primer lugar nos registramos en [OpenShift](https://www.openshift.com/):  
+
+![OS1](../imagenes/os1.png) 
+
+Tras el registro, debemos crear una nueva aplicación. En nuestor caso seleccionamos WordPress:  
+
+![OS2](../imagenes/os2.png)
+
+Configuramos la aplicación:  
+
+![OS3](../imagenes/os3.png)
+
+En el siguiente paso ya solo queda configurar la instalación de wordpress:  
+
+![OS4](../imagenes/os4.png)  
+![OS5](../imagenes/os5.png)  
+
+Y ya tenemos el sitio listo: [Wordpress for IV](https://wp-franexpiv.rhcloud.com/).
