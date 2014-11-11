@@ -500,11 +500,11 @@ Y borramos la que creamos en los ejemplos (alcantara) porque está ocupando la r
 `sudo brctl delbr alcantara`
 
 
-Asignamos esa interfaz a eth0
+Asignamos la nueva interfaz a eth0
 
 `sudo brctl addif interfazprueba eth0`
 
-Ya esta asignada, muestro la salida de `sudo brctl show` y veo que el puente del ejemplo (alcantara) está borrado y la recién creada asignada
+Ya esta asignada, muestro la salida de `sudo brctl show` y veo que la interfaz del ejemplo (alcantara) está borrado y la recién creada asignada
 
 ![imagen2](http://i.imgur.com/4Ht6YOd.png)
 
