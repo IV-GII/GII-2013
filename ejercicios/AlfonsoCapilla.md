@@ -266,7 +266,7 @@ Herramientas >> Editor de secuencias de comandos
 Dentro seleccionamos la opción de Crear secuencia de comandos como aplicación web.
 Una vez hecho esto ya podemos crear una función para comprobar que funciona correctamente. EN este caso he creado una función que lanza un dialogo con el texto "Hello World"
 
-![Hola mundo](http://i.imgur.com/B2X8SbF.png)
+![Hola mundo](http://i.imgur.com/FCODUSX.png)
 
 Ejecutamos la aplicación mediante el menú Ejecutar.
 
