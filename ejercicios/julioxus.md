@@ -287,7 +287,7 @@ KVM acceleration can be used
 
 Lo que quiere decir que mi ordenador contiene este módulo del kernel y puedo usar la virtualización kvm.
 
-## Tema 2
+# Tema 2
 
 ## Ejercicio 1 ##
 
@@ -486,3 +486,27 @@ ok
 Además si se nos quedan cortas las pruebas que podemos realizar de esta manera existen baterías de pruebas ya hechas en la biblioteca unittest
 
 Fuente: [http://code.nabla.net/es/tests.html](http://code.nabla.net/es/tests.html)
+
+# Tema 3
+
+## Ejercicio 1 ##
+**Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback**
+
+Creación de espacio de nombres y montaje de imagen ISO usando el dispositivo loopback:
+
+![captura26](http://i.imgur.com/U7iPPHx.png)
+
+## Ejercicio 2.1 ##
+**Mostrar los puentes configurados en el sistema operativo.**
+
+Interfaces de red del sistema operativo:
+
+![captura27](http://i.imgur.com/DfhyPsk.png)
+
+Puentes configurado en el sistema operativo (ninguno ahora mismo):
+
+![captura28](http://i.imgur.com/qmvV02N.png)
+
+## Ejercicio 2.2 ##
+**Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.**
+
