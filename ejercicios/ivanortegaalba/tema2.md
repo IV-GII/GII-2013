@@ -93,5 +93,47 @@ Aquí podemos ver nuestro Sidebar simpaticón. =)
 
 ![Menu](images/Captura de pantalla 2014-11-12 a las 22.59.38.png)
 
-
 ![](images/Captura de pantalla 2014-11-12 a las 22.59.52.png)
+## Ejercicio 5
+
+Para la automatización de Python, y su despliegue, Google App Engine cuenta con su SDK.
+Cuenta con un entorno de desarrollo en local, donde monta un servidor de pruebas y puedes hacer el despliegue en GAE simplemente con un boton.
+
+![](images/Captura de pantalla 2014-11-12 a las 23.56.36.png)
+
+También existe la posibilidad de sincronizar GAE con GitHub y simplemente con un push en la rama google-master, tendremos nuestra rama desplegada.
+
+![](images/Captura de pantalla 2014-11-11 a las 18.44.22.png)
+
+Esta opción esta en el Dashboard de GAE.
+## Ejercicio 6
+
+Google App Engine consta de un archivo de configuración llamado app.yaml que contiene toda la configuración necesaria para el despliegue en la plataforma.
+El despliegue se hace de forma automática mendiante su SDK.
+Un ejemplo de este archivo puede ser este. Es el de nuestra aplicación en este momento.
+
+```
+application: evenge-2014
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+```
+
+Donde se establecen las librerias utilizadas y muy importante, los handlers que reciben y devuelven la respuesta al navegador.
+
+Con la configuración puesta correctamente en este archivo, solo falta subir con el SDK al GAE.
+
+![](images/Captura de pantalla 2014-11-12 a las 23.56.36.png)
