@@ -386,6 +386,7 @@ Si nos fijamos donde dice Git URL podemos ver el enlace que nos lleva al reposit
 En la estructura de directorios del proyecto tenemos uno llamado .openshift/action_hooks que es donde se guardan los scripts que se utilizan al desplegar la aplicación.
 
 Fichero build:
+
 ![captura25](http://i.imgur.com/q4BEw5R.png)
 
 En el fichero build situado en esa carpeta podemos escribir los comandos que se ejecutarán a la hora de desplegar la aplicación de forma que quede automatizado.
