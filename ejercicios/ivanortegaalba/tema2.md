@@ -65,3 +65,33 @@ Cuando nos logeemos, nos encontraremos algo como esto:
 
  Posteriormente, entrando al panel de aplicaciones, tendremos la app instalada.
  ![](images/Captura de pantalla 2014-11-12 a las 10.15.28.png)
+
+## Ejercicio 4
+
+Vamos a crear una nueva opción del menú de Google Docs, y que nos muestre un Sidebar simpatico que nos salude cuando lo llamemos.
+
+El código del script va a ser:
+
+```
+function onOpen() {
+  DocumentApp.getUi().createMenu('Menú de Iván')
+      .addItem('Hola Sidebar', 'sidebarHola')
+      .addToUi();
+}
+
+function sidebarHola() {
+    DocumentApp.getUi().showSidebar(
+      HtmlService
+          .createHtmlOutput('<p>¡Hola Mundo, Soy Sidebar!</p>')
+          .setTitle('El Sidebar simpaticon')
+          .setWidth(350));
+}
+
+```
+
+Aquí podemos ver nuestro Sidebar simpaticón. =)
+
+![Menu](images/Captura de pantalla 2014-11-12 a las 22.59.38.png)
+
+
+![](images/Captura de pantalla 2014-11-12 a las 22.59.52.png)
