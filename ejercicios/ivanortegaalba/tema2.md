@@ -41,3 +41,27 @@ Puede ser colocado inclusive dentro del directorio del virtualenv.
 Una vez que el virtualenv está activado, todas las librerías de Python que instalen solo podrán ser usadas al activar ese virtualenv específico.
 
 ## Ejercicio 2
+
+He decidido darme de alta en Openshif, porque había escuchado antes hablar de él, y me picaba la curiosidad.
+Para darse de alta es muy sencillo. Es simplemente acceder a la página de [Openshift](https://www.openshift.com/):
+```
+https://www.openshift.com/
+```
+Y nos damos de alta en su servicio Public PaaS ONLINE.
+Posteriormente, rellenamos los datos, y nos llegará un correo de confirmación.
+Activamos nuestra cuenta, y ya estamos dados de alta en OpenShift.
+
+Cuando nos logeemos, nos encontraremos algo como esto:
+ ![Captura de panel](./images/Captura de pantalla 2014-11-12 a las 21.51.09.png)
+
+ En mi caso, ya sale una aplicación, porque tengo instalado un Wordpress.
+
+ ## Ejercicio 3
+
+ Para instalar Wordpress es muy sencillo. En el panel que hemos visto en el ejercicio anterior, hay una opción que es "Add Aplication".
+
+ Aquí seleccionamos Wordpress y rellenamos los datos de configuración de la aplicación.
+ Esperamos a que se instale.
+
+ Posteriormente, entrando al panel de aplicaciones, tendremos la app instalada.
+ ![](images/Captura de pantalla 2014-11-12 a las 10.15.28.png)
