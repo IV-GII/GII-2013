@@ -529,6 +529,19 @@ Finalmente nos dice "Base system installed successfully", ya está creado:
 
 ###Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
 
+Instalamos Rinse y vemos que sistemas podemos crear con `rinse --list-distributions`
+
+Creamos el directorio /home/jaulas/fedora , donde crearemos nuestro sistema Fedora (escojo fedora-core-4)
+
+`sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fedora`
+
+Ya está creado:
+
+![imagen](http://i.imgur.com/ei8NLDe.png)
+
+
+##Ejercicio 4
+###Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla. 
 
 
 
