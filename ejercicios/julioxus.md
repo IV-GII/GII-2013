@@ -287,7 +287,7 @@ KVM acceleration can be used
 
 Lo que quiere decir que mi ordenador contiene este módulo del kernel y puedo usar la virtualización kvm.
 
-## Tema 2
+# Tema 2
 
 ## Ejercicio 1 ##
 
@@ -329,3 +329,184 @@ Al finalizar nos dirá que se ha completado la instalación y podremos ver qué 
 Finalmente si accedemos al sitio podremos empezar a configurar Wordpress para usarlo:
 
 ![captura19](http://i.imgur.com/kKUrHcl.png)
+
+## Ejercicio 4 ##
+
+**Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.**
+
+He accedido a Google Drive y abierto un documento de texto. Dentro he seleccionado el menú Herramientas -> Editor de secuencias de comandos. He creado un par de scripts de prueba.
+
+Uno de ellos es una función para enviarme un correo a mi mismo:
+
+![captura20](http://i.imgur.com/FPh2CXK.png)
+
+Cuando le doy a ejecutar me llega un correo con el contenido que he metido en el mensaje:
+
+![captura21](http://i.imgur.com/ry8VLN5.png)
+
+En el siguiente script he hecho un par de menus para que al pinchar en ellos me muestre un mensaje personalizado:
+
+![caputura22](http://i.imgur.com/ufC5wDe.png)
+
+Al pinchar en un menú que hemos creado (dentro de cualquier doc que abramos) nos aparecerá el mensaje que pusimos:
+
+![caputra23](http://i.imgur.com/Skr5f99.png)
+
+
+## Ejercicio 5 ##
+
+**Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.**
+
+En esta web: [https://wiki.python.org/moin/ConfigurationAndBuildTools](https://wiki.python.org/moin/ConfigurationAndBuildTools) encontramos gran variedad de herramientas para construir programas en python.
+
+De entre todas ellas me parece bastante mejor [Buildit](https://software.agendaless.com/Members/chrism/software/buildit/README.txt) ya que es sencillo de manejar, con una sitaxis clara y eficiente.
+
+## Ejercicio 6 ##
+
+**Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.**
+
+En mi PaaS OpenShift necesitamos administrar la aplicación a través de la terminal para tener acceso a los archivos de despliegue de la aplicación.
+
+Para ello me he instalado el intérprete de ruby y luego he tenido que descargar rhc (herramientas de cliente de OpenShift) a través de ruby:
+
+\# gem install rhc
+
+Acto seguido deberemos realizar una configuración para introducir nuestros credenciales y servidor de OpenShift que estamos usando:
+
+$ rhc setup
+
+Ahora podemos ver qué aplicaciones tenemos instaladas con
+
+$ rhc apps
+
+![captura24](http://i.imgur.com/Zp9NkFs.png)
+
+Si nos fijamos donde dice Git URL podemos ver el enlace que nos lleva al repositorio git de la aplicación. Utilizando git hacemos un clone de la aplicación y la descargamos.
+
+En la estructura de directorios del proyecto tenemos uno llamado .openshift/action_hooks que es donde se guardan los scripts que se utilizan al desplegar la aplicación.
+
+Fichero build:
+
+![captura25](http://i.imgur.com/q4BEw5R.png)
+
+En el fichero build situado en esa carpeta podemos escribir los comandos que se ejecutarán a la hora de desplegar la aplicación de forma que quede automatizado.
+
+## Ejercicio 7 ##
+
+**Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.**
+
+Para python existe un módulo llamado doctest. En un mismo fichero, o fichero aparte se pueden escribir las pruebas de una función en el código. Tiene una pinta como esta:
+
+
+```
+"""
+This is the "example" module.
+
+The example module supplies one function, factorial().  For example,
+
+>>> factorial(5)
+120
+"""
+
+def factorial(n):
+    """Return the factorial of n, an exact integer >= 0.
+
+    If the result is small enough to fit in an int, return an int.
+    Else return a long.
+
+    >>> [factorial(n) for n in range(6)]
+    [1, 1, 2, 6, 24, 120]
+    >>> [factorial(long(n)) for n in range(6)]
+    [1, 1, 2, 6, 24, 120]
+    >>> factorial(30)
+    265252859812191058636308480000000L
+    >>> factorial(30L)
+    265252859812191058636308480000000L
+    >>> factorial(-1)
+    Traceback (most recent call last):
+        ...
+    ValueError: n must be >= 0
+
+    Factorials of floats are OK, but the float must be an exact integer:
+    >>> factorial(30.1)
+    Traceback (most recent call last):
+        ...
+    ValueError: n must be exact integer
+    >>> factorial(30.0)
+    265252859812191058636308480000000L
+
+    It must also not be ridiculously large:
+    >>> factorial(1e100)
+    Traceback (most recent call last):
+        ...
+    OverflowError: n too large
+    """
+
+    import math
+    if not n >= 0:
+        raise ValueError("n must be >= 0")
+    if math.floor(n) != n:
+        raise ValueError("n must be exact integer")
+    if n+1 == n:  # catch a value like 1e300
+        raise OverflowError("n too large")
+    result = 1
+    factor = 2
+    while factor <= n:
+        result *= factor
+        factor += 1
+    return result
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+```
+
+Si ejecutamos el programa con la opción -v nos muestra las pruebas que realiza el módulo:
+
+```
+$ python example.py -v
+Trying:
+    factorial(5)
+Expecting:
+    120
+ok
+Trying:
+    [factorial(n) for n in range(6)]
+Expecting:
+    [1, 1, 2, 6, 24, 120]
+ok
+Trying:
+    [factorial(long(n)) for n in range(6)]
+Expecting:
+    [1, 1, 2, 6, 24, 120]
+ok
+```
+
+Además si se nos quedan cortas las pruebas que podemos realizar de esta manera existen baterías de pruebas ya hechas en la biblioteca unittest
+
+Fuente: [http://code.nabla.net/es/tests.html](http://code.nabla.net/es/tests.html)
+
+# Tema 3
+
+## Ejercicio 1 ##
+**Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback**
+
+Creación de espacio de nombres y montaje de imagen ISO usando el dispositivo loopback:
+
+![captura26](http://i.imgur.com/U7iPPHx.png)
+
+## Ejercicio 2.1 ##
+**Mostrar los puentes configurados en el sistema operativo.**
+
+Interfaces de red del sistema operativo:
+
+![captura27](http://i.imgur.com/DfhyPsk.png)
+
+Puentes configurado en el sistema operativo (ninguno ahora mismo):
+
+![captura28](http://i.imgur.com/qmvV02N.png)
+
+## Ejercicio 2.2 ##
+**Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.**
+

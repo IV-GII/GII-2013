@@ -1,4 +1,4 @@
-#Ejercicios de [Francisco Javier Expósito Cruz](http://github.com/franexposito)
+#Ejercicios Tema 1. [Francisco Javier Expósito Cruz](http://github.com/franexposito)
 
 ##Introducción a la infraestructura virtual: concepto y soporte físico
 ###Ejercicio 1.
@@ -74,24 +74,33 @@ Finalmente probamos el paquete en otra distribución para ver que funciona corre
 En mi [repositorio de Github](https://github.com/franexposito) se pueden apreciar la creación de varios proyectos con la inclusión y modificiación del archivo README. Por ejemplo en [este proyecto](https://github.com/franexposito/bkst-calculator/blob/master/README.md)
 
 ###Ejercicio 7.
-En mi caso se encuentra situado en: 
-<pre><code>/sys/fs/cgroups</code></pre>
-Y podemos ver que el contenido haciendo un ls:  
+En mi caso se encuentra situado en:   
+
+	/sys/fs/cgroups
+
+Y podemos ver que el contenido haciendo un ls:    
 [imagen6](http://i.imgur.com/6WqOGkz.png)  
 
 ###Ejercicio 8.
 [] Pendiente por desarrollar  
 
 ###Ejercicio 9.
-**CPU**:  Intel(R) Core(TM)2 Duo CPU     T5450  @ 1.66GHz  
-Tras ejecutar el comando:  
-<pre><code>$ egrep '^flags.*(vmx|svm)' /proc/cpuinfo</code></pre>  
-Obtenemos, que en mi caso, no están instalados o activados los flags.  
+
 
 ###Ejercicio 10.
-Tras ejecutar la orden:  
-<pre><code>$ kvm-ok</code></pre>  
-Obtenemos, en mi caso, que no está soportado.  
+**CPU**:  Intel(R) Core(TM)2 Duo CPU     T5450  @ 1.66GHz  
+Tras ejecutar el comando:  
+
+	$ egrep '^flags.*(vmx|svm)' /proc/cpuinfo  
+	
+Obtenemos, que en mi caso, no están instalados o activados los flags.  
 
 ###Ejercicio 11.
+Tras ejecutar la orden:  
+
+	$ kvm-ok  
+
+Obtenemos, en mi caso, que no está soportado.  
+
+###Ejercicio 12.
 [x] Comentar diferentes soluciones de Software as a Service de uso habitual [Comentario](https://github.com/JJ/GII-2014/issues/72#issuecomment-58912586).  

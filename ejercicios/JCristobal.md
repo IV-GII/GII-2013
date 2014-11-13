@@ -454,5 +454,60 @@ Un entorno de pruebas para node.js podría ser [Express.js](http://expressjs.com
 En este [blog](http://blog.solucionex.com/javascript/expressjs-un-framework-para-nodejs) habla sobre él, explica como instalarlo y a darle algunos usos.
 
 
+***
+***
+
+
+# Tema 3
+
+[Enlace al tema](http://jj.github.io/IV/documentos/temas/Tecnicas_de_virtualizacion)
+
+
+##Ejercicio 1
+###Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback
+
+Creo un espacio de nombres con sudo unshare -u /bin/bash , y cambio el nombre con hostname prueba , donde prueba será nuestro nuevo nombre del sistema.
+
+
+También hay que crear la carpeta donde voy a montar el disco (disk en mnt) 
+
+
+Y lo monto con: `sudo mount -o loop - ubuntu-14.04.1-server-i386.iso /mnt/disk`
+
+![imagen1](http://i.imgur.com/tEnEQGi.png)
+
+
+Consulto los enlaces: [crear un archivo iso](http://serverfault.com/questions/5689/creating-an-iso-file-in-linux)
+[montar la iso](http://serverfault.com/questions/198135/how-to-mount-an-iso-file-in-linux)
+
+
+
+##Ejercicio 2
+###Mostrar los puentes configurados en el sistema operativo.
+
+Primero hay que instalar la utilidad para consultarlo `sudo apt-get install bridge-utils`
+
+Y lo consultamos con el comando `sudo brctl show`
+
+Muestro mi salida al comando:
+![imagen1](http://i.imgur.com/6IQnYun.png)
+
+###Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+
+Creamos un interfaz virtual `sudo brctl addbr interfazprueba`
+
+Y borramos la que creamos en los ejemplos (alcantara) porque está ocupando la red cableada (eth0) 
+`sudo brctl delbr alcantara`
+
+
+Asignamos la nueva interfaz a eth0
+
+`sudo brctl addif interfazprueba eth0`
+
+Ya esta asignada, muestro la salida de `sudo brctl show` y veo que la interfaz del ejemplo (alcantara) está borrado y la recién creada asignada
+
+![imagen2](http://i.imgur.com/4Ht6YOd.png)
+
+
 
 
