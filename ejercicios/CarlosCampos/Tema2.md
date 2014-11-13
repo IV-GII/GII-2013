@@ -80,3 +80,8 @@ Para crear un script en un documento de Google Drive, es necesario crear un docu
 Aprovechando el lenguaje de nuestra aplicación para la asignatura *Python*, el entorno que voy a utilizar es el que nos ofrece **GAE** a través de su SDK, ya que con tan solo añadir la carpeta del proyecto y darle a un click, nos montamos nuestro servidor de desarrollo local.
 
 ![Imgur](http://i.imgur.com/dxg3l3M.png)
+
+### Ejercicio 6
+
+
+### Ejercicio 7
