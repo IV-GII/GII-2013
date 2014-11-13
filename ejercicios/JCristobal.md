@@ -543,6 +543,33 @@ Ya está creado:
 ##Ejercicio 4
 ###Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla. 
 
+Usamos chroot para entrar en la jaula: `sudo chroot /home/jaulas/fedora`
+
+y podremos ver el listado del directorio, pero nos falla con órdenes como top.
+
+Para arreglarlo tenemos que montar el filesystem virtual /proc y ejecutamos `mount -t proc proc /proc`
+
+
+También deberíamos instalar el paquete español para evitar algunos errores, con `apt-get install language-pack-es` pero en mi caso puedo usar apt-get y con yum no me permite instalar el paquete español
+
+En cualquier caso funciona, ejecuto `top`:
+
+![imagen](http://i.imgur.com/3gm9sjD.png)
+
+También pruebo a instalar una aplicación, nano: `yum install nano`
+
+![imagen](http://i.imgur.com/Kdk0Ny4.png)
+
+y para crear y ejecutar una aplicación básica de python, abro nano y creo hello.py, con un código básico:
+
+```
+#!/usr/bin/python 
+print "Hola mundo!"
+```
+
+Y ejecuto en python:
+
+![imagen](http://i.imgur.com/5B56pVY.png)
 
 
 
