@@ -510,4 +510,26 @@ Ya esta asignada, muestro la salida de `sudo brctl show` y veo que la interfaz d
 
 
 
+##Ejercicio 3
+###Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+
+Primero lo instalamos `sudo apt-get install debootstrap`
+
+En el ejemplo no sugiere instalar quantal, pero no lo encuentra en http://archive.ubuntu.com/ubuntu/dists/ por lo que uso otro: saucy
+(se puede usar cualquiera de la lista)
+
+Creamos el directorio home/jaulas/saucy donde instalarlo.
+
+
+Y ejecuto `sudo debootstrap --arch=amd64 saucy /home/jaulas/saucy/ http://archive.ubuntu.com/ubuntu`
+
+Finalmente nos dice "Base system installed successfully", ya está creado:
+
+![imagen](http://i.imgur.com/cNmD8mD.png)
+
+###Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
+
+
+
+
 

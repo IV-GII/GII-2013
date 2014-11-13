@@ -110,6 +110,14 @@
 * [] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
 * [] Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
 
+##Objetivos de sesión 15
+
+* [] Entender el concepto de contenedores
+* [] Configurar el sistema para poder crear y usar contenedores
+* [] Crear y usar contenedores
+
+* [] Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
+* [x] Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
 
 
 
