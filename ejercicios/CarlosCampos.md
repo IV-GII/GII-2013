@@ -139,3 +139,30 @@ Nos aparece un enlace para acceder al panel de administración y ya tenemos nues
 ![Panel de administración - Heroku](http://i.imgur.com/ME61sM7.png)
 
 ### Ejercicio 3
+
+El primer paso que debemos de realizar es registrarnos en [Openshift](https://www.ohttps://www.openshift.com/app/account/new) y rellenamos los datos que nos pide, éstos podemos verlos en la siguiente imágen:
+
+![Registro Openshift](http://i.imgur.com/gUpEvRd.png)
+
+Al igual que con Heroku, nos manda un email para verificar nuestra cuenta, en el cuál tenemos que pulsar sobre el link y en la página que nos abre aceptar los terminos legales.  
+
+Una vez realizado estos pasos, tal y como podemos observar ya podemos empezar a utilizar nuestra cuenta en OpenShift.
+
+![Panel Openshift](http://i.imgur.com/16rTLdy.png)
+
+Para empezar a crear nuestro **wordpress**, tans olo tenemos que pulsar sobre *->Create your first application now*, el cuál nos llevara a un panel donde podemos observar distintas herramientas y aplicaciones disponibles para instalarlas, en nuestro caso buscamos y pulsamos sobre wodrpess.
+
+![Openshift wordpress](http://i.imgur.com/yZehKM2.png)  
+
+Una vez que hemos pulsado nos lleva a otra página donde tan solo debemos de configurar la dirección de nuestro wordpress y todo lo demás dejarlo tal y como viene por defecto
+
+![Dominio wordpress openshift](http://i.imgur.com/UVfupGv.png)
+
+Tras un tiempo instalandose, se nos abre una pantalla donde tenemos que pulsar sobre **Not now, continue**, y nos aparecera la información que podemos observar en la siguiente captura.
+
+![Imgur](http://i.imgur.com/EGIpWfZ.png)
+
+Una vez que hemos realizado estos pasos, ahora solo necesitamos instalar wordpress, para ello debemos de ir a la web que hemos establecido en mi caso [php-ccamposfuentesiv.rhcloud.com](http://php-ccamposfuentesiv.rhcloud.com) y realizar la instalación y configuración de wordpress.
+
+![Imgur](http://i.imgur.com/D8kyjD9.png)
+![Imgur](http://i.imgur.com/D3q62oC.png)
