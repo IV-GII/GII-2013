@@ -69,4 +69,8 @@ Una vez que hemos realizado estos pasos, ahora solo necesitamos instalar wordpre
 
 ### Ejercicio 4
 
-Para crear un script en un documento de Google Drive, es necesario crear un documento de texto y una vez creado, pulsar sobre **Herramientas -> Editor de secuencia de comantos...** y crear nuestro script para cambiar el nombre
+Para crear un script en un documento de Google Drive, es necesario crear un documento de texto y una vez creado, pulsar sobre **Herramientas -> Editor de secuencia de comantos...** y creamos nuestro script.
+
+![Imgur](http://i.imgur.com/4RGpfz8.png)
+![Imgur](http://i.imgur.com/PI5TyOy.png)
+![Imgur](http://i.imgur.com/0kkcEg8.png)
