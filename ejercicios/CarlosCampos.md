@@ -1,4 +1,4 @@
-#Carlos Campos Fuentes
+<!-- #Carlos Campos Fuentes -->
 ##Introducción a la infraestructura virtual: concepto y soporte físico
 
 ###Ejercicio 1
@@ -76,30 +76,66 @@ Para instalar git en nuestro servidor linux, basta con ejecutar el siguiente com
 
 Podemos ver un archivo README.md de un repositorio personal con el texto personalizado en la siguiente imágen:
 ![Imagen readme.md](http://i.imgur.com/Myjv3bF.png)  
-  
+
 ###Ejercicio 7  
 En mi instalación de linux (Xubuntu), se encuentra instalado en el directorio:  
 	`/sys/fs/cgroup`  
-	
+
 El contenido de la carpeta es el que podemos ver en la siguiente imágen:  
 	![Imagen cgroup](http://i.imgur.com/3hVvhNY.png)  
 
-###Ejercicio 10 
+###Ejercicio 10
 Mi procesador es: Intel Core 2 Duo  
 
-Al ejecutar el comando, no me aparece nada por pantalla, por lo que no tengo los flags activados  
+Al ejecutar el comando, no me aparece nada por pantalla, por lo que no tengo los
+dos  
 
 ###Ejercicio 11  
 Tras ejecutar *kvm-ok*, nos aparece que la CPU no lo soporta.  
-  
+
 	"INFO: Your CPU does not support KVM extensions"  
-	
+
 ### Ejercicio 12  
 Comentado en el [foro](https://github.com/JJ/GII-2014/issues/72)
 
 
+## Creando aplicaciones en la nube: Uso de PaaS y SaaS
 
+### Ejercicio 1
 
+En mi caso, voy a instalar el entornio virtualenv para **Python**, para ello,
+si no lo tenemos intalado, necesitamos instalar **pip**:
 
+	apt-get install python-setuptools python-dev build-essential
+	easy_install pip
 
+Una vez que tenemos instalado pip, tenemos que instalar **virtualenv**:
 
+	pip install virtualenv
+
+Para iniciarlo debemos de hacerlo de la siguiente manera:
+
+	virtualenv ENV
+	virutalenv entorno_virtual
+	source entorno_virtual/bin/activate
+
+Una vez que hemos ejcutado los tres comandos, sabremos que estamos en el entorno
+virtual puesto que el prompt cambia de **$** a **(entorno_virtual)**.
+
+### Ejercicio 2
+
+En mi caso, he elegido registrarme en [Heroku](http://heroku.com), tan solo hace falta, como podemos ver en la siguiente imágen introducir tu correo electrónico y esperar a que te manden un email de confirmación.
+
+![Registro Heroku](http://i.imgur.com/kKhxkyk.png)
+
+En el correo que nos envían tan solo basta con pulsar sobre el enlace de confirmación y no redirige a una página en la que nos pedirá que creemos la contraseña para nuestro usuario como podemos ver en la siguiente imagen.
+
+![Contraseña Heroku](http://i.imgur.com/xsCvAfh.png)
+
+Nos aparece un enlace para acceder al panel de administración y ya tenemos nuestra cuenta operativa tal y como puedes ver en las siguientes imagenes.
+
+![Heroku](http://i.imgur.com/CU1PSoB.png)
+
+![Panel de administración - Heroku](http://i.imgur.com/ME61sM7.png)
+
+### Ejercicio 3
