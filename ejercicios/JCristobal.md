@@ -510,4 +510,66 @@ Ya esta asignada, muestro la salida de `sudo brctl show` y veo que la interfaz d
 
 
 
+##Ejercicio 3
+###Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+
+Primero lo instalamos `sudo apt-get install debootstrap`
+
+En el ejemplo no sugiere instalar quantal, pero no lo encuentra en http://archive.ubuntu.com/ubuntu/dists/ por lo que uso otro: saucy
+(se puede usar cualquiera de la lista)
+
+Creamos el directorio home/jaulas/saucy donde instalarlo.
+
+
+Y ejecuto `sudo debootstrap --arch=amd64 saucy /home/jaulas/saucy/ http://archive.ubuntu.com/ubuntu`
+
+Finalmente nos dice "Base system installed successfully", ya está creado:
+
+![imagen](http://i.imgur.com/cNmD8mD.png)
+
+###Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
+
+Instalamos Rinse y vemos que sistemas podemos crear con `rinse --list-distributions`
+
+Creamos el directorio /home/jaulas/fedora , donde crearemos nuestro sistema Fedora (escojo fedora-core-4)
+
+`sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fedora`
+
+Ya está creado:
+
+![imagen](http://i.imgur.com/ei8NLDe.png)
+
+
+##Ejercicio 4
+###Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla. 
+
+Usamos chroot para entrar en la jaula: `sudo chroot /home/jaulas/fedora`
+
+y podremos ver el listado del directorio, pero nos falla con órdenes como top.
+
+Para arreglarlo tenemos que montar el filesystem virtual /proc y ejecutamos `mount -t proc proc /proc`
+
+
+También deberíamos instalar el paquete español para evitar algunos errores, con `apt-get install language-pack-es` pero en mi caso puedo usar apt-get y con yum no me permite instalar el paquete español
+
+En cualquier caso funciona, ejecuto `top`:
+
+![imagen](http://i.imgur.com/3gm9sjD.png)
+
+También pruebo a instalar una aplicación, nano: `yum install nano`
+
+![imagen](http://i.imgur.com/Kdk0Ny4.png)
+
+y para crear y ejecutar una aplicación básica de python, abro nano y creo hello.py, con un código básico:
+
+```
+#!/usr/bin/python 
+print "Hola mundo!"
+```
+
+Y ejecuto en python:
+
+![imagen](http://i.imgur.com/5B56pVY.png)
+
+
 
