@@ -572,4 +572,45 @@ Y ejecuto en python:
 ![imagen](http://i.imgur.com/5B56pVY.png)
 
 
+###Creo un usuario para que trabaje en fedora, se crea correctamente, incluso lo puedo ver al arrancar el sistema
+
+sudo useradd -s /bin/bash -m -d /home/jaulas/fedora/./home/usuariojaula -c "Raring usuariojaula" -g users usuariojaula
+
+contraseña ????
+
+
+
+##Ejercicio 5
+###Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
+
+
+Para esta actividad usaré el sistema saucy instalado en la actividad 3, ya que el fedora es una versión muy antigua y da muchos problemas.
+Para trabajar bien con el seguimos los mismo pasos que en la actividad 4, monto el filesystem virtual /proc e instalo el paquete español
+
+Instalamos curl simplemente con `apt-get install curl`
+
+y para nginx ejecutamos:
+
+`echo "deb http://nginx.org/packages/ubuntu/ raring nginx" >> /etc/apt/sources.list ` y 
+`echo "deb-src http://nginx.org/packages/ubuntu/ raring nginx" >> /etc/apt/sources.list`
+y `apt-get install nginx`
+
+![imagen](http://i.imgur.com/hBIDcww.png)
+
+Una vez instalado vemos su estado con `service nginx status` y lo arrancamos `service nginx start`:
+
+![imagen](http://i.imgur.com/oTjmTlA.png)
+
+Habría que comprobar que ningun otro servidor está ocupando el puerto 80 (Apache), si fuera así lo mataríamos y arrancaríamos nginx.
+
+Una vez arrancado compruebo que funciona en el navegador con `curl localhost`:
+
+![imagen](http://i.imgur.com/qYaTNl3.png)
+
+
+
+
+
+
+
 
