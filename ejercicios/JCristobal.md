@@ -572,11 +572,12 @@ Y ejecuto en python:
 ![imagen](http://i.imgur.com/5B56pVY.png)
 
 
-###Creo un usuario para que trabaje en fedora, se crea correctamente, incluso lo puedo ver al arrancar el sistema
+
+####Creo un usuario para que trabaje en fedora, se crea correctamente, incluso lo puedo ver al arrancar el sistema
 
 sudo useradd -s /bin/bash -m -d /home/jaulas/fedora/./home/usuariojaula -c "Raring usuariojaula" -g users usuariojaula
 
-contraseña ????
+#### y la contraseña ????
 
 
 
