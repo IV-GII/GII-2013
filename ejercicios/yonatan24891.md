@@ -125,12 +125,26 @@ Si lo contiene
 TEMA 2
 =========
 
-###Ejercicio12###
-###Ejercicio12###
-###Ejercicio12###
-###Ejercicio12###
-###Ejercicio12###
-###Ejercicio12###
-###Ejercicio12###
-###Ejercicio12###
-###Ejercicio12######Ejercicio12######Ejercicio12###
+###Ejercicio1###
+
+`$ sudo apt-get install python-pip python-dev build-essential`
+ 
+`$ sudo pip install --upgrade virtualenv`
+
+###Ejercicio2###
+Tenía una cuenta en OpenShift
+
+###Ejercicio3###
+Dentro de OpenShift, le damos a Add application y elegumos Wordpress4, vamos rellenando los campos y tendremos la aplicación básica creada:
+
+[Mi Wordpress](http://php-yonatan24891.rhcloud.com/)
+
+###Ejercicio4###
+
+
+###Ejercicio5###
+
+###Ejercicio6###
+
+###Ejercicio7###
+
