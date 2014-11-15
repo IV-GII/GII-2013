@@ -577,7 +577,10 @@ Y ejecuto en python:
 
 sudo useradd -s /bin/bash -m -d /home/jaulas/fedora/./home/usuariojaula -c "Raring usuariojaula" -g users usuariojaula
 
-#### y la contraseña ????
+despues habría que añadir a jaulas/fedora/etc/passwd: " usuariojaula:x:1001:1001::/home/usuariojaula:/bin/bash"
+
+####pero sigo sin saber que contraseña introducir
+
 
 
 
@@ -609,9 +612,36 @@ Una vez arrancado compruebo que funciona en el navegador con `curl localhost`:
 ![imagen](http://i.imgur.com/qYaTNl3.png)
 
 
+##Ejercicio 6
+###Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar. 
+
+Primero instalamos "jailkit":
+
+Ejecutamos: 
+`wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.g` y lo descomprimimos `tar -xzvf jailkit-2.16.tar.gz`
+
+Accedemos a la carpeta de jailkit recién descomprimida y ejecutamos: `./configure`, `make` y `sudo make install`
 
 
+Seguimos los pasos que nos indican en los apuntes:
+`sudo mkdir -p /seguro/jaulas/dorada`
+`sudo chown -R root:root /seguro`
+
+Y creamos la jaula con un shell básico (basicshell), herramientas de red(netutils) y un editor de texto(editors):
+`sudo jk_init -v -j /seguro/jaulas/dorada jk_lsh basicshell netutils editors`
 
 
+Creamos un usuario `sudo useradd usuarioIV` y lo enjaulamos `sudo jk_jailuser -m -j /seguro/jaulas/dorada usuarioIV`
+También cambiamos la contraseña con: `sudo passwd usuarioIV`
 
+Además hay que editar la configuración del usuario (que estará en /seguro/jaulas/dorada/etc/passwd) y cambiar jk_lsh por /bin/bash, el shell habitual.
+
+![imagen](http://i.imgur.com/XWZCnPe.png)
+
+
+Ahora podré conectarme por ssh, o acceder con la terminal al pulsar Ctrl-Alt-F2 a este usuario.
+
+
+***
+***
 

@@ -113,8 +113,8 @@
 ##Objetivos de sesión 15
 
 * [x] Entender el concepto de contenedores
-* [] Configurar el sistema para poder crear y usar contenedores
-* [] Crear y usar contenedores
+* [x] Configurar el sistema para poder crear y usar contenedores
+* [x] Crear y usar contenedores
 
 * [] Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
 * [x] Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
