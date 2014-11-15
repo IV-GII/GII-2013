@@ -37,7 +37,6 @@ Hemos comentado que tenemos que hacer un fichero build.xml en el que indicamos l
 En la ejecución de este xml por linea de comandos tenemos las siguientes opciones:
 
 **$ ant** -> Hace por defecto la tarea "todo", que a su vez hace "empaqueta" y "documenta". "empaqueta" hace previamente compila. Es decir, se hace todo.
-
 **$ ant empaqueta** -> Realiza la tarea "empaqueta", que debe "compila" previamente
 **$ ant compila** -> Sólo "compila"
 **$ ant documenta** -> Sólo "documenta"
