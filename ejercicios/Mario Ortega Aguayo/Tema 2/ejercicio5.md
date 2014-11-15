@@ -14,7 +14,6 @@ La diferencia más notable entre Ant y Make es que Ant utiliza XML para describi
 
 Hemos comentado que tenemos que hacer un fichero build.xml en el que indicamos las tareas. Vamos a hacer uno sencillo con un par de cosas, por ejemplo "compilar", generar el jar con "empaqueta" y generar el javadoc con "documenta".
 
-<pre>
 <?xml version="1.0"?>
 <project name="Mi_Proyecto" default="todo">
 
@@ -34,7 +33,7 @@ Hemos comentado que tenemos que hacer un fichero build.xml en el que indicamos l
    </target>
 
 </project>`
-</pre>
+
 
 En la ejecución de este xml por linea de comandos tenemos las siguientes opciones:
 
@@ -46,5 +45,5 @@ En la ejecución de este xml por linea de comandos tenemos las siguientes opcion
 **$ ant compila** -> Sólo "compila".
 
 **$ ant documenta** -> Sólo "documenta".
-<pre>
+</pre>
 
