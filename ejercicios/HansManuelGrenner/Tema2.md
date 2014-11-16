@@ -60,23 +60,23 @@ Siguiendo el tutorial para [Google Apps Script](https://developers.google.com/ap
 Una vez creado el script tenemos que darle las autorizaciones pertenecientes para poder acceder a la información que requiere de modo que se pueda ejecutar. 
 Comprobamos que todo funciona como vemos en las siguientes capturas.
 
-![FiguraX](Imagenes/ej2_4_2.png)
+![Figura8](Imagenes/ej2_4_2.png)
 > Figura 8. Aceptar autorización para acceder a funcionalidades de tu cuenta google.
 
 El siguiente paso es añadir un menú a nuestro documento, en el cual incluiremos la anterior función, y añadiremos que se envien notificaciones al usuario.
 Usando el código de ejemplo para crear [menús personalizados](https://developers.google.com/apps-script/guides/menus) realizamos las modificaciones necesarias.
 
-![FiguraX](Imagenes/ej2_4_3.png)
+![Figura9](Imagenes/ej2_4_3.png)
 > Figura 9. Código del menú junto al código de enviar el correo
 
 Los resultados son los siguientes:
 
-![FiguraX](Imagenes/ej2_4_4.png)
+![Figura10](Imagenes/ej2_4_4.png)
 > Figura 10. Visualización del menú.
 
 Tenemos un menú que incluye un primer item para la notificación al usuario y un segundo item que es otro menú que incluye la posibilidad de enviar un correo al usuario conectado.Usamos la funcionalidad de enviar un correo y comprobamos nuestra mailbox.
 
-![FiguraX](Imagenes/ej2_4_5.png)
+![Figura11](Imagenes/ej2_4_5.png)
 > Figura 11. Ejemplo de envío del correo
 
 
@@ -109,10 +109,28 @@ Indicamos nuestras credenciales y podemos generar un token de autorización para
 
 Una vez todo configurado podemos lanzar 'rhc apps' para ver nuestras aplicaciones creadas en openshift.
 
-![FiguraX](Imagenes/ej2_6_1.png)
+![Figura12](Imagenes/ej2_6_1.png)
 > Figura 12. Aplicaciones creadas en OpenShift.
 
 En la Git URL se indica el repositorio donde se encuentran los datos de nuestra aplicación. Podemos descargarla y ya realizar los cambios pertenecientes.
+
+```git clone <Git URL de nuestra aplicación>```
+
+![Figura13](Imagenes/ej2_6_2.png)
+> Figura 13. Descargando nuestra aplicación.
+
+Y en el directorio .openshift/actions_hooks/ se encuentra el archivo para automatizar la construcción de la app, llamado "build". ( Los directorios pueden estar ocultos por tanto tenemos que usar ls -a para verlos )
+
+![Figura14](Imagenes/ej2_6_3.png)
+> Figura 14.
+
+El contenido del fichero será similar al siguiente:
+
+![Figura15](Imagenes/ej2_6_4.png)
+> Figura 15. Código fichero de automatización. 
+
+
+
 
 
 ##Ejercicio 7
