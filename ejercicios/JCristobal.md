@@ -417,14 +417,159 @@ Después, dentro del documento, nos vamos a ese menú (Sample) y seleccionamos n
 ![imagen2](http://i.imgur.com/9Zdmuaz.png)
 
 
+##Ejercicio 5
+###Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+Algunos sistemas para la automatización de la construccion de node.js pueden ser [gulp.js](http://frontend-labs.com/1669--gulp-js-en-espanol-tutorial-basico-primeros-pasos-y-ejemplos) o [Grunt](http://www.yukei.net/2014/07/automatizar-tareas-de-traduccion-de-wordpress-con-grunt/). En mi caso usaré gulp.js.
+
+Tenemos que tener [instalado node.js](http://frontend-labs.com/232--como-instalar-nodejs-debian-linux) como único requisito.
+
+Para instalarlo ejecutamos simplemente "npm install -g gulp"
+
+Y podemos por ejemplo ver la versión: "gulp -v"
+
+
+##Ejercicio 6
+###Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma. 
+
+El fichero de automatización  de construcción de Heroku es /apps/:app/builds 
+
+El proceso que sigue es: 
+
+Un nombre de la aplicación se pasa al guión junto con una URL a un archivo comprimido que contiene el código fuente. 
+
+El script toma estas entradas y utiliza  /apps/:app/builds para crear una nueva estructura en Heroku. La API de la plataforma responde con la identificación de la nueva estructura. Pasa a estado "pendiente" y después a "construcción".
+
+Una vez que la estructura se ha completado, pasa a estado de "éxito" o "fracaso". Obtiene la salida según los resultados y se imprime en el terminal. La estructura se despliega automáticamente
+
+Consultado en el [foro de Heroku](https://blog.heroku.com/archives/2014/5/21/introducing_programmatic_builds_on_heroku).
 
 
 
+##Ejercicio 7
+###Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+Un entorno de pruebas para node.js podría ser [Express.js](http://expressjs.com/).
+
+En este [blog](http://blog.solucionex.com/javascript/expressjs-un-framework-para-nodejs) habla sobre él, explica como instalarlo y a darle algunos usos.
+
+
+***
+***
+
+
+# Tema 3
+
+[Enlace al tema](http://jj.github.io/IV/documentos/temas/Tecnicas_de_virtualizacion)
+
+
+##Ejercicio 1
+###Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback
+
+Creo un espacio de nombres con sudo unshare -u /bin/bash , y cambio el nombre con hostname prueba , donde prueba será nuestro nuevo nombre del sistema.
+
+
+También hay que crear la carpeta donde voy a montar el disco (disk en mnt) 
+
+
+Y lo monto con: `sudo mount -o loop - ubuntu-14.04.1-server-i386.iso /mnt/disk`
+
+![imagen1](http://i.imgur.com/tEnEQGi.png)
+
+
+Consulto los enlaces: [crear un archivo iso](http://serverfault.com/questions/5689/creating-an-iso-file-in-linux)
+[montar la iso](http://serverfault.com/questions/198135/how-to-mount-an-iso-file-in-linux)
 
 
 
+##Ejercicio 2
+###Mostrar los puentes configurados en el sistema operativo.
+
+Primero hay que instalar la utilidad para consultarlo `sudo apt-get install bridge-utils`
+
+Y lo consultamos con el comando `sudo brctl show`
+
+Muestro mi salida al comando:
+![imagen1](http://i.imgur.com/6IQnYun.png)
+
+###Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+
+Creamos un interfaz virtual `sudo brctl addbr interfazprueba`
+
+Y borramos la que creamos en los ejemplos (alcantara) porque está ocupando la red cableada (eth0) 
+`sudo brctl delbr alcantara`
 
 
+Asignamos la nueva interfaz a eth0
+
+`sudo brctl addif interfazprueba eth0`
+
+Ya esta asignada, muestro la salida de `sudo brctl show` y veo que la interfaz del ejemplo (alcantara) está borrado y la recién creada asignada
+
+![imagen2](http://i.imgur.com/4Ht6YOd.png)
+
+
+
+##Ejercicio 3
+###Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+
+Primero lo instalamos `sudo apt-get install debootstrap`
+
+En el ejemplo no sugiere instalar quantal, pero no lo encuentra en http://archive.ubuntu.com/ubuntu/dists/ por lo que uso otro: saucy
+(se puede usar cualquiera de la lista)
+
+Creamos el directorio home/jaulas/saucy donde instalarlo.
+
+
+Y ejecuto `sudo debootstrap --arch=amd64 saucy /home/jaulas/saucy/ http://archive.ubuntu.com/ubuntu`
+
+Finalmente nos dice "Base system installed successfully", ya está creado:
+
+![imagen](http://i.imgur.com/cNmD8mD.png)
+
+###Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
+
+Instalamos Rinse y vemos que sistemas podemos crear con `rinse --list-distributions`
+
+Creamos el directorio /home/jaulas/fedora , donde crearemos nuestro sistema Fedora (escojo fedora-core-4)
+
+`sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fedora`
+
+Ya está creado:
+
+![imagen](http://i.imgur.com/ei8NLDe.png)
+
+
+##Ejercicio 4
+###Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla. 
+
+Usamos chroot para entrar en la jaula: `sudo chroot /home/jaulas/fedora`
+
+y podremos ver el listado del directorio, pero nos falla con órdenes como top.
+
+Para arreglarlo tenemos que montar el filesystem virtual /proc y ejecutamos `mount -t proc proc /proc`
+
+
+También deberíamos instalar el paquete español para evitar algunos errores, con `apt-get install language-pack-es` pero en mi caso puedo usar apt-get y con yum no me permite instalar el paquete español
+
+En cualquier caso funciona, ejecuto `top`:
+
+![imagen](http://i.imgur.com/3gm9sjD.png)
+
+También pruebo a instalar una aplicación, nano: `yum install nano`
+
+![imagen](http://i.imgur.com/Kdk0Ny4.png)
+
+y para crear y ejecutar una aplicación básica de python, abro nano y creo hello.py, con un código básico:
+
+```
+#!/usr/bin/python 
+print "Hola mundo!"
+```
+
+Y ejecuto en python:
+
+![imagen](http://i.imgur.com/5B56pVY.png)
 
 
 

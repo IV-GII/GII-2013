@@ -66,7 +66,58 @@
 * [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
 * [x] Crear nuevas funciones en un SaaS.
 
-* [] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
+* [x] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
+
+
+##Objetivos de sesión 10
+
+* [x] Consolidar el uso de PaaS/SaaS
+* [x] Entender los sistemas de automatización de la construcción de aplicaciones
+
+* [x] Último día de entrega de la primera práctica.
+
+##Objetivos de sesión 11
+
+* [x] Comenzar con la segunda práctica
+
+##Objetivos de sesión 12
+
+* [x] Consolidar el uso de PaaS/SaaS
+* [x] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+* [x] Continuar con la segunda práctica
+
+##Objetivos de sesión 13
+
+* [x] Entender los objetivos de este tema
+* [x] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+* [x] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+* [x] Entender y saber llevar a cabo la virtualización de dispositivos de red
+
+* [x] Usar herramientas de administración y monitorización de red en línea de órdenes
+* [x] Contestar a la encuesta sobre la asignatura
+* [x] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
+* [x] Dejar de usar Sublime Text por estas 7 razones.
+
+##Objetivos de sesión 14
+
+* [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+* [] Aprender a ''enjaular'' usuarios.
+
+* [x] Finalizar la entrega la segunda práctica.
+* [x] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
+* [x] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+* [] Comprender que existe vida en los servidores web fuera del Apache.
+* [x] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
+* [] Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
+
+##Objetivos de sesión 15
+
+* [] Entender el concepto de contenedores
+* [] Configurar el sistema para poder crear y usar contenedores
+* [] Crear y usar contenedores
+
+* [] Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
+* [x] Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
 
 
 

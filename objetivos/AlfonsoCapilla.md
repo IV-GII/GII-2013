@@ -74,7 +74,7 @@
 ##Clase del 14 de Octubre.
 []Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
 
-[]Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
+[x]Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
 
 ###Otros objetivos
 
@@ -82,4 +82,16 @@
 
 []Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
-[]Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
+[x]Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
+
+##Clase del 20 de Octubre.
+[x]Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
+
+[x]Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
+
+[x]Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+
+###Otros objetivos
+[x]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+
+[]Comprender el método de entrega de las prácticas de la asignatura.

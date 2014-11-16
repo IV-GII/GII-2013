@@ -95,3 +95,237 @@ git push
 
 
 ###Ejercicio 7
+A)
+Hacemos un ls en el directorio donde la hemos montado para ver que la instalación ha funcionado:
+![cgroup](http://i.imgur.com/acCjsZI.png).
+
+###Ejercicio 8
+
+Instalamos el paquete cgroup-bin porque es mas facil trabajar con el 
+![cgroup-bin](http://i.imgur.com/FS4HtTD.png)
+
+Creamos un grupo que contenga los subgrupos que nos pide el ejercicio haciendo sudo cgcreate -a josepv -g memory,cpu,cpuacct:ejercicio7
+
+Este grupo se encarga de controlar la memoria, CPU y de contabilizar el uso de recursos de CPU y da permiso al usuario josepv para que trabaje con el.
+
+Creado el grupo, vamos a crear varios subgrupos: uno encargado de ejecutar el navegador, otro de ejecutar el procesador de textos y otro de ejecutar el cliente de correo electrónico Mozilla Thunderbird.
+
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/navegador
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/editor
+    sudo cgcreate -g memory,cpu,cpuacct:ejercicio7/correo
+
+Con cgexec asignamos los procesos de cada subgrupo.
+
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/navegador firefox
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/editor gedit
+    sudo cgexec -g memory,cpu,cpuacct:ejercicio7/correo thunderbird
+
+Para comparar el uso de recursos visualizamos los resultados en:
+
+    /sys/fs/cgroup/(memory|cpu|cpuacct)/ejercicio7/(navegador|editor|correo)
+
+Resultados para el navegador:
+
+    - cpuacct.usage --> 2943724935
+    - cpuacct.stat:
+           user 244
+           system 38
+    - cpuacct.usage_percpu --> 422363850 1046168504 1273224787 205078078 
+    - memory.max_usage_in_bytes --> 327741440
+
+Resultado para el editor:
+
+    - cpuacct.usage --> 2345308237
+    - cpuacct.stat:
+           user 201
+           system 21
+    - cpuacct.usage_percpu --> 747258934 1008912121 407984020 181153162 
+    - memory.max_usage_in_bytes --> 153321472
+    
+Resultados para el correo:
+
+    - cpuacct.usage --> 0
+    - cpuacct.stat:
+          user 0
+          system 0
+    - cpuacct.usage_percpu --> 0 0 0 0
+    - memory.max_usage_in_bytes --> 0
+
+B)
+ 
+He localizado una página web que explica muy bien el consúmo eléctrico de un ordenador aproximado que tiene durante un sin desconectarlo de la corriente,
+
+En primer lugar hay que [LeanTricity](http://www.leantricity.es/es/2012/07/11/cuanta-energia-gasta-un-ordenador-aproximaciones/)
+Basandome en estos valores de la página paso a realizar el calculo de costes de amortización.
+
+Coste eléctrico por año:
+
+    365 días x (0,437 kWh + 0,1524 kWh) = 215 kWh (Aproximación)
+    
+    0,20 € * 215 kWh = 43€/año (Anual)
+
+La vida media de un PC esta rondando los 5 años y suponiendo un precio de 1000€.
+
+Amortización:
+
+     Año 2014: 120€ + 43€ = 143€
+     Año 2015: 200€ + 43€ = 243€
+     Año 2016: 200€ + 43€ = 243€
+     Año 2017: 200€ + 43€ = 243€
+     Año 2018: 200€ + 43€ = 243€
+     Año 2019: 57€ + 43€ =  100€
+     
+     Precio total: 1215€
+
+  
+###Ejercicio 9
+####Ejercicio 9.1
+Discutir diferentes escenarios de limitación de uso de recursos o de asignación de los mismos a una u otra CPU.
+
+A la hora de limitar los recursos de una máquina lo primero que tenemos que conocer es el uso que se le va a dar a la misma, no podemos por ejemplo, limitar el uso de CPU en una máquina usada para codificación de vídeo que requiere una intensiva carga de CPU.
+
+Por ejemplo es posible limitar el uso de CPU para sistemas dedicados únicamente a ofimática o tareas administrativas con uso de e-mail o similares, estas tareas no requieren una gran carga del sistema por lo que una limitación en la CPU no les afectaría negativamente.
+
+####Ejercicio 9.2
+Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).
+
+Hacemos dos grupos, uno con un 40% (409,6) de carga y otro con el resto (614,4)
+
+mount {
+   cpu = /sys/fs/cgroup/cpu;
+}
+
+group proc-usu {
+    cpu {
+        cpu.shares = "410";
+    }
+}
+
+group proc-sist {
+    cpu {
+        cpu.shares = "614";
+    }
+}
+
+####Ejercicio 9.3
+Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).
+
+Instalamos htop y lo ejecutamos
+
+![Ejecución de Htop](http://i.imgur.com/ezuRA2Q.png)
+
+####Ejercicio 9.4
+Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.
+
+mount {
+    blkio = /cgroup/iolimit;
+}
+
+group servidor {
+    blkio  {
+        blkio.weight_device="700"; 
+    }
+}
+
+group usuarios {
+    blkio  {
+        blkio.weight_device="300"; 
+    }
+}
+
+
+###Ejercicio 10
+Comprobar si el procesador o procesadores instalados tienen estos flags. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?
+
+Ejecutamos el comando "egrep '^flags.*(vmx|svm)' /proc/cpuinfo" para comprobar si la virtualización a nivel de hardware está activa.
+
+En la ejecución del comando he tenido que quitar el filtro de las extensiones vmx y svm ya que si lo dejaba no aparecía ningún resultado.
+En la captura podemos comprobar que existen los flags en nuestro sistema
+![Flags del sistema](http://i.imgur.com/oBbwPSd.png)
+
+Para conocer el modelo del procesador lo hacemos en /proc/cpuinfor
+![Modelo del procesador](http://i.imgur.com/MZ5zYNG.png)
+
+En la captura podemos ver que aparece la marca, el modelo, número de cores que tenemos disponibles, velocidad de CPU y cantidad de memoria cache.
+
+
+###Ejercicio 11
+Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.
+
+Vemos en la captura que mi ordanador no dispone de aceleración KVM
+
+![Aceleración KVM](http://i.imgur.com/6lcO7pj.png)
+
+***
+***
+
+#Tema 2
+
+##Ejercicio 1
+###Instalar un entorno virtual para tu lenguaje de programación favorito.
+Vamos a instalar el entorno virutal virtualenv para Python.
+Lo primero que hacemos es instalar Pip, que es la herramienta para instalar paquetes de python, lo hacemos escribiendo la orden sudo apt-get install python-pip python-dev build-essential
+
+Despues escribiemos lo siguiente y ya tendremos el entorno virtual instalado:
+![Virtualenv](http://i.imgur.com/gnvPdPN.png)
+
+##Ejercicio 2
+###Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
+Me he dado de alta en [Heroku](https://www.heroku.com/).
+
+![Heroku](http://i.imgur.com/m7QL2AI.png)
+
+##Ejercicio 3
+###Crear una aplicación en OpenShift y dentro de ella instalar WordPress.
+
+Primero nos registramos en Opensift donde vamos a instalar WordPress.
+
+Lo siguiente que hacemos es pinchar en crear una aplicación y despues en la sección de instant app pinchamos 
+en wordpress.
+
+Configuramos la página que nos aparece de la siguiente forma:
+![Wordpress](http://i.imgur.com/nKOGln2.png)
+
+Despues nos pregunta que si queremos cambiar el código de la aplicación, elegimos que no porque la que viene por defecto nos vale.
+
+En este momento nuestra aplicación ya está creada:
+![app](http://i.imgur.com/a7SuBJx.png)
+
+Por último solo nos queda comprobar si todo está correcto, esto lo hacemos pinchando en el enlace que hemos creado y si todo ha ido bien nos saldra el instalador de wordpress. 
+![instalacion word](http://i.imgur.com/fvU5kJL.png)
+
+##Ejercicio 4
+###Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.
+
+Para crear un script en un documento de Google tenemos que crear un documento y acceder a 
+Herramientas >> Editor de secuencias de comandos
+Dentro seleccionamos la opción de Crear secuencia de comandos como aplicación web.
+Una vez hecho esto ya podemos crear una función para comprobar que funciona correctamente. EN este caso he creado una función que lanza un dialogo con el texto "Hello World"
+
+![Hola mundo](http://i.imgur.com/FCODUSX.png)
+
+Ejecutamos la aplicación mediante el menú Ejecutar.
+
+![Aplicacion funcionando](http://i.imgur.com/iVPqBjV.png)
+
+##Ejercicio 5
+
+Un sistema de automatización de la construcción  para python  es **web.py** (orientado a aplicaciones en Internet), que pueden descargarlo del siguiente repositorio http://github.com/webpy/webpy
+
+
+* * *
+
+**Buildbot**,también sistema de automatización de la construcción  para python (entre otros lenguajes), y pueden instalarlo siguiendo los pasos de su página [web](http://docs.buildbot.net/0.8.7p1/manual/installation.html)
+
+##Ejercicio 6
+
+En OpenShift por ejemplo el fichero de automatización se encuentra en `.openshift/action_hooks/build` tal y como viene especificado la[ web oficial](https://developers.openshift.com/en/getting-started-modifying-applications.html#making-changes-to-your-application) . 
+
+El sistema de construcción es un sistema de una serie de hooks (según el tipo de aplicación) que al ejecutarse construyen y configuran la aplicación con todo lo necesario.
+
+##Ejercicio 7
+
+El entorno de desarollo virtualenv, dispone de entornos aislados de pruebas como se nos indica en su[ página web ](https://virtualenv.pypa.io/en/latest/virtualenv.html#usage)  con el siguiente comando: `python setup.py test` dónde `setup.py `, es el código que se pasará a prueba.
+
+* * *
+También disponemos de **Buildbot** (que ya mencione en el ejercicio 5), con el que disponemos también de herramientas para realizar test.
