@@ -379,7 +379,17 @@ Aquí dejo como [instalarlo en diferentes sistemas](http://sailsjs.org/#/getStar
 * [+]Ejercicio 1
  - A) Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback.
 
-Lo primero que tenemos que hacer es crear la carpeta en "/mnt", para ello hacemos:
+Lo primero que tenemos que hacer es crear un espacio de nombres con:
+
+    unshare -u /bin/bash
+
+y cambio el nombre con:
+
+    hostname ejercicio1
+
+con lo que ahora "ejercicio1" será nuestro nombre del sistema.
+
+Loa segundo es crear la carpeta en "/mnt", para ello hacemos:
 
     mkdir disk
     chmod 7777 -R disk
@@ -388,7 +398,7 @@ Ahora lo que hacemos es montar la imagen ".iso" en esa carpeta, situandonos prev
 
     mount -o loop - ubuntu-12.04.4-server-i386.iso /mnt/disk
 
-Aquí esta el [ejemplo](https://www.dropbox.com/s/3nxqexab1o1ochp/Captura%20de%20pantalla%202014-11-17%20a%20la%28s%29%2017.48.13.png?dl=0) que yo he realizado. 
+Aquí esta el [ejemplo](https://www.dropbox.com/s/a4rgma5oq2xd59x/Captura%20de%20pantalla%202014-11-17%20a%20la%28s%29%2018.00.58.png?dl=0) que yo he realizado. 
 
 
 * [+]Ejercicio 2
