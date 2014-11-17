@@ -314,3 +314,15 @@ brctl addbr pablo
 brctl addif pablo eth0
 
 brtcl show
+
+## Ejercicio 3
+
+Instalamos debootstrap:
+
+sudo apt-get install debootstrap
+
+Una vez instalado creamos el directorio donde queremos instalar el sistema, y por ejemplo bajamos un ubuntu y construimos el sistema con:
+
+sudo debootstrap --arch=amd64 lucid /home/debootstrap http://archive.ubuntu.com/ubuntu
+
+Cuando termine de descargar y configurar, tendremos en el directorio indicado el sistema instalado.
