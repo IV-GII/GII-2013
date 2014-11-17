@@ -575,8 +575,8 @@ Para instalar nginx he tenido que descargar otra jaula, en este caso ubuntu sauc
 He añadido el respositorio de nginx al archivo /etc/apt/sources.list:
 
 ```
-deb http://nginx.org/packages/ubuntu/ codename nginx
-deb-src http://nginx.org/packages/ubuntu/ codename nginx
+deb http://nginx.org/packages/ubuntu/ saucy nginx
+deb-src http://nginx.org/packages/ubuntu/ saucy nginx
 ```
 
 Después añadimos la clave pgp, instalamos y ejecutamos:e
