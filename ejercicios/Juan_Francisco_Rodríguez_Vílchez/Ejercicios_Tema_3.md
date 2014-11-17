@@ -21,7 +21,7 @@ Donde 'probando' será el nuevo nombre del sistema:
 
 ![captura1](http://i.imgur.com/IX2hFxN.png)
 
-Posteriormente, procedo a montar en él una imagen ISO con:
+Posteriormente, continuo montando en él una imagen ISO con:
 
 ```sh
 mount -o loop disk.iso /mnt/disk
@@ -105,7 +105,7 @@ Para crear un sistema Fedora (Fedora core 6) dentro de Debian debemos de usar el
 ```sh
 sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fedora
 ```
-En /home/jaulas/fedora se guardará la distro finalmente creada.Como podemos ver en la siguiente captura fedora se ha instalado correctamente:
+En /home/jaulas/fedora se guardará la distro finalmente creada.Como podemos ver en la siguiente captura, fedora se ha instalado correctamente:
 
 ![captura7](http://i.imgur.com/trArZeA.png)
 
@@ -117,12 +117,12 @@ Tutorial seguido: http://manpages.ubuntu.com/manpages/hardy/man8/rinse.8.html
 
 **Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.**
 
-Primero tenemos que entrar a la jaula para ello usamos chroot: 
+Primero tenemos que entrar en la jaula para ello usamos chroot: 
 
 ```sh
 sudo chroot /home/jaulas/fedora
 ```
-Sin embargo, la máquina virtual no está completa para ello que montar el filesystem virtual /proc para que funcionen ordenes como "top", para arreglarlo procedemos a montarlo:
+Sin embargo, la máquina virtual no está completa por lo que tenemos que montar el filesystem virtual /proc para que funcionen ordenes como "top". Para arreglarlo procedemos a montarlo:
 
 ```sh
 mount -t proc proc /proc
@@ -131,7 +131,7 @@ Una vez montado ya podemos probar como funciona top:
 
 ![captura8](http://i.imgur.com/CvTrBEX.png)
 
-Posteriormente, he procedido a instalar "nano" para escribir una aplicación simple en python y poder probarla en la jaula:
+Posteriormente, he instalado "nano" para escribir una aplicación simple en python y poder probarla en la jaula:
 
 ```sh
 yum install nano
@@ -159,7 +159,7 @@ Instalo "curl" para realizar las pruebas:
 ```sh
 apt-get install curl
 ```
-Llegados a este punto en la distro "lucid" ni "fedora" no he conseguido instalar nginx porque eran versiones demasiados anticuadas, por lo que he procedido a instalar "ubuntu saucy" y realizar todos los pasos anteriores.
+Llegados a este punto en la distro "lucid" ni "fedora" no he conseguido instalar nginx, por lo que he procedido a instalar "ubuntu saucy" y realizar todos los pasos anteriores.
 
 Para instalar nginx tenemos que acceder a http://nginx.org/packages/ubuntu/dists/raring/nginx/ y añadirlo al archivo "source lists" para poder instalarlo y descargarlo con "apt-get"
 
@@ -169,20 +169,20 @@ Para añadirlo a /etc/apt/sources.list, he abierto el fichero con nano y he escr
 deb http://nginx.org/packages/ubuntu/ raring nginx
 deb-src http://nginx.org/packages/ubuntu/ raring nginx
 ```
-Posteriormente con:
+Posteriormente instalo nginx, ya que tenemos todo lo necesario para realizar la instalación satisfactoriamente:
 
 ```sh
-apt-get nginx
+apt-get install nginx
 ```
 Y ya disponemos de nginx listo para ser usado:
 
 ![captura10](http://i.imgur.com/04YygFX.png)
 
-Una vez instalado procedemos a ver su estado con service nginx status y lo arrancamos service nginx start:
+Una vez instalado podemos ver su estado con 'service nginx status' y lo arrancamos con 'service nginx start':
 
 ![captura11](http://i.imgur.com/RIB05nY.png)
 
-Cuando ya tenemos a nginx arrancado, podemos ver si funciona en el navegador con curl localhost:
+Cuando ya tenemos a nginx arrancado, podemos ver si funciona en el navegador con el comando 'curl localhost':
 
 ![captura12](http://i.imgur.com/FffL9j7.png)
 
@@ -192,7 +192,6 @@ Cuando ya tenemos a nginx arrancado, podemos ver si funciona en el navegador con
 
 **Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.**
 
-Antes de nada, tenemos que instalar "jailkit", para ello ejecutamos:
 
 Primero instalamos "jailkit" para ello he seguido el siguiente tutorial:
 
