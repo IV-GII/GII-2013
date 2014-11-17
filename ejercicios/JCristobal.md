@@ -1,6 +1,8 @@
 #Ejercicios de JCristobal (José Cristóbal López Zafra)
 
 
+[Ve hacia el tema 4](https://github.com/JJ/GII-2014/blob/master/ejercicios/JCristobal.md#tema-4)
+
 # Tema 1
 
 [Enlace al tema](http://jj.github.io/IV/documentos/temas/Intro_concepto_y_soporte_fisico)
@@ -573,16 +575,6 @@ Y ejecuto en python:
 
 
 
-####Creo un usuario para que trabaje en fedora, se crea correctamente, incluso lo puedo ver al arrancar el sistema
-
-sudo useradd -s /bin/bash -m -d /home/jaulas/fedora/./home/usuariojaula -c "Raring usuariojaula" -g users usuariojaula
-
-despues habría que añadir a jaulas/fedora/etc/passwd: " usuariojaula:x:1001:1001::/home/usuariojaula:/bin/bash"
-
-####pero sigo sin saber que contraseña introducir
-
-
-
 
 ##Ejercicio 5
 ###Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
@@ -644,4 +636,18 @@ Ahora podré conectarme por ssh, o acceder con la terminal al pulsar Ctrl-Alt-F2
 
 ***
 ***
+
+
+# Tema 4
+
+[Enlace al tema](http://jj.github.io/IV/documentos/temas/Contenedores)
+
+
+##Ejercicio 1
+###Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.
+
+(sin empezar)
+
+
+		
 
