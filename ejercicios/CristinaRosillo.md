@@ -1,3 +1,5 @@
+## Tema 1
+
 #Ejercicio 1
 
 Calcular amortización a 4 y 7 años de un servidor
@@ -144,5 +146,74 @@ La salida que produce la ejecución de la primera orden es la siguiente.
 
 ![Ejercicio_10_2](http://i.imgur.com/W8XzkM3.png)
 
+
+
+
+
+##Tema 2
+
+#Ejercicio 1
+
+Vamos a realizar la instalación de el entorno de desarrollo virtual para python Virtualenv. Para hacerlo sólo
+debemos ejecutar la siguiente instrucción desde consola:
+
+	> sudo apt-get install python-virtualenv
+	
+![Ejercicio_1](http://i.imgur.com/4MOaKsV.png)
+
+
+#Ejercicio 2
+
+Vamos a darnos de alta en el servicio PaaS [OpenShift](https://www.openshift.com).
+Como podemos ver ya tenemos creada una cuenta y podemos acceder a la funcionalidad del sitio.
+
+![Ejercicio_2](http://i.imgur.com/StKRpCi.png)
+
+
+#Ejercicio 3
+
+A continuación vamos a crear una nueva aplicación en nuestra cuenta de OpenShift y vamos a instalar WordPress.
+Volvemos al panel de la imagen anterior y seleccionamos la opción "Create you first application now".
+
+![Ejercicio_3](http://i.imgur.com/RTWm6IY.png)
+
+Elegimos en éste caso la instalación de WordPress y al hacerlo se abrirá la siguiente ventana, le damos un nombre a nuestra aplicación y hacemos pinchamos en "Create Application":
+
+![Ejercicio_3_1](http://i.imgur.com/xdUOwna.png)
+![Ejercicio_3_2](http://i.imgur.com/qXOrK8t.png)
+
+Ahora podemos empezar a cambiar el códigp de nuestra a aplicación o continuar hasta finalizar la instalación. Vamos a realizar la instalación completa y más tarde editaremos el código si fuese necesario.
+
+![Ejercicio_3_3](http://i.imgur.com/2iKKA46.png)
+
+![Ejercicio_3_4](http://i.imgur.com/tYDzA4G.png)
+
+Finalmente nos muestra la información de acceso a la base de datos y a la aplicación via web. Para empezar a crear nuestro sitio sólo tendremos que pinchar en la url que se nos da en la imagen anterior e ir siguiendo los pasos de configuración del sitio de WordPress.
+
+![Ejercicio_3_5](http://i.imgur.com/0Vn2TEU.png)
+
+Y ya tendremos listo nuestro sitio.
+
+![Ejercicio_3_6](http://i.imgur.com/yOsTWuP.png)
+
+![Ejercicio_3_7](http://i.imgur.com/XSqJ1Nm.png)
+
+
+#Ejercicio 4
+
+Vamos a crear un pequeño script desde [Google](https://script.google.com). El script creará de forma automática un documento en Google Drive, con el nombre y el contenido que nosotros indiquemos. Lo ejecutaremos y comprobaremos como el documento aparece en nuestra cuenta de Google Drive.
+
+![Ejercicio_4](http://i.imgur.com/iDXEDr8.png)
+![Ejercicio_4_1](http://i.imgur.com/kU517z9.png)
+
+
+#Ejercicio 5
+
+[Buildout](http://www.buildout.org/en/latest/) es un sistema de automatización de construcción de software, usada principalmente para Python y Zope. Es una herramienta open source que nos permite una instalación directa de dependencias y definición de tareas.
+
+
+#Ejercicio 6
+
+El módulo [Unittest](http://pymotw.com/2/unittest/) nos permite probar nuestro código y realizar "Suites de pruebas", agrupar funcionalidad común y escribir "Casos de pruebas". 
 
 
