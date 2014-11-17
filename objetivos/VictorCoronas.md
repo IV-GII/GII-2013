@@ -116,6 +116,7 @@
 * []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request *directamente a su copia del repositorio*, no al repositorio principal de la asignatura. 
 * [+]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
+#VIRTUALIZACIÓN
 
 #Clase del 4 de noviembre de 2014
 
@@ -150,3 +151,29 @@
 * []Comprender que existe vida en los servidores web fuera del Apache.
 * [][Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla](https://es.wikipedia.org/wiki/Chroot) como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
 * []Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
+
+#CONTENEDORES
+
+#Clase del 11 de noviembre de 2014
+
+# Objetivos de esta sesión
+
+* []Entender el concepto de contenedores
+* []Configurar el sistema para poder crear y usar contenedores
+* []Crear y usar contenedores
+
+# Otros objetivos
+
+* []Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
+* []Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
+
+#Clase del 17 de noviembre de 2014
+
+# Objetivos de esta sesión
+
+* []Entender los sistemas de orquestación de máquinas virtuales.
+* []Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+# Otros objetivos
+
+* []Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
