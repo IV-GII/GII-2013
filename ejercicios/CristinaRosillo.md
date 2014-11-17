@@ -1,3 +1,5 @@
+## Tema 1
+
 #Ejercicio 1
 
 Calcular amortización a 4 y 7 años de un servidor
@@ -146,3 +148,34 @@ La salida que produce la ejecución de la primera orden es la siguiente.
 
 
 
+##Tema 2
+
+#Ejercicio 1
+
+Vamos a realizar la instalación de el entorno de desarrollo virtual para python Virtualenv. Para hacerlo sólo
+debemos ejecutar la siguiente instrucción desde consola:
+
+	> sudo apt-get install python-virtualenv
+	
+![Ejercicio_1](http://i.imgur.com/4MOaKsV.png)
+
+
+#Ejercicio 2
+
+Vamos a darnos de alta en el servicio PaaS [OpenShift](https://www.openshift.com).
+Como podemos ver ya tenemos creada una cuenta y podemos acceder a la funcionalidad del sitio.
+
+![Ejercicio_2](http://i.imgur.com/StKRpCi.png)
+
+
+#Ejercicio 3
+
+A continuación vamos a crear una nueva aplicación en nuestra cuenta de OpenShift y vamos a instalar WordPress.
+Volvemos al panel de la imagen anterior y seleccionamos la opción "Create you first application now".
+
+![Ejercicio_3](http://i.imgur.com/RTWm6IY.png)
+
+Elegimos en éste caso la instalación de WordPress y al hacerlo se abrirá la siguiente ventana, le damos un nombre a nuestra aplicación y hacemos pinchamos en "Create Application":
+
+![Ejercicio_3_1](http://i.imgur.com/ExMwcmP.png)
+![Ejercicio_3_2](http://i.imgur.com/qXOrK8t.png)
