@@ -403,7 +403,31 @@ Aquí esta el [ejemplo](https://www.dropbox.com/s/a4rgma5oq2xd59x/Captura%20de%2
 
 * [+]Ejercicio 2
  - A) Mostrar los puentes configurados en el sistema operativo.
+
+Lo primero que debemos de hacer es [installar](https://www.dropbox.com/s/ldc9ye4vdfdfa7e/Captura%20de%20pantalla%202014-11-17%20a%20la%28s%29%2018.08.37.png?dl=0)
+la utilidad para poder mostrar la información:
+
+    apt-get install bridge-utils
+
+Ahora para [consultarlo](https://www.dropbox.com/s/68veyuua9xtg4le/Captura%20de%20pantalla%202014-11-17%20a%20la%28s%29%2018.14.48.png?dl=0) usamos el siguiente comando:
+
+    brctl show
+
  - B) Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+
+Lo primero que debemos de hacer es crear la interfaz virtual con:
+
+    brctl addbr interfazejercicio2
+
+Lo segundo es asignar la nueva interfaz creada "interfazejercicio2" a "eth0" con:
+
+    brctl addif interfazejercicio2 eth0
+
+Una vez realizado todo esto, vemos que se ha asignado todo correctamente con:
+
+    brctl show
+
+[Ver Proceso](https://www.dropbox.com/s/upz9ttfzfhrypns/Captura%20de%20pantalla%202014-11-17%20a%20la%28s%29%2018.20.53.png?dl=0)
 
 #Clase del 10 de Noviembre de 2014
 * [+]Ejercicio 3
