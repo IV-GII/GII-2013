@@ -326,3 +326,11 @@ Una vez instalado creamos el directorio donde queremos instalar el sistema, y po
 sudo debootstrap --arch=amd64 lucid /home/debootstrap http://archive.ubuntu.com/ubuntu
 
 Cuando termine de descargar y configurar, tendremos en el directorio indicado el sistema instalado.
+
+Instalacion rinse:
+
+sudo apt-get install rinse
+
+Bajamos la ISO con
+
+sudo rinse --arch=amd64 --distribution fedora-core-4 -directory /home/jaulas/fedora/
