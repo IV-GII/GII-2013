@@ -5,8 +5,11 @@ Ejercicio 1.
 Ejercicio 2.
 ===
 [Dado de alta en Heroku.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/2.0.jpg)
-Dado de alta en OpenShift. 
+
+Dado de alta en OpenShift:
+
   [Paso1](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/2.1.jpg)
+
   [Paso2](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/2.2.jpg)
 
 Ejercicio 3.
