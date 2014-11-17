@@ -537,7 +537,7 @@ He conseguido instalar Ubuntu Lucid:
 He instalado Rinse con:
 
 ```
-sudo apt-get install rinse
+$ sudo apt-get install rinse
 ```
 
 Ahora vemos las imágenes que tenemos disponibles para instalar, e instalamos la que queramos:
@@ -554,9 +554,9 @@ He entrado al sistema ubuntu que instalamos previamente con debootstrap:
 Luego he instalado el paquete de idioma español, el compilador g++ y nano:
 
 ```
-\# apt-get install language-pack-es
-\# apt-get install g++
-\# apt-get install nano
+# apt-get install language-pack-es
+# apt-get install g++
+# apt-get install nano
 ```
 
 Creamos un hola mundo en c++:
@@ -582,13 +582,13 @@ deb-src http://nginx.org/packages/ubuntu/ codename nginx
 Después añadimos la clave pgp, instalamos y ejecutamos:e
 
 ```
-\# apt-get install wget
-\# wget http://nginx.org/keys/nginx_signing.key
-\# apt-key add nginx_signing.key
-\# apt-get update
-\# apt-get install nginx
-\# apt-get install curl
-\# service nginx start
+# apt-get install wget
+# wget http://nginx.org/keys/nginx_signing.key
+# apt-key add nginx_signing.key
+# apt-get update
+# apt-get install nginx
+# apt-get install curl
+# service nginx start
 ```
 
 Podemos comprobar que ha funcionado con curl:
@@ -601,20 +601,20 @@ Podemos comprobar que ha funcionado con curl:
 He descargado los fuentes de jailkit e instalado con
 
 ```
-./configure && make && sudo make install
+$ ./configure && make && sudo make install
 ```
 
 Después he creado una jaula:
 
 ```
-\# mkdir /home/jaulas/dorada
-\# jk_init -v -j /home/jaulas/dorada/ jk_lsh basicshell netutils editors
+# mkdir /home/jaulas/dorada
+# jk_init -v -j /home/jaulas/dorada/ jk_lsh basicshell netutils editors
 ```
 
 Finalmente creamos un usuario UNIX y lo enjaulamos:
 
 ```
-\# useradd jk_julio
-\# passwd jk_julio
-\# jk_jailuser -m -j /home/jaulas/dorada/ jk_julio
+# useradd jk_julio
+# passwd jk_julio
+# jk_jailuser -m -j /home/jaulas/dorada/ jk_julio
 ```
