@@ -644,8 +644,15 @@ Ahora podré conectarme por ssh, o acceder con la terminal al pulsar Ctrl-Alt-F2
 ##Ejercicio 1
 ###Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.
 
-(sin empezar)
+Primero nos descargamos la última versión de Github:
+`git clone https://github.com/lxc/lxc`
 
+y en la carpeta de LXC ejecutamos `./autogen.sh && ./configure && make && sudo make install`
 
+Puede dar problemas si no tenemos instalado autoconf, que instalamos con `sudo apt-get install autoconf`
+
+Por último comprobamos si está preparado para usar este tipo de tecnología y también si se ha configurado correctamente con `lxc-checkconfig`
 		
+![imagen](http://i.imgur.com/HRgX8yc.png)
+
 
