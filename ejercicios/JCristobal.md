@@ -1,8 +1,6 @@
 #Ejercicios de JCristobal (José Cristóbal López Zafra)
 
 
-[Ve hacia el tema 4](https://github.com/JJ/GII-2014/blob/master/ejercicios/JCristobal.md#tema-4)
-
 # Tema 1
 
 [Enlace al tema](http://jj.github.io/IV/documentos/temas/Intro_concepto_y_soporte_fisico)
