@@ -197,3 +197,21 @@ Y ya tendremos listo nuestro sitio.
 ![Ejercicio_3_7](http://i.imgur.com/XSqJ1Nm.png)
 
 
+#Ejercicio 4
+
+Vamos a crear un pequeño script desde [Google](https://script.google.com). El script creará de forma automática un documento en Google Drive, con el nombre y el contenido que nosotros indiquemos. Lo ejecutaremos y comprobaremos como el documento aparece en nuestra cuenta de Google Drive.
+
+![Ejercicio_4](http://i.imgur.com/iDXEDr8.png)
+![Ejercicio_4_1](http://i.imgur.com/kU517z9.png)
+
+
+#Ejercicio 5
+
+[Buildout](www.buildout.org) es un sistema de automatización de construcción de software, usada principalmente para Python y Zope. Es una herramienta open source que nos permite una instalación directa de dependencias y definición de tareas.
+
+
+#Ejercicio 6
+
+El módulo [Unittest](http://pymotw.com/2/unittest/) nos permite probar nuestro código y realizar "Suites de pruebas", agrupar funcionalidad común y escribir "Casos de pruebas". 
+
+
