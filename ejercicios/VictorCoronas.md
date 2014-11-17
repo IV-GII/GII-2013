@@ -379,6 +379,18 @@ Aquí dejo como [instalarlo en diferentes sistemas](http://sailsjs.org/#/getStar
 * [+]Ejercicio 1
  - A) Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback.
 
+Lo primero que tenemos que hacer es crear la carpeta en "/mnt", para ello hacemos:
+
+    mkdir disk
+    chmod 7777 -R disk
+
+Ahora lo que hacemos es montar la imagen ".iso" en esa carpeta, situandonos previamente en la carpeta donde esta la imagen:
+
+    mount -o loop - ubuntu-12.04.4-server-i386.iso /mnt/disk
+
+Aquí esta el [ejemplo](https://www.dropbox.com/s/3nxqexab1o1ochp/Captura%20de%20pantalla%202014-11-17%20a%20la%28s%29%2017.48.13.png?dl=0) que yo he realizado. 
+
+
 * [+]Ejercicio 2
  - A) Mostrar los puentes configurados en el sistema operativo.
  - B) Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
