@@ -131,8 +131,8 @@
 * [X] Dejar de usar Sublime Text.
 
 ##Clase del 10 de Noviembre.
-* [ ] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
-* [ ] Aprender a ''enjaular'' usuarios.
+* [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+* [X] Aprender a ''enjaular'' usuarios.
 
 ###Otros Objetivos
 * [X] Finalizar la entrega la segunda práctica.
@@ -141,7 +141,7 @@
 * [X] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
 * [X] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
 * [X] Comprender que existe vida en los servidores web fuera del Apache.
-* [ ] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
+* [X] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
 * [ ] Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
 
 ##Clase del 11 de Noviembre.
@@ -152,3 +152,13 @@
 ###Otros Objetivos
 * [ ] Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
 * [ ] Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
+
+##Clase del 17 de Noviembre.
+* [ ] Entender los sistemas de orquestación de máquinas virtuales.
+* [ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+###Otros Objetivos
+* [ ] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+
+
+
