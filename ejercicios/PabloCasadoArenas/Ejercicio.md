@@ -333,4 +333,4 @@ sudo apt-get install rinse
 
 Bajamos la ISO con
 
-sudo rinse --arch=amd64 --distribution centos-6 -directory /home/jaulas/fedora/
+sudo rinse --arch=amd64 --distribution centos-6 -directory /home/jaulas/centos/
