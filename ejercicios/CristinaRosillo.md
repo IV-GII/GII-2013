@@ -177,5 +177,23 @@ Volvemos al panel de la imagen anterior y seleccionamos la opción "Create you f
 
 Elegimos en éste caso la instalación de WordPress y al hacerlo se abrirá la siguiente ventana, le damos un nombre a nuestra aplicación y hacemos pinchamos en "Create Application":
 
-![Ejercicio_3_1](http://i.imgur.com/ExMwcmP.png)
+![Ejercicio_3_1](http://i.imgur.com/xdUOwna.png)
 ![Ejercicio_3_2](http://i.imgur.com/qXOrK8t.png)
+
+Ahora podemos empezar a cambiar el códigp de nuestra a aplicación o continuar hasta finalizar la instalación. Vamos a realizar la instalación completa y más tarde editaremos el código si fuese necesario.
+
+![Ejercicio_3_3](http://i.imgur.com/2iKKA46.png)
+
+![Ejercicio_3_4](http://i.imgur.com/tYDzA4G.png)
+
+Finalmente nos muestra la información de acceso a la base de datos y a la aplicación via web. Para empezar a crear nuestro sitio sólo tendremos que pinchar en la url que se nos da en la imagen anterior e ir siguiendo los pasos de configuración del sitio de WordPress.
+
+![Ejercicio_3_5](http://i.imgur.com/0Vn2TEU.png)
+
+Y ya tendremos listo nuestro sitio.
+
+![Ejercicio_3_6](http://i.imgur.com/yOsTWuP.png)
+
+![Ejercicio_3_7](http://i.imgur.com/XSqJ1Nm.png)
+
+
