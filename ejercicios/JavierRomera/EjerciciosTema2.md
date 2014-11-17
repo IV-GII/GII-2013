@@ -30,6 +30,23 @@ Ejercicio 4.
 6. [Aceptamos los permisos que se nos solicitan.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/4.6.jpg)
 7. [Comprobamos que funciona.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/4.7.jpg)
 
+Ejercicio 5.
+===
+Para Python se usa, por ejemplo, SCons.
+* [Web oficial.](http://www.scons.org/)
+* [Wikipedia](http://en.wikipedia.org/wiki/SCons)
 
+Ejercicio 6.
+===
+Se usa [/apps/:app/builds.](https://blog.heroku.com/archives/2014/5/21/introducing_programmatic_builds_on_heroku)
+El nombre de la aplicación junto a una URL que contiene el código fuente comprimido se le pasa al script. El script recoge todo esto y usa  /apps/:app/builds para crear una nueva estructura. 
 
+La estructura comenzará en el estado pending y una vez se haya construido, el estado pasará s ser succeeded o failed.
 
+Los resultados se mostrarán en la terminal y la estructra se desplegará en la aplicación.
+
+Ejercicio 7.
+===
+Un entornor de pruebas para Python es Django.
+* [Web oficial](https://www.djangoproject.com/)
+* [Tutorial](http://www.tdd-django-tutorial.com/)
