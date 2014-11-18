@@ -3,7 +3,7 @@
 
 * [X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
 
-* [-] Crear nuevas funciones en un SaaS.
+* [x] Crear nuevas funciones en un SaaS.
 
 
 ###### Otros objetivos

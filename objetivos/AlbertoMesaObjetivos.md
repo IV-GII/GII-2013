@@ -107,25 +107,58 @@
 ###Otros Objetivos
 * [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
 * [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* [ ] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+* [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
  
 ##Clase del 3 de Noviembre.
-* [ ] Consolidar el uso de PaaS/SaaS.
-* [ ] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones.
-* [ ] Continuar con la segunda práctica.
+* [X] Consolidar el uso de PaaS/SaaS.
+* [X] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones.
+* [X] Continuar con la segunda práctica.
 
 ###Otros Objetivos
-* [ ] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
+* [X] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
 * [ ] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
 ##Clase del 4 de Noviembre.
-* [ ] Entender los objetivos de este tema.
-* [ ] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador.
-* [ ] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux.
+* [X] Entender los objetivos de este tema.
+* [X] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador.
+* [X] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux.
 * [ ] Entender y saber llevar a cabo la virtualización de dispositivos de red.
 
 ###Otros Objetivos
-* [ ] Usar herramientas de administración y monitorización de red en línea de órdenes.
+* [X] Usar herramientas de administración y monitorización de red en línea de órdenes.
 * [ ] Contestar a la encuesta sobre la asignatura.
-* [ ] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii.
-* [ ] Dejar de usar Sublime Text.
+* [X] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii.
+* [X] Dejar de usar Sublime Text.
+
+##Clase del 10 de Noviembre.
+* [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+* [X] Aprender a ''enjaular'' usuarios.
+
+###Otros Objetivos
+* [X] Finalizar la entrega la segunda práctica.
+* [X] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii.
+* [X] Dejar de usar Sublime Text por estas 7 razones.
+* [X] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
+* [X] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+* [X] Comprender que existe vida en los servidores web fuera del Apache.
+* [X] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
+* [ ] Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
+
+##Clase del 11 de Noviembre.
+* [ ] Entender el concepto de contenedores.
+* [ ] Configurar el sistema para poder crear y usar contenedores.
+* [ ] Crear y usar contenedores.
+
+###Otros Objetivos
+* [ ] Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
+* [ ] Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
+
+##Clase del 17 de Noviembre.
+* [ ] Entender los sistemas de orquestación de máquinas virtuales.
+* [ ] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+###Otros Objetivos
+* [ ] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+
+
+

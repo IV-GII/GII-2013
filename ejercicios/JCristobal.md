@@ -454,5 +454,205 @@ Un entorno de pruebas para node.js podría ser [Express.js](http://expressjs.com
 En este [blog](http://blog.solucionex.com/javascript/expressjs-un-framework-para-nodejs) habla sobre él, explica como instalarlo y a darle algunos usos.
 
 
+***
+***
+
+
+# Tema 3
+
+[Enlace al tema](http://jj.github.io/IV/documentos/temas/Tecnicas_de_virtualizacion)
+
+
+##Ejercicio 1
+###Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback
+
+Creo un espacio de nombres con sudo unshare -u /bin/bash , y cambio el nombre con hostname prueba , donde prueba será nuestro nuevo nombre del sistema.
+
+
+También hay que crear la carpeta donde voy a montar el disco (disk en mnt) 
+
+
+Y lo monto con: `sudo mount -o loop - ubuntu-14.04.1-server-i386.iso /mnt/disk`
+
+![imagen1](http://i.imgur.com/tEnEQGi.png)
+
+
+Consulto los enlaces: [crear un archivo iso](http://serverfault.com/questions/5689/creating-an-iso-file-in-linux)
+[montar la iso](http://serverfault.com/questions/198135/how-to-mount-an-iso-file-in-linux)
+
+
+
+##Ejercicio 2
+###Mostrar los puentes configurados en el sistema operativo.
+
+Primero hay que instalar la utilidad para consultarlo `sudo apt-get install bridge-utils`
+
+Y lo consultamos con el comando `sudo brctl show`
+
+Muestro mi salida al comando:
+![imagen1](http://i.imgur.com/6IQnYun.png)
+
+###Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+
+Creamos un interfaz virtual `sudo brctl addbr interfazprueba`
+
+Y borramos la que creamos en los ejemplos (alcantara) porque está ocupando la red cableada (eth0) 
+`sudo brctl delbr alcantara`
+
+
+Asignamos la nueva interfaz a eth0
+
+`sudo brctl addif interfazprueba eth0`
+
+Ya esta asignada, muestro la salida de `sudo brctl show` y veo que la interfaz del ejemplo (alcantara) está borrado y la recién creada asignada
+
+![imagen2](http://i.imgur.com/4Ht6YOd.png)
+
+
+
+##Ejercicio 3
+###Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+
+Primero lo instalamos `sudo apt-get install debootstrap`
+
+En el ejemplo no sugiere instalar quantal, pero no lo encuentra en http://archive.ubuntu.com/ubuntu/dists/ por lo que uso otro: saucy
+(se puede usar cualquiera de la lista)
+
+Creamos el directorio home/jaulas/saucy donde instalarlo.
+
+
+Y ejecuto `sudo debootstrap --arch=amd64 saucy /home/jaulas/saucy/ http://archive.ubuntu.com/ubuntu`
+
+Finalmente nos dice "Base system installed successfully", ya está creado:
+
+![imagen](http://i.imgur.com/cNmD8mD.png)
+
+###Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
+
+Instalamos Rinse y vemos que sistemas podemos crear con `rinse --list-distributions`
+
+Creamos el directorio /home/jaulas/fedora , donde crearemos nuestro sistema Fedora (escojo fedora-core-4)
+
+`sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fedora`
+
+Ya está creado:
+
+![imagen](http://i.imgur.com/ei8NLDe.png)
+
+
+##Ejercicio 4
+###Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla. 
+
+Usamos chroot para entrar en la jaula: `sudo chroot /home/jaulas/fedora`
+
+y podremos ver el listado del directorio, pero nos falla con órdenes como top.
+
+Para arreglarlo tenemos que montar el filesystem virtual /proc y ejecutamos `mount -t proc proc /proc`
+
+
+También deberíamos instalar el paquete español para evitar algunos errores, con `apt-get install language-pack-es` pero en mi caso puedo usar apt-get y con yum no me permite instalar el paquete español
+
+En cualquier caso funciona, ejecuto `top`:
+
+![imagen](http://i.imgur.com/3gm9sjD.png)
+
+También pruebo a instalar una aplicación, nano: `yum install nano`
+
+![imagen](http://i.imgur.com/Kdk0Ny4.png)
+
+y para crear y ejecutar una aplicación básica de python, abro nano y creo hello.py, con un código básico:
+
+```
+#!/usr/bin/python 
+print "Hola mundo!"
+```
+
+Y ejecuto en python:
+
+![imagen](http://i.imgur.com/5B56pVY.png)
+
+
+
+
+##Ejercicio 5
+###Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
+
+
+Para esta actividad usaré el sistema saucy instalado en la actividad 3, ya que el fedora es una versión muy antigua y da muchos problemas.
+Para trabajar bien con el seguimos los mismo pasos que en la actividad 4, monto el filesystem virtual /proc e instalo el paquete español
+
+Instalamos curl simplemente con `apt-get install curl`
+
+y para nginx ejecutamos:
+
+`echo "deb http://nginx.org/packages/ubuntu/ raring nginx" >> /etc/apt/sources.list ` y 
+`echo "deb-src http://nginx.org/packages/ubuntu/ raring nginx" >> /etc/apt/sources.list`
+y `apt-get install nginx`
+
+![imagen](http://i.imgur.com/hBIDcww.png)
+
+Una vez instalado vemos su estado con `service nginx status` y lo arrancamos `service nginx start`:
+
+![imagen](http://i.imgur.com/oTjmTlA.png)
+
+Habría que comprobar que ningun otro servidor está ocupando el puerto 80 (Apache), si fuera así lo mataríamos y arrancaríamos nginx.
+
+Una vez arrancado compruebo que funciona en el navegador con `curl localhost`:
+
+![imagen](http://i.imgur.com/qYaTNl3.png)
+
+
+##Ejercicio 6
+###Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar. 
+
+Primero instalamos "jailkit":
+
+Ejecutamos: 
+`wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.g` y lo descomprimimos `tar -xzvf jailkit-2.16.tar.gz`
+
+Accedemos a la carpeta de jailkit recién descomprimida y ejecutamos: `./configure`, `make` y `sudo make install`
+
+
+Seguimos los pasos que nos indican en los apuntes:
+`sudo mkdir -p /seguro/jaulas/dorada`
+`sudo chown -R root:root /seguro`
+
+Y creamos la jaula con un shell básico (basicshell), herramientas de red(netutils) y un editor de texto(editors):
+`sudo jk_init -v -j /seguro/jaulas/dorada jk_lsh basicshell netutils editors`
+
+
+Creamos un usuario `sudo useradd usuarioIV` y lo enjaulamos `sudo jk_jailuser -m -j /seguro/jaulas/dorada usuarioIV`
+También cambiamos la contraseña con: `sudo passwd usuarioIV`
+
+Además hay que editar la configuración del usuario (que estará en /seguro/jaulas/dorada/etc/passwd) y cambiar jk_lsh por /bin/bash, el shell habitual.
+
+![imagen](http://i.imgur.com/XWZCnPe.png)
+
+
+Ahora podré conectarme por ssh, o acceder con la terminal al pulsar Ctrl-Alt-F2 a este usuario.
+
+
+***
+***
+
+
+# Tema 4
+
+[Enlace al tema](http://jj.github.io/IV/documentos/temas/Contenedores)
+
+
+##Ejercicio 1
+###Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.
+
+Primero nos descargamos la última versión de Github:
+`git clone https://github.com/lxc/lxc`
+
+y en la carpeta de LXC ejecutamos `./autogen.sh && ./configure && make && sudo make install`
+
+Puede dar problemas si no tenemos instalado autoconf, que instalamos con `sudo apt-get install autoconf`
+
+Por último comprobamos si está preparado para usar este tipo de tecnología y también si se ha configurado correctamente con `lxc-checkconfig`
+		
+![imagen](http://i.imgur.com/HRgX8yc.png)
 
 
