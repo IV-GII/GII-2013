@@ -124,12 +124,14 @@ Instalamos rinse:
 
 ```sudo apt-get install rinse```
 
-Instalamos alguna de las distribuciones disponibles.
+Comprobamos las distribuciones disponibles.
 
 ![Figura13](Imagenes/ej3_3_2.png)
-> Figura 13.
+> Figura 13. Distribuciones disponibles.
 
-```sudo rinse --arch=amd64 --distribution fedora-core-10 --directory /home/jaulas/fedora64```
+Instalamos alguna versión de fedora existente en nuestro sistema.
+
+Ejemplo : ```sudo rinse --arch=amd64 --distribution fedora-core-10 --directory /home/jaulas/fedora64```
 
 
 ##Ejercicio 4
@@ -169,17 +171,21 @@ Si queremos instalar mediante apt-get tendremos que añadir los repositorios de 
 Y añadimos los repositorios siguientes :
 
 ```deb http://nginx.org/packages/ubuntu/ saucy nginx```
+
 ```deb-src http://nginx.org/packages/ubuntu/ saucy nginx```
 
 Ahora procedemos a obtener la key del repositorio de nginx.
 
 ```apt-get install wget```
+
 ```wget http://nginx.org/keys/nginx_signing.key```
+
 ```apt-key add nginx_signing.key```
 
 Actualizamos los repositorios del sistema e instalamos nginx.
 
 ```apt-get update```
+
 ```apt-get install nginx```
 
 Ya podemos lanzar el servidor.
@@ -191,6 +197,7 @@ En caso de que de problemas lanzar el servidor por tener en uso el puerto 80 sal
 Instalamos curl para poder visualizar a través de la terminal páginas web.
 
 ```apt-get install curl```
+
 ```curl localhost```
 
 ![Figura15](Imagenes/ej3_5_1.png)
