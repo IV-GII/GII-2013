@@ -119,3 +119,28 @@ Instalación de virtualenv para python.
 
 **Ejercicio 4:**<br />
 **Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.**<br />
+Primero creamos el script y otorgamos persmisos:<br >
+![imagen P2_4_1](http://imageshack.com/a/img912/5537/f3iUBe.png)
+
+<br />A continuación vemos los resultado en nuestro dashboard de Drive:<br />
+![imagen P2_4_2](http://imageshack.com/a/img903/529/5hJELd.png)
+
+<br />Por último se observa el e-mail llegado a nuestra cuenta: <br />
+![imagen P2_4_3](http://imageshack.com/a/img673/4495/dOlZHT.png)
+
+**Ejercicio 5:**<br />
+**Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.**<br />
+De forma asidua uso make, y se puede decir que Make es una herramienta de gestión de dependencias, típicamente, las que existen entre los archivos que componen el código fuente de un programa, para dirigir su recompilación o "generación" automáticamente. Si bien es cierto que su función básica consiste en determinar automáticamente qué partes de un programa requieren ser recompiladas y ejecutar los comandos necesarios para hacerlo, también lo es que Make puede usarse en cualquier escenario en el que se requiera, de alguna forma, actualizar automáticamente un conjunto de archivos a partir de otro, cada vez que éste cambie. [Wikipedia](http://es.wikipedia.org/wiki/Make)
+
+**Ejercicio 6:**<br />
+**Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.**<br />
+Al realizar el proyecto sobre OpenShift, éste facilita un link para automatizar la construcción [Client tools](https://developers.openshift.com/en/getting-started-client-tools.html#ubuntu), donde los pasos que debia seguir son:
++ Instalar o tener instalado Ruby
++ Instalar o tener instalado Git
++ Usar el paquete RubyGems para instalar las herramientas para el cliente de Openshift
++ Utilizar: rhc setup
++ Seguir los pasos de instalación para vincularlo con mi cuenta, crear las key y poder establecer la configuración incial.
+
+**Ejercicio 7:**<br />
+**Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.**<br />
+Para netbeans, [JUnit](https://netbeans.org/kb/docs/java/junit-intro.html)
