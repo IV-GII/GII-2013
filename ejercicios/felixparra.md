@@ -135,3 +135,27 @@ Al realizar el proyecto sobre OpenShift, éste facilita un link para automatizar
 **Ejercicio 7:**<br />
 **Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.**<br />
 Para netbeans, [JUnit](https://netbeans.org/kb/docs/java/junit-intro.html)
+
+<hr />
+
+# Modulo III
+
+**Ejercicio 1:**<br />
+**Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback**<br />
+
+**Ejercicio 2:**<br />
+######1.Mostrar los puentes configurados en el sistema operativo.
+
+######Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+
+**Ejercicio 3:**<br />
+######Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+
+######Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
+
+**Ejercicio 4:**<br />
+**Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.**
+
+**Ejercicio 5:**<br />
+
+
