@@ -63,3 +63,10 @@ Podemos instalarlo con pip con el siguiente comando:
 pip install buildbot
 ~~~
 
+
+#Ejercicio 6#
+##Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.##
+
+En OpenShift el fichero de automatización se encuentra en .openshift/action_hooks/build.
+
+![Sin titulo](https://github.com/JJ/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema2/ejercicio6.PNG)
