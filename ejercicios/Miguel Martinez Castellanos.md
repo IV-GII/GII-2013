@@ -107,10 +107,11 @@ En primer lugar siguiendo el [tutorial](https://developers.google.com/apps-scrip
 
 ## Ejercicio 5
 **Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.**
-Realizando la siguiente busqueda en google "Build automation python" nos han
+Realizando la siguiente busqueda en google "Build automation python" nos encontramos una [wiki de python](https://wiki.python.org/moin/ConfigurationAndBuildTools) en la que nos habla de los distintos sistemas de construccion para este lenguaje.
+
+Donde nos encontramos con [Buildit](https://software.agendaless.com/Members/chrism/software/buildit/README.txt)como el sistema mas sencillo y facil de usar.
 
 ## Ejercicio 6
 **Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma. **
 
-## Ejercicio 7
-**Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.**
+
