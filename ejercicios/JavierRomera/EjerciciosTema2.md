@@ -26,7 +26,7 @@ Ejercicio 4.
 2. [Seleccionamos *Google Apps Script*.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/4.2.jpg)
 3. [Aceptamos.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/4.3.jpg)
 4. [Pulsamos *Secuencia de comandos*.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/4.4.jpg)
-5. [Creamos nuestro código en un nuevo documento de nombre distinto al original.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/4.5.jpg) (El código consiste en mandar por correo los datos de los documentos almacenados en la cuenta.)
+5. [Creamos nuestro código en un nuevo documento de nombre distinto al original.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/4.5.jpg) - El código consiste en mandar por correo los datos de los documentos almacenados en la cuenta.
 6. [Aceptamos los permisos que se nos solicitan.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/4.6.jpg)
 7. [Comprobamos que funciona.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema2_Imagenes/4.7.jpg)
 
