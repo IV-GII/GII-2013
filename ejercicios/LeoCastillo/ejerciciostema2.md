@@ -36,4 +36,15 @@ Y creamos el entorno virtual:
 ![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/ejercicio3_2.PNG)
 
 
+#Ejercicio 4#
+##Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.##
+Para crear el script vamos a Herramientas->Editor de secuencias de comandos... y editamos la función:
 
+![Sin titulo](https://github.com/JJ/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema2/ejercicio4_1.PNG)
+
+
+Ejecutamos y nos crea el documento:
+
+![Sin titulo](https://github.com/JJ/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema2/ejercicio4_2.PNG)
+
+![Sin titulo](https://github.com/JJ/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema2/ejercicio4_3.PNG)
