@@ -79,8 +79,39 @@ Y finalmente ejecutamos el script y vemos que recibimos un correo con el nuevo d
 ![G2](imagenes/g2.png)
 
 ###Ejercicio 5.
+En el caso de Python, que es el lenguaje que usaremos en nuestro PasS, existe un sistema de automatización llamado [Paver](http://paver.github.io/paver/).
 
 ###Ejercicio 6.
+En el caso de Google App Engine utiliza [YAML](http://es.wikipedia.org/wiki/YAML), un lenguaje de serialización de datos. A través de un archivo situado en el directorio raiz llamado **app.yaml** donde se especifican una serie de campos obligatorios como:  
+
+* project-id de la aplicación  
+* versión  
+* runtime  
+* versión de la api  
+
+A parte de estos campos, hay que indicarle a *GAE* de que manera debe actuar en caso de recibir una petición. Asi por ejemplo tenemos que indicarle que si alguien introduce la dirección *http://nombre-app./client* debe acudir a ./inc/client.py por ejemplo.  
+
+Un ejemplo de este archivo es el siguiente:
+
+```
+application: nombre-app
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+```
 
 ###Ejercicio 7.
-
+En el caso de GAE existe un entorno de desarrollo proporcionado por la propia Google la cual permite probar de manera local las aplicaciones antes de subirlas al sistema.  
