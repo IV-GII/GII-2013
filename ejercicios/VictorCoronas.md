@@ -476,6 +476,30 @@ Tras un rato esperando a que se descargue por completo la distribución selecion
 * [+]Ejercicio 4
  - A) Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.
 
+El primer paso es usar "chroot" para poder entrar en la jaula, usando el siguiente comando:
+
+    chroot /home/jaulas/fedora
+
+Después ejecutamos el comando "top", pero nos da un [error](https://www.dropbox.com/s/1si50v7wagmur13/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.34.02.png?dl=0).
+
+Para solucionar dicho problema y poder visualizar el listado de directorios, usamos el siguiente comando:
+
+    mount -t proc proc /proc
+
+Una vez realizado este paso, volvemos a ejecutar la orden [top](https://www.dropbox.com/s/vogfekhjj4jbw2s/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.39.40.png?dl=0).
+
+Ahora instalamos un editor de texto, en mi caso uso "nano":
+
+    yum install nano
+
+Ejecutamos [nano](https://www.dropbox.com/s/wphygjj43cq0hyb/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.56.35.png?dl=0) y creamos un pequeño programa.
+
+Después lo ejecutamos con:
+
+    python hola.py
+
+[Ver](https://www.dropbox.com/s/ovyp0l469daft7x/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.57.45.png?dl=0)
+
 * [+]Ejercicio 5
  - A) Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
 
