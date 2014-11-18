@@ -503,6 +503,18 @@ Después lo ejecutamos con:
 * [+]Ejercicio 5
  - A) Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
 
+Lo primero es entrar en la jaula que vamos a usar para instalarlo:
+
+    chroot /home/jaulas/lucid
+
+Como segundo paso, ejecutamos [apt-get install curl](https://www.dropbox.com/s/ytsi73smv3p2yyt/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.08.50.png?dl=0).
+
+El tercer paso para poder instalar "nginx" es el [siguiente](https://www.dropbox.com/s/nal29eerjdk54rv/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.13.54.png?dl=0).
+
+Por último ejecutamos "nginx" con:
+
+    service start nginx
+
 * [+]Ejercicio 6
  - A) Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.
 
