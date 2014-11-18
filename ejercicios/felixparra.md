@@ -1,6 +1,5 @@
 # Ejercicios de FelixParra
 # Modulo I
-## Sesión 29-sept-2014
 
 **Ejercicio 1:**<br />
 **Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años.**<br /><br />
@@ -46,15 +45,12 @@ La diferencia radica en las características que ofrecen cada una de las empresa
 <br />
 ![imagen EJ_3](http://imageshack.com/a/img909/4383/9U1I1A.png)
 
-<hr />
-
-## Sesión 30-sept-2014
-
 **Ejercicio 4:**<br />
 **Hacer el tutorial de línea de órdenes de docker para comprender cómo funciona.**<br />
 ![imagen EJ_4](http://imageshack.com/a/img673/3176/c3IQoX.png)
 
-<br />**Ejercicio 5: Instala el sistema de gestión de fuentes git**<br />
+<br />**Ejercicio 5:** <br />
+**Instala el sistema de gestión de fuentes git**<br />
 
 ![imagen Ej_5](http://imageshack.com/a/img538/9873/rqrgai.png)
 
@@ -70,10 +66,6 @@ La diferencia radica en las características que ofrecen cada una de las empresa
 -La instalación esta hecha y se ha montado en /sys/fs/cgroup<br />
 -Lo que contiene es:<br />
 ![imagen Ej_7](http://imageshack.com/a/img661/4265/QVSZsN.png)
-
-<hr />
-
-## Sesión 6-oct-2014
 
 **Ejercicio 8:**
 ######8.1 - Crear diferentes grupos de control sobre un sistema operativo Linux. Ejecutar en uno de ellos el navegador, en otro un procesador de textos y en uno último cualquier otro proceso. Comparar el uso de recursos de unos y otros durante un tiempo determinado.
@@ -102,7 +94,6 @@ Foro: [Contestación](https://github.com/JJ/GII-2014/issues/72 "Contestación")<
 <hr />
 
 # Modulo II
-## Sesión 20-oct-2014
 
 **Ejercicio 1:**<br />
 **Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba,obviamente).**<br />
