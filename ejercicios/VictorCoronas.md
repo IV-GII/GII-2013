@@ -430,8 +430,28 @@ Una vez realizado todo esto, vemos que se ha asignado todo correctamente con:
 [Ver Proceso](https://www.dropbox.com/s/upz9ttfzfhrypns/Captura%20de%20pantalla%202014-11-17%20a%20la%28s%29%2018.20.53.png?dl=0)
 
 #Clase del 10 de Noviembre de 2014
+
 * [+]Ejercicio 3
  - A) Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+
+ El primer paso que tenemos que dar es instalar [Debootstrap](https://www.dropbox.com/s/i7mr26g6ea9qm4w/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2013.23.04.png?dl=0), para ello usamo la siguiente orden:
+
+    apt-get install debootstrap
+
+Una vez ejecutada la orden comenzará el proceso de [descarga e instalación](https://www.dropbox.com/s/647vckmf8beiybf/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2013.23.26.png?dl=0).
+
+Sigo los pasos del ejemplo usado en las transparecias del tema pero no encuntra [quantal](https://www.dropbox.com/s/18sszawhl77uhvt/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2013.32.49.png?dl=0), por lo que proceso a usar "lucid".
+
+Para ello sigo los pasos seguidos anteriormente con en el ejemplo de quantal, así que creamos los [directorios](https://www.dropbox.com/s/gzobsb4o5w0wc9e/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2013.42.57.png?dl=0) siguientes donde se realizara la instalación:
+
+    home/jaulas/lucid
+
+Por último ejecutamos las orden:
+
+    debootstrap --arch=amd64 lucid /home/jaulas/lucid/ http://archive.ubuntu.com/ubuntu
+
+Tras un rato de espera se termina el proceso y se nos quedaría como se [muestra](https://www.dropbox.com/s/mhtyxhtcffld6hs/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2013.55.43.png?dl=0), siempre que se muestre el mensaje de "Base system installed successfully". 
+
  - B) Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
 
 * [+]Ejercicio 4
