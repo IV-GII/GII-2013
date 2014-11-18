@@ -518,6 +518,47 @@ Por último ejecutamos "nginx" con:
 * [+]Ejercicio 6
  - A) Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.
 
+Lo primero que debemos de hacer es instalar "jailkit", para ello tenemos que hacer es [ejecutar](https://www.dropbox.com/s/ye3pqyjiznv3xm5/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.28.53.png?dl=0):
+
+    wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.gz
+
+Después [descomprimimos](https://www.dropbox.com/s/b22tnaqg5fmwvco/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.30.11.png?dl=0) el archivo descargado:
+
+    tar -xzvf jailkit-2.16.tar.gz
+
+Cuando ya lo hayamos descomprimido vamos a la carpeta de "jailkit" y ejecutamos: 
+
+    ./configure
+    make
+    sudo make install
+
+Ahora vamos a seguir las transparencias de clase:
+
+    sudo mkdir -p /seguro/jaulas/dorada
+    sudo chown -R root:root /seguro
+
+[Ver](https://www.dropbox.com/s/cv3vrkebit4emsn/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.37.13.png?dl=0)
+
+Una vez realizado lo anterior procedemos ha ejecutar lo siguiente:
+
+    sudo jk_init -v -j /seguro/jaulas/dorada jk_lsh basicshell netutils editors
+
+Tras unos segundos de espera, nos aparecerá lo siguiente:
+[Ver](https://www.dropbox.com/s/ml0xnp27r0acw5o/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.41.08.png?dl=0)
+
+Ahora creamos un usuario y lo enjaulamos dentro de su jaula:
+
+    useradd ejercicio6
+    jk_jailuser -m -j /seguro/jaulas/dorada ejercicio6
+
+Se le cambia la contraseña al usuario:
+
+    passwd usuarioIV
+
+Por último editamos el archivo de configuración del usuario en este caso "ejercicio6", cambiando "jk_lsh" por "/bin/bash":
+
+    /seguro/jaulas/dorada/etc/passwd
+
 #CONTENEDORES
 
 #Clase del 11 de Noviembre de 2014
