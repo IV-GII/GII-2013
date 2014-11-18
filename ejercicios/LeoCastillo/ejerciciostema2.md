@@ -70,3 +70,13 @@ pip install buildbot
 En OpenShift el fichero de automatización se encuentra en .openshift/action_hooks/build.
 
 ![Sin titulo](https://github.com/JJ/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema2/ejercicio6.PNG)
+
+
+#Ejercicio 7#
+##Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.##
+
+El entorno de desarrollo virtualenv dispone de entornos para realizar pruebas, para ello ejecutamos el siguiente comando:
+
+~~~
+python setup.py prueba
+~~~
