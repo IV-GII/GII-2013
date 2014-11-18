@@ -454,6 +454,25 @@ Tras un rato de espera se termina el proceso y se nos quedaría como se [muestra
 
  - B) Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
 
+El primer paso que debemos de dar es instalar rinse, para ello [usamos](https://www.dropbox.com/s/ez0quh68jpuxg6e/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.10.41.png?dl=0) la siguiente orden:
+
+    apt-get install rinse
+
+Después tenemos que ver la lista de sistemas que hay disponibles con la [orden](https://www.dropbox.com/s/lbumgl8ip3lij2z/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.15.24.png?dl=0):
+
+    rinse --list-distributions
+
+Una vez localizado el sistema que vamos a usar, creamos un [directorio](https://www.dropbox.com/s/ezyq33qf3cfut5m/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.13.59.png?dl=0) nuevo donde meteremos nuestro sistema Fedora:
+
+    /home/jaulas/fedora
+
+Ahora ejecutamos la siguiente orden y comenzara de [descargar](https://www.dropbox.com/s/qiqp4u3ws8noy7x/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.19.40.png?dl=0) la distribución elegida:
+
+    rinse --arch=amd64 --distribution fedora-core-4 --directory /home/jaulas/fedora
+
+Tras un rato esperando a que se descargue por completo la distribución selecionada, nos aparecerá lo siguiente:
+[Ver](https://www.dropbox.com/s/osdoao6noymb8vd/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.26.53.png?dl=0)
+
 * [+]Ejercicio 4
  - A) Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.
 
