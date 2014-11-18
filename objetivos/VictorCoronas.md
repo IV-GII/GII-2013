@@ -122,17 +122,17 @@
 
 # Objetivos de esta sesión
 
-* []Entender los objetivos de este tema
-* []Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
-* []Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
-* []Entender y saber llevar a cabo la virtualización de dispositivos de red
+* [+]Entender los objetivos de este tema
+* [+]Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+* [+]Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+* [+]Entender y saber llevar a cabo la virtualización de dispositivos de red
 
 # Otros objetivos
 
-* []Usar herramientas de administración y monitorización de red en línea de órdenes
-* []Contestar a la encuesta sobre la asignatura
-* []Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
-* []Dejar de usar Sublime Text por [estas 7 razones](https://medium.com/@jjmerelo/7-reasons-or-another-number-ill-find-along-the-way-you-should-never-ever-use-sublime-text-to-54616989be54).
+* [+]Usar herramientas de administración y monitorización de red en línea de órdenes
+* [+]Contestar a la encuesta sobre la asignatura
+* [+]Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
+* [+]Dejar de usar Sublime Text por [estas 7 razones](https://medium.com/@jjmerelo/7-reasons-or-another-number-ill-find-along-the-way-you-should-never-ever-use-sublime-text-to-54616989be54).
 
 #Clase del 10 de noviembre de 2014
 
