@@ -48,3 +48,18 @@ Ejecutamos y nos crea el documento:
 ![Sin titulo](https://github.com/JJ/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema2/ejercicio4_2.PNG)
 
 ![Sin titulo](https://github.com/JJ/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema2/ejercicio4_3.PNG)
+
+
+#Ejercicio 5#
+##Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.##
+
+Un sistema de automatización de la construcción de una aplicación en python es buildbot.
+
+Buildbot es un framework para la automatización de compilación de software. 
+
+Podemos instalarlo con pip con el siguiente comando:
+
+~~~
+pip install buildbot
+~~~
+
