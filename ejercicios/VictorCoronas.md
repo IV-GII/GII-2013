@@ -559,6 +559,7 @@ Por último editamos el archivo de configuración del usuario en este caso "ejer
 
     /seguro/jaulas/dorada/etc/passwd
 
+
 #CONTENEDORES
 
 #Clase del 11 de Noviembre de 2014
