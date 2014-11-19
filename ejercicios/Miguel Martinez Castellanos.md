@@ -113,6 +113,20 @@ Donde nos encontramos con [Buildit](https://software.agendaless.com/Members/chri
 
 ## Ejercicio 6
 **Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma. **
+Para identificar el fichero de automatizacion de mi aplicacion openshift he seguidos los pasos del siguiente [tutorial](https://developers.openshift.com/en/getting-started-client-tools.html#ubuntu)
+En primer lugar debemos instalar ruby para poder trabajar.
+![imagen6-1](http://i.imgur.com/l7nBc4A.png)
+
+Despues he tenido que instalar la herramienta para poder trabajar con openshift
+![imagen6-2](http://i.imgur.com/3PQQ1Vz.png)
+Para acceder a nuestras aplicaciones hacemos "rhc apps"pero nos pide identificarnos
+una vez realizada la autentificacion para acceder a nuestra cuenta.
+Clonamos nuestra aplicacion a nuestro equipo con git clones +"URL" 
+y en la siguiente ruta "cd wordpress/.openshift/action_hooks" estara nuestro fichero build como podeis ver en la imagen.
+![imagen6-3](http://i.imgur.com/3euGPBp.png)
+Clonamos nuestra aplicacion a nuestro equipo con git clones +"URL" 
+y en la siguiente ruta "cd wordpress/.openshift/action_hooks" estara nuestro fichero build como podeis ver en la imagen.
+![imagen6-4](http://i.imgur.com/SpQFA0p.png)
 
 
 #TEMA 3
