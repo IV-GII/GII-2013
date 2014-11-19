@@ -216,4 +216,51 @@ Vamos a crear un pequeño script desde [Google](https://script.google.com). El s
 
 El módulo [Unittest](http://pymotw.com/2/unittest/) nos permite probar nuestro código y realizar "Suites de pruebas", agrupar funcionalidad común y escribir "Casos de pruebas". 
 
+##Tema 3
 
+#Ejercicio 1
+
+Vamos a montar un archivo ISO en un espacio de nombres que vamos a crear, lo primero que haremos será crear el espacio de nombres nuevo. Ejecutamos la siguiente instrucción:
+
+	> sudo unshare -u /bin/bash
+
+Ahora vamos a realizar una prueba, cambiando el nombre del host con "hostname alayala". SI ahora ejecutamos "hostname" podemos ver como se ha cambiado correctamente.
+A continuación montaremos la ISO en un directorio que hemos creado previamente. Para realizar el montaje escribimos:
+
+	> mount - o loop [nombreISO] [ruta_de_montaje]
+
+![Ejercicio_1](http://i.imgur.com/JXIvDw2.png)
+
+#Ejercicio 2
+
+1)	Para mostrar los puentes configurados en nuestro sistema ejecutaremos:
+		
+		> sudo brctl show
+		
+	![Ejercicio_2_1](http://i.imgur.com/cBmlJ92.png)
+
+2)	Ahora vamos a crear una nueva interfaz virtual y a asignarla a una red (en nuestro caso eth0). Como esa 		interfaz la hemos usado al realizar el ejemplo de clase, primero borraremos la interfaz "alcantara" y a 		continuación crearemos la nueva.
+
+	![Ejercicio_2_2_1](http://i.imgur.com/QOQnY5G.png)
+	
+	Una vez eliminada, crearemos nuestra nueva interfaz virtual y la asignaremos a la interfaz eth de la tarjeta 		de red.
+	
+	![Ejercicio_2_2_2](http://i.imgur.com/GYL6SlF.png)
+	
+#Ejercicio 3
+
+1)	Usaremos la herramienta Debootstrap para crear un sistema mínimo y poder ejecutarlo después. Lo primero que 		necesitamos es instalar el paquete en nuestro sistema.
+
+		> sudo apt-get install debootstrap
+	
+	Una vez instalado creamos el directorio donde vamos a realizar la instalación del sistema, en éste ejemplo lo 	llamaremos UbuntuSO. Después ejecutamos la siguiente instrucción, que se encargará de instalar el 				sistema. 
+	
+		> sudo debootstrap --arch=amd64 precise UbuntuSO/ http://archive.ubuntu.com/ubuntu/
+		
+	![Ejercicio_3_1](http://i.imgur.com/pjffktv.png)
+	
+	![Ejercicio_3_2](http://i.imgur.com/WBiOe12.png)
+	
+2)	Instalar un sistema Fedora dentro de Debian usando la herramienta Rinse. Lo primero que haremos será 			instalarla.
+
+		> 
