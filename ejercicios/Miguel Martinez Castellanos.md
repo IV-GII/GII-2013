@@ -133,19 +133,61 @@ y en la siguiente ruta "cd wordpress/.openshift/action_hooks" estara nuestro fic
 
 ##Ejercicio 1
 **Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback**
+Primero realizamos el espacio de nombre con
+
+```sh
+sudo unshare -u /bin/bash
+
+hostname hola_k_ase
+``` 
+![imagen4-1]()
+![imagen4-2]()
 
 ##Ejercicio 2
-** 1  Mostrar los puentes configurados en el sistema operativo.**
+1** Mostrar los puentes configurados en el sistema operativo.**
+Para mostrar los puntes configurados usamos el comando:
+```sh
+ip addr show
+```
+![imagen4-3]()
 
-** 2  Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.**
+2** Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.**
+Primero necesitaremos instalar el paquete bridge-utils
+![imagen4-4]()
+y con el comando 
+```sh
+sudo brctl addif miwel eth0
+```
+y asignamos nombre a eht0
+![imagen4-5]()
 
 ##Ejercicio 3
-** 1 Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.**
+1** Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.**
+Primero antes de nada instalamos dicha herramienta.
+```sh
+sudo apt-get install debootstrap
+```
+y acontinuacion creamos el sistema 
+```sh
+sudo debootstrap --arch=amd64 lucid /home/jaulas/lucid/ http://archive.ubuntu.com/ubuntu
+```
+![imagen4-6]()
+mostrando la verificacion
+2** Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.**
+Instalamos rinse
+```sh
+sudo apt-get install rinse
+```
+y acontinuacion creamos el sistema 
+```sh
+sudo rinse --arch=amd64 --distribution-centos-6 --directory /home/jaulas/centos
+```
 
-** 2 Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.**
 
 ##Ejercicio 4
 **Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla. **
+
+
 
 ##Ejercicio 5
 **Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.**
