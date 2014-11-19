@@ -147,3 +147,14 @@ Podemos encontrar una lista completa por ejemplo en [wikipedia](http://en.wikipe
 
 ## Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma. ##
 
+Como antes hemos utilizado OpenShift, para realizar este ejercicio vamos a utilizar también esta plataforma. En OpenShift el fichero de automatización se encuentra en .openshift/action_hooks/build.
+
+Además, para poder automatizar tareas también he encontrado que podemos usar __Jenkins__. Jenkins es un servidor que proporciona integración continua para el desarrollo de software. Puede ejecutar, construir, testear y programar tareas que se integran con las aplicaciones de OpenShift.
+
+# EJERCICIO 7 #
+
+## Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente. ##
+
+El entorno de desarrollo virtualenv dispone de entornos para realizar pruebas para Python. Para ver como se hace basta con mirar el siguiente [manual](https://plone-spanish-docs.readthedocs.org/es/latest/python/creacion_entornos_virtuales.html)
+
+Otras herramientas que ofrecen entorno de prueba para __Python__ son [Beeware](http://bitelia.com/2014/08/beeware-python) y [tox](https://pypi.python.org/pypi/tox).
