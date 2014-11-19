@@ -7,7 +7,7 @@ Creamos un espacio de nombres de tipo UTS con el siguiente comando:
 sudo unshare -u /bin/bash
 ~~~
 
-![Sin titulo](https://github.com/leocm89/GII-2014/tree/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio1.png)
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio1_1.png)
 
 Y montamos la imagen ISO utilizando el dispositivo loopback:
 
@@ -15,7 +15,7 @@ Y montamos la imagen ISO utilizando el dispositivo loopback:
 mount -o loop ubuntu-14.04.1-server-amd64.iso /mnt/disk
 ~~~
 
-![Sin titulo](https://github.com/leocm89/GII-2014/tree/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio1_2.png)
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio1_2.png)
 
 
 #Ejercicio 2#
