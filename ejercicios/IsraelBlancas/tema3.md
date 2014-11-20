@@ -74,3 +74,51 @@ Cleaning up
 Final tidy...
 Installation complete.
 '''
+
+
+
+***
+
+##Ejercicio 4##
+
+#####Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.#####
+
+En primer lugar, entramos en alguna de las jaulas creadas en el ejercicio anterior:
+
+``sudo chroot /home/jaulas/saucy32``
+
+Una vez dentro, seremos el usuario "root". Montaremos "/proc":
+
+``mount -t proc proc /proc``
+
+Instalamos el paquete en español como se indica en el guión:
+
+``apt-get install language-pack-es``
+
+Como se pide ejecutar una aplicación, he instalado "curl":
+
+``sudo apt-get install curl``
+
+![Captura curl](http://fotos.subefotos.com/37704b8350f6b6218785caf67588890co.jpg)
+
+
+
+
+***
+
+##Ejercicio 5##
+
+#####Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.#####
+
+Al tratar de instalar NGINX en la jaula de los ejercicios anteriores, podemos ver que no existe un candidato para la instalación, por lo que hay que añadir el repositorio.
+
+1. Instalamos un editor de texto no gráfico (por ejemplo "nano").
+2. Editamos la lista de repositorios ``nano /etc/apt/sources.list``
+3. Añadimos los repositorios ``deb http://nginx.org/packages/ubuntu/ saucy nginx`` y ``deb-src http://nginx.org/packages/ubuntu/ saucy nginx``
+4. Instalamos el paquete wget ``apt-get install wget``
+5. Descargamos la clave del repositorio ``wget http://nginx.org/keys/nginx_signing.key``
+6. Añadimos la clave ``apt-key add nginx_signing.key``
+7. Actualizamos la lista de repositorios ``apt-get update``
+8. Instalamos NGINX ``apt-get install nginx``
+9. Ejecutamos el servicio ``service nginx start``
+10. Desde fuera de la jaula, accedemos a "localhost" utilizando un navegador y comprobamos que funciona (viendo el mensaje de bienvenida de NGINX)
