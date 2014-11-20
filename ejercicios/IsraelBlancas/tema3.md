@@ -35,3 +35,42 @@ Los pasos a seguir para crear una interfaz virtual asignada a la tarjeta wifi so
 + Se edita el fichero `/etc/networks/interfaces` para configurar como deseemos la nueva interfaz y se guarda
 + Se añade un default gateway `route add default gw [IP] nuevopuente`
 + Se activa la interfaz aplicando `ifconfig nuevopuente up`
+
+
+
+***
+***
+
+##Sesión 10-11-2014##
+
+##Ejercicio 3##
+
+#####1. Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.#####
+#####2. Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.#####
+
+En primer lugar hay que instalar debootstrap:
+
+``sudo apt-get install debootstrap``
+
+He intentado descargar la versión que hay en el guión de la asignatura. El software devolvía un fallo, por lo que he buscado otra versión del SO. Además, he creado un usuario llamado "jaulas".
+
+``sudo debootstrap --arch=i386 saucy /home/jaulas/saucy32/ http://archive.ubuntu.com/ubuntu``
+
+Tras instalarlo y realizar todas las configuraciones, nos devolverá el siguiente mensaje:
+
+``I: Base system installed successfully.``
+
+En cuanto a la creación de un sistema Fedora dentro de Debian, he instalado rinse e instalado Fedora mediante este sistema:
+
+``sudo apt-get install rinse``
+
+``sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fedora/``
+
+Y devolverá la siguiente salida:
+
+'''
+Installed: dhclient.x86_64 12:3.0.5-5.fc6
+Cleaning up
+Final tidy...
+Installation complete.
+'''
