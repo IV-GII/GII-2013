@@ -112,7 +112,8 @@ Realizando la siguiente busqueda en google "Build automation python" nos encontr
 Donde nos encontramos con [Buildit](https://software.agendaless.com/Members/chrism/software/buildit/README.txt)como el sistema mas sencillo y facil de usar.
 
 ## Ejercicio 6
-**Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma. **
+**Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.**
+
 Para identificar el fichero de automatizacion de mi aplicacion openshift he seguidos los pasos del siguiente [tutorial](https://developers.openshift.com/en/getting-started-client-tools.html#ubuntu)
 En primer lugar debemos instalar ruby para poder trabajar.
 ![imagen6-1](http://i.imgur.com/l7nBc4A.png)
@@ -133,6 +134,7 @@ y en la siguiente ruta "cd wordpress/.openshift/action_hooks" estara nuestro fic
 
 ##Ejercicio 1
 **Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback**
+
 Primero realizamos el espacio de nombre con
 
 ```sh
@@ -144,14 +146,15 @@ hostname hola_k_ase
 ![imagen4-2](http://i.imgur.com/hZAzTXs.png)
 
 ##Ejercicio 2
-** Mostrar los puentes configurados en el sistema operativo.**
+** Mostrar los puentes configurados en el sistema operativo**
+
 Para mostrar los puntes configurados usamos el comando:
 ```sh
 ip addr show
 ```
 ![imagen4-3](http://i.imgur.com/M8wGY7L.png)
 
-** Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.**
+** Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene**
 Primero necesitaremos instalar el paquete bridge-utils
 ```sh
 sudo apt-get install bridge-utils
@@ -163,7 +166,8 @@ sudo brctl addif miwel eth0
 ![imagen4-5](http://i.imgur.com/PR6ofil.png)
 
 ##Ejercicio 3
- ** Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.**
+** Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante**
+ 
 Primero antes de nada instalamos dicha herramienta.
 ```sh
 sudo apt-get install debootstrap
@@ -174,7 +178,9 @@ sudo debootstrap --arch=amd64 lucid /home/jaulas/lucid/ http://archive.ubuntu.co
 ```
 ![imagen4-6](http://i.imgur.com/XfsHx8a.png)
 mostrando la verificacion
- ** Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.**
+
+** Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse**
+ 
 Instalamos rinse
 ```sh
 sudo apt-get install rinse
@@ -185,12 +191,12 @@ sudo rinse --arch=amd64 --distribution-centos-6 --directory /home/jaulas/centos
 ```
 
 ##Ejercicio 4
-**Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla. **
+**Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla**
 
 
 
 ##Ejercicio 5
-**Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.**
+**Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx**
 
 En primer lugar instalamos curl.
 ```sh
@@ -205,5 +211,5 @@ y finalmente lo lanzamos y comprobamos el host local.
 ![imagen4-7](http://i.imgur.com/WRCfsyj.png)
 
 ##Ejercicio 6
-**Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar. **
+**Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar**
 #TEMA 4
