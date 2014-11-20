@@ -95,3 +95,73 @@ Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
 [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
 
 [X] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
+
+Clase del 28 de octubre de 2014
+
+[X] Consolidar el uso de PaaS/SaaS
+
+[X] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+
+[X] Comenzar con la segunda práctica
+
+Clase del 3 de noviembre de 2014
+
+[X] Consolidar el uso de PaaS/SaaS
+
+[X] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+
+[X] Continuar con la segunda práctica
+
+Clase del 4 de noviembre de 2014
+
+[] Entender los objetivos de este tema
+
+[] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+
+[] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+
+[] Entender y saber llevar a cabo la virtualización de dispositivos de red
+
+[] Usar herramientas de administración y monitorización de red en línea de órdenes
+
+[] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
+
+Clase del 10 de noviembre de 2014
+
+[] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+
+[] Aprender a ''enjaular'' usuarios.
+
+[] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
+
+[] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+
+[] Comprender que existe vida en los servidores web fuera del Apache.
+
+[] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
+
+[] Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
+
+Clase del 11 de noviembre de 2014
+
+[] Entender el concepto de contenedores
+
+[] Configurar el sistema para poder crear y usar contenedores
+
+[] Crear y usar contenedores
+
+Clase del 17 de noviembre de 2014
+
+[] Entender los sistemas de orquestación de máquinas virtuales.
+
+[] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+Clase del 18 de noviembre de 2014
+
+[] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+
+[] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+
+[] Conocer las aplicaciones y programas que se usan.
+
+[] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
