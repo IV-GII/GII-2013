@@ -103,7 +103,6 @@ Como se pide ejecutar una aplicación, he instalado "curl":
 
 
 
-
 ***
 
 ##Ejercicio 5##
@@ -122,3 +121,30 @@ Al tratar de instalar NGINX en la jaula de los ejercicios anteriores, podemos ve
 8. Instalamos NGINX ``apt-get install nginx``
 9. Ejecutamos el servicio ``service nginx start``
 10. Desde fuera de la jaula, accedemos a "localhost" utilizando un navegador y comprobamos que funciona (viendo el mensaje de bienvenida de NGINX)
+
+
+
+***
+
+##Ejercicio 6##
+
+#####Crear una jaula y enjaular un usuario usando 'jailkit', que previamente se habrá tenido que instalar.#####
+
+Tras acceder a la página de jailkit y decargarlo, ejecutamos los siguientes comandos
+
+```
+tar -xzvf jailkit-2.17.tar.gz
+cd jailkit-2.17
+sudo ./configure && make && sudo make install
+```
+
+Se crea una nueva jaula y se inicia con jailkit:
+``sudo mkdir /home/jaulas/jailkit
+sudo jk_init -v -j /home/jaulas/jailkit jk_lsh basicshell netutils editors``
+
+Se crea un usuario y "se enjaula":
+``sudo adduser enjauladojailkit
+sudo jk_jailuser -m -j /home/jaulas/jailkit enjauladojailkit
+``
+
+Tras esto, ya tendremos a nuestro usuario enjaulado.
