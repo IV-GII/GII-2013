@@ -144,14 +144,14 @@ hostname hola_k_ase
 ![imagen4-2](http://i.imgur.com/hZAzTXs.png)
 
 ##Ejercicio 2
-1** Mostrar los puentes configurados en el sistema operativo.**
+** Mostrar los puentes configurados en el sistema operativo.**
 Para mostrar los puntes configurados usamos el comando:
 ```sh
 ip addr show
 ```
 ![imagen4-3](http://i.imgur.com/M8wGY7L.png)
 
-2** Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.**
+** Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.**
 Primero necesitaremos instalar el paquete bridge-utils
 ```sh
 sudo apt-get install bridge-utils
@@ -163,7 +163,7 @@ sudo brctl addif miwel eth0
 ![imagen4-5](http://i.imgur.com/PR6ofil.png)
 
 ##Ejercicio 3
-1 ** Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.**
+ ** Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.**
 Primero antes de nada instalamos dicha herramienta.
 ```sh
 sudo apt-get install debootstrap
@@ -174,7 +174,7 @@ sudo debootstrap --arch=amd64 lucid /home/jaulas/lucid/ http://archive.ubuntu.co
 ```
 ![imagen4-6](http://i.imgur.com/XfsHx8a.png)
 mostrando la verificacion
-2 ** Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.**
+ ** Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.**
 Instalamos rinse
 ```sh
 sudo apt-get install rinse
@@ -191,7 +191,8 @@ sudo rinse --arch=amd64 --distribution-centos-6 --directory /home/jaulas/centos
 
 ##Ejercicio 5
 **Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.**
-En primer instalamos curl.
+
+En primer lugar instalamos curl.
 ```sh
 sudo apt-get install curl
 ```
