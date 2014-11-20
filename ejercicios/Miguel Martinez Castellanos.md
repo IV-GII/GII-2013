@@ -162,7 +162,7 @@ y asignamos nombre a eht0
 ![imagen4-5]()
 
 ##Ejercicio 3
-1** Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.**
+1 ** Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.**
 Primero antes de nada instalamos dicha herramienta.
 ```sh
 sudo apt-get install debootstrap
@@ -173,7 +173,7 @@ sudo debootstrap --arch=amd64 lucid /home/jaulas/lucid/ http://archive.ubuntu.co
 ```
 ![imagen4-6]()
 mostrando la verificacion
-2** Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.**
+2 ** Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.**
 Instalamos rinse
 ```sh
 sudo apt-get install rinse
