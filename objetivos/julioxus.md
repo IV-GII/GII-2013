@@ -79,7 +79,7 @@ Lista de objetivos de Julio Martínez Martínez-Checa
 
 * [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
-* [X]Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
+* [X] Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
 
 #Clase del 14 de octubre de 2014
 
@@ -102,4 +102,74 @@ Lista de objetivos de Julio Martínez Martínez-Checa
 * [X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
 * [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
-Comprender el método de entrega de las prácticas de la asignatura.
+
+#Clase del 21 de octubre de 2014
+
+* [X] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+
+* [X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
+
+* [X] Crear nuevas funciones en un SaaS.
+
+#Clase del 27 de octubre de 2014
+
+* [X] Consolidar el uso de PaaS/SaaS
+
+* [X] Entender los sistemas de automatización de la construcción de aplicaciones
+
+#Clase del 28 de octubre de 2014
+
+* [X] Consolidar el uso de PaaS/SaaS
+
+* [X] Entender los sistemas de automatización de la construcción de aplicaciones
+
+* [X] Comenzar con la segunda práctica
+
+#Clase del 3 de noviembre de 2014
+
+* [X] Consolidar el uso de PaaS/SaaS
+
+* [X] Entender los sistemas de automatización de la construcción de aplicaciones
+
+* [X] Continuar con la segunda práctica
+
+#Clase del 4 de noviembre de 2014
+
+* [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+
+* [X] Aprender a ''enjaular'' usuarios.
+
+* [X] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+
+* [X] Entender y saber llevar a cabo la virtualización de dispositivos de red
+
+* [X] Usar herramientas de administración y monitorización de red en línea de órdenes
+
+#Clase del 10 de noviembre de 2014
+
+* [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+
+* [X] Aprender a ''enjaular'' usuarios.
+
+* [X] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+
+* [X] Entender y saber llevar a cabo la virtualización de dispositivos de red
+
+* [X] Usar herramientas de administración y monitorización de red en línea de órdenes
+
+* [X] Finalizar la entrega la segunda práctica.
+
+#Clase del 11 de noviembre de 2014
+
+* [X] Entender el concepto de contenedores
+
+* [X] Configurar el sistema para poder crear y usar contenedores
+
+* [X] Crear y usar contenedores
+
+
+
+
+
+
+

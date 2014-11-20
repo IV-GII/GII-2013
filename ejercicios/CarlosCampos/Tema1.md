@@ -76,30 +76,24 @@ Para instalar git en nuestro servidor linux, basta con ejecutar el siguiente com
 
 Podemos ver un archivo README.md de un repositorio personal con el texto personalizado en la siguiente imágen:
 ![Imagen readme.md](http://i.imgur.com/Myjv3bF.png)  
-  
+
 ###Ejercicio 7  
 En mi instalación de linux (Xubuntu), se encuentra instalado en el directorio:  
 	`/sys/fs/cgroup`  
-	
+
 El contenido de la carpeta es el que podemos ver en la siguiente imágen:  
 	![Imagen cgroup](http://i.imgur.com/3hVvhNY.png)  
 
-###Ejercicio 10 
+###Ejercicio 10
 Mi procesador es: Intel Core 2 Duo  
 
-Al ejecutar el comando, no me aparece nada por pantalla, por lo que no tengo los flags activados  
+Al ejecutar el comando, no me aparece nada por pantalla, por lo que no tengo los
+dos  
 
 ###Ejercicio 11  
 Tras ejecutar *kvm-ok*, nos aparece que la CPU no lo soporta.  
-  
+
 	"INFO: Your CPU does not support KVM extensions"  
-	
+
 ### Ejercicio 12  
 Comentado en el [foro](https://github.com/JJ/GII-2014/issues/72)
-
-
-
-
-
-
-
