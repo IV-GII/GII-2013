@@ -140,8 +140,8 @@ sudo unshare -u /bin/bash
 
 hostname hola_k_ase
 ``` 
-![imagen4-1]()
-![imagen4-2]()
+![imagen4-1](http://i.imgur.com/4yuapgy.png)
+![imagen4-2](http://i.imgur.com/hZAzTXs.png)
 
 ##Ejercicio 2
 1** Mostrar los puentes configurados en el sistema operativo.**
@@ -149,17 +149,18 @@ Para mostrar los puntes configurados usamos el comando:
 ```sh
 ip addr show
 ```
-![imagen4-3]()
+![imagen4-3](http://i.imgur.com/M8wGY7L.png)
 
 2** Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.**
 Primero necesitaremos instalar el paquete bridge-utils
-![imagen4-4]()
-y con el comando 
+```sh
+sudo apt-get install bridge-utils
+```
+y con el siguiente comando asignamos nuevo nombre a la nueva interfaz.
 ```sh
 sudo brctl addif miwel eth0
 ```
-y asignamos nombre a eht0
-![imagen4-5]()
+![imagen4-5](http://i.imgur.com/PR6ofil.png)
 
 ##Ejercicio 3
 1 ** Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.**
@@ -171,7 +172,7 @@ y acontinuacion creamos el sistema
 ```sh
 sudo debootstrap --arch=amd64 lucid /home/jaulas/lucid/ http://archive.ubuntu.com/ubuntu
 ```
-![imagen4-6]()
+![imagen4-6](http://i.imgur.com/XfsHx8a.png)
 mostrando la verificacion
 2 ** Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.**
 Instalamos rinse
@@ -183,7 +184,6 @@ y acontinuacion creamos el sistema
 sudo rinse --arch=amd64 --distribution-centos-6 --directory /home/jaulas/centos
 ```
 
-
 ##Ejercicio 4
 **Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla. **
 
@@ -191,9 +191,18 @@ sudo rinse --arch=amd64 --distribution-centos-6 --directory /home/jaulas/centos
 
 ##Ejercicio 5
 **Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.**
+En primer instalamos curl.
+```sh
+sudo apt-get install curl
+```
+acontinuacio realizamos la instalacion de nginx
 
+```sh
+sudo apt-get install nginx
+```
+y finalmente lo lanzamos y comprobamos el host local.
+![imagen4-7](http://i.imgur.com/WRCfsyj.png)
 
 ##Ejercicio 6
 **Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar. **
-
 #TEMA 4
