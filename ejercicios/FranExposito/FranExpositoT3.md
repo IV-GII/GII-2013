@@ -2,7 +2,12 @@
 
 ##Técnicas de virtualización.
 ###Ejercicio 1.
-Para ello utilizaremos el siguiente comando:
+En primer lugar creamos el espacio de nombres:
+
+		sudo unshare -u /bin/bash  
+		hostname temporal
+
+Despues montamos la imagen, para ello utilizaremos el siguiente comando:
 
 	mount -o loop -t iso9660 ubuntu-14.04.1-server-i386.iso /mnt/test  
 
@@ -12,10 +17,11 @@ Y ya lo tenemos montado:
 
 ###Ejercicio 2.
 
+
 ###Ejercicio 3.
 
 ###Ejercicio 4.
 
 ###Ejercicio 5.
 
-###Ejercicio 6. 
+###Ejercicio 6.
