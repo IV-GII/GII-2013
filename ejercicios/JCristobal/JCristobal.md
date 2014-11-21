@@ -656,3 +656,23 @@ Por último comprobamos si está preparado para usar este tipo de tecnología y 
 ![imagen](http://i.imgur.com/HRgX8yc.png)
 
 
+##Ejercicio 2
+###Comprobar qué interfaces puente se han creado y explicarlos.
+
+La instalación anterior no me deja crear un contenedor e instalar ubuntu dentro, me da el siguiente error
+
+"lxc-create: error while loading shared libraries: liblxc.so.1: cannot open shared object file: No such file or directory"
+
+por lo que instalo simplemente con `sudo apt-get install lxc`. Instala sin problemas y me deja hacerlo.
+
+Creo el contenedor con `sudo lxc-create -t ubuntu -n una-caja` y para arrancarlo `sudo lxc-start -n una-caja`
+
+Vemos el estado de los contenedores con `sudo lxc-list`:
+
+
+
+Debería creararse un puente llamado lxcbr0 y otro con el prefijo veth
+
+
+
+
