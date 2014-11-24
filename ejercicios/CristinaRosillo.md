@@ -237,15 +237,15 @@ A continuación montaremos la ISO en un directorio que hemos creado previamente.
 		
 		> sudo brctl show
 		
-	![Ejercicio_2_1](http://i.imgur.com/cBmlJ92.png)
+![Ejercicio_2_1](http://i.imgur.com/cBmlJ92.png)
 
 2)	Ahora vamos a crear una nueva interfaz virtual y a asignarla a una red (en nuestro caso eth0). Como esa 		interfaz la hemos usado al realizar el ejemplo de clase, primero borraremos la interfaz "alcantara" y a 		continuación crearemos la nueva.
 
-	![Ejercicio_2_2_1](http://i.imgur.com/QOQnY5G.png)
+![Ejercicio_2_2_1](http://i.imgur.com/QOQnY5G.png)
 	
 	Una vez eliminada, crearemos nuestra nueva interfaz virtual y la asignaremos a la interfaz eth de la tarjeta 		de red.
 	
-	![Ejercicio_2_2_2](http://i.imgur.com/GYL6SlF.png)
+![Ejercicio_2_2_2](http://i.imgur.com/GYL6SlF.png)
 	
 #Ejercicio 3
 
@@ -257,9 +257,9 @@ A continuación montaremos la ISO en un directorio que hemos creado previamente.
 	
 		> sudo debootstrap --arch=amd64 precise UbuntuSO/ http://archive.ubuntu.com/ubuntu/
 		
-	![Ejercicio_3_1](http://i.imgur.com/pjffktv.png)
+![Ejercicio_3_1](http://i.imgur.com/pjffktv.png)
 	
-	![Ejercicio_3_2](http://i.imgur.com/WBiOe12.png)
+![Ejercicio_3_2](http://i.imgur.com/WBiOe12.png)
 	
 2)	Instalar un sistema Fedora dentro de Debian usando la herramienta Rinse. Lo primero que haremos será 			instalarla.
 
