@@ -5,6 +5,37 @@
 #Clase del 11 de Noviembre de 2014
 * [+]Ejercicio 1
  - A) Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.
+ 
+
+El primer paso que debemos de dar es descargar el repositorio que necesitamos:
+
+    git clone https://github.com/lxc/lxc
+
+[Ver](https://www.dropbox.com/s/n79xrse4hj2x9w8/Captura%20de%20pantalla%202014-11-24%20a%20la%28s%29%2016.42.29.png?dl=0)
+
+antes de dar el siguiente paso debemos de [instalar](https://www.dropbox.com/s/ui4jtx43m7n4zjq/Captura%20de%20pantalla%202014-11-24%20a%20la%28s%29%2016.46.07.png?dl=0):
+
+    sudo apt-get install autoconf
+
+ en caso de qie no lo tengamos instalado.
+ 
+Una vez clonado el repositorio, entramos en la carpeta [lxc](https://www.dropbox.com/s/72mklpy821318r0/Captura%20de%20pantalla%202014-11-24%20a%20la%28s%29%2016.43.55.png?dl=0) y ejecutamos:
+
+    ./autogen.sh
+    ./configure
+    make
+    sudo make install
+
+O usando el camino más rápido:
+
+    apt-get install lxc
+
+Por último, ejecutamos la orden:
+
+    lxc-ckeckconfig
+
+para comprobar que que esta todo [correcto](https://www.dropbox.com/s/dky9bs7vyr97mfe/Captura%20de%20pantalla%202014-11-24%20a%20la%28s%29%2016.57.13.png?dl=0).
+
 
 * [+]Ejercicio 2
  - A) Comprobar qué interfaces puente se han creado y explicarlos.
