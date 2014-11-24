@@ -40,6 +40,29 @@ para comprobar que que esta todo [correcto](https://www.dropbox.com/s/dky9bs7vyr
 * [+]Ejercicio 2
  - A) Comprobar qué interfaces puente se han creado y explicarlos.
 
+ 
+El primer paso que debemos de dar es el de crear el contenedor:
+
+    lxc-create -t ubuntu -n una-caja
+
+[Ver](https://www.dropbox.com/s/dnwbr2ju8e5zux1/Captura%20de%20pantalla%202014-11-24%20a%20la%28s%29%2017.06.42.png?dl=0)
+
+Cuando haya [terminado el proceso de descarga](https://www.dropbox.com/s/9sq5fvfv49s8qyp/Captura%20de%20pantalla%202014-11-24%20a%20la%28s%29%2017.19.26.png?dl=0), el segundo paso es el de arrancarlo:
+
+    lxc-start -n una-caja
+ 
+[Ver](https://www.dropbox.com/s/51erhhvx3l8zczb/Captura%20de%20pantalla%202014-11-24%20a%20la%28s%29%2017.24.36.png?dl=0)
+
+Después listamos el estado de los contenedores con:
+
+    lxc-list
+
+y hacemos un:
+
+    ifconfig -a
+
+ [Ver](https://www.dropbox.com/s/erl3hkfbcrusp11/Captura%20de%20pantalla%202014-11-24%20a%20la%28s%29%2017.45.52.png?dl=0)
+
 * [+]Ejercicio 3
  - A) Crear y ejecutar un contenedor basado en Debian.
  - B) Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.
