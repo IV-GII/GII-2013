@@ -395,3 +395,14 @@ sudo jk_jailuser -m -j /home/jaulas/jailkit jaulajkit
 sudo apt-get install lxc
 
 ##Ejercicio 2
+
+sudo lxc-create -t debian -n u1
+
+montamos cgroups:
+
+mount -t cgroup cgroup /sys/fs/cgroup/
+
+Iniciamos la maquina:
+
+sudo lxc-start -n u1
+
