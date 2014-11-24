@@ -137,3 +137,11 @@ Donde se establecen las librerias utilizadas y muy importante, los handlers que 
 Con la configuración puesta correctamente en este archivo, solo falta subir con el SDK al GAE.
 
 ![](images/Captura de pantalla 2014-11-12 a las 23.56.36.png)
+
+## Ejercicio 6
+
+[Google App Engine consta de test unitarios](https://cloud.google.com/appengine/docs/python/tools/localunittesting) locales donde podemos someter nuestro programa a varios test para ver la calidad de nuestro código una vez escrito.
+
+Estos test unitarios constan de testeo del datastore y de otros servicios de App Engine.
+
+Algunos ejemplos de estos test pueden ser: [peticiones a bases de datos y memcache](https://cloud.google.com/appengine/docs/python/tools/localunittesting#Python_Writing_Datastore_and_memcache_tests), [test de alta replicación del datastore](https://cloud.google.com/appengine/docs/python/tools/localunittesting#Python_Writing_High_Replication_Datastore_tests), [test para el servidor de mail](https://cloud.google.com/appengine/docs/python/tools/localunittesting#Python_Writing_mail_tests), etc.
