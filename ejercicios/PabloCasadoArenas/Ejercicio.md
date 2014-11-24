@@ -351,4 +351,4 @@ Probamos instalando el programa vim:
 
 yum install vim
 
-[Imgur](http://i.imgur.com/WOK5rGk.png)
+![Imgur](http://i.imgur.com/WOK5rGk.png)
