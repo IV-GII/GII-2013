@@ -158,14 +158,14 @@
 
 # Objetivos de esta sesión
 
-* []Entender el concepto de contenedores
-* []Configurar el sistema para poder crear y usar contenedores
-* []Crear y usar contenedores
+* [+]Entender el concepto de contenedores
+* [+]Configurar el sistema para poder crear y usar contenedores
+* [+]Crear y usar contenedores
 
 # Otros objetivos
 
-* []Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
-* []Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
+* [+]Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
+* [+]Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
 
 #Clase del 17 de noviembre de 2014
 
