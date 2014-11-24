@@ -157,4 +157,18 @@
 
 * [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request *directamente a su copia del repositorio*, no al repositorio principal de la asignatura. 
 * [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
-* [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+* [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
+
+
+#Clase del 3 de noviembre de 2014
+
+##Objetivos de esta sesión
+
+* [X] Consolidar el uso de PaaS/SaaS
+* [] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+* [X] Continuar con [la segunda práctica](https://github.com/JJ/IV/blob/master/documentos/practicas/2.XaaS.md)
+
+##Otros objetivos
+
+* [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request *directamente a su copia del repositorio*, no al repositorio principal de la asignatura. 
+* [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
