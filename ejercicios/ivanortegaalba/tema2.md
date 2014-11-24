@@ -138,7 +138,7 @@ Con la configuración puesta correctamente en este archivo, solo falta subir con
 
 ![](images/Captura de pantalla 2014-11-12 a las 23.56.36.png)
 
-## Ejercicio 6
+## Ejercicio 7
 
 [Google App Engine consta de test unitarios](https://cloud.google.com/appengine/docs/python/tools/localunittesting) locales donde podemos someter nuestro programa a varios test para ver la calidad de nuestro código una vez escrito.
 
