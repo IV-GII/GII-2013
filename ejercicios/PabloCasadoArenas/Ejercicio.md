@@ -388,3 +388,10 @@ sudo adduser jaulajkit
 Enjaulamos el usuario creado:
 
 sudo jk_jailuser -m -j /home/jaulas/jailkit jaulajkit 
+
+# Tema 4
+
+## Ejercicio 1
+sudo apt-get install lxc
+
+##Ejercicio 2
