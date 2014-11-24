@@ -177,3 +177,18 @@
 # Otros objetivos
 
 * []Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+
+
+#Clase del 18 de noviembre de 2014
+
+# Objetivos de esta sesión
+
+* [+] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+* [+] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+* [+] Conocer las aplicaciones y programas que se usan.
+* [+] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+
+# Otros objetivos
+
+* [+] Familiarizarse con el tejido económico TIC en nuestro entorno local.
+Conocer qué tipo de perfil buscan estas empresas.
