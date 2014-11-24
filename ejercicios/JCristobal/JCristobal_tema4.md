@@ -35,7 +35,8 @@ Lo soluciono gracias al [enlace que me proporciona el profesor](https://lists.li
 Creo el contenedor con `sudo lxc-create -t ubuntu -n una-caja` y para arrancarlo `sudo lxc-start -n una-caja`
 
 
-> Falla al arrncar, [aquí capturas al intentar arrancarlo, y al internar arrancarlo en foreground](http://i.imgur.com/ymzHosW.png)
+> Falla al arrancar, [aquí capturas al intentar arrancarlo, y al internar arrancarlo en foreground](http://i.imgur.com/ymzHosW.png)
+> 
 > Vemos que el fallo puede ser de permisos con CGROUP.
 > 
 
@@ -43,9 +44,6 @@ Creo el contenedor con `sudo lxc-create -t ubuntu -n una-caja` y para arrancarlo
 Vemos el estado de los contenedores con `sudo lxc-list`
 
 Debería creararse un puente llamado lxcbr0 y otro con el prefijo veth
-
-
-Pruebo a descargar e instalar otro: `sudo lxc-create -t ubuntu-cloud -n nubecilla` y `sudo lxc-start -n nubecilla`
 
 
 
