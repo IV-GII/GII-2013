@@ -352,3 +352,21 @@ Probamos instalando el programa vim:
 yum install vim
 
 ![Imgur](http://i.imgur.com/WOK5rGk.png)
+
+## Ejercicio 5
+
+Instalamos wget, instalamos tar, instalamos gcc.
+
+Descargamos nginx:
+
+wget http://nginx.org/download/nginx-1.6.0.tar.gz
+
+lo descomprimimos, vamos al directorio y ejecutamos:
+
+./configure --without-http_rewrite_module --without-http_gzip_module
+![Imgur](http://i.imgur.com/p4md5wQ.png)
+make install
+![Imgur](http://i.imgur.com/cGXzGb1.png)
+Ya lo tenemos instalado.
+
+
