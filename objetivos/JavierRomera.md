@@ -76,3 +76,38 @@ Otros objetivos
 - [x] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
 - [x] Comprender el método de entrega de las prácticas de la asignatura.
 
+Clase del 21 de octubre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+- [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
+- [x] Crear nuevas funciones en un SaaS.
+
+Clase del 27 de octubre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Consolidar el uso de PaaS/SaaS.
+- [x] Entender los sistemas de automatización de la construcción de aplicaciones.
+
+Clase del 28 de octubre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Consolidar el uso de PaaS/SaaS.
+- [x] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones.
+- [x] Comenzar con la segunda práctica.
+
+Clase del 3 de noviembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Consolidar el uso de PaaS/SaaS
+- [x] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+- [x] Continuar con la segunda práctica
+
+Clase del 4 de noviembre de 2014
+====
+Objetivos a cubrir en la sesión
+---

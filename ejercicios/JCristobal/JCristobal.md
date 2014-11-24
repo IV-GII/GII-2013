@@ -1,4 +1,4 @@
-#Ejercicios de JCristobal (José Cristóbal López Zafra)
+#Ejercicios de JCristobal (José Cristóbal López Zafra) de los temas 1, 2 y 3
 
 
 # Tema 1
@@ -570,6 +570,74 @@ print "Hola mundo!"
 Y ejecuto en python:
 
 ![imagen](http://i.imgur.com/5B56pVY.png)
+
+
+
+
+##Ejercicio 5
+###Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
+
+
+Para esta actividad usaré el sistema saucy instalado en la actividad 3, ya que el fedora es una versión muy antigua y da muchos problemas.
+Para trabajar bien con el seguimos los mismo pasos que en la actividad 4, monto el filesystem virtual /proc e instalo el paquete español
+
+Instalamos curl simplemente con `apt-get install curl`
+
+y para nginx ejecutamos:
+
+`echo "deb http://nginx.org/packages/ubuntu/ raring nginx" >> /etc/apt/sources.list ` y 
+`echo "deb-src http://nginx.org/packages/ubuntu/ raring nginx" >> /etc/apt/sources.list`
+y `apt-get install nginx`
+
+![imagen](http://i.imgur.com/hBIDcww.png)
+
+Una vez instalado vemos su estado con `service nginx status` y lo arrancamos `service nginx start`:
+
+![imagen](http://i.imgur.com/oTjmTlA.png)
+
+Habría que comprobar que ningun otro servidor está ocupando el puerto 80 (Apache), si fuera así lo mataríamos y arrancaríamos nginx.
+
+Una vez arrancado compruebo que funciona en el navegador con `curl localhost`:
+
+![imagen](http://i.imgur.com/qYaTNl3.png)
+
+
+##Ejercicio 6
+###Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar. 
+
+Primero instalamos "jailkit":
+
+Ejecutamos: 
+`wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.g` y lo descomprimimos `tar -xzvf jailkit-2.16.tar.gz`
+
+Accedemos a la carpeta de jailkit recién descomprimida y ejecutamos: `./configure`, `make` y `sudo make install`
+
+
+Seguimos los pasos que nos indican en los apuntes:
+`sudo mkdir -p /seguro/jaulas/dorada`
+`sudo chown -R root:root /seguro`
+
+Y creamos la jaula con un shell básico (basicshell), herramientas de red(netutils) y un editor de texto(editors):
+`sudo jk_init -v -j /seguro/jaulas/dorada jk_lsh basicshell netutils editors`
+
+
+Creamos un usuario `sudo useradd usuarioIV` y lo enjaulamos `sudo jk_jailuser -m -j /seguro/jaulas/dorada usuarioIV`
+También cambiamos la contraseña con: `sudo passwd usuarioIV`
+
+Además hay que editar la configuración del usuario (que estará en /seguro/jaulas/dorada/etc/passwd) y cambiar jk_lsh por /bin/bash, el shell habitual.
+
+![imagen](http://i.imgur.com/XWZCnPe.png)
+
+
+Ahora podré conectarme por ssh, o acceder con la terminal al pulsar Ctrl-Alt-F2 a este usuario.
+
+
+***
+***
+
+
+
+
 
 
 

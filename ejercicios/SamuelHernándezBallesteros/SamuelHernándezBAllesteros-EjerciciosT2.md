@@ -66,3 +66,31 @@ Crear un script para un documento Google y cambiarle el nombre con el que aparec
 ![Ejercicio46.png](./Capturas/Ejercicio46.png)
 
 ![Ejercicio47.png](./Capturas/Ejercicio47.png)
+
+### Ejercicio 5
+Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+![Ejercicio5T2.png](./Capturas/Ejercicio5T2.png)
+
+[Artículo](http://centrodeartigo.com/articulos-educativos/article_11495.html)
+
+### Ejercicio 6
+Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.
+
+Nodejitsu
+
+![Ejercicio6T2.png](./Capturas/Ejercicio6T2.png)
+
+En nodejitsu podemos ver una variable de producción que permitirá arrancar node.js en modo producción automaticamente. Aquí un articulo de como se utiliza.
+
+[Running Express.js in Production Mode](http://www.hacksparrow.com/running-express-js-in-production-mode.html)
+
+### Ejercicio 7
+Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+Entorno de pruebas para .NET
+[NUnit](http://www.nunit.org/)
+[NUnit Wikipedia](http://es.wikipedia.org/wiki/NUnit)
+[Nunit como utilizarlo](http://www.mundoprogramacion.com/colabora/puntoNET/giovannyf_NUnit.htm)
+
+

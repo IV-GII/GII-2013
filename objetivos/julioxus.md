@@ -135,37 +135,37 @@ Lista de objetivos de Julio Martínez Martínez-Checa
 
 #Clase del 4 de noviembre de 2014
 
-* [ ] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+* [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 
-* [ ] Aprender a ''enjaular'' usuarios.
+* [X] Aprender a ''enjaular'' usuarios.
 
-* [ ] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+* [X] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
 
-* [ ] Entender y saber llevar a cabo la virtualización de dispositivos de red
+* [X] Entender y saber llevar a cabo la virtualización de dispositivos de red
 
-* [ ] Usar herramientas de administración y monitorización de red en línea de órdenes
+* [X] Usar herramientas de administración y monitorización de red en línea de órdenes
 
 #Clase del 10 de noviembre de 2014
 
-* [ ] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+* [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 
-* [ ] Aprender a ''enjaular'' usuarios.
+* [X] Aprender a ''enjaular'' usuarios.
 
-* [ ] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+* [X] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
 
-* [ ] Entender y saber llevar a cabo la virtualización de dispositivos de red
+* [X] Entender y saber llevar a cabo la virtualización de dispositivos de red
 
-* [ ] Usar herramientas de administración y monitorización de red en línea de órdenes
+* [X] Usar herramientas de administración y monitorización de red en línea de órdenes
 
 * [X] Finalizar la entrega la segunda práctica.
 
 #Clase del 11 de noviembre de 2014
 
-* [ ] Entender el concepto de contenedores
+* [X] Entender el concepto de contenedores
 
-* [ ] Configurar el sistema para poder crear y usar contenedores
+* [X] Configurar el sistema para poder crear y usar contenedores
 
-* [ ] Crear y usar contenedores
+* [X] Crear y usar contenedores
 
 
 

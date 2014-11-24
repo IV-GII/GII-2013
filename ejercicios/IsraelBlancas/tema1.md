@@ -18,7 +18,7 @@ El servidor tiene un precio de 645€.
 
 
 ######Amortización a 4 años######
-Se amortiza un 25% de la base imponible/año. Es decir, 133,265€/año. 
+Se amortiza un 25% de la base imponible/año. Es decir, 133,265€/año.
 Suponiendo que lo comprásemos ahora, en el año 2014 solo amortizaría los meses de octubre, noviembre y diciembre (la amortización por mes es de 11,106€).
 
 Amortización:
@@ -30,7 +30,7 @@ Amortización:
 
 
 ######Amortización a 7 años######
-Se amortiza un 14,29% de la base imponible/año. Es decir, 76,15€/año. 
+Se amortiza un 14,29% de la base imponible/año. Es decir, 76,15€/año.
 Suponiendo que lo comprásemos ahora, en el año 2014 solo amortizaría los meses de octubre, noviembre y diciembre (la amortización por mes es de 6,35€).
 
 Amortización:
@@ -81,34 +81,34 @@ He utilizado el siguiente código (en programa.py)
 
 ```python
 #!/usr/bin/env python
-# -*- coding: utf-8 -*- 
+# -*- coding: utf-8 -*-
 
 import random
 
 def main():
-	intentos=0
-	numero = random.randint(1, 100)
+  intentos=0
+  numero = random.randint(1, 100)
 
-	while (intentos<10):
-		numero_usuario = int(input("Inserte un número:"))
-		intentos+=1
-		if numero_usuario>numero:
-			print("El número a adivinar es menor")
-		elif numero_usuario<numero:
-			print("El número a adivinar es mayor")
-		else:
-			print("Enhorabuena, has acertado")
-			return
+  while (intentos<10):
+    numero_usuario = int(input("Inserte un número:"))
+    intentos+=1
+    if numero_usuario>numero:
+      print("El número a adivinar es menor")
+    elif numero_usuario<numero:
+      print("El número a adivinar es mayor")
+    else:
+      print("Enhorabuena, has acertado")
+      return
 
-	if (intentos==10):
-		print("Has superado el número de intentos")
+  if (intentos==10):
+    print("Has superado el número de intentos")
 
-if __name__ == '__main__': 
+if __name__ == '__main__':
     main()
 
 ```
 
-Una vez comprobado que funciona, 
+Una vez comprobado que funciona,
 
 + Instalo CDE utilizando "sudo apt-get install cde"
 + Ejecuto mi programa utilizando "cde python programa.py"
@@ -198,7 +198,7 @@ Firefox
 #####8.2 Calcular el coste real de uso de recursos de un ordenador teniendo en cuenta sus costes de amortización. Añadir los costes eléctricos correspondientes.#####
 En primer lugar hay que [tener en cuenta el gasto medio de un PC](http://www.leantricity.es/es/2012/07/11/cuanta-energia-gasta-un-ordenador-aproximaciones/)
 Coste eléctrico por año:
-365 días x (0,437 kWh + 0,1524 kWh) = 215 kWh 
+365 días x (0,437 kWh + 0,1524 kWh) = 215 kWh
 0,15 € * 215 kWh = 32€/año
 
 Teniendo en cuenta que la vida media de un ordenador (con cierto uso) está en torno a los 5 años y suponiendo un precio de 500€.
@@ -224,7 +224,7 @@ Precio total: 660.1€
 
 #####9.2 Implementar usando el fichero de configuración de cgcreate una política que dé menos prioridad a los procesos de usuario que a los procesos del sistema (o viceversa).#####
 
-   
+
 ```
 mount {
     cpu = /cgroup/cpumem;
@@ -233,37 +233,37 @@ mount {
 }
 
 
-group $USER { 
+group $USER {
     cpu {
     # 75% de CPU disponible para los procesos
-        cpu.shares="750"; 
+        cpu.shares="750";
     }
     cpuset {
     # Todas las CPU disponibles
-        cpuset.cpus="0-7"; 
+        cpuset.cpus="0-7";
     }
     memory {
     # 2GB de memoria como límite
-        memory.limit_in_bytes="2G"; 
-	# 2GB de memoria y SWAP
+        memory.limit_in_bytes="2G";
+  # 2GB de memoria y SWAP
         memory.memsw.limit_in_bytes="4G";  
     }
 }
 
-group system { 
+group system {
     cpu {
     # 25% de CPU disponible para los procesos
-        cpu.shares="250"; 
+        cpu.shares="250";
     }
     cpuset {
         # 1 CPU como máximo
-        cpuset.cpus="0,1"; 
+        cpuset.cpus="0,1";
     }
     memory {
-    # 1GB de memoria como límite	
-        memory.limit_in_bytes="1G"; 
-	# 2GB de memoria y SWAP
-        memory.memsw.limit_in_bytes="2G"; 
+    # 1GB de memoria como límite
+        memory.limit_in_bytes="1G";
+  # 2GB de memoria y SWAP
+        memory.memsw.limit_in_bytes="2G";
     }
 }
 ```
@@ -271,7 +271,7 @@ group system {
 
 
 #####9.3 Usar un programa que muestre en tiempo real la carga del sistema tal como htopy comprobar los efectos de la migración en tiempo real de una tarea pesada de un procesador a otro (si se tiene dos núcleos en el sistema).#####
-Desconozco cómo se migra la carga de un procesador a otro. El uso de memoria se incrementaría (incluso podría necesitarse memoria de SWAP) y uno de los procesadores aumentaría su uso a la vez que el del otro descendería. 
+Desconozco cómo se migra la carga de un procesador a otro. El uso de memoria se incrementaría (incluso podría necesitarse memoria de SWAP) y uno de los procesadores aumentaría su uso a la vez que el del otro descendería.
 ![Ejecución de la orden htop](http://fotos.subefotos.com/1c350c29f3bacd01e2f11dd5a3251566o.jpg)
 
 #####9.4 Configurar un servidor para que el servidor web que se ejecute reciba mayor prioridad de entrada/salida que el resto de los usuarios.#####
@@ -285,15 +285,15 @@ mount {
 
 group nginx {
     blkio  {
-    	#Pone como prioridad 75%
-        blkio.weight_device="750"; 
+      #Pone como prioridad 75%
+        blkio.weight_device="750";
     }
 }
 
 group usuarios {
     blkio  {
-    	#Pone como prioridad 25%
-        blkio.weight_device="250"; 
+      #Pone como prioridad 25%
+        blkio.weight_device="250";
     }
 }
 ```
@@ -336,113 +336,3 @@ Mi [respuesta en el foro](https://github.com/JJ/GII-2014/issues/72#issuecomment-
 ***
 ***
 ***
-
-
-#TEMA 2: Introducción a la infraestructura virtual: concepto y soporte físico#
-
-
-##Sesión 2-10-2014##
-
-##Ejercicio 1##
-
-#####Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).#####
-He instalado el de Python (virtualenv) mediante:
->sudo pip install virtualenv
-
-Después, he probado a crear el entorno virtual escribiendo en consola:
->virtualenv proyecto
-
-
-***
-
-##Ejercicio 2##
-
-#####Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.#####
-Me he registrado en OpenShift.
-
-
-***
-
-##Ejercicio 3##
-#####Crear una aplicación en OpenShift y dentro de ella instalar WordPress.#####
-Tras solicitar crear una aplicación, se nos permite desplegar una aplicación de las que ya hay predefinidas. Insertando en el buscador "Wordpress". Después de esto, se nos pedirán algunos datos, como el nombre de dominio o el repositorio Git donde tenemos el código.
-Finalmente, se nos darán los datos necesarios para entrar a administrar nuestro Wordpress.
-[Ir a mi aplicación](http://wordpress-iblancasa.rhcloud.com/)
-
-
-
-***
-***
-
-##Sesión 2-10-2014##
-
-##Ejercicio 4##
-
-#####Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.#####
-He cambiado el nombre del menú y le he puesto una función que crea un cuadro de diálogo y pregunta por una respuesta de usuario.
-![Google Drive](http://fotos.subefotos.com/3d7f1666becd3469f68ff662d506fcd3o.jpg)
-
-Aquí podemos ver cómo aparece el menú nuevo.
-
-```javascript
-
-function onOpen() {
-  // Add a menu with some items, some separators, and a sub-menu.
-  DocumentApp.getUi().createMenu('Menú probado')
-      .addItem('Hola mundo', 'hola')
-      .addToUi();
-}
-
-
-function hola() {
-  var result = DocumentApp.getUi().alert(
-      'Hola',
-      '¿Es esto lo que buscabas?',
-      DocumentApp.getUi().ButtonSet.YES_NO);
-
-  if (result == DocumentApp.getUi().Button.YES) {
-    DocumentApp.getUi().alert('Pues ya lo has encontrado');
-  } else {
-    DocumentApp.getUi().alert('Pues adiós');
-  }
-}
-```
-
-
-
-***
-***
-
-##Sesión 27-10-2014##
-
-##Ejercicio 5##
-
-#####Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.#####
-
-Para probar uno de estos sistemas (y aprovecharlo para el trabajo de la asignatura), he instalado GruntJS. Para ello, hay que instalar "NodeJS", "NPM" y, utilizando este último, "GruntJS". Para ello he utilizado el [manual de esta web](http://codehero.co/como-utilizar-gruntjs/) donde además se explica cómo realizar un ejemplo de funcionamiento.
-
-
-***
-
-##Ejercicio 6##
-
-#####Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.#####
-
-El PaaS que utilizo es Heroku. Estudiando los ficheros que hay en [un repositorio para descargar una aplicación y practicar su despliegue en Heroku](https://github.com/iblancasa/BackendSI2-IV/wiki/C%C3%B3mo-realizar-un-despliegue-en-Heroku), he visto que el fichero al que se refiere el enunciado se llama "app.json".
-Para crear/editar este fichero, se puede utilizar un editor de textos cualquiera.
-En este fichero se indican distinas cosas, como puede ser el nombre de la aplicación, palabras claves o, incluso, un logotipo de la misma.
-En [esta página (de la documentación de Heroku)](https://devcenter.heroku.com/articles/app-json-schema) hay más información.
-Aunque este fichero es importante, más lo es "Profile". Un fichero que nos permite decir qué órdenes son precisas para la ejecución de nuestra aplicación (probablemente este segundo fichero se acerque más a lo que se pide). En Heroku, de momento (para NodeJS), solo ha sido necesario escribir:
-`web: node index.js`
-Más sobre [Profile](https://devcenter.heroku.com/articles/procfile)
-
-***
-
-##Ejercicio 7##
-
-#####Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.#####
-
-He estado buscando uno que sea útil para el [proyecto de la asignatura](https://github.com/iblancasa/BackendSI2-IV). El que he encontrado ha sido "Mocha".
-[Guía hecha por UnitJS](http://unitjs.com/guide/mocha.html).
-[Guía hecha por Brian Stoner](https://brianstoner.com/blog/testing-in-nodejs-with-mocha/)
-[Guía de Web App Blog](http://webapplog.com/test-driven-development-in-node-js-with-mocha/)
