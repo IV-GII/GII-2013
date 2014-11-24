@@ -369,4 +369,22 @@ make install
 ![Imgur](http://i.imgur.com/cGXzGb1.png)
 Ya lo tenemos instalado.
 
+## Ejercicio 6
 
+Instalamos jailkit.
+
+Creamos directorio:
+
+sudo mkdir /home/jaulas/jailkit 
+
+Iniciamos la jaula:
+
+sudo jk_init -v -j /home/jaulas/jailkit jk_lsh basicshell netutils editors
+
+Añadimos usuario y configuramos su cuenta:
+
+sudo adduser jaulajkit
+
+Enjaulamos el usuario creado:
+
+sudo jk_jailuser -m -j /home/jaulas/jailkit jaulajkit 
