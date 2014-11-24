@@ -334,3 +334,21 @@ sudo apt-get install rinse
 Bajamos la ISO con
 
 sudo rinse --arch=amd64 --distribution centos-6 -directory /home/jaulas/centos/
+
+## Ejercicio 4
+
+He configurado Centos sobre Debian.
+
+Accedemos a la maquina virtual con:
+
+sudo chroot /home/jaulas/fedora
+
+Montamos el filesystem virtual /proc ya que si no da error:
+
+mount -t proc proc /proc
+
+Probamos instalando el programa vim:
+
+yum install vim
+
+[Imgur](http://i.imgur.com/WOK5rGk.png)
