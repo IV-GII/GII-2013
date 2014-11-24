@@ -37,13 +37,30 @@ Creo el contenedor con `sudo lxc-create -t ubuntu -n una-caja` y para arrancarlo
 
 > Falla al arrancar, [aquí capturas al intentar arrancarlo, y al internar arrancarlo en foreground](http://i.imgur.com/ymzHosW.png)
 > 
-> Vemos que el fallo puede ser de permisos con CGROUP.
+> Vemos que el fallo es un conflicto de permisos con CGROUP.
 > 
 
 
-Vemos el estado de los contenedores con `sudo lxc-list`
+Vuelvo a internarlo sobre un sistema Debian, monto cgroup, [instalo LXC](https://wiki.debian.org/LXC#Installation) y creo el contenedor siguiendo los mismo pasos que he comentado antes
 
-Debería creararse un puente llamado lxcbr0 y otro con el prefijo veth
+[Contenedor recién creado](http://i.imgur.com/HvOMhV8.png) y lo arrancamos: ![arrancado](http://i.imgur.com/dhErc2R.png)
+
+Y podemos ver el estado de los contenedores con `sudo lxc-list`.
+
+
+Dentro del contenedor ejecutamos `ifconfig -a` para ver sus interfaces de red:
+
+![imagen](http://i.imgur.com/SDVwA8Z.png)
+
+
+Y fuera, con `brctl show` y el contenedor parado (`lxc-stop -n una-caja`) vemos que no tiene ninguna interfaz, aunque según los apuntes deberíamos haber encontrado lxcbr0 y veth.
+
+Creo y asigno una nueva interfaz a la red cableada:
+
+![imagen](http://i.imgur.com/mflfRii.png)
+
+
+
 
 
 
