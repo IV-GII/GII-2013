@@ -243,7 +243,7 @@ A continuación montaremos la ISO en un directorio que hemos creado previamente.
 
 ![Ejercicio_2_2_1](http://i.imgur.com/QOQnY5G.png)
 	
-	Una vez eliminada, crearemos nuestra nueva interfaz virtual y la asignaremos a la interfaz eth de la tarjeta 		de red.
+Una vez eliminada, crearemos nuestra nueva interfaz virtual y la asignaremos a la interfaz eth de la tarjeta 		de red.
 	
 ![Ejercicio_2_2_2](http://i.imgur.com/GYL6SlF.png)
 	
@@ -253,7 +253,7 @@ A continuación montaremos la ISO en un directorio que hemos creado previamente.
 
 		> sudo apt-get install debootstrap
 	
-	Una vez instalado creamos el directorio donde vamos a realizar la instalación del sistema, en éste ejemplo lo 	llamaremos UbuntuSO. Después ejecutamos la siguiente instrucción, que se encargará de instalar el 				sistema. 
+Una vez instalado creamos el directorio donde vamos a realizar la instalación del sistema, en éste ejemplo lo 	llamaremos UbuntuSO. Después ejecutamos la siguiente instrucción, que se encargará de instalar el 			sistema. 
 	
 		> sudo debootstrap --arch=amd64 precise UbuntuSO/ http://archive.ubuntu.com/ubuntu/
 		
