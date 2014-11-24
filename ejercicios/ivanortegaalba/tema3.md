@@ -40,3 +40,20 @@ Y como podemos ver no se muestra ninguno en este momento, ya que no tenemos ning
 ![](images/Captura de pantalla 2014-11-24 a las 10.02.21.png)
 
 2. Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+
+Para crear una nueva interfaz virtual, basta con usar el comando
+
+```
+sudo brctl addbr iv-bridge
+```
+
+Y ya tendremos una nueva interfaz de puente, sin asignar a ninguna otra interfaz.
+![](images/Captura de pantalla 2014-11-24 a las 10.06.04.png)
+Este será el siguiente paso, y ejecutaremos:
+```
+sudo brctl addif iv-bridge eth0
+```
+Y quedará asignado a la interfaz Ethernet 0 de nuestro pc, ya que no disponemos de wlan. Como podemos ver, la interfaz se muestra como master de nuestro punete asociado:
+![](images/Captura de pantalla 2014-11-24 a las 10.07.42.png)
+Y si visualizamos los puentes de los que consta nuestro SO vemos:
+![](images/Captura de pantalla 2014-11-24 a las 10.08.47.png)
