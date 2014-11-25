@@ -394,7 +394,7 @@ sudo jk_jailuser -m -j /home/jaulas/jailkit jaulajkit
 ## Ejercicio 1
 sudo apt-get install lxc
 
-##Ejercicio 2
+##Ejercicio 3
 
 sudo lxc-create -t debian -n u1
 
@@ -406,3 +406,8 @@ Iniciamos la maquina:
 
 sudo lxc-start -n u1
 
+## Ejercicio 4
+
+![Imgur](http://i.imgur.com/S6WTQKY.png)
+
+![Imgur](http://i.imgur.com/Aa0L8C5.png)
