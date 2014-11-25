@@ -709,12 +709,39 @@ Con lo que sabremos que ha detectado a nose y ejecutó el test.
 ###Ejercicio 1: 
 ####Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback
 
+Para hacerlo ejecutamos:
+
+`mount -o loop -t miImagen miImagen.iso /mnt/miImagen`
+
+"miImagen" sera dicha imagen a crear.
+
 ###Ejercicio 2: 
-####Mostrar los puentes configurados en el sistema operativo.Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+####Mostrar los puentes configurados en el sistema operativo. Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+
+Tengo que instalar previamente brctl, para ello hacemos:
+
+`sudo apt-get install bridge-utils`
+
+Los puentes configurados en mi SO son:
+
+<img src="http://i57.tinypic.com/j9leyp.png"></img>
+
+Para crear un interfaz virtual y asignarla al interfaz de la tarjeta wifi hacemos:
+
+  * sudo brctl addbr nuevopuente
+  * sudo brctl addif nuevopuente wlan0
+  * Editamos /etc/networks/interfaces, configuramos la interfaz y guardamos
+  * Activamos interfaz aplicando ifconfig nuevopuente up
 
 
 ###Ejercicio 3: 
 ####Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
+
+<img src="http://i58.tinypic.com/df8svt.png"></img>
+
+Instalo debootsrap:
+
+<img src="http://i61.tinypic.com/297gqq.png"></img>
 
 
 ###Ejercicio 4: 
