@@ -65,7 +65,38 @@ y hacemos un:
 
 * [+]Ejercicio 3
  - A) Crear y ejecutar un contenedor basado en Debian.
+
+Lo primero que debemos de hacer es crear el contenedor donde se ubicará nuestro ubuntu con:
+
+    lxc-create -t ubuntu-cloud -n contenedor
+
+[Ver](https://www.dropbox.com/s/euhhnsrk82p5p5i/Captura%20de%20pantalla%202014-11-25%20a%20la%28s%29%2011.22.44.png?dl=0)
+
+Después de haber creado el contenedor lo ejecutamos con:
+
+    lxc-start -n contenedor 
+ 
+Esto lo que hará será entrar en nuestro sistema, con las siguientes credenciales:
+
+    usuario: ubuntu
+    password: ubuntu
+
+
  - B) Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.
+
+El primer paso que debemos de dar es instalar "yum" y "curl":
+
+    apt-get install yum
+
+[Ver](https://www.dropbox.com/s/lx8l9lh134yy46b/Captura%20de%20pantalla%202014-11-25%20a%20la%28s%29%2011.41.05.png?dl=0)
+
+    apt-get install curl
+
+[Ver](https://www.dropbox.com/s/89kusd6bpe997fw/Captura%20de%20pantalla%202014-11-25%20a%20la%28s%29%2011.43.30.png?dl=0)
+
+Una vez que tenemos estos dos pasos anteriores realizados, de igual forma que en el apartado anterior vamos a crear el contenedor para fedora, de la siguiente forma:
+
+    lxc-create -t fedora -n fedora14 -- -R 14
 
 * [+]Ejercicio 4
  - A) Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
