@@ -16,17 +16,22 @@ A continuación nos colocamos en el directorio creado ( por defecto será "lxc" 
 Finalmente usando privilegios de administrador ( ```sudo``` ) podemos realizar la instalación. Los pasos se especifican en el fichero 'INSTALL' incluido en el directorio 'lxc' , la opción más simple para compilar e instalar es la siguiente.
 
 
-* Generamos el fichero 'configure'.
-```./autogen.sh```
+* 	Generamos el fichero 'configure'.
+	
+	```sh ./autogen.sh```
 
-* Configuramos el paquete para nuestro sistema.
-```./configure```
 
-* Compilamos el paquete
-```make```
+*	Configuramos el paquete para nuestro sistema.
 
-* Iniciamos la instalación de los programas junto a los ficheros de datos y su documentación.
-```make install```
+	```sh ./configure```
+
+* 	Compilamos el paquete
+
+	```sh make```
+
+* 	Iniciamos la instalación de los programas junto a los ficheros de datos y su documentación.
+
+	```sh make install```
 
 ![Figura2](Imagenes/ej4_1_2.png)
 > Figura 2. Programas de la suite de lxc.
