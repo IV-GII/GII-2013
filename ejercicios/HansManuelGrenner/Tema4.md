@@ -15,19 +15,19 @@ A continuación nos colocamos en el directorio creado ( por defecto será "lxc" 
 
 Finalmente usando privilegios de administrador ( ```sudo``` ) podemos realizar la instalación. Los pasos se especifican en el fichero 'INSTALL' incluido en el directorio 'lxc' , la opción más simple para compilar e instalar es la siguiente:
 
-*	Generamos el fichero 'configure'.
+* Generamos el fichero 'configure'.
 
 	```./autogen.sh```
 
-*	Configuramos el paquete para nuestro sistema.
+* Configuramos el paquete para nuestro sistema.
 
 	```./configure```
 
-*	Compilamos el paquete
+* Compilamos el paquete
 
 	```make```
 
-*	Iniciamos la instalación de los programas junto a los ficheros de datos y su documentación.
+* Iniciamos la instalación de los programas junto a los ficheros de datos y su documentación.
 
 	```make install```
 
@@ -51,9 +51,9 @@ Podemos comprobar nuestra versión del kernel usando el comando ```uname -a```.
 
 Para usar por tanto lxc tendremos que [actualizar el kernel](https://wiki.debian.org/HowToUpgradeKernel). Los pasos para un sistema basado en debian son los siguientes:
 
-*	Comprobamos las nuevas versiones kernel disponibles.
+* Comprobamos las nuevas versiones kernel disponibles.
 	```apt-cache search linux-image```
-*	Procedemos a descargar e instalar la más reciente
+* Procedemos a descargar e instalar la más reciente
 	```apt-get install linux-image-flavour```
 
 	En mi caso: ```sudo apt-get install linux-image-3.13.0-40-generic```
@@ -108,7 +108,6 @@ Al crear el contenedor anterior lxc ha generado un puente de red pre-configurado
 ```sudo lxc-create -t debian -n caja-debian```
 
 ```sudo lxc-start -n caja-debian```
-
 
 
 ---
