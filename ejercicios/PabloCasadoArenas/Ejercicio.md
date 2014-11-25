@@ -452,3 +452,18 @@ Lo instalamos
 virt-install -r 64 --accelerate -n DSPLinux 
   -f /path/to/guest.img 
   --cdrom /home/pablo/Descargas/dsl-4.11.rc1 --network network=default
+
+## Ejercicio 10
+Al usar wheezy necesitamos usar un backport.
+
+Añado deb http://http.debian.net/debian wheezy-backports main a sources.
+
+Actualizamos repositorios:
+sudo apt-get update
+Instalamos el backport
+
+sudo apt-get install -t wheezy-backports linux-image-amd64
+
+Instalamos finalmente docker:
+
+curl -sSL https://get.docker.com/ | sh
