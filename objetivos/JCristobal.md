@@ -10,7 +10,6 @@
 * [x] Manejar de forma básica la línea de órdenes de Linux.
 * [x] Aprender a instalar software libre en Linux. 
 
-
 ##Objetivos de sesión 3
 
 * [x] Aplicar técnicas básicas de aislamiento de recursos en el sistema operativo Linux
@@ -22,9 +21,7 @@
 * [x] Tener a punto una instalación Linux para llevar a cabo las actividades de la asignatura
 * [x] Usar git para hacer check-in en clase y expresar al final de la misma los objetivos alcanzados.
 
-
 ##Objetivos de sesión 4
-
 
 * [x] consolidar el uso de técnicas de aislamiento y control de tareas en Linux que se usarán más adelante en la creación de contenedores.
 * [x] Comprender los niveles de virtualización y sus denominaciones genéricas.
@@ -37,7 +34,6 @@
 * [x] Usar ficheros en el repositorio para los ejercicios.
 * [x] Consolidar el uso de la línea de órdenes para administración y desarrollo de software.
 
-
 ##Objetivos de sesión 5
 
 * [x] Conocer los diferentes proyectos propuestos para llevarlos a cabo a lo largo de la asignatura.
@@ -48,9 +44,7 @@
 * [x] Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
 * [x] Comenzar con la primera práctica: elección de proyecto y grupo. El plazo para entregar las prácticas son dos semanas: hasta el final de la sesión del 26 de octubre.
 
-
 ##Objetivos de sesión 8
-
 
 * [x] Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
 * [x] Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
@@ -59,7 +53,6 @@
 * [x] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
 * [x] Comprender el método de entrega de las prácticas de la asignatura.
 
-
 ##Objetivos de sesión 9
 
 * [x] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
@@ -67,7 +60,6 @@
 * [x] Crear nuevas funciones en un SaaS.
 
 * [x] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
-
 
 ##Objetivos de sesión 10
 
@@ -114,19 +106,36 @@
 
 * [x] Entender el concepto de contenedores
 * [x] Configurar el sistema para poder crear y usar contenedores
-* [x] Crear y usar contenedores
+* [] Crear y usar contenedores
 
 * [] Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
 * [x] Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
 
 ##Objetivos de sesión 16
 
-
 * [] Entender los sistemas de orquestación de máquinas virtuales.
 * [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 * [] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
 
+##Objetivos de sesión 17 - Trevenque
+
+* [x] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+* [x] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+* [x] Conocer las aplicaciones y programas que se usan.
+* [x] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+
+* [x] Familiarizarse con el tejido económico TIC en nuestro entorno local.
+* [x] Conocer qué tipo de perfil buscan estas empresas.
+
+##Objetivos de sesión 18
+
+* [] Resolver problemas con juju.
+* [] Configuración compleja de sistemas con él.
+* [] Entender el concepto de hipervisor y trabajar con ellos.
+
+* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 
 
