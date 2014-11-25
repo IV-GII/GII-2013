@@ -168,3 +168,8 @@ Y para cambiarle el nombre a la función, podemos usar la herramienta de buscar 
 En [wikipedia](http://en.wikipedia.org/wiki/List_of_build_automation_software) tenemos una lista con algunos de los sistemas de automatización más "famosos" para diversos lenguajes, pero, si ahondamos en internet, podemos ver que existen muchos más. En cuanto al lenguaje que principalmente utilizamos en la asignatura, Python, sabemos que es un lenguaje de programación interpretado, entonces un **make** nos serviría para ejecutar una lista de funciones o tareas en un orden determiando para dar un servicio. En Python, lo más utilizado son los llamados *[módulos](https://docs.python.org/2/tutorial/modules.html)* que vienen a ser paquetes con una lista de funciones que realizan servicios. Para crear un módulo podemos usar un archivo .py o podemos crear un archivo de desarrollador con *[distutils](https://docs.python.org/2/distutils/introduction.html)* para que cualquiera pueda [instalar](https://docs.python.org/2/install/index.html#install-index) tus módulos.
 
 ***
+
+###Ejercicio 6
+######Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.
+
+Como estamos trabajando con **OpenShift**, voy a usar las herramientas que proporciona junto con su [guía](https://developers.openshift.com/en/getting-started-client-tools.html#ubuntu) para la instalación de las mismas.
