@@ -113,12 +113,22 @@ Una vez instalado, abrimos una pestaña en nuestro navegador e introducimos loca
 
 Lo primero que debemos de hacer, para restringir los recursos de cpus es, pulsar en el panel de la izquierda sobre el contenedor sobre el que quedamos actuar, una vez que lo seleccionemos se nos muestra un menú donde podremos restringuir los recursos de CPU.
 
-
-pulsamos en el panel de la izquierda sobre el contenedor que elijamos y se nos mostrará un menu como el que se muestra en la siguiente captura.
-
-
 * [+]Ejercicio 5
  - A) Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
+
+Pues para poder comparar las prestaciones, vamos a usar la jaula que teniamos del tema 2 y el contendor que hemos creado ubuntu en los ejercicios anteriores.
+
+Lo primero que debemos de hacer es ubicarnos en el contenedor e instalar el nginx.
+Una vez los hayamos instalado, con "AB" hacemos las peticiones concurrentes con:
+
+    ab -n 1000 -c 1000 [ip]
+
+Hecho esto en el contenedor, procedemos a entrar en la jaula donde lanzamos nginx, realizando las peticiones con:
+
+    ab -n 1000 -c 1000 http://localhost/
+
+y listo.
+
 
 * [+]Ejercicio 6
  - A) Instalar juju.
