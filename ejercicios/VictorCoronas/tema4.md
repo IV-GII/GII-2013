@@ -100,7 +100,22 @@ Una vez que tenemos estos dos pasos anteriores realizados, de igual forma que en
 
 * [+]Ejercicio 4
  - A) Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
+
+El primer paso para la instalación es el siguiente:
+
+    http://lxc-webpanel.github.io/tools/install.sh -O - | bash
+
+Y el [proceso comenzará](https://www.dropbox.com/s/xer4ilypjpeme9h/Captura%20de%20pantalla%202014-11-25%20a%20la%28s%29%2011.59.59.png?dl=0).
+
+Una vez instalado, abrimos una pestaña en nuestro navegador e introducimos localhost:5000 para poder usarlo.
+
  - B) Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
+
+Lo primero que debemos de hacer, para restringir los recursos de cpus es, pulsar en el panel de la izquierda sobre el contenedor sobre el que quedamos actuar, una vez que lo seleccionemos se nos muestra un menú donde podremos restringuir los recursos de CPU.
+
+
+pulsamos en el panel de la izquierda sobre el contenedor que elijamos y se nos mostrará un menu como el que se muestra en la siguiente captura.
+
 
 * [+]Ejercicio 5
  - A) Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
