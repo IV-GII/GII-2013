@@ -16,21 +16,21 @@ A continuación nos colocamos en el directorio creado ( por defecto será "lxc" 
 Finalmente usando privilegios de administrador ( ```sudo``` ) podemos realizar la instalación. Los pasos se especifican en el fichero 'INSTALL' incluido en el directorio 'lxc' , la opción más simple para compilar e instalar es la siguiente.
 
 
-* 	Generamos el fichero 'configure'.
+1. Generamos el fichero 'configure'.
 
-```./autogen.sh```
+	```./autogen.sh```
 
-*	Configuramos el paquete para nuestro sistema.
+2. Configuramos el paquete para nuestro sistema.
 
-```./configure```
+	```./configure```
 
-* 	Compilamos el paquete
+3. Compilamos el paquete
 
-```make```
+	```make```
 
-* 	Iniciamos la instalación de los programas junto a los ficheros de datos y su documentación.
+4. Iniciamos la instalación de los programas junto a los ficheros de datos y su documentación.
 
-```make install```
+	```make install```
 
 
 ![Figura2](Imagenes/ej4_1_2.png)
