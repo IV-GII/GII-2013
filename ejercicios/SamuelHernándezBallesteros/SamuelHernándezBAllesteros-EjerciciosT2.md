@@ -5,11 +5,11 @@ Instalar un entorno virtual para tu lenguaje de programación favorito (uno de l
 
 ![Virutalev1.png](./Capturas/Virutalev1.png)
 
-==$ sudo apt-get install python-pip python-dev build-essential==
+	$ sudo apt-get install python-pip python-dev build-essential
 
-==$ sudo pip install --upgrade pip==
+	$ sudo pip install --upgrade pip
 
-==$ sudo pip install --upgrade virtualenv==
+	$ sudo pip install --upgrade virtualenv
 
 ![Virtualenv2.png](./Capturas/Virtualenv2.png)
 
