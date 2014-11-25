@@ -173,3 +173,17 @@ En [wikipedia](http://en.wikipedia.org/wiki/List_of_build_automation_software) t
 ######Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.
 
 Como estamos trabajando con **OpenShift**, voy a usar las herramientas que proporciona junto con su [guía](https://developers.openshift.com/en/getting-started-client-tools.html#ubuntu) para la instalación de las mismas.
+
+En primer lugar tenemos que instalar tanto github como ruby:
+
+```sudo apt-get install ruby-full ruby git-core```
+
+Una vez instalados y correctamente configurados. Usando el gestor de paquetes de ruby, **gem**, instalamos las herramientas de OpenShift:
+```sudo gem install rhc```
+
+Al ser la primera vez que lo instalamos, nos saldrá en mitad de la instalación un mensaje:
+![](./Imágenes/rhc1.png)
+
+Así que ejecutamos el comando ```rhc setup```
+
+
