@@ -88,14 +88,48 @@ Y creamos el contenedor: `/usr/share/lxc/templates/lxc-gentoo create`
 Lo ejecutamos y lo arracancamos con el nombre que le hemos dado `lxc-start -f gentoo.conf -n gentoo`
 
 
+
 Crearemos también otro contenedor con [Progress](https://www.progress.com/):
 
-ejecuto `lxc-create -t progress -n pro` para crear  contenedorlo:
+ejecuto `lxc-create -t progress -n pro` para crearlo:
+
 
 ![imagen](http://i.imgur.com/iKYY7Xj.png)
 
 y lo ejecuto con `lxc-start -n pro`
  
+
+
+
+##Ejercicio 4
+###Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
+
+
+Consultamos la [web de LXC WebPanel](http://lxc-webpanel.github.io/install.html) para instalarlo y vemos que tenemos que ejecutar `wget http://lxc-webpanel.github.io/tools/install.sh -O - | bash`:
+
+[Instalandose](http://i.imgur.com/JQ2Mj9z.png)
+
+Una vez instalado accedemos a http://your_ip_address:5000/ (localhost:5000) e introducimos usuario (admin) y contraseña (admin). Una vez dentro podemos visualizar las máquinas que tenemos instaladas:
+
+![imagen](http://i.imgur.com/PpKaGqv.png)
+
+Ahora podemos arrancar una máquina, pulsando simplemente en el botón de "Start":
+
+![imagen](http://i.imgur.com/azZxjXt.png)
+
+y pararla con el de "Stop"
+
+![imagen](http://i.imgur.com/8egawv4.png)
+
+
+###Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
+
+Accedemos a un contenedor (en estado "Stopped") y modificamos los parámetros, pulsamos "Apply" para acabar:
+
+![imagen](http://i.imgur.com/BPkV7WO.png)
+
+En mi caso modifico el límite de memoria y memoria total + memoria de intercambio a 512 y 1024 MB respectivamente. También cambio a 3 los procesadores que podrá usar la máquina y dejo igual el porcentaje de procesamientos que podrá usar.
+
 
 
 
