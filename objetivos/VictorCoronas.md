@@ -171,12 +171,12 @@
 
 # Objetivos de esta sesión
 
-* []Entender los sistemas de orquestación de máquinas virtuales.
-* []Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+* [+]Entender los sistemas de orquestación de máquinas virtuales.
+* [+]Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 # Otros objetivos
 
-* []Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+* [+]Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
 
 
 #Clase del 18 de noviembre de 2014
@@ -192,3 +192,28 @@
 
 * [+] Familiarizarse con el tejido económico TIC en nuestro entorno local.
 Conocer qué tipo de perfil buscan estas empresas.
+
+#Clase del 24 de noviembre de 2014
+
+#Objetivos de esta sesión
+
+* [] Resolver problemas con juju.
+* [] Configuración compleja de sistemas con él.
+* [] Entender el concepto de hipervisor y trabajar con ellos.
+
+#Otros objetivos
+
+* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+#Clase del 25 de noviembre de 2014
+
+#Objetivos de esta sesión
+
+* [] Resolver problemas con juju.
+* [] Entender cómo funciona docker y qué implica.
+
+#Otros objetivos
+
+* [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
