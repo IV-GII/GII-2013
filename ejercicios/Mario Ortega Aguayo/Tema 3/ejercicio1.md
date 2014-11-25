@@ -15,5 +15,3 @@ Una vez hecho esto, vamos a situarnos en la carpeta donde se encuentra la iso qu
 A continuación, montamos la imagen en el directorio especificado anteriormente con la siguiente instrucción.
 
 <pre>mount -o loop debian-7.2.0-ia64-DVD-1.iso /mnt/disco</pre>
-
-
