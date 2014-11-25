@@ -63,6 +63,8 @@ y hacemos un:
 
  [Ver](https://www.dropbox.com/s/erl3hkfbcrusp11/Captura%20de%20pantalla%202014-11-24%20a%20la%28s%29%2017.45.52.png?dl=0)
 
+#Clase del 17 de Noviembre de 2014
+
 * [+]Ejercicio 3
  - A) Crear y ejecutar un contenedor basado en Debian.
 
@@ -112,6 +114,8 @@ Una vez instalado, abrimos una pestaña en nuestro navegador e introducimos loca
  - B) Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
 
 Lo primero que debemos de hacer, para restringir los recursos de cpus es, pulsar en el panel de la izquierda sobre el contenedor sobre el que quedamos actuar, una vez que lo seleccionemos se nos muestra un menú donde podremos restringuir los recursos de CPU.
+
+#Clase del 24 de Noviembre de 2014
 
 * [+]Ejercicio 5
  - A) Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
