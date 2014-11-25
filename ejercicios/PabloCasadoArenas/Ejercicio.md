@@ -411,3 +411,13 @@ sudo lxc-start -n u1
 ![Imgur](http://i.imgur.com/S6WTQKY.png)
 
 ![Imgur](http://i.imgur.com/Aa0L8C5.png)
+
+## Ejercicio 5
+
+Añadimos repositorio, actualizamos repositorios e instalamos.
+
+sudo add-apt-repository ppa:juju/stable
+
+sudo apt-get update
+
+sudo apt-get install juju-core
