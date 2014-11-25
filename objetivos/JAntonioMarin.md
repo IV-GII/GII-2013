@@ -1,5 +1,17 @@
 #Lista de objetivos de Juan Antonio Marin Sanchez
 
+##10-nov-2014
+
+    [] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+    [] Aprender a ''enjaular'' usuarios.
+    [] Finalizar la entrega la segunda práctica.
+    [] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii.
+    [] Dejar de usar Sublime Text por estas 7 razones.
+    [] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
+    [] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+    [] Comprender que existe vida en los servidores web fuera del Apache.
+    [] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
+    [] Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
 
 ##4-nov-2014
 

@@ -289,4 +289,120 @@ y Tox :
 https://tox.readthedocs.org/en/latest/
 
 
+# TEMA 3
+
+## Ejercicio 1
+
+Disasociamos el espacio de nombres actual
+
+sudo unshare -m /bin/bash
+
+Creamos mnt/disk y lo montamos.
+
+sudo mkdir /mnt/disk
+
+mount -o loop dsl-4.11.rc1.iso /mnt/disk
+
+## Ejercicio 2
+
+brctl show nos muestra todos los puentes. No muestra ninguno porque ninguno esta configurado todavia.
+
+Creamos un puente y lo asignamos a la interfaz eth0.
+
+brctl addbr pablo
+
+brctl addif pablo eth0
+
+brtcl show
+
+## Ejercicio 3
+
+Instalamos debootstrap:
+
+sudo apt-get install debootstrap
+
+Una vez instalado creamos el directorio donde queremos instalar el sistema, y por ejemplo bajamos un ubuntu y construimos el sistema con:
+
+sudo debootstrap --arch=amd64 lucid /home/debootstrap http://archive.ubuntu.com/ubuntu
+
+Cuando termine de descargar y configurar, tendremos en el directorio indicado el sistema instalado.
+
+Instalacion rinse:
+
+sudo apt-get install rinse
+
+Bajamos la ISO con
+
+sudo rinse --arch=amd64 --distribution centos-6 -directory /home/jaulas/centos/
+
+## Ejercicio 4
+
+He configurado Centos sobre Debian.
+
+Accedemos a la maquina virtual con:
+
+sudo chroot /home/jaulas/fedora
+
+Montamos el filesystem virtual /proc ya que si no da error:
+
+mount -t proc proc /proc
+
+Probamos instalando el programa vim:
+
+yum install vim
+
+![Imgur](http://i.imgur.com/WOK5rGk.png)
+
+## Ejercicio 5
+
+Instalamos wget, instalamos tar, instalamos gcc.
+
+Descargamos nginx:
+
+wget http://nginx.org/download/nginx-1.6.0.tar.gz
+
+lo descomprimimos, vamos al directorio y ejecutamos:
+
+./configure --without-http_rewrite_module --without-http_gzip_module
+![Imgur](http://i.imgur.com/p4md5wQ.png)
+make install
+![Imgur](http://i.imgur.com/cGXzGb1.png)
+Ya lo tenemos instalado.
+
+## Ejercicio 6
+
+Instalamos jailkit.
+
+Creamos directorio:
+
+sudo mkdir /home/jaulas/jailkit 
+
+Iniciamos la jaula:
+
+sudo jk_init -v -j /home/jaulas/jailkit jk_lsh basicshell netutils editors
+
+Añadimos usuario y configuramos su cuenta:
+
+sudo adduser jaulajkit
+
+Enjaulamos el usuario creado:
+
+sudo jk_jailuser -m -j /home/jaulas/jailkit jaulajkit 
+
+# Tema 4
+
+## Ejercicio 1
+sudo apt-get install lxc
+
+##Ejercicio 2
+
+sudo lxc-create -t debian -n u1
+
+montamos cgroups:
+
+mount -t cgroup cgroup /sys/fs/cgroup/
+
+Iniciamos la maquina:
+
+sudo lxc-start -n u1
 

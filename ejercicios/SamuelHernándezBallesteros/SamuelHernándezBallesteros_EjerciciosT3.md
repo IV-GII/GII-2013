@@ -33,8 +33,9 @@ Usar debootstrap (o herramienta similar en otra distro) para crear un sistema m√
 
 Experimentar con la creaci√≥n de un sistema Fedora dentro de Debian usando Rinse.
 
-Instalamos rinse con:
-   == sudo apt-get install rinse==
+Instalamos rinse con: 
+
+	sudo apt-get install rinse
 
 ![Ejercicio3-2T3.png](./Capturas/Ejercicio3-2T3.png)
 
@@ -54,7 +55,7 @@ Montamos el file system
 
 Instalamos aplicaciones y language pack
 
-==apt-get install language-pack-es==
+	apt-get install language-pack-es
 
 ![Ejercicio4-3T3.png](./Capturas/Ejercicio4-3T3.png)
 
@@ -80,24 +81,24 @@ A√±adimos los repositorios de nginx en el directorio /etc/apt.
 
 Obtenemos la key del repositorio de nginx
 
-==root@hp007:/# apt-get install wget==
+	root@hp007:/# apt-get install wget
 
-==wget http://nginx.org/keys/nginx_signing.key==
+	wget http://nginx.org/keys/nginx_signing.key
 
-==apt-key add nginx_signing.key==
+	apt-key add nginx_signing.key
 
 Actualizamos e instalamos nginx
 
-==apt-get update==
+	apt-get update
 
-==apt-get install nginx==
+	apt-get install nginx
 
 Iniciamos el servidor
 
-==service nginx start==
+	service nginx start
 
 Instalamos curl y comprobamos el localhost
-==curl localhost==
+	curl localhost
 
 ![Ejercicio5-2T3.png](./Capturas/Ejercicio5-2T3.png)
 
@@ -106,20 +107,19 @@ Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habr√
 
 Descargamos e instalamos jailkit
 
-==wget http://olivier.sessink.nl/jailkit/jailkit-2.17.tar.gz
-==
+	wget http://olivier.sessink.nl/jailkit/jailkit-2.17.tar.gz
 
-==tar -xzvf jailkit-2.17.tar.gz==
+	tar -xzvf jailkit-2.17.tar.gz
 
-==cd jailkit-2.17==
+	cd jailkit-2.17
 
-==./configure && make && sudo make install==
+	./configure && make && sudo make install
 
 Utilizamos la jaula anterior
 
 Creamos un nuevo usuario
-==sudo adduser usuario_prueba==
+	sudo adduser usuario_prueba
 
 Lo enjaulamos
-==sudo jk_jailuser -m -j /home/jaulas/prueba32 usuario_prueba==
+	sudo jk_jailuser -m -j /home/jaulas/prueba32 usuario_prueba
 

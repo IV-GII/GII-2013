@@ -19,6 +19,8 @@ Por último comprobamos si está preparado para usar este tipo de tecnología y 
 		
 ![imagen](http://i.imgur.com/HRgX8yc.png)
 
+También se podría instalar simplemente con `sudo apt-get install lxc`, aunque con el método anterior nos aseguramos que instalamos la última versión.
+
 
 ##Ejercicio 2
 ###Comprobar qué interfaces puente se han creado y explicarlos.
@@ -27,12 +29,21 @@ La instalación anterior no me deja crear un contenedor e instalar ubuntu dentro
 
 "lxc-create: error while loading shared libraries: liblxc.so.1: cannot open shared object file: No such file or directory"
 
-por lo que instalo simplemente con `sudo apt-get install lxc`. Instala sin problemas y me deja hacerlo.
+Lo soluciono gracias al [enlace que me proporciona el profesor](https://lists.linuxcontainers.org/pipermail/lxc-users/2014-January/006069.html)
+
 
 Creo el contenedor con `sudo lxc-create -t ubuntu -n una-caja` y para arrancarlo `sudo lxc-start -n una-caja`
 
-Vemos el estado de los contenedores con `sudo lxc-list`:
+
+> Falla al arrancar, [aquí capturas al intentar arrancarlo, y al internar arrancarlo en foreground](http://i.imgur.com/ymzHosW.png)
+> 
+> Vemos que el fallo puede ser de permisos con CGROUP.
+> 
 
 
+Vemos el estado de los contenedores con `sudo lxc-list`
 
 Debería creararse un puente llamado lxcbr0 y otro con el prefijo veth
+
+
+
