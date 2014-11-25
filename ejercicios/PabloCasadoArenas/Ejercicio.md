@@ -421,3 +421,10 @@ sudo add-apt-repository ppa:juju/stable
 sudo apt-get update
 
 sudo apt-get install juju-core
+
+## Ejercicio 8
+Descomentamos la linea que busca en el cdrom en
+/etc/apt/sources.list
+
+Instalamos:
+sudo apt-get install kvm libvirt-bin
