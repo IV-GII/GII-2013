@@ -137,5 +137,9 @@
 * [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
 * [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
+##Objetivos de sesión 19
+
+* [] Entender cómo funciona docker y qué implica.
+
 
 
