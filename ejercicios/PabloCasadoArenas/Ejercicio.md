@@ -427,4 +427,9 @@ Descomentamos la linea que busca en el cdrom en
 /etc/apt/sources.list
 
 Instalamos:
+
 sudo apt-get install kvm libvirt-bin
+
+y también:
+
+sudo apt-get install virtinst
