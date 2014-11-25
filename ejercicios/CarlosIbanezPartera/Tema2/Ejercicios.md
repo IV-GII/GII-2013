@@ -162,3 +162,9 @@ Y para cambiarle el nombre a la función, podemos usar la herramienta de buscar 
 
 ***
 
+###Ejercicio 5
+######Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+En [wikipedia](http://en.wikipedia.org/wiki/List_of_build_automation_software) tenemos una lista con algunos de los sistemas de automatización más "famosos" para diversos lenguajes, pero, si ahondamos en internet, podemos ver que existen muchos más. En cuanto al lenguaje que principalmente utilizamos en la asignatura, Python, sabemos que es un lenguaje de programación interpretado, entonces un **make** nos serviría para ejecutar una lista de funciones o tareas en un orden determiando para dar un servicio. En Python, lo más utilizado son los llamados *[módulos](https://docs.python.org/2/tutorial/modules.html)* que vienen a ser paquetes con una lista de funciones que realizan servicios. Para crear un módulo podemos usar un archivo .py o podemos crear un archivo de desarrollador con *[distutils](https://docs.python.org/2/distutils/introduction.html)* para que cualquiera pueda [instalar](https://docs.python.org/2/install/index.html#install-index) tus módulos.
+
+***
