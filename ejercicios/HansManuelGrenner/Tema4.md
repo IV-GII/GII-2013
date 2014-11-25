@@ -15,6 +15,11 @@ A continuación nos colocamos en el directorio creado ( por defecto será "lxc" 
 
 Finalmente usando privilegios de administrador ( ```sudo``` ) podemos realizar la instalación. Los pasos se especifican en el fichero 'INSTALL' incluido en el directorio 'lxc' , la opción más simple para compilar e instalar es la siguiente.
 
+
+* Hola
+* Paco
+
+
 * 	Generamos el fichero 'configure'.
 	
 	```./autogen.sh```
