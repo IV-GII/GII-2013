@@ -433,3 +433,22 @@ sudo apt-get install kvm libvirt-bin
 y también:
 
 sudo apt-get install virtinst
+
+## Ejercicio 9
+No tenia definida la red default asi que 
+nos metemos en virsh y ejecutamos:
+
+net-define /usr/share/libvirt/networks/default.xml
+
+net-autostart default
+
+net-start default
+
+Creamos la imagen:
+
+fallocate -l 512 /var/lib/libvirt/images/guest.img
+
+Lo instalamos
+virt-install -r 64 --accelerate -n DSPLinux 
+  -f /path/to/guest.img 
+  --cdrom /home/pablo/Descargas/dsl-4.11.rc1 --network network=default
