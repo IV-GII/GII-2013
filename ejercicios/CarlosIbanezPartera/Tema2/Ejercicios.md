@@ -182,15 +182,15 @@ Una vez instalados y correctamente configurados. Usando el gestor de paquetes de
 ```sudo gem install rhc```
 
 Al ser la primera vez que lo instalamos, nos saldrá en mitad de la instalación un mensaje:
-![](./Imágenes/rhc1.png)
+![](./Imagenes/rhc1.png)
 
 Así que ejecutamos el comando ```rhc setup```
 
-![](./Imágenes/rhc2.png)
+![](./Imagenes/rhc2.png)
 
 Y tras configurarlo, tendremos algo como:
 
-![](./Imágenes/rhc3.png)
+![](./Imagenes/rhc3.png)
 
 En mi caso ya tengo instalada una aplicación, el wordpress, pero se puede seguir un [tutorial](https://developers.openshift.com/en/getting-started-creating-applications.html) para instalar aplicaciones.
 
@@ -209,13 +209,13 @@ Getting started:
 
 Así que ejecutando el comando ```rhc apps``` obtenemos un listado de las apps que tenemos:
 
-![](./Imágenes/rhc4.png)
+![](./Imagenes/rhc4.png)
 
 
 Ahora, siguendo el [tutorial](https://developers.openshift.com/en/getting-started-modifying-applications.html) para la modificación de aplicaciones, podemos ver que vamos a usar *git* bajo el comando que ya conocemos:
 ``` git clone <git_url> <directory to create> ```
 
-![](./Imágenes/rhc5.png)
+![](./Imagenes/rhc5.png)
 
 Ahora, para ver el fichero de automatización de construcción, podemos seguir la información del [tutorial](https://developers.openshift.com/en/getting-started-modifying-applications.html#customizing-openshift-build-process): desde el directorio en donde hemos clonado mediante git el repositorio, accedemos a la ruta **.openshift/action_hook/build**
 
