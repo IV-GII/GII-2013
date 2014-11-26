@@ -199,10 +199,72 @@ Curiosamente no he encontrado en ninguna documentación la forma de listar las a
 Getting started:
   setup              Connects to OpenShift and sets up your keys and domain
   create-app         Create an application
-  apps               List all your applications
+->apps               List all your applications
   cartridges         List available cartridges
   add-cartridge      Add a cartridge to your application
   set-env            Set one or more environment variable(s) to your application
   logout             End the current session
 
 ```
+
+Así que ejecutando el comando ```rhc apps``` obtenemos un listado de las apps que tenemos:
+
+![](./Imágenes/rhc4.png)
+
+
+Ahora, siguendo el [tutorial](https://developers.openshift.com/en/getting-started-modifying-applications.html) para la modificación de aplicaciones, podemos ver que vamos a usar *git* bajo el comando que ya conocemos:
+``` git clone <git_url> <directory to create> ```
+
+![](./Imágenes/rhc5.png)
+
+Ahora, para ver el fichero de automatización de construcción, podemos seguir la información del [tutorial](https://developers.openshift.com/en/getting-started-modifying-applications.html#customizing-openshift-build-process): desde el directorio en donde hemos clonado mediante git el repositorio, accedemos a la ruta **.openshift/action_hook/build**
+
+![](./Imágenes/rhc6.png)
+
+Y abriendo dicho archivo veremos como automatiza la construcción:
+
+``` bash
+#!/bin/bash
+
+# To update the version shipped in this quickstart, bump this variable:
+#
+install_version="4.0"
+
+# Download and install WordPress
+
+install_dir=${OPENSHIFT_BUILD_DEPENDENCIES_DIR}${install_version}
+
+# Used in this script only
+current_version_dir=${OPENSHIFT_DATA_DIR}current
+
+#
+# If WordPress is already installed in the current gear, there
+# is nothing to build :-)
+#
+[ -d "${current_version_dir}" ] && exit 0
+
+mkdir -p $install_dir
+
+pushd ${install_dir} >/dev/null
+curl -Ls http://wordpress.org/wordpress-${install_version}.tar.gz > wordpress-${install_version}.tar.gz
+
+# Verify the sources
+#
+tarball_md5=$(md5sum wordpress-${install_version}.tar.gz | cut -d ' ' -f 1)
+wordpress_md5=$(curl -Ls http://wordpress.org/wordpress-${install_version}.tar.gz.md5)
+
+if [ "${tarball_md5}" != "${wordpress_md5}" ]; then
+  echo "ERROR: WordPress ${install_version} MD5 checksum mismatch."
+  exit 1;
+fi
+
+# Install WordPress
+#
+tar --strip-components=1 -xzf wordpress-${install_version}.tar.gz
+rm -rf wordpress-${install_version}.tar.gz
+echo $install_version > ${OPENSHIFT_BUILD_DEPENDENCIES_DIR}.current_version
+
+popd >/dev/null
+```
+
+***
