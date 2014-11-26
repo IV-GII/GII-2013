@@ -219,7 +219,7 @@ Ahora, siguendo el [tutorial](https://developers.openshift.com/en/getting-starte
 
 Ahora, para ver el fichero de automatización de construcción, podemos seguir la información del [tutorial](https://developers.openshift.com/en/getting-started-modifying-applications.html#customizing-openshift-build-process): desde el directorio en donde hemos clonado mediante git el repositorio, accedemos a la ruta **.openshift/action_hook/build**
 
-![](./Imágenes/rhc6.png)
+![](./Imagenes/rhc6.png)
 
 Y abriendo dicho archivo veremos como automatiza la construcción:
 
@@ -268,3 +268,51 @@ popd >/dev/null
 ```
 
 ***
+
+###Ejercicio 7
+######Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+En internet, bajo la búsqueda de **python test environment** podemos encontrar muchísimos resultados desde la  [documentación oficial de python](http://docs.python-guide.org/en/latest/writing/tests/) a [módulos de cloud computing de Google](https://cloud.google.com/appengine/docs/python/tools/localunittesting) para test locales.
+
+Buscando entre las herramientas listadas en la documentación de python, me he decantado por [*unittest*](https://docs.python.org/2/library/unittest.html) por estar incluida de forma estándar en las librerías de python.
+
+Usando el [ejemplo](https://docs.python.org/2/library/unittest.html#basic-example) expuesto en la documentación:
+
+``` python
+
+import random
+import unittest
+
+class TestSequenceFunctions(unittest.TestCase):
+
+    def setUp(self):
+        self.seq = range(10)
+
+    def test_shuffle(self):
+        # make sure the shuffled sequence does not lose any elements
+        random.shuffle(self.seq)
+        self.seq.sort()
+        self.assertEqual(self.seq, range(10))
+
+        # should raise an exception for an immutable sequence
+        self.assertRaises(TypeError, random.shuffle, (1,2,3))
+
+    def test_choice(self):
+        element = random.choice(self.seq)
+        self.assertTrue(element in self.seq)
+
+    def test_sample(self):
+        with self.assertRaises(ValueError):
+            random.sample(self.seq, 20)
+        for element in random.sample(self.seq, 5):
+            self.assertTrue(element in self.seq)
+
+if __name__ == '__main__':
+    unittest.main()
+
+```
+
+Obtenemos como resultado a los tres test de carácter aleatorio el mismo resultado que presenta la documentación:
+
+![](./Imagenes/unittest.png)
+
