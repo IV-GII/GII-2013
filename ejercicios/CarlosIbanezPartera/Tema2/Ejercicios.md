@@ -186,4 +186,23 @@ Al ser la primera vez que lo instalamos, nos saldrá en mitad de la instalación
 
 Así que ejecutamos el comando ```rhc setup```
 
+![](./Imágenes/rhc2.png)
 
+Y tras configurarlo, tendremos algo como:
+
+![](./Imágenes/rhc3.png)
+
+En mi caso ya tengo instalada una aplicación, el wordpress, pero se puede seguir un [tutorial](https://developers.openshift.com/en/getting-started-creating-applications.html) para instalar aplicaciones.
+
+Curiosamente no he encontrado en ninguna documentación la forma de listar las apps que el usuario posee, pero tras la ejecución del comando ```rhc --help```, en el listado de ayuda, nos sale al principio:
+```
+Getting started:
+  setup              Connects to OpenShift and sets up your keys and domain
+  create-app         Create an application
+  apps               List all your applications
+  cartridges         List available cartridges
+  add-cartridge      Add a cartridge to your application
+  set-env            Set one or more environment variable(s) to your application
+  logout             End the current session
+
+```
