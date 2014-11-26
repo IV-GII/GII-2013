@@ -1,5 +1,5 @@
 # Ejercicios de FelixParra
-# Modulo I
+# Modulo I - Introduccion a la infraestructura virtual
 
 **Ejercicio 1:**<br />
 **Consultar en el catálogo de alguna tienda de informática el precio de un ordenador tipo servidor y calcular su coste de amortización a cuatro y siete años.**<br /><br />
@@ -93,7 +93,7 @@ Foro: [Contestación](https://github.com/JJ/GII-2014/issues/72 "Contestación")<
 
 <hr />
 
-# Modulo II
+# Modulo II - Creando aplicaciones en la nube
 
 **Ejercicio 1:**<br />
 **Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba,obviamente).**<br />
@@ -138,7 +138,7 @@ Para netbeans, [JUnit](https://netbeans.org/kb/docs/java/junit-intro.html)
 
 <hr />
 
-# Modulo III
+# Modulo III - Técnicas de virtualización
 
 **Ejercicio 1:**<br />
 **Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback**<br />
