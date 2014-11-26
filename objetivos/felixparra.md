@@ -48,7 +48,7 @@
     
 <hr />
 
-# Clase del 10 de noviembre de 2014
+# Clase del 11 de noviembre de 2014
 
 ## Objetivos de la clase
     []Entender el concepto de contenedores
