@@ -63,9 +63,40 @@ Creamos una distro de Centos-6:
 >Creada correctamente.
 
 ###Ejercicio 4.
+Usaremos la distro de Ubuntu que hemos creado en el *ejercicio 3*.
+
+	sudo chroot /home/franexp/saucy32  
+	mount - t proc proc /proc  
+
+Ahora toca instalar *python* para probar el típico Hola Mundo:  
+
+	sudo apt-get install python  
+
+Y probamos el *hola mundo*:  
+
+![t34a](imagenes/t3e4_a.png)  
+>Probando el Hola Mundo.  
 
 
 ###Ejercicio 5.
+En primer lugar añadimos el usuario *franexp2*:
+
+	sudo useradd -s /bin/bash -m -d /home/jaulas/raring/./home/rjmerelo -c "Raring jmerelo" -g users rjmerelo  
+
+En segundo lugar instalamos *nginx*:
+
+	apt-get install nginx  
+
+Lanzamos el servidor:  
+
+	service nginx start  
+
+Finalmente comprobamos la página de inicio de *nginx*:  
+
+	curl localhost  
+
+![t35a](imagenes/t3e5_a.png)  
+>Mostrando la página web por defecto de nginx.
 
 
 ###Ejercicio 6.
