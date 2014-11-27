@@ -100,3 +100,19 @@ Finalmente comprobamos la página de inicio de *nginx*:
 
 
 ###Ejercicio 6.
+En primer lugar preparamos el entorno para poder instalar *jailkit*  
+
+	apt-get install gcc  
+	apt-get install make  
+
+Una vez preparado, descargamos e instalamos *jailkit*  
+
+	wget http://olivier.sessink.nl/jailkit/jailkit-2.17.tar.gz  
+	tar -xzvf jailkit-2.17.tar.gz  
+	cd jailkit-2.17  
+	./configure && make && sudo make install  
+
+Creamos una nueva jaula:  
+
+	sudo mkdir /home/franexp2/auxiliar
+	jk_init -v -j /home/franexp2/auxiliar jk_lsh basicshell netutils editors  
