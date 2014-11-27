@@ -37,11 +37,35 @@ Finalmente lo activamos:
 
 	ifconfig auxbridge up  
 
-
 ###Ejercicio 3.
+######Apartado 1.
+En primer lugar instalamos debootstrap:  
+
+	sudo apt-get install debootstrap  
+
+Creamos la nueva distro:  
+
+	sudo debootstrap --arch=i386 saucy /home/franexp/saucy32/ http://archive.ubuntu.com/ubuntu  
+
+![t33a](imagenes/t3e3_a.png)
+>Creada correctamente.  
+
+######Apartado 2.
+En primer lugar instalamos rinse:
+
+	sudo apt-get install rinse  
+
+Creamos una distro de Centos-6:  
+
+	rinse --arch=i386 --distribution centos-6 --directory /home/franexp/centos6  
+
+![t33b](imagenes/t3e3_b.png)  
+>Creada correctamente.
 
 ###Ejercicio 4.
 
+
 ###Ejercicio 5.
+
 
 ###Ejercicio 6.
