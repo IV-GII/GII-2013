@@ -187,7 +187,7 @@ group usuarios {
     blkio  {
         blkio.weight_device="300"; 
     }
-}
+}`
 
 
 ##Ejercicio 10
@@ -272,4 +272,61 @@ Ejecutamos la aplicación mediante el menú Ejecutar.
 
 ![Aplicacion funcionando](http://i.imgur.com/iVPqBjV.png)
 
+##Ejercicio 5
+###Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
 
+Voy a utilizar gulp.js cuyo requisito es tener instalado node.js
+
+Se instala media la orden 
+`npm install -g gulp`
+
+##Ejercicio 6
+###Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.
+
+El fichero de automatización de Heroku es /apps/:app/builds
+
+El proceso que se sigue es:
+
+- Se pasa el nombre de la aplicación junto con una url que contiene el código fuente de la misma.
+- Se crea una nueva estructura en Heroku que pasa a estado "pendiente" y a "construcción".
+- Cuando se ha completado pasa a estado "exito" o "fracaso".
+
+##Ejercicio 7
+###Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+
+***
+***
+
+#Tema 3
+
+##Ejercicio 1
+###Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback.
+
+Primero creamos el espacio de nombres.
+
+unshare -u /bin/bash
+
+Cambio el nombre del host a "miHost"
+
+`hostname "miHost"`
+
+y montamos el disco
+
+`mount -o loop ubuntu-12.04.4-server-i386.iso /mnt`
+
+##Ejercicio 2
+###Mostrar los puentes configurados en el sistema operativo.
+
+Antes de comenzar instalamos bridge-utils.
+
+Y luego hacemos la consulta con `brctl show`
+![Puentes de mi equipo](http://i.imgur.com/fVmLEgJ.png)
+
+###Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+
+La creamos con 
+`brctl addbr interfazPrueba`
+
+En este caso no tenemos interfaz wifi, pero si la hubiera la asignaríamos con:
+`brctl addif interfazPrueba NombreDeLaInterfazQueQueremosAñadir`
