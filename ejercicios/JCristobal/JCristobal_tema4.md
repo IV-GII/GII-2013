@@ -131,5 +131,60 @@ Accedemos a un contenedor (en estado "Stopped") y modificamos los parámetros, p
 En mi caso modifico el límite de memoria y memoria total + memoria de intercambio a 512 y 1024 MB respectivamente. También cambio a 3 los procesadores que podrá usar la máquina y dejo igual el porcentaje de procesamientos que podrá usar.
 
 
+##Ejercicio 5
+###Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
+
+Primero accedemos a la jaula con `sudo chroot /home/jaulas/saucy/` y arrancamos nginx con `service nginx start`. Una vez hecho esto podemos ver la página visitamos http://127.0.0.1/ en nuestro navegador.
+
+Arrancamos igual nginx en el contenedor y consultamos con `ifconf -a` qué página tenemos que consultar en el navegador, en mi caso http:/10.0.2.15/.
+
+Y para comparar las prestaciones usaremos un ataque Apache Benchmark, y compararemos resultados: usaremos `ab -n 500000 -c 10 http://127.0.0.1/index.html` para la jaula y `ab -n 500000 -c 10 http://10.0.2.15/index.html` para el contenedor.
+
+Repetimos el ataque y anotamos los tiempos, solicitudes por segundo, tiempo por respuesta y velocidad de transeferencia al realizar el test.
+
+contenedor:
+
+Time taken for tests:   26.313 seconds
+Requests per second:    19001.70 [#/sec] (mean)
+Time per request:       0.526 [ms] (mean)
+Time per request:       0.053 [ms] (mean, across all concurrent requests)
+Transfer rate:          6698.84 [Kbytes/sec] received
+
+
+Time taken for tests: 23.532 seconds
+Requests per second:    21247.82 [#/sec] (mean)
+Time per request:       0.471 [ms] (mean)
+Time per request:       0.047 [ms] (mean, across all concurrent requests)
+Transfer rate:          7490.69 [Kbytes/sec] received
+
+
+Time taken for tests:   23.696 seconds
+Requests per second:    21100.41 [#/sec] (mean)
+Time per request:       0.474 [ms] (mean)
+Time per request:       0.047 [ms] (mean, across all concurrent requests)
+Transfer rate:          7438.72 [Kbytes/sec] received
+
+
+Time taken for tests:   23.959 seconds
+Requests per second:    20869.29 [#/sec] (mean)
+Time per request:       0.479 [ms] (mean)
+Time per request:       0.048 [ms] (mean, across all concurrent requests)
+Transfer rate:          7357.24 [Kbytes/sec] received
+
+
+|                       | Tiempo (s) | solicitudes/segundo [#/sec] | tiempo por respuesta [ms]| velocidad de transeferencia [Kbytes/sec] |
+| --------------------- | :--------: | :-------------------------: | :----------------------: | :-------------------------------------:  |
+| Contenedor prueba 1   | 26.313     | 19001.70                    | 0.526                    | 6698.84                                  |
+| Contenedor prueba 2   | 23.532     | 21247.82                    | 0.471                    | 7490.69                                  |
+| Contenedor prueba 3   | 23.696     | 21100.41                    | 0.474                    | 7438.72                                  |
+| Contenedor prueba 4   | 23.959     | 20869.29                    | 0.479                    | 7357.24                                  |
+
+
+
+
+
+
+
+
 
 
