@@ -222,3 +222,69 @@ Lista de objetivos Israel Blancas Álvarez
 
 ***
 ***
+
+##Clase del 11 de noviembre de 2014##
+
+* [X] Entender el concepto de contenedores
+* [X] Configurar el sistema para poder crear y usar contenedores
+* [X] Crear y usar contenedores
+
+###Otros objetivos###
+
+* [X] Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
+* [X] Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
+
+
+***
+***
+
+##Clase del 17 de noviembre de 2014##
+
+* [X] Entender los sistemas de orquestación de máquinas virtuales.
+* [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+###Otros objetivos###
+
+* [X] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+
+
+***
+***
+
+##Clase del 18 de noviembre de 2014##
+* [X] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+* [X] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+* [X] Conocer las aplicaciones y programas que se usan.
+* [X] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+
+###Otros objetivos###
+
+* [X] Familiarizarse con el tejido económico TIC en nuestro entorno local.
+* [X] Conocer qué tipo de perfil buscan estas empresas.
+
+
+***
+***
+
+##Clase del 24 de noviembre de 2014##
+* [X] Resolver problemas con juju.
+* [X] Configuración compleja de sistemas con él.
+* [ ] Entender el concepto de hipervisor y trabajar con ellos.
+
+###Otros objetivos###
+
+* [ ] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+
+***
+***
+
+##Clase del 24 de noviembre de 2014##
+* [X] Resolver problemas con juju.
+* [ ] Entender cómo funciona docker y qué implica.
+
+###Otros objetivos###
+
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [ ] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.

@@ -78,7 +78,7 @@ En la parte superior, si pulsamos sobre un contenedor, podemos editar sus parám
 He utilizado OpenWebLoad como benchmark. He puesto que sean 1000 clientes simultánelos, haciendo peticiones para servir una imagen de 2.5MB (para que al servidor le cueste realizar envíos).
 
 
-**Resultados con el contenedor**:
+**Resultados con el jaula**:
 
 MaTps  65.00, Tps  65.00, Resp Time  0.252, Err   0%, Count	65
 
@@ -109,7 +109,7 @@ MaTps  20.08, Tps   0.20, Resp Time 51.666, Err   0%, Count 132
 MaTps  18.20, Tps   1.28, Resp Time 51.967, Err   0%, Count 134
 
 
-**Resultados con la jaula**:
+**Resultados con la contenedor**:
 
 MaTps  54.15, Tps  50.55, Resp Time  0.514, Err   0%, Count	35
 
@@ -140,7 +140,7 @@ MaTps  11.42, Tps   0.12, Resp Time 63.326, Err   0%, Count 126
 MaTps  10.21, Tps   0.90, Resp Time 67.001, Err   0%, Count 128
 
 
-Como se puede ver, la jaula es más lenta (sirve menos peticiones) que el contenedor.
+Como se puede ver, la jaula es más rápida (sirve más peticiones) que el contenedor. Esto es debido a que el contenedor tiene que acceder a través del puente (el que se crea cuando se instala).
 
 
 
@@ -163,4 +163,51 @@ Después, he procedido a instalar en el contenedor "MySQL" y "Mediawiki". He obt
 `error: ambiguous relation: "mediawiki mysql" could refer to "mediawiki:db mysql:db"; "mediawiki:slave mysql:db"`
 
 que he solucionado utilizando [este enlace](https://juju.ubuntu.com/docs/charms-relations.html) (que ya he añadido al documento de la sesión), ejecutando:
+
 `juju add-relation mediawiki:db mysql`
+
+
+
+***
+
+##Ejercicio 7##
+
+#####1. Destruir toda la configuración creada anteriormente#####
+#####2. Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.#####
+#####3. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.#####
+
+Para destruir la configuración realizada, he tenido que ejecutar los siguientes comandos:
+
+```
+  juju destroy-service mysql
+  juju destroy-service mediawiki
+  sudo juju destroy-environment local
+```
+
+Al tratar de comprobar si la configuración ha sido borrada correctamente, se obtiene este mensaje:
+
+![Mensaje juju](http://fotos.subefotos.com/869d8bec8a570c1596b7e4203c6acdbao.jpg)
+
+He vuelto a ejecutar todos los pasos:
+
+```
+juju bootstrap
+juju deploy mediawiki
+juju deploy mysql
+juju add-relation mediawiki:db mysql
+juju expose mediawiki
+```
+
+Y mediante `juju status` compruebo que todo funcione adecuadamente.
+
+El script para aplicar la configuración es el siguiente:
+
+```bash
+juju switch local
+sudo juju bootstrap
+juju deploy mediawiki
+juju deploy mysql
+juju add-relation mediawiki:db mysql
+juju expose mediawiki
+echo "Finalizado correctamente"
+```
