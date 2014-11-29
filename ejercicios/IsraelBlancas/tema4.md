@@ -34,3 +34,20 @@ Y ejecutando `brctl show`
 + lxcbr0
 
 De esta forma el contenedor tiene acceso a Internet.
+
+
+
+***
+
+##Ejercicio 3##
+
+#####1. Crear y ejecutar un contenedor basado en Debian.#####
+#####2. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, [Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.](https://github.com/IV-GII/GII-2013/issues/87#issuecomment-28639976)#####
+
+Para crear el contenedor Debian, simplemente he ejecutado `sudo lxc-create -t debian -n debianita` y lo he ejecutado con `sudo lxc-start -n debianita`
+
+![Contenedor Debian](http://fotos.subefotos.com/7faad1163abf4a78800ab2d21f511a29o.jpg)
+
+Para crear el contenedor CentOS, simplemente he ejecutado `sudo lxc-create -t centos -n new` y lo he ejecutado con `sudo lxc-start -n new`
+
+![Contenedor CentOS](http://fotos.subefotos.com/2ae8ba0bd41bb97cf90cf428a553b4d6o.jpg)
