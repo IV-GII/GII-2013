@@ -10,22 +10,27 @@ Lista de ejercicios Israel Blancas Álvarez
 
 #####Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.#####
 
-Tras descargar el software, clonando el repositorio, se entra al directorio y se ejecuta:
+Hay que realizar la instalación desde el repositorio:
 
-``./autogen.sh && ./configure && make && sudo make install``
-
-Puede que lance el siguiente mensaje de error:
-
-```
-+ test -d autom4te.cache
-+ aclocal -I config
-./autogen.sh: 27: ./autogen.sh: aclocal: not found
-+ exit 1
-```
-
-Para solucionarlo, hay que instalar el paquete "autoconf":
-``sudo apt-get install autoconf``
+``sudo apt-get install lxc``
 
 Una vez hecho esto, será necesario comprobar si nuestra máquina es compatible utilizando el comando ``lxc-checkconfig``
 
 ![Captura lxc](http://fotos.subefotos.com/f289a0c38382f213b138934705503884o.jpg)
+
+
+
+***
+
+##Ejercicio 2##
+
+#####Comprobar qué interfaces puente se han creado y explicarlos.#####
+
+Tras ejecutar `ipconfig -a`, veo que se han creado dos nuevas interfaces:
++ lxcbr0
++ veth06TK6W
+
+Y ejecutando `brctl show`
++ lxcbr0
+
+De esta forma el contenedor tiene acceso a Internet.
