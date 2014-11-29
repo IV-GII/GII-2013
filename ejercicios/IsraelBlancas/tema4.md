@@ -51,3 +51,19 @@ Para crear el contenedor Debian, simplemente he ejecutado `sudo lxc-create -t de
 Para crear el contenedor CentOS, simplemente he ejecutado `sudo lxc-create -t centos -n new` y lo he ejecutado con `sudo lxc-start -n new`
 
 ![Contenedor CentOS](http://fotos.subefotos.com/2ae8ba0bd41bb97cf90cf428a553b4d6o.jpg)
+
+
+
+***
+
+##Ejercicio 3##
+
+#####1. Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.#####
+#####2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.#####
+Tras instalarlo utilizando `wget http://lxc-webpanel.github.io/tools/install.sh -O - | sudo bash`, he accedido a `http://localhost:5000` y he gestionado los contenedores.
+
+![lxc-webpanel](http://fotos.subefotos.com/13b4bef58137ba2ae35a780054990dd4o.jpg)
+
+En la parte superior, si pulsamos sobre un contenedor, podemos editar sus parámetros
+
+![lxc-webpanel edición de contenedor](http://fotos.subefotos.com/87fd42d0ca32de2a319a0c6058830c6co.jpg)
