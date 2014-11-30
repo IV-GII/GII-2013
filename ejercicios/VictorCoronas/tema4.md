@@ -133,10 +133,48 @@ Hecho esto en el contenedor, procedemos a entrar en la jaula donde lanzamos ngin
 
 y listo.
 
-
 * [+]Ejercicio 6
  - A) Instalar juju.
+
+El primer paso que tenemos que dar es el siguiente, que es añadir el [repositorio](https://www.dropbox.com/s/188lfijcr3qwewe/Captura%20de%20pantalla%202014-11-30%20a%20la%28s%29%2018.53.53.png?dl=0):
+
+    add-apt-repository ppa:juju/stable
+
+Seguidamente hacemos un update:
+
+    apt-get update
+
+Y por último pasamos a su [instalaión](https://www.dropbox.com/s/fmtb5v67sd1az3l/Captura%20de%20pantalla%202014-11-30%20a%20la%28s%29%2019.05.15.png?dl=0):
+
+    apt-get install juju-core
+
  - B) Usándolo, instalar MySQL en un táper.
+
+Ahora lo que tenemos que hacer es [inicializar](https://www.dropbox.com/s/tpas34outcz0a11/Captura%20de%20pantalla%202014-11-30%20a%20la%28s%29%2019.08.06.png?dl=0) JUJU con:
+
+    juju init
+
+Después entramos en el fichero:
+
+    vim ~/.juju/environments.yaml
+
+Para cambiar la línea:
+
+    default:amazon
+
+por:
+
+    default:local
+
+[Ver](https://www.dropbox.com/s/uuz79qjlp9x7ehg/Captura%20de%20pantalla%202014-11-30%20a%20la%28s%29%2019.15.53.png?dl=0)
+
+Una vez hecho esto procedemos a hacer lo siguiente:
+
+    juju switch local
+    juju bootstrap
+    juju deploy mysql
+    juju status
+
 
 * [+]Ejercicio 7
  - A) Destruir toda la configuración creada anteriormente.
