@@ -138,9 +138,9 @@ Primero accedemos a la jaula con `sudo chroot /home/jaulas/saucy/` y arrancamos 
 
 Arrancamos igual nginx en el contenedor y consultamos con `ifconf -a` qué página tenemos que consultar en el navegador, en mi caso http:/10.0.2.15/.
 
-Y para comparar las prestaciones usaremos un ataque Apache Benchmark, y compararemos resultados: usaremos `ab -n 500000 -c 10 http://127.0.0.1/index.html` para la jaula y `ab -n 500000 -c 10 http://10.0.2.15/index.html` para el contenedor.
+Y para comparar las prestaciones usaremos un ataque Apache Benchmark (fuera de la jaula y el contendor), y compararemos resultados: usaremos `ab -n 500000 -c 10 http://127.0.0.1/index.html` para la jaula y `ab -n 500000 -c 10 http://10.0.2.15/index.html` para el contenedor.
 
-Repetimos el ataque y anotamos los tiempos, solicitudes por segundo, tiempo por respuesta y velocidad de transeferencia al realizar el test.
+Repetimos el ataque y anotamos los tiempos, solicitudes por segundo, tiempo por respuesta y velocidad de transeferencia al realizar los test:
 
 contenedor:
 
@@ -172,17 +172,58 @@ Time per request:       0.048 [ms] (mean, across all concurrent requests)
 Transfer rate:          7357.24 [Kbytes/sec] received
 
 
+Jaula:
+
+Time taken for tests:   19.050 seconds
+Requests per second:    26246.18 [#/sec] (mean)
+Time per request:       0.381 [ms] (mean)
+Time per request:       0.038 [ms] (mean, across all concurrent requests)
+Transfer rate:          21632.59 [Kbytes/sec] received
+
+Time taken for tests:   18.771 seconds
+Requests per second:    26636.49 [#/sec] (mean)
+Time per request:       0.375 [ms] (mean)
+Time per request:       0.038 [ms] (mean, across all concurrent requests)
+Transfer rate:          21954.29 [Kbytes/sec] received
+
+Time taken for tests:   17.060 seconds
+Requests per second:    29308.97 [#/sec] (mean)
+Time per request:       0.341 [ms] (mean)
+Time per request:       0.034 [ms] (mean, across all concurrent requests)
+Transfer rate:          24157.01 [Kbytes/sec] received
+
+Time taken for tests:   17.196 seconds
+Requests per second:    29076.06 [#/sec] (mean)
+Time per request:       0.344 [ms] (mean)
+Time per request:       0.034 [ms] (mean, across all concurrent requests)
+Transfer rate:          23965.04 [Kbytes/sec] received
+
+
+
+
 |                       | Tiempo (s) | solicitudes/segundo [#/sec] | tiempo por respuesta [ms]| velocidad de transeferencia [Kbytes/sec] |
 | --------------------- | :--------: | :-------------------------: | :----------------------: | :-------------------------------------:  |
 | Contenedor prueba 1   | 26.313     | 19001.70                    | 0.526                    | 6698.84                                  |
 | Contenedor prueba 2   | 23.532     | 21247.82                    | 0.471                    | 7490.69                                  |
 | Contenedor prueba 3   | 23.696     | 21100.41                    | 0.474                    | 7438.72                                  |
 | Contenedor prueba 4   | 23.959     | 20869.29                    | 0.479                    | 7357.24                                  |
+|                       |            |                             |                          |                                          |
+| Jaula      prueba 1   |   19.050   | 26246.18                    | 0.381                    | 21632.59                                 |
+| Jaula      prueba 2   |  18.771    | 26636.49                    | 0.375                    |21954.29                                  |
+| Jaula      prueba 3   |   18.771   | 29308.97                    | 0.341                    | 24157.01                                 |
+| Jaula      prueba 4   |   17.196   | 29076.06                    | 0.341                    | 23965.04                                 |
+
+
+Y a continuación muestro las medias de los resultados obtenidos para ver mejor la comparación:
+
+|       Medias          | Tiempo (s) | solicitudes/segundo [#/sec] | tiempo por respuesta [ms]| velocidad de transeferencia [Kbytes/sec] |
+| --------------------- | :--------: | :-------------------------: | :----------------------: | :-------------------------------------:  |
+| Contenedor            |   24,375   |       20554,805             |      0,4875              |     7246,3725                            |
+| Jaula                 |   18,447   |       27816,925             |      0,3595              |    22927,2325                            |
 
 
 
-
-
+Vemos que la jaula da mejores prestaciones, vemos que son cifras algo superiores, sobre todo en la velocidad de transeferencia: mejoran bastante los resultados del contenedor aún siendo un ataque con la utilidad "ab" no muy agresivo.
 
 
 
