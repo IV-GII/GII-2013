@@ -226,6 +226,25 @@ Y a continuación muestro las medias de los resultados obtenidos para ver mejor 
 Vemos que la jaula da mejores prestaciones, vemos que son cifras algo superiores, sobre todo en la velocidad de transeferencia: mejoran bastante los resultados del contenedor aún siendo un ataque con la utilidad "ab" no muy agresivo.
 
 
+##Ejercicio 6 
+###Instalar juju.
+
+Instalamos juju según [el guión del tema](http://jj.github.io/IV/documentos/temas/Contenedores#configurando-las-aplicaciones-en-un-tper). Una vez instalado muestro algún [pantallazo al listar los contenedores](http://i.imgur.com/YVcP6dX.png).
+
+
+###Usándolo, instalar MySQL en un táper.
+
+Seguimos con el guión para instalarlo: ejecutamos `juju deploy mediawiki` y `juju deploy mysql`
+
+![imagen](http://i.imgur.com/6P6eeiZ.png)
+
+Y para indicar que mediawiki va a usar precisamente mysql como base de datos añadimos la relación `juju add-relation mediawiki:db  mysql`:
+
+![imagen](http://i.imgur.com/sacbRGf.png)
+
+
+
+
 
 
 
