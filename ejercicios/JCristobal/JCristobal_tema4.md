@@ -297,7 +297,7 @@ Y creamos contenedores: `sudo docker pull ubuntu`
 
 
 
-## Ejercicio 10	
+## Ejercicio 11	
 ###Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
 
 Instalaremos CentOs, simplemente ejecutando `sudo docker pull centos`:
@@ -306,11 +306,12 @@ Instalaremos CentOs, simplemente ejecutando `sudo docker pull centos`:
 
 ###Buscar e instalar una imagen que incluya MongoDB.
 
-Busco en el [enlace](https://registry.hub.docker.com/search?q=mongodb&searchfield=) proporcionado en los apuntes y encuentro un [imagen de Gentoo basada en MongoDB](https://registry.hub.docker.com/u/hairmare/mongodb/)
+Busco en el [enlace](https://registry.hub.docker.com/search?q=mongodb&searchfield=) proporcionado en los apuntes y encuentro un [imagen de Gentoo con MongoDB](https://registry.hub.docker.com/u/hairmare/mongodb/)
 
 Y ejecuto `sudo docker pull hairmare/mongodb`:
 
 ![imagen](http://i.imgur.com/JmzUEZJ.png)
+
 
 
 
