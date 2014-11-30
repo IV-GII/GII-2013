@@ -114,9 +114,9 @@
 ##Objetivos de sesión 16
 
 * [x] Entender los sistemas de orquestación de máquinas virtuales.
-* [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+* [x] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
-* [] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+* [x] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
 
 ##Objetivos de sesión 17 - Trevenque
 
@@ -130,8 +130,8 @@
 
 ##Objetivos de sesión 18
 
-* [] Resolver problemas con juju.
-* [] Configuración compleja de sistemas con él.
+* [x] Resolver problemas con juju.
+* [x] Configuración compleja de sistemas con él.
 * [] Entender el concepto de hipervisor y trabajar con ellos.
 
 * [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
@@ -139,7 +139,7 @@
 
 ##Objetivos de sesión 19
 
-* [] Entender cómo funciona docker y qué implica.
+* [x] Entender cómo funciona docker y qué implica.
 
 
 
