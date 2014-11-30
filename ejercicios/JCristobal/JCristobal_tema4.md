@@ -142,64 +142,6 @@ Y para comparar las prestaciones usaremos un ataque Apache Benchmark (fuera de l
 
 Repetimos el ataque y anotamos los tiempos, solicitudes por segundo, tiempo por respuesta y velocidad de transeferencia al realizar los test:
 
-contenedor:
-
-Time taken for tests:   26.313 seconds
-Requests per second:    19001.70 [#/sec] (mean)
-Time per request:       0.526 [ms] (mean)
-Time per request:       0.053 [ms] (mean, across all concurrent requests)
-Transfer rate:          6698.84 [Kbytes/sec] received
-
-
-Time taken for tests: 23.532 seconds
-Requests per second:    21247.82 [#/sec] (mean)
-Time per request:       0.471 [ms] (mean)
-Time per request:       0.047 [ms] (mean, across all concurrent requests)
-Transfer rate:          7490.69 [Kbytes/sec] received
-
-
-Time taken for tests:   23.696 seconds
-Requests per second:    21100.41 [#/sec] (mean)
-Time per request:       0.474 [ms] (mean)
-Time per request:       0.047 [ms] (mean, across all concurrent requests)
-Transfer rate:          7438.72 [Kbytes/sec] received
-
-
-Time taken for tests:   23.959 seconds
-Requests per second:    20869.29 [#/sec] (mean)
-Time per request:       0.479 [ms] (mean)
-Time per request:       0.048 [ms] (mean, across all concurrent requests)
-Transfer rate:          7357.24 [Kbytes/sec] received
-
-
-Jaula:
-
-Time taken for tests:   19.050 seconds
-Requests per second:    26246.18 [#/sec] (mean)
-Time per request:       0.381 [ms] (mean)
-Time per request:       0.038 [ms] (mean, across all concurrent requests)
-Transfer rate:          21632.59 [Kbytes/sec] received
-
-Time taken for tests:   18.771 seconds
-Requests per second:    26636.49 [#/sec] (mean)
-Time per request:       0.375 [ms] (mean)
-Time per request:       0.038 [ms] (mean, across all concurrent requests)
-Transfer rate:          21954.29 [Kbytes/sec] received
-
-Time taken for tests:   17.060 seconds
-Requests per second:    29308.97 [#/sec] (mean)
-Time per request:       0.341 [ms] (mean)
-Time per request:       0.034 [ms] (mean, across all concurrent requests)
-Transfer rate:          24157.01 [Kbytes/sec] received
-
-Time taken for tests:   17.196 seconds
-Requests per second:    29076.06 [#/sec] (mean)
-Time per request:       0.344 [ms] (mean)
-Time per request:       0.034 [ms] (mean, across all concurrent requests)
-Transfer rate:          23965.04 [Kbytes/sec] received
-
-
-
 
 |                       | Tiempo (s) | solicitudes/segundo [#/sec] | tiempo por respuesta [ms]| velocidad de transeferencia [Kbytes/sec] |
 | --------------------- | :--------: | :-------------------------: | :----------------------: | :-------------------------------------:  |
@@ -223,7 +165,7 @@ Y a continuación muestro las medias de los resultados obtenidos para ver mejor 
 
 
 
-Vemos que la jaula da mejores prestaciones, vemos que son cifras algo superiores, sobre todo en la velocidad de transeferencia: mejoran bastante los resultados del contenedor aún siendo un ataque con la utilidad "ab" no muy agresivo.
+Vemos que la jaula da mejores prestaciones, vemos que son cifras algo superiores, sobre todo en la velocidad de transeferencia y en el tiempo al realizar el test: mejoran bastante los resultados del contenedor aún siendo un ataque con la utilidad "ab" no muy agresivo.
 
 
 ##Ejercicio 6 
@@ -315,8 +257,60 @@ Y acceder a la interfaz gráfica e instalarlo con: `virt-viewer -c qemu:///syste
 
 
 
+## Ejercicio 10		
+###Instalar docker.
+
+http://jj.github.io/IV/documentos/temas/Contenedores#gestin-de-contenedores-con-docker
+
+http://docs.docker.com/installation/ubuntulinux/#ubuntu-trusty-1404-lts-64-bit
+https://github.com/germaaan/IV_GMM/blob/master/TEMA3/ejercicio10.md
+
+Para instalarlo seguimos el tutorial para [Ubuntu 14.04  (64-bit)](http://docs.docker.com/installation/ubuntulinux/#ubuntu-trusty-1404-lts-64-bit)
+
+Podemos realizarlo de 2 maneras:
+
+> Ejecutamos `sudo apt-get install docker.io` y `source /etc/bash_completion.d/docker.io`
+> 
+> Comprobamos que existe el fichero /usr/lib/apt/methods/https. Si no existe tendremos que instalar el paquete apt-transport-https con `apt-get install apt-transport-https`.
+> 
+> A continuación, añadimos la llave del repositorio Docker:
+> 
+> `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9 `
+> 
+> Por último ejecutamos
+> `sudo sh -c "echo deb https://get.docker.com/ubuntu docker main\ /etc/apt/sources.list.d/docker.list"`, `sudo apt-get update` y `sudo apt-get install lxc-docker`
+> 
+
+> 
+> o ejecutando simplemente un script de curl: `curl -sSL https://get.docker.com/ubuntu/ | sudo sh`
+> 
+
+Ahora lo podremos ejecutar como servicio: `sudo docker -d &`
+
+En mi caso, además tengo que ejecutar `sudo rm  /var/run/docker.pid`, ya que me aparece el aviso "pid file found, ensure docker is not running or delete /var/run/docker.pid". Una vez hecho esto puedo ejecutar sin problema.
+
+![imagen](http://i.imgur.com/PKRq0HM.png)
+
+Y creamos contenedores: `sudo docker pull ubuntu`
+
+![imagen](http://i.imgur.com/J9uz60G.png)
 
 
+
+## Ejercicio 10	
+###Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
+
+Instalaremos CentOs, simplemente ejecutando `sudo docker pull centos`:
+
+![imagen](http://i.imgur.com/wZdZ8dV.png)
+
+###Buscar e instalar una imagen que incluya MongoDB.
+
+Busco en el [enlace](https://registry.hub.docker.com/search?q=mongodb&searchfield=) proporcionado en los apuntes y encuentro un [imagen de Gentoo basada en MongoDB](https://registry.hub.docker.com/u/hairmare/mongodb/)
+
+Y ejecuto `sudo docker pull hairmare/mongodb`:
+
+![imagen](http://i.imgur.com/JmzUEZJ.png)
 
 
 
