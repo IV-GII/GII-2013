@@ -244,6 +244,37 @@ Y para indicar que mediawiki va a usar precisamente mysql como base de datos añ
 
 
 
+##Ejercicio 7
+###Destruir toda la configuración creada anteriormente
+
+Simplemente ejecutamos: `juju destroy-service mysql`, `juju destroy-service mediawiki` y `sudo juju destroy-environment local`:
+
+![imagen](http://i.imgur.com/H7Zb0gk.png)
+
+
+###Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.
+
+Volvemos a ejecutar: 
+
+`juju bootstrap` para crear el táper, `juju deploy mediawiki` y `juju deploy mysql` para instalar estas utilidades y  `juju add-relation mediawiki:db mysql` para añadir la relación. Para exponer el servicio: `juju expose mediawiki`.
+
+Y podemos comprobar el estado de la máquina: `juju status`
+
+
+###Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
+
+Simplemente ejecutaremos los comandos vistos anteriormente, y e indicamos el entorno con el que se va a trabajar.
+
+> 
+> `juju switch local`
+> `sudo juju bootstrap`
+> `juju deploy mediawiki`
+> `juju deploy mysql`
+> `juju add-relation mediawiki:db mysql`
+> `juju expose mediawiki`
+> 
+
+
 
 
 

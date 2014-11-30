@@ -130,8 +130,8 @@
 
 ##Objetivos de sesión 18
 
-* [] Resolver problemas con juju.
-* [] Configuración compleja de sistemas con él.
+* [x] Resolver problemas con juju.
+* [x] Configuración compleja de sistemas con él.
 * [] Entender el concepto de hipervisor y trabajar con ellos.
 
 * [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
