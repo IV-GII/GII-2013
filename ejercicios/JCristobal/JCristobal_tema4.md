@@ -260,11 +260,6 @@ Y acceder a la interfaz gráfica e instalarlo con: `virt-viewer -c qemu:///syste
 ## Ejercicio 10		
 ###Instalar docker.
 
-http://jj.github.io/IV/documentos/temas/Contenedores#gestin-de-contenedores-con-docker
-
-http://docs.docker.com/installation/ubuntulinux/#ubuntu-trusty-1404-lts-64-bit
-https://github.com/germaaan/IV_GMM/blob/master/TEMA3/ejercicio10.md
-
 Para instalarlo seguimos el tutorial para [Ubuntu 14.04  (64-bit)](http://docs.docker.com/installation/ubuntulinux/#ubuntu-trusty-1404-lts-64-bit)
 
 Podemos realizarlo de 2 maneras:
@@ -280,6 +275,7 @@ Podemos realizarlo de 2 maneras:
 > Por último ejecutamos
 > `sudo sh -c "echo deb https://get.docker.com/ubuntu docker main\ /etc/apt/sources.list.d/docker.list"`, `sudo apt-get update` y `sudo apt-get install lxc-docker`
 > 
+
 
 > 
 > o ejecutando simplemente un script de curl: `curl -sSL https://get.docker.com/ubuntu/ | sudo sh`
@@ -312,6 +308,24 @@ Y ejecuto `sudo docker pull hairmare/mongodb`:
 
 ![imagen](http://i.imgur.com/JmzUEZJ.png)
 
+
+## Ejercicio 12
+###Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.
+
+Ejecutamos en el contenedor `sudo docker run -i -t ubuntu /bin/bash`
+
+Dentro del contendor creamos el  usuario:
+`useradd -d /home/usuariodocker -m usuariodocker`, le cambiamos la contraseña  `passwd usuariodocker`, lo añadimos `adduser usuariodocker sudo` y nos logueamos: `login usuariodocker`
+
+![imagen](http://i.imgur.com/MDUGu61.png)
+
+Ahora instalaremos nginx:
+
+`sudo apt-get update` y `sudo apt-get install nginx`
+
+Una vez instalado arrancamos nginx y vemos que funciona:
+
+![imagen](http://i.imgur.com/Jkoh72z.png)
 
 
 
