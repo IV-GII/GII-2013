@@ -295,6 +295,27 @@ Una vez instalado podemos usar virsh:
 ![imagen](http://i.imgur.com/R1kMece.png)
 
 
+## Ejercicio 9
+###Instalar un contenedor usando virt-install.
+
+Ejecutamos `sudo apt-get install virtinst` para instalarlo.
+
+También instalamos virt-viewer para conectarnos a la máquina virtual con `sudo apt-get install virt-viewer`.
+
+Ahora instalamos un contenedor, en mi caso ejecuto `sudo virt-install -n virt-ubuntuserver -r 512 --disk path=/var/lib/libvirt/images/virt-ubuntuserver.img,bus=virtio,size=5 -c ubuntu-14.04.1-server-i386.iso --accelerate --network network=default,model=virtio --connect=qemu:///system --vnc --noautoconsole -v`:
+
+![imagen](http://i.imgur.com/v1AK9pN.png)
+
+
+Podemos ver el listado de los contendores con: `sudo virsh -c qemu:///system list`.
+
+Y acceder a la interfaz gráfica e instalarlo con: `virt-viewer -c qemu:///system virt-ubuntuserver`:
+
+![imagen](http://i.imgur.com/qYPiTcu.png)
+
+
+
+
 
 
 
