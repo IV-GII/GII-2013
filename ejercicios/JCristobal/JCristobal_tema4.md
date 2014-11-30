@@ -263,16 +263,36 @@ Y podemos comprobar el estado de la máquina: `juju status`
 
 ###Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
 
-Simplemente ejecutaremos los comandos vistos anteriormente, y e indicamos el entorno con el que se va a trabajar.
+Simplemente ejecutaríamos los comandos vistos anteriormente e indicamos el entorno con el que se va a trabajar, por lo que el script contendría:
 
 > 
 > `juju switch local`
+> 
 > `sudo juju bootstrap`
+> 
 > `juju deploy mediawiki`
+> 
 > `juju deploy mysql`
+> 
 > `juju add-relation mediawiki:db mysql`
+> 
 > `juju expose mediawiki`
 > 
+
+## Ejercicio 8
+###Instalar libvirt. Te puede ayudar [esta guía para Ubuntu.](https://help.ubuntu.com/12.04/serverguide/libvirt.html)
+
+Seguimos el tutorial del enunciado. 
+
+Para saber si soportamos las extensiones de virtualización necesarios para KVM ejecutamos: `kvm-ok`
+
+![imagen](http://i.imgur.com/LJENe4I.png)
+
+Como es compatible lo podemos instalar: `sudo apt-get install kvm libvirt-bin`
+
+Una vez instalado podemos usar virsh:
+
+![imagen](http://i.imgur.com/R1kMece.png)
 
 
 
