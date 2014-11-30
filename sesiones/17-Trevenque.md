@@ -25,5 +25,4 @@ Objetivos
 
 ## Siguiente clase
 
-24 de noviembre.
-
+[24 de noviembre](18.md).
