@@ -281,5 +281,5 @@ Objetivos
 
 ##Otros objetivos
 
-* [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 * [] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
