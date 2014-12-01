@@ -191,18 +191,15 @@ Para comparar las prestaciones vamos a usar una jaula y un contenedor con el mis
 ![captura16](http://i.imgur.com/p8OrhMG.png)
 
 * Vemos que también está ejecutándose en el contenedor:
-
 ![captura17](http://i.imgur.com/Mj7SXQT.png)
 
 
 Comprobamos que en ambos servidores funcione correctamente, así que desde el navegador de nuestro sistema accedemos a la dirección de ambos servidores.
 
 * Para acceder al servicio instalado dentro del contenedor **"http://10.0.3.69/"**:
-
 ![captura18](http://i.imgur.com/qabrEm2.png)
 
 * Para acceder al servicio instalado dentro de la jaula **"http://10.0.2.45/"**:
-
 ![captura19](http://i.imgur.com/6FtsCUc.png)
 
 Ambos servidores funcionan correctamente como podemos ver anteriormente en las capturas, por lo tanto, vamos a medir las prestaciones de los mismos. Para realizar la medición procedemos a utilizar la aplicación **"ab"** (Apache Benchmark), una utilidad muy sencilla que nos permite hacer pruebas de carga a cualquier tipo de servidor web. Para usarlo hay que indicar un número de conexiones a realizar y la concurrencia con la que se realizarán las mismas. Para obtener resultados más exactos vamos a realizar el test a cada servidor unas **10 veces**, con número de conexiones que será **1000000** y una concurrencia que será **10**.
@@ -228,7 +225,7 @@ Vamos a usar ab -n 1000000 -c 10 **http://10.0.2.45/** para la jaula y ab -n 100
 | Desviación  |         5,723        |         1923,432        |            1123,920            |         7,434        |         1893,827        |             840,343            |
 
 
-Fijandonos en los resultados obtenidos, podriamos decir que la jaula es la que presenta mejores resultados, al tener una velocidad de transferencia mayor, mayor número de solicitudes por segundo, y un tiempo de ejecución algo más pequeño. Sin embargo, para hacer una comparación más precisa, deberiamos de haber realizado una mayor cantidad de test y además, deberian de ser bastante más agresivos para poder comparar bien las prestaciones tanto en la jaula como en el contenedor. 
+Si nos fijamos en los resultados obtenidos, podriamos decir que la jaula es la que presenta mejores resultados, al tener una velocidad de transferencia mayor, mayor número de solicitudes por segundo, y un tiempo de ejecución algo más pequeño. Sin embargo, para hacer una comparación más precisa, deberiamos de haber realizado una mayor cantidad de test y además, deberian de ser bastante más agresivos para poder comparar bien las prestaciones tanto en la jaula como en el contenedor. 
 
 
 
