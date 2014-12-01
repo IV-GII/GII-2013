@@ -434,6 +434,24 @@ Se ha instalado "sudo apt-get install juju-local" .
 ## Ejercicio 6
 
 ![Imgur](http://i.imgur.com/q8D8j62.png)
+
+
+## Ejercicio 7
+
+![Imgur](http://i.imgur.com/jXQpZsG.png)
+
+La segunda pregunta esta hecha en el apartado anterior.
+
+#!/bin/bash
+juju switch local
+sudo juju bootstrap
+juju deploy mediawiki
+juju deploy mysql
+
+juju add-relation mediawiki:db mysql
+
+juju expose mediawiki
+
 ## Ejercicio 8
 Descomentamos la linea que busca en el cdrom en
 /etc/apt/sources.list
