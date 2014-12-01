@@ -444,8 +444,11 @@ La segunda pregunta esta hecha en el apartado anterior.
 
 \#!/bin/bash
 juju switch local
+
 sudo juju bootstrap
+
 juju deploy mediawiki
+
 juju deploy mysql
 
 juju add-relation mediawiki:db mysql
@@ -480,7 +483,7 @@ fallocate -l 512 /var/lib/libvirt/images/guest.img
 
 Lo instalamos
 virt-install -r 64 --accelerate -n DSPLinux 
-  -f /path/to/guest.img 
+  -f var/lib/libvirt/images/guest.img 
   --cdrom /home/pablo/Descargas/dsl-4.11.rc1 --network network=default
 
 ## Ejercicio 10
@@ -497,3 +500,21 @@ sudo apt-get install -t wheezy-backports linux-image-amd64
 Instalamos finalmente docker:
 
 curl -sSL https://get.docker.com/ | sh
+
+Pero esto nos da problemas, asi que usamos Ubuntu.
+
+sudo apt-get install docker.io
+
+## Ejercicio 11
+
+![Imgur](http://i.imgur.com/G6XGq8t.png)
+
+Para Cent Os
+
+sudo docker pull centos.
+
+Para MongoDB utilizamos una imagen Debian que hemos encontrado en el enlace proporcionado.
+
+sudo docker pull ncarlier/mongodb/
+
+## Ejercicio
