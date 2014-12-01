@@ -207,19 +207,20 @@ Y podemos comprobar el estado de la máquina: `juju status`
 
 Simplemente ejecutaríamos los comandos vistos anteriormente e indicamos el entorno con el que se va a trabajar, por lo que el script contendría:
 
-> 
-> `juju switch local`
-> 
-> `sudo juju bootstrap`
-> 
-> `juju deploy mediawiki`
-> 
-> `juju deploy mysql`
-> 
-> `juju add-relation mediawiki:db mysql`
-> 
-> `juju expose mediawiki`
-> 
+```
+juju switch local
+
+sudo juju bootstrap
+
+juju deploy mediawiki
+
+juju deploy mysql
+
+juju add-relation mediawiki:db mysql
+
+juju expose mediawiki
+
+```
 
 ## Ejercicio 8
 ###Instalar libvirt. Te puede ayudar [esta guía para Ubuntu.](https://help.ubuntu.com/12.04/serverguide/libvirt.html)
@@ -354,7 +355,9 @@ Y si queremos ver información del contenedor ejecutamos `sudo docker inspect 75
 ## Ejercicio 14
 ###Crear una imagen con las herramientas necesarias para DAI sobre un sistema operativo de tu elección. 
 
-Nos registramos en Docker https://hub.docker.com/account/signup/ , que podemos vincular a GitHub. Una vez registrado seleccionamos "Automated build":
+Nos registramos en Docker https://hub.docker.com/account/signup/ , que podemos vincular a GitHub y usar un repositorio para crear la imagen. Yo usaré [uno propio](https://github.com/JCristobal/ubuntudai), con Ubuntu y algunas herramientas básicas. 
+
+Una vez registrado seleccionamos "Automated build":
 
 [Creando el repositorio](http://i.imgur.com/Y5iFbIX.png)
 
@@ -370,7 +373,7 @@ Ya está subida correctamente, ahora podremos instalarla desde cualquier termina
 
 [Instalación](http://i.imgur.com/f54km06.png)
 
-Y probamos a trabajar con ella, accediendo a la consola de python que hemos instalado, por ejemplo, `sudo docker run -i -t jcristobal/ubuntudai /bin/bash`:
+Y probamos a trabajar con ella, accediendo a la consola de python que hemos instalado, por ejemplo: `sudo docker run -i -t jcristobal/ubuntudai /bin/bash`:
 
 ![imagen](http://i.imgur.com/qAC1w8w.png)
 
