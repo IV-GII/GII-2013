@@ -354,22 +354,23 @@ Y si queremos ver información del contenedor ejecutamos `sudo docker inspect 75
 ## Ejercicio 14
 ###Crear una imagen con las herramientas necesarias para DAI sobre un sistema operativo de tu elección. 
 
-Nos registramos en docker index https://hub.docker.com/account/signup/ , que podemos vincular a GitHub. Una vez registrado seleccionamos "Automated build":
+Nos registramos en Docker https://hub.docker.com/account/signup/ , que podemos vincular a GitHub. Una vez registrado seleccionamos "Automated build":
 
 [Creando el repositorio](http://i.imgur.com/Y5iFbIX.png)
 
 Después seleccionamos GitHub y lo asociamos a nuestra cuenta. Seleccionamos el proyecto de la imagen.
 
-Lo creamos y ya está [creado ](http://i.imgur.com/ul9cUqH.png)
+Continuamos y ya está [creado](http://i.imgur.com/ul9cUqH.png)
 
 En la pestaña de "Build details" podremos ver si la imagen contiene errores de instalación y ver cuales son si los tiene. Cada vez que se actualiza el repositorio (o la imagen) comprobará si ésta tiene errores. Una vez que esté correctamente implementada mostrará el estado de "finished"
+
 ![imagen](http://i.imgur.com/rs6nKFf.png)
 
 Ya está subida correctamente, ahora podremos instalarla desde cualquier terminal con `docker pull jcristobal/ubuntudai`
 
 [Instalación](http://i.imgur.com/f54km06.png)
 
-Y probamos a trabajar con ella, accediendo a la consola de python que se a instalado, `sudo docker run -i -t jcristobal/ubuntudai /bin/bash`:
+Y probamos a trabajar con ella, accediendo a la consola de python que hemos instalado, por ejemplo, `sudo docker run -i -t jcristobal/ubuntudai /bin/bash`:
 
 ![imagen](http://i.imgur.com/qAC1w8w.png)
 
