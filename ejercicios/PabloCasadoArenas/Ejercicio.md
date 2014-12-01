@@ -544,4 +544,4 @@ sudo apt-get update.
 
 Y ahora si, lo instalamos.
 
-[Imgur](http://i.imgur.com/NgkvfsD.png)
+![Imgur](http://i.imgur.com/NgkvfsD.png)
