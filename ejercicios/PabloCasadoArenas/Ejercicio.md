@@ -522,3 +522,26 @@ sudo docker pull ncarlier/mongodb/
 sudo docker run -i -t ubuntu /bin/bash
 
 Esto nos baja la imagen ubuntu si no la tuviesemos instalada.
+Añadimos usuario y le ponemos contraseña. Lo añadimos a los sudoers.
+
+useradd -d /home/prueba -m prueba
+
+passwd prueba
+
+adduser prueba sudo
+
+Logeamos con login prueba.
+
+![Imgur](http://i.imgur.com/Uj6pXWe.png)
+
+Tratamos de instalar nginx
+
+sudo apt-get install nginx
+
+No encuentra el paquete asi que actualizamos repositorios.
+
+sudo apt-get update.
+
+Y ahora si, lo instalamos.
+
+[Imgur](http://i.imgur.com/NgkvfsD.png)
