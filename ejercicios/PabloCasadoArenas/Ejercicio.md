@@ -517,4 +517,8 @@ Para MongoDB utilizamos una imagen Debian que hemos encontrado en el enlace prop
 
 sudo docker pull ncarlier/mongodb/
 
-## Ejercicio
+## Ejercicio 12
+
+sudo docker run -i -t ubuntu /bin/bash
+
+Esto nos baja la imagen ubuntu si no la tuviesemos instalada.
