@@ -414,6 +414,7 @@ sudo lxc-start -n u1
 
 ## Ejercicio 5
 
+Juju no está disponible para Debian, así que se instalará en Ubuntu Server 14.04
 Añadimos repositorio, actualizamos repositorios e instalamos.
 
 sudo add-apt-repository ppa:juju/stable
@@ -421,6 +422,13 @@ sudo add-apt-repository ppa:juju/stable
 sudo apt-get update
 
 sudo apt-get install juju-core
+
+juju generate-config
+
+Se ha instalado "sudo apt-get install juju-local" .
+![Imgur](http://i.imgur.com/JxcSwOF.png)
+
+![Imgur](http://i.imgur.com/3Vyf2UD.png)
 
 ## Ejercicio 8
 Descomentamos la linea que busca en el cdrom en
