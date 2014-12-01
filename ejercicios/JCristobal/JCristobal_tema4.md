@@ -328,4 +328,30 @@ Una vez instalado arrancamos nginx y vemos que funciona:
 ![imagen](http://i.imgur.com/Jkoh72z.png)
 
 
+## Ejercicio 13
+###Crear a partir del contenedor anterior una imagen persistente con commit. 
+
+
+con el contenedor arrancado ejecutamos, en otra terminal: `sudo docker ps -notrunc` y anotamos el ID, en mi caso "7559d33f8594a80940744c1c2209c9b2d17e9e3498afa0cc1aa7af6730047716".
+
+
+Y creamos la imagen persistente con commit: `sudo docker commit 7559d33f8594a80940744c1c2209c9b2d17e9e3498afa0cc1aa7af6730047716`
+
+Podemos comprobarlo con: [`sudo docker images`](http://i.imgur.com/F665lSj.png)
+
+
+Si le queremos poner nombre, lo añadimos al final del comando, en mi caso lo llamaré commitubuntu:
+
+`sudo docker commit 7559d33f8594a80940744c1c2209c9b2d17e9e3498afa0cc1aa7af6730047716 commitubuntu`
+
+![imagen](http://i.imgur.com/CO2HLgw.png)
+
+
+Y si queremos ver información del contenedor ejecutamos `sudo docker inspect 7559d33f8594a80940744c1c2209c9b2d17e9e3498afa0cc1aa7af6730047716` o `sudo docker inspect commitubuntu`
+
+
+## Ejercicio 14
+###Crear una imagen con las herramientas necesarias para DAI sobre un sistema operativo de tu elección. 
+(sin acabar)
+
 
