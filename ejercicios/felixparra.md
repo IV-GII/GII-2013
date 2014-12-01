@@ -142,22 +142,43 @@ Para netbeans, [JUnit](https://netbeans.org/kb/docs/java/junit-intro.html)
 
 **Ejercicio 1:**<br />
 **Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback**<br />
+Los pasos a ejecutar son: <br />
+![M3_1](https://raw.githubusercontent.com/felixparra/Imagenes/master/M3_1.png) <br /> <br />
+Y a continuación montamos la imagen ISO con el siguiente comando: <br />
+ `mount -o loop disk.iso /mnt/disk`
 
 **Ejercicio 2:**<br />
 ######2.1 Mostrar los puentes configurados en el sistema operativo.
-
+![M3_2](https://raw.githubusercontent.com/felixparra/Imagenes/master/M3_2.png) <br />
 ######2.2 Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+Creamos el puente: <br />
+`brctl addbr bridgeIV`
+<br />Configuramos el puente: <br />
+![M3_2](https://raw.githubusercontent.com/felixparra/Imagenes/master/M3_2_2.png) <br />
+
+<br />Activamos el puente: <br />
+`ifconfig bridgeIV up ` <br />
 
 **Ejercicio 3:**<br />
 ######3.1 Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+Instalamos debootstrap: <br />
+`sudo apt-get install debootstrap` <br />
+<br />Creación del sistemas minimo: <br />
+![M3_3](https://raw.githubusercontent.com/felixparra/Imagenes/master/M3_3.png) <br />
 
 ######3.2 Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
+Instalamos Rinse: <br />
+`sudo apt-get install rinse` <br />
+<br />Creación del sistema minimo: <br />
+![M3_3_2](https://raw.githubusercontent.com/felixparra/Imagenes/master/M3_3_2.png) <br />
 
 **Ejercicio 4:**<br />
 **Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.**
 
+
 **Ejercicio 5:**<br />**
 **Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.**<br />
+
 
 **Ejercicio 6:**<br /> 
 **Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar**
