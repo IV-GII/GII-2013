@@ -442,7 +442,7 @@ Se ha instalado "sudo apt-get install juju-local" .
 
 La segunda pregunta esta hecha en el apartado anterior.
 
-#!/bin/bash
+\#!/bin/bash
 juju switch local
 sudo juju bootstrap
 juju deploy mediawiki
