@@ -207,19 +207,20 @@ Y podemos comprobar el estado de la máquina: `juju status`
 
 Simplemente ejecutaríamos los comandos vistos anteriormente e indicamos el entorno con el que se va a trabajar, por lo que el script contendría:
 
-> 
-> `juju switch local`
-> 
-> `sudo juju bootstrap`
-> 
-> `juju deploy mediawiki`
-> 
-> `juju deploy mysql`
-> 
-> `juju add-relation mediawiki:db mysql`
-> 
-> `juju expose mediawiki`
-> 
+```
+juju switch local
+
+sudo juju bootstrap
+
+juju deploy mediawiki
+
+juju deploy mysql
+
+juju add-relation mediawiki:db mysql
+
+juju expose mediawiki
+
+```
 
 ## Ejercicio 8
 ###Instalar libvirt. Te puede ayudar [esta guía para Ubuntu.](https://help.ubuntu.com/12.04/serverguide/libvirt.html)
@@ -276,6 +277,7 @@ Podemos realizarlo de 2 maneras:
 > `sudo sh -c "echo deb https://get.docker.com/ubuntu docker main\ /etc/apt/sources.list.d/docker.list"`, `sudo apt-get update` y `sudo apt-get install lxc-docker`
 > 
 
+o
 
 > 
 > o ejecutando simplemente un script de curl: `curl -sSL https://get.docker.com/ubuntu/ | sudo sh`
@@ -328,4 +330,57 @@ Una vez instalado arrancamos nginx y vemos que funciona:
 ![imagen](http://i.imgur.com/Jkoh72z.png)
 
 
+## Ejercicio 13
+###Crear a partir del contenedor anterior una imagen persistente con commit. 
+
+
+con el contenedor arrancado ejecutamos, en otra terminal: `sudo docker ps -notrunc` y anotamos el ID, en mi caso "7559d33f8594a80940744c1c2209c9b2d17e9e3498afa0cc1aa7af6730047716".
+
+
+Y creamos la imagen persistente con commit: `sudo docker commit 7559d33f8594a80940744c1c2209c9b2d17e9e3498afa0cc1aa7af6730047716`
+
+[Podemos comprobarlo con: `sudo docker images`](http://i.imgur.com/F665lSj.png)
+
+
+Si le queremos poner nombre, lo añadimos al final del comando, en mi caso lo llamaré commitubuntu (en el nombre sólo acepta minúsculas y números):
+
+`sudo docker commit 7559d33f8594a80940744c1c2209c9b2d17e9e3498afa0cc1aa7af6730047716 commitubuntu`
+
+![imagen](http://i.imgur.com/CO2HLgw.png)
+
+
+Y si queremos ver información del contenedor ejecutamos `sudo docker inspect 7559d33f8594a80940744c1c2209c9b2d17e9e3498afa0cc1aa7af6730047716` o `sudo docker inspect commitubuntu`
+
+
+## Ejercicio 14
+###Crear una imagen con las herramientas necesarias para DAI sobre un sistema operativo de tu elección. 
+
+Nos registramos en Docker https://hub.docker.com/account/signup/ , que podemos vincular a GitHub y usar un repositorio para crear la imagen. Yo usaré [uno propio](https://github.com/JCristobal/ubuntudai), con Ubuntu y algunas herramientas básicas. 
+
+Una vez registrado seleccionamos "Automated build":
+
+[Creando el repositorio](http://i.imgur.com/Y5iFbIX.png)
+
+Después seleccionamos GitHub y lo asociamos a nuestra cuenta. Seleccionamos el proyecto de la imagen.
+
+Continuamos y ya está [creado](http://i.imgur.com/ul9cUqH.png)
+
+En la pestaña de "Build details" podremos ver si la imagen contiene errores de instalación y ver cuales son si los tiene. Cada vez que se actualiza el repositorio (o la imagen) comprobará si ésta tiene errores. Una vez que esté correctamente implementada mostrará el estado de "finished"
+
+![imagen](http://i.imgur.com/rs6nKFf.png)
+
+Ya está subida correctamente, ahora podremos instalarla desde cualquier terminal con `docker pull jcristobal/ubuntudai`
+
+[Instalación](http://i.imgur.com/f54km06.png)
+
+Y probamos a trabajar con ella, accediendo a la consola de python que hemos instalado, por ejemplo: `sudo docker run -i -t jcristobal/ubuntudai /bin/bash`:
+
+![imagen](http://i.imgur.com/qAC1w8w.png)
+
+
+[Tutorial de interés](http://picodotdev.github.io/blog-bitix/2014/11/como-crear-una-imagen-para-docker-usando-un-dockerfile/)
+
+
+***
+***
 
