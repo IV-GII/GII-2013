@@ -178,9 +178,44 @@ Una vez hecho esto procedemos a hacer lo siguiente:
 
 * [+]Ejercicio 7
  - A) Destruir toda la configuración creada anteriormente.
+
+Lo que tenemos que hacer para destruir toda la configuración solo es necesario hacer lo siguiente:
+
+    juju destroy-service mysql
+    juju destroy-service mediawiki
+    juju destroy-environment local
+
+[Ver](https://www.dropbox.com/s/92bsw86s2ky9i0w/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2011.10.27.png?dl=0)
+
  - B) Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.
+
+Para este pasa habria que hacer los siguiente:
+
+    juju bootstrap
+    juju deploy mediawiki
+    juju deploy mysql
+    juju add-relation mediawiki:db mysql
+    juju expose mediawiki
+
  - C) Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
- 
+
+Lo que tenemos que hacer ahora es reunir todos los comandos usados anteriormente en un script. Lo guardamos todo con la extensión ".sh", le cambiamos los permisos "chmod +x ejercicio7.sh" y lo lanzamos:
+
+    ./ejercicio7.sh
+
+Esto quedaria de la siguiente manera:
+
+    #!/bin/bash
+    juju init
+    juju switch local 
+    juju bootstrap 
+    juju deploy mediawiki
+    juju deploy mysql 
+    juju add-relation mediawiki:db mysql 
+    juju expose mediawiki 
+    juju status 
+
+
 * [+]Ejercicio 8
  - A) Instalar libvirt. Te puede ayudar esta guía para Ubuntu.
 
