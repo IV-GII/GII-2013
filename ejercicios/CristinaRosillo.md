@@ -257,10 +257,66 @@ Una vez instalado creamos el directorio donde vamos a realizar la instalación d
 	
 		> sudo debootstrap --arch=amd64 precise UbuntuSO/ http://archive.ubuntu.com/ubuntu/
 		
-![Ejercicio_3_1](http://i.imgur.com/pjffktv.png)
+![Ejercicio_3_1_1](http://i.imgur.com/pjffktv.png)
 	
-![Ejercicio_3_2](http://i.imgur.com/WBiOe12.png)
+![Ejercicio_3_1_2](http://i.imgur.com/WBiOe12.png)
 	
 2)	Instalar un sistema Fedora dentro de Debian usando la herramienta Rinse. Lo primero que haremos será 			instalarla.
 
-		> 
+		> sudo apt-get install rinse
+		
+A continuación realizaremos la instalación de Fedora en la carpeta que hemos llamado "FedoraRinse". Usando la herramienta Rinse que acabamos de instalar. Para ello ejecutamos:
+
+		> sudo rinse --arch=amd64 --distribution fedora-core-6 --directory FedoraRinse
+		
+![Ejercicio_3_2_1](http://i.imgur.com/hWER0xD.png)
+
+![Ejercicio_3_2_2](http://i.imgur.com/eE6n8Za.png)
+
+#Ejercicio 4
+
+En ésta ocasión vamos a reutilizar el sistema Ubuntu que hemos instalado en el ejercicio anterior. Entramos dentro del sistema y vamos a realizar la instalación de algunas herramientas, como las citadas en el guión.
+
+	> sudo chroot UbuntuSO
+	
+![Ejercicio_4_1](http://i.imgur.com/u5HkRd2.png)
+
+Una vez dentro, vamos a montar el diretorio proc e instalar el paquete español para que no nos aparezca algún error.
+
+![Ejercicio_4_1_2](http://i.imgur.com/9cpSx8v.png)
+
+Como nos pide en el ejercicio, vamos a crear y compilar una pequeña aplicación que nos muestre un "Hola Mundo", para ello instalaremos la herramienta nano y python. Ésta última ya se encuentra en el sistema en su versión más reciente así no será necesario instalarla. En cualquier caso si necesitaramos hacerlo sólo tendríamos que ejecutar:
+
+	> apt-get install python
+
+![Ejercicio_4_1_3](http://i.imgur.com/7cNb9Op.png)
+
+![Ejercicio_4_1_4](http://i.imgur.com/B7Xk1Vz.png) 
+	
+#Ejercicio 5
+
+De nuevo en una de las jaulas creadas en el ejercicio 3, en UbuntuSO más concretamente vamos a realizar la instalación de la herramienta nginx. Para instalarla debemos añadir los repositorios necesarios y para hacerlo nos ha surgido otro problema. Al intentar descargar la firma con el comando wget, ha aparecido un error ya que ese comando no se encuentra instalado, para solucionarlo sólo tenemos que instalarlo con la siguiente instrucción.
+
+	> ap-get install wget
+	
+Una vez hecho ya podremos comenzar la instalación de nginx. Primero nos descargaremos la firma y la añadiremos a nuestros repositorios y a continuación añadimos los repositorios del paquete.
+	
+	> wget http://nginx.org/keys/nginx_signing.key
+	> apt-key add nginx_signing.key
+	
+![Ejercicio_5_1](http://i.imgur.com/twFJvct.png)
+
+	> nano /etc/apt/sources.list
+	
+Y añadimos:
+
+	deb http://nginx.org/packages/ubuntu/ precise nginx
+	deb-src http://nginx.org/packages/ubuntu/ precise nginx
+	
+![Ejercicio_5_2](http://i.imgur.com/8btedxV.png)
+
+Por último hacemos update para actualizar los paquetes e instalamos nginx.
+
+	> apt-get install nginx
+	
+![Ejercicio_5_3](http://i.imgur.com/aCkld1p.png)
