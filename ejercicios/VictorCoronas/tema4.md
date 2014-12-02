@@ -243,7 +243,7 @@ Finalmente, instalamos "virt-viewer" y continuamos con la instalación:
 
     apt-get install virt-viewer 
 
-#Clase del 17 de Noviembre de 2014
+#Clase del 17 y 24 y 25 de Noviembre de 2014
 * [+]Ejercicio 10
  - A) Instalar docker.
 
@@ -268,6 +268,7 @@ Para ver que funciona realmente, creamos un contenedor:
 
 [Ver](https://www.dropbox.com/s/cttpdyizz0k5ez5/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2011.56.35.png?dl=0)
 
+#Clase del 1 y 2 de Diciembre de 2014
 * [+]Ejercicio 11
  - A) Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
  - B) Buscar e instalar una imagen que incluya MongoDB.
