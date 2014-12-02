@@ -268,10 +268,6 @@ Para ver que funciona realmente, creamos un contenedor:
 
 [Ver](https://www.dropbox.com/s/cttpdyizz0k5ez5/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2011.56.35.png?dl=0)
 
-
-
-En mi caso, además tengo que ejecutar sudo rm /var/run/docker.pid, ya que me aparece el aviso "pid file found, ensure docker is not running or delete /var/run/docker.pid". Una vez hecho esto puedo ejecutar sin problema.
-
 * [+]Ejercicio 11
  - A) Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
  - B) Buscar e instalar una imagen que incluya MongoDB.
