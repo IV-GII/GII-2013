@@ -141,5 +141,16 @@
 
 * [x] Entender cómo funciona docker y qué implica.
 
+##Objetivos de sesión 20
+
+* [x] Resolver últimos problemas con docker.
+* [] Comenzar con la tercera práctica.
+
+* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+
+##Objetivos de sesión 21
+
+* [] Resolver últimos problemas con docker.
+* [] Resolver dudas relacionadas con la tercera práctica.
 
 
