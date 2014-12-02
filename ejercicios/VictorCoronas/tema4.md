@@ -215,12 +215,33 @@ Esto quedaria de la siguiente manera:
     juju expose mediawiki 
     juju status 
 
-
 * [+]Ejercicio 8
  - A) Instalar libvirt. Te puede ayudar esta guía para Ubuntu.
 
+Para poder instalarlo solo tenemos que introducir el siguiente comando:
+
+    apt-get install kvm libvirt-bin
+
+[Ver](https://www.dropbox.com/s/6yici8abxzjvv4b/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2011.25.26.png?dl=0)
+
 * [+]Ejercicio 9
  - A) Instalar un contenedor usando virt-install.
+
+Lo primero que debemos de hacer es instalar "virt-install" con:
+
+    apt-get install virtinst
+
+[Ver](https://www.dropbox.com/s/duq2jeah644ja9n/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2011.28.51.png?dl=0)
+
+Ahora desacarhamos la imagen de ubuntu:
+
+    virt-install --name ubuntu --ram 512 --file=/var/lib/libvirt/images/ubuntu-12.04.4-server-i386.img --file-size=3 --vnc --cdrom=/var/lib/libvirt/images/ubuntu-12.04.4-server-i386.iso
+
+[Ver](https://www.dropbox.com/s/x0karibfaq17i56/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2011.37.14.png?dl=0)
+
+Finalmente, instalamos "virt-viewer" y continuamos con la instalación:
+
+    apt-get install virt-viewer 
 
 #Clase del 17 de Noviembre de 2014
 * [+]Ejercicio 10
