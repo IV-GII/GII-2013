@@ -134,7 +134,7 @@
 * [x] Configuración compleja de sistemas con él.
 * [x] Entender el concepto de hipervisor y trabajar con ellos.
 
-* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [x] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
 * [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 ##Objetivos de sesión 19
@@ -145,8 +145,6 @@
 
 * [x] Resolver últimos problemas con docker.
 * [] Comenzar con la tercera práctica.
-
-* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
 
 ##Objetivos de sesión 21
 
