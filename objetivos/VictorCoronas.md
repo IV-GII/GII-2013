@@ -197,23 +197,47 @@ Conocer qué tipo de perfil buscan estas empresas.
 
 #Objetivos de esta sesión
 
-* [] Resolver problemas con juju.
-* [] Configuración compleja de sistemas con él.
-* [] Entender el concepto de hipervisor y trabajar con ellos.
+* [+] Resolver problemas con juju.
+* [+] Configuración compleja de sistemas con él.
+* [+] Entender el concepto de hipervisor y trabajar con ellos.
 
 #Otros objetivos
 
 * [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
-* [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [+] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 #Clase del 25 de noviembre de 2014
 
 #Objetivos de esta sesión
 
-* [] Resolver problemas con juju.
-* [] Entender cómo funciona docker y qué implica.
+* [+] Resolver problemas con juju.
+* [+] Entender cómo funciona docker y qué implica.
 
 #Otros objetivos
 
-* [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [+] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 * [] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+
+#Clase del 1 de Diciembre de 2014
+
+#Objetivos de esta sesión
+
+* [] Resolver últimos problemas con docker.
+* [] Comenzar con la tercera práctica.
+
+#Otros objetivos
+
+* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+#Clase del 2 de Diciembre de 2014
+
+#Objetivos de esta sesión
+
+* [] Resolver últimos problemas con docker.
+* [] Resolver dudas relacionadas con la tercera práctica.
+
+#Otros objetivos
+
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
