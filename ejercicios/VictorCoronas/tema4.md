@@ -271,7 +271,20 @@ Para ver que funciona realmente, creamos un contenedor:
 #Clase del 1 y 2 de Diciembre de 2014
 * [+]Ejercicio 11
  - A) Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
+
+Lo primero que debemos de hacer es instalar CentOs, para ello hacemos:
+
+    docker pull centos
+
+[Ver](https://www.dropbox.com/s/3vha5youe1jss8q/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2012.19.12.png?dl=0)
+
  - B) Buscar e instalar una imagen que incluya MongoDB.
+
+Una vez descargado CentOs y busco en el [enlace](https://registry.hub.docker.com/search?q=mongodb&searchfield=) proporcionado en los apuntes y encuentro un imagen de Gentoo con MongoDB, ejecutamos el siguiente comando:
+
+    docker pull hairmare/mongodb
+
+[Ver](https://www.dropbox.com/s/r3b78tuz18v3hfu/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2012.42.02.png?dl=0)
 
 * [+]Ejercicio 12
  - A) Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.
