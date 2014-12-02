@@ -320,3 +320,21 @@ Por último hacemos update para actualizar los paquetes e instalamos nginx.
 	> apt-get install nginx
 	
 ![Ejercicio_5_3](http://i.imgur.com/aCkld1p.png)
+
+
+## Tema 4
+
+#Ejercicio 1
+
+Para instalar LXC actualizaremos los repositorios y ejecutaremos la siguiente instrucción:
+
+	> apt-get update
+	> apt-get install lxc
+	
+![Ejercicio_1_1](http://i.imgur.com/NWQzgty.png)
+
+Ahora comprobaremos si nuestro sistema está preparado para éste tipo de tecnología, para hacerlo usaremos "lxc-checkconfig".
+
+	> lxc-checkconfig
+	
+![Ejercicio_1_2](http://i.imgur.com/mMNus8Z.png)
