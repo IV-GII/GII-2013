@@ -318,5 +318,17 @@ por último instalamos "nginx" con:
 * [+]Ejercicio 13
  - A) Crear a partir del contenedor anterior una imagen persistente con commit.
 
+Lo primero que debemos de hacer es, con el contenedor que estamos ejecutando, lanzamos el siguiente comando:
+
+    docker ps -notrunc
+
+y seguidamente un inspect para obtener la información que queremos, la ID.
+
+Por último hacemos un:
+
+    docker commit ID(la ID obtenida)
+
+De esta manera creamos un imágen persistente con el estado actual.
+
 * [+]Ejercicio 14
  - A) Crear una imagen con las herramientas necesarias para DAI sobre un sistema operativo de tu elección.
