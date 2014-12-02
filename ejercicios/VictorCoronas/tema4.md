@@ -247,6 +247,31 @@ Finalmente, instalamos "virt-viewer" y continuamos con la instalación:
 * [+]Ejercicio 10
  - A) Instalar docker.
 
+El primer paso que debemos de dar es ejecutar un simple script de curl:
+
+    curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+
+Una vez ejecutado comenzará el proceso de [descarga e instalción](https://www.dropbox.com/s/2n34nvneyfobhkf/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2011.49.47.png?dl=0).
+
+Ahora ejecutamos el servicio con:
+
+    docker -d &
+
+Pero al ejecutarlo de da un pequeño [error](https://www.dropbox.com/s/0zgte1dfjep5neb/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2011.51.28.png?dl=0), para ello hacemos esto para [arreglarlo](https://www.dropbox.com/s/89hvhvq72b2hz1i/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2011.54.19.png?dl=0).
+
+Al ejecutarlo nuevamente aparecería lo siguiente:
+[Ver](https://www.dropbox.com/s/o66xlph2cys3y2a/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2011.55.03.png?dl=0)
+
+Para ver que funciona realmente, creamos un contenedor:
+
+    docker pull ubuntu
+
+[Ver](https://www.dropbox.com/s/cttpdyizz0k5ez5/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2011.56.35.png?dl=0)
+
+
+
+En mi caso, además tengo que ejecutar sudo rm /var/run/docker.pid, ya que me aparece el aviso "pid file found, ensure docker is not running or delete /var/run/docker.pid". Una vez hecho esto puedo ejecutar sin problema.
+
 * [+]Ejercicio 11
  - A) Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
  - B) Buscar e instalar una imagen que incluya MongoDB.
