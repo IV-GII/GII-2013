@@ -289,6 +289,32 @@ Una vez descargado CentOs y busco en el [enlace](https://registry.hub.docker.com
 * [+]Ejercicio 12
  - A) Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.
 
+Lo primero que debemos de hacer es ejecutar el contenedor con:
+
+    docker run -i -t ubuntu /bin/bash
+    docker ps
+
+El siguiente paso es crear el usuario en el contenedor con los siguientes comandos:
+
+    useradd -d /home/usudocker -m usudocker 
+    passwd usudocker 
+    adduser usudocker
+    login usudocker
+
+[Ver](https://www.dropbox.com/s/7cpo06yu8m3teg6/Captura%20de%20pantalla%202014-12-02%20a%20la%28s%29%2016.27.55.png?dl=0)
+
+Una vez realizado los pasos anteriores, debemos de instalar "nginx":
+
+    sudo apt-get install software-properties-common
+
+añadimos el repositorio con:
+
+    add-apt-repository ppa:nginx/stable
+
+por último instalamos "nginx" con:
+
+    apt-get install nginx
+
 * [+]Ejercicio 13
  - A) Crear a partir del contenedor anterior una imagen persistente con commit.
 
