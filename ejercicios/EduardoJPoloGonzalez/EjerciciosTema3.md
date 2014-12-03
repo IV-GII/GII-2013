@@ -128,3 +128,59 @@
 ##Ejercicio 5.
 ###Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
 
+- Lo primero que vamos hacer es entrar en la jaula, usando el siguiente comando:
+	- sudo chroot /home/jaulas/saucy32.
+
+- Una vez que hemos entrado, vamos a proceder a instalar nginx. Para ello primero vamos a descargar la lleve del repositorio (wget http://nginx.org/keys/nginx_signing.key). 
+
+![](capturas3/21.png)
+
+![](capturas3/23.png)
+
+- Lo siguiente que vamos a hacer es añadir los repositorios (deb http://nginx.org/packages/ubuntu/ saucy nginx y
+deb-src http://nginx.org/packages/ubuntu/ saucy nginx) a source.list
+
+![](capturas3/22.png)
+
+- Una vez realizado este proceso, vamos actualizar los repositorios, usando el siguiente comando: apt-get update.
+
+- Ya solo queda instalar nginx, usando el siguiente comando: apt-get install nginx curl.
+
+- Una vez instalado, comprobamos que nginx está o no funcionando, usando el siguiente comando: service nginx status.
+
+![](capturas3/24.png)
+
+- En caso de que nginx no esté funcionando lo arrancamos, usando el siguiente comando: service nginx start (si nos da un error al iniciar, buscamos los procesos de apache (usando el comando: ps aux | grep apache) y le hacemos kill).
+
+
+- Por último vamos a comprobar que nginx está funcionando, usando el siguiente comando: curl localhost.
+
+![](capturas3/26.png)
+
+
+##Ejercicio 6.
+###Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.
+
+- Lo primero que hay que hacer es descargar jailkit, usando el siguiente comando: sudo wget http://olivier.sessink.nl/jailkit/jailkit-2.17.tar.gz.
+
+![](capturas3/27.png)
+
+- Descomprimimos el archivo descargado, usando el siguiente comando: tar -xzvf jailkit-2.17.tar.gz.
+
+![](capturas3/28.png)
+
+- Y procedemos a la instalación, usando el siguiente comando: ./configure && make && sudo make install (que está dentro del directorio jailkit-2.17, accedemos haciendo cd).
+
+- Una vez instalado jailkit, vamos a crear un sistema de ficheros perteneciente al usuario "root", usando los siguientes comandos: mkdir -p /home/jaulas/dorada y chown -R root:root /home.
+
+![](capturas3/29.png)
+
+![](capturas3/30.png)
+
+- Lo siguiente es crear la jaula con un shell básico, herramientas de red y un editor de texto, para ello usamos el siguiente comando: jk_init -v -j /home/jaulas/dorada jk_lsh basicshell netutils editors.
+
+- Por último se va a enjaular al usuario. Se crea un usuario, usando el siguiente comando:  adduser edupg y lo enjaulamos con el siguiente comando: sudo jk_jailuser -m -j /home/jaulas/dorada edupg.
+
+![](capturas3/31.png)
+
+![](capturas3/32.png)
