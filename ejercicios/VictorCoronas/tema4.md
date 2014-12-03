@@ -346,7 +346,7 @@ Una vez que ya esta todo correcto, podremos instalar nuestra imagen desde cualqu
 
     docker pull VictorCoronas/Ejercicio14
 
-* [+]#Visita Trevenque
+#Visita Trevenque
 
 La jornada en "Cloud Center Andalucia" del grupo Trevenque estubo muy bien.
 La visita comenzó con una pequeña charla en la cual nos explicarón mediante unas diapositivas un poco sobre como comenzó la empresa, como ha ido evolucionando a lo largo del tiempo, así como su expanción poco a poco por algunos lugares del mundo y por último procedimos a visitar las instalaciones. La visita se tuvo que dividir en dos grupos, ya que eramos bastantes como para ir en uno solo.  
