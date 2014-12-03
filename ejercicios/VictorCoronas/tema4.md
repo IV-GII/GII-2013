@@ -332,3 +332,17 @@ De esta manera creamos un imágen persistente con el estado actual.
 
 * [+]Ejercicio 14
  - A) Crear una imagen con las herramientas necesarias para DAI sobre un sistema operativo de tu elección.
+
+El primer paso que debemos de dar es entrar en [Docker](https://www.docker.com/) para [registrarnos](https://www.dropbox.com/s/uxsvjukbo32k199/Captura%20de%20pantalla%202014-12-03%20a%20la%28s%29%2015.38.48.png?dl=0), una vez registrados nos aparecerá la siguiente [ventana](https://www.dropbox.com/s/3071iyfltwg26ot/Captura%20de%20pantalla%202014-12-03%20a%20la%28s%29%2015.30.31.png?dl=0) donde nos dirá que revisemos el correo electrónico para confirmar el registro.
+Una vez registrados, tenemos que [asociar](https://www.dropbox.com/s/m6fhko2x2w9aolf/Captura%20de%20pantalla%202014-12-03%20a%20la%28s%29%2015.32.20.png?dl=0) nuestra cuenta de "GitHub" con "Docker", para poder usar un repositorio para poder crear la imagen.
+
+Ahora le damos a "+Add repository" y seleccionamos [Automated build](https://www.dropbox.com/s/yomw6lx0v0rknbu/Captura%20de%20pantalla%202014-12-03%20a%20la%28s%29%2015.43.04.png?dl=0),
+seleccionamos [GitHub](https://www.dropbox.com/s/10pbf6eb2b99st6/Captura%20de%20pantalla%202014-12-03%20a%20la%28s%29%2015.45.08.png?dl=0), ahora seleccionamos el repositorio que vayamos a usar, en mi caso [Ejercicio14](https://www.dropbox.com/s/4g4ncl33xno8xjd/Captura%20de%20pantalla%202014-12-03%20a%20la%28s%29%2015.47.22.png?dl=0).
+
+Después nos vamos a "Build details" y vemos la informacion de nuestro repositorio por si tiene errores o no, le damos a [START A BUILD](https://www.dropbox.com/s/ygk6qn1iwuki756/Captura%20de%20pantalla%202014-12-03%20a%20la%28s%29%2015.50.35.png?dl=0).
+Cuando este todo correcto mostrará el estado de "finished".
+
+Una vez que ya esta todo correcto, podremos instalar nuestra imagen desde cualquier terminal de un esquipo, simplemente haciendo:
+
+    docker pull VictorCoronas/Ejercicio14
+
