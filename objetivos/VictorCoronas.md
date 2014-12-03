@@ -158,22 +158,86 @@
 
 # Objetivos de esta sesión
 
-* []Entender el concepto de contenedores
-* []Configurar el sistema para poder crear y usar contenedores
-* []Crear y usar contenedores
+* [+]Entender el concepto de contenedores
+* [+]Configurar el sistema para poder crear y usar contenedores
+* [+]Crear y usar contenedores
 
 # Otros objetivos
 
-* []Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
-* []Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
+* [+]Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
+* [+]Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
 
 #Clase del 17 de noviembre de 2014
 
 # Objetivos de esta sesión
 
-* []Entender los sistemas de orquestación de máquinas virtuales.
-* []Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+* [+]Entender los sistemas de orquestación de máquinas virtuales.
+* [+]Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 # Otros objetivos
 
-* []Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+* [+]Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+
+
+#Clase del 18 de noviembre de 2014
+
+# Objetivos de esta sesión
+
+* [+] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+* [+] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+* [+] Conocer las aplicaciones y programas que se usan.
+* [+] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+
+# Otros objetivos
+
+* [+] Familiarizarse con el tejido económico TIC en nuestro entorno local.
+Conocer qué tipo de perfil buscan estas empresas.
+
+#Clase del 24 de noviembre de 2014
+
+#Objetivos de esta sesión
+
+* [+] Resolver problemas con juju.
+* [+] Configuración compleja de sistemas con él.
+* [+] Entender el concepto de hipervisor y trabajar con ellos.
+
+#Otros objetivos
+
+* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [+] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+#Clase del 25 de noviembre de 2014
+
+#Objetivos de esta sesión
+
+* [+] Resolver problemas con juju.
+* [+] Entender cómo funciona docker y qué implica.
+
+#Otros objetivos
+
+* [+] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [+] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+
+#Clase del 1 de Diciembre de 2014
+
+#Objetivos de esta sesión
+
+* [+] Resolver últimos problemas con docker.
+* [+] Comenzar con la tercera práctica.
+
+#Otros objetivos
+
+* [+] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+#Clase del 2 de Diciembre de 2014
+
+#Objetivos de esta sesión
+
+* [+] Resolver últimos problemas con docker.
+* [+] Resolver dudas relacionadas con la tercera práctica.
+
+#Otros objetivos
+
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
