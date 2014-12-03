@@ -346,3 +346,9 @@ Una vez que ya esta todo correcto, podremos instalar nuestra imagen desde cualqu
 
     docker pull VictorCoronas/Ejercicio14
 
+* [+]#Visita Trevenque
+
+La jornada en "Cloud Center Andalucia" del grupo Trevenque estubo muy bien.
+La visita comenzó con una pequeña charla en la cual nos explicarón mediante unas diapositivas un poco sobre como comenzó la empresa, como ha ido evolucionando a lo largo del tiempo, así como su expanción poco a poco por algunos lugares del mundo y por último procedimos a visitar las instalaciones. La visita se tuvo que dividir en dos grupos, ya que eramos bastantes como para ir en uno solo.  
+
+Lo primordial en aquel lugar era la seguridad, ya que nos hicieron especial incapie en el tema, explicandonos todos los sistemas de seguridad que tenian, biométricos, etc... Así como los sistemas especiales anti-incendios que tienen instalados, que son mediante un gas que sofoca el fuego y no daña a los equipos electrónicos. También comentarón que trabajaban con diferentes operadoras telefónicas que le suministran linea de fibra. Los sistemas de refrigeración que usan, que son de última generación y reparten el aire fresco por todos los equipos. Vimos diferentes salas donde se alojaban los servidores, donde habia de diferentes marcas. Así como la sala de electricidad, que contaba con dos lineas independientes en caso de que fallase uno, y que estaban organizando la instalación de placas solares y tener así una tercera fuente de alimentación.
