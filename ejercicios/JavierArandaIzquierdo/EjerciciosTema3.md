@@ -61,6 +61,7 @@ Con Fedora si he podido instalar la version de 64 bit utilizando la siguiente or
 	sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fedora/
     
 El resultado es este:
+
 ![foto](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer3tema3)
 ###Ejercicio 4
 #####Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.
@@ -68,5 +69,7 @@ El resultado es este:
 Entramos en la jaula que hemos creado en el ejercicio 3 con el siguiente comando:
 
 	sudo chroot /home/jaulas/saucy32
-    
+
+Ya estamos dentro de la maquina:
+![foto](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer4-1Tema3)
 Ahora vamos a montar el sistema de archivos virtual /proc
