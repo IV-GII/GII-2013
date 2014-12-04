@@ -71,5 +71,5 @@ Entramos en la jaula que hemos creado en el ejercicio 3 con el siguiente comando
 	sudo chroot /home/jaulas/saucy32
 
 Ya estamos dentro de la maquina:
-![foto](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer4-1tema3)
+![foto](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer4-1tema3.png)
 Ahora vamos a montar el sistema de archivos virtual /proc
