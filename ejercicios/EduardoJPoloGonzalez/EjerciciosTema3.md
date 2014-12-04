@@ -173,8 +173,6 @@ deb-src http://nginx.org/packages/ubuntu/ saucy nginx) a source.list
 
 - Una vez instalado jailkit, vamos a crear un sistema de ficheros perteneciente al usuario "root", usando los siguientes comandos: mkdir -p /home/jaulas/dorada y chown -R root:root /home.
 
-![](capturas3/29.png)
-
 ![](capturas3/30.png)
 
 - Lo siguiente es crear la jaula con un shell básico, herramientas de red y un editor de texto, para ello usamos el siguiente comando: jk_init -v -j /home/jaulas/dorada jk_lsh basicshell netutils editors.
