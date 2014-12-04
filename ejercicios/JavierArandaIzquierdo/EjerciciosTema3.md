@@ -56,10 +56,12 @@ Para crear un sistema Fedora tendremos que instalar rinse previamente, con la or
 
 	sudo apt-get install rinse
     
-Con Fedora si he podido instalar la version de 64 bit utilizando la siguiente orde:
+Con Fedora si he podido instalar la version de 64 bit utilizando la siguiente orden:
 
 	sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fedora/
     
+El resultado es este:
+![foto](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer3tema3)
 ###Ejercicio 4
 #####Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.
 
