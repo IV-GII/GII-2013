@@ -72,4 +72,9 @@ Entramos en la jaula que hemos creado en el ejercicio 3 con el siguiente comando
 
 Ya estamos dentro de la maquina:
 ![foto](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer4-1tema3.png)
-Ahora vamos a montar el sistema de archivos virtual /proc
+Ahora vamos a montar el sistema de archivos virtual /proc, lo hacemos con el siguiente comando:
+
+	mount -t proc proc /proc
+    
+Y para comprobar que se ha instalado correctamente el sistema de archivos, ejecuto la orden top, la cual no funcionaba previamente:
+![foto2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer4-2tema3.png)
