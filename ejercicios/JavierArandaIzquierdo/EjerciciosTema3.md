@@ -108,9 +108,8 @@ Y ya podemos instalar nginx. Ahora solo queda lanzar nginx con la orden:
  
  ![nginx](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/nginxFuncionando.png)
 
-
- ###Ejercicio 6
- #####Crear una jaula y enjaular un usuario usando jailkit, que previamente se habrá tenido que instalar.
+###Ejercicio 6
+#####Crear una jaula y enjaular un usuario usando jailkit, que previamente se habrá tenido que instalar.
 
 Antes de nada, tenemos que descargar jailkit, lo haremos de la siguiente direccion:
 
