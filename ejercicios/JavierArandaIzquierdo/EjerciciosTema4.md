@@ -39,4 +39,14 @@ y tambien utilizamos la orden:
 ###Ejercicio 3
 #####1.Crear y ejecutar un contenedor basado en Debian.
 
+Para instalar el contenedor de Debian utilizamos: 
+
+	sudo lxc-create -t debian -n debianita
+    
+Y para ejecutarlo utilizamos:
+
+	sudo lxc-start -n debianita
+    
+![ejer2-3](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer3-1tema4.png) 
+
 #####2.Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.
