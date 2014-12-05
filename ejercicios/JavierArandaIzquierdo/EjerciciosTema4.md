@@ -99,3 +99,10 @@ Para comparar el rendimiento del servidor voy a utilizar un benchamark que he ut
 
 	sudo apt-get install apache2-utils
     
+Ahora utilizamos el bechmark con el contenedor de ubuntu, cuya IP es 10.0.3.80:
+
+![ejer5-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer5-1tema4.png)
+
+Tras esto, hacemos lo mismo pero con la jaula y el resultado es el siguiente:
+
+![ejer5-2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer5-2tema4.png)
