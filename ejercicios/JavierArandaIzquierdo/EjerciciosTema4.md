@@ -11,5 +11,32 @@ Tras esto, comprobamos que es compatible con la siguiente orden:
     
 ![ejer1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer1tema4.png)
 
-#####Ejercicio 2
+###Ejercicio 2
+#####Comprobar qué interfaces puente se han creado y explicarlos.
 
+Primeramente creamos el contenedor con la siguiente orden:
+
+	sudo lxc-create -t ubuntu -n una-caja
+
+![ejer2-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer2-1tema4.png)
+    
+Tras las instalacion, procedemos a arrancarlo:
+
+	lxc-start -n una-caja
+    
+Ahora podemos ver el estado de los contenedores con la orden:
+
+	lxc-list
+    
+![ejer2-2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer2-2tema4.png)
+    
+y tambien utilizamos la orden:
+
+	ipconfig -a
+    
+![ejer2-3](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer2-3tema4.png)
+
+###Ejercicio 3
+#####1.Crear y ejecutar un contenedor basado en Debian.
+
+#####2.Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.
