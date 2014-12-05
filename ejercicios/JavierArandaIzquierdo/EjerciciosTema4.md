@@ -26,7 +26,7 @@ Tras las instalacion, procedemos a arrancarlo:
     
 Ahora podemos ver el estado de los contenedores con la orden:
 
-	lxc-list
+	sudo lxc-ls
     
 ![ejer2-2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer2-2tema4.png)
     
@@ -92,3 +92,10 @@ Estos son los contenedores que tengo actualmente instalados en mi sistema, para 
 
 ###Ejercicio 5
 #####Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
+
+Voy a comparar el contenedor de ubuntu que ya tengo instalado con una de las jaulas que hice anteriormente. Lo primero que hay que hacer es instalar nginx en ambas. 
+
+Para comparar el rendimiento del servidor voy a utilizar un benchamark que he utilizado en otras asignaturas, Apache Benchmark. Lo instalaremos con la orden:
+
+	sudo apt-get install apache2-utils
+    
