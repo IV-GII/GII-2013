@@ -30,7 +30,7 @@ Ahora podemos ver el estado de los contenedores con la orden:
     
 ![ejer2-2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer2-2tema4.png)
     
-y tambien utilizamos la orden:
+y tambien utilizamos esta orden para ver que los contenedores estan levantados:
 
 	ipconfig -a
     
