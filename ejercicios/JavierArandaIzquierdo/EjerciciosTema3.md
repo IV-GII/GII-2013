@@ -77,4 +77,33 @@ Ahora vamos a montar el sistema de archivos virtual /proc, lo hacemos con el sig
 	mount -t proc proc /proc
     
 Y para comprobar que se ha instalado correctamente el sistema de archivos, ejecuto la orden top, la cual no funcionaba previamente:
+
 ![foto2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer4-2tema3.png)
+
+###Ejercicio 5 
+#####Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
+
+Primeramente, instalamos el paquete nginx con la siguiente orden:
+
+	apt-get install nginx
+    
+Al hacer esto, me dice que no encuentra el paquete de nginx. Ahora modificamos el archivo /etc/apt/sources.list y añadimos lo siguiente:
+    
+    echo "deb http://nginx.org/packages/ubuntu/ saucy nginx" >> /etc/apt/sources.list
+    echo "deb-src http://nginx.org/packages/ubuntu/ saucy nginx" >> /etc/apt/sources.list
+    
+Tras esto, instalamos wget para descargar la clave de repositorio para instalar nginx, y lo hacemos con los siguientes comandos:
+
+	wget http://nginx.org/keys/nginx_signing.key
+    
+Agregamos la clave:
+
+	apt-key add nginx_signing.key
+    
+Y ya podemos instalar nginx. Ahora solo queda lanzar nginx con la orden:
+
+	service nginx start
+    
+ Y este es el resultado de nginx funcionando:
+ 
+ ![nginx](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/nginxFuncionando.png)
