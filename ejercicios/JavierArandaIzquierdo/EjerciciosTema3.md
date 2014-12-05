@@ -107,3 +107,24 @@ Y ya podemos instalar nginx. Ahora solo queda lanzar nginx con la orden:
  Y este es el resultado de nginx funcionando:
  
  ![nginx](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/nginxFuncionando.png)
+ 
+ ###Ejercicio 6
+ #####Crear una jaula y enjaular un usuario usando jailkit, que previamente se habrá tenido que instalar.
+
+Antes de nada, tenemos que descargar jailkit, lo haremos de la siguiente direccion:
+
+	wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.gz
+    
+Tras esto y habiendo descomprimido el archivo, pasamos a abrir la carpeta jailkit y ejecutamos lo siguiente:
+
+	./configure
+    make
+    sudo make install
+    
+Ahora creamos una nueva jaula y la iniciamos con jailkit con el siguiente comando:
+
+	sudo jk_init -v -j /home/jaulas/jaulaEjer6 jk_lsh basicshell netutils editors
+    
+Y para terminar, creamos un usuario dentro de dicha jaula:
+
+	sudo adduser pepito sudo jk_jailuser -m -j /home/jaulas/jaulaEjer6 pepito
