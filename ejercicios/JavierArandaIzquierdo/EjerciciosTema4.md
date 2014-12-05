@@ -83,3 +83,8 @@ Esta es la pantalla para acceder a los distintos contenedores instalados:
 ![ejer4-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer4-1tema4.png)
 
 #####2.Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
+
+![ejer4-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer4-2tema4.png)
+
+###Ejercicio 5
+#####Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
