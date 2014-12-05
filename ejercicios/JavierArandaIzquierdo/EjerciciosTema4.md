@@ -8,3 +8,8 @@ El primer paso es instalar lxc con la siguiente orden:
 Tras esto, comprobamos que es compatible con la siguiente orden:
 
 	lxc-checkconfig
+    
+![ejer1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer1tema4.png)
+
+#####Ejercicio 2
+
