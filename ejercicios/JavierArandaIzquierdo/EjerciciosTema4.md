@@ -84,7 +84,11 @@ Esta es la pantalla para acceder a los distintos contenedores instalados:
 
 #####2.Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
 
+Estos son los contenedores que tengo actualmente instalados en mi sistema, para modificar sus atributos solo hay que clicar en el contenedor que queremos cambiar en el menu de la izquierda:
+
 ![ejer4-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer4-2tema4.png)
+
+![ejer4-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer4-3tema4.png)
 
 ###Ejercicio 5
 #####Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
