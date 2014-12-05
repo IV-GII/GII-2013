@@ -50,3 +50,19 @@ Y para ejecutarlo utilizamos:
 ![ejer2-3](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer3-1tema4.png) 
 
 #####2.Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.
+
+Para isntalar el contenedor de Fedora vamos a utilizar la siguiente orden:
+
+	sudo lxc-create -t fedora -n fedora14 -- -R 14
+    
+Al intentarlo nos dice que necesitamos instalar yum:
+
+![ejer2-3](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer3-2tema4.png)
+
+Para eso utilizamos la siguiente orden:
+
+	sudo apt-get install yum
+    
+Al volver a intentar instalar el contenedor, optenemos el siguiente error:
+
+![ejer2-3](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer3-3tema4.png)
