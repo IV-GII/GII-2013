@@ -176,7 +176,12 @@ El Scrip reune todas las ordenes ya instaladas:
     juju expose mediawiki 
     juju status 
 
+###Ejercicio 8
+#####Instalar libvirt. Te puede ayudar esta guía para Ubuntu.
 
+Para instalar libvirt tenemos que utilizar el siguiente comando:
+
+	sudo apt-get install kvm libvirt-bin
 
 
 
