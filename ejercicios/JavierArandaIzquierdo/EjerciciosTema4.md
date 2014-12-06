@@ -272,5 +272,11 @@ Cogemos la ID que no ha dado la orden anterior.Y creamos la imagen persistente c
 ###Ejercicio14
 #####Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.
 
+Lo primero que tenemos que hacer es registranor en [Docker](http://www.docker.com). Una vez registrados, asociamos nuestra cuenta de GitHub con la cuenta de Docker. 
+
+Tras esto, añadimos el repositorio que estamos utilizando en el proyecto y elegimos la opcion de Automated build.
+
+Y para terminar nos vamos a Build Details y clicamos en START A BUILD. Y despues de esto ya tenemos la imagen lista para instalar desde donde quieras.
+
 
 
