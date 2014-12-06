@@ -183,9 +183,49 @@ Para instalar libvirt tenemos que utilizar el siguiente comando:
 
 	sudo apt-get install kvm libvirt-bin
 
+###Ejercicio 9
+#####Instalar un contenedor usando virt-install.
 
+Primero instalamos virt:
 
+	sudo apt-get install virtinst
 
+Tras esto descargamos una imagen, en mi caso voy a descargar ubuntu:
+
+	sudo virt-install --name ubuntu --ram 512 --file=/var/lib/libvirt/images/ubuntu-14.04.1-server-i386.img --file-size=3 --vnc --cdrom=/var/lib/libvirt/images/ubuntu-14.04.1-server-i386.iso
+ 
+
+###Ejercicio 10 
+#####Instalar Docker
+
+Instalar Docker no es directo, por eso seguiremos los siguientes pasos:
+
+	curl -sSL https://get.docker.com/ubuntu/ | sudo sh
+
+Ahora ejecutamos el siguiente comando:
+
+	docker -d &
+    
+Esto nos dara un pequeño fallo, para arreglarlo solo tendremos que ejecutar:
+
+	rm /var/run/docker.sock
+    rm /var/run/docker.pid
+
+Volvemosa ejecutar la orden anterior y listo:
+
+![ejer10-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer10-1tema4.png)
+
+###Ejercicio 11
+#####Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
+
+Vamos a instalar una imagen de CentOS utilizando el comando:
+
+	docker pull centos
+#####Buscar e instalar una imagen que incluya MongoDB.
+
+Esta imagen se llama Gentoo y ejecutamos la siguiente instruccion:
+
+	docker pull hairmare/mongodb
 
 
 
