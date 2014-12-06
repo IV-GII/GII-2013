@@ -216,23 +216,39 @@ Volvemosa ejecutar la orden anterior y listo:
 ![ejer10-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer10-1tema4.png)
 
 ###Ejercicio 11
-#####Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
+#####1.Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
 
-1.Vamos a instalar una imagen de CentOS utilizando el comando:
+Vamos a instalar una imagen de CentOS utilizando el comando:
 
-	docker pull centos
+	sudo docker pull centos
     
 ![ejer11-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer11-1tema4.png)
 
-#####Buscar e instalar una imagen que incluya MongoDB.
+#####2.Buscar e instalar una imagen que incluya MongoDB.
 
-2.Esta imagen se llama Gentoo y ejecutamos la siguiente instruccion:
+Esta imagen se llama Gentoo y ejecutamos la siguiente instruccion:
 
-	docker pull hairmare/mongodb
+	sudo docker pull hairmare/mongodb
+    
+![ejer11-2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer12-1tema4.png)
 
 ###Ejercicio 12 
 #####Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.
 
+Primero entramos en el contenedor:
+
+	sudo docker run -i -t ubuntu /bin/bash
+    
+Tras esto creamos un usuario y le damos la contraseña con:
+
+	useradd -d /home/usudocker -m usudocker 
+	passwd usudocker 
+
+Y al final para logearnos utilizamos:
+
+	login usudocker
+    
+![ejer11-2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer12-2tema4.png)
 
 
 
