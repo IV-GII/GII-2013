@@ -218,16 +218,20 @@ Volvemosa ejecutar la orden anterior y listo:
 ###Ejercicio 11
 #####Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
 
-Vamos a instalar una imagen de CentOS utilizando el comando:
+1.Vamos a instalar una imagen de CentOS utilizando el comando:
 
 	docker pull centos
+    
+![ejer11-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer11-1tema4.png)
+
 #####Buscar e instalar una imagen que incluya MongoDB.
 
-Esta imagen se llama Gentoo y ejecutamos la siguiente instruccion:
+2.Esta imagen se llama Gentoo y ejecutamos la siguiente instruccion:
 
 	docker pull hairmare/mongodb
 
-
+###Ejercicio 12 
+#####Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.
 
 
 
