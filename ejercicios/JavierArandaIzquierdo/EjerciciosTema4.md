@@ -132,3 +132,8 @@ Tras esto, ejecutaremos las siguientes ordenes para instalar MySQL:
 	juju bootstrap
 	juju deploy mysql
 	juju status
+    
+###Ejercicio 7
+#####Destruir toda la configuración creada anteriormente
+#####Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.
+#####Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
