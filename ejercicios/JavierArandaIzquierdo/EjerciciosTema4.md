@@ -106,3 +106,29 @@ Ahora utilizamos el bechmark con el contenedor de ubuntu, cuya IP es 10.0.3.80:
 Tras esto, hacemos lo mismo pero con la jaula y el resultado es el siguiente:
 
 ![ejer5-2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer5-2tema4.png)
+
+Comparandolos, vemos que la jaula es mas rapida que el contenedor.
+
+###Ejercicio 6
+#####Instalar juju.
+
+Para instalar Juju utilizaremos las ordenes del guion:
+
+	sudo add-apt-repository ppa:juju/stable
+	sudo apt-get update 
+    sudo apt-get install juju-core
+
+#####Usándolo, instalar MySQL en un táper.
+
+Primeramente iniciamos juju con la orden:
+
+	juju init
+    
+Tras esto, cambiamos el campo default:amazon por default:local en el fichero de configuracion ~/.juju/environments.yaml
+
+Tras esto, ejecutaremos las siguientes ordenes para instalar MySQL:
+
+	juju switch local
+	juju bootstrap
+	juju deploy mysql
+	juju status
