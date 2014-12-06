@@ -289,4 +289,265 @@ y Tox :
 https://tox.readthedocs.org/en/latest/
 
 
+# TEMA 3
 
+## Ejercicio 1
+
+Disasociamos el espacio de nombres actual
+
+sudo unshare -m /bin/bash
+
+Creamos mnt/disk y lo montamos.
+
+sudo mkdir /mnt/disk
+
+mount -o loop dsl-4.11.rc1.iso /mnt/disk
+
+## Ejercicio 2
+
+brctl show nos muestra todos los puentes. No muestra ninguno porque ninguno esta configurado todavia.
+
+Creamos un puente y lo asignamos a la interfaz eth0.
+
+brctl addbr pablo
+
+brctl addif pablo eth0
+
+brtcl show
+
+## Ejercicio 3
+
+Instalamos debootstrap:
+
+sudo apt-get install debootstrap
+
+Una vez instalado creamos el directorio donde queremos instalar el sistema, y por ejemplo bajamos un ubuntu y construimos el sistema con:
+
+sudo debootstrap --arch=amd64 lucid /home/debootstrap http://archive.ubuntu.com/ubuntu
+
+Cuando termine de descargar y configurar, tendremos en el directorio indicado el sistema instalado.
+
+Instalacion rinse:
+
+sudo apt-get install rinse
+
+Bajamos la ISO con
+
+sudo rinse --arch=amd64 --distribution centos-6 -directory /home/jaulas/centos/
+
+## Ejercicio 4
+
+He configurado Centos sobre Debian.
+
+Accedemos a la maquina virtual con:
+
+sudo chroot /home/jaulas/fedora
+
+Montamos el filesystem virtual /proc ya que si no da error:
+
+mount -t proc proc /proc
+
+Probamos instalando el programa vim:
+
+yum install vim
+
+![Imgur](http://i.imgur.com/WOK5rGk.png)
+
+## Ejercicio 5
+
+Instalamos wget, instalamos tar, instalamos gcc.
+
+Descargamos nginx:
+
+wget http://nginx.org/download/nginx-1.6.0.tar.gz
+
+lo descomprimimos, vamos al directorio y ejecutamos:
+
+./configure --without-http_rewrite_module --without-http_gzip_module
+![Imgur](http://i.imgur.com/p4md5wQ.png)
+make install
+![Imgur](http://i.imgur.com/cGXzGb1.png)
+Ya lo tenemos instalado.
+
+## Ejercicio 6
+
+Instalamos jailkit.
+
+Creamos directorio:
+
+sudo mkdir /home/jaulas/jailkit 
+
+Iniciamos la jaula:
+
+sudo jk_init -v -j /home/jaulas/jailkit jk_lsh basicshell netutils editors
+
+Añadimos usuario y configuramos su cuenta:
+
+sudo adduser jaulajkit
+
+Enjaulamos el usuario creado:
+
+sudo jk_jailuser -m -j /home/jaulas/jailkit jaulajkit 
+
+# Tema 4
+
+## Ejercicio 1
+sudo apt-get install lxc
+
+##Ejercicio 3
+
+sudo lxc-create -t debian -n u1
+
+montamos cgroups:
+
+mount -t cgroup cgroup /sys/fs/cgroup/
+
+Iniciamos la maquina:
+
+sudo lxc-start -n u1
+
+## Ejercicio 4
+
+![Imgur](http://i.imgur.com/S6WTQKY.png)
+
+![Imgur](http://i.imgur.com/Aa0L8C5.png)
+
+## Ejercicio 6
+
+Juju no está disponible para Debian, así que se instalará en Ubuntu Server 14.04
+Añadimos repositorio, actualizamos repositorios e instalamos.
+
+sudo add-apt-repository ppa:juju/stable
+
+sudo apt-get update
+
+sudo apt-get install juju-core
+
+juju generate-config
+
+Se ha instalado "sudo apt-get install juju-local" .
+![Imgur](http://i.imgur.com/JxcSwOF.png)
+
+![Imgur](http://i.imgur.com/3Vyf2UD.png)
+
+
+## Ejercicio 6
+
+![Imgur](http://i.imgur.com/q8D8j62.png)
+
+
+## Ejercicio 7
+
+![Imgur](http://i.imgur.com/jXQpZsG.png)
+
+La segunda pregunta esta hecha en el apartado anterior.
+
+\#!/bin/bash
+juju switch local
+
+sudo juju bootstrap
+
+juju deploy mediawiki
+
+juju deploy mysql
+
+juju add-relation mediawiki:db mysql
+
+juju expose mediawiki
+
+## Ejercicio 8
+Descomentamos la linea que busca en el cdrom en
+/etc/apt/sources.list
+
+Instalamos:
+
+sudo apt-get install kvm libvirt-bin
+
+y también:
+
+sudo apt-get install virtinst
+
+## Ejercicio 9
+No tenia definida la red default asi que 
+nos metemos en virsh y ejecutamos:
+
+net-define /usr/share/libvirt/networks/default.xml
+
+net-autostart default
+
+net-start default
+
+Creamos la imagen:
+
+fallocate -l 512 /var/lib/libvirt/images/guest.img
+
+Lo instalamos
+virt-install -r 64 --accelerate -n DSPLinux 
+  -f var/lib/libvirt/images/guest.img 
+  --cdrom /home/pablo/Descargas/dsl-4.11.rc1 --network network=default
+
+## Ejercicio 10
+Al usar wheezy necesitamos usar un backport.
+
+Añado deb http://http.debian.net/debian wheezy-backports main a sources.
+
+Actualizamos repositorios:
+sudo apt-get update
+Instalamos el backport
+
+sudo apt-get install -t wheezy-backports linux-image-amd64
+
+Instalamos finalmente docker:
+
+curl -sSL https://get.docker.com/ | sh
+
+Pero esto nos da problemas, asi que usamos Ubuntu.
+
+sudo apt-get install docker.io
+
+## Ejercicio 11
+
+![Imgur](http://i.imgur.com/G6XGq8t.png)
+
+Para Cent Os
+
+sudo docker pull centos.
+
+Para MongoDB utilizamos una imagen Debian que hemos encontrado en el enlace proporcionado.
+
+sudo docker pull ncarlier/mongodb/
+
+## Ejercicio 12
+
+sudo docker run -i -t ubuntu /bin/bash
+
+Esto nos baja la imagen ubuntu si no la tuviesemos instalada.
+Añadimos usuario y le ponemos contraseña. Lo añadimos a los sudoers.
+
+useradd -d /home/prueba -m prueba
+
+passwd prueba
+
+adduser prueba sudo
+
+Logeamos con login prueba.
+
+![Imgur](http://i.imgur.com/Uj6pXWe.png)
+
+Tratamos de instalar nginx
+
+sudo apt-get install nginx
+
+No encuentra el paquete asi que actualizamos repositorios.
+
+sudo apt-get update.
+
+Y ahora si, lo instalamos.
+
+![Imgur](http://i.imgur.com/NgkvfsD.png)
+
+## Ejercicio 13
+
+![Imgur](http://i.imgur.com/gQvJLqg.png)
+
+sudo docker commit *idlargo* IVprueba

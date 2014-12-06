@@ -64,3 +64,48 @@
 * [] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
 * [] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 * [] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+
+<h3> Clase del 28 de Octubre </h3>
+
+* [X] Consolidar el uso de PaaS/SaaS
+* [] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+* [X] Comenzar con la segunda práctica
+
+<h3> Clase del 3 de Noviembre </h3>
+
+* [X] Consolidar el uso de PaaS/SaaS
+* [] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+* [X] Comenzar con la segunda práctica
+
+<h3> Clase del 4 de Noviembre </h3>
+* [X] Usar herramientas de administración y monitorización de red en línea de órdenes
+* [] Contestar a la encuesta sobre la asignatura
+* [] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
+* [X] Dejar de usar Sublime Text por estas 7 razones.
+
+<h3> Clase del 10 de Noviembre </h3>
+* [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+* [] Aprender a ''enjaular'' usuarios.
+
+<h3> Clase del 11 del Noviembre </h3>
+* [X] Entender el concepto de contenedores
+* [] Configurar el sistema para poder crear y usar contenedores
+* [] Crear y usar contenedores
+* [] Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
+* [X] Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
+
+<h3> Clase del 17 de Noviembre </h3>
+* [X] Entender los sistemas de orquestación de máquinas virtuales.
+* [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+* [X] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+
+<h3> Clase del 24 de Noviembre </h3>
+* [] Resolver problemas con juju.
+* [X] Configuración compleja de sistemas con él.
+* [X] Entender el concepto de hipervisor y trabajar con ellos.
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+<h3> Clase del 25 de Noviembre </h3>
+* [] Resolver problemas con juju.
+* [X] Entender cómo funciona docker y qué implica.
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.

@@ -274,3 +274,340 @@ El concepto de SaaS existe desde hace tiempo, solo que en estos últimos años s
 Algunos ejemplos sencillos son: Webmail de Gmail, los CRM onlines. En este tipo de servicios nosotros accedemos normalmente a través del navegador sin atender al software. Todo el desarrollo, mantenimiento, actualizaciones, copias de seguridad es responsabilidad del proveedor.
 Por lo que tenemos poco control, nosotros nos situamos en la parte más arriba de la capa del servicio. Si el servicio se cae es responsabilidad de proveedor hacer que vuelva a funcionar.
 Ejemplos más conocidos de Saas son Google Docs, Salesforce, Dropbox, Gmail…
+
+##TEMA 2
+
+#Clase del 20 de octubre de 2014
+
+* [+]Ejercicio 1
+ - A) Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).
+ 
+- Voy a instalar el entorno virtual "virtualenv" para Python. Para ello vemos a instalar PIP, que nos sirve apra instalar paquetes de python.
+
+    sudo apt-get install python-setuptools python-dev build-essential
+    sudo easy_install pip
+
+Una vez realizado estos pasos damos el definitivo para la instalación de "virtualenv".
+
+    sudo pip install --upgrade virtualenv 
+
+La forma de usarlo y activarlo es la siguiente:
+
+    virtualenv ENV
+    source bin/activate
+
+El uso de "virtualenv" es muy sencillo, para ello simplemente creamos una entorno virtual:
+
+    virtualenv mi_entorno
+
+Una vez creado, entramos en el y lo activamos:
+
+    cd mi_entorno
+    source mi_entorno/bin/activate
+
+Sabremos que estamos en el entorno virtual, porque nuestra terminal cambia de:
+
+    $
+ 
+ a
+ 
+    (mi_entorno)$
+
+* [+]Ejercicio 2
+ - A) Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.
+
+ Por probar diferentes servicios, me voya dar de alta en Heroku. Para ello nos damos de alta en [Registro Heroku](https://signup.heroku.com/www-home-top). Simplemente con introducir el correo electrónico es más que suficiente.
+ Una vez registrado, te mandarán un correo para verificar el registro. Cuando le demos al enlace nos llevará a una página donde podremos elegir [nuestra contraseña](https://www.dropbox.com/s/uz8ysumr44kgw4s/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.02.26.png?dl=0). Una vez aceptada nuestra contraseña nos aparecera la siguiente página en la cual ya podremos proceder a usar [Heroku](https://www.dropbox.com/s/hxpdhmn704ugkzm/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.04.15.png?dl=0). [Panel de Heroku](https://www.dropbox.com/s/j74vla3g9eg9kpk/Captura%20de%20pantalla%202014-11-09%20a%20la%28s%29%2018.05.37.png?dl=0).
+
+
+#Clase del 21 de octubre de 2014
+
+* [+]Ejercicio 3
+ - A) Crear una aplicación en OpenShift y dentro de ella instalar WordPress.
+ 
+Lo primero que tenemos que hacer es registrarnos como en el caso de Heroku, para ello vamos a la página de [registro de OpenShift](https://openshift.redhat.com/app/account/new?__utma=222392261.655486696.1381573316.1381573316.1381573316.1&__utmb=222392261.2.10.1381573316&__utmc=222392261&__utmx=-&__utmz=222392261.1381573316.1.1.utmcsr=google%7Cutmccn=(organic)%7Cutmcmd=organic%7Cutmctr=(not%20provided)&__utmv=-&__utmk=111961607). Una vez que hemos rellenado todos los campos y nos hemos registrado satisfactoriamente, nos mandarán un correo para verificar nuestro resgistro, le damos al enlacen de verificación y nos aparecera la siguiente [página](https://www.dropbox.com/s/7gq23aihktadbo3/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.10.33.png?dl=0) y le damos a "Aceptar los términos". Cuando hayamos aceptado nos aparecera la siguiente página, donde le daremos a [Create your first application now](https://www.dropbox.com/s/ajekyxx09xkt4ch/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.12.12.png?dl=0) que nos mostrará el [panel de trabajo](https://www.dropbox.com/s/frizikrl9wpzkja/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.17.49.png?dl=0). Ahora unavez estemos ya en este panel de trabajo, nos encontraremos con una sección de [Instant app](https://www.dropbox.com/s/1itxucid9kocvi4/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.18.53.png?dl=0), donde seleccionaremos "WordPress4".
+Una vez seleccionado "WordPress4", tendremos que rellenar el campo con la [dirección](https://www.dropbox.com/s/azit2zq4n1yobs2/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.25.22.png?dl=0) que queremos tener, el resto de opciones se quedan como estan, y le damos a "Create Application".
+Cuando se haya creado, aparece lo [siguiente](https://www.dropbox.com/s/f06b29n2qdirhbu/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.27.38.png?dl=0), y le damos a "Not now, continue".[Ya esta creada](https://www.dropbox.com/s/dg9654hrycclidl/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.29.27.jpg?dl=0).
+
+Ahora tenemos que registrarnos en [WordPress](https://www.dropbox.com/s/ancwhqe88zuvqgb/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.42.05.png?dl=0). Entraremos en el [panel de control de WordPress](https://www.dropbox.com/s/4scyktk2kutwx5d/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.43.36.png?dl=0).
+Creo una ueva entrada, ya estaria todo [terminado](https://php-walkerazos.rhcloud.com/).
+
+* [+]Ejercicio 4
+ - A) Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.
+
+Nos vamos a [Google Drive](https://www.dropbox.com/s/aptx9tbfm7ys7l4/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.54.46.png?dl=0) y creamos un nuevo documento de texto. Una vez creado el documento nos vamos a [Herrramientas -->Editor de secuencia de comandos..](https://www.dropbox.com/s/zttpeyothwvqndj/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.51.45.png?dl=0)
+Ahora creamos el nuevo [Script](https://www.dropbox.com/s/ew3jmx20ah2kvaw/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2016.56.32.png?dl=0).
+
+Una vez terminado nuestro [Script](https://www.dropbox.com/s/bbwj4y30pl7txxs/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2017.05.38.png?dl=0), lo ejecutamos, y en nuestro documento [aparecerá](https://www.dropbox.com/s/pvxyx4dmjnm6nde/Captura%20de%20pantalla%202014-11-11%20a%20la%28s%29%2017.08.45.png?dl=0).
+
+
+#Clase del 27 de octubre de 2014
+
+* [+]Ejercicio 5
+ - A) Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+Lo primero que tenemos que tener es tener [node.js](http://nodejs.org/), para ello aqui dejo un tutorial de como [instalar](http://geekytheory.com/instalacion-de-nodejs/).
+
+Uno de los automatizadores de construcción de "node.js" es [Grunt](http://gruntjs.com/). Hay que [instalarlo](http://gruntjs.com/getting-started).
+Para ello usamos el comando:
+
+    npm install -g grunt-cli
+
+* [+]Ejercicio 6
+ - A) Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.
+
+Como yo he usado tanto Heroku como OpenShift, en este caso voy a usar Heroku, por lo que el fichero de automatización de 
+construcción es:
+
+[/apps/:app/builds](https://blog.heroku.com/archives/2014/5/21/introducing_programmatic_builds_on_heroku)
+
+EL proceso que sigue es que el nombre de la aplicación se le pasa un guión con la URL, a un archivo que contiene el código fuente, todo ello comprimo en dicho archivo.
+
+Dicho Script coge las entradas y para ello usa "/apps/:app/builds", para poder crear así una nueva estructura dentro de "Heroku". Dentro de la plataforma de Heroku se identifica la nueva estructura, seuidamente pasa a estar en el estado "pendiente" y el siguiente paso sería a "Contrucción". Cuando la estructura se haya creado, pasaría a estar en estado "Éxito" o "Fracaso". De la salida se obtienen los resultados y se muestra por nuestra ventana de trabajo, si ha sido "Éxitosa", la estructura se despliega sola.
+
+* [+]Ejercicio 7
+ - A) Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
+
+Hay varios entornos de pruebas para node.js, pero es uno de los que más se suelen usar, [Sails.js](http://sailsjs.org/#/).
+
+Aquí dejo como [instalarlo en diferentes sistemas](http://sailsjs.org/#/getStarted) y un poco más de infomación sobre él.
+
+#VIRTUALIZACIÓN
+
+#Clase del 4 de Noviembre de 2014
+
+* [+]Ejercicio 1
+ - A) Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback.
+
+Lo primero que tenemos que hacer es crear un espacio de nombres con:
+
+    unshare -u /bin/bash
+
+y cambio el nombre con:
+
+    hostname ejercicio1
+
+con lo que ahora "ejercicio1" será nuestro nombre del sistema.
+
+Loa segundo es crear la carpeta en "/mnt", para ello hacemos:
+
+    mkdir disk
+    chmod 7777 -R disk
+
+Ahora lo que hacemos es montar la imagen ".iso" en esa carpeta, situandonos previamente en la carpeta donde esta la imagen:
+
+    mount -o loop - ubuntu-12.04.4-server-i386.iso /mnt/disk
+
+Aquí esta el [ejemplo](https://www.dropbox.com/s/a4rgma5oq2xd59x/Captura%20de%20pantalla%202014-11-17%20a%20la%28s%29%2018.00.58.png?dl=0) que yo he realizado. 
+
+
+* [+]Ejercicio 2
+ - A) Mostrar los puentes configurados en el sistema operativo.
+
+Lo primero que debemos de hacer es [installar](https://www.dropbox.com/s/ldc9ye4vdfdfa7e/Captura%20de%20pantalla%202014-11-17%20a%20la%28s%29%2018.08.37.png?dl=0)
+la utilidad para poder mostrar la información:
+
+    apt-get install bridge-utils
+
+Ahora para [consultarlo](https://www.dropbox.com/s/68veyuua9xtg4le/Captura%20de%20pantalla%202014-11-17%20a%20la%28s%29%2018.14.48.png?dl=0) usamos el siguiente comando:
+
+    brctl show
+
+ - B) Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+
+Lo primero que debemos de hacer es crear la interfaz virtual con:
+
+    brctl addbr interfazejercicio2
+
+Lo segundo es asignar la nueva interfaz creada "interfazejercicio2" a "eth0" con:
+
+    brctl addif interfazejercicio2 eth0
+
+Una vez realizado todo esto, vemos que se ha asignado todo correctamente con:
+
+    brctl show
+
+[Ver Proceso](https://www.dropbox.com/s/upz9ttfzfhrypns/Captura%20de%20pantalla%202014-11-17%20a%20la%28s%29%2018.20.53.png?dl=0)
+
+#Clase del 10 de Noviembre de 2014
+
+* [+]Ejercicio 3
+ - A) Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+
+ El primer paso que tenemos que dar es instalar [Debootstrap](https://www.dropbox.com/s/i7mr26g6ea9qm4w/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2013.23.04.png?dl=0), para ello usamo la siguiente orden:
+
+    apt-get install debootstrap
+
+Una vez ejecutada la orden comenzará el proceso de [descarga e instalación](https://www.dropbox.com/s/647vckmf8beiybf/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2013.23.26.png?dl=0).
+
+Sigo los pasos del ejemplo usado en las transparecias del tema pero no encuntra [quantal](https://www.dropbox.com/s/18sszawhl77uhvt/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2013.32.49.png?dl=0), por lo que proceso a usar "lucid".
+
+Para ello sigo los pasos seguidos anteriormente con en el ejemplo de quantal, así que creamos los [directorios](https://www.dropbox.com/s/gzobsb4o5w0wc9e/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2013.42.57.png?dl=0) siguientes donde se realizara la instalación:
+
+    home/jaulas/lucid
+
+Por último ejecutamos las orden:
+
+    debootstrap --arch=amd64 lucid /home/jaulas/lucid/ http://archive.ubuntu.com/ubuntu
+
+Tras un rato de espera se termina el proceso y se nos quedaría como se [muestra](https://www.dropbox.com/s/mhtyxhtcffld6hs/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2013.55.43.png?dl=0), siempre que se muestre el mensaje de "Base system installed successfully". 
+
+ - B) Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
+
+El primer paso que debemos de dar es instalar rinse, para ello [usamos](https://www.dropbox.com/s/ez0quh68jpuxg6e/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.10.41.png?dl=0) la siguiente orden:
+
+    apt-get install rinse
+
+Después tenemos que ver la lista de sistemas que hay disponibles con la [orden](https://www.dropbox.com/s/lbumgl8ip3lij2z/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.15.24.png?dl=0):
+
+    rinse --list-distributions
+
+Una vez localizado el sistema que vamos a usar, creamos un [directorio](https://www.dropbox.com/s/ezyq33qf3cfut5m/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.13.59.png?dl=0) nuevo donde meteremos nuestro sistema Fedora:
+
+    /home/jaulas/fedora
+
+Ahora ejecutamos la siguiente orden y comenzara de [descargar](https://www.dropbox.com/s/qiqp4u3ws8noy7x/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.19.40.png?dl=0) la distribución elegida:
+
+    rinse --arch=amd64 --distribution fedora-core-4 --directory /home/jaulas/fedora
+
+Tras un rato esperando a que se descargue por completo la distribución selecionada, nos aparecerá lo siguiente:
+[Ver](https://www.dropbox.com/s/osdoao6noymb8vd/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.26.53.png?dl=0)
+
+* [+]Ejercicio 4
+ - A) Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.
+
+El primer paso es usar "chroot" para poder entrar en la jaula, usando el siguiente comando:
+
+    chroot /home/jaulas/fedora
+
+Después ejecutamos el comando "top", pero nos da un [error](https://www.dropbox.com/s/1si50v7wagmur13/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.34.02.png?dl=0).
+
+Para solucionar dicho problema y poder visualizar el listado de directorios, usamos el siguiente comando:
+
+    mount -t proc proc /proc
+
+Una vez realizado este paso, volvemos a ejecutar la orden [top](https://www.dropbox.com/s/vogfekhjj4jbw2s/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.39.40.png?dl=0).
+
+Ahora instalamos un editor de texto, en mi caso uso "nano":
+
+    yum install nano
+
+Ejecutamos [nano](https://www.dropbox.com/s/wphygjj43cq0hyb/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.56.35.png?dl=0) y creamos un pequeño programa.
+
+Después lo ejecutamos con:
+
+    python hola.py
+
+[Ver](https://www.dropbox.com/s/ovyp0l469daft7x/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2016.57.45.png?dl=0)
+
+* [+]Ejercicio 5
+ - A) Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
+
+Lo primero es entrar en la jaula que vamos a usar para instalarlo:
+
+    chroot /home/jaulas/lucid
+
+Como segundo paso, ejecutamos [apt-get install curl](https://www.dropbox.com/s/ytsi73smv3p2yyt/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.08.50.png?dl=0).
+
+El tercer paso para poder instalar "nginx" es el [siguiente](https://www.dropbox.com/s/nal29eerjdk54rv/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.13.54.png?dl=0).
+
+Por último ejecutamos "nginx" con:
+
+    service start nginx
+
+* [+]Ejercicio 6
+ - A) Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.
+
+Lo primero que debemos de hacer es instalar "jailkit", para ello tenemos que hacer es [ejecutar](https://www.dropbox.com/s/ye3pqyjiznv3xm5/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.28.53.png?dl=0):
+
+    wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.gz
+
+Después [descomprimimos](https://www.dropbox.com/s/b22tnaqg5fmwvco/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.30.11.png?dl=0) el archivo descargado:
+
+    tar -xzvf jailkit-2.16.tar.gz
+
+Cuando ya lo hayamos descomprimido vamos a la carpeta de "jailkit" y ejecutamos: 
+
+    ./configure
+    make
+    sudo make install
+
+Ahora vamos a seguir las transparencias de clase:
+
+    sudo mkdir -p /seguro/jaulas/dorada
+    sudo chown -R root:root /seguro
+
+[Ver](https://www.dropbox.com/s/cv3vrkebit4emsn/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.37.13.png?dl=0)
+
+Una vez realizado lo anterior procedemos ha ejecutar lo siguiente:
+
+    sudo jk_init -v -j /seguro/jaulas/dorada jk_lsh basicshell netutils editors
+
+Tras unos segundos de espera, nos aparecerá lo siguiente:
+[Ver](https://www.dropbox.com/s/ml0xnp27r0acw5o/Captura%20de%20pantalla%202014-11-18%20a%20la%28s%29%2017.41.08.png?dl=0)
+
+Ahora creamos un usuario y lo enjaulamos dentro de su jaula:
+
+    useradd ejercicio6
+    jk_jailuser -m -j /seguro/jaulas/dorada ejercicio6
+
+Se le cambia la contraseña al usuario:
+
+    passwd usuarioIV
+
+Por último editamos el archivo de configuración del usuario en este caso "ejercicio6", cambiando "jk_lsh" por "/bin/bash":
+
+    /seguro/jaulas/dorada/etc/passwd
+
+
+#CONTENEDORES
+
+#Clase del 11 de Noviembre de 2014
+* [+]Ejercicio 1
+ - A) Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.
+
+* [+]Ejercicio 2
+ - A) Comprobar qué interfaces puente se han creado y explicarlos.
+
+* [+]Ejercicio 3
+ - A) Crear y ejecutar un contenedor basado en Debian.
+ - B) Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.
+
+* [+]Ejercicio 4
+ - A) Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
+ - B) Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
+
+* [+]Ejercicio 5
+ - A) Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.
+
+* [+]Ejercicio 6
+ - A) Instalar juju.
+ - B) Usándolo, instalar MySQL en un táper.
+
+* [+]Ejercicio 7
+ - A) Destruir toda la configuración creada anteriormente.
+ - B) Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.
+ - C) Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
+ 
+* [+]Ejercicio 8
+ - A) Instalar libvirt. Te puede ayudar esta guía para Ubuntu.
+
+* [+]Ejercicio 9
+ - A) Instalar un contenedor usando virt-install.
+
+#Clase del 17 de Noviembre de 2014
+* [+]Ejercicio 10
+ - A) Instalar docker.
+
+* [+]Ejercicio 11
+ - A) Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
+ - B) Buscar e instalar una imagen que incluya MongoDB.
+
+* [+]Ejercicio 12
+ - A) Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.
+
+* [+]Ejercicio 13
+ - A) Crear a partir del contenedor anterior una imagen persistente con commit.
+
+* [+]Ejercicio 14
+ - A) Crear una imagen con las herramientas necesarias para DAI sobre un sistema operativo de tu elección.
