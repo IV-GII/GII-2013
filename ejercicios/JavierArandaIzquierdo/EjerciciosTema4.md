@@ -135,5 +135,59 @@ Tras esto, ejecutaremos las siguientes ordenes para instalar MySQL:
     
 ###Ejercicio 7
 #####Destruir toda la configuración creada anteriormente
+
+Para destruir toda la cofiguracion vamos a utlizar la orden:
+
+	juju destroy [lo que queremos eliminar]
+    
+En nuestro caso vamos a eliminar MySQL:
+
+	juju destroy-service mysql
+    
+Y el entorno:
+
+	juju destroy-environment
+    
+![ejer7-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer7-1tema4.png)
+
 #####Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.
+
+Para ello vamos a utilizar las siguientes ordenes:
+
+	juju bootstrap
+	juju deploy mediawiki
+	juju deploy mysql
+    
+Para añadir la relacion entre ellos utilizamos la siguiente orden:
+
+	juju add-relation mediawiki:db mysql
+
 #####Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
+
+El Scrip reune todas las ordenes ya instaladas:
+
+	#!/bin/bash
+    juju init
+    juju switch local 
+    juju bootstrap 
+    juju deploy mediawiki
+    juju deploy mysql 
+    juju add-relation mediawiki:db mysql 
+    juju expose mediawiki 
+    juju status 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
