@@ -250,7 +250,24 @@ Y al final para logearnos utilizamos:
     
 ![ejer11-2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer12-2tema4.png)
 
+Y ahora isntalamos nginx con:
 
+	apt-get install nginx
+
+###Ejercicio 13 
+#####Crear a partir del contenedor anterior una imagen persistente con commit.
+
+Primero, vamos a ejecutar la siguiente orden desde nuestra maquina anfitriona pero con el taper de docker arrancado:
+
+	sudo docker ps -notrunc
+    
+![ejer13-1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer13-1tema4.png)
+
+Cogemos la ID que no ha dado la orden anterior.Y creamos la imagen persistente con la siguiente orden:
+
+	sudo docker commit ID 
+    
+![ejer13-2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer13-2tema4.png)
 
 
 
