@@ -269,7 +269,8 @@ Cogemos la ID que no ha dado la orden anterior.Y creamos la imagen persistente c
     
 ![ejer13-2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/ejer13-2tema4.png)
 
-
+###Ejercicio14
+#####Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.
 
 
 
