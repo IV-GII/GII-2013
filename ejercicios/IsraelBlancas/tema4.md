@@ -243,4 +243,24 @@ Y he comprobado que pueda ejecutar ``virsh``
 
 ##Ejercicio 9##
 
-#####
+#####Instalar un contenedor usando virt-install.#####
+
+Instalamos "virt-viewer" para poder acceder a la interfaz gráfica usando ``sudo apt-get install virt-viewer``. Después, descargamos la imagen de instalación de, por ejemplo, alguna distribución Linux. Yo he optado por "Puppy Linux". Y ejecutamos el comando para la creación del contenedor (indicando nombre, tamaño de ram, dónde queremos que se guarde, ruta a la imagen...)
+
+```
+sudo virt-install -n virt-puppylinux -r 512 --disk path=/var/lib/libvirt/images/puppy.img,bus=virtio,size=5 -c tahr-6.0-CE_PAE.iso --accelerate --network network=default,model=virtio --connect=qemu:///system --vnc --noautoconsole -v
+```
+
+Una vez que comience la instalación, se nos indicará que podremos seguir la instalación desde la interfaz. Para ello ejecutamos:
+
+``sudo virt-viewer -c qemu:///system virt-puppylinux``
+
+![PuppyLinux](http://fotos.subefotos.com/f0e3048019315b0587c2b204170e2f5bo.jpg)
+
+Cuando queramos parar la máquina, listaremos las máquinas que tenemos ``virsh list`` y lo paramos de la siguiente forma:
+
+``sudo virsh shutdown virt-puppylinux``
+
+
+
+***
