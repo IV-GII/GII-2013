@@ -299,3 +299,23 @@ Una imagen que incluye MongoDB, se llama "dockerfile/mongodb" (contiene una imag
 Ejemplo de ejecución del comando ``ls`` en el contenedor CentOS
 
 ![ls en CentOS con Docker](http://fotos.subefotos.com/14285ef04b10df35b54ba769e03b158ao.jpg)
+
+
+
+***
+
+##Ejercicio 12##
+
+#####Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.#####
+
++ Entramos al contenedor ``sudo docker run -i -t ubuntu /bin/bash``
++ Añadimos el nuevo usuario ``useradd -d /home/usuarionginx -m usuarionginx``
++ Damos al usuario la posibilidad de ejecutar como "sudo" ``adduser usuarionginx sudo``
++ Establecemos contraseña ``passwd usuarionginx``
++ Entramos como el usuario mediante ``su usuarionginx``
++ Actualizamos los repositorios e instalamos nginx ``sudo apt-get update && sudo apt-get install nginx``
++ Iniciamos el servicio ``sudo service nginx start``
+
+![Iniciando nginx desde Docker](http://fotos.subefotos.com/4b3fa5bb57c9c72296ed19247b2ef459o.jpg)
+
+*No sé por qué, pero no obtengo respuesta (un mensaje diciendo que ha funcionado o fallado) cuando lo inicio. Si lo reinicio, podemos ver que da como salida un OK.
