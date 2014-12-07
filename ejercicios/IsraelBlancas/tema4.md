@@ -264,3 +264,21 @@ Cuando queramos parar la máquina, listaremos las máquinas que tenemos ``virsh 
 
 
 ***
+
+##Ejercicio 10##
+
+#####Instalar docker.#####
+
+He intentado instalar "Docker" utilizando el tutorial de la [página web de docker](http://docs.docker.com/installation/ubuntulinux/#ubuntu-trusty-1404-lts-64-bit):
+
++ Instalamos ``sudo apt-get install docker.io`` y ejecutamos ``source /etc/bash_completion.d/docker.io`` (para no tener problemas en el futuro, puede venir bien añadir esta instrucción al fichero ".bashrc", situado en "home/tuusuario")
++ Instalamos ``sudo apt-get install apt-transport-https``.
++ Añadimos la llave del repositorio de Docker: ``sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9``
++ Ejecutamos ``sudo sh -c "echo deb https://get.docker.com/ubuntu docker main\ /etc/apt/sources.list.d/docker.list"`` para añadir el repositorio
++ Actualizamos los repositorios e instalamos con ``sudo apt-get update`` y ``sudo apt-get install lxc-docker``
+
+Como no me ha funcionado (no se encontraba el paquete y también obtenía errores con el otro método de instalación), seguí [este tutorial](http://www.liquidweb.com/kb/how-to-install-docker-on-ubuntu-14-04-lts/)
+
+Una vez instalado, ejecutamos ``sudo rm /var/run/docker.pid`` para evitar problemas en la ejecución y ejecutamos con ``sudo docker -d &``
+
+![docker](http://fotos.subefotos.com/62f9afeb95de844c737c1fef9050af3co.jpg)
