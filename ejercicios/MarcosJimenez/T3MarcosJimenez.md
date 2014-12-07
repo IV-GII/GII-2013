@@ -59,6 +59,18 @@ Podemos ver que el proceso ha concluido correctamente. Aquí una captura del res
 <strong> EJERCICIO 3: Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda 
 ejecutar más adelante. Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.</strong>
 
+Toda la información requerida para montar un sistema con debootstrap se encuentra aquí: https://wiki.ubuntu.com/DebootstrapChroot Si no tenemos instalado el programa lo instalamos con:
+```
+sudo apt-get install debootstrap
+```
+Y ahora escribimos lo siguiente para crear nuestro sistema (que estará alojado en la carpeta /jaulas/hardy):
+```
+debootstrap --arch=i386 trusty /home/jaulas/hardy/ http://archive.ubuntu.com/ubuntu
+```
+Y se empezará a instalar nuestro sistema:
+
+<img src="http://i61.tinypic.com/29e15rq.png"></img>
+
 <strong> EJERCICIO 4: Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar 
 alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.</strong>
 
