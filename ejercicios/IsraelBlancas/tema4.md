@@ -334,3 +334,14 @@ Escribimos ``sudo docker commit 5c1240db1a0d nombrenuevo`` y el resultado será 
 Al ejecutar ``sudo docker images``, veremos que la última es la que hemos creado.
 
 ![Docker](http://fotos.subefotos.com/e616550e6d3b3c8702425543671297b4o.jpg)
+
+
+
+***
+
+##Ejercicio 14##
+
+#####Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.#####
+
+Nos registramos en la página web de [Docker](https://hub.docker.com/account/signup/) (podemos hacerlo utilizando nuestra cuenta de GitHub).
+Tras esto, pulsamos sobre nuestro nick y vamos a "My Repositories". Allí, hacemos click sobre "Add Repository>Automated Build". Elegimos el repositorio de GitHub (o Bitbucket) en el que queremos que se haga el despliegue. Cuando se haya creado, deberemos escribir un "Dockfile" que indique qué debe instalarse.
