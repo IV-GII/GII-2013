@@ -71,6 +71,18 @@ Y se empezará a instalar nuestro sistema:
 
 <img src="http://i61.tinypic.com/29e15rq.png"></img>
 
+Ahora vamos a usar la herramienta Rinse para crear un sistema Fedora dentro de Ubuntu. En primer lugar lo instalamos:
+```
+sudo apt-get install rinse
+```
+Elegimos Fedora 10 para la instalación del sistema y lo hacemos con:
+```
+rinse --arch i386 --distribution fedora-core-10 --directory /home/marcos/fedora
+```
+Comenzará a descargarse los archivos necesarios y el proceso de instalación comenzará. Vemos que se ha completado correctamente:
+
+<img src="http://i59.tinypic.com/2uq0vf9.png"></img>
+
 <strong> EJERCICIO 4: Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar 
 alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.</strong>
 
