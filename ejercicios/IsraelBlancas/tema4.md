@@ -282,3 +282,20 @@ Como no me ha funcionado (no se encontraba el paquete y también obtenía errore
 Una vez instalado, ejecutamos ``sudo rm /var/run/docker.pid`` para evitar problemas en la ejecución y ejecutamos con ``sudo docker -d &``
 
 ![docker](http://fotos.subefotos.com/62f9afeb95de844c737c1fef9050af3co.jpg)
+
+
+
+***
+
+##Ejercicio 11##
+
+#####1. Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.#####
+#####2. Buscar e instalar una imagen que incluya MongoDB.#####
+
+Después de haber instalado una imagen de Ubuntu (``sudo docker pull ubuntu``), hacemos lo mismo con CentOS ``sudo docker pull centos``
+
+Una imagen que incluye MongoDB, se llama "dockerfile/mongodb" (contiene una imagen Ubuntu con MongoDB). Se instala con ``docker pull dockerfile/mongodb``
+
+Ejemplo de ejecución del comando ``ls`` en el contenedor CentOS
+
+![ls en CentOS con Docker](http://fotos.subefotos.com/14285ef04b10df35b54ba769e03b158ao.jpg)
