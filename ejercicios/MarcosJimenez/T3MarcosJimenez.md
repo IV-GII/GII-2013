@@ -5,6 +5,18 @@
 <strong> EJERCICIO 1: Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que
 desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback. </strong>
 
+Antes de comenzar, necesitamos crear una carpeta donde montaremos nuestra imagen:
+```
+mkdir mnt
+``` 
+En esa carpeta vamos a montar nuestra imagen. Ahora lo que tenemos que hacer es escribir lo siguiente (en mi caso voy a usar una ISO de Ubuntu 14.04):
+```
+mount -o loop ubuntu-14.04-desktop-amd64.iso /mnt
+```
+Y ya quedaría montada la ISO en esa carpeta:
+
+<img src="http://i58.tinypic.com/2r7oyl3.png"></img><br>
+<br>
 <strong> EJERCICIO 2: Mostrar los puentes configurados en el sistema operativo. Crear un interfaz virtual y asignarlo al 
 interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.</strong>
 
