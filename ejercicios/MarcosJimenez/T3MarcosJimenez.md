@@ -28,7 +28,7 @@ En caso de que no encontrara el comando, lo instalamos con:
 ```
 sudo apt-get install bridge-utils
 ```
-El resultado sería éste:<br>
+El resultado sería éste:<br/>
 <img src="http://i59.tinypic.com/5exw1f.png"></img><br>
 <br>
 <strong> EJERCICIO 3: Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda 
