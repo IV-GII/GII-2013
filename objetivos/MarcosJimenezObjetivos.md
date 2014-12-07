@@ -109,3 +109,15 @@
 * [] Resolver problemas con juju.
 * [X] Entender cómo funciona docker y qué implica.
 * [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+<h3> Clase del 1 de Diciembre </h3>
+* [X] Resolver últimos problemas con docker.
+* [] Comenzar con la tercera práctica.
+* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+<h3> Clase del 2 de Diciembre </h3>
+* [X] Resolver últimos problemas con docker.
+* [] Resolver dudas relacionadas con la tercera práctica.
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
