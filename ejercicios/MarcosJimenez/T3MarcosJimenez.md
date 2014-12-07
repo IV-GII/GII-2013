@@ -20,6 +20,17 @@ Y ya quedaría montada la ISO en esa carpeta:
 <strong> EJERCICIO 2: Mostrar los puentes configurados en el sistema operativo. Crear un interfaz virtual y asignarlo al 
 interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.</strong>
 
+Para mostrar los puentes configurados en Ubuntu lo hacemos con la orden:
+```
+brctl show
+```
+En caso de que no encontrara el comando, lo instalamos con:
+```
+sudo apt-get install bridge-utils
+```
+El resultado sería éste:<br>
+<img src="http://i59.tinypic.com/5exw1f.png"></img><br>
+<br>
 <strong> EJERCICIO 3: Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda 
 ejecutar más adelante. Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.</strong>
 
