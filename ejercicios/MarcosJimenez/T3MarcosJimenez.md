@@ -31,7 +31,31 @@ sudo apt-get install bridge-utils
 El resultado sería éste:
 
 <img src="http://i59.tinypic.com/5exw1f.png"></img><br>
-<br>
+
+Lo siguiente es crear el interfaz virtual al que vamos a asignarle la interfaz de la wifi. Empezamos creándolo con:
+```
+brctl addbr infraestructuraVirtual
+```
+Ahora comprobamos que se ha creado correctamente con:
+```
+brctl show
+```
+
+<img src="http://i57.tinypic.com/16jmq7q.png"></img>
+
+Ahora asignamos la interfaz creada a una de las interfaces de nuestra tarjeta de red:
+```
+brctl addif infraestructuraVirtual eth0
+```
+Por último, hacienso uso de:
+```
+brctl show
+ip addr show
+```
+Podemos ver que el proceso ha concluido correctamente. Aquí una captura del resultado final:
+
+<img src="http://i57.tinypic.com/347hgz8.png"></img>
+
 <strong> EJERCICIO 3: Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda 
 ejecutar más adelante. Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.</strong>
 
