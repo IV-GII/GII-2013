@@ -80,6 +80,14 @@ Y a continuación podemos ver el error que nos da el archivo de registro:
 ####Ejercicio 8
 ######_Instalar libvirt. Te puede ayudar [esta guía para Ubuntu.](https://help.ubuntu.com/12.04/serverguide/libvirt.html)_
 
+
+Instalamos:
+
+```sh
+sudo apt-get install kvm libvirt-bin
+sudo apt-get install virtinst
+
+```
 - - -
 
 ####Ejercicio 9
@@ -90,21 +98,57 @@ Y a continuación podemos ver el error que nos da el archivo de registro:
 
 ####Ejercicio 10
 ######_Instalar docker._
+Instalamos con:
+```sh
+sudo apt-get install docker.io
+```
+Tras la instalación comprobamos la version de docker:
+![](capturas/Ejercicio10_Tema4.png)
 - - -
 
 ####Ejercicio 11
 ######_1. Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS._
 
 ######_2. Buscar e instalar una imagen que incluya MongoDB._
+
++ CentOs
+```bash
+sudo docker pull centos
+```
++ Para MongoDB podemos utilizar la siguiente imagen basada en Gentoo:
+```sh
+sudo docker pull hairmare/mongodb
+```
 - - -
 
 ####Ejercicio 12
 ######_Crear un usuario propio e instalar nginx en el contenedor creado de esta forma._
+
+sudo docker run -i -t ubuntu /bin/bash
+
+Esto nos baja la imagen ubuntu si no la tuviesemos instalada.
+Añadimos usuario y le añadimos la contraseña. Lo añadimos a los sudoers.
+```sh
+useradd -d /home/prueba -m prueba
+passwd prueba
+adduser prueba sudo
+```
+Logeamos con login prueba.
+
+Instalamos nginx:
+
+`sudo apt-get install nginx`
+
+
+
+
 - - -
 
 ####Ejercicio 13
 ######_Crear a partir del contenedor anterior una imagen persistente con commit._
-
+```sh
+sudo docker commit prueba IV
+```
 - - -
 
 ####Ejercicio 14
