@@ -319,3 +319,18 @@ Ejemplo de ejecución del comando ``ls`` en el contenedor CentOS
 ![Iniciando nginx desde Docker](http://fotos.subefotos.com/4b3fa5bb57c9c72296ed19247b2ef459o.jpg)
 
 *No sé por qué, pero no obtengo respuesta (un mensaje diciendo que ha funcionado o fallado) cuando lo inicio. Si lo reinicio, podemos ver que da como salida un OK.
+
+
+
+***
+
+##Ejercicio 13##
+
+#####Crear a partir del contenedor anterior una imagen persistente con commit.#####
+
+Manteniendo el contenedor en funcionamiento (ya sea teniendo la terminal abierta -la creada unos pasos antes- o enviando un nuevo trabajo), listamos los dockers con ``sudo docker ps`` y guardamos la ID (en mi caso "5c1240db1a0d").
+Escribimos ``sudo docker commit 5c1240db1a0d nombrenuevo`` y el resultado será una ID (en mi caso "28c35574d38ca22060b7c459684ec5131158d1d293bf60488bbfacb308471f5a").
+
+Al ejecutar ``sudo docker images``, veremos que la última es la que hemos creado.
+
+![Docker](http://fotos.subefotos.com/e616550e6d3b3c8702425543671297b4o.jpg)
