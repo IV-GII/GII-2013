@@ -1,5 +1,5 @@
 ####Ejercicio 1
-######_rear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en [ServerFault](http://serverfault.com/questions/198135/how-to-mount-an-iso-file-in-linux) nos explican como hacerlo, usando el dispositivo loopback_
+######_Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en [ServerFault](http://serverfault.com/questions/198135/how-to-mount-an-iso-file-in-linux) nos explican como hacerlo, usando el dispositivo loopback_
 
 ```sh
 mount -o loop disk.iso /mnt/disk
@@ -95,7 +95,41 @@ apt-get install nano
 ####Ejercicio 6
 ######_Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar._
 
+Nos bajamos el archivo con `wget`, lo descomprimimos y lo instalamos:
+```sh
+wget http://olivier.sessink.nl/jailkit/jailkit-2.17.tar.gz
+tar -xzvf jailkit-2.17.tar.gz
+cd jailkit-2.17
+sudo ./configure && make && sudo make install
+```
+Ahora procedemos a crear la jaula y enjaular el usuario:  
 
+1. Creamos un directorio para la jaula y hacemos propietario a root:
+```sh
+sudo mkdir /home/jaula_jailkit
+sudo chown root:root /home/jaula_jailkit```
+
+2. Damos permisos:
+```sh
+sudo chmod 0755 /home/jaula_jailkit
+```
+
+3. Le pasamos lo que podrá usarse dentro de esa jaula (tiene que estar instalado).
+```sh
+$jk_init -v -j /home/jaula_jailkit jk_lsh basicshell editors  netutils ```
+-v indica para ver qué se está haciendo, y -j indica el directorio dónde se encuentra la jaula.
+
+4. Creamos un usuario nuevo y le asignamos la jaula creada:
+```sh
+$adduser usuario_jailkit
+$jk_jailuser -m -j /home/jaula_jailkit usuario_jailkit
+$passwd usuario_jailkit
+```
+5. Creamos home del usuario en la jaula, haciéndolo propietario de su home:
+```sh
+$mkdir -p /home/jaula_jailkit/home/usuario_jailkit
+$chown usuario_jailkit:usuario_jailkit /home/jaula_jailkit/home/usuario_jailkit
+```
 
 
 
