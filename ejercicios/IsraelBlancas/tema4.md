@@ -211,3 +211,36 @@ juju add-relation mediawiki:db mysql
 juju expose mediawiki
 echo "Finalizado correctamente"
 ```
+
+
+
+***
+
+##Ejercicio 8##
+
+#####Instalar libvirt. Te puede ayudar esta guía para Ubuntu.#####
+
+He ejecutado el siguiente comando:
+
+```
+sudo apt-get install kvm libvirt-bin virtinst
+```
+
+Tras esto, he comprobado que sea compatible, ejecutando el comando `` kvm-ok``, que devolverá un mensaje que indica que este tipod de aceleración se puede usar:
+
+```
+INFO: /dev/kvm exists
+KVM acceleration can be used
+```
+
+Y he comprobado que pueda ejecutar ``virsh``
+
+![virsh](http://fotos.subefotos.com/6cdcc42957b4579c251804cf397b7127o.jpg)
+
+
+
+***
+
+##Ejercicio 9##
+
+#####
