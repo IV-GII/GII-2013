@@ -1,11 +1,23 @@
+# Clase del 1 de diciembre e de 2014
+
+## Objetivos de la clase
+    [X]Resolver últimos problemas con docker.
+    []Comenzar con la tercera práctica.
+
+## Otros objetivos
+    []Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+    []¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+    
+<hr />
+
 # Clase del 25 de noviembre de 2014
 
 ## Objetivos de la clase
-    []Resolver problemas con juju.
-    []Entender cómo funciona docker y qué implica.
+    [X]Resolver problemas con juju.
+    [X]Entender cómo funciona docker y qué implica.
 
 ## Otros objetivos
-    []Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error,     preguntar a quien lo sepa.
+    [X]Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error,     preguntar a quien lo sepa.
     []Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
     
 <hr />
@@ -13,13 +25,13 @@
 # Clase del 24 de noviembre de 2014
 
 ## Objetivos de la clase
-    []Resolver problemas con juju.
-    []Configuración compleja de sistemas con él.
-    []Entender el concepto de hipervisor y trabajar con ellos.
+    [X]Resolver problemas con juju.
+    [X]Configuración compleja de sistemas con él.
+    [X]Entender el concepto de hipervisor y trabajar con ellos.
 
 ## Otros objetivos
     []Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
-    []Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error,     preguntar a quien lo sepa.
+    [X]Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de          error,preguntar a quien lo sepa.
     
 <hr />
 
@@ -40,11 +52,11 @@
 # Clase del 17 de noviembre de 2014
 
 ## Objetivos de la clase
-    []Entender los sistemas de orquestación de máquinas virtuales.
-    []Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+    [X]Entender los sistemas de orquestación de máquinas virtuales.
+    [X]Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 ## Otros objetivos
-    []Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos     de virtualización.
+    [X]Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos     de virtualización.
     
 <hr />
 
