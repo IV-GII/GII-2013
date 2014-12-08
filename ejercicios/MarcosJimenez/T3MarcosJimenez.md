@@ -107,4 +107,28 @@ Y ya lo tenemos funcionando:
 
 <strong> EJERCICIO 5: Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.</strong>
 
+Obviamente, lo primero que necesitamos es crear un usuario. Para ello, primero debemos situarnos en la carpeta correspondiente. En mi caso es:
+```
+cd home/jaulas2
+```
+Ahora podemos ejecutar el comando necesario para añadir un usuario:
+```
+useradd -s /bin/bash -m -d /home/jaulas2/trustytahr/./home/marcostrusty -c "trusty marcos" -g users marcostrusty
+```
+Lo más inmediato para comprobar si el usuario se ha creado correctamente junto con su jaula es cerrar la terminal, abrirla de nuevo y escribir:
+```
+su - marcostrusty
+```
+En la imagen podemos ver que se ha creado correctamente:
+
+<img src="http://i59.tinypic.com/2h7q7eq.png"></img>
+
+Lo siguiente es instalar nginx. Lo instalamos con:
+```
+sudo apt-get install nginx
+```
+Y aquí vemos cómo comienza la instalación:
+
+<img src="http://i57.tinypic.com/302c0sj.png"></img>
+
 <strong> EJERCICIO 6: Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.</strong>
