@@ -42,6 +42,8 @@ Como comentamos anteriormente, el script manda un correo al usuario que se encue
 
 <strong> EJERCICIO 6: Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.</strong>
 
+Los ficheros más importantes para realizar la construcción de la aplicación (en este caso en Heroku) son package.json y app.json Además, es posible que necesitemos instalar algunas herramientas adicionales para el correcto despliegue. Normalmente en estos ficheros aparece la configuración que queremos que tenga Heroku a la hora de desplegar la aplicación.
+
 <strong> EJERCICIO 7: Buscar un entorno de pruebas para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.</strong>
 
 Por ejemplo, para Java, podemos usar <a href=http://jmeter.apache.org/>JMeter</a>.
