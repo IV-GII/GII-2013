@@ -83,8 +83,27 @@ Comenzará a descargarse los archivos necesarios y el proceso de instalación co
 
 <img src="http://i59.tinypic.com/2uq0vf9.png"></img>
 
-<strong> EJERCICIO 4: Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar 
-alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.</strong>
+<strong> EJERCICIO 4: Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.</strong>
+
+Para ello usaremos lo que instalamos en la primera parte del ejercicio 3. Lo primero que hacemos es movernos a esa carpeta, en mi caso:
+```
+cd /home/jaulas2/
+```
+A continuación ejecutamos:
+```
+chroot trustytahr/
+```
+Vamos a instalar ahora nano, que es un editor de texto. Para ello ejecutamos:
+```
+sudo apt-get install nano
+```
+Para ejecutarlo solo tenemos que escribir:
+```
+nano
+```
+Y ya lo tenemos funcionando:
+
+<img src="http://i61.tinypic.com/162vc0.png"></img>
 
 <strong> EJERCICIO 5: Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.</strong>
 
