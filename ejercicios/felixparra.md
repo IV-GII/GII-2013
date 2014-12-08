@@ -173,13 +173,46 @@ Instalamos Rinse: <br />
 ![M3_3_2](https://raw.githubusercontent.com/felixparra/Imagenes/master/M3_3_2.png) <br />
 
 **Ejercicio 4:**<br />
-**Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.**
+**Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.** <br />
+El sistema utilizado es el sistema creado anteriormente (ejercicio 3.1). A continuación entramos en el sistema y montamos /proc<br />
+`chroot /home/jaulas/trustytahr` <br />
+`mount -t proc proc /proc` <br />
+Instalamos gedit con el comando: <br />
+`apt-get install gedit` <br />
 
-
-**Ejercicio 5:**<br />**
+**Ejercicio 5:**<br />
 **Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.**<br />
-
+Instalamos nginx: <br />
+`apt-get install nginx` <br />
+Lanzamos el servidor: <br />
+`service nginx start `<br />
+Verificamos el estado: <br />
+`service nginx status`<br />
+Comprobamos que todo esta correcto con curl: <br />
+`apt-get install curl` <br />
+`curl localhost` <br />
 
 **Ejercicio 6:**<br /> 
-**Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar**
+**Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar** <br />
+Descargamos jailkit: <br />
+`wget http://olivier.sessink.nl/jailkit/jailkit-2.17.tar.gz` <br />
+Lo descomprimimos, accedemos a jailkit-2.17 y lo instalamos. <br />
+`tar -xzvf jailkit-2.17.tar.gz` <br />
+`cd jailkit-2.17` <br />
+`sudo ./configure && make && sudo make install` <br />
+Creamos el directorio para la jaula: <br />
+`sudo mkdir /home/jailkit` <br />
+Asignamos root: <br />
+`sudo chown root:root /home/jailkit` <br />
+Damos permisos: <br />
+`chmod 0755 /home/jailkit`<br />
+Indicamos que se usará en la jaula:<br />
+`sudo jk_init -v /home/jailkit basicshell`<br />
+`sudo jk_init -v /home/jailkit editors`<br />
+Creamos un usuario: <br />
+`sudo adduser usuarioJailkit`<br />
+Enjaulamos al usuario:<br />
+`jk_jailuser -m -j /home/jailkit usuarioJailkit`<br />
+Establecemos una password:<br />
+`sudo passwd usuarioJailkit`<br />
 
