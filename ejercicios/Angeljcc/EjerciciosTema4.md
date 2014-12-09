@@ -14,7 +14,7 @@ A continuación miramos qué modulos son compatibles con nuestro SO:
 
 - - -
 
-####Ejercicio 2
+####Ejercicio 2  
 ######_Comprobar qué interfaces puente se han creado y explicarlos._
   
 El siguiente interface se ha creado tras la instalación de lxc:
