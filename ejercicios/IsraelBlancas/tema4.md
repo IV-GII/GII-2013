@@ -211,3 +211,137 @@ juju add-relation mediawiki:db mysql
 juju expose mediawiki
 echo "Finalizado correctamente"
 ```
+
+
+
+***
+
+##Ejercicio 8##
+
+#####Instalar libvirt. Te puede ayudar esta guía para Ubuntu.#####
+
+He ejecutado el siguiente comando:
+
+```
+sudo apt-get install kvm libvirt-bin virtinst
+```
+
+Tras esto, he comprobado que sea compatible, ejecutando el comando `` kvm-ok``, que devolverá un mensaje que indica que este tipod de aceleración se puede usar:
+
+```
+INFO: /dev/kvm exists
+KVM acceleration can be used
+```
+
+Y he comprobado que pueda ejecutar ``virsh``
+
+![virsh](http://fotos.subefotos.com/6cdcc42957b4579c251804cf397b7127o.jpg)
+
+
+
+***
+
+##Ejercicio 9##
+
+#####Instalar un contenedor usando virt-install.#####
+
+Instalamos "virt-viewer" para poder acceder a la interfaz gráfica usando ``sudo apt-get install virt-viewer``. Después, descargamos la imagen de instalación de, por ejemplo, alguna distribución Linux. Yo he optado por "Puppy Linux". Y ejecutamos el comando para la creación del contenedor (indicando nombre, tamaño de ram, dónde queremos que se guarde, ruta a la imagen...)
+
+```
+sudo virt-install -n virt-puppylinux -r 512 --disk path=/var/lib/libvirt/images/puppy.img,bus=virtio,size=5 -c tahr-6.0-CE_PAE.iso --accelerate --network network=default,model=virtio --connect=qemu:///system --vnc --noautoconsole -v
+```
+
+Una vez que comience la instalación, se nos indicará que podremos seguir la instalación desde la interfaz. Para ello ejecutamos:
+
+``sudo virt-viewer -c qemu:///system virt-puppylinux``
+
+![PuppyLinux](http://fotos.subefotos.com/f0e3048019315b0587c2b204170e2f5bo.jpg)
+
+Cuando queramos parar la máquina, listaremos las máquinas que tenemos ``virsh list`` y lo paramos de la siguiente forma:
+
+``sudo virsh shutdown virt-puppylinux``
+
+
+
+***
+
+##Ejercicio 10##
+
+#####Instalar docker.#####
+
+He intentado instalar "Docker" utilizando el tutorial de la [página web de docker](http://docs.docker.com/installation/ubuntulinux/#ubuntu-trusty-1404-lts-64-bit):
+
++ Instalamos ``sudo apt-get install docker.io`` y ejecutamos ``source /etc/bash_completion.d/docker.io`` (para no tener problemas en el futuro, puede venir bien añadir esta instrucción al fichero ".bashrc", situado en "home/tuusuario")
++ Instalamos ``sudo apt-get install apt-transport-https``.
++ Añadimos la llave del repositorio de Docker: ``sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9``
++ Ejecutamos ``sudo sh -c "echo deb https://get.docker.com/ubuntu docker main\ /etc/apt/sources.list.d/docker.list"`` para añadir el repositorio
++ Actualizamos los repositorios e instalamos con ``sudo apt-get update`` y ``sudo apt-get install lxc-docker``
+
+Como no me ha funcionado (no se encontraba el paquete y también obtenía errores con el otro método de instalación), seguí [este tutorial](http://www.liquidweb.com/kb/how-to-install-docker-on-ubuntu-14-04-lts/)
+
+Una vez instalado, ejecutamos ``sudo rm /var/run/docker.pid`` para evitar problemas en la ejecución y ejecutamos con ``sudo docker -d &``
+
+![docker](http://fotos.subefotos.com/62f9afeb95de844c737c1fef9050af3co.jpg)
+
+
+
+***
+
+##Ejercicio 11##
+
+#####1. Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.#####
+#####2. Buscar e instalar una imagen que incluya MongoDB.#####
+
+Después de haber instalado una imagen de Ubuntu (``sudo docker pull ubuntu``), hacemos lo mismo con CentOS ``sudo docker pull centos``
+
+Una imagen que incluye MongoDB, se llama "dockerfile/mongodb" (contiene una imagen Ubuntu con MongoDB). Se instala con ``docker pull dockerfile/mongodb``
+
+Ejemplo de ejecución del comando ``ls`` en el contenedor CentOS
+
+![ls en CentOS con Docker](http://fotos.subefotos.com/14285ef04b10df35b54ba769e03b158ao.jpg)
+
+
+
+***
+
+##Ejercicio 12##
+
+#####Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.#####
+
++ Entramos al contenedor ``sudo docker run -i -t ubuntu /bin/bash``
++ Añadimos el nuevo usuario ``useradd -d /home/usuarionginx -m usuarionginx``
++ Damos al usuario la posibilidad de ejecutar como "sudo" ``adduser usuarionginx sudo``
++ Establecemos contraseña ``passwd usuarionginx``
++ Entramos como el usuario mediante ``su usuarionginx``
++ Actualizamos los repositorios e instalamos nginx ``sudo apt-get update && sudo apt-get install nginx``
++ Iniciamos el servicio ``sudo service nginx start``
+
+![Iniciando nginx desde Docker](http://fotos.subefotos.com/4b3fa5bb57c9c72296ed19247b2ef459o.jpg)
+
+*No sé por qué, pero no obtengo respuesta (un mensaje diciendo que ha funcionado o fallado) cuando lo inicio. Si lo reinicio, podemos ver que da como salida un OK.
+
+
+
+***
+
+##Ejercicio 13##
+
+#####Crear a partir del contenedor anterior una imagen persistente con commit.#####
+
+Manteniendo el contenedor en funcionamiento (ya sea teniendo la terminal abierta -la creada unos pasos antes- o enviando un nuevo trabajo), listamos los dockers con ``sudo docker ps`` y guardamos la ID (en mi caso "5c1240db1a0d").
+Escribimos ``sudo docker commit 5c1240db1a0d nombrenuevo`` y el resultado será una ID (en mi caso "28c35574d38ca22060b7c459684ec5131158d1d293bf60488bbfacb308471f5a").
+
+Al ejecutar ``sudo docker images``, veremos que la última es la que hemos creado.
+
+![Docker](http://fotos.subefotos.com/e616550e6d3b3c8702425543671297b4o.jpg)
+
+
+
+***
+
+##Ejercicio 14##
+
+#####Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.#####
+
+Nos registramos en la página web de [Docker](https://hub.docker.com/account/signup/) (podemos hacerlo utilizando nuestra cuenta de GitHub).
+Tras esto, pulsamos sobre nuestro nick y vamos a "My Repositories". Allí, hacemos click sobre "Add Repository>Automated Build". Elegimos el repositorio de GitHub (o Bitbucket) en el que queremos que se haga el despliegue. Cuando se haya creado, deberemos escribir un "Dockfile" que indique qué debe instalarse.
