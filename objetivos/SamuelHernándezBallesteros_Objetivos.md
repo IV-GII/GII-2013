@@ -114,29 +114,29 @@ Clase del 3 de noviembre de 2014
 
 Clase del 4 de noviembre de 2014
 
-[] Entender los objetivos de este tema
+[X] Entender los objetivos de este tema
 
-[] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+[X] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
 
-[] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+[X] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
 
-[] Entender y saber llevar a cabo la virtualización de dispositivos de red
+[X] Entender y saber llevar a cabo la virtualización de dispositivos de red
 
-[] Usar herramientas de administración y monitorización de red en línea de órdenes
+[X] Usar herramientas de administración y monitorización de red en línea de órdenes
 
-[] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
+[X] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
 
 Clase del 10 de noviembre de 2014
 
-[] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+[X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 
-[] Aprender a ''enjaular'' usuarios.
+[X] Aprender a ''enjaular'' usuarios.
 
-[] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
+[X] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
 
-[] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+[X] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
 
-[] Comprender que existe vida en los servidores web fuera del Apache.
+[X] Comprender que existe vida en los servidores web fuera del Apache.
 
 [] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
 
@@ -165,3 +165,25 @@ Clase del 18 de noviembre de 2014
 [] Conocer las aplicaciones y programas que se usan.
 
 [] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+
+Clase del 25 de noviembre de 2014
+
+[] Resolver problemas con juju.
+
+[] Entender cómo funciona docker y qué implica.
+
+[] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+[] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+
+Clase del 1 de diciembre de 2014
+
+[] Resolver últimos problemas con docker.
+
+[] Comenzar con la tercera práctica.
+
+Clase del 2 de diciembre de 2014
+
+[] Resolver últimos problemas con docker.
+
+[] Resolver dudas relacionadas con la tercera práctica.
