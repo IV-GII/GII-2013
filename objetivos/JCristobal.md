@@ -132,7 +132,7 @@
 
 * [x] Resolver problemas con juju.
 * [x] Configuración compleja de sistemas con él.
-* [] Entender el concepto de hipervisor y trabajar con ellos.
+* [x] Entender el concepto de hipervisor y trabajar con ellos.
 
 * [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
 * [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.

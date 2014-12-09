@@ -1,11 +1,23 @@
+# Clase del 1 de diciembre e de 2014
+
+## Objetivos de la clase
+    [X]Resolver últimos problemas con docker.
+    []Comenzar con la tercera práctica.
+
+## Otros objetivos
+    []Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+    []¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+    
+<hr />
+
 # Clase del 25 de noviembre de 2014
 
 ## Objetivos de la clase
-    []Resolver problemas con juju.
-    []Entender cómo funciona docker y qué implica.
+    [X]Resolver problemas con juju.
+    [X]Entender cómo funciona docker y qué implica.
 
 ## Otros objetivos
-    []Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error,     preguntar a quien lo sepa.
+    [X]Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error,     preguntar a quien lo sepa.
     []Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
     
 <hr />
@@ -13,13 +25,13 @@
 # Clase del 24 de noviembre de 2014
 
 ## Objetivos de la clase
-    []Resolver problemas con juju.
-    []Configuración compleja de sistemas con él.
-    []Entender el concepto de hipervisor y trabajar con ellos.
+    [X]Resolver problemas con juju.
+    [X]Configuración compleja de sistemas con él.
+    [X]Entender el concepto de hipervisor y trabajar con ellos.
 
 ## Otros objetivos
     []Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
-    []Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error,     preguntar a quien lo sepa.
+    [X]Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de          error,preguntar a quien lo sepa.
     
 <hr />
 
@@ -40,20 +52,20 @@
 # Clase del 17 de noviembre de 2014
 
 ## Objetivos de la clase
-    []Entender los sistemas de orquestación de máquinas virtuales.
-    []Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+    [X]Entender los sistemas de orquestación de máquinas virtuales.
+    [X]Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 ## Otros objetivos
-    []Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos     de virtualización.
+    [X]Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos     de virtualización.
     
 <hr />
 
 # Clase del 11 de noviembre de 2014
 
 ## Objetivos de la clase
-    []Entender el concepto de contenedores
-    []Configurar el sistema para poder crear y usar contenedores
-    []Crear y usar contenedores
+    [X]Entender el concepto de contenedores
+    [X]Configurar el sistema para poder crear y usar contenedores
+    [X]Crear y usar contenedores
 
 ## Otros objetivos
     [X]Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red     en una aplicación para virtualización.
@@ -74,7 +86,7 @@
     [X]Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
     [X]Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
     [X]Comprender que existe vida en los servidores web fuera del Apache.
-    []Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de     la Wikipedia relacionado con la asignatura.
+    [X]Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de     la Wikipedia relacionado con la asignatura.
     []Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull         request.
     
 <hr />
@@ -88,7 +100,7 @@
     [X]Entender y saber llevar a cabo la virtualización de dispositivos de red
 
 ## Otros objetivos
-    []Usar herramientas de administración y monitorización de red en línea de órdenes
+    [X]Usar herramientas de administración y monitorización de red en línea de órdenes
     [X]Contestar a la encuesta sobre la asignatura
     [X]Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o              tuitearlas con el hashtag #ivgii
     []Dejar de usar Sublime Text por estas 7 razones.
