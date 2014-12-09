@@ -144,35 +144,35 @@ Clase del 10 de noviembre de 2014
 
 Clase del 11 de noviembre de 2014
 
-[] Entender el concepto de contenedores
+[X] Entender el concepto de contenedores
 
-[] Configurar el sistema para poder crear y usar contenedores
+[X] Configurar el sistema para poder crear y usar contenedores
 
-[] Crear y usar contenedores
+[X] Crear y usar contenedores
 
 Clase del 17 de noviembre de 2014
 
-[] Entender los sistemas de orquestación de máquinas virtuales.
+[X] Entender los sistemas de orquestación de máquinas virtuales.
 
 [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 Clase del 18 de noviembre de 2014
 
-[] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+[X] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
 
-[] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+[X] Conocer las tecnologías a nivel hardware que se usan para los mismos.
 
-[] Conocer las aplicaciones y programas que se usan.
+[X] Conocer las aplicaciones y programas que se usan.
 
-[] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+[X] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
 
 Clase del 25 de noviembre de 2014
 
-[] Resolver problemas con juju.
+[X] Resolver problemas con juju.
 
-[] Entender cómo funciona docker y qué implica.
+[X] Entender cómo funciona docker y qué implica.
 
-[] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+[X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 [] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
 
