@@ -173,13 +173,103 @@ Instalamos Rinse: <br />
 ![M3_3_2](https://raw.githubusercontent.com/felixparra/Imagenes/master/M3_3_2.png) <br />
 
 **Ejercicio 4:**<br />
-**Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.**
+**Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.** <br />
+El sistema utilizado es el sistema creado anteriormente (ejercicio 3.1). A continuación entramos en el sistema y montamos /proc<br />
+`chroot /home/jaulas/trustytahr` <br />
+`mount -t proc proc /proc` <br />
+Instalamos gedit con el comando: <br />
+`apt-get install gedit` <br />
 
-
-**Ejercicio 5:**<br />**
+**Ejercicio 5:**<br />
 **Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.**<br />
-
+Instalamos nginx: <br />
+`apt-get install nginx` <br />
+Lanzamos el servidor: <br />
+`service nginx start `<br />
+Verificamos el estado: <br />
+`service nginx status`<br />
+Comprobamos que todo esta correcto con curl: <br />
+`apt-get install curl` <br />
+`curl localhost` <br />
 
 **Ejercicio 6:**<br /> 
-**Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar**
+**Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar** <br />
+Descargamos jailkit: <br />
+`wget http://olivier.sessink.nl/jailkit/jailkit-2.17.tar.gz` <br />
+Lo descomprimimos, accedemos a jailkit-2.17 y lo instalamos. <br />
+`tar -xzvf jailkit-2.17.tar.gz` <br />
+`cd jailkit-2.17` <br />
+`sudo ./configure && make && sudo make install` <br />
+Creamos el directorio para la jaula: <br />
+`sudo mkdir /home/jailkit` <br />
+Asignamos root: <br />
+`sudo chown root:root /home/jailkit` <br />
+Damos permisos: <br />
+`chmod 0755 /home/jailkit`<br />
+Indicamos que se usará en la jaula:<br />
+`sudo jk_init -v /home/jailkit basicshell`<br />
+`sudo jk_init -v /home/jailkit editors`<br />
+Creamos un usuario: <br />
+`sudo adduser usuarioJailkit`<br />
+Enjaulamos al usuario:<br />
+`jk_jailuser -m -j /home/jailkit usuarioJailkit`<br />
+Establecemos una password:<br />
+`sudo passwd usuarioJailkit`<br />
 
+<hr />
+
+# Modulo IV - Virtualización ligera usando contenedores
+
+**Ejercicio 1:**<br />
+**Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.** <br />
+
+**Ejercicio 2:**<br />
+**Comprobar qué interfaces puente se han creado y explicarlos.**<br />
+
+**Ejercicio 3:**<br />
+######3.1 - Crear y ejecutar un contenedor basado en Debian.
+
+######3.2 - Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.
+
+**Ejercicio 4:**<br />
+######4.1 - Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
+
+######4.2 - Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
+
+**Ejercicio 5:**<br />
+**Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.**<br />
+
+**Ejercicio 6:**<br />
+######6.1 - Instalar juju.
+
+######6.2 - Usándolo, instalar MySQL en un táper.
+
+**Ejercicio 7:**<br />
+######7.1 - Destruir toda la configuración creada anteriormente
+
+######7.2 - Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.
+
+######7.3Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
+
+**Ejercicio 8:**<br />
+**Instalar libvirt. Te puede ayudar esta guía para Ubuntu.** <br />
+
+**Ejercicio 9:**<br />
+**Instalar un contenedor usando virt-install.**<br />
+
+**Ejercicio 10:**<br />
+**Instalar docker.** <br />
+
+**Ejercicio 11:**<br />
+######11.1 - Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
+
+######11.2 - Buscar e instalar una imagen que incluya MongoDB.
+
+**Ejercicio 12:**<br />
+**Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.** <br />
+
+**Ejercicio 13:**<br />
+**Crear a partir del contenedor anterior una imagen persistente con commit.** <br />
+
+**Ejercicio 14:**<br />
+**Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.** <br />
