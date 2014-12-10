@@ -8,7 +8,7 @@ Ejercicios de Juan Francisco Rodríguez Vílchez
 
 **Instala LXC en tu versión de Linux favorita.**
 
-Me lo he bajado LXC desde Github con:
+He procedido a bajarme LXC desde Github con:
 
 ```sh
 git clone https://github.com/lxc/lxc
@@ -445,7 +445,6 @@ Añadimos el repositorio de docker a /etc/apt/sources.list.d/docker.list:
 $ sudo sh -c "echo deb http://get.docker.com/ubuntu docker main\ s/etc/apt/sources.list.d/docker.list"
 $ sudo apt-get update
 $ sudo apt-get install lxc-docker
-
 ```
 Realizamos un `sudo apt-get update` para actualizar y ya podemos instalar docker (`sudo apt-get install lxc-docker`)s:
 
@@ -490,8 +489,8 @@ sudo docker pull ncarlier/mongodb
 
 Compruebo todas las imágenes que acabo de instalar:
 
-```
-sh sudo docker images 
+```sh
+sudo docker images 
 ```
 
 ![captura39](http://i.imgur.com/Expkgey.png)
@@ -586,15 +585,23 @@ Y ahora ejecutamos en la terminal para crear la imagen:
 ```sh
 sudo docker build -t juanfranrv/ubuntu-dai -no-cache=true github.com/juanfranrv/ubuntu-dai
 ```
+![captura44](http://i.imgur.com/vxwLRr8.png)
+
 Una vez creada la imagen si queremos comprobar si se ha creado correctamente, podemos usar `sudo docker images` o entrar `sudo docker run -i -t juanfranrv/ubuntu-dai /bin/bash` y probar alguna aplicación de las instaladas con el Dockerfile.
 
-Para terminar si queremos compartir nuestra imagen, primero tendremos que hacer login en Docker desde un terminal y después hacer un push con el nombre de la imagen.
+![captura44](http://i.imgur.com/KQD5lvM.png)
+
+En la captura anterior, podemos ver como la imagen juanfranrv/ubuntu-dai se encuentra creada.
+
+Para terminar si queremos compartir nuestra imagen, primero tendremos que loguearnos en Docker desde un terminal y después hacer un push con el nombre de la imagen.
 
 ```sh
 sudo docker login
 sudo docker push juanfranrv/ubuntu-dai
 ```
-Para ver la información, nos registramos en la página web de [Docker](https://hub.docker.com/account/signup/). Para ello he usado mi cuenta de Github:
+![captura44](http://i.imgur.com/kL0PzZa.pngss)
+
+Para ver la información de la imagen subida, nos registramos en la página web de [Docker](https://hub.docker.com/account/signup/). Para ello he usado mi cuenta de Github:
 
 ![captura44](http://i.imgur.com/61ZklFV.png)
 
