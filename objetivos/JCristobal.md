@@ -135,7 +135,7 @@
 * [x] Entender el concepto de hipervisor y trabajar con ellos.
 
 * [x] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
-* [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [x] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 ##Objetivos de sesión 19
 
@@ -144,11 +144,21 @@
 ##Objetivos de sesión 20
 
 * [x] Resolver últimos problemas con docker.
-* [] Comenzar con la tercera práctica.
+* [x] Comenzar con la tercera práctica.
 
 ##Objetivos de sesión 21
 
-* [] Resolver últimos problemas con docker.
+* [x] Resolver últimos problemas con docker.
 * [] Resolver dudas relacionadas con la tercera práctica.
+
+##Objetivos de sesión 22
+
+* [] Terminar la familiarización con Ruby
+* [] Recordar conceptos de almacenamiento físico.
+* [] Entender el concepto de FUSE y usarlo en la prática.
+* [] Crear y manipular formatos de provisionamiento delgado.
+
+* [] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
 
 
