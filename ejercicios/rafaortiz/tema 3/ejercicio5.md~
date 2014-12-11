@@ -1,6 +1,0 @@
-#Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
-Usando el ubuntu del ejercicio anterior usarlo como jaula y instalar en el nginx.
-
-sudo chroot /home/jaulas/utopic
-sudo apt-get install nginx
-
