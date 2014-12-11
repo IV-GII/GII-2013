@@ -265,9 +265,6 @@ Instalamos:<br />
 
 
 ######6.2 - Usándolo, instalar MySQL en un táper.
-Inicializamos:<br />
-`sudo juju init`<br />
-
 
 **Ejercicio 7:**<br />
 ######7.1 - Destruir toda la configuración creada anteriormente
@@ -284,6 +281,10 @@ Inicializamos:<br />
 
 **Ejercicio 10:**<br />
 **Instalar docker.** <br />
+`apt-get update`<br />
+`sudo apt-get install docker.io`<br />
+Comprobamos la instalación con:<br />
+`docker -v`<br />
 
 **Ejercicio 11:**<br />
 ######11.1 - Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
@@ -298,3 +299,4 @@ Inicializamos:<br />
 
 **Ejercicio 14:**<br />
 **Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.** <br />
+
