@@ -171,9 +171,9 @@ Aprender a ''enjaular'' usuarios.
 
 ### Objetivos de esta sesión
 
-* [] Entender el concepto de contenedores
-* [] Configurar el sistema para poder crear y usar contenedores
-* [] Crear y usar contenedores
+* [x] Entender el concepto de contenedores
+* [x] Configurar el sistema para poder crear y usar contenedores
+* [x] Crear y usar contenedores
 
 ### Otros objetivos
 
@@ -185,12 +185,12 @@ Aprender a ''enjaular'' usuarios.
 
 ### Objetivos de esta sesión
 
-* [] Entender los sistemas de orquestación de máquinas virtuales.
-* [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+* [x] Entender los sistemas de orquestación de máquinas virtuales.
+* [x] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 ### Otros objetivos
 
-* [] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+* [x] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
 
 
 ## Clase del 24 de noviembre de 2014
@@ -219,3 +219,46 @@ El viernes, hackatón y charla sobre la W3C
 
 * [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 * [] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+
+## Clase del 1 de diciembre de 2014
+### Objetivos de esta sesión
+
+* [] Resolver últimos problemas con docker.
+* [] Comenzar con la tercera práctica.
+* [] Otros objetivos
+
+Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+## Clase del 2 de diciembre de 2014
+###Objetivos de esta sesión
+
+* [] Resolver últimos problemas con docker.
+* [] Resolver dudas relacionadas con la tercera práctica.
+* [] Otros objetivos
+
+## Clase del 9 de diciembre de 2014
+
+###Objetivos de la asignatura
+
+* [] Terminar la familiarización con Ruby
+* [] Recordar conceptos de almacenamiento físico.
+* [] Entender el concepto de FUSE y usarlo en la práctica.
+* [] Crear y manipular formatos de provisionamiento delgado.
+
+###Objetivos generales
+
+Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+
+Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
+##Clase del 11 de diciembre de 2014
+###Objetivos de la asignatura
+
+* [] Entender diferentes tipos de sistemas de ficheros virtuales
+* [] Aprender a provisionar almacenamiento en la nube.
+* [] Objetivos generales
+
+Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+
+Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
