@@ -109,3 +109,29 @@
 * [] Resolver problemas con juju.
 * [X] Entender cómo funciona docker y qué implica.
 * [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+<h3> Clase del 1 de Diciembre </h3>
+* [X] Resolver últimos problemas con docker.
+* [] Comenzar con la tercera práctica.
+* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+<h3> Clase del 2 de Diciembre </h3>
+* [X] Resolver últimos problemas con docker.
+* [] Resolver dudas relacionadas con la tercera práctica.
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+
+<h3> Clase del 9 de Diciembre </h3>
+* [X] Terminar la familiarización con Ruby
+* [X] Recordar conceptos de almacenamiento físico.
+* [] Entender el concepto de FUSE y usarlo en la práctica.
+* [] Crear y manipular formatos de provisionamiento delgado.
+* [X] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
+<h3> Clase del 11 de Diciembre </h3>
+* [X] Entender diferentes tipos de sistemas de ficheros virtuales
+* [X] Aprender a provisionar almacenamiento en la nube.
+* [] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
