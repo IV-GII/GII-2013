@@ -1,4 +1,4 @@
-##Sesión 29-sept-2014
+Alfonso Capilla Calvet
 
 #Tema 1
 
