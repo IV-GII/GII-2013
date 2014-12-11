@@ -67,6 +67,10 @@ Para arregarlo lo convertirlos en un dispositivo loop con: `sudo losetup -v -f f
 ![imagen](http://i.imgur.com/bG66Xem.png)
 
 
+Algunos formatos de estas imágenes los reconoce [VirtualBox](https://www.virtualbox.org/): VMDK,VMD,VHD, VDI... Crearemos una con formato VDI (`sudo qemu-img create -f vdi ficherovdi.vdi 10M`) que podemos usar en VirtualBox:
+
+![imagen](http://i.imgur.com/pniTX64.png)
+
 
 
 
