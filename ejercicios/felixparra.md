@@ -222,27 +222,52 @@ Establecemos una password:<br />
 
 **Ejercicio 1:**<br />
 **Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.** <br />
+`apt-get update`<br />
+`apt-get install lxc`<br />
+A continuacion comprobamos si esta todo correcto:<br />
+`lxc-checkconfig`<br />
 
 **Ejercicio 2:**<br />
 **Comprobar qué interfaces puente se han creado y explicarlos.**<br />
+![Mod4_ej2](https://raw.githubusercontent.com/felixparra/Imagenes/master/Mod4_ej2.png)
 
 **Ejercicio 3:**<br />
 ######3.1 - Crear y ejecutar un contenedor basado en Debian.
+`sudo lxc-create -t debian -n debianBox` <br />
+Para arrancarlo ejecutamos: <br />
+`sudo lxc-start -n debian-caja` <br />
 
 ######3.2 - Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.
+`sudo lxc-create -t gentoo -n gentooBox` <br />
+Para arrancarlo ejecutamos: <br />
+`sudo lxc-start -n gentooBox` <br />
 
 **Ejercicio 4:**<br />
 ######4.1 - Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
+`wget http://lxc-webpanel.github.io/tools/install.sh -O - | bash` <br />
+Accedemos a http://<DireccionIP>:5000/ (localhost:5000) e introducimos usuario (admin) y contraseña (admin), una vez dentro veremos las máquinas instaladas<br />
+![Mod4_ej4_1](https://raw.githubusercontent.com/felixparra/Imagenes/master/Mod4_ej4_1.png)
 
 ######4.2 - Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
+![Mod4_ej4_2](https://raw.githubusercontent.com/felixparra/Imagenes/master/mod4_ej4_2.png)
 
 **Ejercicio 5:**<br />
 **Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.**<br />
 
 **Ejercicio 6:**<br />
 ######6.1 - Instalar juju.
+Añadimos el repositorio<br />
+`sudo add-apt-repository ppa:juju/stable`<br />
+Actualizamos:<br />
+`apt-get update`<br />
+Instalamos:<br />
+`apt-get install juju-core`<br />
+
 
 ######6.2 - Usándolo, instalar MySQL en un táper.
+Inicializamos:<br />
+`sudo juju init`<br />
+
 
 **Ejercicio 7:**<br />
 ######7.1 - Destruir toda la configuración creada anteriormente
