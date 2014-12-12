@@ -272,10 +272,230 @@ Y seguimos los pasos:
 ![Primer paso ](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema2/6_1.png)
 
 
+#Tema 3
 
+##Ejercicio 1
 
+#### Crear un espacio de nombres y montar en él una imagen ISO de un CD de forma que no se pueda leer más que desde él. Pista: en ServerFault nos explican como hacerlo, usando el dispositivo loopback
 
+Simplemente tenemos que hacer:
 
+![Ejercicio 1](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema3/1.png)
+
+Donde imagen es el fichero a montar.
+
+##Ejercicio 2
+
+#### 1. Mostrar los puentes configurados en el sistema operativo.
+
+Lo hacemos mediante:
+
+![Ejercicio 2](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema3/2_1.png)
+
+Como podemos observar no hay ninguno creado aún.
+
+#### 2. Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+
+Para crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi hacemos lo siguiente:
+
+Creamos interfaz virtual:
+
+* sudo brctl addbr puenteEjercicio2
+
+La asignamos al interfaz de la tarjeta wifi:
+
+* sudo brctl addif puenteEjercicio2 wlan0
+
+Se edita el fichero 
+
+* /etc/networks/interfaces 
+
+para configurar la nueva interfaz
+
+Se añade un default gateway
+
+* route add default gw [IP] nuevopuente 
+
+Por último levantamos para que quede funcionando:
+
+* sudo ifconfig puenteEjercicio2 up
+
+##Ejercicio 3
+
+#### 3.1 Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+
+En primer lugar instalamos debootstrap:
+
+* sudo apt-get install debootstrap
+
+Creamos un usuario llamado "jaulas".
+
+* sudo debootstrap --arch=i386 saucy /home/jaulas/saucy32/ http://archive.ubuntu.com/ubuntu
+
+Nos devolverá el siguiente mensaje:
+
+I: Base system installed successfully.
+
+#### 3.2 Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
+
+Instalamos rinse y Fedora mediante:
+
+sudo apt-get install rinse
+
+sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fedora/
+
+Que devuelve:
+
+''' Installed: dhclient.x86_64 12:3.0.5-5.fc6 Cleaning up Final tidy... Installation complete. '''
+
+## Ejercicio 4 
+
+#### Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla. 
+
+Entramos en una de las jaulas creadas:
+
+sudo chroot /home/jaulas/saucy32
+
+Montamos "/proc":
+
+mount -t proc proc /proc
+
+Instalamos el paquete en español como se dice en la documentación de la práctica:
+
+apt-get install language-pack-es
+
+## Ejercicio 5
+
+#### Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
+
+Tendremos que añadir el repositorio de la siguiente forma:
+
+* Se edita la lista de repositorios /etc/apt/sources.list
+* Se añaden los repositorios: deb http://nginx.org/packages/ubuntu/ saucy nginx y deb-src http://nginx.org/packages/ubuntu/ saucy nginx
+* Se descarga la clave del repositorio: wget http://nginx.org/keys/nginx_signing.key
+* Se añade la clave apt-key: add nginx_signing.key
+* Se actualiza la lista de repositorios: apt-get update
+* Se instala nginx: apt-get install nginx
+* Ejecutamos el servicio: service nginx start
+* Se accede a "localhost" utilizando el navegador y se comprueba que funciona
+
+## Ejercicio 6
+
+#### Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar. 
+
+Accedemos a la página de ![jailkit](http://olivier.sessink.nl/jailkit/) y lo descargamos. A continuación hacemos lo siguiente:
+
+* tar -xzvf jailkit-2.17.tar.gz
+* cd jailkit-2.17
+* sudo ./configure && make && sudo make install
+
+Creamos una nueva jaula e iniciamos con jailkit: 
+* sudo mkdir /home/jaulas/jailkit sudo jk_init -v -j /home/jaulas/jailkit jk_lsh basicshell netutils editors
+
+Creamos un usuario y lo enjaulamos: 
+* sudo adduser enjaulado 
+* sudo jk_jailuser -m -j /home/jaulas/jailkit enjaulado
+
+Tras esto, ya tendremos a nuestro usuario enjaulado.
+
+# Tema 4
+
+## Ejercicio 1
+
+#### Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.
+
+Hay que realizar la instalación desde el repositorio:
+
+![Ejercicio 1_1](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema4/1_1.png)
+
+Una vez hecho esto, será necesario comprobar si nuestra máquina es compatible utilizando el comando lxc-checkconfig
+
+![Ejercicio 1_2](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema4/1_2.png)
+
+## Ejercicio 2
+
+#### Comprobar qué interfaces puente se han creado y explicarlos.
+
+Tras ejecutar ipconfig -a vemos que se ha creado el interfaz lxcbr0:
+
+![Ejercicio 2_1](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema4/2_1.png)
+
+Con el comando "brctl show" veriamos que también está y el contenedor tiene acceso a la red.
+
+![Ejercicio 2_2](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema4/2_2.png)
+
+## Ejercicio 3
+
+#### Crear y ejecutar un contenedor basado en Debian. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.
+
+Podemos crearlos con:
+
+* sudo lxc-create -t debian -n minube_debian
+* sudo lxc-start -n minube_debian
+
+Y obtenemos:
+
+![Ejercicio 3_1](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema4/3_1.png)
+
+## Ejercicio 4
+
+#### Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.
+
+Lo instalamos con: wget http://lxc-webpanel.github.io/tools/install.sh -O - | sudo bash
+
+![Ejercicio 4_1](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema4/4_1.png)
+
+Después accedemos a http://localhost:5000 :
+
+![Ejercicio 4_2](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema4/4_2.png)
+
+#### Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.
+
+Todo esto podemos hacerlo en la siguiente pestaña:
+
+![Ejercicio 4_3](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema4/4_3.png)
+
+## Ejercicio 6
+
+#### Instalar juju.
+
+Para instalarlo ejecutamos:
+
+* sudo add-apt-repository ppa:juju/stable
+* sudo apt-get update
+* sudo apt-get install juju-core
+
+![Ejercicio 6_1](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema4/6_1.png)
+
+## Ejercicio 7
+
+#### Destruir toda la configuración creada anteriormente
+
+Ejecutamos:
+
+* juju destroy-service mysql
+* juju destroy-service mediawiki
+* sudo juju destroy-environment local
+
+#### Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.
+
+La creamos mediante las órdenes:
+
+* juju bootstrap
+* juju deploy mediawiki
+* juju deploy mysql
+* juju add-relation mediawiki:db mysql
+* juju expose mediawiki
+
+## Ejercicio 8
+
+#### Instalar libvirt. Te puede ayudar esta guía para Ubuntu. 
+
+Ejecutamos:
+
+![Ejercicio 8_1](https://github.com/FranciscoPorcel/GII-2014/blob/master/ejercicios/FranciscoPorcel/imagenes/Tema4/8_1.png)
+
+Una vez hecho esto, comprobamos con kvm-ok que todo está correcto.
 
 
 
