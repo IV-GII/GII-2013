@@ -283,3 +283,63 @@ Objetivos
 
 * [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 * [] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+
+
+#Clase del 1 de diciembre de 2014
+
+##Objetivos de esta sesión
+
+* [] Resolver últimos problemas con `docker`.
+* [] Comenzar con la tercera práctica.
+
+##Otros objetivos
+
+* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+
+#Clase del 2 de diciembre de 2014
+
+##Objetivos de esta sesión
+
+* [] Resolver últimos problemas con `docker`.
+* [] Resolver dudas relacionadas  con la [tercera práctica](http://jj.github.io/IV/documentos/practicas/3.Contenedores).
+
+##Otros objetivos
+
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+
+
+Clase del 9 de diciembre de 2014
+========================================
+
+Objetivos de la asignatura
+---------------------------
+
+* [] 1. Terminar la familiarización con Ruby
+* [] 2. Recordar conceptos de almacenamiento físico.
+* [] 3. Entender el concepto de FUSE y usarlo en la práctica.
+* [] 4. Crear y manipular formatos de provisionamiento delgado. 
+
+Objetivos generales
+----
+
+* [] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas. 
+
+
+Clase del 11 de diciembre de 2014
+========================================
+
+Objetivos de la asignatura
+---------------------------
+
+* [] 1. Entender diferentes tipos de sistemas de ficheros virtuales
+* [] 2. Aprender a provisionar almacenamiento en la nube.
+
+Objetivos generales
+----
+
+* [] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
