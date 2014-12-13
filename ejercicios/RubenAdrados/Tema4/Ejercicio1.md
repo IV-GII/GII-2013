@@ -20,7 +20,7 @@ Para realizar la instalación tenemos dos opciones.
 
 Una vez descargado accedemos al directorio y ejecutamos:
 
-´´´ sh
+``` sh
 ./configure
 make
-make install</pre>´´´
+make install</pre>```
