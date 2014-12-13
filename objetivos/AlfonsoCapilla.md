@@ -169,3 +169,59 @@
 []Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
 
 [x]Dejar de usar Sublime Text por estas 7 razones.
+
+##Clase del 10 de Noviembre.
+[x]Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+
+[x]Aprender a ''enjaular'' usuarios.
+
+###Otros objetivos
+[]Finalizar la entrega la segunda práctica.
+
+[x]Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii.
+
+[x]Dejar de usar Sublime Text por estas 7 razones.
+
+[x]Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
+
+[x]Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
+
+[x]Comprender que existe vida en los servidores web fuera del Apache.
+
+[x]Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
+
+[x]Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
+
+##Clase del 11 de Noviembre.
+[x]Entender el concepto de contenedores
+
+[x]Configurar el sistema para poder crear y usar contenedores
+
+[x]Crear y usar contenedores
+
+###Otros objetivos
+[x]Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
+
+[]Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
+
+##Clase del 17 de Noviembre.
+[x]Entender los sistemas de orquestación de máquinas virtuales.
+
+[x]Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+###Otros objetivos
+[x]Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+
+##Clase del 24 de Noviembre.
+[]Resolver problemas con juju.
+
+[]Configuración compleja de sistemas con él.
+
+[]Entender el concepto de hipervisor y trabajar con ellos.
+
+###Otros objetivos
+[]Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+
+[]Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+##Clase del 25 de Noviembre.

@@ -381,6 +381,7 @@ Y probamos a trabajar con ella, accediendo a la consola de python que hemos inst
 [Tutorial de interés](http://picodotdev.github.io/blog-bitix/2014/11/como-crear-una-imagen-para-docker-usando-un-dockerfile/)
 
 
+
 ***
 ***
 
