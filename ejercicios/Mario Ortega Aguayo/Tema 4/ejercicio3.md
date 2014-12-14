@@ -5,7 +5,7 @@
 
 Para crear un contenedor basado en Debian he optado por instalar Ubuntu. Para dicha instalación ejecutamos el siguiente comando:
 
-<pre>sudo lxc-create -t ubuntu -n cont_ubuntu</pre>
+<pre>sudo lxc-create -t ubuntu -n cont-ubuntu</pre>
 
 Vemos en la siguiente imagen el proceso de instalación.
 
@@ -13,12 +13,12 @@ Vemos en la siguiente imagen el proceso de instalación.
 
 Para ejecutar el contenedor ejecutamos la siguiente instrucción:
 
-<pre>sudo lxc-start -n cont_ubuntu</pre>
+<pre>sudo lxc-start -n cont-ubuntu</pre>
 
-Ahora, para el segundo apartado, voy a instalar un contenedor con CentOS, y igual que el apartado anterior, vamos a cambiar los parametros de los comandos adaptándolos a este sistema operativo, por tanto, para la instalación:
+Ahora, para el segundo apartado, voy a instalar un contenedor con Gentoo, y igual que el apartado anterior, vamos a cambiar los parametros de los comandos adaptándolos a este sistema operativo, por tanto, para la instalación:
 
-<pre>sudo lxc-create -t centos -n cont_centos</pre>
+<pre>sudo lxc-create -t gentoo -n cont_gentoo</pre>
 
 Y para su ejecución:
 
-<pre>sudo lxc-start -n cont_centos</pre>
+<pre>sudo lxc-start -n cont_gentoo</pre>
