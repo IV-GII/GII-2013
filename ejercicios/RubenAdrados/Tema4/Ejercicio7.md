@@ -15,11 +15,11 @@ Y a continuación la maquina:
 
 **3. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.**
 
-´´´ sh
+``` sh
 #!/bin/bash
 
 sudo juju bootstrap
 sudo juju deploy mediawiki
 sudo juju deploy mysql
 sudo juju add-relation mediawiki:slave mysql:db
-sudo juju expose mediawiki´´´
+sudo juju expose mediawiki```
