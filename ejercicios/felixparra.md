@@ -275,6 +275,8 @@ Instalamos:<br />
 
 **Ejercicio 8:**<br />
 **Instalar libvirt. Te puede ayudar esta guía para Ubuntu.** <br />
+`sudo apt-get install kvm libvirt-bin`<br />
+`sudo apt-get install virtinst`<br />
 
 **Ejercicio 9:**<br />
 **Instalar un contenedor usando virt-install.**<br />
@@ -288,9 +290,10 @@ Comprobamos la instalación con:<br />
 
 **Ejercicio 11:**<br />
 ######11.1 - Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
-
+`sudo docker pull ubuntu`<br />
+`sudo docker pull centos`<br />
 ######11.2 - Buscar e instalar una imagen que incluya MongoDB.
-
+`docker pull dockerfile/mongodb`<br />
 **Ejercicio 12:**<br />
 **Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.** <br />
 
