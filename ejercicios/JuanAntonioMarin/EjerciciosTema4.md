@@ -285,11 +285,13 @@ Simplemente creamos la imagen (En mi caso):
 
 Generandome:
 
+
 ````9255250FE496A44BA43E64BD5049CD0D1C1569C6DE943C4FE6CF90E1AE8E5E7F5A5380F02EDAF766A098BD642B7ABFB60757C0A361125E1D1B5D1CD30B32736C````
 
 Y comprobamos las imagenes con:
 
-````sudo cocker images````
+
+````sudo docker images````
 
 
 ###Ejercicio 14: 
