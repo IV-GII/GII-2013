@@ -12,7 +12,7 @@ Instalamos lxc con:
 
 Para comprobar la versión:
 
-````lxc-checkconfig````
+```` lxc-checkconfig ````
 
 
 <img src="http://i60.tinypic.com/69dizm.jpg"/>
