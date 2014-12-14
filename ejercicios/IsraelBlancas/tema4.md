@@ -344,4 +344,19 @@ Al ejecutar ``sudo docker images``, veremos que la última es la que hemos cread
 #####Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.#####
 
 Nos registramos en la página web de [Docker](https://hub.docker.com/account/signup/) (podemos hacerlo utilizando nuestra cuenta de GitHub).
-Tras esto, pulsamos sobre nuestro nick y vamos a "My Repositories". Allí, hacemos click sobre "Add Repository>Automated Build". Elegimos el repositorio de GitHub (o Bitbucket) en el que queremos que se haga el despliegue. Cuando se haya creado, deberemos escribir un "Dockfile" que indique qué debe instalarse.
+Tras esto, pulsamos sobre nuestro nick y vamos a "My Repositories". Allí, hacemos click sobre "Add Repository>Automated Build". Elegimos el repositorio de GitHub (o Bitbucket) en el que queremos que se haga el despliegue. Cuando se haya creado, deberemos escribir un "Dockerfile" que indique qué debe instalarse. En mi caso ha sido este:
+
+```shell
+# ubuntuDAI
+FROM ubuntu
+MAINTAINER iblancasa <iblancasa@gmail.com> Version: 1.0
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+RUN echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
+RUN apt-get update
+RUN apt-get install -y mongodb-org
+RUN service mongod start
+RUN apt-get install -y build-essential
+RUN apt-get install -y nodejs
+```
+
+Una vez que se ha creado y construido, nos aparecerá (en la web de Docker), las instrucciones a ejecutar para descargar nuestro contenedor, que serán del tipo: ``docker pull [nombre contenedor]``

@@ -294,8 +294,8 @@ Lista de objetivos Israel Blancas Álvarez
 ***
 
 ##Clase del 1 de diciembre de 2014##
-* [ ] Resolver últimos problemas con docker.
-* [ ] Comenzar con la tercera práctica.
+* [X] Resolver últimos problemas con docker.
+* [X] Comenzar con la tercera práctica.
 
 ###Otros objetivos###
 
@@ -307,8 +307,8 @@ Lista de objetivos Israel Blancas Álvarez
 ***
 
 ##Clase del 2 de diciembre de 2014##
-* [ ] Resolver últimos problemas con docker.
-* [ ] Resolver dudas relacionadas con la tercera práctica.
+* [X] Resolver últimos problemas con docker.
+* [X] Resolver dudas relacionadas con la tercera práctica.
 
 ###Otros objetivos###
 
