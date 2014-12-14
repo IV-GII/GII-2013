@@ -14,6 +14,7 @@ Para comprobar la versión:
 
 ````lxc-checkconfig````
 
+
 <img src="http://i60.tinypic.com/69dizm.jpg"/>
 
 ###Ejercicio 2:
