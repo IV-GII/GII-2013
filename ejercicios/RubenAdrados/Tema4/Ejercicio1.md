@@ -7,20 +7,17 @@
 
 Para realizar la instalación tenemos dos opciones.
 
-1. Introduciendo el siguiente comando en la terminal se instalara directamente:
+- Introduciendo el siguiente comando en la terminal se instalara directamente:
 
 <pre>sudo apt-get install lxc</pre>
 
-2. Desde GitHub
+- Desde GitHub
 
-*master* : Current development branch
-*stable-1.0* : Stable update branch for LXC 1.0.x
-
-<pre>git clone git://github.com/lxc/lxc -b <branch name></branch>
+<pre>git clone git://github.com/lxc/lxc -b master</pre>
 
 Una vez descargado accedemos al directorio y ejecutamos:
 
 ``` sh
 ./configure
 make
-make install</pre>```
+make install```
