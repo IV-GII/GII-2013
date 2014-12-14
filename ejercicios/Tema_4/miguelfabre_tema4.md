@@ -10,7 +10,7 @@ Procedemos de forma habitual:
 
 Comprobamos que nuestra máquina soporta lxc:
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio1-1.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio1-1.png)
 
 ##Ejercicio 2
 
@@ -18,13 +18,13 @@ Comprobamos que nuestra máquina soporta lxc:
 
 Mostramos los interfaces disponibles con ```ifconfig-a```
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio2-1.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio2-1.png)
 
 Vemos que se ha creado una nueva interfaz de nombre lxcbr0
 
 Usando ```brctl show``` podemos ver si se ha creado el contenedor y si tiene acceso a la red.
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio2-2.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio2-2.png)
 
 ##Ejercicio 3:
 
@@ -35,13 +35,13 @@ En primer lugar, vamos a ejecutar el contenedor Debian, para ello:
 
 ```sudo lxc-create -t debian -n debianita```
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio3-1.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio3-1.png)
 
 Para ejecutarlo, procedemos de la siguiente forma:
 
 ```sudo lxc-start -n debianita```
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio3-2.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio3-2.png)
 
 La instalación fue exitosa.
 
@@ -59,15 +59,15 @@ Instalamos lxc-webpanel descargando el script de instalación:
 
 ```wget http://lxc-webpanel.github.io/tools/install.sh -O - | sudo bash```
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio4-1.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio4-1.png)
 
 Accedemos a través de la dirección local: http://localhost:5000/
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio4-2.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio4-2.png)
 
 Para ver el panel de recursos:
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio4-3.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio4-3.png)
 
 ##Ejercicio 6:
 
@@ -78,12 +78,12 @@ Para instalarlo ejecutamos:
 
 ```sudo add-apt-repository ppa:juju/stable```
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio6-1.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio6-1.png)
 
 ```sudo apt-get update```
 ```sudo apt-get install juju-core```
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio6-2.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio6-2.png)
 
 Para el segundo paso, creamos un nuevo táper (como a juju le gusta)
 
@@ -119,7 +119,7 @@ Para destruir la configuración realizada:
 
 Comprobamos que la eliminación ha sido exitosa:
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio7-1.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio7-1.png)
 
 Volvemos a ejecutar los pasos realizados anteriormente y los resumimos en un script que contendrá:
 
@@ -141,7 +141,7 @@ Siguiendo la guía, instalamos libvirt:
 
 Comprobamos que la instalación ha sido exitosa con ```kvm-ok``` y accedemos:
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio8-1.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio8-1.png)
 
 ##Ejercicio 10:
 
@@ -153,7 +153,7 @@ Procedemos de manera habitual:
 
 Comprobamos que ha sido instalado mirando la versión instalada:
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio10-1.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio10-1.png)
 
 ##Ejercicio 11:
 
@@ -164,13 +164,13 @@ Instalamos como imagen alternativa CentOS, por ejemplo:
 
 ```sudo docker pull centos```
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio11-1.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio11-1.png)
 
 Una imagen que incluye MongoDB es "dockerfile/mongodb" (contiene una imagen Ubuntu con MongoDB). Por lo tanto:
  
 ```docker pull dockerfile/mongodb```
 
-![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_3/imagenes/ejercicio11-2.png)
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_4/imagenes/ejercicio11-2.png)
 
 ##Ejercicio 12
 
