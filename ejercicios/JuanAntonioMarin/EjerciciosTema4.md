@@ -54,7 +54,7 @@ OpenSuse me pide zypper, y los demas tambien me dan errores asi que voy a usar e
 
 Y para ejecutar como siempre:
 
-`````sudo lxc-start -n caja-gentoo````
+````sudo lxc-start -n caja-gentoo````
 
 Al final he instalado debian y busybox.
 
