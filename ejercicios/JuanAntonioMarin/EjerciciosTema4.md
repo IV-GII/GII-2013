@@ -249,13 +249,29 @@ Hay una imagen de ubuntu con el mongodb:
 
 ###Ejercicio 12:
 
-Primero ejecutamos el contenedor: sudo docker run -i -t ubuntu /bin/bash
-Añadimos un usuario useradd -d /home/JAntonioMarin -m JAntonioMarin
-Añadimos un usuario administrador: adduser JAntonioMarin sudo
+Primero ejecutamos el contenedor: 
+
+````sudo docker run -i -t ubuntu /bin/bash````
+
+Añadimos un usuario 
+
+````useradd -d /home/JAntonioMarin -m JAntonioMarin````
+
+Añadimos un usuario administrador: 
+
+````adduser JAntonioMarin sudo````
+
 Cambiamos la contraseña ;)
+
 Login del usuario: su JAntonioMarin
-Instalamos nginx:  sudo apt-get install nginx
-Iniciamos el servicio nginx sudo service nginx start
+
+Instalamos nginx:  
+
+````sudo apt-get install nginx````
+
+Iniciamos el servicio nginx 
+
+````sudo service nginx start````
 
 Probamos en el navegador que funciona correctamente:
 
@@ -268,6 +284,7 @@ Simplemente creamos la imagen (En mi caso):
 ````sudo docker commit 3ce27c44a558 ubuntuFinal````
 
 Generandome:
+
 ````9255250FE496A44BA43E64BD5049CD0D1C1569C6DE943C4FE6CF90E1AE8E5E7F5A5380F02EDAF766A098BD642B7ABFB60757C0A361125E1D1B5D1CD30B32736C````
 
 Y comprobamos las imagenes con:
