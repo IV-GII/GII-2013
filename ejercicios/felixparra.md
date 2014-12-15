@@ -235,7 +235,7 @@ A continuacion comprobamos si esta todo correcto:<br />
 ######3.1 - Crear y ejecutar un contenedor basado en Debian.
 `sudo lxc-create -t debian -n debianBox` <br />
 Para arrancarlo ejecutamos: <br />
-`sudo lxc-start -n debian-caja` <br />
+`sudo lxc-start -n debianBox` <br />
 
 ######3.2 - Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.
 `sudo lxc-create -t gentoo -n gentooBox` <br />
@@ -265,9 +265,6 @@ Instalamos:<br />
 
 
 ######6.2 - Usándolo, instalar MySQL en un táper.
-Inicializamos:<br />
-`sudo juju init`<br />
-
 
 **Ejercicio 7:**<br />
 ######7.1 - Destruir toda la configuración creada anteriormente
@@ -278,18 +275,25 @@ Inicializamos:<br />
 
 **Ejercicio 8:**<br />
 **Instalar libvirt. Te puede ayudar esta guía para Ubuntu.** <br />
+`sudo apt-get install kvm libvirt-bin`<br />
+`sudo apt-get install virtinst`<br />
 
 **Ejercicio 9:**<br />
 **Instalar un contenedor usando virt-install.**<br />
 
 **Ejercicio 10:**<br />
 **Instalar docker.** <br />
+`apt-get update`<br />
+`sudo apt-get install docker.io`<br />
+Comprobamos la instalación con:<br />
+`docker -v`<br />
 
 **Ejercicio 11:**<br />
 ######11.1 - Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
-
+`sudo docker pull ubuntu`<br />
+`sudo docker pull centos`<br />
 ######11.2 - Buscar e instalar una imagen que incluya MongoDB.
-
+`docker pull dockerfile/mongodb`<br />
 **Ejercicio 12:**<br />
 **Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.** <br />
 
@@ -298,3 +302,4 @@ Inicializamos:<br />
 
 **Ejercicio 14:**<br />
 **Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.** <br />
+
