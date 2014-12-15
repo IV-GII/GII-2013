@@ -343,3 +343,39 @@ Objetivos generales
 
 * [] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
 * [] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+
+
+Clase del 15 de diciembre de 2014
+========================================
+
+Objetivos de la asignatura
+---------------------------
+
+* [] 1. Entender los diferentes componentes de la infraestructura como servicio.
+* [] 2. Aprender a usar máquinas virtuales, localmente y en la nube.
+* [] 3. Comprender las bases físicas de las infraestructuras virtuales.
+
+Objetivos generales
+----
+
+* [] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+Ser agnóstico con respecto a las herramientas usadas.
+* [] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+
+Clase del 16 de diciembre de 2014
+========================================
+
+Seminario por parte de Ignacio Zafra, de la empresa [The Cloud Gate](http://nubbius.com/%C2%BFqui%C3%A9nes-somos), empresa granadina que comercializa una solución para despachos de abogados basados en Google App Engine
+
+Objetivos de la asignatura
+---------------------------
+
+* [] 1. Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+Objetivos generales
+----
+
+* [] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
