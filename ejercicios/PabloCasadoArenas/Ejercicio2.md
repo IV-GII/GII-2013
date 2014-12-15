@@ -49,5 +49,22 @@ Le damos formato btrfs
 
 `sudo mkfs.btrfs -f /dev/loop1`
 
+### Ejercicio 4
+
+Creamos el fichero
+
+`qemu-img create -f raw fichero-xfs.img 100M`
+
+Bucle
+
+`sudo losetup -v -f fichero-xfs.img`
+Formato xfs
+
+`sudo mkfs.xfs /dev/loop2`
+
+Lo montamos
+
+`sudo mount /dev/loop2 /mnt/loop2`
+
 
 
