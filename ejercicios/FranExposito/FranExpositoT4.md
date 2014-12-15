@@ -31,9 +31,37 @@ Para ejecutar:
 ######Apartado 2.
 Instalado utilizando el script proporcionado en la github por [Gentoo](https://github.com/globalcitizen/lxc-gentoo/blob/master/lxc-gentoo).  
 
-###Ejercicio 3.
+###Ejercicio 4.
 Para instalar **lxc-panel** utilizaremos el comando proporcionado desde la [web oficial]():
 
   wget http://lxc-webpanel.github.io/tools/install.sh -O - | bash  
 
-![imagen3](t4e3_a.png)  
+![imagen3](imagenes/t4e4_a.png)
+
+![imagen4](imagenes/t4e4_b.png)  
+
+Para restringir los recursos debemos seleccionar el container deseado y modificar los parametros según nuestras necesidades:  
+
+![imagen5](imagenes/t4e4_c.png)  
+
+
+###Ejercicio 5.
+
+###Ejercicio 6.  
+Instalamos **juju**:  
+
+  sudo add-apt-repository ppa:juju/stable  
+  sudo apt-get update && sudo apt-get install juju-core  
+
+Iniciamos **juju**  
+
+  juju init  
+  juju bootstrap  
+
+Tras esto instalamos **mediawiki** y **mysql**:  
+
+  juju deploy mediawiki  
+  juju deploy mysql  
+  juju add-relation mediawiki mysql  
+
+###Ejercicio 7.
