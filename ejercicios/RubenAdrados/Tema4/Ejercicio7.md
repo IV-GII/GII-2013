@@ -12,14 +12,19 @@ Y a continuación la maquina:
 
 **2. Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.**
 
+<pre>sudo juju deploy mediawiki
+sudo juju deploy mysql</pre>
 
 **3. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.**
 
 ``` sh
 #!/bin/bash
 
-sudo juju bootstrap
-sudo juju deploy mediawiki
-sudo juju deploy mysql
-sudo juju add-relation mediawiki:slave mysql:db
-sudo juju expose mediawiki```
+juju init
+juju switch local 
+juju bootstrap
+juju deploy mediawiki
+juju deploy mysql
+juju add-relation mediawiki:slave mysql:db
+juju expose mediawiki
+juju status```
