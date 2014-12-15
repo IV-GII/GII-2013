@@ -65,7 +65,40 @@ ifconfig interfaceIV up
 
 ##1. Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.##
 
+Instalamos debootstrap:
+
+~~~sudo apt-get install debootstrap~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio3_1.png)
+
+Una vez instalado creamos el directorio donde realizaremos la instalación. Después ejecutamos la siguiente instrucción, que se encargará de instalar el sistema. En el segundo argumento le indicamos el nombre de la distro que se va a buscar en el repositorio, en este caso trusty.
+
+~~~sudo debootstrap --arch=amd64 trusty jaulas/trusty/ http://archive.ubuntu.com/ubuntu~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio3_2.png)
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio3_3.png)
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio3_4.png)
+
+
 ##2. Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.##
+
+Lo primero que hacemos es instalar rinse:
+
+~~~sudo apt-get install rinse~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio3_5.png)
+
+
+A continuación realizamos la instalación de Fedora en el directorio "jaulas/fedora". Para ello ejecutamos:
+
+~~~sudo rinse --arch=amd64 --distribution fedora-core-6 --directory jaulas/fedora~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio3_6.png)
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio3_7.png)
+
 
 
 #Ejercicio 4#
