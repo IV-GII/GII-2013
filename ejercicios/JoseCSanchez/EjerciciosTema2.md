@@ -36,4 +36,4 @@ Para mostrar el uso del nodeenv, muestro la versión que se me ha instalado, con
 
 (env) $ nodeenv --version
 ```
-[](http://fotos.subefotos.com/abcd9f43f477d4a528e938a3763af159o.png)
+![](http://fotos.subefotos.com/abcd9f43f477d4a528e938a3763af159o.png)
