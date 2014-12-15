@@ -122,6 +122,10 @@ Una vez montado, vamos a crear una aplicación que nos muestre "Hola Mundo" con 
 #Ejercicio 5#
 ##Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.##
 
+Para instalar nginx usamos ~~~apt-get install nginx~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio5_1.png)
+
 
 
 #Ejercicio 6
