@@ -20,9 +20,45 @@ mount -o loop ubuntu-14.04.1-server-amd64.iso /mnt/disk
 
 #Ejercicio 2#
 
-1. Mostrar los puentes configurados en el sistema operativo.
+##1. Mostrar los puentes configurados en el sistema operativo.##
 
-2. Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
+Instalamos el paquete bridge-utils con el siguiente comando:
+
+~~~
+sudo apt-get install bridge-utils
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio2_1.png)
+
+Una vez instalado dicho paquete, ejecutamos el comando:
+
+~~~
+brctl show
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio2_2.png)
+
+##2. Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.##
+
+Primero creamos la interfaz virtual ejecutando el siguiente comando:
+
+~~~
+sudo brctl addbr interfaceIV
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio2_3.png)
+
+Para asignarlo al interfaz de la tarjeta wifi ejecutamos el siguiente comando:
+
+~~~
+sudo brctl addif interfaceIV wlan0
+~~~
+
+Por ultimo realizamos la activación con el siguiente comando:
+
+~~~
+ifconfig interfaceIV up
+~~~
 
 
 #Ejercicio 3#
