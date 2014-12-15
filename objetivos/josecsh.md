@@ -336,12 +336,12 @@ Objetivos de la asignatura
 ---------------------------
 
 * [] 1. Entender diferentes tipos de sistemas de ficheros virtuales
-* [] 2. Aprender a provisionar almacenamiento en la nube.
+* [X] 2. Aprender a provisionar almacenamiento en la nube.
 
 Objetivos generales
 ----
 
-* [] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [X] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
 * [] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
 
 
@@ -351,16 +351,16 @@ Clase del 15 de diciembre de 2014
 Objetivos de la asignatura
 ---------------------------
 
-* [] 1. Entender los diferentes componentes de la infraestructura como servicio.
-* [] 2. Aprender a usar máquinas virtuales, localmente y en la nube.
-* [] 3. Comprender las bases físicas de las infraestructuras virtuales.
+* [X] 1. Entender los diferentes componentes de la infraestructura como servicio.
+* [X] 2. Aprender a usar máquinas virtuales, localmente y en la nube.
+* [X] 3. Comprender las bases físicas de las infraestructuras virtuales.
 
 Objetivos generales
 ----
 
-* [] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [X] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
 Ser agnóstico con respecto a las herramientas usadas.
-* [] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [X] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
 * [] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
 
 
@@ -372,10 +372,10 @@ Seminario por parte de Ignacio Zafra, de la empresa [The Cloud Gate](http://nubb
 Objetivos de la asignatura
 ---------------------------
 
-* [] 1. Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+* [X] 1. Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
 
 Objetivos generales
 ----
 
-* [] Conocer a empresas radicadas en Granada que usen la tecnología nube.
-* [] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+* [X] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
