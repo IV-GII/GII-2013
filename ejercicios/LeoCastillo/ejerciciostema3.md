@@ -130,3 +130,35 @@ Para instalar nginx usamos ~~~apt-get install nginx~~~
 
 #Ejercicio 6
 ##Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.##
+
+Primero descargamos el programa. Podemos hacerlo desde la pagina [Sin titulo](http://olivier.sessink.nl/jailkit/jailkit-2.11.tar.gz)
+
+
+Lo descomprimimos:
+
+~~~tar -zxvf jailkit-2.11.tar.gz~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio6_1.png)
+
+Y ejecutamos el archivo de configuración:
+
+~~~./configure~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio6_2.png)
+
+Una vez configurado ejecutamos:
+
+~~~make~~~
+~~~make install~~~
+
+
+Creamos el directorio que vamos a enjaular:
+
+~~~mkdir /home/test~~~
+~~~chown root:root /home/test~~~
+
+
+Para enjaular el usuario ejecutaremos:
+
+~~~ jk_jailuser -m -j /home/test usuario~~~
+
