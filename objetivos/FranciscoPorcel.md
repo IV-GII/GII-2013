@@ -162,14 +162,14 @@
 
 ## Objetivos de esta sesión
 
-1. [] Entender los objetivos de este tema
-2. [] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
-3. [] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
-4. [] Entender y saber llevar a cabo la virtualización de dispositivos de red
+1. [X] Entender los objetivos de este tema
+2. [X] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+3. [X] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+4. [X] Entender y saber llevar a cabo la virtualización de dispositivos de red
 
 ## Otros objetivos
 
-* [] Usar herramientas de administración y monitorización de red en línea de órdenes
+* [X] Usar herramientas de administración y monitorización de red en línea de órdenes
 * [X] Contestar a la encuesta sobre la asignatura
 * [X] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
 * [X] Dejar de usar Sublime Text
@@ -241,26 +241,26 @@
 ## Otros objetivos
 
 * []Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
-* []Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [X]Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 #Clase del 25 de noviembre de 2014
 
 ## Objetivos de esta sesión
 
-* []Resolver problemas con juju.
-* []Entender cómo funciona docker y qué implica.
+* [X]Resolver problemas con juju.
+* [X]Entender cómo funciona docker y qué implica.
 
 ## Otros objetivos
 
-* []Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [X]Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 * []Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
 
 #Clase del 1 de diciembre de 2014
 
 ##Objetivos de esta sesión
 
-* []Resolver últimos problemas con docker.
-* []Comenzar con la tercera práctica.
+* [X]Resolver últimos problemas con docker.
+* [X]Comenzar con la tercera práctica.
 
 ##Otros objetivos
 
@@ -271,8 +271,8 @@
 
 ##Objetivos de esta sesión
 
-* []Resolver últimos problemas con docker.
-* []Resolver dudas relacionadas con la tercera práctica.
+* [X]Resolver últimos problemas con docker.
+* [X]Resolver dudas relacionadas con la tercera práctica.
 
 ##Otros objetivos
 
