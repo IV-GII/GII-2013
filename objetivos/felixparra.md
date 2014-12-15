@@ -1,8 +1,20 @@
+# Clase del 2 de diciembre e de 2014
+
+## Objetivos de la clase
+    [X]Resolver últimos problemas con docker.
+    [X]Resolver dudas relacionadas con la tercera práctica.
+
+## Otros objetivos
+    []¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+    []Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits     o pull requests)
+    
+<hr />
+
 # Clase del 1 de diciembre e de 2014
 
 ## Objetivos de la clase
     [X]Resolver últimos problemas con docker.
-    []Comenzar con la tercera práctica.
+    [X]Comenzar con la tercera práctica.
 
 ## Otros objetivos
     []Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
