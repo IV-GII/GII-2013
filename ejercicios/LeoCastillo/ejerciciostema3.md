@@ -126,7 +126,7 @@ mount -t proc proc /proc
 
 Una vez montado, vamos a crear una aplicación que nos muestre "Hola Mundo" con python. Para ello instalamos "python" y "nano".
 
-![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio4_2.png)
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio4_3.png)
 
 
 #Ejercicio 5#
@@ -144,7 +144,7 @@ apt-get install nginx
 #Ejercicio 6
 ##Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.##
 
-Primero descargamos el programa. Podemos hacerlo desde la pagina [Sin titulo](http://olivier.sessink.nl/jailkit/jailkit-2.11.tar.gz)
+Primero descargamos el programa. Podemos hacerlo desde la pagina [http://olivier.sessink.nl/jailkit/jailkit-2.11.tar.gz](http://olivier.sessink.nl/jailkit/jailkit-2.11.tar.gz)
 
 
 Lo descomprimimos:
@@ -173,7 +173,8 @@ make install
 
 Creamos el directorio que vamos a enjaular:
 
-~~~mkdir /home/test
+~~~
+mkdir /home/test
 chown root:root /home/test
 ~~~
 
