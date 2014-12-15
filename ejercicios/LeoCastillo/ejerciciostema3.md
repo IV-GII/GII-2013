@@ -67,13 +67,17 @@ ifconfig interfaceIV up
 
 Instalamos debootstrap:
 
-~~~sudo apt-get install debootstrap~~~
+~~~
+sudo apt-get install debootstrap
+~~~
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio3_1.png)
 
 Una vez instalado creamos el directorio donde realizaremos la instalación. Después ejecutamos la siguiente instrucción, que se encargará de instalar el sistema. En el segundo argumento le indicamos el nombre de la distro que se va a buscar en el repositorio, en este caso trusty.
 
-~~~sudo debootstrap --arch=amd64 trusty jaulas/trusty/ http://archive.ubuntu.com/ubuntu~~~
+~~~
+sudo debootstrap --arch=amd64 trusty jaulas/trusty/ http://archive.ubuntu.com/ubuntu
+~~~
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio3_2.png)
 
@@ -86,14 +90,18 @@ Una vez instalado creamos el directorio donde realizaremos la instalación. Desp
 
 Lo primero que hacemos es instalar rinse:
 
-~~~sudo apt-get install rinse~~~
+~~~
+sudo apt-get install rinse
+~~~
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio3_5.png)
 
 
 A continuación realizamos la instalación de Fedora en el directorio "jaulas/fedora". Para ello ejecutamos:
 
-~~~sudo rinse --arch=amd64 --distribution fedora-core-6 --directory jaulas/fedora~~~
+~~~
+sudo rinse --arch=amd64 --distribution fedora-core-6 --directory jaulas/fedora
+~~~
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio3_6.png)
 
@@ -110,19 +118,24 @@ Usamos el sistema instalado anteriormente en "jaulas/trusty"
 
 Una vez dentro del sistema montamos el diretorio proc con el siguiente comando:
 
-~~~mount -t proc proc /proc~~~
+~~~
+mount -t proc proc /proc
+~~~
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio4_2.png)
 
 Una vez montado, vamos a crear una aplicación que nos muestre "Hola Mundo" con python. Para ello instalamos "python" y "nano".
 
-![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio4_3.png)
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio4_2.png)
 
 
 #Ejercicio 5#
 ##Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.##
 
-Para instalar nginx usamos ~~~apt-get install nginx~~~
+Para instalar nginx usamos 
+~~~
+apt-get install nginx
+~~~
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio5_1.png)
 
@@ -136,29 +149,38 @@ Primero descargamos el programa. Podemos hacerlo desde la pagina [Sin titulo](ht
 
 Lo descomprimimos:
 
-~~~tar -zxvf jailkit-2.11.tar.gz~~~
+~~~
+tar -zxvf jailkit-2.11.tar.gz
+~~~
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio6_1.png)
 
 Y ejecutamos el archivo de configuración:
 
-~~~./configure~~~
+~~~
+./configure
+~~~
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio6_2.png)
 
 Una vez configurado ejecutamos:
 
-~~~make~~~
-~~~make install~~~
+~~~
+make
+make install
+~~~
 
 
 Creamos el directorio que vamos a enjaular:
 
-~~~mkdir /home/test~~~
-~~~chown root:root /home/test~~~
+~~~mkdir /home/test
+chown root:root /home/test
+~~~
 
 
 Para enjaular el usuario ejecutaremos:
 
-~~~ jk_jailuser -m -j /home/test usuario~~~
+~~~ 
+jk_jailuser -m -j /home/test usuario
+~~~
 
