@@ -104,6 +104,20 @@ A continuación realizamos la instalación de Fedora en el directorio "jaulas/fe
 #Ejercicio 4#
 ##Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.##
 
+Usamos el sistema instalado anteriormente en "jaulas/trusty"
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio4_1.png)
+
+Una vez dentro del sistema montamos el diretorio proc con el siguiente comando:
+
+~~~mount -t proc proc /proc~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio4_2.png)
+
+Una vez montado, vamos a crear una aplicación que nos muestre "Hola Mundo" con python. Para ello instalamos "python" y "nano".
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema3/ejercicio4_3.png)
+
 
 #Ejercicio 5#
 ##Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.##
