@@ -66,5 +66,10 @@ Lo montamos
 
 `sudo mount /dev/loop2 /mnt/loop2`
 
+### Ejercicio 5
+
+Instalamos con:
+
+`sudo apt-get install ceph-mds`
 
 
