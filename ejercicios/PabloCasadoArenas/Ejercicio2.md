@@ -30,3 +30,24 @@ Tratamos de conectarnos.
 ![Imgur](http://i.imgur.com/RWK8KJI.png)
 
 Nos da error que no he podido resolver.
+
+### Ejercicio 3
+
+Primero creamos el fichero vmdk.
+
+`sudo qemu-img create -f vmdk prueba.vmdk 2M`
+
+Luego creamos un archivo con el formato qcow2.
+
+`sudo qemu-img create -f qcow2 pruebacow.qcow2 2M`
+
+No se pueden montar debido a que no tienen formato,le damos formato:
+
+`sudo apt-get install btrfs-tools`
+
+Le damos formato btrfs
+
+`sudo mkfs.btrfs -f /dev/loop1`
+
+
+
