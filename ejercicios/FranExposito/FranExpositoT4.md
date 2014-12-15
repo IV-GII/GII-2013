@@ -50,23 +50,25 @@ Para restringir los recursos debemos seleccionar el container deseado y modifica
 ###Ejercicio 6.  
 Instalamos **juju**:  
 
+```
   sudo add-apt-repository ppa:juju/stable  
-
   sudo apt-get update && sudo apt-get install juju-core  
+```
 
-Iniciamos **juju**  
+Iniciamos **juju**:
 
+```
   juju init
-
   juju bootstrap  
+```
 
 Tras esto instalamos **mediawiki** y **mysql**:  
 
+```
   juju deploy mediawiki  
-
   juju deploy mysql  
-
   juju add-relation mediawiki mysql  
-  
+```
+
 
 ###Ejercicio 7.
