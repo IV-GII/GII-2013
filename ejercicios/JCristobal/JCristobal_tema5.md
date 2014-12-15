@@ -72,5 +72,41 @@ Algunos formatos de estas imágenes los reconoce [VirtualBox](https://www.virtua
 ![imagen](http://i.imgur.com/pniTX64.png)
 
 
+##Ejercicio 4
+###Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema
+
+Creamos un par de imágenes, con `sudo qemu-img create -f raw  fichero1.img 100M` y `sudo qemu-img create -f raw  fichero2.img 100M`
+
+Y le damos formato `sudo losetup -v -f fichero1.img` y `sudo mkfs.xfs /dev/loop0` (en mi caso necesito tener instalado el programa mkfs.xfs, lo hago con `sudo apt-get install xfsprogs`)
+
+Lo mismo con la otra imagen: `sudo losetup -v -f fichero2.img` y `sudo mkfs.btrfs /dev/loop1`
+También necesito mkfs.btrfs, que instalo con `sudo apt-get install btrfs-tools`
+
+![imagen](http://i.imgur.com/JEvYj07.png)
+
+Y los montamos en las carpetas "montaje1" y "montaje2": `sudo mount -t xfs /dev/loop0 /mnt/montaje1` y`sudo mount -t btrfs /dev/loop1 /mnt/montaje2`
+
+
+Y se crea un archivo de bloques de 50M para copiarlo en ambos sistemas de ficheros para comprobar cuál de los dos sistemas es más rápido.
+
+`dd if=/dev/urandom of=fichero bs=1k count=50k`
+
+![imagen](http://i.imgur.com/gfRc4lf.png)
+
+Y copiamos el archivo mostrando información sobre el tiempo que tarda en ejecutarse en la primera imagen:
+
+`sudo time -v cp fichero /mnt/montaje1/fichero`
+
+![imagen](http://i.imgur.com/GUC6SkN.png)
+
+Y en la segunda imagen:
+
+`sudo time -v cp fichero /mnt/montaje2/fichero`
+
+![imagen](http://i.imgur.com/ZfoYxqD.png)
+
+
+Vemos que el tiempo transcurrido en ambos es de 2 segundos, pero con formato XFS usa el 100% de la CPU, mientras que con BTRFS usa el 96%
+
 
 
