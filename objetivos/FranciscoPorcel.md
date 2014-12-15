@@ -209,25 +209,25 @@
 
 ## Objetivos de esta sesión
 
-* [X]Entender los sistemas de orquestación de máquinas virtuales.
+* [X] Entender los sistemas de orquestación de máquinas virtuales.
 * [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
 ## Otros objetivos
 
-* [X]Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+* [X] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
 
 #Clase del 18 de noviembre de 2013
 
 ##Objetivos de esta sesión
 
-* [X]Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
-* [X]Conocer las tecnologías a nivel hardware que se usan para los mismos.
-* [X]Conocer las aplicaciones y programas que se usan.
-* [X]Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+* [X] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+* [X] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+* [X] Conocer las aplicaciones y programas que se usan.
+* [X] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
 
 ##Otros objetivos
 
-* [X]Familiarizarse con el tejido económico TIC en nuestro entorno local.
+* [X] Familiarizarse con el tejido económico TIC en nuestro entorno local.
 * [X] Conocer qué tipo de perfil buscan estas empresas.
 
 #Clase del 24 de noviembre de 2014
@@ -236,62 +236,62 @@
 
 * [X] Resolver problemas con juju.
 * [X] Configuración compleja de sistemas con él.
-* [X]Entender el concepto de hipervisor y trabajar con ellos.
+* [X] Entender el concepto de hipervisor y trabajar con ellos.
 
 ## Otros objetivos
 
-* []Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
-* [X]Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 #Clase del 25 de noviembre de 2014
 
 ## Objetivos de esta sesión
 
-* [X]Resolver problemas con juju.
-* [X]Entender cómo funciona docker y qué implica.
+* [X] Resolver problemas con juju.
+* [X] Entender cómo funciona docker y qué implica.
 
 ## Otros objetivos
 
-* [X]Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
-* []Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
 
 #Clase del 1 de diciembre de 2014
 
 ##Objetivos de esta sesión
 
-* [X]Resolver últimos problemas con docker.
-* [X]Comenzar con la tercera práctica.
+* [X] Resolver últimos problemas con docker.
+* [X] Comenzar con la tercera práctica.
 
 ##Otros objetivos
 
-* []Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
-* []¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 
 #Clase del 2 de diciembre de 2014
 
 ##Objetivos de esta sesión
 
-* [X]Resolver últimos problemas con docker.
-* [X]Resolver dudas relacionadas con la tercera práctica.
+* [X] Resolver últimos problemas con docker.
+* [X] Resolver dudas relacionadas con la tercera práctica.
 
 ##Otros objetivos
 
-* []¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
-* []Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
 
 #Clase del 9 de diciembre de 2014
 
 ##Objetivos de la asignatura
 
-* []Terminar la familiarización con Ruby
-* []Recordar conceptos de almacenamiento físico.
-* []Entender el concepto de FUSE y usarlo en la prática.
-* []Crear y manipular formatos de provisionamiento delgado.
+* [] Terminar la familiarización con Ruby
+* [] Recordar conceptos de almacenamiento físico.
+* [] Entender el concepto de FUSE y usarlo en la prática.
+* [] Crear y manipular formatos de provisionamiento delgado.
 
 ##Objetivos generales
 
-* []Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
-* []Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+* [] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
 
 
 
