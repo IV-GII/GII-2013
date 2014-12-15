@@ -618,3 +618,158 @@ Finalmente creamos un usuario UNIX y lo enjaulamos:
 # passwd jk_julio
 # jk_jailuser -m -j /home/jaulas/dorada/ jk_julio
 ```
+
+# Tema 4
+
+## Ejercicio 1 ##
+**Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.**
+
+Ejecutando
+
+```
+$ sudo apt-get install lxc
+```
+
+Nos descargamos la versión 1.0.6 de los repositorios de Debian
+
+## Ejercicio 2 ##
+**Comprobar qué interfaces puente se han creado y explicarlos.**
+
+Por defecto no me ha creado ningún puente, así que he seguido el manual de [esta página](http://debian-handbook.info/browse/es-ES/stable/sect.virtualization.html)
+
+Tenemos que crear un interfaz br0 que nos haga de puente. Para ello editamos el archivo /etc/network interfaces como sigue:
+
+```
+auto lo
+iface lo inet loopback
+
+# Interfaz eth0 sin cambios
+auto eth0
+iface eth0 inet dhcp
+
+#Interfaz wlan1 sin cambios
+auto wlan1
+iface wlan1 inet dhcp
+
+# Interfaz virtual
+auto tap0
+iface tap0 inet manual
+  vde2-switch -t tap0
+
+# Puente para los contenedores
+auto br0
+iface br0 inet static
+  bridge-ports tap0
+  address 10.0.0.1
+  netmask 255.255.255.0
+```
+
+Después editamos el archivo de configuración del contenedor /var/lib/lxc/una-caja/config para añadir el parámetro link que nos conectará con la interfaz puente br0:
+
+```
+# Template used to create this container: /usr/share/lxc/templates/lxc-debian
+# Parameters passed to the template:
+# For additional config options, please look at lxc.container.conf(5)
+lxc.network.type = veth
+lxc.network.flags = up
+lxc.network.link = br0
+lxc.network.name = lxcnet0
+
+lxc.network.hwaddr = 00:16:3e:57:2c:4d
+lxc.rootfs = /var/lib/lxc/una-caja/rootfs
+
+# Common configuration
+lxc.include = /usr/share/lxc/config/debian.common.conf
+
+# Container specific configuration
+lxc.mount = /var/lib/lxc/una-caja/fstab
+lxc.utsname = una-caja
+lxc.arch = amd64
+```
+
+Finalmente vamos a comprobar que el puente funciona.
+
+Antes de arrancar el contenedor tenemos lo siguiente:
+
+![captura35](http://i.imgur.com/hP7WURT.png)
+
+Y después de arrancar el contenedor vemos que está levantada:
+
+![captura36](http://i.imgur.com/vB1nziL.png)
+
+## Ejercicio 3.1 ##
+**Crear y ejecutar un contenedor basado en Debian.**
+
+Ejecutando el comando lxc-checkconfigure me faltaban los módulos de user namespaces y Cgroup memory controller.
+
+Para solucionar el problema he tenido que actualizar mi versión del kernel desde la 3.6 a la 3.16
+
+Ya lo hice para comprobar el puente en el paso anterior.
+
+Para instalar una máquina basada en debian ejecutamos:
+
+```
+sudo lxc-create -t debian -n una-caja
+```
+
+Para ejecutar la caja usamos:
+
+```
+sudo lxc-start -n una-caja
+
+```
+
+Tenemos que usar el usuario y contraseña que nos dan al crear el contenedor. Luego podremos modifcarlo dentro.
+
+## Ejercicio 3.2 ##
+**Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro.**
+
+Creamos el táper con:
+```
+$ sudo lxc-create -t fedora -n caja-fedora
+```
+
+Tarda un rato en descargar e instalar así que hay que ser paciente.
+Una vez instalado nos da un mensaje:
+
+![captura37](http://i.imgur.com/vyHAJjl.png)
+
+Como podemos ver en el archivo temporal indicado tenemos la clave de root para entrar por primera vez. Luego podremos cambiarla con passwd.
+
+Ya podemos entrar a nuestro táper Fedora ejecutando:
+
+```
+sudo chroot /var/lib/lxc/caja-fedora/rootfs
+```
+
+Probamos una aplicación de Fedora, por ejemplo que el gestor de paquetes yum funciona:
+
+![captura38](http://i.imgur.com/wBOxAJG.png)
+
+
+
+## Ejercicio 4.1 ##
+**Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.**
+
+He instalado lxc-webpanel de la siguiente forma:
+
+```
+wget http://lxc-webpanel.github.io/tools/install.sh
+chmod +x install.sh
+sudo ./install.sh
+```
+
+De esta forma el script de instalación automática me instala todas las dependencias que hacen falta:
+
+![captura39](http://i.imgur.com/DbTeYrj.png)
+
+Al final de la instalación nos dice que podemos usar la aplicación web en el puerto 5000 del servidor.
+
+
+
+
+## Ejercicio 4.2 ##
+**Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.**
+
+## Ejercicio 5 ##
+**Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.**
