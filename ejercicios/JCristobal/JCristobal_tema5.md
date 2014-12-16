@@ -110,3 +110,64 @@ Vemos que el tiempo transcurrido en ambos es de 2 segundos, pero con formato XFS
 
 
 
+##Ejercicio 5
+###Instalar ceph en tu sistema operativo. 
+
+Primero ejecutamos `sudo apt-get install ceph-mds` , que instala algunos paquetes como ceph-fs-common, ceph y ceph-common.
+
+
+##Ejercicio 6
+###Crear un dispositivo ceph usando BTRFS o XFS
+
+Creamos los directorios donde se va a almacenar la información de CEPH: `sudo mkdir -p /srv/ceph/{osd,mon,mds}`
+
+Creamos el archivo /etc/ceph/ceph.conf y añadimos:
+
+```
+[global]
+log file = /var/log/ceph/$name.log
+pid file = /var/run/ceph/$name.pid
+[mon]
+mon data = /srv/ceph/mon/$name
+[mon.jcristobal-Aspire-V3-572G]
+host = jcristobal-Aspire-V3-572G
+mon addr = 127.0.0.1:6789
+[mds]
+[mds.jcristobal-Aspire-V3-572G]
+host = jcristobal-Aspire-V3-572G
+[osd]
+osd data = /srv/ceph/osd/$name
+osd journal = /srv/ceph/osd/$name/journal
+osd journal size = 1000 ; journal size, in megabytes
+[osd.0]
+host = jcristobal-Aspire-V3-572G
+devs = /dev/loop0
+```
+
+Crearemos un sistema bucle con formato XFS para que haga la función de dispositivo servidor de objetos (/dev/loop0/):
+
+Ejecutamos `qemu-img create -f raw ceph.img 3G`, `sudo losetup -v -f ceph.img` y`sudo mkfs.xfs /dev/loop0`
+
+
+Y creamos un directorio para el servidor de objetos: `sudo mkdir /srv/ceph/osd/osd.0`
+
+Creamos el sistema de ficheros de objetos: `sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf`
+
+![imagen](http://i.imgur.com/hweLels.png)
+
+
+Para iniciar el servicio ejecutamos: `sudo /etc/init.d/ceph -a start`
+
+
+##Ejercicio 7
+###Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados. 
+
+Primero crearemos una piscina con: `sudo rados mkpool esa-piscina`
+
+Y para almacenar un "objeto" en "archivo.img" (fichero que almacenaremos) ejecutamos `rados put -p esa-piscina objeto archivo.img`
+
+
+
+
+
+
