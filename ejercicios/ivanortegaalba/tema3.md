@@ -92,3 +92,89 @@ sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fe
 ## Ejercicio 4
 
 Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.
+
+Entramos en la jaua creada, vamos a usar la de saucy:
+```
+ivan@ivan-VirtualBox:~$ sudo chroot /home/jaulas/saucy
+```
+Montamos el directorio proc para que funcionen correctamentes las apps:
+```
+root@ivan-VirtualBox:/# mount -t proc proc /proc
+```
+Instalamos el paquete de idiomas:
+```
+root@ivan-VirtualBox:/# apt-get install language-pack-es
+```
+
+Como se pide ejecutar una aplicación, vamos a instalar el editor de textos nano:
+```
+root@ivan-VirtualBox:/# nano
+  bash: nano: command not found
+root@ivan-VirtualBox:/# sudo apt-get install nano
+  ![](images/Captura de pantalla 2014-12-16 a las 3.43.55.png)
+```
+
+5. Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
+
+Añadimos el repositorio a las listas de fuentes de apt:
+
+```
+root@ivan-VirtualBox:/# echo "deb http://nginx.org/packages/ubuntu/ raring nginx" >> /etc/apt/sources.list
+root@ivan-VirtualBox:/# echo "deb-src http://nginx.org/packages/ubuntu/ raring nginx" >> /etc/apt/sources.list
+```
+
+Al actualizar tendremos este error:
+
+```
+W: Error de GPG: http://nginx.org raring Release: Las firmas siguientes no se pudieron verificar porque su llave pública no está disponible: NO_PUBKEY ABF5BD827BD9BF62
+```
+
+Por tanto, necesitaremos la clave pública:
+
+```
+root@ivan-VirtualBox:/# wget http://nginx.org/keys/nginx_signing.key
+root@ivan-VirtualBox:/# apt-key add nginx_signing.key
+  OK
+```
+
+Instalamos NGINX
+```
+root@ivan-VirtualBox:/# apt-get install nginx
+```
+
+Y arrancamos el servidor:
+
+```
+root@ivan-VirtualBox:/# service nginx start
+```
+
+Hacemos una petición al servidor para comprobar que funciona:
+
+```
+root@ivan-VirtualBox:/# curl localhost
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <title>Welcome to nginx!</title>
+  <style>
+  body {
+    width: 35em;
+    margin: 0 auto;
+    font-family: Tahoma, Verdana, Arial, sans-serif;
+  }
+  </style>
+  </head>
+  <body>
+  <h1>Welcome to nginx!</h1>
+  <p>If you see this page, the nginx web server is successfully installed and
+  working. Further configuration is required.</p>
+
+  <p>For online documentation and support please refer to
+  <a href="http://nginx.org/">nginx.org</a>.<br/>
+  Commercial support is available at
+  <a href="http://nginx.com/">nginx.com</a>.</p>
+
+  <p><em>Thank you for using nginx.</em></p>
+  </body>
+  </html>
+```
