@@ -61,7 +61,7 @@ usa.
 
 [X] Aprender a interaccionar con clientes para preguntarle y solicitar específicamente qué es lo que desean.
 
-Clase del 13 de octubre de 2014
+##Clase del 13 de octubre de 2014
 
 [X] Leer los proyectos propuestos y elegir uno. Si ninguno encaja, se puede proponer otro (mediante edición y pull request).
 
@@ -73,7 +73,7 @@ Clase del 13 de octubre de 2014
 
 [X] Contestar a la encuesta sobre la metodología de clase si no lo has hecho todavía.
 
-Clase del 20 de octubre de 2014
+##Clase del 20 de octubre de 2014
 
 [X] Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
 
@@ -81,7 +81,7 @@ Clase del 20 de octubre de 2014
 
 [X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
-Clase del 21 de octubre de 2014
+##Clase del 21 de octubre de 2014
 
 [X] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
 Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
@@ -96,7 +96,7 @@ Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
 
 [X] Rellenar la hoja de equivalencias nombre-nick compartida con el grupo de correo
 
-Clase del 28 de octubre de 2014
+##Clase del 28 de octubre de 2014
 
 [X] Consolidar el uso de PaaS/SaaS
 
@@ -104,7 +104,7 @@ Clase del 28 de octubre de 2014
 
 [X] Comenzar con la segunda práctica
 
-Clase del 3 de noviembre de 2014
+##Clase del 3 de noviembre de 2014
 
 [X] Consolidar el uso de PaaS/SaaS
 
@@ -112,7 +112,7 @@ Clase del 3 de noviembre de 2014
 
 [X] Continuar con la segunda práctica
 
-Clase del 4 de noviembre de 2014
+##Clase del 4 de noviembre de 2014
 
 [X] Entender los objetivos de este tema
 
@@ -126,7 +126,7 @@ Clase del 4 de noviembre de 2014
 
 [X] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
 
-Clase del 10 de noviembre de 2014
+##Clase del 10 de noviembre de 2014
 
 [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
 
@@ -142,7 +142,7 @@ Clase del 10 de noviembre de 2014
 
 [] Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
 
-Clase del 11 de noviembre de 2014
+##Clase del 11 de noviembre de 2014
 
 [X] Entender el concepto de contenedores
 
@@ -150,13 +150,13 @@ Clase del 11 de noviembre de 2014
 
 [X] Crear y usar contenedores
 
-Clase del 17 de noviembre de 2014
+##Clase del 17 de noviembre de 2014
 
 [X] Entender los sistemas de orquestación de máquinas virtuales.
 
 [] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
-Clase del 18 de noviembre de 2014
+##Clase del 18 de noviembre de 2014
 
 [X] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
 
@@ -176,13 +176,13 @@ Clase del 25 de noviembre de 2014
 
 [] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
 
-Clase del 1 de diciembre de 2014
+##Clase del 1 de diciembre de 2014
 
 [] Resolver últimos problemas con docker.
 
 [] Comenzar con la tercera práctica.
 
-Clase del 2 de diciembre de 2014
+##Clase del 2 de diciembre de 2014
 
 [] Resolver últimos problemas con docker.
 
