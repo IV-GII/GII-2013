@@ -114,7 +114,9 @@ root@ivan-VirtualBox:/# sudo apt-get install nano
   ![](images/Captura de pantalla 2014-12-16 a las 3.43.55.png)
 ```
 
-5. Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
+## Ejercicio 5
+
+Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
 
 Añadimos el repositorio a las listas de fuentes de apt:
 
@@ -177,7 +179,13 @@ root@ivan-VirtualBox:/# curl localhost
   <p><em>Thank you for using nginx.</em></p>
   </body>
   </html>
+
 ```
+
+## Ejercicio 6
+
+Crear una jaula y enjaular un usuario usando 'jailkit', que previamente se habrá tenido que instalar.
+
 Descargamos e instalamos como indica en el guión jailkit:
 
 ```
