@@ -56,3 +56,31 @@ ivan@ivan-VirtualBox:~$ sudo lxc-start -n contenedor-ubuntu
 Vemos que efectivamente existen tales puentes:
 
 ![](images/Captura de pantalla 2014-12-16 a las 5.17.44.png)
+
+# Ejercicio 3
+
+Crear y ejecutar un contenedor basado en Debian.
+
+Para ello usamos el mismo comando que antes, solo que cambiamos el SO:
+
+```
+ivan@ivan-VirtualBox:~$ sudo lxc-create -t debian -n contenedor-debian
+```
+
+# Ejercicio 4
+
+Nos descargamos el script en la carpeta templates, tal y como indica Óscar en la docu:
+
+ivan@ivan-VirtualBox:~$ sudo wget -P /usr/share/lxc/templates/ https://raw.github.com/globalcitizen/lxc-gentoo/master/lxc-gentoo
+
+Le damos permisos de ejecución:
+
+```
+ivan@ivan-VirtualBox:~$ chmod +x /usr/share/lxc/templates/lxc-gentoo
+```
+
+Ahora, creamos el contenedor:
+
+```
+/usr/share/lxc/templates/lxc-gentoo create
+```
