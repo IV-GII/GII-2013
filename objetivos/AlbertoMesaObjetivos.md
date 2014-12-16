@@ -171,19 +171,42 @@
 * [X] Conocer qué tipo de perfil buscan estas empresas.
 
 ##Clase del 24 de Noviembre.
-* [ ] Resolver problemas con juju.
+* [X] Resolver problemas con juju.
 * [ ] Configuración compleja de sistemas con él.
-* [ ] Entender el concepto de hipervisor y trabajar con ellos.
+* [X] Entender el concepto de hipervisor y trabajar con ellos.
 
 ###Otros Objetivos
-* [ ] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 ##Clase del 25 de Noviembre.
 * [ ] Resolver problemas con juju.
-* [ ] Entender cómo funciona docker y qué implica.
+* [X] Entender cómo funciona docker y qué implica.
 
 ###Otros Objetivos
-* [ ] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
+##Clase del 1 de Diciembre.
+* [X] Resolver últimos problemas con docker
+* [X] Comenzar con la tercera práctica.
 
+###Otros Objetivos
+* [ ] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [ ] Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 
+##Clase del 2 de Diciembre.
+* [ ] Resolver últimos problemas con docker.
+* [X] Resolver dudas relacionadas con la tercera práctica.
+
+###Otros Objetivos
+* [ ] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [X] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests).
+
+##Clase del 9 de Diciembre.
+* [X] Terminar la familiarización con Ruby.
+* [X] Recordar conceptos de almacenamiento físico.
+* [X] Entender el concepto de FUSE y usarlo en la prática.
+* [ ] Crear y manipular formatos de provisionamiento delgado.
+
+###Otros Objetivos
+* [X] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [ ] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.

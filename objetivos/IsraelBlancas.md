@@ -269,22 +269,48 @@ Lista de objetivos Israel Blancas Álvarez
 ##Clase del 24 de noviembre de 2014##
 * [X] Resolver problemas con juju.
 * [X] Configuración compleja de sistemas con él.
-* [ ] Entender el concepto de hipervisor y trabajar con ellos.
+* [X] Entender el concepto de hipervisor y trabajar con ellos.
 
 ###Otros objetivos###
 
-* [ ] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [X] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
 * [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 
 ***
 ***
 
-##Clase del 24 de noviembre de 2014##
+##Clase del 25 de noviembre de 2014##
 * [X] Resolver problemas con juju.
-* [ ] Entender cómo funciona docker y qué implica.
+* [X] Entender cómo funciona docker y qué implica.
 
 ###Otros objetivos###
 
 * [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
-* [ ] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+* [X] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+
+
+***
+***
+
+##Clase del 1 de diciembre de 2014##
+* [X] Resolver últimos problemas con docker.
+* [X] Comenzar con la tercera práctica.
+
+###Otros objetivos###
+
+* [X] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [X] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+
+***
+***
+
+##Clase del 2 de diciembre de 2014##
+* [X] Resolver últimos problemas con docker.
+* [X] Resolver dudas relacionadas con la tercera práctica.
+
+###Otros objetivos###
+
+* [X] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [X] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)

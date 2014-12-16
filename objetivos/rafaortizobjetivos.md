@@ -33,5 +33,35 @@
 * [x] Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
 * [x] Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
 * [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+#Clase del 21 de octubre de 2014
+* [x] Darse de alta en uno de ellos y comprender los mecanismos usados para despliegue de aplicaciones
+* [x] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS.
+* [x] Crear nuevas funciones en un SaaS.
+#Clase 27 de octubre de 2014
+* [x] Consolidar el uso de PaaS/SaaS
+* [x] Entender los sistemas de automatización de la construcción de aplicaciones
+#Clase 28 de octubre de 2014
+* [x] Consolidar el uso de PaaS/SaaS
+* [x] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+* [x] Comenzar con la segunda práctica
+#Clase de 3 de noviembre de 2014
+* [x] Consolidar el uso de PaaS/SaaS
+* [x] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
+* [x] Continuar con la segunda práctica
+#Clase de 4 de noviembre de 2014
+* [x] Entender los objetivos de este tema
+* [x] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+* [x] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+* [x] Entender y saber llevar a cabo la virtualización de dispositivos de red
+#Clase del 10 de noviembre de 2014
+* [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+* [x] Aprender a ''enjaular'' usuarios.
+#Clase del 11 de noviembre de 2014
+* [] Entender el concepto de contenedores
+* [] Configurar el sistema para poder crear y usar contenedores
+* [] Crear y usar contenedores
+
+
+
 
 

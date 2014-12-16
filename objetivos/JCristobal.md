@@ -134,12 +134,57 @@
 * [x] Configuración compleja de sistemas con él.
 * [x] Entender el concepto de hipervisor y trabajar con ellos.
 
-* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
-* [] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [x] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [x] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 ##Objetivos de sesión 19
 
 * [x] Entender cómo funciona docker y qué implica.
+
+##Objetivos de sesión 20
+
+* [x] Resolver últimos problemas con docker.
+* [x] Comenzar con la tercera práctica.
+
+##Objetivos de sesión 21
+
+* [x] Resolver últimos problemas con docker.
+* [x] Resolver dudas relacionadas con la tercera práctica.
+
+##Objetivos de sesión 22
+
+* [x] Terminar la familiarización con Ruby
+* [x] Recordar conceptos de almacenamiento físico.
+* [x] Entender el concepto de FUSE y usarlo en la prática.
+* [x] Crear y manipular formatos de provisionamiento delgado.
+
+* [x] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [x] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
+##Objetivos de sesión 23
+
+* [x] Entender diferentes tipos de sistemas de ficheros virtuales
+* [x] Aprender a provisionar almacenamiento en la nube.
+
+* [] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [x] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+
+##Objetivos de sesión 24
+
+* [] Entender los diferentes componentes de la infraestructura como servicio.
+* [x] Aprender a usar máquinas virtuales, localmente y en la nube.
+* [] Comprender las bases físicas de las infraestructuras virtuales.
+
+* [] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [x] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+##Objetivos de sesión 25
+
+* [] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+* [] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+
 
 
 
