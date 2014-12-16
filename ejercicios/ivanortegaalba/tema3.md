@@ -1,4 +1,4 @@
-# Hito 3
+# Tema 3
 ## Ejercicio 1
 Empezamos creando el nuevo espacio de nombres
 
@@ -57,3 +57,38 @@ Y quedará asignado a la interfaz Ethernet 0 de nuestro pc, ya que no disponemos
 ![](images/Captura de pantalla 2014-11-24 a las 10.07.42.png)
 Y si visualizamos los puentes de los que consta nuestro SO vemos:
 ![](images/Captura de pantalla 2014-11-24 a las 10.08.47.png)
+
+## Ejercicio 3
+1. Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+
+Primeramente instalamos Debootstrap con:
+
+```
+ivan@ivan-VirtualBox:~$ sudo apt-get install debootstrap
+```
+Creamos nuestra jaula con la versión de Linux saucy, por probar la misma del guión:
+```
+ivan@ivan-VirtualBox:~$ sudo debootstrap --arch=amd64 saucy /home/jaulas/saucy/ http://archive.ubuntu.com/ubuntu
+  I: Retrieving Release
+  [...]
+  I: Base system installed successfully.
+```
+Con esto ya tenemos nuestro sistema creado.
+2. Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.
+
+Desde la distro Debian instalamos Rinse:
+```
+ivan@ivan-VirtualBox:~$ sudo apt-get install rinse
+```
+Ahora creamos nuestro entorno Fedora igual que antes:
+```
+sudo rinse --arch=amd64 --distribution fedora-core-6 --directory /home/jaulas/fedora/
+  [...]
+  Installed: dhclient.x86_64 12:3.0.5-5.fc6
+  Cleaning up
+  Final tidy...
+  Installation complete.
+```
+## Ejercicio 4
+
+Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.
