@@ -205,4 +205,4 @@ Y por ultimo cambiamos la configuración del usuario enjaulado para que use el s
 ```
 ivan@ivan-VirtualBox:~/jailkit-2.17$ sudo nano /home/jaulas/jailkit/etc/passwd
 ```
-![](ejercicios/ivanortegaalba/images/Captura de pantalla 2014-12-16 a las 4.27.27.png)
+![](images/Captura de pantalla 2014-12-16 a las 4.27.27.png)
