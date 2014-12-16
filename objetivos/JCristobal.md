@@ -178,12 +178,12 @@
 * [] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
 * [x] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
 
-##Objetivos de sesión 25
+##Objetivos de sesión 25 - Seminario de Ignacio Zafra, de nubbius 
 
-* [] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+* [x] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
 
-* [] Conocer a empresas radicadas en Granada que usen la tecnología nube.
-* [] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+* [x] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [x] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
 
 
 
