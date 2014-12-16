@@ -178,3 +178,31 @@ root@ivan-VirtualBox:/# curl localhost
   </body>
   </html>
 ```
+Descargamos e instalamos como indica en el guión jailkit:
+
+```
+ivan@ivan-VirtualBox:~$ wget http://olivier.sessink.nl/jailkit/jailkit-2.17.tar.gz
+ivan@ivan-VirtualBox:~$ tar -xzvf jailkit-2.17.tar.gz
+ivan@ivan-VirtualBox:~$ cd jailkit-2.17
+ivan@ivan-VirtualBox:~$ sudo ./configure && make && sudo make install
+```
+
+Creamos una nueva jaula con las opciones del guión:
+
+```
+ivan@ivan-VirtualBox:~/jailkit-2.17$ sudo mkdir /home/jaulas/jailkit
+ivan@ivan-VirtualBox:~/jailkit-2.17$ sudo jk_init -v -j /home/jaulas/jailkit jk_lsh basicshell netutils editors
+```
+
+Creamos un usuario y lo "enjaulamos":
+
+```
+ivan@ivan-VirtualBox:~/jailkit-2.17$ sudo adduser userjail
+ivan@ivan-VirtualBox:~/jailkit-2.17$ sudo jk_jailuser -m -j /home/jaulas/jailkit userjail
+```
+Y por ultimo cambiamos la configuración del usuario enjaulado para que use el shell correcto:
+
+```
+ivan@ivan-VirtualBox:~/jailkit-2.17$ sudo nano /home/jaulas/jailkit/etc/passwd
+![](ejercicios/ivanortegaalba/images/Captura de pantalla 2014-12-16 a las 4.27.27.png)
+```
