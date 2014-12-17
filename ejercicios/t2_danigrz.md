@@ -20,3 +20,7 @@ Ejercicio 5
 Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.
 
 [Paver](http://paver.github.io/paver/) es el lenguaje de automatización para Python.
+
+
+Ejercicio 7
+Para Python podemos usar el entonrno de pruebas [Mock](https://pypi.python.org/pypi/mock)
