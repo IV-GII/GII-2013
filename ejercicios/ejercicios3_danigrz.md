@@ -20,7 +20,7 @@ Y montamos la imagen de disco
 
 	mount -o loop disk.iso /mnt/disk
 	
-	![Imgur](http://i.imgur.com/GpIB0ZZ.png)
+![Imgur](http://i.imgur.com/GpIB0ZZ.png)
 	
 Ahora tenemos la imagen montada sólo en modo lectura y accesible desde sólo esa terminal
 
@@ -33,12 +33,12 @@ a) Mostrar los puentes configurados en el sistema operativo.
 Instalamos brctl:
 
 	sudo apt-get install bridge-utils
-	![Imgur](http://i.imgur.com/0UtoaVl.png)
+![Imgur](http://i.imgur.com/0UtoaVl.png)
 
 Para ver los puentes configurados:
 
 	brctl show
-	![Imgur](http://i.imgur.com/8MJjyjw.png)
+![Imgur](http://i.imgur.com/8MJjyjw.png)
 
 b) Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.
 
@@ -49,7 +49,7 @@ Creamos la interfaz
 Como tenia problemas al asignar la interfaz de wlan0 he asignado eth0:
 
 	sudo brctl addif virtualInterface eth0
-	![Imgur](http://i.imgur.com/yD9bnbt.png)
+![Imgur](http://i.imgur.com/yD9bnbt.png)
 
 Una vez añadido, levantamos la interfaz
 
