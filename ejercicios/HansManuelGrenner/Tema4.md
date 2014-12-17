@@ -4,7 +4,7 @@
 
 Para usar la última versión procedemos a copiar el repositorio GitHub de lxc.
 
-```git clone https://github.com/lxc/lxc```
+```git clone https://github.com/lxc/lxc ```
 
 ![Figura1](Imagenes/ej4_1_1.png)
 > Figura 1. Descargando la última versión de lxc.
@@ -17,19 +17,21 @@ Finalmente usando privilegios de administrador ( ```sudo``` ) podemos realizar l
 
 *	Generamos el fichero 'configure'.
 
-	```./autogen.sh```
+	```./autogen.sh ```
+
+> En el caso de obtener el error 'aclocal: not found' o similar, tendremos instalar automake ( ```apt-get install automake``` )
 
 *	Configuramos el paquete para nuestro sistema.
 
-	```./configure```
+	```./configure ```
 
 *	Compilamos el paquete
 
-	```make```
+	```make ```
 
 *	Iniciamos la instalación de los programas junto a los ficheros de datos y su documentación.
 
-	```make install```
+	```make install ```
 
 ![Figura2](Imagenes/ej4_1_2.png)
 > Figura 2. Programas de la suite de lxc.
@@ -52,23 +54,23 @@ Podemos comprobar nuestra versión del kernel usando el comando ```uname -a```.
 Para usar por tanto lxc tendremos que [actualizar el kernel](https://wiki.debian.org/HowToUpgradeKernel). Los pasos para un sistema basado en debian son los siguientes:
 
 *	Comprobamos las nuevas versiones kernel disponibles.
-	```apt-cache search linux-image```
+	```apt-cache search linux-image ```
 *	Procedemos a descargar e instalar la más reciente
-	```apt-get install linux-image-flavour```
+	```apt-get install linux-image-flavour ```
 
-	En mi caso: ```sudo apt-get install linux-image-3.13.0-40-generic```
+	En mi caso: ```sudo apt-get install linux-image-3.13.0-40-generic ```
 
 ![Figura5](Imagenes/ej4_2_3.png)
 > Figura 5. Descargando y actualizando kernel del sistema operativo.
 
-Tras actualizar debemos de reiniciar el sistema operativo para que se apliquen correctamente los cambios. Tras reiniciar comprobamos de nuevo mediante ```uname -a```. 
+Tras actualizar debemos de reiniciar el sistema operativo para que se apliquen correctamente los cambios. Tras reiniciar comprobamos de nuevo mediante ```uname -a ```. 
 
 ![Figura6](Imagenes/ej4_2_5.png)
 > Figura 6. Versión del nuevo kernel.
 
 A continuación tenemos que volver a instalar las cabeceras del kernel para poder compilar módulos.
 
-```sudo apt-get install linux-headers-$(uname -r)```
+```sudo apt-get install linux-headers-$(uname -r) ```
 
 Finalmente está todo configurado correctamente para poder usar lxc, como observamos si ejecutamos el comando ```lxc-checkconfig```.
 
@@ -79,13 +81,13 @@ Finalmente está todo configurado correctamente para poder usar lxc, como observ
 
 Ya podemos realizar la instalación del contenedor usando lxc.
 
-```sudo lxc-create -t ubuntu -n una-caja```
+```sudo lxc-create -t ubuntu -n una-caja ```
 
-```sudo lxc-create -t ubuntu-cloud -n nubecilla```
+```sudo lxc-create -t ubuntu-cloud -n nubecilla ```
 
 Arrancamos el contenedor creado y nos conectamos a él.
 
-```sudo lxc-start -n nubecilla```
+```sudo lxc-start -n nubecilla ```
 
 ![Figura8](Imagenes/ej4_2_7.png)
 >Figura 8. Contenedor en funcionamiento.
@@ -105,27 +107,122 @@ Al crear el contenedor anterior lxc ha generado un puente de red pre-configurado
 
 **Crear y ejecutar un contenedor basado en Debian.**
 
-```sudo lxc-create -t debian -n caja-debian```
+Instalamos el contenedor debian.
 
-```sudo lxc-start -n caja-debian```
+```sudo lxc-create -t debian -n caja-debian ```
 
+Y lo iniciamos.
 
+```sudo lxc-start -n caja-debian ```
+
+![Figura11](Imagenes/ej4_3_1.png)
+>Figura 11. Contenedor debian.
 
 ---
 
 **Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro.**
 
+Si queremos instalar a través de un template disponible podemos comprobar en ```/usr/share/lxc/templates ``` los que están disponibles.
+
+![Figura12](Imagenes/ej4_3_2.png)
+>Figura 12. Templates de distribuciones linux.
+
+Elegimos alguna distribución diferente a la elegida en el paso anterior y la instalamos. Instalaremos CentOs por ejemplo.
+
+```sudo lxc-create -t centos -n caja-centos ```
+
+> Si queremos instalar CentOs se requiere el gestor de paquetes yum ```sudo apt-get install yum ``` 
+
+Y la ejecutamos para comprobar que funciona correctamente.
+
+```sudo lxc-start -n caja-centos ```
+
+![Figura13](Imagenes/ej4_3_3.png)
+>Figura 13. Contenedor CentOs.
+
 ##Ejercicio 4
 
 **Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.**
+
+En la página github de [lxc-webpanel](http://lxc-webpanel.github.io/install.html) se nos indica el procedimiento para una instalación automática.
+
+```wget http://lxc-webpanel.github.io/tools/install.sh -O - | bash ```
+
+Instalamos de la manera indicada. Para acceder al panel abrimos un navegador y procedemos a localhost en el puerto 5000. 
+
+> User : admin   
+Password : admin
+
+![Figura14](Imagenes/ej4_3_4.png)
+>Figura 14. Login lxc-webpanel.
+
+Una vez logeados podemos gestionar los contenedores creados.
+
+![Figura15](Imagenes/ej4_3_6.png)
+>Figura 15. Login lxc-webpanel.
+
+> Podemos reiniciar el servidor con ```service lwp restart ```
 
 ---
 
 **Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.**
 
+Tras clickear en algun contenedor podemos restringirle los recursos. En este ejemplo reduciremos la cantidad de memoria de 1 GB.
+
+![Figura16](Imagenes/ej4_3_7.png)
+>Figura 16. Restringiendo recursos del contenedor.
+
 ##Ejercicio 5
 
 **Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.**
+
+Para analizar el rendimiento de nuestro servidor podemos usar una serie de herramientas diferentes tales como [OpenWebLoad](http://openwebload.sourceforge.net/) , [httperf](https://code.google.com/p/httperf/) y [ApacheBenchmark](http://httpd.apache.org/docs/2.2/programs/ab.html). Usaré dos herramientras para las comparaciones ab y openload.
+
+Instalamos los paquetes necesarios para poder disponer de las dos herramientas.
+
+```sudo apt-get install apache2-utils ```
+
+```sudo apt-get install openload ```
+
+A continuación lanzamos los dos servidores web nginx en una jaula ubuntu saucy y en el contenedor debian. Conociendo previamente las IP's respectivas.
+
+![Figura17](Imagenes/ej4_5_2.png)
+>Figura 17. IP local de la jaula y el contenedor respectivamente.
+
+![Figura18](Imagenes/ej4_5_1.png)
+>Figura 18. Servidores web en funcionamiento
+
+La primera comparación la haremos usando la herramienta ```ab ```.
+
+Para el test lanzaremos 500.000 peticiones con una concurrencia de 100 peticiones en el mismo instante.
+
+```ab -n 500000 -c 100 <enlace> ```
+
+###Resultados jaula - ApacheBenchmark
+
+![Figura19](Imagenes/ej4_5_7.png)
+>Figura 19. Resultados ab jaula
+
+###Resultados contenedor - ApacheBenchmark
+
+![Figura20](Imagenes/ej4_5_8.png)
+>Figura 20. Resultados ab contenedor
+
+Vemos que hay una diferencia significativa en cuanto al tiempo necesario. El servidor web de la jaula tarda bastante menos que el del contenedor y además la pagina web servida es 4 veces mayor ( 612 bytes frente a 151 bytes). 
+A continuación compararemos usando OpenWebLoad.
+
+###Resultados jaula - OpenWebLoad
+
+![Figura21](Imagenes/ej4_5_9.png)
+>Figura 21. Resultados openload jaula
+
+###Resultados contenedor - OpenWebLoad
+
+![Figura22](Imagenes/ej4_5_10.png)
+>Figura 22. Resultados openload contenedor
+
+Tendremos que realizar varias pruebas para realizar una comparación extensa sin embargo a ojo podemos afirmar que el rendimiento del servidor web lanzado en la jaula es superior al del contenedor. En el caso de openload para 1000 usuarios simultáneas el servidor web ejecutado en el contenedor colapsa mientras que el de la jaula es capaz de procesarlos.
+
 
 ##Ejercicio 6
 
