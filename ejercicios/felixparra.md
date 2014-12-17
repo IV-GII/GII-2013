@@ -303,3 +303,26 @@ Comprobamos la instalación con:<br />
 **Ejercicio 14:**<br />
 **Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.** <br />
 
+<hr />
+
+# Modulo V - Introducción a Ruby
+
+**Ejercicio 1:**<br />
+**Instalar Ruby y usar** <br />
+
+**Ejercicio 2:**<br />
+**Crear un programa en Ruby que imprima los números desde el 1 hasta otro contenido en una variable.**<br />
+
+**Ejercicio 3:**<br />
+**¿Se pueden crear estructuras de datos mixtas en Ruby? Crear un array de hashes de arrays e imprimirlo.**<br />
+
+**Ejercicio 4:**<br />
+**Crear una serie de funciones instanciadas con un URL que devuelvan algún tipo de información sobre el mismo: fecha de última modificación, por ejemplo. Pista: esa información está en la cabecera HTTP que devuelve**<br />
+
+**Ejercicio 5:**<br />
+**Ver si está disponible Vagrant como una gema de Ruby e instalarla.**
+
+<hr />
+
+# Modulo VI - Virtualización del almacenamiento
+
