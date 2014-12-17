@@ -1,3 +1,54 @@
+# Clase del 16 de diciembre e de 2014
+
+## Objetivos de la clase
+    [X]Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+## Otros objetivos
+    [X]Conocer a empresas radicadas en Granada que usen la tecnología nube.
+    [X]Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+    
+<hr />
+
+# Clase del 15 de diciembre e de 2014
+
+## Objetivos de la clase
+    [X]Entender los diferentes componentes de la infraestructura como servicio.
+    [X]Aprender a usar máquinas virtuales, localmente y en la nube.
+    [X]Comprender las bases físicas de las infraestructuras virtuales.
+
+## Otros objetivos
+    [X]Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o            cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
+    [X]Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+    [X]Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+    
+<hr />
+
+# Clase del 11 de diciembre e de 2014
+
+## Objetivos de la clase
+    [X]Entender diferentes tipos de sistemas de ficheros virtuales
+    [X]Aprender a provisionar almacenamiento en la nube
+
+## Otros objetivos
+    [X]Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de           GitHub) o cualquier otro medio.
+    [X]Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+    
+<hr />
+
+# Clase del 9 de diciembre e de 2014
+
+## Objetivos de la clase
+    [X]Terminar la familiarización con Ruby
+    [X]Recordar conceptos de almacenamiento físico.
+    [X]Entender el concepto de FUSE y usarlo en la práctica.
+    [X]Crear y manipular formatos de provisionamiento delgado
+
+## Otros objetivos
+    [X]Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+    [X]Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras                asignaturas.
+    
+<hr />
+
 # Clase del 2 de diciembre e de 2014
 
 ## Objetivos de la clase
