@@ -789,15 +789,64 @@ En el panel de administración del contenedor podremos modificar estos parámetr
 ## Ejercicio 5 ##
 **Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.**
 
-Iniciamos el servicio nginx en la jaula:
+Debido a muchos problemas con lxc en Debian, mi sistema operativo host (imposible asignar bridge, lxc webpanel se cuelga, etc) y mucha, pero mucha, pérdida de tiempo voy a instalar las cajas en una máquina virtual de Ubuntu (será el que haga de host para este ejercicio y los que tengan que ver con cajas).
 
-``` 
-# service nginx start
+He instalado nginx en el contenedor y en la jaula, ambas con el mismo sistema operativo (Ubuntu) instalado:
+
+```
+sudo apt-get install nginx
 ```
 
-En el host podemos comprobar que funciona accediendo a nuestra ip (localhost):
+Inciamos el servicio:
 
-![captura43](http://i.imgur.com/06AW0Dm.png)
+``` 
+sudo service nginx start
+```
+
+Después he instalado también apache2-utils en el host para hacer pruebas.
+
+Comprobamos que efectivamente nginx está funcionando en ambos sistemas:
+
+![caputura53](http://i.imgur.com/oYygabi.png)
+
+Ahora vamos a realizar tests con apache benchmark. Para que los tests sean fiables debemos repetir varias pruebas y evauluar una media y desviación típica.
+
+Para los tests usaré la orden  ab -n 300000 -c 10 http://<ip del servidor\>/ de manera automática haciendo un script como este:
+
+```
+#!/bin/bash
+
+for i in {1..10}
+do
+	echo "----------------" >> tests.txt
+	echo "PRUEBA $i" >> tests.txt
+	echo "----------------" >> tests.txt
+	ab -n 300000 -c 10 http://10.0.3.110/ >> tests.txt
+done
+```
+
+Resultados de los tests:
+
+
+|             |                      |         jaula           |                                |                      |       contenedor        |                                |
+|:-----------:|:--------------------:|:-----------------------:|:------------------------------:|:--------------------:|:-----------------------:|:------------------------------:|
+|             | Tiempo ejecución (s) | Solicitudes por segundo | Velocidad transferencia (KB/s) | Tiempo ejecución (s) | Solicitudes por segundo | Velocidad transferencia (KB/s) |
+|   Prueba 1  |        43,556        |         6887,74         |             5737,54            |        57,506        |         5216,86         |             4345,69            |
+|   Prueba 2  |        43,227        |         6940,16         |             5781,21            |        60,859        |         4929,40         |             4106,23            |
+|   Prueba 3  |        42,694        |         7026,78         |             5853,36            |        55,877        |         5368,95         |             4472,37            |
+|   Prueba 4  |        44,093        |         6803,78         |             5667,60            |        54,853        |         5469,12         |             4555,82            |
+|   Prueba 5  |        45,075        |         6655,64         |             5544,20            |        53,499        |         5607,57         |             4671,15            |
+|   Prueba 6  |        43,839        |         6843,15         |             5700,40            |        55,122        |         5442,42         |             4533,58            |
+|   Prueba 7  |        45,513        |         6591,49         |             5490,76            |        54,176        |         5537,49         |             4612,77            |
+|   Prueba 8  |        46,804        |         6409,75         |             5339,37            |        59,756        |         5020,45         |             4182,07            |
+|   Prueba 9  |        46,360        |         6471,15         |             5390,52            |        54,107        |         5544,52         |             4618,63            |
+|  Prueba 10  |        41,541        |         7221,83         |             6015,84            |        63,368        |         4734,26         |             3943,68            |
+|             |                      |                         |                                |                      |                         |                                |
+|    Media    |         44,2702      |         6785,147        |            5652,08             |        56,9123       |         5287,104        |            4404,199            |
+| Desviación  |         5,723        |         254,107         |            211,673             |         3,353        |         299,116         |            249,165             |
+
+
+Obtiene mejores tiempos de respuesta la jaula (más de 10 segundos de diferencia), trata más solicitudes por segundo y su velocidad de transferencia es mayor. Podemos concluir claramente con que la jaula ofrece un rendimiento superior al contenedor en todos los aspectos.
 
 ## Ejercicio 6.1 ##
 **Instalar juju.**
@@ -894,7 +943,7 @@ Tendremos ya el entorno con mediawiki funcionando al que podremos acceder introd
 
 
 ## Ejercicio 7.3 ##
-****
+**Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.**
 
 Con este script podremos desplegar mediawiki en sistemas ubuntu con una sola orden:
 
@@ -923,4 +972,61 @@ juju add-relation mediawiki:db mysql:db
 # Publicar el acceso a mediawiki
 juju expose mediawiki
 ```
+
+## Ejercicio 8 ##
+**nstalar libvirt. Te puede ayudar esta guía para Ubuntu.**
+
+Los pasos que he seguid para instalar libvirt son los siguientes:
+
+Instalar kvm y libvirt-bin:
+```
+sudo apt-get install kvm libvirt-bin
+```
+
+Logearme como root y añadir a mi usuario al grupo libvirtd:
+```
+su
+adduser julio libvirtd
+exit
+```
+
+Instalar virtinst:
+
+```
+sudo apt-get install virtinst
+```
+
+## Ejercicio 9 ##
+**Instalar un contenedor usando virt-install**
+
+Voy a usar una iso con Fedora que tenía guardada para la instalación.
+
+Para la instalación voy a usar el comando que podemos ver en esta [guía](https://help.ubuntu.com/12.04/serverguide/libvirt.html)
+
+Los parámetros que incluye son:
+
+* -n virt-ubuntu: el nombre de la máquina virtual.
+* -r 512: la cantidad de memoria RAM en MB que usará la máquina virtual.
+* --disk path=/var/lib/libvirt/images/ubuntu-libvirt.img,bus=virtio,size=8: la ruta en la que se almacenará el disco virtual del sistema, el bus que usará dicho disco y el tamaño en GB del mismo.
+* -c ubuntu1310server64.iso: la ISO que vamos a instalar en el sistema.
+* --accelerate": activa la tecnología de aceleración del kernel.
+* --network network=default,model=virtio: el interfaz y modelo de red para la máquina virtual
+* --connect=qemu:///system: el hipervisor
+* --vnc: exporta la consola virtual del huésped usando VNC.
+
+
+Procedemos a la instalación:
+
+![captura54](http://i.imgur.com/ywvnEXX.png)
+
+Ahora ejecutando virt-manager podremos gestionar las máquinas desde interfaz gráfica de forma más cómoda:
+
+![captura55](http://i.imgur.com/eBeGsia.png)
+
+Finalmente si abrimos la máquina podremos instalar Fedora desde entorno gráfico:
+
+![captura56](http://i.imgur.com/ap2R81N.png)
+
+
+
 
