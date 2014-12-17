@@ -765,11 +765,162 @@ De esta forma el script de instalación automática me instala todas las depende
 
 Al final de la instalación nos dice que podemos usar la aplicación web en el puerto 5000 del servidor.
 
+Entramos introduciendo los credenciales por defecto: usuario: admin, contraseña: admin
+
+![captura40](http://i.imgur.com/oL5LDn2.png)
+
+Como podemos ver el panel nos muestra el uso de CPU, memoria y almacenamiento del sistema anfitrión,  diferentes opciones como inciar las máquinas, asignarles recurosos, habilitar puentes de red, etc.
+
+Los contenedores que tenemos instalados nos aparecen en el menú de la izquierda y podremos seleccionarlos para editar su configuración. Abajo podremos arrancarlos y pararlos como se ve a continuación.
+
+Arrancamos un contenedor dándole a Start, veremos que ahora se pone en estado 'Running':
+
+![captura41](http://i.imgur.com/vSNYf1r.png)
 
 
 
 ## Ejercicio 4.2 ##
 **Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.**
 
+En el panel de administración del contenedor podremos modificar estos parámetros y restringir su uso. En mi caso he puesto que solo pueda utilizar 2 núcleos (0 y 1) y bajarle el tope de memoria y memoria de intercambio que puede utilizar.
+
+![captura42](http://i.imgur.com/h9ZTgw6.png)
+
 ## Ejercicio 5 ##
 **Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.**
+
+Iniciamos el servicio nginx en la jaula:
+
+``` 
+# service nginx start
+```
+
+En el host podemos comprobar que funciona accediendo a nuestra ip (localhost):
+
+![captura43](http://i.imgur.com/06AW0Dm.png)
+
+## Ejercicio 6.1 ##
+**Instalar juju.**
+
+He instalado juju desde mi máquina virtual de ubuntu para evitar catástrofes nucleares en mi sistema anfitrión como sigue:
+
+![captura44](http://i.imgur.com/hkvkZL0.png)
+
+He editado el archivo nano ~/.juju/environments.yaml para añadir la configuración local:
+
+![captura45](http://i.imgur.com/3Ptd8Ng.png)
+
+Después he instalado mongodb y al intentar crear un táper con juju me advierte de que falta un paquete por instalar:
+
+![captura46](http://i.imgur.com/j8e5x30.png)
+
+Lo instalamos tal y como el mismo programa nos dice que debemos hacer:
+
+```
+sudo apt-get install juju-local
+```
+
+Ahora podremos crear un táper con
+
+```
+juju bootstrap
+```
+
+## Ejercicio 6.2 ##
+**Usándolo, instalar MySQL en un táper.**
+
+Para instalar MySQL usamos el encanto mysql (se instalará en el táper que hemos hecho antes):
+
+```
+juju deploy mysql
+```
+
+He seguido los pasos de los [apuntes](http://jj.github.io/IV/documentos/temas/Contenedores#configurando-las-aplicaciones-en-un-tper) para instalar juju y configurarlo, por lo que además ya tengo instalado también mediawiki. Por lo que mi configuración actual es esta:
+
+![captura47](http://i.imgur.com/t2gBaiD.png)
+
+# Ejercicio 7.1 ##
+**Destruir toda la configuración creada anteriormente**
+
+Para destruir toda la configuración tendremos que destruir...
+
+Unidades:
+
+```
+sudo juju destroy-unit mysql/0
+sudo juju destroy-unit mediawiki/0
+```
+
+Relaciones:
+
+```
+sudo juju remove-relation mediawiki:db mysql:db
+```
+
+Máquinas:
+
+```
+sudo juju destroy-machine 2
+sudo juju destroy-machine 1
+```
+
+Servicios:
+
+```
+juju remove-service mediawiki
+```
+
+Finalmente veremos que tenemos el estado con sólo la máquina 0:
+
+![captura48](http://i.imgur.com/YZXT8A7.png)
+
+## Ejercicio 7.2 ##
+**Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.**
+
+Ahora voy a repetir los pasos que hice antes para añadir mediawiki, mysql y la relación entre ellos.
+
+![captura49](http://i.imgur.com/SuO4ShD.png)
+
+Las máquinas ahora tienen los números 3 y 4 siguiendo el orden de las anteriores aunque las hayamos destruido.
+Esta sería la configuración que finalmente nos queda:
+
+![captura50](http://i.imgur.com/oe3go0V.png)
+
+![captura51](http://i.imgur.com/v38P4RP.png)
+
+Tendremos ya el entorno con mediawiki funcionando al que podremos acceder introduciendo la ip de la máquina:
+
+![captura52](http://i.imgur.com/wSWDDtq.png)
+
+
+## Ejercicio 7.3 ##
+****
+
+Con este script podremos desplegar mediawiki en sistemas ubuntu con una sola orden:
+
+```
+#!/bin/bash
+
+# Script para configurar automaticamente juju con mysql y mediawiki
+
+# Instalar software necesario
+sudo add-apt-repository ppa:juju/stable
+sudo apt-get update && sudo apt-get install juju-core && sudo apt-get install juju-local
+# Editar el archivo de configuración para añadir entorno local
+perl -pi -e 's/default:\ amazon/#default:\ amazon\ndefault:\ local/g' ~/.juju/environments.yaml
+# Inicializar el entorno de juju
+juju init
+# Seleccionar un entorno de trabajo local
+juju switch local
+# Crear el táper
+juju bootstrap
+# Desplegar mediawiki
+juju deploy mediawiki
+# Desplegar mysql
+juju deploy mysql
+# Crear la relación necesaria entre mediawiki y mysql
+juju add-relation mediawiki:db mysql:db
+# Publicar el acceso a mediawiki
+juju expose mediawiki
+```
+
