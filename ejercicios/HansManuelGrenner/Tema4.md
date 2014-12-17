@@ -228,21 +228,106 @@ Tendremos que realizar varias pruebas para realizar una comparación extensa sin
 
 **Instalar juju.**
 
+Seguimos los pasos indicados en la sesión anteriores a este ejercicio para la instalación.
+
+Añadimos a los repositorios la última versión de juju, actualizamos y finalmente instalamos el programa.
+
+```sudo add-apt-repository ppa:juju/stable ```
+
+```sudo apt-get update && sudo apt-get install juju-core ```
+
+Para inicializar el entorno del que precisa juju ejecutamos :
+
+```juju init ```
+
+![Figura23](Imagenes/ej4_6_1.png)
+>Figura 23. Empezando a trabajar con juju
+
+Seguimos los pasos dados para poder trabajar en local, ya que por defecto el fichero de configuración usará Amazon EC2. Abrimos el fichero de configuración por tanto:
+
+```sudo nano /home/jmgn/.juju/environments.yaml ```
+
+Y modificamos el proveedor por defecto a local.
+
+```default: local```
+
 ---
 
 **Usándolo, instalar MySQL en un táper.**
+
+Dado que juju requiere de sus propios contenedores con su configuración dada, pasamos a crear un llamado 'taper'. Hacemos uso del siguiente comando :
+
+```juju bootstrap ```
+> Tenemos instalado previamente mongodb-server  para poder trabajr en local 
+
+![Figura24](Imagenes/ej4_6_2.png)
+>Figura 24. Lista de contenedores
+
+Como vemos se han creado tres nuevos contenedores. Finalmente instalamos mysql.
+
+```juju deploy mysql ```
+
 
 ##Ejercicio 7
 
 **Destruir toda la configuración creada anteriormente**
 
+Eliminamos el servicio mysql que se habia instalado en el táper.
+
+```juju destroy-service mysql ```
+
+Y a continuación destruimos el entorno local.
+
+``` sudo juju destroy-environment local ```
+
+![Figura25](Imagenes/ej4_6_5.png)
+>Figura 25. Eliminando la configuración anterior
+
+
 ---
 
 **Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.**
 
+Repetimos los pasos anteriores. Usamos el comando ```juju debootstrap ``` para crear los contenedores. A continuación desplegamos instalamos mysql y la mediawiki.
+
+```juju deploy mysql ```
+```juju deploy mediawiki ```
+
+Y creamos la relación entre mysql y mediawiki para indicarle a la wiki la base de datos que usará.
+
+```juju add-relation mediawiki:db mysql ```
+
+Y finalmente podemos lanzar el servicio para poder ser usado.
+
+```juju expose mediawiki ```
+
+La estado resultante de la máquina nos ofrecerá toda la información respecto a los servivios disponibles que han de ser la wiki y la base de datos mysql, y os estados de los contenedores.
+
+![Figura25](Imagenes/ej4_6_3.png)
+>Figura 25. Estado de las máquinas
+
+Podemos conectarnos a la wiki usando la IP dada y comprobar que todo funciona correctamente.
+
+![Figura26](Imagenes/ej4_6_4.png)
+>Figura 26. Estado de las máquinas
+
 ---
 
 **Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.**
+
+Para el script necesitamos replicar los comandos anteriores, que tendrá una forma similar a la siguiente:
+
+```
+
+#!/bin/bash
+
+juju bootstrap
+juju deploy mysql
+juju deploy mediawiki
+juju add-relation mediawiki:db mysql
+juju expose mediawiki
+
+```
 
 ##Ejercicio8
 
@@ -250,7 +335,7 @@ Tendremos que realizar varias pruebas para realizar una comparación extensa sin
 
 ##Ejercicio 9
 
-**nstalar un contenedor usando virt-install.**
+**Instalar un contenedor usando virt-install.**
 
 ##Ejercicio 10
 
