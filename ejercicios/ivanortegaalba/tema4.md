@@ -84,3 +84,61 @@ Ahora, creamos el contenedor:
 ```
 /usr/share/lxc/templates/lxc-gentoo create
 ```
+
+# Ejercicio 10
+
+Para instalar Docker nos basta con el script:
+
+```
+sudo apt-get update
+sudo apt-get install docker.io
+source /etc/bash_completion.d/docker.io
+[ -e /usr/lib/apt/methods/https ] || {
+  apt-get update
+  apt-get install apt-transport-https
+}
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+sudo sh -c "echo deb https://get.docker.com/ubuntu docker main\
+> /etc/apt/sources.list.d/docker.list"
+sudo apt-get update
+sudo apt-get install lxc-docker
+```
+
+Dockerfile:
+
+```
+# This is a comment
+FROM ubuntu:latest
+MAINTAINER Evenge <desarrollo.evenge@gmail.com>
+
+RUN apt-get update && apt-get install -y python
+RUN apt-get install -y python-setuptools
+RUN easy_install pip
+RUN apt-get install -y python-dev build-essential
+RUN pip install webapp2
+RUN pip install jinja2
+
+# Instalamos wget para poder descargar archivos
+RUN apt-get install -y wget
+
+# Descargamos el sdk de Google App Engine
+RUN wget https://storage.googleapis.com/appengine-sdks/featured/google_appengine_1.9.17.zip --no-check-certificate
+
+# Instalamos la herramienta zip
+RUN apt-get install -y zip
+
+# Descomprimimos el fichero descargado, con lo que ya tendremos disponibles las herramientas del sdk
+RUN unzip google_appengine_1.9.17.zip
+
+#Instalamos el google-cloud-sdk y configuramos el proyecto Evenge
+# RUN curl -sSL https://sdk.cloud.google.com | bash
+# RUN gcloud auth login
+# RUN gcloud config set project <google-cloud-project-id>
+
+# Una vez hecho esto ya tenemos instalado el entorno de desarrollo necesario para construir y ejecutar aplicaciones que luego funcionarán bajo Google App Engine
+
+RUN apt-get install -y git
+RUN git clone git@github.com:evenge/EVENGE.git
+RUN cd gestor-de-eventos
+RUN git branch -b $USER
+```
