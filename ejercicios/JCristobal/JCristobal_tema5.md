@@ -168,6 +168,86 @@ Y para almacenar un "objeto" en "archivo.img" (fichero que almacenaremos) ejecut
 
 
 
+##Ejercicio 8
+###Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente
 
+Instalaremos CLI ejecutando ` sudo npm install azure-cli` simplemente.
+
+Para crearnos la cuenta accedemos a windowsazurepass.com e introduciendo la clave que nos proporciona el profesor nos creamos la cuenta.
+
+una vez en el [dashboard](https://manage.windowsazure.com/@MicrosoftAzurePass.onmicrosoft.com#Workspaces/All/dashboard) podemos configurar y trabajar con Azure
+
+![imagen](http://i.imgur.com/o1E0bWr.png)
+
+para bajarse la configuración de la cuenta de Windows Azure, se tiene que ejecutar `azure account download`. Ahí nos vamos a la dirección que nos indica y vemos que se descarga un archivo de credenciales.
+
+![imagen](http://i.imgur.com/uEyQznJ.png)
+
+Ahora importamos ese archivo: `azure account import [archivo]`
+
+(una vez importado se nos aconseja que se borre)
+
+Y podemos comprobar que se importado correctamente con `azure account list`:
+
+![imagen](http://i.imgur.com/eM2EVft.png)
+
+Y ahora creamos una cuenta de almacenamiento: `azure account storage create tobas`
+y obtenemos las claves de la cuenta para poder utilizarla: `azure account storage keys list tobas`
+
+Una vez que no la muestre por pantalla las almacenamos en variables de entorno:
+`export AZURE_STORAGE_ACCOUNT=tobas` y `export AZURE_STORAGE_ACCESS_KEY=CLAVE_ACCESO_ALMACENAMIENTO`
+
+Una vez hecho esto podemos ver el dashboard de Azure y trabajar con el y nuestra cuenta.
+
+
+##Ejercicio 9
+###Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho. 
+
+Creamos un contenedor público con: `azure storage container create taper -p blob `
+
+Y para subir la imagen ejecutamos: `azure storage blob upload [ruta de la imagen] taper [nombre de la imagen dentro del contenedor]`
+
+
+##Ejercicio 10
+###Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.
+
+Primero instalamos la gema para Azure ya que trabajaremos con Ruby: `sudo gem install azure`
+
+El programa consultará los contenedores de nuestra cuenta, y para cada uno creará un archivo de texto con los blobs que tiene. Una vez creado y rellenado el archivo se subirá a su respectivo contenedor.
+
+
+```
+
+#!/usr/bin/ruby
+
+require "azure"
+
+azure_blob_service = Azure::BlobService.new
+containers = azure_blob_service.list_containers()
+
+containers.each do |container|
+
+    File.open("listablobs.txt", "w") do |list|
+
+        list.puts container.name + ":"
+        list.puts "=" * container.name.length
+
+        blobs = azure_blob_service.list_blobs(container.name)
+
+        blobs.each do |blob|
+            list.puts "\t" + blob.name
+        end
+    end
+
+    content = File.open("listablobs.txt", "rb") { |file| file.read }
+    blob = azure_blob_service.create_block_blob(container.name, "listablobs.txt", content)
+    puts "\tSubido archivo " + blob.name
+end
+
+```
+
+
+***
+***
 
 

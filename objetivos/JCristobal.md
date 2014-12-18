@@ -171,11 +171,11 @@
 
 ##Objetivos de sesión 24
 
-* [] Entender los diferentes componentes de la infraestructura como servicio.
+* [x] Entender los diferentes componentes de la infraestructura como servicio.
 * [x] Aprender a usar máquinas virtuales, localmente y en la nube.
 * [] Comprender las bases físicas de las infraestructuras virtuales.
 
-* [] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [x] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
 * [x] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
 
 ##Objetivos de sesión 25 - Seminario de Ignacio Zafra, de nubbius 
