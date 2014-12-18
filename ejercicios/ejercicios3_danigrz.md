@@ -104,5 +104,26 @@ Una vez hecho esto, descargamos e instalamos fedora-core-7
  ![Imgur](http://i.imgur.com/fXFUyJK.png)
 	
 
+Ejercicio 4. Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.
+
+	sudo debootstrap --arch=amd64 wheezy /home/jaula/debian http://ftp.debian.org/debian/
 	
+![Imgur](http://i.imgur.com/kqQz5Y9.png)
+
+Ahora accedemos a él
+
+	sudo chroot ~/jaula/debian
+	
+Para compilar instalamos la herramienta siguiente
+
+	sudo apt-get install gcc
+	
+ ![Imgur](http://i.imgur.com/p369Uzk.png)
+
+Prueba compilando y ejecutando programa en la jaula debian
+
+![Imgur](http://i.imgur.com/NcRLIxT.png)
+
+
+
 
