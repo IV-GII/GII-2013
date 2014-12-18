@@ -390,7 +390,7 @@ Con un simple doble clic podemos inciar la máquina, además el manager nos perm
 
 **Instalar docker.**
 
-Para [instalar el gestor de contenedores docker](http://docs.docker.com/installation/ubuntulinux/), podemos hacer uso del script creado por parte de sus desarroladores para ubuntu. 
+Para [instalar el gestor de contenedores docker](http://docs.docker.com/installation/ubuntulinux/), podemos hacer uso del script creado por parte de sus desarrolladores para ubuntu. 
 
 ```
 # Check that HTTPS transport is available to APT
