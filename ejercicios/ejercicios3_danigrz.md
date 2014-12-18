@@ -87,16 +87,20 @@ Ahora ejecutamos el siguiente comando
 b) Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse
 
 Para instalar rinse usamos el siguiente comando
+
 	sudo apt-get install rinse
 	
 Para ver las distribuviones disponibles usamos
 	rinse --list-dristributions
 
 Para instalar Fedora primero creamos una carpeta dentro de la jaula llamada fedora
+
 	mkdir fedora
+	
 Una vez hecho esto, descargamos e instalamos fedora-core-7
 
 	sudo rinse --arch=amd64 --distribution fedora-core-7 --directory ~/jaula/fedora
+	
  ![Imgur](http://i.imgur.com/fXFUyJK.png)
 	
 
