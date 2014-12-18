@@ -62,3 +62,38 @@ Podemos ver con la orden ifconfig el estado de la interfaz virtual
   
 Ejercicio 3
 
+a) Usar debootstrap (o herramienta similar en otra distro) para crear un sistema mínimo que se pueda ejecutar más adelante.
+
+Instalamos debootsrap
+ ![Imgur](http://i.imgur.com/OyjWgU8.png)
+ 
+Creamos la carpeta dónde se enjaulará a los usuarios
+ ![Imgur](http://i.imgur.com/Lhgq701.png)
+ 
+Ahora ejecutamos el siguiente comando
+ ![Imgur](http://i.imgur.com/kygU6X4.png)
+ 
+ Una vez realizado ésto podemos entrar a la jaula con el comando 
+ 	sudo chroot .
+ En la siguiente imagen se muestra cómo esta montado el sistema de archivos en la jaula y como se ve desde dentro
+ 
+  ![Imgur](http://i.imgur.com/3G3XqJr.png)
+  
+b) Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse
+
+Para instalar rinse usamos el siguiente comando
+	sudo apt-get install rinse
+	
+Para ver las distribuviones disponibles usamos
+	rinse --list-dristributions
+
+Para instalar Fedora primero creamos una carpeta dentro de la jaula llamada fedora
+	mkdir fedora
+Una vez hecho esto, descargamos e instalamos fedora-core-7
+
+	sudo rinse --arch=amd64 --distribution fedora-core-7 --directory ~/jaula/fedora
+	![Imgur](http://i.imgur.com/fXFUyJK.png)
+	
+
+	
+
