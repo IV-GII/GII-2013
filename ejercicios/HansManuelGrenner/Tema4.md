@@ -291,6 +291,7 @@ Y a continuación destruimos el entorno local.
 Repetimos los pasos anteriores. Usamos el comando ```juju debootstrap ``` para crear los contenedores. A continuación desplegamos instalamos mysql y la mediawiki.
 
 ```juju deploy mysql ```
+
 ```juju deploy mediawiki ```
 
 Y creamos la relación entre mysql y mediawiki para indicarle a la wiki la base de datos que usará.
@@ -303,13 +304,15 @@ Y finalmente podemos lanzar el servicio para poder ser usado.
 
 La estado resultante de la máquina nos ofrecerá toda la información respecto a los servivios disponibles que han de ser la wiki y la base de datos mysql, y os estados de los contenedores.
 
-![Figura25](Imagenes/ej4_6_3.png)
->Figura 25. Estado de las máquinas
+> Hay que esperar varios minutos en determinados sistemas hasta que todo esté operativo
+
+![Figura26](Imagenes/ej4_6_3.png)
+>Figura 26. Estado de las máquinas
 
 Podemos conectarnos a la wiki usando la IP dada y comprobar que todo funciona correctamente.
 
-![Figura26](Imagenes/ej4_6_4.png)
->Figura 26. Estado de las máquinas
+![Figura27](Imagenes/ej4_6_4.png)
+>Figura 27. Estado de las máquinas
 
 ---
 
@@ -318,28 +321,107 @@ Podemos conectarnos a la wiki usando la IP dada y comprobar que todo funciona co
 Para el script necesitamos replicar los comandos anteriores, que tendrá una forma similar a la siguiente:
 
 ```
-
 #!/bin/bash
 
-juju bootstrap
+sudo juju switch local
+sudo juju bootstrap
 juju deploy mysql
 juju deploy mediawiki
 juju add-relation mediawiki:db mysql
 juju expose mediawiki
-
 ```
 
 ##Ejercicio8
 
 **Instalar libvirt.**
 
+Antes de comenzar con libvirt es mejor asegurarse de que su hardware admite las extensiones de virtualización necesarias para KVM. 
+En mi caso al trabajar con una máquina virtual la CPU no soportará la virtualización por hardware.
+
+Aún así continuaremos siguiendo las indicaciones dadas en la página de ayuda de ubuntu hasta dar con un error.
+
+Para instalar libvirt usamos el siguiente comando:
+
+```sudo apt-get install kvm libvirt-bin ```
+
+Y ejecutamos la interfaz de aplicación por línea de comandos 'virsh'.
+
+```virsh ```
+
+![Figura28](Imagenes/ej4_8_1.png)
+>Figura 28. Aplicación virsh.
+
 ##Ejercicio 9
 
 **Instalar un contenedor usando virt-install.**
 
+Abrimos la terminal e instalamos virt-install.
+
+```sudo apt-get install virtinst ```
+
+Necesitaremos una forma para conectarnos a la consola gráfica de nuestro invitado, para ello podemos utilizar virt-viewer o virt-manager.
+Recomiendo el uso de virt-manager puesto que además permite crear y eliminar máquinas virtuales y realizar otras tareas.
+
+```sudo apt-get install virt-manager ```
+
+> A partir de aquí pueden aparecer los problemas al no poder virtualizar el hardware. Sin embargo en mi caso no hubo errores en cuanto a la instalación y uso.
+
+![Figura29](Imagenes/ej4_8_2.png)
+>Figura 29. Warning no kvm.
+
+Nos descargamos alguna imagen que querramos usar para nuestra máquina virtual. Y al usar el instalador le pasamos dicha iso.
+Un ejemplo de uso seria el siguiente, indicando el nombre de la máquina y la ISO en los dos campos por rellenar. ( Ejemplo con 512 MB de RAM ).
+
+```sudo virt-install -n <nombre-maquina> -r 512 --disk path=/var/lib/libvirt/images/ubuntu-libvirt.img,bus=virtio,size=5 -c <nombre-iso> --accelerate --network network=default,model=virtio --connect=qemu:///system --vnc -v```
+
+Ejecutamos el virt-manager para poder manejar las máquinas virtuales.
+
+```sudo virt-manager -c qemu:///system  ubuntu-libvirt ```
+
+![Figura30](Imagenes/ej4_8_4.png)
+>Figura 30. Virt-manager
+
+Con un simple doble clic podemos inciar la máquina, además el manager nos permite realizar más funciones como crear/borrar máquinas, apagarlas/reiniciarlas, etc.
+
+![Figura31](Imagenes/ej4_8_3.png)
+>Figura 31. Ejemplo con ubuntu server 13.10.
+
 ##Ejercicio 10
 
 **Instalar docker.**
+
+Para [instalar el gestor de contenedores docker](http://docs.docker.com/installation/ubuntulinux/), podemos hacer uso del script creado por parte de sus desarroladores para ubuntu. 
+
+```
+# Check that HTTPS transport is available to APT
+if [ ! -e /usr/lib/apt/methods/https ]; then
+	apt-get update
+	apt-get install -y apt-transport-https
+fi
+
+# Add the repository to your APT sources
+echo deb https://get.docker.com/ubuntu docker main > /etc/apt/sources.list.d/docker.list
+
+# Then import the repository key
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+
+# Install docker
+apt-get update
+apt-get install -y lxc-docker
+
+#
+# Alternatively, just use the curl-able install.sh script provided at https://get.docker.com
+# 
+```
+
+Mediante el siguiente comando podemos descargar y ejecutar directamente el script anterior.
+
+```curl -sSL https://get.docker.com/ubuntu/ | sudo sh ```
+
+Finalizada la instalación comprobamos que todo funciona de la forma esperada.
+
+```$ sudo docker run -i -t ubuntu /bin/bash ```
+
 
 ##Ejercicio 11
 
