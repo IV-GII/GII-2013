@@ -104,6 +104,70 @@ sudo apt-get update
 sudo apt-get install lxc-docker
 ```
 
+# Ejercicio 11
+1.
+
+Y la de [centos](https://registry.hub.docker.com/_/centos/) de la misma manera:
+```
+docker pull centos
+docker run -t -i centos /bin/bash
+```
+2. Para mongo DB instalaremos:
+
+```
+docker pull mongo
+docker run -t -i mongo /bin/bash
+```
+
+# Ejercicio 12
+[Mi usuario](https://hub.docker.com/u/ivanortegaalba/) es ivanortegaalba en Docker
+Para buscar imagenes de Docker pordemos usar su página del hub:  https://registry.hub.docker.com/
+Y aquí poder buscar todas las imagenes deseadas.
+Para descargar una alternativa, vamos a descargar la de [Nginx](https://registry.hub.docker.com/_/nginx/) que luego necesitaremos:
+````
+ivanortegaalba@ivanortegaalba-VirtualBox:~/EVENGE/despliegue$ sudo docker run --name nginx -v /some/content:/usr/share/nginx/html:ro -d nginx
+Unable to find image 'nginx:latest' locally
+nginx:latest: The image you are pulling has been verified
+f10807909bc5: Pull complete
+f6fab3b798be: Pull complete
+d21beea329f5: Pull complete
+04499cf33a0e: Pull complete
+34806d38e48d: Pull complete
+343c8475e349: Pull complete
+92360dceda1a: Pull complete
+9495a555677d: Pull complete
+911e2df03930: Pull complete
+88daddf047c6: Pull complete
+db8a64f62509: Pull complete
+e46b3488b010: Pull complete
+511136ea3c5a: Already exists
+Status: Downloaded newer image for nginx:latest
+af6497278710ac50918d096ae06b48044be1b84a14ff4cb98318c61f1bdfde82
+
+````
+# Ejercicio 13
+
+Buscamos el contenedor:
+```
+ivanortegaalba@ivanortegaalba-VirtualBox:~/EVENGE/despliegue$ sudo docker ps -a
+CONTAINER ID        IMAGE                          COMMAND                CREATED             STATUS                        PORTS               NAMES
+9e3264b2f8fa        ivanortegaalba/evenge:latest   "/bin/bash"            26 seconds ago      Exited (130) 11 seconds ago                       cranky_kowalevski
+d62a39681b0b        ivanortegaalba/evenge:latest   "/bin/bash"            5 minutes ago       Exited (0) 4 minutes ago                          tender_hawking
+af6497278710        nginx:latest                   "nginx -g 'daemon of   16 minutes ago      Up 16 minutes                 80/tcp, 443/tcp     nginx
+a2defe6886d9        ivanortegaalba/evenge:latest   "/bin/bash"            25 minutes ago      Exited (1) 18 minutes ago                         reverent_wozniak
+```
+Comiteamos y hacemos push a nuestro repo:
+```
+ivanortegaalba@ivanortegaalba-VirtualBox:~/EVENGE/despliegue$ sudo docker commit 9e3264b2f8fa
+70d9522d5ba9befb67bd5f0ceb7e46821aa003d571b0e7cb5e034a34f31eb2b6
+
+ivanortegaalba@ivanortegaalba-VirtualBox:~/EVENGE/despliegue$ sudo docker push ivanortegaalba/evenge
+The push refers to a repository [ivanortegaalba/evenge] (len: 1)
+Sending image list
+Pushing repository ivanortegaalba/evenge (1 tags)
+```
+# Ejercicio 14
+
 Dockerfile:
 
 ```
@@ -142,3 +206,4 @@ RUN git clone git@github.com:evenge/EVENGE.git
 RUN cd gestor-de-eventos
 RUN git branch -b $USER
 ```
+Está subida a [DockerHub](https://registry.hub.docker.com/u/ivanortegaalba/evenge/)
