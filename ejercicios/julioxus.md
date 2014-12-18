@@ -878,7 +878,7 @@ juju bootstrap
 ## Ejercicio 6.2 ##
 **Usándolo, instalar MySQL en un táper.**
 
-Para instalar MySQL usamos el encanto mysql (se instalará en el táper que hemos hecho antes):
+Para instalar MySQL usamos el encanto mysql:
 
 ```
 juju deploy mysql
@@ -1028,5 +1028,109 @@ Finalmente si abrimos la máquina podremos instalar Fedora desde entorno gráfic
 ![captura56](http://i.imgur.com/ap2R81N.png)
 
 
+## Ejercicio 10 ##
+**Instalar docker**  
 
+Para instalar Docker en Debian he seguido esta [guía](https://docs.docker.com/installation/debian/#debian-jessie-8-64-bit)
+
+Instalo con la orden:
+
+```
+sudo apt-get install docker.io
+```
+Y comprobamos que funciona como es debido:
+
+![captura57](http://i.imgur.com/Z011V3p.png)
+
+
+## Ejercicio 11.1 ##
+**Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.**
+
+Con la orden docker pull podemos descargar la imagen que necesitemos como CentOS:
+
+![captura58](http://i.imgur.com/OTL0BCZ.png)
+
+Podemos ver muchas otras imágenes con software preinstalado para desplegar un servicio concreto en [docker hub registry](https://registry.hub.docker.com/)
+
+# Ejercicio 11.2 ##
+**Buscar e instalar una imagen que incluya MongoDB**
+
+Esta es la imagen oficial de docker para MongoDB: [mongo](https://registry.hub.docker.com/_/mongo/)
+
+La instalamos con sudo docker pull mongo:
+
+![captura59](http://i.imgur.com/E6bJeLC.png)
+
+Finalmente comprobamos las imagenes que hemos instalado:
+
+![captura60](http://i.imgur.com/6zTPk0j.png)
+
+## Ejercicio 12 ##
+**Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.**
+
+Me he creado una cuenta en Docker usando la de github:
+
+![captura61](http://i.imgur.com/Z4tzUzO.png)
+
+Creamos un repositorio donde guardemos la imagen:
+
+![captura62](http://i.imgur.com/QPCu8c7.png)
+
+He usado la imagen de ubuntu para instalar nginx en ella:
+
+```
+sudo docker run -i -t ubuntu /bin/bash
+```
+Una vez dentro del contenedor creamos un usuario:
+
+![captura63](http://i.imgur.com/xJh3Kkc.png)
+
+Instalamos nginx:
+
+```
+sudo apt-get install nginx
+```
+
+
+## Ejercicio 13 ##
+**Crear a partir del contenedor anterior una imagen persistente con commit.**
+
+Creamos una nueva imagen usando commit con nginx instalado y la subimos al repositorio de docker usando push:
+
+![captura64](http://i.imgur.com/oyVNgKr.png)
+
+NOTA: Para obtener el id del contenedor al que vamos a hacer commit debemos dejarlo ejecutando en otra terminal y ejecutar "sudo docker ps", de otro modo no se efectuarán los cambios en el contenedor.
+
+Vamos a comprobar que la imagen está disponible en el registro de docker y funcionando. Para ello primero vamos a borrar el contenedor de nginx y su imagen correspondiente:
+
+![captura65](http://i.imgur.com/ua6nO6m.png)
+
+Ahora mismo no hay rastro de nuestra imagen. Hacemos un pull y la ejecutamos:
+
+![captura66](http://i.imgur.com/H9tArMT.png)
+
+Ya está funcionando nuestro contenedor con nginx instalado.
+
+## Ejercicio 14 ##
+**Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.**
+
+
+Para esto he utilizado el script que hicimos para la práctica 3 que instala todas las dependencias.
+
+Partimos de la imagen de Ubuntu:
+
+sudo docker run 
+
+Dentro del contenedor instalamos wget, descargamos y ejecutamos el script que instala las dependencias:
+
+```
+apt-get install wget
+wget https://raw.githubusercontent.com/julioxus/iv-aerospace/master/Hito3/install.sh
+chmod +x install.sh
+./install.sh
+```
+
+Cuando termine el script tendremos todo instalado. Abrimos otra terminal y hacemos commit para salvar los cambios:
+
+![captura67](http://i.imgur.com/PmHO16Q.png)
 
