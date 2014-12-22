@@ -178,3 +178,19 @@ Para instalar "Ceph", solo es necesario poner el siguiente comando:
     apt-get install ceph-mds
 
 [Ver captura de pantalla](https://www.dropbox.com/s/4mkdu6i6xemnyip/Captura%20de%20pantalla%202014-12-22%20a%20la%28s%29%2021.05.29.png?dl=0)
+
+* [+]Ejercicio 7
+ - A) Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
+
+Lo primero que debemos de hacer es crear la "piscina" para rados, con "rados mkpool piscina". 
+Una vez creado la "piscina", introducimos nuestro fichero en la "piscina" con:
+
+    rados put -p piscina objeto prueba.img
+
+Si lo que queremos es subir una carpeta completa, solamente tendriamos que comprimirla y subirla comprimida.
+Basta con seguir estos sencillos pasos:
+
+    tar -zcvf prueba.tar.gz IV
+    rados put -p piscina carpeta prueba.tar.gz
+    rados df
+    rados ls -p piscina
