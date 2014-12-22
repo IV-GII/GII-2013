@@ -185,3 +185,109 @@ Lista de objetivos Juan Francisco Rodríguez Vílchez
 
 * [X] Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
 * [X] Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
+
+
+##Sesión 17-11-2014##
+
+* [X] Entender los sistemas de orquestación de máquinas virtuales.
+* [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+###Otros objetivos###
+
+* [X] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
+
+##Sesión 18-11-2014##
+
+* [X] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
+* [X] Conocer las tecnologías a nivel hardware que se usan para los mismos.
+* [X] Conocer las aplicaciones y programas que se usan.
+* [X] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
+* 
+###Otros objetivos###
+
+* [X] Familiarizarse con el tejido económico TIC en nuestro entorno local.
+* [X] Conocer qué tipo de perfil buscan estas empresas.
+
+##Sesión 24-11-2014##
+
+* [X] Resolver problemas con juju.
+* [X] Configuración compleja de sistemas con él.
+* [X] Entender el concepto de hipervisor y trabajar con ellos.
+* 
+###Otros objetivos###
+
+* [X] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+##Sesión 25-11-2014##
+
+* [X] Resolver problemas con juju.
+* [X] Entender cómo funciona docker y qué implica.
+* 
+###Otros objetivos###
+
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [X] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+
+##Sesión 01-12-2014##
+
+* [X] Resolver últimos problemas con docker.
+* [X] Comenzar con la tercera práctica.
+* 
+###Otros objetivos###
+
+* [X] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [X] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+##Sesión 02-12-2014##
+
+* [X] Resolver últimos problemas con docker.
+* [X] Resolver dudas relacionadas con la tercera práctica.
+* 
+###Otros objetivos###
+
+* [X] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [X] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+
+##Sesión 09-12-2014##
+
+* [X] Terminar la familiarización con Ruby
+* [X] Recordar conceptos de almacenamiento físico.
+* [X] Entender el concepto de FUSE y usarlo en la práctica.
+* [X] Crear y manipular formatos de provisionamiento delgado.
+
+###Objetivos generales###
+
+* [X] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [X] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
+##Sesión 11-12-2014##
+
+* [X] Entender diferentes tipos de sistemas de ficheros virtuales
+* [X] Aprender a provisionar almacenamiento en la nube.
+* 
+###Objetivos generales###
+
+* [X] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [X] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+
+##Sesión 15-12-2014##
+
+* [ ] Entender los diferentes componentes de la infraestructura como servicio.
+* [ ] Aprender a usar máquinas virtuales, localmente y en la nube.
+* [ ] Comprender las bases físicas de las infraestructuras virtuales.
+* 
+###Objetivos generales###
+
+* [ ] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
+* [ ] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [ ] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+##Sesión 16-12-2014##
+
+* [X] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+###Objetivos generales###ss
+
+* [X] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
