@@ -1,6 +1,6 @@
 ##TEMA 5
 
-#VIRTUALIZACIÓN
+#VIRTUALIZACIÓN DE ALMACENAMIENTO
 
 
 * [+]Ejercicio 1
@@ -178,6 +178,54 @@ Para instalar "Ceph", solo es necesario poner el siguiente comando:
     apt-get install ceph-mds
 
 [Ver captura de pantalla](https://www.dropbox.com/s/4mkdu6i6xemnyip/Captura%20de%20pantalla%202014-12-22%20a%20la%28s%29%2021.05.29.png?dl=0)
+
+* [+]Ejercicio 6
+ - A) Crear un dispositivo ceph usando BTRFS o XFS.
+
+Solo tenemos que configurar el dispositivo, ya que lo hemos creado en el ejercicio anterior.
+Lo primero que debemos de hacer es crear el directorio para almacenar la información, para ello debemos usar el siguiente comando:
+
+    mkdir -p /srv/ceph/{osd,mon,mds}
+
+Ahora tenemos que crear y rellenar el fichero de configuración como tenemos en el ejemplo de las practicas:
+```
+[global]
+log file = /var/log/ceph/$name.log
+pid file = /var/run/ceph/$name.pid
+[mon]
+mon data = /srv/ceph/mon/$name
+[mon.mio]
+host = penny
+mon addr = 127.0.0.1:6789
+[mds]
+[mds.mio]
+host = penny
+[osd]
+osd data = /srv/ceph/osd/$name
+osd journal = /srv/ceph/osd/$name/journal
+osd journal size = 1000 ; journal size, in megabytes
+[osd.0]
+host = penny
+devs = /dev/loop0
+```
+
+Después de configurar el fichero de configuración, creamos un sistema "loop" en "xfs", como hicimos en el ejercicio anterior.
+Creamos el directorio del servidor de objetos con:
+
+    mkdir /srv/ceph/osd/osd.0
+
+Y también el sistema de ficheros de objetos con:
+
+    /sbin/mkcephtfs -a -c /etc/ceph/ceph.conf
+
+Por último, iniciamos el servicio y comprobamos el estado de "Ceph" con:
+
+    /etc/init.d/ceph -a start sudo ceph -s
+
+Ya solo nos quedaría crear el directorio donde vamos a montarlo. Para  crearlo y montarlo usamos:
+
+    mkdir /mnt/ceph mount -t ceph Ubuntu:/ /mnt/ceph
+
 
 * [+]Ejercicio 7
  - A) Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
