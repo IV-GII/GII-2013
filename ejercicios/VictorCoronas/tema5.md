@@ -92,3 +92,8 @@ Para arreglar este error y funcione todo correctamante, tenemos que convertir ca
 Para ver el resultado de como quedaría todo, simplemente ponemos el siguiente comando:
 
     df -h
+
+* [+]Ejercicio 4
+ - A) Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema.
+
+
