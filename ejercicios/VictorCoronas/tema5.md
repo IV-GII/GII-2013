@@ -7,16 +7,60 @@
 * [+]Ejercicio 1
  - A) ¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?
 
-Lo primero que hago es instalar "Gparted" con:
+Desde Mac os x, uso "partition inspector", que hace un analisis de todo lo que tengo instalado.
 
-    apt-get install gparted
-
-Una vez lo tenemos instalado lo ejecutamos, entonces se nos mostrará todos los volúmenes lógicos instalados en nuestro equipo, así como todas las particiones y que hay, en caso de que se tengan.
+Lo ejecutamos, entonces se nos mostrará todos los volúmenes lógicos instalados en nuestro equipo, así como todas las particiones y que hay, en caso de que se tengan.
 En mi caso, solo tengo un disco duro y varias particiones realizadas, que son:
 
     Mac os x
     Linux
     Windows
+
+Esta sería la respuesta que me da "Partition inspector":
+
+'''
+*** Report for internal hard disk ***
+
+Current GPT partition table:
+ #      Start LBA      End LBA  Type
+ 1             40       409639  EFI System (FAT)
+ 2         409640    426086151  Mac OS X HFS+
+ 3      432377856    497696767  Basic Data
+ 4      497698816    624880263  Basic Data
+
+Current MBR partition table:
+ # A    Start LBA      End LBA  Type
+ 1              1       409639  ee  EFI Protective
+ 2         409640    426086151  af  Mac OS X HFS+
+ 3 *    432377856    497696767  83  Linux
+ 4      497698816    624880263  07  NTFS/HPFS
+
+MBR contents:
+ Boot Code: Unknown, but bootable
+
+Partition at LBA 40:
+ Boot Code: None (Non-system disk message)
+ File System: FAT32
+ Listed in GPT as partition 1, type EFI System (FAT)
+
+Partition at LBA 409640:
+ Boot Code: None
+ File System: HFS Extended (HFS+)
+ Listed in GPT as partition 2, type Mac OS X HFS+
+ Listed in MBR as partition 2, type af  Mac OS X HFS+
+
+Partition at LBA 432377856:
+ Boot Code: GRUB
+ File System: ext3
+ Listed in GPT as partition 3, type Basic Data
+ Listed in MBR as partition 3, type 83  Linux, active
+
+Partition at LBA 497698816:
+ Boot Code: Windows BOOTMGR (Vista)
+ File System: NTFS
+ Listed in GPT as partition 4, type Basic Data
+ Listed in MBR as partition 4, type 07  NTFS/HPFS
+'''
 
 Como se puede [ver en la siguiente captura](), cada uno tiene su propio sistema de archivos.
 
