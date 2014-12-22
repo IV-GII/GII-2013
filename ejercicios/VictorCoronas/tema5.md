@@ -2,7 +2,6 @@
 
 #VIRTUALIZACIÓN
 
-#Clase del 4 de Noviembre de 2014
 
 * [+]Ejercicio 1
  - A) ¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?
