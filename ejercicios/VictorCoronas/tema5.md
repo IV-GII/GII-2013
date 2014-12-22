@@ -242,3 +242,6 @@ Basta con seguir estos sencillos pasos:
     rados put -p piscina carpeta prueba.tar.gz
     rados df
     rados ls -p piscina
+
+* [+]Ejercicio 8
+ - A) Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente.
