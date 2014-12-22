@@ -61,11 +61,11 @@ Partition at LBA 497698816:
  Listed in MBR as partition 4, type 07  NTFS/HPFS
 ```
 
-Como se puede [ver en la siguiente captura](), cada uno tiene su propio sistema de archivos.
+Como se puede [ver en la siguiente captura](https://www.dropbox.com/s/ld5lm8thfrbdtmu/Captura%20de%20pantalla%202014-12-22%20a%20la%28s%29%2020.58.27.png?dl=0), cada uno tiene su propio sistema de archivos.
 
  - B) Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza?
 
-Si he podido tener acceso a los ordenadores de la escula, en un aula de prácticas. Estos ordenadores usan un sistema de ficheros remoto, que no se encuntra en el ordenador local.
+Si he podido tener acceso a los ordenadores de la escuela, en un aula de prácticas. Estos ordenadores usan un sistema de ficheros remoto, que no se encuntra en el ordenador local.
 
 
 * [+]Ejercicio 2
