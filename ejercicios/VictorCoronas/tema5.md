@@ -96,4 +96,36 @@ Para ver el resultado de como quedaría todo, simplemente ponemos el siguiente c
 * [+]Ejercicio 4
  - A) Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema.
 
+Vamos a hacer algo parecido al ejercicio anterior, que es crear dos sistemas de ficheros, pero ene este caso serán:
 
+    xfs
+    btrfs
+
+Para ello ejecutamos los siguientes comandos:
+
+    qemu-img create -f raw prueba-xfs.img 50M
+    qemu-img create -f raw prueba-btrfs.img 50M
+
+Ahora como en el ejercicio anterior, usamos el comando "losetup" para convertir cada fichero en ficheros "loop":
+
+    losetup -v -f prueba-xfs.img
+    losetup -v -f prueba-btrfs.img
+
+El siguiente paso es instalar "xfs" y "btrfs", en caso de que no los tengamos instalados:
+
+    apt-get install xfs xfsprogs
+    apt-get install btrfs-tools
+
+Ahora es el momento de darle formato a cada uno:
+
+    mkfs.xfs /dev/loop2
+    mkfs.btrfs /dev/loop3
+
+Y el paso final si todo ha salid bien es, montarlos, simplemente con los siguiente comandos:
+
+    mount /dev/loop2 /mnt/loop2
+    mount /dev/loop3 /mnt/loop3
+
+Se comprueba de que se ha realizado todo correctamente con:
+
+    df -h
