@@ -170,3 +170,12 @@ Y el paso final si todo ha salid bien es, montarlos, simplemente con los siguien
 Se comprueba de que se ha realizado todo correctamente con:
 
     df -h
+
+* [+]Ejercicio 5
+ - A) Instalar ceph en tu sistema operativo.
+
+Para instalar "Ceph", solo es necesario poner el siguiente comando:
+
+    apt-get install ceph-mds
+
+[Ver captura de pantalla](https://www.dropbox.com/s/4mkdu6i6xemnyip/Captura%20de%20pantalla%202014-12-22%20a%20la%28s%29%2021.05.29.png?dl=0)
