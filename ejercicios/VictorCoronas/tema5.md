@@ -59,7 +59,7 @@ Partition at LBA 497698816:
  File System: NTFS
  Listed in GPT as partition 4, type Basic Data
  Listed in MBR as partition 4, type 07  NTFS/HPFS
-    ```
+```
 
 Como se puede [ver en la siguiente captura](), cada uno tiene su propio sistema de archivos.
 
