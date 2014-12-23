@@ -260,3 +260,16 @@ Ahora una vez realizado los pasos anteriores, vamos a instalar la librería de "
 Después de instalar "node.js", debemos de instalar también "Windows Azure", para ello usamosel siguiente comando:
 
     npm install azure-cli
+
+Cuando ya tengamos todo instalado, nos dirigimos a este [enlace](http://go.microsoft.com/fwlink/?LinkId=254432) y hacemos login. cuando hagamos login se nos descargará un archivo de configuración "publishsettings". Este archivo que se nos ha descargado tenemos que importarlo con:
+
+    azure account import ~/Azpad245GZK8973-12-30-2013-credentials.publishsettings
+
+Por último tenemos que crear una cuenta de almacenamiento usando los siguientes comandos:
+
+    azure account storage create victorCoronas
+    azure account storage keys list victorCoronas
+    export AZURE_STORAGE_ACCOUNT=victorCoronas
+    export AZURE_STORAGE_ACCESS_KEY=(llave dada por azure account)
+    echo $AZURE_STORAGE_ACCOUNT
+    echo $AZURE_STORAGE_ACCESS_KEY
