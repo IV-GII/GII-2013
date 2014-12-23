@@ -245,3 +245,18 @@ Basta con seguir estos sencillos pasos:
 
 * [+]Ejercicio 8
  - A) Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente.
+
+El primer paso que de vemos de dar tras la cración de la cuenta de "Azure", es instalar "Azure", pero para ello debemos de tener instalado previamente la librería "node.js", para ello introducimos los siguientes comandos:
+
+    apt-get update
+    apt-get install -y python-software-properties python g++ make
+    add-apt-repository -y ppa:chris-lea/node.js
+    apt-get update
+
+Ahora una vez realizado los pasos anteriores, vamos a instalar la librería de "node.js" con el siguiente comando:
+
+    apt-get install nodejs
+
+Después de instalar "node.js", debemos de instalar también "Windows Azure", para ello usamosel siguiente comando:
+
+    npm install azure-cli
