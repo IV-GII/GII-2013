@@ -273,3 +273,19 @@ Por último tenemos que crear una cuenta de almacenamiento usando los siguientes
     export AZURE_STORAGE_ACCESS_KEY=(llave dada por azure account)
     echo $AZURE_STORAGE_ACCOUNT
     echo $AZURE_STORAGE_ACCESS_KEY
+
+* [+]Ejercicio 9
+ - A) Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.
+
+Lo primero que debemos de hacer es crear un contenedor para imágenes con "Azure", con el siguiente comando:
+
+    azure storage container create imagenes -p blob
+
+Después lo único que debemos de hacer es subir cualquier imágen al contenedor con el siguiente comando:
+
+    azure storage blob upload ~/Escritorio/pruebaIv.jpg
+
+Si hemos seguido los pasos anteriores, el archivo de la imágen quedará subido a la cuenta  creada en el ejercicio anterior.
+
+* [+]Ejercicio 10
+ - A) Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.
