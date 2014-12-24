@@ -289,3 +289,40 @@ Si hemos seguido los pasos anteriores, el archivo de la imágen quedará subido 
 
 * [+]Ejercicio 10
  - A) Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.
+
+Vamos a realizar un programa en "Ruby" con "Azure", para ello debemos de instalar  la "gema de ruby" para "Azure" con el siguiente comando:
+
+    gem install azure
+
+Una vez instalado, vamos a proceder a escribir el código del programa en Ruby:
+```
+#!/usr/bin/ruby
+require "azure"
+
+azure_blob_service = Azure::BlobService.new
+
+containers = azure_blob_service.list_containers()
+
+#Recorremos cada contenedor
+containers.each do |container|
+
+#Conforme lo va recorriendo se crea un ".txt" con el nombre del contenedor
+    name = container.name + ".txt"
+
+#Vamos abriendo el fichero que se ha creado en modo escritura "w"
+File.open(name, "w") do |list|
+
+    #Se almacena su nombre y cada blob que contiene dentro
+    list.puts container.name + ":"
+    list.puts "=" * container.name.length
+blobs = azure_blob_service.list_blobs(container.name)
+    blobs.each do |blob|
+                list.puts "\t" + blob.name
+    end
+end
+
+#Ahora subimos el fichero al contenedor
+content = File.open(name, "rb") { |file| file.read }
+blob = azure_blob_service.create_block_blob(container.name, name, content)
+end
+'''
