@@ -76,6 +76,8 @@ El segundo paso es instalar tanto en la máquina anfitriona como en la máquina 
 
     apt-get install sshfs
 
+[Ver captura de pantalla](https://www.dropbox.com/s/vkxxnqigufqyn49/Captura%20de%20pantalla%202014-12-24%20a%20la%28s%29%2012.49.49.png?dl=0)
+
 El tercer paso es crear en la máquina virtual un "usuario" y dentro de su directorio "/home" un directorio "pruebaSshfs", a la cual queremos acceder, dentro de "pruebaSshfs" meteremos algun archivo para poder visualizar después.
 
 El cuarto paso será añadir el usuario creado al cual nos queremos conectar al grupo "FUSE". Seguidamente en la máquina anfitriona vamos a crear el directorio remoto "pruebaSshfs_remoto", en el cual montaremos "/home" de la máquina virtual. De esta manera, ya podemos acceder a los recursos remotos con la orden "sshfs", simplemente pasandole el usuario remoto, la IP de la mñaquina virtual, la ruta al directorio que hemos creado para compartir y la ruta del "/home" de la máquina anfitriona.
@@ -90,10 +92,15 @@ Para la máquina virtual:
     touch prueba.txt
     usermod -G fuse -a prueba_iv
 
+[Creación de usuario](https://www.dropbox.com/s/x9k8c6cvh0glr2n/Captura%20de%20pantalla%202014-12-24%20a%20la%28s%29%2012.53.18.png?dl=0)
+[Crear carpeta](https://www.dropbox.com/s/7l8ogko5tbd7gnf/Captura%20de%20pantalla%202014-12-24%20a%20la%28s%29%2012.55.31.png?dl=0)
+
 Para la máquina anfitriona:
 
     mkdir pruebaSshfs_remoto
-    sshfs prueba_iv@10.0.3.134:/home /home/victorCoronas/pruebaSshfs_remoto
+    sshfs prueba_iv@10.0.3.134:/home/pruebaSshfs /home/walker/pruebaSshfs_remoto
+
+[Ver captura de pantalla](https://www.dropbox.com/s/e6xn8o7hya017e9/Captura%20de%20pantalla%202014-12-24%20a%20la%28s%29%2013.08.33.png?dl=0)
 
 * [+]Ejercicio 3
  - A) Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre.
@@ -109,15 +116,21 @@ Algunos ejemplos de como crearlas:
     qcow2: qemu-img create -f qcow2 imagen-qcow2.qcow2 50M
     vmdk: qemu-img create -f vmdk imagen-vmdk.vmdk 50M
 
+[Ver captura de pantalla](https://www.dropbox.com/s/660gh9yrpuxspk5/Captura%20de%20pantalla%202014-12-24%20a%20la%28s%29%2013.12.54.png?dl=0)
+
 Cuando hayamos creado estos ficheros vamos a montarlos, pero nos dará un "error", ya que no tienen ningun formato asignado.
 
     mount -o loop,offset=32256 imagen-raw.img /mnt/imagen
 
+[Ver capturas de pantalla](https://www.dropbox.com/s/8j57z535bn8c25w/Captura%20de%20pantalla%202014-12-24%20a%20la%28s%29%2013.41.12.png?dl=0)
 
     modprobe nbd max_part=16
     qemu-nbd -c /dev/nbd1 imagen-raw.img 
     partprobe /dev/nbd1
     mount /dev/nbd1 /mnt/imagen
+
+[Ver captura 1](https://www.dropbox.com/s/2o222ifgw88iwyg/Captura%20de%20pantalla%202014-12-24%20a%20la%28s%29%2013.50.50.png?dl=0)
+[Ver captura 2](https://www.dropbox.com/s/pdqmkv4s4wxp39t/Captura%20de%20pantalla%202014-12-24%20a%20la%28s%29%2013.52.26.png?dl=0)
 
 Pero en todos los casos obtenemos un error:
 
@@ -128,6 +141,8 @@ Para arreglar este error y funcione todo correctamante, tenemos que convertir ca
     losetup -v -f imagen-vmdk.vmdk
     mkfs.ext4 /dev/loop1
     mount /dev/loop2 /mnt/images
+
+[Ver captura de pantalla](https://www.dropbox.com/s/ymib6cmded2ksof/Captura%20de%20pantalla%202014-12-24%20a%20la%28s%29%2013.55.29.png?dl=0)
 
 Para ver el resultado de como quedaría todo, simplemente ponemos el siguiente comando:
 
