@@ -64,7 +64,7 @@ Como se puede [ver en la siguiente captura](https://www.dropbox.com/s/ld5lm8thfr
 
  - B) Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza?
 
-Si he podido tener acceso a los ordenadores de la escuela, en un aula de prácticas. Estos ordenadores usan un sistema de ficheros remoto, que no se encuntra en el ordenador local.
+Si he podido tener acceso a los ordenadores de la escuela, en un aula de prácticas. Estos ordenadores usan un sistema de ficheros remoto, que no se encuentra en el ordenador local.
 
 
 * [+]Ejercicio 2
