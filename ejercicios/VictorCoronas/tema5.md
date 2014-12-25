@@ -151,7 +151,7 @@ Para ver el resultado de como quedaría todo, simplemente ponemos el siguiente c
 * [+]Ejercicio 4
  - A) Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema.
 
-Vamos a hacer algo parecido al ejercicio anterior, que es crear dos sistemas de ficheros, pero ene este caso serán:
+Vamos a hacer algo parecido al ejercicio anterior, que es crear dos sistemas de ficheros, pero ne este caso serán:
 
     xfs
     btrfs
@@ -161,25 +161,32 @@ Para ello ejecutamos los siguientes comandos:
     qemu-img create -f raw prueba-xfs.img 50M
     qemu-img create -f raw prueba-btrfs.img 50M
 
+[Ver captura de pantalla](https://www.dropbox.com/s/ihjc6a1mnpsq1b4/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2013.27.25.png?dl=0)
+
 Ahora como en el ejercicio anterior, usamos el comando "losetup" para convertir cada fichero en ficheros "loop":
 
     losetup -v -f prueba-xfs.img
     losetup -v -f prueba-btrfs.img
 
-El siguiente paso es instalar "xfs" y "btrfs", en caso de que no los tengamos instalados:
+[Ver captura de pantalla](https://www.dropbox.com/s/avdcco5envxpi3l/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2013.28.50.png?dl=0)
 
-    apt-get install xfs xfsprogs
+El siguiente paso es instalar "btrfs", en caso de que no los tengamos instalados:
+
     apt-get install btrfs-tools
+
+[Ver captura pantalla](https://www.dropbox.com/s/4nh3dvh44dady3i/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2013.47.15.png?dl=0)
 
 Ahora es el momento de darle formato a cada uno:
 
-    mkfs.xfs /dev/loop2
-    mkfs.btrfs /dev/loop3
+    mkfs.xfs /dev/loop0
+    mkfs.btrfs /dev/loop1
 
+[Ver captura pantalla 1](https://www.dropbox.com/s/s6yikhjfnn7qfny/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2013.46.48.png?dl=0)
+[Ver captura pantalla 2](https://www.dropbox.com/s/3sim26n3kk0k4fw/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2013.49.56.png?dl=0)
 Y el paso final si todo ha salid bien es, montarlos, simplemente con los siguiente comandos:
 
-    mount /dev/loop2 /mnt/loop2
-    mount /dev/loop3 /mnt/loop3
+    mount /dev/loop0 /mnt/loop0
+    mount /dev/loop1 /mnt/loop1
 
 Se comprueba de que se ha realizado todo correctamente con:
 
@@ -201,6 +208,8 @@ Solo tenemos que configurar el dispositivo, ya que lo hemos creado en el ejercic
 Lo primero que debemos de hacer es crear el directorio para almacenar la información, para ello debemos usar el siguiente comando:
 
     mkdir -p /srv/ceph/{osd,mon,mds}
+
+[Ver captura de pantalla](https://www.dropbox.com/s/sqm10eztutfigk9/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2013.52.20.png?dl=0)
 
 Ahora tenemos que crear y rellenar el fichero de configuración como tenemos en el ejemplo de las practicas:
 ```
@@ -229,13 +238,18 @@ Creamos el directorio del servidor de objetos con:
 
     mkdir /srv/ceph/osd/osd.0
 
+[Ver captura de pantalla](https://www.dropbox.com/s/y4ztf0ffrtw7wfq/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2013.53.58.png?dl=0)
+
 Y también el sistema de ficheros de objetos con:
 
     /sbin/mkcephtfs -a -c /etc/ceph/ceph.conf
 
+[Ver captura de pantalla](https://www.dropbox.com/s/5f9ey8nhqfab7v9/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2013.58.17.png?dl=0)
+
 Por último, iniciamos el servicio y comprobamos el estado de "Ceph" con:
 
-    /etc/init.d/ceph -a start sudo ceph -s
+    /etc/init.d/ceph -a start 
+    ceph -s
 
 Ya solo nos quedaría crear el directorio donde vamos a montarlo. Para  crearlo y montarlo usamos:
 
@@ -245,7 +259,10 @@ Ya solo nos quedaría crear el directorio donde vamos a montarlo. Para  crearlo 
 * [+]Ejercicio 7
  - A) Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
 
-Lo primero que debemos de hacer es crear la "piscina" para rados, con "rados mkpool piscina". 
+Lo primero que debemos de hacer es crear la "piscina" para rados, con:
+
+    rados mkpool piscina
+
 Una vez creado la "piscina", introducimos nuestro fichero en la "piscina" con:
 
     rados put -p piscina objeto prueba.img
@@ -261,24 +278,31 @@ Basta con seguir estos sencillos pasos:
 * [+]Ejercicio 8
  - A) Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente.
 
+En este [Enlace](https://login.live.com/login.srf?cbcxt=azubill&vv=2020&lc=3082&wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline&wctx=wa%3Dwsignin1.0%26rpsnv%3D4%26ct%3D1419512902%26rver%3D6.4.6456.0%26wp%3DSAPI%26wreply%3Dhttps:%252F%252Faccount.windowsazure.com%252Fsignup%253Foffer%253Dms-azr-0044p%26lc%3D3082%26id%3D500867%26WHR%3Dlive.com%26cbcxt%3Dazubill&wfresh=0), podemos registranos, para usar "Azure" durante un mes gratis. Simplemente inicamos sesión con nuestra cuenta de "Microsoft" y rellenamos los camps de informacion que nos piden.
+
 El primer paso que de vemos de dar tras la cración de la cuenta de "Azure", es instalar "Azure", pero para ello debemos de tener instalado previamente la librería "node.js", para ello introducimos los siguientes comandos:
 
-    apt-get update
     apt-get install -y python-software-properties python g++ make
     add-apt-repository -y ppa:chris-lea/node.js
     apt-get update
 
+[Ver captura de pantalla 1](https://www.dropbox.com/s/oi5qnp636vqxfvo/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2014.14.50.png?dl=0)
+[Ver captura de pantalla 2](https://www.dropbox.com/s/wpigoil5axei48q/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2014.16.33.png?dl=0)
 Ahora una vez realizado los pasos anteriores, vamos a instalar la librería de "node.js" con el siguiente comando:
 
     apt-get install nodejs
+
+[Ver captura de pantalla](https://www.dropbox.com/s/lm99xcd9khklzxa/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2014.18.02.png?dl=0)
 
 Después de instalar "node.js", debemos de instalar también "Windows Azure", para ello usamosel siguiente comando:
 
     npm install azure-cli
 
+[Ver captura de pantalla](https://www.dropbox.com/s/35dpyu2j0a21q9a/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2014.19.28.png?dl=0)
+
 Cuando ya tengamos todo instalado, nos dirigimos a este [enlace](http://go.microsoft.com/fwlink/?LinkId=254432) y hacemos login. cuando hagamos login se nos descargará un archivo de configuración "publishsettings". Este archivo que se nos ha descargado tenemos que importarlo con:
 
-    azure account import ~/Azpad245GZK8973-12-30-2013-credentials.publishsettings
+    azure account import ~/Azpad345GZK8945-12-25-2014-credentials.publishsettings
 
 Por último tenemos que crear una cuenta de almacenamiento usando los siguientes comandos:
 
@@ -308,6 +332,8 @@ Si hemos seguido los pasos anteriores, el archivo de la imágen quedará subido 
 Vamos a realizar un programa en "Ruby" con "Azure", para ello debemos de instalar  la "gema de ruby" para "Azure" con el siguiente comando:
 
     gem install azure
+
+[Ver captura de pantalla](https://www.dropbox.com/s/g1trg0i5pa8pish/Captura%20de%20pantalla%202014-12-25%20a%20la%28s%29%2014.20.24.png?dl=0)
 
 Una vez instalado, vamos a proceder a escribir el código del programa en Ruby:
 ```
