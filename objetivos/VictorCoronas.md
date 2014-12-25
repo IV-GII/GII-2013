@@ -248,49 +248,49 @@ Conocer qué tipo de perfil buscan estas empresas.
 
 # Objetivos de esta sesión
 
-* []Terminar la familiarización con Ruby
-* []Recordar conceptos de almacenamiento físico.
-* []Entender el concepto de FUSE y usarlo en la práctica.
-* []Crear y manipular formatos de provisionamiento delgado.
+* [+]Terminar la familiarización con Ruby
+* [+]Recordar conceptos de almacenamiento físico.
+* [+]Entender el concepto de FUSE y usarlo en la práctica.
+* [+]Crear y manipular formatos de provisionamiento delgado.
 
 # Otros objetivos
 
-* []Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
-* []Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+* [+]Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [+]Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
 
 #Clase del 11 de Diciembre de 2014
 
 # Objetivos de esta sesión
 
-* []Entender diferentes tipos de sistemas de ficheros virtuales
-* []Aprender a provisionar almacenamiento en la nube.
+* [+]Entender diferentes tipos de sistemas de ficheros virtuales
+* [+]Aprender a provisionar almacenamiento en la nube.
 
 # Otros objetivos
 
 * []Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
-* []Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+* [+]Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
 
 #Clase del 15 de Diciembre de 2014
 
 # Objetivos de esta sesión
 
-* []Entender los diferentes componentes de la infraestructura como servicio.
-* []Aprender a usar máquinas virtuales, localmente y en la nube.
-* []Comprender las bases físicas de las infraestructuras virtuales.
+* [+]Entender los diferentes componentes de la infraestructura como servicio.
+* [+]Aprender a usar máquinas virtuales, localmente y en la nube.
+* [+]Comprender las bases físicas de las infraestructuras virtuales.
 
 # Otros objetivos
 
 * []Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
-* []Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
-* []Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+* [+]Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [+]Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
 
 #Clase del 16 de Diciembre de 2014
 
 # Objetivos de esta sesión
 
-* []Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+* [+]Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
 
 # Otros objetivos
 
-* []Conocer a empresas radicadas en Granada que usen la tecnología nube.
-* []Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+* [+]Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [+]Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
