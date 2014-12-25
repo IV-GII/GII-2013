@@ -235,3 +235,41 @@ Creamos el directorio donde queramos montar y montamos:
 sudo mkdir /mnt/ceph
 sudo mount -t ceph iblancasaPC:/ /mnt/ceph
 ```
+
+
+***
+
+##Ejercicio 7##
+
+#####Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.#####
+
+######Con rados######
+
+Creamos un pool:
+
+```bash
+sudo rados mkpool pisci
+```
+
+y añadimos un fichero
+
+```bash
+rados put -p pisci obj israel.txt
+```
+
+
+***
+
+##Ejercicio 8##
+
+#####Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente#####
+
+Tras solicitar la cuenta de prueba, que llegue el mail de confirmación y se active la cuenta, ejecutamos (en nuestro terminal):
+
+``sudo npm install azure-cli -g``
+
+Después, deberemos "linkear" con nuestra cuenta de Azure. Para ello, ejecutamos:
+
+``azure account download``
+
+Se nos indicará una URL. Cuando la abramos, se descargará un fichero. Importamos este fichero usando ``azure account import [fichero]`` y lo borramos para mayor seguridad. Si no hay ningún mensaje de error, ya tendremos nuestra cuenta enlazada.
