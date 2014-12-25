@@ -40,3 +40,47 @@ Tengo tres particiones:
   + Caché interna: 256MB
 
 Un PC normal dispone de mucho menos almacenamiento. Además, los sistemas de protección que tienen estos dispositivos son mucho mejores que los que pueda tener un PC normal brindando, probablemente, posibilidad de intercambio de discos en caliente, algo que no es posible en los PC.
+
+
+***
+
+##Ejercicio 2##
+
+#####Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.#####
+
+#####Avanzado Usar los drivers de FUSE para Ruby (aquí explican más o menos como hacerlo con fusefs para mostrar el contenido de una estructura de datos en un lenguaje como si fuera un fichero. Este es un ejemplo en Python.#####
+
+Antes de empezar con la instalación, es importante saber si tenemos cargado "fuse". Para saberlo, ejecutamos
+
+```bash
+lsmod | grep fuse
+```
+
+Si el comando nos devuelve algo tipo "fuse 81531 2", tendremos el módulo cargado y podremos continuar. En caso contrario, deberemos ejecutar, tanto en la máquina que hará de cliente como en la servidora, los siguientes comandos:
+
+```bash
+modprobe fuse
+depmod -A
+```
+
+Ahora, instalamos (en las dos máquinas), sshfs.
+
+```bash
+sudo apt-get install sshfs
+```
+
+En la máquina cliente, creamos una carpeta donde vayamos a montar la carpeta remota y ejecutamos:
+
+```bash
+sshfs [usuario remoto]]@[IP remota]]:[carpeta remota a montar] [punto de montaje]
+```
+
+En mi caso,
+
+```bash
+sshfs iblancasa@192.168.169.130:/home/iblancasa/carpeta /home/iblancasa/asd
+```
+
+Si hay problemas de conexión, hay que asegurarse que la IP de la máquina remota sea la correcta (mediante el comando ``ifconfig`` en la máquina remota y ``ping [IP remota]``para comprobar que hay conexión). Una vez comprobado esto, podemos intentar conectar por SSH a la máquina remota (comprobando que tengamos instalado openssh server, ``sudo apt-get install openssh-server`` y editando el fichero /etc/ssh/sshd_config para que el puerto quede configurado como el 22 y se permita acceder con el usuario deseado).
+
+Una vez tengamos hecho esto, los cambios que hagamos en local (o en remoto), se verán reflejados en la otra máquina.
