@@ -157,3 +157,81 @@ sudo time -v cp p1 /mnt/m2/p1
 ```
 
 El primero ha tenido un system time de 0.5 segundos. El segundo, de 0.52 segundos.
+
+
+***
+
+##Ejercicio 5##
+
+#####Instalar ceph en tu sistema operativo.#####
+
+Solo hay que ejecutar ``sudo apt-get install ceph-mds``
+
+
+***
+
+##Ejercicio 6##
+
+#####Crear un dispositivo ceph usando BTRFS o XFS#####
+#####Avanzado: Usar varios dispositivos en un nodo para distribuir la carga.#####
+
+Se crean los directorios
+
+```bash
+sudo mkdir -p /srv/ceph/{osd,mon,mds}
+```
+
+Se crea el fichero de configuración /etc/ceph/ceph.conf
+
+```
+[global]
+log file = /var/log/ceph/$name.log
+pid file = /var/run/ceph/$name.pid
+[mon]
+mon data = /srv/ceph/mon/$name
+[mon.mio]
+host = iblancasaPC
+mon addr = 127.0.0.1:6789
+[mds]
+[mds.mio]
+host = iblancasaPC
+[osd]
+osd data = /srv/ceph/osd/$name
+osd journal = /srv/ceph/osd/$name/journal
+osd journal size = 1000 ; journal size, in megabytes
+[osd.0]
+host = iblancasaPC
+devs = /dev/loop4
+```
+
+Creamos el sistema:
+
+```bash
+qemu-img create -f raw ceph.img 100M
+sudo losetup -v -f ceph.img
+sudo mkfs.xfs /dev/loop4
+```
+
+Creamos un directorio y el sistema de ficheros:
+
+```bash
+sudo mkdir /srv/ceph/osd/osd.0
+sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf
+```
+
+![Capture](http://fotos.subefotos.com/a05f2bdd3b81f95017d77045c69d00c9o.jpg)
+
+Iniciamos el servicio
+
+```bash
+sudo /etc/init.d/ceph -a start
+```
+
+![Iniciando servicio](http://fotos.subefotos.com/f29af86b0fc3ee82a682d8667715697eo.jpg)
+
+Creamos el directorio donde queramos montar y montamos:
+
+```bash
+sudo mkdir /mnt/ceph
+sudo mount -t ceph iblancasaPC:/ /mnt/ceph
+```
