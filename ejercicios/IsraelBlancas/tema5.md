@@ -84,3 +84,30 @@ sshfs iblancasa@192.168.169.130:/home/iblancasa/carpeta /home/iblancasa/asd
 Si hay problemas de conexión, hay que asegurarse que la IP de la máquina remota sea la correcta (mediante el comando ``ifconfig`` en la máquina remota y ``ping [IP remota]``para comprobar que hay conexión). Una vez comprobado esto, podemos intentar conectar por SSH a la máquina remota (comprobando que tengamos instalado openssh server, ``sudo apt-get install openssh-server`` y editando el fichero /etc/ssh/sshd_config para que el puerto quede configurado como el 22 y se permita acceder con el usuario deseado).
 
 Una vez tengamos hecho esto, los cambios que hagamos en local (o en remoto), se verán reflejados en la otra máquina.
+
+
+***
+
+##Ejercicio 3##
+
+#####Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre#####
+
+En primer lugar, es necesario instalar quemu:
+
+```bash
+sudo apt-get install qemu-system
+```
+
+Creación y montaje de un almacenamiento virtual:
+
+```bash
+sudo qemu-img create -f qcow2 cow.qcow2 5M
+sudo losetup -v -f cow.qcow2
+sudo mkfs.ext4 /dev/loop0
+```
+
+Dando como resultado:
+
+![Captura](http://fotos.subefotos.com/247fc6e21da14cf19cf07a008bdd970bo.jpg)
+
+Una utilidad puede ser, por ejemplo, para gestionar los recursos de almacenamiento de distintas máquinas virtuales que tengamos en nuestro sistema.
