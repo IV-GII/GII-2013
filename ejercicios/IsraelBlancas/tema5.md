@@ -111,3 +111,49 @@ Dando como resultado:
 ![Captura](http://fotos.subefotos.com/247fc6e21da14cf19cf07a008bdd970bo.jpg)
 
 Una utilidad puede ser, por ejemplo, para gestionar los recursos de almacenamiento de distintas máquinas virtuales que tengamos en nuestro sistema.
+
+
+***
+
+##Ejercicio 4##
+
+#####Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema#####
+
+Antes de nada, hay que instalar algunas herramientas:
+
+```bash
+sudo apt-get install btrfs-tools xfsprogs
+```
+
+Lo primero es crear las imágenes:
+
+```bash
+sudo qemu-img create -f raw  a.img 200M
+sudo qemu-img create -f raw  b.img 200M
+```
+
+Después se ponen en loop y se les da formato
+
+```bash
+sudo losetup -v -f a.img
+sudo losetup -v -f b.img
+sudo mkfs.xfs /dev/loop2
+sudo mkfs.btrfs /dev/loop3
+```
+
+Creamos el punto de montaje y las montamos:
+
+```bash
+sudo mkdir mnt/m1
+sudo mkdir mnt/m2
+sudo mount -t xfs /dev/loop2 /mnt/m1
+sudo mount -t xfs /dev/loop3 /mnt/m2
+```
+
+Y se copia un fichero que sea bastante grande. Yo he copiado un ejecutable:
+```bash
+sudo time -v cp p1 /mnt/m1/p1
+sudo time -v cp p1 /mnt/m2/p1
+```
+
+El primero ha tenido un system time de 0.5 segundos. El segundo, de 0.52 segundos.
