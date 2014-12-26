@@ -176,7 +176,7 @@ Como estoy usando ubuntu, ya viene montada por defecto la carpeta `/sys/fs/cgrou
 ![EJ7.png](./capturas/t1/EJ7.png)
 
 
-
+------
 Ejercicio 10
 -----------
 
@@ -200,3 +200,16 @@ cat /proc/cpuinfo
 El modelo de procesador es: **Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz**
 ![EJ10_2.png](./capturas/t1/EJ10_2.png)
 
+
+------
+Ejercicio 11
+-----------
+
+**Comprobar si el núcleo instalado en tu ordenador contiene este módulo del kernel usando la orden kvm-ok.**
+
+He probado a ejecutar el comando que se indica pero no viene instalado por defecto, para instalarlo, he usado el siguiente comando:
+```bash
+sudo apt-get install cpu-checker
+```
+Como se puede observar en la siguiente captura, no contiene este módulo del kernel.
+![EJ11.png](./capturas/t1/EJ11.png) 
