@@ -273,3 +273,78 @@ Después, deberemos "linkear" con nuestra cuenta de Azure. Para ello, ejecutamos
 ``azure account download``
 
 Se nos indicará una URL. Cuando la abramos, se descargará un fichero. Importamos este fichero usando ``azure account import [fichero]`` y lo borramos para mayor seguridad. Si no hay ningún mensaje de error, ya tendremos nuestra cuenta enlazada.
+
+
+***
+
+##Ejercicio 9##
+
+#####Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.#####
+
+He ido introduciendo los siguientes comandos:
+
+```bash
+azure storage account create iblancasa
+azure storage account keys list iblancasa
+```
+
+Al final del fichero ".bashrc", insertarmos:
+
+```bash
+export AZURE_STORAGE_ACCOUNT=iblancasa
+export	AZURE_STORAGE_ACCESS_KEY=CLAVE
+```
+
+para poder acceder sin tener que exportar las variables de entorno cada vez que vayamos a hacer algo. Tendremos que ejecutar ``source .bashrc`` para tomar esas variables en la terminal actual.
+
+Ahora podemos crear los distintos contenedores:
+
+```bash
+azure storage container create taper -p blob
+azure storage container create taper2 -p blob
+azure storage container create taper3 -p blob
+```
+
+![Creando un contenedor en Azure](http://fotos.subefotos.com/41c12a05448bbf0e7e87edbf8adba133o.jpg)
+
+Finalmente, subir un fichero será tan sencillo como:
+
+```bash
+azure storage blob upload [fichero origen] [contenedor] [fichero destino]
+```
+
+Por ejemplo:
+
+```bash
+azure storage blob upload 1.jpg taper2 1.jpg
+```
+
+[Que se puede visitar en este link](https://iblancasa.blob.core.windows.net/taper2/1.jpg)
+
+
+***
+
+##Ejercicio 10##
+
+#####Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.#####
+
+```ruby
+#!/usr/bin/ruby
+
+require "azure"
+
+azure_blob_service = Azure::BlobService.new
+contenedores = azure_blob_service.list_containers()
+
+contenedores.each do |contenedor|
+  File.open("lista", "w") do |lista|
+    lista.puts contenedor.name + " "
+    blobs = azure_blob_service.list_blobs(contenedor.name)
+    blobs.each do |blob|
+      lista.puts blob.name + " "
+    end
+  end
+  text = File.open("lista", "rb") { |file| file.read }
+  blob = azure_blob_service.create_block_blob(contenedor.name, "lista", text)
+end
+```
