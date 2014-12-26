@@ -314,3 +314,42 @@ Lista de objetivos Israel Blancas Álvarez
 
 * [X] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 * [X] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+
+
+
+***
+***
+
+##Clase del 9 de diciembre de 2014##
+
+* [X] Terminar la familiarización con Ruby
+* [X] Recordar conceptos de almacenamiento físico.
+* [X] Entender el concepto de FUSE y usarlo en la práctica.
+* [X] Crear y manipular formatos de provisionamiento delgado.
+
+###Objetivos generales###
+
+* [X] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [X] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
+
+
+***
+***
+
+##Clase del 11 de diciembre de 2014##
+
+* [X] Entender diferentes tipos de sistemas de ficheros virtuales
+* [X] Aprender a provisionar almacenamiento en la nube.
+
+###Objetivos generales###
+
+* [X] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [X] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+
+
+
+***
+***
+
+##Clase del 11 de diciembre de 2014##
