@@ -176,3 +176,27 @@ Como estoy usando ubuntu, ya viene montada por defecto la carpeta `/sys/fs/cgrou
 ![EJ7.png](./capturas/t1/EJ7.png)
 
 
+
+Ejercicio 10
+-----------
+
+**Comprobar si el procesador o procesadores instalados lo tienen. ¿Qué modelo de procesador es? ¿Qué aparece como salida de esa orden?**
+
+Para comprobar si tengo activada la virtualización a nivel de hardware, voy a ejecutar el siguiente comando:
+
+```bash
+egrep '^flags.*(vmx|svm)' /proc/cpuinfo
+``` 
+En la siguiente captura muestro el resultado de ejecutar el comando anterior en mi máquina.
+
+![EJ10_1.png](./capturas/t1/EJ10_1.png)
+
+Como se ha podido observar en la captura, la funcionalidad de virtualización a nivel de hardware existe y se encuentra activada.
+
+Para comprobar el modelo de procesador que tengo, uso el siguiente comando:
+```bash
+cat /proc/cpuinfo
+``` 
+El modelo de procesador es: **Intel(R) Core(TM) i5-3230M CPU @ 2.60GHz**
+![EJ10_2.png](./capturas/t1/EJ10_2.png)
+
