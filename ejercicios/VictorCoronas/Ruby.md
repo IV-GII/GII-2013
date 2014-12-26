@@ -81,7 +81,7 @@ puts resultado["Server"].to_s
 ````
 [Ver resultado](https://www.dropbox.com/s/t7w0ii7p6wsyla3/Captura%20de%20pantalla%202014-12-26%20a%20la%28s%29%2011.04.19.png?dl=0)
 
-* [+]Ejercicio 3
+* [+]Ejercicio 5
  - A) Ver si está disponible Vagrant como una gema de Ruby e instalarla.
 
 Para ver si tenemos instalado "vagrant" solamente necesitamos usar el siguiente comando:
