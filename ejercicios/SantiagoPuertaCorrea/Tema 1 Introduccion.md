@@ -213,3 +213,16 @@ sudo apt-get install cpu-checker
 ```
 Como se puede observar en la siguiente captura, no contiene este módulo del kernel.
 ![EJ11.png](./capturas/t1/EJ11.png) 
+
+
+------
+Ejercicio 11
+-----------
+
+**Comentar diferentes soluciones de Software as a Service de uso habitual.**
+
+- Pardot Marketing Automation: muestra a sus usuarios un analisis web avanzado a nivel micro, realizando capturas de todas las actividades dentro de su sitio.
+
+- Cloud9 Analytics: es una aplicación muy potente que ayuda a realizar pronosticos en tiempo real sobre ventas con muy buena precision.
+
+- Eloqua: software que automatiza campañas de marketing, realiza mediciones y pruebas facilitando a sus clientes información muy util para mejorar sus ventas, desarrollar su marca o como construir una campaña más productiva.
