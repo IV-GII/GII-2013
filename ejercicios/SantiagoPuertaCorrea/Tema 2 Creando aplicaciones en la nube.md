@@ -17,3 +17,14 @@ Una vez instalado nodeenv, paso a activar el entorno de programación con el com
  nodeenv env
  ```
 Siendo **env** el directorio de trabajo. Una vez iniciado, ya se podrá utilizar el entorno de desarrollo.
+
+
+-----
+
+Ejercicio 2
+-----------
+
+**Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
+
+He decidido darme de alta en el servicio PaaS Heroku.
+![EJ2.png](./capturas/t2/EJ2.png)
