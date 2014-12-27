@@ -118,4 +118,41 @@ Un sistema de automatización que estoy usando es el Make. En la siguiente image
 ![EJ5.png](./capturas/t2/EJ5.png)
 
 
+-----
 
+Ejercicio 6
+-----------
+
+**Identificar, dentro del PaaS elegido o cualquier otro en el que se dé uno de alta, cuál es el fichero de automatización de construcción e indicar qué herramienta usa para la construcción y el proceso que sigue en la misma.**
+
+Usando **heroku** con node.js es el package.json el que determina que version de node.js se va a usar, el nombre del proyecto, versión y descripción del mismo, que scripts se van a ejecutar, repositorio del proyecto, licencia, dependencias, etc...
+
+En mi caso, voy a usar el package.json del proyecto [virtual vulcano](https://github.com/ernestoalejo/virtual-vulcano/blob/master/web/package.json)
+
+En heroku hay que seguir los siguientes pasos:
+- Instalar heroku.
+```bash
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+```
+- Hacer login en heroku.
+```bash
+heroku login
+```
+![EJ6.png](./capturas/t2/EJ6.png)
+- Acceder al directorio de trabajo e iniciar git.
+```bash
+git init
+```
+- Añadir remote de heroku.
+```bash
+heroku git:remote -a ivtest
+```
+- Añadir un package.json en mi caso ([virtual vulcano](https://github.com/ernestoalejo/virtual-vulcano/blob/master/web/package.json))
+- Añadir a git el package.json y realizar un commits con los cambios.
+- Hacer un push a la rama heroku master.
+```bash
+git push heroku master
+```
+Al hacer el push, se va a realizar todo lo especificado en el package.json.
+![EJ6_2.png](./capturas/t2/EJ6_2.png)
+![EJ6_3.png](./capturas/t2/EJ6_3.png)
