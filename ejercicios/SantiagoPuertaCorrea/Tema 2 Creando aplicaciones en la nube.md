@@ -107,4 +107,15 @@ Para cambiarle el nombre a la función, lo podemos hacer directamente en el codi
 ![EJ4_7.png](./capturas/t2/EJ4_7.png)
 
 
+-----
+
+Ejercicio 5
+-----------
+
+**Buscar un sistema de automatización de la construcción para el lenguaje de programación y entorno de desarrollo que usemos habitualmente.**
+
+Un sistema de automatización que estoy usando es el Make. En la siguiente imagen muestro un ejemplo.
+![EJ5.png](./capturas/t2/EJ5.png)
+
+
 
