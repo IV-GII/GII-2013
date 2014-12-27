@@ -57,5 +57,54 @@ Una vez configurado, podremos acceder al menú de administración de wordpress o
 ![EJ3_8.png](./capturas/t2/EJ3_8.png)
 
 
+-----
+
+Ejercicio 4
+-----------
+
+**Crear un script para un documento Google y cambiarle el nombre con el que aparece en el menú, así como la función a la que llama.**
+
+Siguiendo la página de developers de google [tu primer script](https://developers.google.com/apps-script/overview#your_first_script), voy a realizar mi primer script para Google drive.
+
+Codigo que usaré:
+```javascript
+function createAndSendDocument() {
+  var doc = DocumentApp.create('Hola mundo!');
+
+  doc.getBody().appendParagraph('Documento creado por Google Apps Script.');
+
+  // Get the URL of the document.
+  var url = doc.getUrl();
+
+  // Get the email address of the active user - that's you.
+  var email = Session.getActiveUser().getEmail();
+
+  // Get the name of the document to use as an email subject line.
+  var subject = doc.getName();
+
+  // Append a new string to the "url" variable to use as an email body.
+  var body = 'Link al documento: ' + url;
+
+  // Send yourself an email with a link to the document.
+  GmailApp.sendEmail(email, subject, body);
+}
+```
+
+Lo primero es acceder a [scripts google](http://www.google.com/script/start/) y pulsar sobre **Start Scripting** y seleccionar para que queremos el script, en mi caso para drive. Una vez seleccionado podremos insertar nuestro script.
+![EJ4_1.png](./capturas/t2/EJ4_1.png)
+
+Tras insertarlo, lo guardamos y lo ejecutamos pulsando el boton de play. Esto nos va a pedir permisos:
+![EJ4_2.png](./capturas/t2/EJ4_2.png)
+![EJ4_3.png](./capturas/t2/EJ4_3.png)
+Los aceptamos y esto, segun el script nos enviará un email a un documento con el nombre **Hola mundo!**
+![EJ4_4.png](./capturas/t2/EJ4_4.png)
+![EJ4_5.png](./capturas/t2/EJ4_5.png)
+
+Para cambiarle el nombre al script, pulsamos en la flecha que hay al lado del nombre y **Rename**.
+![EJ4_6.png](./capturas/t2/EJ4_6.png)
+
+Para cambiarle el nombre a la función, lo podemos hacer directamente en el codigo y despues guardar.
+![EJ4_7.png](./capturas/t2/EJ4_7.png)
+
 
 
