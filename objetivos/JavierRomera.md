@@ -111,3 +111,24 @@ Clase del 4 de noviembre de 2014
 ====
 Objetivos a cubrir en la sesión
 ---
+- [x] Entender los objetivos de este tema
+- [x] Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
+- [x] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
+- [x] Entender y saber llevar a cabo la virtualización de dispositivos de red
+
+Clase del 10 de noviembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
+- [x] Aprender a ''enjaular'' usuarios.
+
+Otros objetivos
+---
+- [x] Finalizar la entrega la segunda práctica.
+
+Clase del 11 de noviembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Entender el concepto de contenedores
