@@ -11,11 +11,13 @@ Ejercicio 2.
 Ejercicio 3.
 ---
 1)
+
 1. [Instalamos debootstrap.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema3_Imagenes/3.1.jpg)
 2. [Usamos lucid.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema3_Imagenes/3.2.jpg) (versión para Ubuntu 10.4)
 3. [Comprobamos que todo haya sido instalado correctamente.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema3_Imagenes/3.3.jpg)
 
 2)
+
 1. [Instalamos rinse.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema3_Imagenes/3.4.jpg)
 2. [Instalamos una distribucción de centos disponible.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema3_Imagenes/3.5.jpg)
 
