@@ -132,3 +132,57 @@ Y aquí vemos cómo comienza la instalación:
 <img src="http://i57.tinypic.com/302c0sj.png"></img>
 
 <strong> EJERCICIO 6: Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.</strong>
+
+Para instalar jailtik podemos seguir los pasos detallados en este tutorial: [Enlace](http://www.binarytides.com/install-jailkit-ubuntu-debian/)
+
+Así pues, vamos a empezar escribiendo lo siguiente:
+```
+sudo apt-get install build-essential autoconf automake libtool flex bison debhelper binutils-gold
+```
+Ahora necesitamos instalar algunos programas adicionales para el correcto funcionamiento de jailtik:
+```
+sudo apt-get install wget
+sudo apt-get install make
+sudo apt-get install gcc
+sudo apt-get install python
+```
+Continuamos con el tutorial de instalación de jailtik y ahora hacemos:
+```
+wget http://olivier.sessink.nl/jailkit/jailkit-2.16.tar.gz
+```
+Vemos que el proceso se realiza correctamente:
+
+<img src="http://i58.tinypic.com/2me1t78.png"></img>
+
+Ahora descomprimimos lo que nos acabamos de descargar:
+```
+tar -vxzf jailkit-2.16.tar.gz
+```
+Nos movemos dentro del directorio donde se ha descomprimido jailtik y lo instalamos:
+```
+./configure && make && sudo make install
+```
+Y vemos que se termina de instalar correctamente:
+
+<img src="http://i62.tinypic.com/1z1sh81.png"></img>
+
+Lo siguiente es crear una jaula, hacer propietario a root y darle los permisos pertinentes:
+```
+mkdir /home/marcos/jaula-ejer6
+chown root:root /home/marcos/jaula-ejer6
+chmod 7777 /home/marcos/jaula-ejer6
+```
+El siguiente paso es configurar las aplicaciones que podremos ejecutar dentro de nuestra jaula. Lo hacemos así:
+```
+jk_init -v /home/marcos/jaula-ejer6 basicshell editors extendedshell netutils ssh sftp
+```
+Ahora queda crear un usuario y asignarlo a la jaula que acabamos de crear:
+```
+adduser marcosjaula-ejer6
+jk_jailuser -m -j /home/marcos/jaula-ejer6 marcosjaula-ejer6
+```
+Ya solo nos queda crear el home en el interior de la jaula:
+```
+mkdir -p /home/marcos/jaula-ejer6/home/marcosjaula-ejer6 
+chown marcosjaula-ejer6:marcosjaula-ejer6 /home/marcos/jaula-ejer6/home/marcosjaula-ejer6
+```
