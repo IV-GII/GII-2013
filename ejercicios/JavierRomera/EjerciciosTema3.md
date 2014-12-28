@@ -1,6 +1,7 @@
 Ejercicio 1.
 ---
-Se monta el ISO. Lo he creado en el escritorio de Ubuntu.
+1. [Se crea el usuario "pruebaiv"](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema3_Imagenes/1.1.jpg)
+2. [Se monta la imagen ISO.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema3_Imagenes/1.2.jpg)
 
 Ejercicio 2.
 ---
