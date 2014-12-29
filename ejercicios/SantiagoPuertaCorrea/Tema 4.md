@@ -331,3 +331,36 @@ Compruebo si se a creado la imagen de docker con:
 sudo docker images 
 ```
 ![EJ13_2.png](./capturas/t4/EJ13_2.png)
+
+
+Ejercicio 14
+-----------
+
+**Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.**
+
+Para este ejercicio, voy a usar el **Dockerfile** del proyecto de la asignatura [Virtual Vulcano](https://github.com/ernestoalejo/virtual-vulcano)
+
+El Dockerfile del proyecto contiene:
+```yaml
+# Copyright (c) 2014 The Virtual Vulcano authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that
+# can be found in the LICENSE.md file.
+
+FROM dockerfile/nodejs-bower-gulp
+MAINTAINER Virtual Vulcano <virtualvulcano@gmail.com>
+
+RUN apt-get update
+
+# Intalar mongoDB
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && \
+   echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' > /etc/apt/sources.list.d/mongodb.list && \
+   apt-get update && \
+   apt-get install -y mongodb-10gen
+RUN mkdir -p /data/db
+
+ADD . /web
+
+WORKDIR /web
+CMD /web/cmd/startup.sh
+```
+Este actualiza el contendor, instala MongoDB y hace uso de una imagen que contiene nodejs, bower y gulp, ademas añade una carpeta /web como directorio de trabajo e inicia un script.
