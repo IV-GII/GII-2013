@@ -155,7 +155,194 @@ sudo apt-get install ceph-mds
 
 ###Ejercicio 6
 
+Crear un dispositivo ceph usando BTRFS o XFS
 
+Creamos los directorios necesarios:
+
+````
+sudo mkdir -p /srv/ceph/{osd,mon,mds}
+````
+
+Ahora creamos el fichero de configuracion:
+
+````
+sudo gedit /etc/ceph/ceph.conf
+````
+
+Lo rellenamos (En mi caso):
+
+````
+[global]
+log file = /var/log/ceph/$name.log
+pid file = /var/run/ceph/$name.pid
+[mon]
+mon data = /srv/ceph/mon/$name
+[mon.mio]
+host = FR-VirtualBox
+mon addr = 127.0.0.1:6789
+[mds]
+[mds.mio]
+host = FR-VirtualBox
+[osd]
+osd data = /srv/ceph/osd/$name
+osd journal = /srv/ceph/osd/$name/journal
+osd journal size = 1000 ; journal size, in megabytes
+[osd.0]
+host = FR-VirtualBox
+devs = /dev/loop4
+````
+
+Creamos la imagen:
+
+````
+qemu-img create -f raw ceph.img 100M
+sudo losetup -v -f ceph.img
+sudo mkfs.xfs /dev/loop0
+````
+
+Y los ficheros:
+
+````
+sudo mkdir /srv/ceph/osd/osd.0
+sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf
+````
+
+Hacemos start:
+
+````
+sudo /etc/init.d/ceph -a start
+````
+
+<img src="http://i58.tinypic.com/j7g2f8.jpg"/>
+
+Al final lo montamos:
+
+````
+sudo mkdir /mnt/ceph
+sudo mount -t ceph FR-VirtualBox:/ /mnt/ceph
+df
+````
+
+###Ejercicio 7
+
+Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
+
+Primero creamos el pool:
+
+````
+sudo rados mkpool piscina
+````
+
+Y ahora añadimos un fichero cualquiera al pool
+
+````
+sudo rados put -p piscina obj JAntonioMarin
+````
+
+###Ejercicio 8:
+
+Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente.
+
+Primero para instalar azure-xplat-cli
+
+````
+sudo apt-get install curl
+curl -sL https://deb.nodesource.com/setup | sudo bash -
+sudo apt-get install -y nodejs
+sudo apt-get install npm
+sudo npm install -g azure-cli
+````
+
+Ahora simplemente ejecutamos el comando:
+
+````
+azure account download
+````
+
+Nos logeamos en la direccion que nos dan, y nos descarga un fichero:
+
+````
+azure account import [nombre del fichero]
+````
+
+<img src="http://i59.tinypic.com/258wc9g.jpg"/>
+
+
+###Ejercicio 9:
+
+Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.
+
+Para crear la cuenta simplemente introducimos el comando:
+
+````
+azure storage account create juanantonio
+````
+
+Nos pide una localización seleccionamos West Europe y esperamos el OK
+
+Ahora sacamos la serie de claves:
+
+````
+azure account storage keys list juanantonio
+````
+
+Exportamos las claves:
+
+````
+export AZURE_STORAGE_ACCOUNT=juanantonio
+export  AZURE_STORAGE_ACCESS_KEY=La clave primaria
+````
+
+Creamos los contenedores 1 privado y dos publicos por ejemplo
+
+````
+azure storage container create taper1
+azure storage container create taper2 -p blob
+azure storage container create taper3 -p blob
+````
+
+<img src="http://i61.tinypic.com/24m9539.jpg"/>
+
+Y ahora subimos un fichero de la captura con:
+
+````
+azure storage blob upload captura1.png taper2 captura1.png
+````
+
+El proceso de como hemos subido la captura:
+
+<img src="http://i59.tinypic.com/k35e12.jpg"/>
+
+Y aqui tenemos la captura: https://juanantonio.blob.core.windows.net/taper2/captura1.png
+
+
+###Ejercicio 10:
+
+Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.
+
+````
+#!/usr/bin/ruby
+
+require "azure"
+
+#Recuerda establecer las variables de entorno AZURE_STORAGE_ACCOUNT and AZURE_STORAGE_ACCESS_KEY
+
+azure_blob_service = Azure::BlobService.new
+tapers = azure_blob_service.list_containers()
+
+tapers.each do |taper|
+  File.open("listaficheros", "w") do |lista|
+    listaficheros.puts taper.name + " "
+    blobs = azure_blob_service.list_blobs(taper.name)
+    blobs.each do |blob|
+      listaficheros.puts blob.name + " "
+    end
+  end
+  text = File.open("listaficheros", "rb") { |file| file.read }
+  blob = azure_blob_service.create_block_blob(contenedor.name, "listaficheros", text)
+  puts blob.name
+end
+````
 
 
 
