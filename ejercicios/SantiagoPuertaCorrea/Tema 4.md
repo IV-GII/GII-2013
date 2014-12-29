@@ -180,3 +180,132 @@ sudo juju status
 Que muestra el servicio mysql instalado.
 ![EJ6_6.png](./capturas/t4/EJ6_6.png)
 
+
+Ejercicio 7
+-----------
+
+**Destruir toda la configuración creada anteriormente**
+Primero tengo que eliminar mysql, para ello:
+```bash
+sudo juju destroy-unit mysql/0
+```
+Despues elimino el taper, en mi caso el 1:
+```bash
+sudo juju destroy-machine 1
+```
+Para comprobar que se ha realizado todo correctamente:
+```bash
+sudo juju status
+```
+![EJ7_1.png](./capturas/t4/EJ7_1.png)
+
+
+**Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.**
+Siguiendo los pasos de los [apuntes](http://jj.github.io/IV/documentos/temas/Contenedores)
+```bash
+# Cambio a local
+sudo juju switch local
+
+# Creo la máquina
+sudo juju add-machine
+
+# Añado mediawiki
+sudo juju deploy mediawiki 
+
+# Creo una relacion entre ellos. [add-relation juju](https://juju.ubuntu.com/docs/charms-relations.html)
+sudo juju add-relation mediawiki:db mysql 
+
+# Expongo mediawiki
+sudo juju expose mediawiki
+```
+**Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.**
+
+```bash
+# Cambio a local
+sudo juju switch local
+
+# Creo la máquina
+juju bootstrap
+
+# Añado mediawiki
+sudo juju deploy mediawiki 
+
+# Creo una relacion entre ellos. [add-relation juju](https://juju.ubuntu.com/docs/charms-relations.html)
+sudo juju add-relation mediawiki:db mysql 
+
+# Expongo mediawiki
+sudo juju expose mediawiki
+```
+
+
+Ejercicio 8
+-----------
+
+**Instalar libvirt. Te puede ayudar esta guía para Ubuntu.**
+```bash
+sudo yum install libvirt
+```
+![EJ8_1.png](./capturas/t4/EJ8_1.png)
+
+
+Ejercicio 10
+-----------
+
+**Instalar docker.**
+
+Para instalar docker he seguido el manual de la pagina de [docker para fedora](https://docs.docker.com/installation/fedora/)
+```bash
+sudo yum install docker-io
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+![EJ10_1.png](./capturas/t4/EJ10_1.png)
+
+
+Ejercicio 11
+-----------
+
+**Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.**
+
+**Buscar e instalar una imagen que incluya MongoDB.**
+
+Para instalar una imagen de ubuntu:
+```bash
+sudo docker pull ubuntu
+```
+![EJ11_1.png](./capturas/t4/EJ11_1.png)
+
+Para instalar una imagen de centOS:
+```bash
+sudo docker pull centOS
+```
+![EJ11_2.png](./capturas/t4/EJ11_2.png)
+
+Para instalar una imagen que incluya MongoDB, uso el nombre del paquete que me indica el siguiente [enlace](https://registry.hub.docker.com/u/dockerfile/mongodb/).
+```bash
+sudo docker pull dockerfile/mongodb
+```
+![EJ11_3.png](./capturas/t4/EJ11_3.png)
+
+
+Ejercicio 12
+-----------
+
+**Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.**
+
+```bash
+# Accedo al contenedor de ubuntu
+sudo docker run -i -t ubuntu /bin/bash
+
+# Añado el usuario, le cambio el pass y lo hago sudo
+useradd -d /home/nginx -m nginx
+passwd nginx
+adduser nginx sudo
+# Login con el usuario nginx
+login nginx
+```
+![EJ12_1.png](./capturas/t4/EJ12_1.png)
+Instalo nginx:
+```bash
+sudo apt-get install nginx
+```
