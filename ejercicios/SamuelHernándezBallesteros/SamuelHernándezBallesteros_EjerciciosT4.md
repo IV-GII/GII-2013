@@ -1,3 +1,5 @@
+##Tema 4: Virtualización ligera usando contenedores
+
 #Ejercicio 1
 Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.
 
@@ -138,8 +140,6 @@ Seguimos el [tutorial](http://docs.docker.com/installation/ubuntulinux/#ubuntu-t
 
 sudo apt-get install docker.io
 
-sudo apt-get install apt-transport-https
-
 Añadimos la llave del repositorio de Docker: sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
 
 Ejecutamos la siguiente orden para añadir el repositorio:
@@ -157,14 +157,93 @@ sudo docker -d &
 #Ejercicio 11
 Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.
 
+Descargamos la imagen de ubuntu con la orden:
+
+	sudo docker pull ubuntu
+
+![EJ11-1](http://i60.tinypic.com/34tep0o.jpg)
+
+Hacemos lo mismo con CentOS
+
+	sudo docker pull centos
+
 Buscar e instalar una imagen que incluya MongoDB
+
+La imagen de mongodb la instalamos con la orden:
+
+	sudo docker pull dockerfile/mongodb
+
+Ejemplo de ejecución en el contenedor CentOS
+
+![EJ11-2](http://i58.tinypic.com/2nvcj8x.jpg)
+
 
 #Ejercicio 12
 Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.
 
+Entramos al contenedor de ubuntu anteriormente creado con la orden:
+
+	sudo docker run -i -t ubuntu /bin/bash
+
+Añadimos un nuevo usuario con posibilidad de ejecutar sudo:
+
+	useradd -d /home/nuevousuario -m nuevousuario
+
+	adduser nuevousuario sudo
+    
+	passwd nuevousuario
+    
+    su nuevousuario
+    
+Actualizamos los repositorios e instalamos nginx
+
+	sudo apt-get update && sudo apt-get install nginx
+
+Iniciamos el servicio
+
+	sudo service nginx start
+
+![EJ12-1](http://i62.tinypic.com/m8fdso.jpg)
+
 #Ejercicio 13
 Crear a partir del contenedor anterior una imagen persistente con commit.
 
+Con el contenedor funcionando en otra terminal listamos los dockers con la orden:
+
+	sudo docker ps
+    
+![Ejercicio13-1](http://i61.tinypic.com/2ds0cxv.jpg)
+
+Guardamos la ID y escribimos:
+
+	sudo docker commit <ID> nuevonombre
+
+![Ejercicio13-2](http://i61.tinypic.com/ou1swk.jpg)
+
+El resultado será otra ID
+
+Podemos ver las imagenes que hemos creado con:
+
+	sudo docker images
+
+![Ejercicio14-3](http://i60.tinypic.com/34iimag.jpg)
+
 #Ejercicio 14
 Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.
+
+Nos registramos en la página web de [Docker](https://hub.docker.com/account/signup-with-github/)
+
+Una vez registrados pulsamos sobre Automated Build
+
+Elegimos el repositorio de Github o Bitbucket en el que queremos que se haga el despliegue.
+
+Cuando se haya creado debemos de crear un Dockerfile que indique que es lo que se debe instalar.
+
+    FROM ubuntu
+    MAINTAINER hp007 <shball101@gmail.com> Version: 1.0
+    RUN apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion pkg-config
+    RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys D39DC0E3 
+    RUN \curl -sSL https://get.rvm.io | bash -s stable --rails
+    RUN curl -sL https://deb.nodesource.com/setup | sudo bash -
+    RUN sudo apt-get install -y nodejs
 
