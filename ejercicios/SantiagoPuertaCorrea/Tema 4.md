@@ -94,3 +94,43 @@ Para los comando basicos de **lxc* he usado [linuxcontainers.org](https://linuxc
 Tras todo esto paso a indicar las interfaces que se han creado:
 
 Se me ha creado la interfaz **virbr0** para que el contendor tenga acceso a internet.
+
+
+Ejercicio 3
+-----------
+
+**Crear y ejecutar un contenedor basado en Debian.**
+
+**Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, [Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.](https://github.com/IV-GII/GII-2013/issues/87#issuecomment-28639976)**
+
+Para crear el contenedor Debian y ejecutarlo:
+```bash
+sudo lxc-create -t debian -n debian
+sudo lxc-start -n debian
+```
+![EJ3_1.png](./capturas/t4/EJ3_1.png)
+
+Para crear el contenedor CentOs y ejecutarlo:
+```bash
+sudo lxc-create -t centos -n centos
+sudo lxc-start -n centos
+```
+![EJ3_2.png](./capturas/t4/EJ3_2.png)
+
+
+Ejercicio 4
+-----------
+
+**Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.**
+**Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.**
+
+Para la instalación de LXC Web Panel uso el manual de la pagina del [proyecto](http://lxc-webpanel.github.io/install.html) pero no he conseguido instalarlo en fedora. Voy a instalarlo en una máquina virtual con ubuntu.
+```bash
+wget http://lxc-webpanel.github.com/tools/install.sh -O - | bash
+```
+Tras instalarlo, accedo a http://localhost:5000 con usuario admin y contraseña admin.
+![EJ4_1.png](./capturas/t4/EJ4_1.png)
+Para cambiar los recursos de cada contenedor es muy facil, tan solo pinchando encima del nombre nos mostrará las opciones.
+![EJ4_2.png](./capturas/t4/EJ4_2.png)
+
+
