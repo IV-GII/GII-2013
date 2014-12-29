@@ -270,3 +270,112 @@ Objetivos
 
 * [X] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
 * [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+
+#Clase del 25 de noviembre de 2014
+
+##Objetivos de esta sesión
+
+* [] Resolver problemas con `juju`.
+* [] Entender cómo funciona `docker` y qué implica.
+
+##Otros objetivos
+
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+* [] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+
+
+#Clase del 1 de diciembre de 2014
+
+##Objetivos de esta sesión
+
+* [] Resolver últimos problemas con `docker`.
+* [] Comenzar con la tercera práctica.
+
+##Otros objetivos
+
+* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+
+#Clase del 2 de diciembre de 2014
+
+##Objetivos de esta sesión
+
+* [] Resolver últimos problemas con `docker`.
+* [] Resolver dudas relacionadas  con la [tercera práctica](http://jj.github.io/IV/documentos/practicas/3.Contenedores).
+
+##Otros objetivos
+
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+
+
+Clase del 9 de diciembre de 2014
+========================================
+
+Objetivos de la asignatura
+---------------------------
+
+* [] 1. Terminar la familiarización con Ruby
+* [] 2. Recordar conceptos de almacenamiento físico.
+* [] 3. Entender el concepto de FUSE y usarlo en la práctica.
+* [] 4. Crear y manipular formatos de provisionamiento delgado. 
+
+Objetivos generales
+----
+
+* [] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas. 
+
+
+Clase del 11 de diciembre de 2014
+========================================
+
+Objetivos de la asignatura
+---------------------------
+
+* [] 1. Entender diferentes tipos de sistemas de ficheros virtuales
+* [X] 2. Aprender a provisionar almacenamiento en la nube.
+
+Objetivos generales
+----
+
+* [X] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+
+
+Clase del 15 de diciembre de 2014
+========================================
+
+Objetivos de la asignatura
+---------------------------
+
+* [X] 1. Entender los diferentes componentes de la infraestructura como servicio.
+* [X] 2. Aprender a usar máquinas virtuales, localmente y en la nube.
+* [X] 3. Comprender las bases físicas de las infraestructuras virtuales.
+
+Objetivos generales
+----
+
+* [X] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+Ser agnóstico con respecto a las herramientas usadas.
+* [X] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+
+Clase del 16 de diciembre de 2014
+========================================
+
+Seminario por parte de Ignacio Zafra, de la empresa [The Cloud Gate](http://nubbius.com/%C2%BFqui%C3%A9nes-somos), empresa granadina que comercializa una solución para despachos de abogados basados en Google App Engine
+
+Objetivos de la asignatura
+---------------------------
+
+* [X] 1. Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+Objetivos generales
+----
+
+* [X] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
