@@ -134,3 +134,49 @@ Para cambiar los recursos de cada contenedor es muy facil, tan solo pinchando en
 ![EJ4_2.png](./capturas/t4/EJ4_2.png)
 
 
+Ejercicio 6
+-----------
+
+**Instalar juju.**
+
+Añado repositorio de juju y lo instalo tal cual lo indica el temario de la asignatura.
+```bash
+sudo add-apt-repository ppa:juju/stable
+sudo apt-get update && sudo apt-get install juju-core
+```
+![EJ6_1.png](./capturas/t4/EJ6_1.png)
+
+**Usándolo, instalar MySQL en un táper.**
+Para empezar a trabajar con el:
+```bash
+juju init
+```
+![EJ6_2.png](./capturas/t4/EJ6_2.png)
+Tras esto voy a editar el fichero de configuracion de juju para su uso en local, cambio #default: amazon por default: local
+![EJ6_3.png](./capturas/t4/EJ6_3.png)
+
+Como se indica en el temario, se necesita instalar mongodb-server para usar juju en local, por lo tanto lo instalo.
+
+```bash
+sudo apt-get install mongodb-server
+```
+
+Ahora establezco donde voy a trabajar:
+```bash
+sudo juju switch local
+```
+Según se indica, juju usa taper que cree el, por tanto vamos a crear uno.
+![EJ6_4.png](./capturas/t4/EJ6_4.png)
+
+Para instalar mysql usaré:
+```bash
+sudo juju deploy mysql
+```
+![EJ6_5.png](./capturas/t4/EJ6_5.png)
+Ahora para comprobar que se ha instalado correctamente, uso el comando:
+```bash
+sudo juju status
+```
+Que muestra el servicio mysql instalado.
+![EJ6_6.png](./capturas/t4/EJ6_6.png)
+
