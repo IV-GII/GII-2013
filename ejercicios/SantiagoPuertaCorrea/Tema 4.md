@@ -309,3 +309,25 @@ Instalo nginx:
 ```bash
 sudo apt-get install nginx
 ```
+
+
+Ejercicio 13
+-----------
+
+**Crear a partir del contenedor anterior una imagen persistente con commit.**
+
+Uso para ver el contenedor que tengo encendido:
+```bash
+sudo docker ps --no-trunc
+```
+![EJ13_1.png](./capturas/t4/EJ13_1.png)
+
+Tras esto, hago el commit del contenedor con su id.
+```bash
+sudo docker commit dccc74482010233c9d983d10d0ff5e15bdc383204cb093be738efb423af9585f instalacion/nginx
+```
+Compruebo si se a creado la imagen de docker con:
+```bash
+sudo docker images 
+```
+![EJ13_2.png](./capturas/t4/EJ13_2.png)
