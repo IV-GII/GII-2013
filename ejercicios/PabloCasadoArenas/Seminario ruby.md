@@ -30,3 +30,15 @@ prueba.keys().each do |indice|
   puts prueba[indice]
  end
 ```
+### Ejercicio 4
+
+![Imgur](http://i.imgur.com/TTTvlTs.png)
+
+![Imgur](http://i.imgur.com/De94s9I.png)
+
+### Ejercicio 5
+
+Al tratar de instalarlo con sudo gem install vagrant, nos dice que esta no es la manera de instalar vagrant y que ahora hacen instaladores para SO. Te redireccionan a www.vagrantup.com.
+Tambien para saber porque dejan de usar Vagrant, te dan esta web:
+
+http://mitchellh.com/abandoning-rubygems
