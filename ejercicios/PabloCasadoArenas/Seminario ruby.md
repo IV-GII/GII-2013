@@ -8,7 +8,7 @@ Instalamos ruby con
 
 ## Ejercicio 2
 
-```
+```ruby
 contador = 9
 for i in 0..variable
     puts "#{i}"
