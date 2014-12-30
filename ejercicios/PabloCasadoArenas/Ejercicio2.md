@@ -72,4 +72,38 @@ Instalamos con:
 
 `sudo apt-get install ceph-mds`
 
+### Ejercicio 6
+
+Crear directorios
+
+`sudo mkdir -p /srv/ceph/{osd,mon,mds}`
+
+Fichero configuración
+
+![Imgur](http://i.imgur.com/1yh8Cqy.png)
+
+```
+[global]
+log file = /var/log/ceph/$name.log
+pid file = /var/run/ceph/$name.pid
+[mon]
+mon data = /srv/ceph/mon/$name
+[mon.mio]
+host = ubuntu
+mon addr = 127.0.0.1:6789
+[mds]
+[mds.mio]
+host = ubuntu
+[osd]
+osd data = /srv/ceph/osd/$name
+osd journal = /srv/ceph/osd/$name/journal
+osd journal size = 1000 ; journal size, in megabytes
+[osd.0]
+host = ubuntu
+devs = /dev/loop0
+
+```
+
+Tratamos de iniciarlo y no funciona aunque este en formato xfs. Probablemente un bug del programa.
+![Imgur](http://i.imgur.com/htV8fdr.png)
 
