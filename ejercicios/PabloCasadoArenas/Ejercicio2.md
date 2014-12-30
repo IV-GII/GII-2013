@@ -116,3 +116,14 @@ Se haría con :
 y almacenamos algo:
 
 ` sudo rados put -p piscina obj prueba `
+
+### Ejercicio 8
+
+Como estamos utilizando nodejs para el proyecto ya esta instalano npm. Instalamos
+`sudo npm install -g azure-cli `
+
+`azure account download`
+
+Abrimos la URL y el fichero descargado lo importamos.
+
+`azure account import nombredelfichero`
