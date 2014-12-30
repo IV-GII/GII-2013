@@ -107,3 +107,12 @@ devs = /dev/loop0
 Iniciamos:
 ![Imgur](http://i.imgur.com/htV8fdr.png)
 
+### Ejercicio 7
+
+Se haría con :
+
+` sudo rados mkpool piscina `
+
+y almacenamos algo:
+
+` sudo rados put -p piscina obj prueba `
