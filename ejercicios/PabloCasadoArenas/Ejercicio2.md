@@ -104,6 +104,6 @@ devs = /dev/loop0
 
 ```
 
-Tratamos de iniciarlo y no funciona aunque este en formato xfs. Probablemente un bug del programa.
+Iniciamos:
 ![Imgur](http://i.imgur.com/htV8fdr.png)
 
