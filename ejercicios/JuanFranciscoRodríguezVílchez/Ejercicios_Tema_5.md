@@ -16,14 +16,14 @@ En esta captura se puede observar lo descrito anteriormente:
 
 **Buscar ofertas SAN comerciales y comparar su precio con ofertas locales (en el propio ordenador) equivalentes.**
 
-+ **(1)** [HP P2000 G3 FC DC SMB SAN Starter Kit-AP847B](http://www.shopbot.com.au/pp-hp-p2000-g3-fc-dc-smb-san-starter-kit-ap847b-price-418421.html)presenta un precio de 16.500$ (11.978'22¬) y una capacidad de 12 unidades SAS/SATA LFF de 3'5 pulgadas con una capacidad total de 48 TB.
++ **(1)** [HP P2000 G3 FC DC SMB SAN Starter Kit-AP847B](http://www.shopbot.com.au/pp-hp-p2000-g3-fc-dc-smb-san-starter-kit-ap847b-price-418421.html)presenta un precio de 16.500$ (11.978'22eu) y una capacidad de 12 unidades SAS/SATA LFF de 3'5 pulgadas con una capacidad total de 48 TB.
 
-+ **(2)** [WD NAS Red 4TB SATA3](http://www.pccomponentes.com/wd_nas_red_4tb_sata3.html) presenta un precio de 169¬ y una unidad SATA3 de 3'5 pulgadas con una capacidad de 4 TB. Para **(2)** serían necesarias 2 unidades SATA que a 899 por unidad sumarían 3826¬ como precio total.
++ **(2)** [WD NAS Red 4TB SATA3](http://www.pccomponentes.com/wd_nas_red_4tb_sata3.html) presenta un precio de 169eu y una unidad SATA3 de 3'5 pulgadas con una capacidad de 4 TB. Para **(2)** serían necesarias 2 unidades SATA que a 899 por unidad sumarían 3826eu como precio total.
 
 **Comparativa entre los dos anteriores:**
 
 + **(1)** nos ofrece 12 veces la capacidad que **(2)**, es decir, 48 TB frente 4 TB. 
-+ **(1)** es bastante más caro que **(2)** 11.978'22¬ frente a 3826¬.
++ **(1)** es bastante más caro que **(2)** 11.978'22eu frente a 3826eu.
 + La interfaz de conexión mediante canal de fibra a 8 Gbit/s de **(1)** es muy superior a la conexión Gigabit mediante LAN de **(2)**.
 
 
@@ -281,11 +281,98 @@ Procedemos a instalar CLI de la siguiente forma:
 ```sh
 sudo npm install azure-cli
 ```
+Aún así, me daba el siguiente error al utilizar azure:
+
+/usr/bin/env: node: No existe el archivo o el directorio
+
+Por lo que he tenido que crear un enlace simbólico de la siguiente forma:
+
+```sh
+ln -s /usr/bin/nodejs /usr/bin/node
+```
+Debido a que algunas distribuciones de linux instalan nodejs y colocan como ejecutable "nodejs" pero no como "node" por lo que daba el error anterior.
+ 
+Después, deberemos descargar la configuración de publicación para mi cuenta:
+
+```sh
+azure account download
+```
+
+Después de introducir nuestro nombre de usuario y contraseña para iniciar sesión en Azure, automáticamente se descargará nuestro archivo de configuración. Importamos este archivo usando:
+
+```sh
+azure account import [fichero]
+```
 
 ### Ejercicio 9 ###
 
 **Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.**
 
+Para crear la cuenta y obtener las claves necesarias ejecutamos:
+
+```sh
+azure account storage create juanfranrv
+azure storage account keys list juanfranrv
+```
+Nos dará una clave primaria y otra secundaria. Esta información se debe copiar en variables de entorno:
+
+```sh
+export AZURE_STORAGE_ACCOUNT=juanfranrv
+export  AZURE_STORAGE_ACCESS_KEY=clave
+```
+Ahora podemos crear los contenedores que deseemos:
+
+```sh
+azure storage container create taper -p blob
+azure storage container create taper1 -p blob
+```
+Y finalmente, para subir el fichero que queramos debemos de hacerlo de la siguiente forma:
+
+```sh
+azure storage blob upload eje09_img01.jpg taper1 eje09_img01.jpg
+```
+[Faltan capturas de pantalla para este ejercicio]
+
 ### Ejercicio 10 ###
 
 **Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.**
+
+Primero instalamos la gema para Azure para poder trabajar con Ruby:
+
+```sh
+sudo gem install azure
+```
+
+El siguiente script consultará los contenedores de nuestra cuenta, y para cada uno creará un archivo de texto con los blobs que tiene, posteriormente el archivo será subido a su respectivo contenedor.
+
+```sh
+#!/usr/bin/ruby
+
+require "azure"
+
+azure_blob_service = Azure::BlobService.new
+containers = azure_blob_service.list_containers()
+
+containers.each do |container|
+
+    File.open("listado.txt", "w") do |list|
+
+        list.puts container.name + ":"
+        list.puts "=" * container.name.length
+
+        blobs = azure_blob_service.list_blobs(container.name)
+
+        blobs.each do |blob|
+            list.puts "\t" + blob.name
+        end
+    end
+
+    content = File.open("listado.txt", "rb") { |file| file.read }
+    blob = azure_blob_service.create_block_blob(container.name, "listado.txt", content)
+    puts "\tSubido archivo " + blob.name
+end
+
+```
++ **Azure::BlobService.new**: crea una interfaz para acceder al servicio de almacenamiento.
++ **azure_blob_service.list_containers()**: lista los contenedores existentes en una cuenta de almacenamiento.
++ **azure_blob_service.list_blobs(container.name)**: lista todos los blobs existentes en el contenedor indicado.
