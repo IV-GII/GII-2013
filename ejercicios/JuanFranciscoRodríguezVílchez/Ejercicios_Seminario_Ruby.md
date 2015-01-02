@@ -6,7 +6,7 @@ Ejercicios de Juan Francisco Rodríguez Vílchez
 
 ### Ejercicio 1 ###
 
-**Instalar Ruby y usar ruby --version para comprobar la versión instalada. A la vez, conviene instalar también irb, rubygems y rdoc. **
+**Instalar Ruby y usar ruby --version para comprobar la versión instalada. A la vez, conviene instalar también irb, rubygems y rdoc.**
 
 He instalado Ruby mediante:
 
@@ -30,7 +30,7 @@ end
 
 ### Ejercicio 3 ###
 
-** ¿Se pueden crear estructuras de datos mixtas en Ruby? Crear un array de hashes de arrays e imprimirlo.**
+**¿Se pueden crear estructuras de datos mixtas en Ruby? Crear un array de hashes de arrays e imprimirlo.**
 
 ```ruby
 #!/usr/bin/ruby
@@ -48,7 +48,7 @@ end
 
 ### Ejercicio 4 ###
 
-** Crear una serie de funciones instanciadas con un URL que devuelvan algún tipo de información sobre el mismo: fecha de última modificación, por ejemplo. Pista: esa información está en la cabecera HTTP que devuelve. **
+**Crear una serie de funciones instanciadas con un URL que devuelvan algún tipo de información sobre el mismo: fecha de última modificación, por ejemplo. Pista: esa información está en la cabecera HTTP que devuelve.**
 
 ```ruby
 #!/usr/bin/ruby
@@ -77,7 +77,7 @@ require 'net/http'
 
 ### Ejercicio 5 ###
 
-** Ver si está disponible Vagrant como una gema de Ruby e instalarla. **
+**Ver si está disponible Vagrant como una gema de Ruby e instalarla.**
 
 Miramos las gemas disponibles con:
 
