@@ -1,6 +1,6 @@
 Ejercicio 1.
 ---
-1. [Instalamos lxc](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/1.1.jpg) (es su versión más reciente).
+1. [Instalamos lxc](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/1.1.jpg) (su versión más reciente).
 2. [Comprobamos con lxc-checkconfig la compatibilidad.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/1.2.jpg)
 
 Ejercicio 2.
@@ -98,7 +98,8 @@ Ejercicio 12.
 
 Ejercicio 13
 ---
-1. [Con "sudo docker images -notrunc" buscamos la ID correspondiente](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/13.1.jpg) y la aplicamos al comando "sudo docker commit ID_Obtenida".
+1. [Con "sudo docker images -notrunc" buscamos la ID correspondiente.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/13.1.jpg)
+2. La ID obtenida aplicamos al comando "sudo docker commit ID_Obtenida".
 
 Ejercicio 14.
 ---
