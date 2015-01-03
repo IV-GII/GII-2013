@@ -11,7 +11,7 @@ Ejercicio 2.
 
 Ejercicio 3.
 ---
-1. [Instalamos Debian con "lxc-create ...".](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/3.1.jpg)
+1. [Instalamos Debian con "lxc-create...".](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/3.1.jpg)
 2. [El password del root será "root".](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/3.2.jpg)
 3. Para arrancarlo usamos "sudo lxc-start -n debianiv".
 4. [Instalamos Fedora.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/3.3.jpg)
