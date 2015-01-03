@@ -20,24 +20,20 @@ Ejercicio 3.
 Ejercicio 4.
 ---
 1)
-
 1. [Instalamos lxcWebpanel.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/4.1.jpg)
 2. [Accedemos con localhost:5000.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/4.2.jpg)
 3. [Visualizamos nuestras máquinas virtuales.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/4.3.jpg)
 
 2)
-
 1. [Restringimos recursos.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/4.4.jpg)
 
 Ejercicio 6.
 ---
 1)
-
 1. [Agregamos el repositorio.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/6.1.jpg)
 2. [Actualizamos e instalamos.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/6.2.jpg)
 
 2)
-
 1. [Instalamos "mongodb" para poder trabajar en local.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/6.3.jpg)
 2. [Iniciamos juju.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/6.4.jpg)
 3. [Abrimos el archivo "environments.yaml" y cambiamos "default:amazon" por "default:local".](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/6.5.jpg)
@@ -49,16 +45,13 @@ Ejercicio 6.
 Ejercicio 7.
 ---
 1)
-
 1. [Destruimos todo.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/7.1.jpg)
 
 2)
-
 1. [Montamos todo como en el ejercicio 6.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/7.2.jpg)
 2. [Comprobamos con "juju status".](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/7.3.jpg)
 
 3)
-
 1. [Montamos el script.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/7.4.jpg)
 
 Ejercicio 8.
@@ -78,14 +71,12 @@ Ejercicio 10.
 Ejercicio 11. 
 ---
 1)
-
 1. [Inicializamos Docker, pero nos da error.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/11.1.jpg)
 2. [Lo solucionamos borrando el fichero "docker.pid".](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/11.2.jpg)
 3. [Instalamos "tutum/ubuntu".](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/11.3.jpg)
 4. [Instalamos centOS.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/11.4.jpg)
 
 2)
-
 1. [Instalamos una imagen que contenga Mongodb.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema4_Imagenes/11.5.jpg)
 
 Ejercicio 12.
