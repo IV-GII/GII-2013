@@ -131,4 +131,49 @@ Clase del 11 de noviembre de 2014
 ====
 Objetivos a cubrir en la sesión
 ---
-- [x] Entender el concepto de contenedores
+- [x] Entender el concepto de contenedores.
+- [x] Configurar el sistema para poder crear y usar contenedores.
+- [x] Crear y usar contenedores.
+
+Clase del 17 de noviembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Entender los sistemas de orquestación de máquinas virtuales.
+- [x] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
+
+Clase del 24 de noviembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Resolver problemas con juju.
+- [x] Configuración compleja de sistemas con él.
+- [x] Entender el concepto de hipervisor y trabajar con ellos.
+
+Clase del 25 de noviembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Resolver problemas con juju.
+- [x] Entender cómo funciona docker y qué implica.
+
+Clase del 1 de diciembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Resolver últimos problemas con docker.
+- [x] Comenzar con la tercera práctica.
+
+Clase del 2 de diciembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+- [x] Resolver últimos problemas con docker.
+- [ ] Resolver dudas relacionadas con la tercera práctica.
+
+Clase del 9 de diciembre de 2014
+====
+Objetivos a cubrir en la sesión
+---
+
+
