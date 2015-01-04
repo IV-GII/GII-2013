@@ -73,3 +73,99 @@ El otro hipervisor que he utilizado es VMWare
 + Finalmente, iniciamos la máquina virtual
 
 ![VMWare player](http://fotos.subefotos.com/87608958451b8ac10c111a0d93e3eb1fo.jpg)
+
+
+
+***
+
+##Ejercicio 3##
+
+#####Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con ``qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img`` #####
+
+Utilizando ``qemu-system-x86_64 -boot order=c -drive file=fichero-cow2.qcow2,if=virtio``
+
+|Medición    |Real        |User       |Sys        |
+| ---------- | ---------- |---------- |---------- |
+| 1          | 3.992      |0.048      |3.272      |
+| 2          | 4.420      |0.080      |3.540      |
+| 3          | 4.276      |0.080      |3.448      |
+| 4          | 5.246      |0.044      |3.324      |
+| Media      | 4.484      |0.063      |3.396      |
+
+
+Utilizando ``qemu-system-x86_64 -hda fichero-cow2.qcow2``
+
+|Medición    |Real        |User       |Sys        |
+| ---------- | ---------- |---------- |---------- |
+| 1          | 7.343      |0.052      |3.436      |
+| 2          | 5.982      |0.048      |4.424      |
+| 3          | 4.015      |0.044      |3.292      |
+| 4          | 4.358      |0.052      |3.584      |
+| Media      | 5.425      |0.049      |3.684      |
+
+Como podemos ver, es algo más rápido de la primera forma. No es una gran diferencia pero, en una operación mayor, podremos ver mejor la diferencia.
+
+
+
+***
+
+##Ejercicio 4##
+
+#####Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.#####
+
+Primero he creado la imagen con ``qemu-img create -f qcow2 lxde.img 15G`` y después he ejecutado la ``qemu-system-x86_64 -hda lxde.img -cdrom debian-7.7.0-amd64-netinst.iso -m 512M``. Aunque Debian 7 viene con Gnome, se puede instalar (incluso antes de instalar el sistema operativo) otro entorno de escritorio.
+Para ello, seguimos los siguientes pasos:
+
+Accedemos a la instalación y vamos a "Advanced options"
+
+![Instalación Debian](http://fotos.subefotos.com/45fd16a5b833b78f04931e933ce5943ao.jpg)
+
+
+Vamos a "Alternative desktop environments"
+
+![Instalación Debian](http://fotos.subefotos.com/991dbac978e9ae4b65a26ea25638bf4bo.jpg)
+
+Seleccionamos LXDE e instalamos
+
+![Lista de escritorios](http://fotos.subefotos.com/226d5fbf5687510da983d20684c9348do.jpg)
+
+y al terminar de instalar, aquí tendremos nuestro Debian con LXDE
+
+![Debian funcionando](http://fotos.subefotos.com/485d0ab0b322baa2c6afc835570e57e6o.jpg)
+
+
+***
+
+##Ejercicio 5##
+
+#####Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.#####
+
+Ejecuando ``azure vm image list | grep Ubuntu`` en el terminal, obtenemos todas las imágenes Ubuntu disponibles. Voy a instalar la imagen " b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04-LTS-amd64-server-20140414-en-us-30GB".
+
+Podemos ver información sobre ella ejecutando ``azure vm image show b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04-LTS-amd64-server-20140414-en-us-30GB``
+
+![Información imagen](http://fotos.subefotos.com/43aa7c34c1472aaf9e9084dffbb1ccb7o.jpg)
+
+Creamos la máquina con:
+
+``azure vm create iblancasa b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04-LTS-amd64-server-20140414-en-us-30GB iblancasa [PASS] --location "West Europe" --ssh``
+
+Con nombre y usuario iblancasa, la imagen que se ha indicado antes, una contraseña, localización en el este de Europa y uso de SSH. Es importante que hayamos creado antes el almacenamiento (con el mismo nombre de la VM) ya que puede dar algunos problemas.
+
+![Creando la máquina virtual](http://fotos.subefotos.com/26443a3ace7d4c093f519f691b1e16aco.jpg)
+
+Después podremos ver algunos detalles de las máquinas que tengamos creadas utilizando ``azure vm list``
+
+![Lista de VM](http://fotos.subefotos.com/959c0866882bf4907fddff77341cca73o.jpg)
+
+La arrancamos con ``azure vm start iblancasa`` y nos conectamos con ``ssh iblancasa@iblancasa.cloudapp.net``. Una vez nos encontremos dentro, ejecutamos ``sudo apt-get update && sudo apt-get ugprade`` para que se actualice la imagen y los repositorios. Después, instalamos el servidor ejecutnado ``sudo apt-get install nginx``. Cuando finalice la instalación, iniciamos el servidor ``sudo service nginx start`` (en algunas versiones, Nginx no muestra ningún mensaje indicado que se haya iniciado. En ese caso, comprobamos su estado mediante el comando ``sudo service nginx status``)
+
+![Estado de Nginx](http://fotos.subefotos.com/64af733b484707640aa0e5c9008afd63o.jpg)
+
+Ahora solo falta crear el "endpoint". En una terminal local, ejecutamos ``azure vm endpoint create -n http iblancasa 80 80``:
+
+![Abriendo endpoint](http://fotos.subefotos.com/f820c44b0f6c2bb6324c155e0c9e559fo.jpg)
+
+y ya podremos acceder a nuestra web
+
+![NGINX funcionando en Azure](http://fotos.subefotos.com/4f7db804eb23fbe6b9087d8e6026d580o.jpg)
