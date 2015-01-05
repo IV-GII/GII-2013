@@ -133,6 +133,23 @@ y al terminar de instalar, aquí tendremos nuestro Debian con LXDE
 
 ![Debian funcionando](http://fotos.subefotos.com/485d0ab0b322baa2c6afc835570e57e6o.jpg)
 
+Salimos de la máquina y la arrancamos ejecutando ``qemu-system-x86_64 -boot order=c -drive file=lxde.img,if=virtio -m 512M -name debian -vnc :1``. Se quedará en ejecución sin abrir ninguna ventana ni nada. En otro terminal, tendremos que ver, usando "ifconfig" la dirección de la interfaz a la que tenemos que conectarnos y nos conectamos mediante ``vinagre 192.168.122.1:5901``
+
+![Accediendo a la máquina virtual usando VNC](http://fotos.subefotos.com/bed45b852d969593edb70b5a0041c08eo.jpg)
+
+QUEMU no permite más conexión que la procedente desde Internet. Para habilitarla, deberemos añadir un nuevo parámetro cuando arranquemos la máquina (que servirá para redirigir un puerto de la máquina anfitriona a un puerto de la máquina virtual).
+
+``qemu-system-x86_64 -boot order=c -drive file=lxde.img,if=virtio -m 512M -name debian -redir tcp:4664::22``
+
+Una vez que hayamos iniciado la máquina virtual, instalamos en la misma SSH (como no he añadido mi usuario a "sudoers", ejecuto como root):
+
+``apt-get update && apt-get install ssh``
+
+y en la máquina anfitriona `` ssh -p 4664 iblancasa@localhost`` y, tras aceptar la clave y escribir la contraseña, nos habremos conectado.
+
+![Conexión SSH])(http://fotos.subefotos.com/ec1986af9189a4f491a95fc143b85fc2o.jpg)
+
+
 
 ***
 
