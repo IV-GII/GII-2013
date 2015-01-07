@@ -186,3 +186,69 @@ Ahora solo falta crear el "endpoint". En una terminal local, ejecutamos ``azure 
 y ya podremos acceder a nuestra web
 
 ![NGINX funcionando en Azure](http://fotos.subefotos.com/4f7db804eb23fbe6b9087d8e6026d580o.jpg)
+
+
+
+***
+
+##Ejercicio 6##
+
+#####Usar juju para hacer el ejercicio anterior#####
+
+En primer lugar, es necesario crear  un certificado. Para ello, en terminal, escribimos:
+```bash
+openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout azure.pem -out azure.pem
+openssl x509 -inform pem -in azure.pem -outform der -out azure.cer
+chmod 600 azure.pem
+```
+
+Subimos el certificado a Azure (desde la interfaz web), en la pestaña "Certificados de administración", dentro de "Configuración"
+
+![Certificados](http://fotos.subefotos.com/562a41ad6e5f932f793b14ea231da175o.jpg)
+
+Ahora hay que editar el fichero "environments.yaml" (dentro de la carpeta /home/usuario/.juju)
+
+![environments.yaml](http://fotos.subefotos.com/26ffb0304826d4afb14092aa1cae9ae2o.jpg)
+
+Hay que editar varios parámetros (en la sección Azure):
++ Añadimos "availability-sets-enabled: false" (sin comillas)
++ "location" pasa a "West Europe"
++ "manage-suscription-id" lo tomamos de ``azure account list``
++ "management-certificate-path" es la ruta a nuestro ".pem", generado cuando hemos creado el certificado
++ "storage-account-name" ponemos el nombre de la cuenta de almacenamiento que vamos a usar (``azure storage account list``)
+
+Y ejecutamos los siguientes comandos:
+
+```bash
+sudo juju switch azure
+sudo juju bootstrap
+sudo juju deploy --to 0 juju-gui
+sudo juju expose juju-gui
+```
+
+![Tras el bootstrap](http://fotos.subefotos.com/92b657a40ea51fd8b73580e7b862a5a0o.jpg)
+
+Comprobamos si se ha realizado todo correctamente ejecutando ``sudo juju status``:
+
+![Estado](http://fotos.subefotos.com/3f082899afec6d4bbd7e8ed3d6c8fe13o.jpg)
+
+Accedemos a la dirección que se nos indica y encontraremos esta página
+
+![Juju Gui](http://fotos.subefotos.com/1e1fac6187174c1c1bfdc1c3c6c9754ao.jpg)
+
+En el texto de debajo del formulario, podemos ver en dónde esta la contraseña.
+
+Hay dos opciones para activar NGINX:
++ En el menú de la izquierda buscamos "nginx", lo seleccionamos y marcamos que sea expuesto. Se quedará en amarillo. Yo no he conseguido hacerlo así.
++ Mediante consola de comandos:
+
+```bash
+sudo juju deploy --to 0 cs:~hp-discover/trusty/nginx-4
+sudo expose nginx
+```
+
+y, después de esperar un poco, veremos que el estado es iniciado y en la interfaz también aparece
+
+![Consola](http://fotos.subefotos.com/0e0ce2a0aab65b19f887a56fb7a00ef9o.jpg)
+
+![GUI](http://fotos.subefotos.com/f1ed248bca9d3dd8e012f9d9ec6add06o.jpg)
