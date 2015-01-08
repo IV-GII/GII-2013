@@ -1,0 +1,14 @@
+#!/usr/bin/ruby
+arrayDeHashes = {
+    :has =>{
+     :es => "es",
+     :una => "una",
+     :prueba => "prueba"
+    },
+    :has2 =>{
+     :es => "es",
+     :una => "una",
+     :prueba => "prueba"
+    }
+}
+puts arrayDeHashes
