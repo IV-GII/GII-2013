@@ -1,6 +1,0 @@
-#!/usr/bin/ruby
-
-var = 25;
-for i in 1..var
-    puts "#{i}"
-end
