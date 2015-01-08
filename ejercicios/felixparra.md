@@ -350,7 +350,44 @@ Ver si en esta Vagrant:<br />
  gem search --remote vagrant<br />
 Y a continuacion instalar:<br />
  sudo gem install vagrant<br />
+
 <hr />
 
 # Modulo V - Virtualización del almacenamiento
+
+**Ejercicio 1:**<br />
+######1.1 - ¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?<br />
+
+######1.2 - Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza?<br />
+
+######1.3 -Buscar ofertas SAN comerciales y comparar su precio con ofertas locales (en el propio ordenador) equivalentes.<br />
+
+**Ejercicio 2:**<br />
+**Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.**<br />
+
+**Ejercicio 3:**<br />
+**Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre**<br />
+
+**Ejercicio 4:**<br />
+**Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema**<br />
+
+**Ejercicio 5:**<br />
+**Instalar ceph en tu sistema operativo.**<br />
+
+**Ejercicio 6:**<br />
+**Crear un dispositivo ceph usando BTRFS o XFS**<br />
+
+**Ejercicio 7:**<br />
+**Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.**<br />
+
+**Ejercicio 8:**<br />
+**Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente**<br />
+
+**Ejercicio 9:**<br />
+**Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.**<br />
+
+**Ejercicio 10:**<br />
+**Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.**<br />
+
+
 
