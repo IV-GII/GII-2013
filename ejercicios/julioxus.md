@@ -1134,3 +1134,169 @@ Cuando termine el script tendremos todo instalado. Abrimos otra terminal y hacem
 
 ![captura67](http://i.imgur.com/PmHO16Q.png)
 
+
+# Tema 5
+
+## Ejercicio 1.1 ##
+**¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?**
+
+En mi caso utilizo una partición para /, otra partición extendida (volumen lógico) que agrupa swap de linux y /home, y ya para Windows la partición de arranque y la de almacenamiento:
+
+![captura67](http://i.imgur.com/THFKryI.png)
+
+## Ejercicio 1.2 ##
+**Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza?**
+
+## Ejercicio 1.3 ##
+**Buscar ofertas SAN comerciales y comparar su precio con ofertas locales (en el propio ordenador) equivalentes.**
+
+## Ejercicio 2 ##
+**Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.**
+
+**Avanzado Usar los drivers de FUSE para Ruby (aquí explican más o menos como hacerlo con fusefs para mostrar el contenido de una estructura de datos en un lenguaje como si fuera un fichero. Este es un ejemplo en Python.**
+
+Voy a conectar mi sistema de ficheros del anfitrión a la máquina virtual usando sshfs:
+
+Localizamos la ip del host (en mi caso 192.168.56.1, visto desde virtualbox) añadimos esta línea al fichero /etc/hosts para acceder de forma más cómoda:
+
+```
+192.168.56.1    host
+```
+
+Instalamos sshfs en mi máquina virtual
+
+```
+$ sudo apt-get install sshfs
+```
+
+Creamos una carpeta para montar el sistema de ficheros y lo montamos con sshfs:
+
+```
+$ mkdir host
+$ sshfs julio@host:/home/julio host
+```
+
+Finamlente podremos acceder a nuestras carpetas montadas en una carpeta usando el protocolo ssh:
+
+![captura68](http://i.imgur.com/rbEXpTA.png)
+
+
+## Ejercicio 3 ##
+**Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre**
+
+Voy a crear y montar una imagen con formato raw.
+
+Creamos el archivo del disco duro:
+
+```
+$ dd of=disco1.img bs=1k seek=5242879 count=0
+```
+
+Ahora necesitamos crear la tabla de particiones y formatear en un sistema de ficheros reconocible por el sistema, si no nos dará errores al montar. Empezamos creando la tabla de particiones con fdisk:
+
+![captura69](http://i.imgur.com/j1vH0Nw.png)
+
+Ahora formateamos con el sistema de ficheros ext4 usando mkfs:
+
+![captura70](http://i.imgur.com/XaV1YZe.png)
+
+Por último montamos la imagen en una carpeta:
+
+```
+$ sudo mount -o loop disco1.img /media/virtual
+```
+
+Ahora vemos que se encuentra entre nuestras particiones y podemos navegar por el sistema de archivos:
+
+![captura71](http://i.imgur.com/xZ436oX.png)
+
+![captura72](http://i.imgur.com/pzt8FRE.png)
+
+Otra alternativa puede ser crear una imagen vmdk con virtualbox:
+
+```
+vboxmanage createhd --filename disco1.vmdk --format VMDK --size 1024
+```
+
+Una vez creada podemos importarla a alguna máquina virtual
+
+## Ejercicio 4 ##
+**Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema**
+
+Creamos un sistema btrfs y otro xfs, y los montamos:
+```
+$ dd of=disco1.img bs=1k seek=5242879 count=0
+$ dd of=disco2.img bs=1k seek=5242879 count=0 
+
+$ sudo mkfs -t btrfs disco1.img
+$ sudo mkfs -t xfs disco2.img
+
+$ sudo mount disco1.img /media/virtual
+$ sudo mount disco2.img /media/virtual2
+```
+
+Ahora veremos como nuestros discos se encuentran montados:
+
+![captura73](http://i.imgur.com/HywXade.png)
+
+
+Repetimos varios tests a los discos montados para comprobar su rendimiento:
+
+```
+$ sudo hdparm -Tt /dev/loop0
+$ sudo hdparm -Tt /dev/loop1
+$ sudo hdparm -Tt /dev/sda5
+```
+
+Estos son los resultados obtenidos por la repetición del test 5 veces:
+
+
+|             |         BTRFS            |                                    |
+|:-----------:|:|:----------------------:|:----------------------------------:|
+|             | Lecturas de caché (MB/s) | Lecturas de buffer de disco (MB/s) | 
+|   Prueba 1  |        7852,23           |              1862,84               | 
+|   Prueba 2  |        7236,7            |              1859,84               |          
+|   Prueba 3  |        7097,35           |              1932,79               |          
+|   Prueba 4  |        7478,63           |              2046,71               |          
+|   Prueba 5  |        7276,5            |              1868,39               |         
+|             |                          |                                    |
+|    Media    |        7388,282          |              1914,114              | 
+
+
+
+|             |           XFS            |                                    |
+|:-----------:|:|:----------------------:|:----------------------------------:|
+|             | Lecturas de caché (MB/s) | Lecturas de buffer de disco (MB/s) | 
+|   Prueba 1  |        6801,75           |              799,91                | 
+|   Prueba 2  |        7198,82           |              755,92                |          
+|   Prueba 3  |        6986,62           |              788,84                |          
+|   Prueba 4  |        7395,28           |              713,31                |          
+|   Prueba 5  |        6471,38           |              708,83                |         
+|             |                          |                                    |
+|    Media    |        6970,77           |              753,362               |
+
+
+|             |        EXT4 (host)       |                                    |
+|:-----------:|:|:----------------------:|:----------------------------------:|
+|             | Lecturas de caché (MB/s) | Lecturas de buffer de disco (MB/s) | 
+|   Prueba 1  |        7808,54           |              104,97                | 
+|   Prueba 2  |        7785,91           |              106,48                |          
+|   Prueba 3  |        7656,24           |              105,04                |          
+|   Prueba 4  |        7731,8            |              108,77                |          
+|   Prueba 5  |        7637,13           |              106,75                |         
+|             |                          |                                    |
+|    Media    |        7723,924          |              106,402               |
+
+
+Viendo estos datos podemos concluir que el sistema BTRFS no introduce excesivo overhead ya que tiene un valor muy parecido al host en lecturas de caché. El sistema XFS es más lento que BTRFS en este aspecto.
+
+En lecturas de buffer del disco también gana BTRFS y nuestro sistema host parece que no alcanza la velocidad que tienen los dispositivos virtuales para esto.
+
+## Ejercicio 5 ##
+**Instalar ceph en tu sistema operativo.**
+
+Para instalar en Debian basta con ejecutar:
+
+```
+$ sudo apt-get install ceph
+```
