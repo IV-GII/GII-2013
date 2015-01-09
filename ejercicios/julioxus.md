@@ -1252,7 +1252,7 @@ Estos son los resultados obtenidos por la repetición del test 5 veces:
 
 
 |             |         BTRFS            |                                    |
-|:-----------:|:|:----------------------:|:----------------------------------:|
+|:-----------:|:------------------------:|:----------------------------------:|
 |             | Lecturas de caché (MB/s) | Lecturas de buffer de disco (MB/s) | 
 |   Prueba 1  |        7852,23           |              1862,84               | 
 |   Prueba 2  |        7236,7            |              1859,84               |          
@@ -1265,7 +1265,7 @@ Estos son los resultados obtenidos por la repetición del test 5 veces:
 
 
 |             |           XFS            |                                    |
-|:-----------:|:|:----------------------:|:----------------------------------:|
+|:-----------:|:------------------------:|:----------------------------------:|
 |             | Lecturas de caché (MB/s) | Lecturas de buffer de disco (MB/s) | 
 |   Prueba 1  |        6801,75           |              799,91                | 
 |   Prueba 2  |        7198,82           |              755,92                |          
@@ -1277,7 +1277,7 @@ Estos son los resultados obtenidos por la repetición del test 5 veces:
 
 
 |             |        EXT4 (host)       |                                    |
-|:-----------:|:|:----------------------:|:----------------------------------:|
+|:-----------:|:------------------------:|:----------------------------------:|
 |             | Lecturas de caché (MB/s) | Lecturas de buffer de disco (MB/s) | 
 |   Prueba 1  |        7808,54           |              104,97                | 
 |   Prueba 2  |        7785,91           |              106,48                |          
