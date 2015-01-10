@@ -29,7 +29,8 @@ Y la última herramienta es **rdoc**, el generador de documentación de Ruby. Vi
 
 **Crear un programa en Ruby que imprima los números desde el 1 hasta otro contenido en una variable.**
 
-```ruby #!/usr/bin/ruby
+```ruby 
+#!/usr/bin/ruby
 
 # Definimos la variable objetivo con el valor máximo que va alcanzar el bucle
 objetivo=10
@@ -38,7 +39,8 @@ objetivo=10
 for i in 1..objetivo
   # Imprimimos el contenido de la variable i
   puts "Contenido variable i : #{i}"
-end ```
+end 
+```
 
 ![Figura2](Imagenes/ejRuby_2_1.png)
 > Figura 2. Resultado ejecución del bucle
@@ -47,7 +49,8 @@ end ```
 
 **¿Se pueden crear estructuras de datos mixtas en Ruby? Crear un array de hashes de arrays e imprimirlo.**
 
-```ruby #!/usr/bin/ruby
+```ruby 
+#!/usr/bin/ruby
 
 # Creamos una estructura que contiene diferentes arrays
 
@@ -75,7 +78,8 @@ estructuraMixta = {
 # Devolvemos los datos
 estructuraMixta.keys().each() do |contenido|
   puts estructuraMixta[contenido]
-end ```
+end 
+```
 
 ![Figura3](Imagenes/ejRuby_3_1.png)
 > Figura 3. Resultado ejecución del array de hashes arrays.
