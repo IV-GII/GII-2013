@@ -256,4 +256,47 @@ sudo docker pull dockerfile/mongodb
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio11_2.png)
 
+#Ejercicio 12#
+##Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.##
+
+* Entramos en el contenedor, usando el siguiente comando: 
+~~~
+sudo docker run -i -t ubuntu /bin/bash
+~~~
+
+* Añadimos el nuevo usuario y contraseña:
+~~~
+useradd -d /home/usuario -m usuario
+~~~
+~~~
+passwd usuario
+~~~
+
+* Añadimos el usuario al grupo sudo:
+~~~
+adduser usuario sudo
+~~~
+
+* Nos logeamos:
+~~~
+login usuario
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio12_1.png)
+
+* Instalamos nginx:
+~~~
+sudo apt-get install nginx
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio12_2.png)
+
+* Iniciamos nginx:
+~~~
+sudo service nginx start
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio12_3.png)
+
+
 
