@@ -239,4 +239,21 @@ sudo docker run -i -t ubuntu /bin/bash
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio10_1.png)
 
+#Ejercicio 11#
+##1.Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.##
+Para instalar a partir de docker una imagen *CentOS* ejecutamos:
+~~~
+sudo docker pull centos
+~~~
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio11_1.png)
+
+##2.Buscar e instalar una imagen que incluya MongoDB.##
+
+Para instalar una imagen que incluya *mongodb* ejecutamos:
+~~~
+sudo docker pull dockerfile/mongodb
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio11_2.png)
+
 
