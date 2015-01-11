@@ -16,3 +16,13 @@ lxc-checkconfig
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio1_1.png)
 
+
+#Ejercicio 2#
+
+##Comprobar qué interfaces puente se han creado y explicarlos.##
+
+Se genera un puente de red preconfigurado:
+
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio2_1.png)
+
