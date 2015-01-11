@@ -26,3 +26,62 @@ Se genera un puente de red preconfigurado:
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio2_1.png)
 
+
+#Ejercicio 3#
+
+##1.Crear y ejecutar un contenedor basado en Debian.##
+
+Creamos un contenedor en debian, para ello ejecutamos el siguiente comando: 
+
+~~~
+sudo lxc-create -t debian -n una-caja
+~~~
+
+Comprobamos que el contenedor se ha creado:
+
+~~~
+sudo lxc-ls
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio3_1.png)
+
+##2.Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.##
+
+Creamos el contenedor con el siguiente comando: 
+
+~~~
+sudo lxc-create -t fedora -n cont-fedora
+~~~
+
+Lo iniciamos:
+
+~~~
+sudo lxc-start -n cont-fedora
+~~~
+
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio3_2.png)
+
+
+#Ejercicio 4#
+##1. Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.##
+
+Para instalar lxc-webpanel utilizamos el siguiente comando:
+
+~~~
+wget http://lxc-webpanel.github.io/tools/install.sh -O - | sudo bash
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio4_1.png)
+
+Una vez instalado accedemos a través del navegador poniendo la dirección localhost:5000/login 
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio4_2.png)
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio4_3.png)
+
+##2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.##
+
+Le damos al contenedor y nos aparecen los recursos que podemos restringir:
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio4_4.png)
