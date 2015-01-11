@@ -171,3 +171,38 @@ Para instalar MySQL ejecutamos:
 juju deploy mysql
 ~~~
 
+#Ejercicio 7#
+##Destruir toda la configuración creada anteriormente##
+
+Para desmontar los servicios se tiene que hacer en orden inverso a su creación: primero hay que destruir las unidades, de esta forma:
+
+~~~
+sudo juju destroy-unit mysql/0
+~~~
+
+Para la destrucción de las máquina ejecutamos:
+
+~~~
+sudo juju destroy-machine 1
+~~~
+
+##Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.##
+
+Para crear la máquina anteriro seguimos los siguientes pasos:
+
+* sudo juju add-machine
+* sudo juju deploy mediawiki
+* sudo juju add-relation mediawiki:db mysql
+
+
+##Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.##
+~~~
+!/bin/bash
+
+juju init
+juju switch local
+juju bootstrap
+juju deploy mediawiki
+juju deploy mysql
+juju add-relation mediawiki:db mysql
+~~~
