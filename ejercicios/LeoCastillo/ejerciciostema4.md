@@ -43,8 +43,6 @@ Comprobamos que el contenedor se ha creado:
 sudo lxc-ls
 ~~~
 
-![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio3_1.png)
-
 ##2.Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.##
 
 Creamos el contenedor con el siguiente comando: 
@@ -218,4 +216,27 @@ sudo apt-get install kvm libvirt-bin
 ~~~
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio8_1.png)
+
+
+#Ejercicio 9#
+##Instalar un contenedor usando virt-install.##
+
+#Ejercicio 10#
+##Instalar docker.##
+
+Para instalar docker en ubuntu he seguido el siguiente enlace <http://docs.docker.com/installation/ubuntulinux/>
+
+Ejecutamos el siguiente comando:
+~~~
+sudo apt-get install docker.io
+~~~
+
+Para comprobar que funciona correctamente ejecutamos:
+
+~~~
+sudo docker run -i -t ubuntu /bin/bash
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio10_1.png)
+
 
