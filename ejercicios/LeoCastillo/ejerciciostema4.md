@@ -85,3 +85,29 @@ Una vez instalado accedemos a través del navegador poniendo la dirección local
 Le damos al contenedor y nos aparecen los recursos que podemos restringir:
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio4_4.png)
+
+#Ejercicio 5#
+##1. Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.##
+
+Voy a comparar un contenedor ubuntu instalado anteriormente con una jaula creada en el tema anterior. Para ello voy a utilizar *Apache Benchmark*
+
+Ejecutamos el siguiente comando en la jaula y en el contenedor:
+
+~~~
+sudo apt-get install apache2-utils
+~~~
+
+Ahora en la jaula ejecutamos el comando:
+
+~~~
+ab -n 1000 -c 25 http://127.0.0.1/
+~~~
+
+Y vemos los resultados.
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio5_1.png)
+
+Ahora hacemos lo mismo en el contenedor:
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio5_2.png)
+
