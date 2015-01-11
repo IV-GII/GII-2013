@@ -48,10 +48,93 @@ Y usamos el hipervisor [VirtualBox](https://www.virtualbox.org/) para instalar l
 
 ![imagen](http://i.imgur.com/kZPtDv2.png) 
 
+Y ahora comenzará la instalación, sólo hay que seguir los pasos que hemos seguido antes para para ello.
+
 ![imagen](http://i.imgur.com/2MF8dOl.png) 
 
 
 
+##Ejercicio 3
+###Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con `qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img`
 
+Usando `qemu-system-x86_64 -hda ./imagenAct2.qcow2 -cdrom ./debian-7.7.0-amd64-netinst.iso`
+
+Creamos un script:
+
+![imagen](http://i.imgur.com/yjIANLS.png) 
+
+Y creamos un archivo para trabajar con el con `dd if=/dev/urandom of=ficheroprueba bs=191 count=100000`, le damos permisos y hacemos varias pruebas:
+
+![imagen](http://i.imgur.com/dtNPXf9.png) 
+
+
+Resultados:
+26s	769.23 MB/s
+43s	465.11
+64s	312.50	
+43s	465.11
+71s	281.69
+70s	285.71
+41s	487.80
+
+|            | Tiempo (s) | Velocidad   [ MB/s]  | 
+| ---------- | :--------: | :------------------: | 
+| prueba 1   | 26         | 769.23               | 
+| prueba 2   | 43         | 465.11               | 
+| prueba 3   | 64         | 312.50               |
+| prueba 4   | 43         | 465.11               | 
+| prueba 5   | 71         | 281.69               | 
+| prueba 6   | 70         | 285.71               |
+| prueba 7   | 41         | 487.80               | 
+|            |            |                      | 
+| Media      |   51.14    |    438.16            | 
+
+
+
+Y sin paravirtualización, como nos indican en el enunciado `qemu-system-x86_64 -hda debian-7.7.0-amd64-netinst.iso`
+
+Seguimos otra vez los pasos anteriores y tenemos los resultados:
+
+|            | Tiempo (s) | Velocidad   [ MB/s]  | 
+| ---------- | :--------: | :------------------: | 
+| prueba 1   | 28         | 760.19               | 
+| prueba 2   | 44         | 459.85               | 
+| prueba 3   | 64         | 310.38               |
+| prueba 4   | 42         | 460.46               | 
+| prueba 5   | 70         | 278.40               | 
+| prueba 6   | 71         | 275.60               |
+| prueba 7   | 41         | 475.80               |
+|            |            |                      | 
+| Media      |   51.4     |    431.52            | 
+
+
+Vemos con que con paravirtualización obtenemos resultados algo mejores.
+
+
+##Ejercicio 4
+###Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
+
+Creamos su disco duro: `qemu-img create -f qcow2 discolxde.qcow2 5G`
+
+Y lo instalamos con KVM: `qemu-system-x86_64 -hda ./discolxde.qcow2 -cdrom ./debian-7.7.0-amd64-netinst.iso`
+
+En el menú de arranque seleccionamos "Advanced options". Dentro nos vamos a "Alternative desktop environments", seleccionamos LXDE como nos indica el enunciado e instalamos.
+
+![imagen](http://i.imgur.com/jLx66aJ.png) 
+
+Una vez instalado:
+
+![imagen](http://i.imgur.com/yuxOIqx.png) 
+
+
+Ahora ejecutamos `qemu-system-x86_64 -boot order=c -drive file=discolxde.qcow2,if=virtio -m 512M -name debian -vnc :1`
+
+Vemos que no se abre nada, vemos la dirección de interfaz que tenemos que usar con `ifconfig virbr0` y accedemos a ella con "vinagre 192.168.122.1:5901" en mi caso:
+
+![imagen](http://i.imgur.com/97cWoaH.png) 
+
+
+Para poder conectarnos tenemos que especificar una redirección del puerto de la máquina anfitriona a un puerto de la máquina virtual:
+`qemu-system-x86_64 -boot order=c -drive file=discolxde.qcow2,if=virtio -m 512M -name debian -redir tcp:4664::22` y conectamos con `ssh -p 4664 localhost`
 
 
