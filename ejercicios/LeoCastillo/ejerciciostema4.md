@@ -111,3 +111,63 @@ Ahora hacemos lo mismo en el contenedor:
 
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio5_2.png)
 
+
+#Ejercicio 6#
+##1.Instalar juju.##
+
+Para instalar *juju* en Ubuntu 14.04 ejecutamos lo siguiente:
+~~~
+sudo apt-get install 
+~~~
+
+
+##2.Usándolo, instalar MySQL en un táper.##
+
+Una vez instalado *juju* para empezar a trabajar con él, escribimos:
+
+~~~
+sudo juju init
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio6_1.png)
+
+Esta orden escribe en el subdirectorio ~/.juju, que también crea, el fichero environments.yaml, que contiene información sobre los entornos con los que suele trabajar: proveedores de servicios de nube y el local, que es el que vamos a probar. Por omisión, el fichero trabajará con Amazon EC2. Tenemos que cambiarlo a local si queremos trabajar con contenedores LXC editando el fichero y cambiando la línea
+
+Para ello comentamos la linea:
+~~~
+#default: amazon
+~~~
+
+y añadimos la nueva linea:
+~~~
+default: local
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio6_2.png)
+
+
+Lo siguiente que vamos hacemos es cambiar el entorno de trabajo local, usando el siguiente comando: 
+~~~
+sudo juju switch local
+~~~
+
+Para trabajar en local instalamos MongoDB:
+
+~~~
+sudo apt-get install mongodb-server
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio6_3.png)
+
+
+Creamos el táper, usando el siguiente comando: 
+
+~~~
+sudo juju bootstrap
+~~~
+
+Para instalar MySQL ejecutamos:
+~~~
+juju deploy mysql
+~~~
+
