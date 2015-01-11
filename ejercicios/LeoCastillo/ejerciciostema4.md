@@ -206,3 +206,16 @@ juju deploy mediawiki
 juju deploy mysql
 juju add-relation mediawiki:db mysql
 ~~~
+
+
+#Ejercicio 8#
+##Instalar libvirt. Te puede ayudar esta guía para Ubuntu.##
+
+Para instalar libvirt, usamos el siguiente comando: 
+
+~~~
+sudo apt-get install kvm libvirt-bin
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio8_1.png)
+
