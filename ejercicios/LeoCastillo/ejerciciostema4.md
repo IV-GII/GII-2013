@@ -299,4 +299,20 @@ sudo service nginx start
 ![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio12_3.png)
 
 
+#Ejercicio 13#
+##Crear a partir del contenedor anterior una imagen persistente con commit.##
+
+Buscamos el identificador del contenedor anterior, para ello podemos ejecutar el siguiente comando:
+~~~
+sudo docker ps -a=false
+~~~
+
+Creamos la imagen persistente en nuestro contenedor, para ello usamos el siguiente comando: 
+~~~
+sudo docker commit 657c49725cd8 ejercicio13-img
+~~~
+
+![Sin titulo](https://github.com/leocm89/GII-2014/blob/master/ejercicios/LeoCastillo/Imagenes/Tema4/ejercicio13_1.png)
+
+
 
