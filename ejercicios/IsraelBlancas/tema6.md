@@ -252,3 +252,11 @@ y, después de esperar un poco, veremos que el estado es iniciado y en la interf
 ![Consola](http://fotos.subefotos.com/0e0ce2a0aab65b19f887a56fb7a00ef9o.jpg)
 
 ![GUI](http://fotos.subefotos.com/f1ed248bca9d3dd8e012f9d9ec6add06o.jpg)
+
+
+
+***
+
+##Ejercicio 7##
+
+#####Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.#####

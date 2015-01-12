@@ -352,4 +352,28 @@ Lista de objetivos Israel Blancas Álvarez
 ***
 ***
 
-##Clase del 11 de diciembre de 2014##
+##Clase del 15 de diciembre de 2014##
+
+* [X] Entender los diferentes componentes de la infraestructura como servicio.
+* [X] Aprender a usar máquinas virtuales, localmente y en la nube.
+* [X] Comprender las bases físicas de las infraestructuras virtuales.
+
+Objetivos generales
+
+* [X] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
+* [X] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [X] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+
+
+***
+***
+
+##Clase del 16 de diciembre de 2014##
+
+* [X] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+Objetivos generales
+
+* [X] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
