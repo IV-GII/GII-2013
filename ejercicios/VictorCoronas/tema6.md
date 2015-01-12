@@ -14,8 +14,19 @@ se puede usar CoreOS (que sirve como soporte para Docker)
 GALPon Minino, hecha en Galicia para el mundo, Damn Small Linux, SliTaz (que cabe en 35 megas) y 
 ttylinux (basado en línea de órdenes solo).
 
-- B) Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.
+ - B) Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.
 
 * [+]Ejercicio 3
- - A) Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs 
- para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.
+ - A) Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con "qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img"
+
+* [+]Ejercicio 4
+ - A) Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
+
+* [+]Ejercicio 5
+ - A) Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
+
+* [+]Ejercicio 6
+ - A) Usar juju para hacer el ejercicio anterior.
+
+* [+]Ejercicio 7
+ - A) Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
