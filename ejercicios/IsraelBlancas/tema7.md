@@ -29,3 +29,34 @@ Y, finalmente, ``sudo gem install ohai chef``
 
 
 ![Instalando](http://fotos.subefotos.com/7378f669c28249174130139c21d34adfo.jpg)
+
+
+***
+
+###Ejercicio 2###
+
+#####Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual.#####
+
+
+***
+
+###Ejercicio 3###
+
+#####Escribir en YAML la siguiente estructura de datos en JSON#####
+#####{ uno: "dos", tres: [ 4, 5, "Seis", { siete: 8, nueve: [ 10, 11 ] } ] }#####
+
+[He usado esto para orientarme](http://docs.ansible.com/YAMLSyntax.html)
+
+```
+---
+- uno: "dos"
+  tres:
+    - 4
+    - 5
+    - "Seis"
+    -
+      - siete: 8
+        nueve:
+          - 10
+          - 11
+```
