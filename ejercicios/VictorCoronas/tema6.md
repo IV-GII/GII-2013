@@ -13,6 +13,7 @@ El primer paso que tenemos que dar es comprobar que nuestro procesador soporta v
 
 Si el resultado es igual a "0" es que no lo soporta, en mi caso es asi ya que lo estoy usando desde una máquina virtual.
 [Ver](https://www.dropbox.com/s/kw6c9e26k8y13ny/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2013.11.37.png?dl=0)
+
 Si nos saliese un número ">0", eso siginifica que lo soporta.
 
 Otra alternativa para comprovas es usar "kmv-ok", que te daría información [ver](https://www.dropbox.com/s/o582nhc43dt5r39/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2013.08.29.png?dl=0).
