@@ -7,6 +7,25 @@
  Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado 
  para ejecutarlo o hay que conformarse con la paravirtualización.
 
+El primer paso que tenemos que dar es comprobar que nuestro procesador soporta virtualización, para ello usamos el siguiente comando:
+
+    egrep -c '(vmx|svm)' /proc/cpuinfo
+
+Si el resultado es igual a "0" es que no lo soporta, en mi caso es asi ya que lo estoy usando desde una máquina virtual.
+[Ver](https://www.dropbox.com/s/kw6c9e26k8y13ny/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2013.11.37.png?dl=0)
+Si nos saliese un número ">0", eso siginifica que lo soporta.
+
+Otra alternativa para comprovas es usar "kmv-ok", que te daría información [ver](https://www.dropbox.com/s/o582nhc43dt5r39/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2013.08.29.png?dl=0).
+
+Para saber más informacion sobre los resultados y demás [ver enlace](https://help.ubuntu.com/community/KVM/Installation).
+
+El segundo paso sería proceder a instalar los paquetes necesarios para poder usar "KVM", para ello usamos el siguiente comando:
+
+    sudo apt-get install qemu-kvm qemu-system libvirt-bin virtinst virt-manager
+
+[Ver instalción](https://www.dropbox.com/s/stznyxi0dhihaay/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2013.17.18.png?dl=0)
+
+
 * [+]Ejercicio 2
  - A) Crear varias máquinas virtuales con algún sistema operativo libre tal como Linux o BSD.
 Si se quieren distribuciones que ocupen poco espacio con el objetivo principalmente de hacer pruebas
