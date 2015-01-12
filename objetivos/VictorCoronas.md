@@ -294,3 +294,16 @@ Conocer qué tipo de perfil buscan estas empresas.
 
 * [+]Conocer a empresas radicadas en Granada que usen la tecnología nube.
 * [+]Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+
+#Clase del 12 de Enero de 2014
+
+# Objetivos de esta sesión
+
+* []Entender el concepto de provisionamiento de máquinas virtuales.
+* []Usar Chef para provisionamiento de una máquina virtual.
+* []Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+# Otros objetivos
+
+* []Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* []Retomar el contacto con la asignatura y ponerse al día en los objetivos.
