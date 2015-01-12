@@ -46,7 +46,7 @@ sudo qemu-img create -f qcow2 cow.qcow2 10M
 sudo losetup -v -f cow.qcow2
 ```  
 
-[t5e3_a](iagenes/t5e3_a.png)
+![t5e3_a](iagenes/t5e3_a.png)
 
 Y finalmente:  
 
@@ -54,4 +54,46 @@ Y finalmente:
 sudo mkfs.ext4 /dev/loop0
 ```
 
-[t5e3_b](imagenes/t5e3_b.png) 
+![t5e3_b](imagenes/t5e3_b.png)
+
+###Ejercicio 4.  
+Crearemos las dos imágenes:  
+
+```
+sudo qemu-img create -f raw  i1.img 256M
+sudo qemu-img create -f raw  i2.img 256M
+```
+
+![t5e4_a](imagenes/t5e4_a.png)  
+
+```
+sudo losetup -v -f i1.img
+sudo losetup -v -f i2.img
+sudo mkfs.xfs /dev/loop1
+sudo mkfs.btrfs /dev/loop2
+```
+
+![t5e4_b](imagenes/t5e4_b.png)  
+
+Montamos las imagenes en las carpetas **prueba1** y **prueba2**  
+
+```
+sudo mount -t xfs /dev/loop1 /mnt/prueba1
+sudo mount -t btrfs /dev/loop2 /mnt/prueba2
+```
+
+![t5e4_c](imagenes/t5e4_c.png)
+
+Y movemos algún archivo pesado:  
+
+```
+sudo time -v cp /compatida/mongodump.zip /mnt/prueba1
+```
+
+![t5e4_d](imagenes/t5e4_d.png)
+
+```
+sudo time -v cp /compatida/mongodump.zip /mnt/prueba2
+```
+
+![t5e4_e](imagenes/t5e4_e.png)
