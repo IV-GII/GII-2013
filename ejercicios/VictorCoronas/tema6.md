@@ -79,13 +79,55 @@ Creamos un disco virtual y le damos un tamaño dinámico. [Ver](https://www.drop
 
 Una vez estos pasos se creará la máquina, por último tenemos que darle a la configuración de la máquina virtual y en la sección de "almacenamiento", le asignamos una imagen ".iso" de las que tengo a la unidad, como se muestra a continuación. [Ver](https://www.dropbox.com/s/oqway5ik68yi09d/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2017.41.15.png?dl=0).
 
-Para finalizar, solo le damos a "Mostrar" y arrancara la instalación de nuestro sistema operativo. [Ver](https://www.dropbox.com/s/lnkudm9pupwvba5/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2017.44.12.png?dl=0)
+Para finalizar, solo le damos a "Mostrar" y arrancará la instalación de nuestro sistema operativo. [Ver](https://www.dropbox.com/s/lnkudm9pupwvba5/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2017.44.12.png?dl=0)
 
 * [+]Ejercicio 3
  - A) Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con "qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img"
 
 * [+]Ejercicio 4
  - A) Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
+Lo que vamos a ahcer es descargarnos "Lubuntu" ya que es una distribución que tiene el entorno gráfico "LDXE", para ello usamos los siguientes comandos:
+
+    `qemu-img create -f qcow2 Lubuntu-hdd.img 8G`
+    `qemu-system-x86_64 -hda lubuntu-hdd.img -cdrom ../media/sf_PRACTICAS/lubuntu-13.10-desktop-i386.iso -m 512M`
+[Ver 1](https://www.dropbox.com/s/t9yq1x7qwfa44da/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2017.56.56.png?dl=0)
+[Ver 2](https://www.dropbox.com/s/3yeceuhynbs5nxf/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2017.58.40.png?dl=0)
+
+Realizamos la instalación siguiendo los pasos tipicos de instalación como cualquier otro sistema operativo:
+[Ver 1](https://www.dropbox.com/s/nnbe2pqt3a5z7bt/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2018.00.14.png?dl=0)
+[Ver 2](https://www.dropbox.com/s/nnbe2pqt3a5z7bt/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2018.00.14.png?dl=0)
+[Ver 3](https://www.dropbox.com/s/m4ijic307loosep/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2018.03.08.png?dl=0)
+[Ver 4](https://www.dropbox.com/s/2fbzc0njs9g3thd/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2018.04.37.png?dl=0)
+
+De esta manera ya tendríamos instalado "Lubuntu".
+
+Ahora para poder conectarnos por ssh solamente debemos de hacer lo siguiente:
+
+    `qemu-system-x86_64 -boot order=c -drive file=Lubuntu-hdd.img,if=virtio -m 512M -name lubuntu -redir tcp:2222::22`
+
+Y para conectarnos al "localhost" hacemos:
+
+    `ssh -p 2222 lubuntu@localhost`
+
+Ahoara para el caso de usar "VNC", tenemos que instalarlo primero en la máquina anfotriona con:
+
+    `apt-get install vnc4server`
+
+[Ver](https://www.dropbox.com/s/415xyexqe5cayb8/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2018.11.08.png?dl=0)
+
+A continuación nos conectamos a nuestra máquina virtual usando el servicio VNC, para ello usamos la IP de la NAT de nuestra máquina.
+
+Basta con hacer ifconfig y nos la mostrará:
+
+    virbr0 : 192.168.122.1
+
+[Ver](https://www.dropbox.com/s/pn0x7kynrd22z0k/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2018.12.47.png?dl=0)
+
+Ya por último vamos a proceder a arrancar y conectarnos a nuestra máquina virtual con se muestra a continuiación:
+
+    `qemu-system-x86_64 -boot order=c -drive file=Lubuntu-hdd.img,if=virtio -m 512M -vnc :1`
+    `vncviewer 192.168.122.1:5901`
+
 
 * [+]Ejercicio 5
  - A) Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
