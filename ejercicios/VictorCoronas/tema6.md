@@ -91,12 +91,16 @@ Lo que vamos a ahcer es descargarnos "Lubuntu" ya que es una distribución que t
     `qemu-img create -f qcow2 Lubuntu-hdd.img 8G`
     `qemu-system-x86_64 -hda lubuntu-hdd.img -cdrom ../media/sf_PRACTICAS/lubuntu-13.10-desktop-i386.iso -m 512M`
 [Ver 1](https://www.dropbox.com/s/t9yq1x7qwfa44da/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2017.56.56.png?dl=0)
+
 [Ver 2](https://www.dropbox.com/s/3yeceuhynbs5nxf/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2017.58.40.png?dl=0)
 
 Realizamos la instalación siguiendo los pasos tipicos de instalación como cualquier otro sistema operativo:
 [Ver 1](https://www.dropbox.com/s/nnbe2pqt3a5z7bt/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2018.00.14.png?dl=0)
+
 [Ver 2](https://www.dropbox.com/s/nnbe2pqt3a5z7bt/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2018.00.14.png?dl=0)
+
 [Ver 3](https://www.dropbox.com/s/m4ijic307loosep/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2018.03.08.png?dl=0)
+
 [Ver 4](https://www.dropbox.com/s/2fbzc0njs9g3thd/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2018.04.37.png?dl=0)
 
 De esta manera ya tendríamos instalado "Lubuntu".
