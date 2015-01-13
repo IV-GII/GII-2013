@@ -173,4 +173,18 @@ Al iniciarla le damos la ruta donde tenemos la imagen descargada.
 
 Se inicia e instalamos normalmente.
 
+### Ejercicio 4
 
+Nos bajamos la imagen debian netinst con
+
+`wget http://cdimage.debian.org/debian-cd/7.8.0/amd64/iso-cd/debian-7.8.0-amd64-netinst.iso`
+
+Creamos el disco con
+`qemu-img create -f qcow2 cow-file3.qcow2 1000M`
+
+`qemu-system-x86_64 -vnc :1 -hda cow-file3.qcow2 -cdrom debian-7.8.0-amd64-netinst.iso -m 512M`
+![Imgur](http://i.imgur.com/lVYFLiw.png)
+
+Si abrimos otra terminal podemos comprobar que el servidor vnc está en uso por la maquina que hemos creado.
+
+![Imgur](http://i.imgur.com/NYaCAWu.png)
