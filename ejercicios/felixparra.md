@@ -416,5 +416,11 @@ Y a continuacion instalar:<br />
 **Ejercicio 7:**<br />
 **Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.**<br />
 
+<hr />
 
+# Modulo VII - Gestión de infraestructuras virtuales
 
+**Ejercicio 1:**<br />
+**Ejercicio 1:**<br />
+**Ejercicio 1:**<br />
+**Ejercicio 1:**<br />
