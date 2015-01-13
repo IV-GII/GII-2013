@@ -168,7 +168,7 @@ Y para conectarnos al "localhost" hacemos:
 
     ssh -p 2222 lubuntu@localhost
 
-Ahoara para el caso de usar "VNC", tenemos que instalarlo primero en la máquina anfotriona con:
+Ahoara para el caso de usar "VNC", tenemos que instalarlo primero en la máquina anfitriona con:
 
     apt-get install vnc4server
 
@@ -241,6 +241,6 @@ Lo siguiente será decir la distribución, destino, nombre, etc, mediante el sig
 
 [Ver](https://www.dropbox.com/s/4qeu6sxpus1t0ao/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2011.46.47.png?dl=0)
 
-El último paso que debemos de dar, es crear una máquina virtiual con VirtualBox, siguiendo los pasos como explico en el "Ejercico 2 B)", pero a la hora de seleccionar el disco seleccionamos este que hemos creado en este ejercicio. Le damos a la opción de " Seleccionar un archivo de disco virtual..."
+El último paso que debemos de dar, es crear una máquina virtiual con VirtualBox, siguiendo los pasos como explico en el "Ejercicio 2 B)", pero a la hora de seleccionar el disco seleccionamos este que hemos creado en este ejercicio. Le damos a la opción de " Seleccionar un archivo de disco virtual..."
 
 [Ver](https://www.dropbox.com/s/31eyxdaenrx8iss/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2011.50.10.png?dl=0)
