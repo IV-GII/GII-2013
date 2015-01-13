@@ -127,3 +127,24 @@ Como estamos utilizando nodejs para el proyecto ya esta instalano npm. Instalamo
 Abrimos la URL y el fichero descargado lo importamos.
 
 `azure account import nombredelfichero`
+
+## Virtualización completa: Uso de maquinas virtuales
+
+### Ejercicio 1
+![Imgur](http://i.imgur.com/PvozGRv.png)
+
+### Ejercicio 2
+
+Hacemos 
+
+` wget http://ttylinux.net/Download/ttylinux-pc_x86_64-16.1.iso.gz `
+
+`gunzip ttylinux-pc_x86_64-16.1.iso.gz`
+
+Creamos el disco de 500 MB:
+`qemu-img create -f qcow2 cow-file.qcow2 500M`
+
+Usamos la opción -curses porque daba un error de SDL.
+`qemu-system-x86_64 -curses -hda cow-file.qcow2 -cdrom ttylinux-pc_x86_64-16.1.iso `
+
+![Imgur](http://i.imgur.com/pi909y5.png)
