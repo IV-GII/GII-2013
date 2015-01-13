@@ -148,3 +148,13 @@ Usamos la opción -curses porque daba un error de SDL.
 `qemu-system-x86_64 -curses -hda cow-file.qcow2 -cdrom ttylinux-pc_x86_64-16.1.iso `
 
 ![Imgur](http://i.imgur.com/pi909y5.png)
+
+` wget http://mirror.slitaz.org/iso/4.0/slitaz-4.0.iso `
+
+Creamos el disco de 500 MB:
+`qemu-img create -f qcow2 cow-file2.qcow2 500M`
+
+Usamos la opción -curses porque daba un error de SDL.
+`qemu-system-x86_64 -curses -hda cow-file2.qcow2 -cdrom slitaz-4.0.iso `
+
+![Imgur](http://i.imgur.com/o5w2Epg.png)
