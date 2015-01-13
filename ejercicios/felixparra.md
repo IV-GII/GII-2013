@@ -421,6 +421,26 @@ Y a continuacion instalar:<br />
 # Modulo VII - Gestión de infraestructuras virtuales
 
 **Ejercicio 1:**<br />
-**Ejercicio 1:**<br />
-**Ejercicio 1:**<br />
-**Ejercicio 1:**<br />
+**Instalar chef en la máquina virtual que vayamos a usar**<br />
+
+**Ejercicio 2:**<br />
+**Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual.**<br />
+
+**Ejercicio 3:**<br />
+**Escribir en YAML la siguiente estructura de datos en JSON**<br />
+
+**Ejercicio 4:**<br />
+**Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.**<br />
+
+**Ejercicio 5:**<br />
+###### 5.1 Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.
+###### 5.2 ¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí?.
+
+**Ejercicio 6:**<br />
+**Instalar una máquina virtual Debian usando Vagrant y conectar con ella**<br />
+
+**Ejercicio 7:**<br />
+**Crear un script para provisionar nginx o cualquier otro servidor web que pueda ser útil para alguna otra práctica** <br />
+
+**Ejercicio 8:**<br />
+**Configurar tu máquina virtual usando vagrant con el provisionador ansible**<br />
