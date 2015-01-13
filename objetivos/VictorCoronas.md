@@ -307,3 +307,17 @@ Conocer qué tipo de perfil buscan estas empresas.
 
 * []Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
 * []Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+#Clase del 13 de Enero de 2014
+
+# Objetivos de esta sesión
+
+* [] Entender el último hito del proyecto.
+* [] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+# Otros objetivos
+
+* [] Aprender a usar máquinas virtuales.
+* [] Elegir un sistema de provisionamiento.
+* [] Entender los objetivos del último proyecto (y de la asignatura).
