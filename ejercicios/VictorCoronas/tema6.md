@@ -88,8 +88,9 @@ Para finalizar, solo le damos a "Mostrar" y arrancará la instalación de nuestr
  - A) Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
 Lo que vamos a ahcer es descargarnos "Lubuntu" ya que es una distribución que tiene el entorno gráfico "LDXE", para ello usamos los siguientes comandos:
 
-    `qemu-img create -f qcow2 Lubuntu-hdd.img 8G`
-    `qemu-system-x86_64 -hda lubuntu-hdd.img -cdrom ../media/sf_PRACTICAS/lubuntu-13.10-desktop-i386.iso -m 512M`
+    qemu-img create -f qcow2 Lubuntu-hdd.img 8G
+    qemu-system-x86_64 -hda lubuntu-hdd.img -cdrom ../media/sf_PRACTICAS/lubuntu-13.10-desktop-i386.iso -m 512M
+    
     
 [Ver 1](https://www.dropbox.com/s/t9yq1x7qwfa44da/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2017.56.56.png?dl=0)
 
@@ -109,15 +110,15 @@ De esta manera ya tendríamos instalado "Lubuntu".
 
 Ahora para poder conectarnos por ssh solamente debemos de hacer lo siguiente:
 
-    `qemu-system-x86_64 -boot order=c -drive file=Lubuntu-hdd.img,if=virtio -m 512M -name lubuntu -redir tcp:2222::22`
+    qemu-system-x86_64 -boot order=c -drive file=Lubuntu-hdd.img,if=virtio -m 512M -name lubuntu -redir tcp:2222::22
 
 Y para conectarnos al "localhost" hacemos:
 
-    `ssh -p 2222 lubuntu@localhost`
+    ssh -p 2222 lubuntu@localhost
 
 Ahoara para el caso de usar "VNC", tenemos que instalarlo primero en la máquina anfotriona con:
 
-    `apt-get install vnc4server`
+    apt-get install vnc4server
 
 [Ver](https://www.dropbox.com/s/415xyexqe5cayb8/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2018.11.08.png?dl=0)
 
@@ -131,8 +132,8 @@ Basta con hacer ifconfig y nos la mostrará:
 
 Ya por último vamos a proceder a arrancar y conectarnos a nuestra máquina virtual con se muestra a continuiación:
 
-    `qemu-system-x86_64 -boot order=c -drive file=Lubuntu-hdd.img,if=virtio -m 512M -vnc :1`
-    `vncviewer 192.168.122.1:5901`
+    qemu-system-x86_64 -boot order=c -drive file=Lubuntu-hdd.img,if=virtio -m 512M -vnc :1
+    vncviewer 192.168.122.1:5901
 
 
 * [+]Ejercicio 5
