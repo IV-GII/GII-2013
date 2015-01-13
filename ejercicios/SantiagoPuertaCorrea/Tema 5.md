@@ -96,12 +96,14 @@ qemu-img create -f raw fichero-raw.raw 5M
 # vdi
 qemu-img create -f vdi fichero-vdi.vdi 5M
 ```
+![3_1.png](./capturas/t5/3_1.png)
 
-Ahora montaré la imagen qcow2 con el siguiente comando:
+Ahora podré la imagen qcow2 en bucle y le daré formato con los siguientes comandos:
 ```bash
 sudo losetup -v -f fichero-cow.qcow2
-sudo losetup -v -f fichero-cow.qcow2
+sudo mkfs.ext4 /dev/loop0
 ```
+![3_2.png](./capturas/t5/3_2.png)
 
 
 -----
@@ -110,6 +112,51 @@ Ejercicio 4
 -----------
 
 **Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema.**
+
+Lo primero que voy a hacer es generar las imagenes con qemu y ponerlas en bucle:
+
+```bash
+# Genero dos imagenes de 50M cada una.
+qemu-img create -f raw 1.img 50M
+qemu-img create -f raw 2.img 50M
+
+# Pongo las imagenes en bucle.
+sudo losetup -v -f 1.img
+sudo losetup -v -f 2.img
+
+# Les doy formato y las monto
+```bash
+sudo mkfs.xfs -f /dev/loop2
+sudo mkfs.btrfs -f /dev/loop3
+
+sudo mkdir /mnt/loop2
+sudo mkdir /mnt/loop3
+
+sudo mount /dev/loop2 /mnt/loop2
+sudo mount /dev/loop3 /mnt/loop3
+```
+![4_1.png](./capturas/t5/4_1.png)
+![4_2.png](./capturas/t5/4_2.png)
+![4_3.png](./capturas/t5/4_3.png)
+Creo un fichero de 40MB y compruebo que tarda en copiar el fichero en cada uno.
+
+```bash
+# Crear fichero
+sudo dd if=/dev/zero of=/home/santiago/40M bs=1MB count=40
+
+# Copiar el fichero
+sudo time -v cp 40M /mnt/loop2/40M
+sudo time -v cp 40M /mnt/loop3/40M
+
+```
+Como se puede ver en las siguientes capturas xfs es un poco más rápido que btrfs.
+![4_4.png](./capturas/t5/4_4.png)
+![4_5.png](./capturas/t5/4_5.png)
+
+
+
+
+
 
 
 -----
