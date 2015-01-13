@@ -187,4 +187,4 @@ Creamos el disco con
 
 Si abrimos otra terminal podemos comprobar que el servidor vnc está en uso por la maquina que hemos creado.
 
-![Imgur](http://i.imgur.com/NYaCAWu.png)
+![Imgur](http://i.imgur.com/s9ozwIA.png)
