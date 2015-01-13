@@ -72,3 +72,55 @@ sshfs santiago@172.17.42.1:/home /home/administrador/projects/test -p 49153
 Captura de pantalla que muestra como se a montado la carpeta test
 ![EJ2_2.png](./capturas/t5/EJ2_2.png)
 
+
+-----
+
+Ejercicio 3
+-----------
+
+**Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre.**
+
+He instalado qemu con el siguiente comando:
+```bash
+sudo apt-get install qemu-system
+```
+
+Voy a crear varias imágenes con varios formatos, para ello uso los siguientes comandos:
+```bash
+# qcow2
+qemu-img create -f qcow2 fichero-cow.qcow2 5M
+
+# raw
+qemu-img create -f raw fichero-raw.raw 5M
+
+# vdi
+qemu-img create -f vdi fichero-vdi.vdi 5M
+```
+
+Ahora montaré la imagen qcow2 con el siguiente comando:
+```bash
+sudo losetup -v -f fichero-cow.qcow2
+sudo losetup -v -f fichero-cow.qcow2
+```
+
+
+-----
+
+Ejercicio 4
+-----------
+
+**Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema.**
+
+
+-----
+
+Ejercicio 5
+-----------
+
+**Instalar ceph en tu sistema operativo.**
+
+Para instalarlo he usado el siguiente comando:
+```bash
+sudo apt-get install ceph-mds
+```
+
