@@ -389,5 +389,32 @@ Y a continuacion instalar:<br />
 **Ejercicio 10:**<br />
 **Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.**<br />
 
+<hr />
+
+# Modulo VI - Virtualización completa: uso de máquinas virtuales
+
+**Ejercicio 1:**<br />
+**Instalar los paquetes necesarios para usar KVM. Se pueden seguir estas instrucciones. Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.** <br />
+
+**Ejercicio 2:**<br />
+###### 2.1 Crear varias máquinas virtuales con algún sistema operativo libre tal como Linux o BSD. Si se quieren distribuciones que ocupen poco espacio con el objetivo principalmente de hacer pruebas se puede usar CoreOS (que sirve como soporte para Docker) GALPon Minino, hecha en Galicia para el mundo, Damn Small Linux, SliTaz (que cabe en 35 megas) y ttylinux (basado en línea de órdenes solo).<br />
+
+###### 2.2 Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.<br />
+
+**Ejercicio 3:**<br />
+**Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con**<br />
+
+**Ejercicio 4:**<br />
+**Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.**<br />
+
+**Ejercicio 5:**<br />
+**Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.**<br />
+
+**Ejercicio 6:**<br />
+**Usar juju para hacer el ejercicio anterior.**<br />
+
+**Ejercicio 7:**<br />
+**Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.**<br />
+
 
 
