@@ -88,8 +88,8 @@ Para finalizar, solo le damos a "Mostrar" y arrancará la instalación de nuestr
  - A) Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
 Lo que vamos a ahcer es descargarnos "Lubuntu" ya que es una distribución que tiene el entorno gráfico "LDXE", para ello usamos los siguientes comandos:
 
-    qemu-img create -f qcow2 Lubuntu-hdd.img 8G
-    qemu-system-x86_64 -hda lubuntu-hdd.img -cdrom ../media/sf_PRACTICAS/lubuntu-13.10-desktop-i386.iso -m 512M
+    `qemu-img create -f qcow2 Lubuntu-hdd.img 8G`
+    `qemu-system-x86_64 -hda lubuntu-hdd.img -cdrom ../media/sf_PRACTICAS/lubuntu-13.10-desktop-i386.iso -m 512M`
     
     
 [Ver 1](https://www.dropbox.com/s/t9yq1x7qwfa44da/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2017.56.56.png?dl=0)
@@ -139,8 +139,56 @@ Ya por último vamos a proceder a arrancar y conectarnos a nuestra máquina virt
 * [+]Ejercicio 5
  - A) Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
 
+Uso una máquina virtual de ubuntu server ya crea en la práctica anterior. POr lo que debemos de abrir virtualBox y arrancamos la máquina:
+
+[Ver](https://www.dropbox.com/s/kqvkj62tm9yzneg/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2011.02.09.png?dl=0)
+
+Ahora abrimos la terminal he instalamos "nginx" en caso de que no lo tengamos instalado, para ello usamos el siguiente comando:
+
+    sudo apt-get install nginx
+
+[Ver 1](https://www.dropbox.com/s/gwm9b985qbd0suu/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2011.05.55.png?dl=0)
+
+[Ver 2](https://www.dropbox.com/s/a90awh5wljd64z6/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2011.06.46.png?dl=0)
+
+Una vez instalado "nginx" tenemos que reiniciar el servicio con el siguiente comando:
+
+    sudo service nginx restart
+
+[Ver](https://www.dropbox.com/s/9ndg8i3ylh6h32p/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2011.08.08.png?dl=0)
+
+Ahora comprobamos la ip local que tenemos en nuestra máquina con:
+
+    ifconfig
+
+También podemos editars el fichero de configuración que se encuentra en:
+
+    /etc/nginx.confd/default.conf:
+
+Por último nos vamos a nuestro navegador y ponemos nuestra ip o "localhost", y se nos mostraría la página "index" de "Nginx".
+
+[Ver](https://www.dropbox.com/s/504z8iap8ba7wmr/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2011.28.48.png?dl=0)
+
 * [+]Ejercicio 6
  - A) Usar juju para hacer el ejercicio anterior.
 
 * [+]Ejercicio 7
  - A) Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
+
+El primer paso que debemos de dar es instala los paquetes que necesitamos con:
+
+    apt-get install ubuntu-vm-builder kvm virt-manager
+
+[Ver 1](https://www.dropbox.com/s/p6mil0qsh2o1qrf/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2011.40.47.png?dl=0)
+
+[Ver 2](https://www.dropbox.com/s/ocgb2o328xonilu/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2011.43.32.png?dl=0)
+
+Lo siguiente será decir la distribución, destino, nombre, etc, mediante el siguiente comando:
+
+    vmbuilder kvm ubuntu --suite precise --flavour server -o --dest ~/home --hostname walker --domain walker 
+
+[Ver](https://www.dropbox.com/s/4qeu6sxpus1t0ao/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2011.46.47.png?dl=0)
+
+El último paso que debemos de dar, es crear una máquina virtiual con VirtualBox, siguiendo los pasos como explico en el "Ejercico 2 B)", pero a la hora de seleccionar el disco seleccionamos este que hemos creado en este ejercicio. Le damos a la opción de " Seleccionar un archivo de disco virtual..."
+
+[Ver](https://www.dropbox.com/s/31eyxdaenrx8iss/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2011.50.10.png?dl=0)
