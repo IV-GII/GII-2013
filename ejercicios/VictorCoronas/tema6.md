@@ -84,6 +84,58 @@ Para finalizar, solo le damos a "Mostrar" y arrancará la instalación de nuestr
 * [+]Ejercicio 3
  - A) Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con "qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img"
 
+El primer paso que debemos de dar es usar un benchmark escrito en "c++" que he usado de un de un compañero de la asignatura "ISE de tercero". 
+
+```
+   #include <iostream>
+   #include <cmath>
+   
+   using namespace std;
+
+   void proceso(void) {
+   
+       unsigned int i=0;
+       unsigned int j=0;
+       unsigned int k=0;
+   
+       for(i=0; i<10000; i++){
+           for(j=0; j<10000; j++){
+               k*=13; k/=11;
+           }
+       }
+   }
+   
+   int main(int argc, char **argv) {
+   
+       double inicio, fin;
+   
+       inicio = clock();
+       proceso();
+       fin = clock();
+   
+       double resultado = fin - inicio;
+       cout << "El tiempo es: " << resultado << endl;
+   
+       return 0;
+   }
+   ````
+
+Para ello vamos a usar dos sistemas iguales pero en diferentes sistemas:
+
+El primero será en "qemu" con un ubuntu server:
+
+Da un tiempo de 774934
+
+[Ver](https://www.dropbox.com/s/4jg6iz561owexhg/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2012.08.29.png?dl=0)
+
+El segundo será en "VirtualBox" con un ubuntu server:
+
+Da un tiempo de 717254
+
+[Ver](https://www.dropbox.com/s/6dgqu6kkjto0mcb/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2012.20.33.png?dl=0)
+
+Segun los datos obtenidos con el benchmark el sistema que da mejores resultados seria el que corre en "VirtualBox".
+
 * [+]Ejercicio 4
  - A) Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
 Lo que vamos a ahcer es descargarnos "Lubuntu" ya que es una distribución que tiene el entorno gráfico "LDXE", para ello usamos los siguientes comandos:
