@@ -158,3 +158,19 @@ Usamos la opción -curses porque daba un error de SDL.
 `qemu-system-x86_64 -curses -hda cow-file2.qcow2 -cdrom slitaz-4.0.iso `
 
 ![Imgur](http://i.imgur.com/o5w2Epg.png)
+
+### Con VirtualBox
+
+Descargamos la imagen, creamos una nueva maquina virtual.
+
+![Imgur](http://i.imgur.com/ZExZzth.png)
+
+Asignamos memoria RAM a la maquina virtual y creamos un disco duro virtual.
+
+Al iniciarla le damos la ruta donde tenemos la imagen descargada.
+
+![Imgur](http://i.imgur.com/WatqSwp.png)
+
+Se inicia e instalamos normalmente.
+
+
