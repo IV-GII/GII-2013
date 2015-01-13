@@ -66,7 +66,7 @@ El primero que vamos a hacer es con "ttyLinux":
     `qemu-system-x86_64 -hda ./ttylinux-hdd.img -cdrom ttylinux-pc_x86_64-16.1.iso`
 [Ver](https://www.dropbox.com/s/7rqxs7h9m7ccrav/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2017.31.39.png?dl=0)
 
- - B) Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.
+ B) Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.
 
 Yo voy a usar "VirtualBox" que es el hipervisor que tengo instalado.
 [Ver](https://www.dropbox.com/s/kry3gcb7917hehg/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2017.33.28.png?dl=0)
