@@ -16,7 +16,7 @@ Si el resultado es igual a "0" es que no lo soporta, en mi caso es asi ya que lo
 
 Si nos saliese un número ">0", eso siginifica que lo soporta.
 
-Otra alternativa para comprovas es usar "kmv-ok", que te daría información [ver](https://www.dropbox.com/s/o582nhc43dt5r39/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2013.08.29.png?dl=0).
+Otra alternativa para comprobar, es usar "kmv-ok", que te daría información [ver](https://www.dropbox.com/s/o582nhc43dt5r39/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2013.08.29.png?dl=0).
 
 Para saber más informacion sobre los resultados y demás [ver enlace](https://help.ubuntu.com/community/KVM/Installation).
 
@@ -25,7 +25,6 @@ El segundo paso sería proceder a instalar los paquetes necesarios para poder us
     sudo apt-get install qemu-kvm qemu-system libvirt-bin virtinst virt-manager
 
 [Ver instalción](https://www.dropbox.com/s/stznyxi0dhihaay/Captura%20de%20pantalla%202015-01-12%20a%20la%28s%29%2013.17.18.png?dl=0)
-
 
 * [+]Ejercicio 2
  - A) Crear varias máquinas virtuales con algún sistema operativo libre tal como Linux o BSD.
@@ -223,6 +222,57 @@ Por último nos vamos a nuestro navegador y ponemos nuestra ip o "localhost", y 
 
 * [+]Ejercicio 6
  - A) Usar juju para hacer el ejercicio anterior.
+
+El primer paso que tenemos que dar es iniciar "juju" con el siguiente comando:
+
+    juju init
+
+El segundo paso es crear el certificado para que lo use "juju", esto se hace de la siguiente manera:
+
+    openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout azure.pem -out azure.pem
+    openssl x509 -inform pem -in azure.pem -outform der -out azure.cer
+    chmod 600 azure.pem
+
+El siguiente paso después de tener el certificado es, editar el archivo "environments.yaml", en el cual tenemos que buscar:
+
+ - "management-subscription-id", se conoce con el comando:
+
+    `azure account list`
+
+ - "storage-account-name", se conoce con el comado:
+
+    `azure storage account list`
+
+Una vez realizado estos pasos, tenemos que subir el certificado, nos vamos a "configuración", después en la zona de "Certificados de administración", le damos al botón de "Cargar" y buscamos el archivo "azure.cer" que habiamos creado.
+
+[Ver 1](https://www.dropbox.com/s/35b48lib5jtsw86/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2016.25.47.png?dl=0)
+
+[Ver 2](https://www.dropbox.com/s/p33nybqdfiopdp8/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2016.26.33.png?dl=0)
+
+[Ver 3](https://www.dropbox.com/s/hkjb7uiie4o2v66/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2016.27.49.png?dl=0)
+
+Una vez tengamos ya el certificado y los pasos anteriores completados, vamos a crear un taper para instalar los servicios dentro de el:
+
+    juju switch azure
+    juju bootstrap
+    juju deploy --to 0 juju-gui
+    juju expose juju-gui
+
+Nos tenemos que meter en la web que nos ofrece:
+
+    juju status
+
+[Ver](https://www.dropbox.com/s/5an4ca679quf7er/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2016.36.57.png?dl=0)
+
+La contraseña para acceder como el usuario "user-admin" es el valor de "admin-secret" en el archivo de configuración "environments.yaml".
+
+[Ver](https://www.dropbox.com/s/zcc5xeqleo47ipp/Captura%20de%20pantalla%202015-01-13%20a%20la%28s%29%2016.38.30.png?dl=0)
+
+He usado dos fuentes para realizar este ejercicio:
+
+[Enlace 1](https://juju.ubuntu.com/docs/config-azure.html)
+
+[Enlace 2](http://eithel-inside.blogspot.com.es/2014/06/instalando-juju-para-orquestrar-nuestra.html)
 
 * [+]Ejercicio 7
  - A) Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
