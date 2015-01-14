@@ -68,14 +68,7 @@ Y creamos un archivo para trabajar con el con `dd if=/dev/urandom of=ficheroprue
 ![imagen](http://i.imgur.com/dtNPXf9.png) 
 
 
-Resultados:
-26s	769.23 MB/s
-43s	465.11
-64s	312.50	
-43s	465.11
-71s	281.69
-70s	285.71
-41s	487.80
+
 
 |            | Tiempo (s) | Velocidad   [ MB/s]  | 
 | ---------- | :--------: | :------------------: | 
@@ -136,5 +129,45 @@ Vemos que no se abre nada, vemos la dirección de interfaz que tenemos que usar 
 
 Para poder conectarnos tenemos que especificar una redirección del puerto de la máquina anfitriona a un puerto de la máquina virtual:
 `qemu-system-x86_64 -boot order=c -drive file=discolxde.qcow2,if=virtio -m 512M -name debian -redir tcp:4664::22` y conectamos con `ssh -p 4664 localhost`
+
+
+
+##Ejercicio 5
+###Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
+
+Ejecutamos `azure vm image list | grep Ubuntu` para listar la máquinas virtuales que hay disponibles, mostrando las que tienen "Ubuntu" para facilitar nuestra búsqueda.
+
+Una vez listadas escogemos la versión 
+" b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu_DAILY_BUILD-trusty-14_04_1-LTS-amd64-server-20150113.1-en-us-30GB ", la versión de 14-04-1 (LTS) más actualizada.
+
+
+y la creamos con  `azure vm create jcristobal b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu_DAILY_BUILD-trusty-14_04_1-LTS-amd64-server-20150113.1-en-us-30GB jcristobal  (micontraseña) --location "West Europe" --ssh` con jcristobal como usuario y nombre, y  (micontraaseña) será la contraseña (debe conetener minúsculas, mayúsculas, números y caractéres especiales)
+
+
+Máquina recién creada y comprado listando las máquinas:
+![imagen](http://i.imgur.com/WoKJpoP.png) 
+
+
+La arrancamos con `azure vm start jcristobal` y nos conectamos con `ssh jcristobal@jcristobal.cloudapp.net`
+
+![imagen](http://i.imgur.com/3E9mMFn.png) 
+
+
+Una vez dentro instalamos nginx con `sudo apt-get install nginx`
+
+[Lo comprobamos con `service nginx status`](http://i.imgur.com/lldr7Av.png) 
+
+
+El servidor ya está funcionando, pero no estará accesible hasta que indiquemos un "endpoint" a la máquina virtual, así que lo creamos al puerto 80: `azure vm endpoint create -n http jcristobal 80 80` (lo comprobamos con `azure vm endpoint list jcristobal`)
+
+![imagen](http://i.imgur.com/j99Rprq.png) 
+
+
+Y nuestra web ya está creada: http://jcristobal.cloudapp.net/
+
+![imagen](http://i.imgur.com/H5rX8Uw.png)
+
+
+
 
 
