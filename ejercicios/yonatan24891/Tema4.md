@@ -237,10 +237,10 @@ RUN apt-get install python-pymongo -y
 RUN apt-get install python-tweepy -y
 ```
 
-Creamos la imagen
+Constriumos la imagen
 
-# docker build -t yonatan24891/ubuntu_dai .
-```
+`docker build -t yonatan24891/ubuntu_dai`
+
 
 
 
