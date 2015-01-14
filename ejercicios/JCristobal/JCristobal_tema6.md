@@ -168,6 +168,57 @@ Y nuestra web ya está creada: http://jcristobal.cloudapp.net/
 ![imagen](http://i.imgur.com/H5rX8Uw.png)
 
 
+##Ejercicio 6
+###Usar juju para hacer el ejercicio anterior.
+
+
+
+Creamos un certificado con los comandos:
+`openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout azure.pem -out azure.pem`
+`openssl x509 -inform pem -in azure.pem -outform der -out azure.cer`
+`chmod 600 azure.pem`
+
+
+Ahora en el la pestaña de [Configuración del dashboard de Azure](https://manage.windowsazure.com/@MicrosoftAzurePass.onmicrosoft.com#Workspaces/AdminTasks/ListManagementCertificates) cargamos nuestro azure.cer
+
+![imagen](http://i.imgur.com/wcv7mhT.png)
+
+
+Ahora en environments.yaml (en /home/jcristobal/.juju) configuraremos algúnos parámetros de Azure:
+
+* Location ahora será West Europe
+* management-subscription-id será el campo id consultándolo de `azure account list`
+* management-certificate-path la ruta hacia nuestro azure.pem
+* storage-account-name una id que podemos consultar en `azure storage account list`
+* Y añadiendo "availability-sets-enabled: false"
+
+
+Guardamos el fichero y ejecutamos:
+
+```
+sudo juju switch azure
+sudo juju bootstrap
+sudo juju deploy --to 0 juju-gui
+sudo juju expose juju-gui
+```
+
+y `sudo juju status` para ver su estado:
+
+![imagen](http://i.imgur.com/6fM7NEh.png)
+
+Y accedemos la dirección que nos indican: juju-azure-duk5z7rrds.cloudapp.net
+
+![imagen](http://i.imgur.com/nV4URuo.png)
+
+La contraseña está en ~/.juju/environments/azure.jenv como nos indican en la página.
+
+
+Y una vez dentro podemos instalar nginx en el apartado de la izquierda: lo buscamos y lo agregamos:
+
+![imagen](http://i.imgur.com/lE0jXUh.png)
+
+
+[Información sobre la máquina](http://i.imgur.com/jnxIq4d.png)
 
 
 

@@ -187,19 +187,19 @@
 
 ##Objetivos de sesión 26
 
-* [] Entender el concepto de provisionamiento de máquinas virtuales.
+* [x] Entender el concepto de provisionamiento de máquinas virtuales.
 * [] Usar Chef para provisionamiento de una máquina virtual.
-* [] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+* [x] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
 
-* [] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* [x] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
 * [x] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
 
 ##Objetivos de sesión 27
 
-* [] Entender el último hito del proyecto.
+* [x] Entender el último hito del proyecto.
 * [] Usar diversas herramientas para provisionamiento de una máquina virtual.
 
-* [] Aprender a usar máquinas virtuales.
+* [x] Aprender a usar máquinas virtuales.
 * [] Elegir un sistema de provisionamiento.
 * [] Entender los objetivos del último proyecto (y de la asignatura).
 
