@@ -154,11 +154,6 @@ Como se puede ver en las siguientes capturas xfs es un poco más rápido que btr
 ![4_5.png](./capturas/t5/4_5.png)
 
 
-
-
-
-
-
 -----
 
 Ejercicio 5
@@ -170,4 +165,112 @@ Para instalarlo he usado el siguiente comando:
 ```bash
 sudo apt-get install ceph-mds
 ```
+
+
+-----
+
+Ejercicio 6
+-----------
+
+**Crear un dispositivo ceph usando BTRFS o XFS.**
+
+Voy a seguir los pasos que indica el [guión](http://jj.github.io/IV/documentos/temas/Almacenamiento) de teoria.
+Lo primero  que voy a hacer es instalar los paquetes que voy a necesitar:
+```bash
+sudo apt-get install ceph-mds
+```
+Ahora creo los directorios necesarios y el fichero de configuración:
+```bash
+# Crea directorios.
+mkdir -p /srv/ceph/{osd,mon,mds}
+
+# Genero el fichero de configuración en /etc/ceph/ceph.conf
+sudo nano /etc/ceph/ceph.conf
+```
+Añado lo siguiente al fichero de configuración:
+```bash
+[global]
+log file = /var/log/ceph/$name.log
+pid file = /var/run/ceph/$name.pid
+[mon]
+mon data = /srv/ceph/mon/$name
+[mon.mio]
+host = santiago-PC
+mon addr = 127.0.0.1:6789
+[mds]
+[mds.mio]
+host = santiago-PC
+[osd]
+osd data = /srv/ceph/osd/$name
+osd journal = /srv/ceph/osd/$name/journal
+osd journal size = 1000 ; journal size, in megabytes
+[osd.0]
+host = santiago-PC
+devs = /dev/loop0
+```
+Creo la imagen:
+```bash
+qemu-img create -f raw ceph.img 200M
+sudo losetup -v -f ceph.img
+sudo mkfs.xfs /dev/loop0
+```
+Y el directorio para usar el sistema de objetos:
+```bash
+ sudo mkdir /srv/ceph/osd/osd.0
+ sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf 
+ ```
+![6_1.png](./capturas/t5/6_1.png)
+Ahora inicio el servicio con:
+```bash
+sudo /etc/init.d/ceph -a start
+
+# Compruebo como ha ido.
+sudo ceph -s
+```
+![6_2.png](./capturas/t5/6_2.png)
+Ahora ya puedo montar:
+```bash
+sudo mkdir /mnt/ceph
+sudo mount -t ceph santiago-PC:/ /mnt/ceph
+```
+
+
+-----
+
+Ejercicio 7
+-----------
+
+**Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.**
+
+Usando rados.
+
+Primero creo pool:
+```bash
+sudo rados mkpool pool
+```
+Añado el fichero a pool:
+```bash
+sudo rados put -p pool obj Santi
+```
+
+
+-----
+
+Ejercicio 8
+-----------
+
+**Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente.**
+
+Para la realización de este ejercicio, voy a usar la cuenta de prueba de Azure que pedimos para el proyecto [Virtual Vulcano](https://github.com/ernestoalejo/virtual-vulcano) y voy a seguir la [documentación](http://azure.microsoft.com/en-us/documentation/articles/xplat-cli/) de la pagina oficial para la configuración.
+```bash
+# Instalo con npm el azure-cli: 
+sudo npm install azure-cli -g
+
+# Descargo el fichero de configuración
+azure account import
+
+# Ahora importo la configuracion
+azure account import [Fichero descargado con azure account import]
+```
+![8_1.png](./capturas/t5/8_1.png)
 
