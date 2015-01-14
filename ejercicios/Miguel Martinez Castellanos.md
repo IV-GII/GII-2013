@@ -212,4 +212,123 @@ y finalmente lo lanzamos y comprobamos el host local.
 
 ##Ejercicio 6
 **Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar**
+
 #TEMA 4
+
+##Ejercicio 1
+**Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.**
+
+Instalamos lxc desde los repositorios
+
+```sh
+sudo apt-get install lxc lxctl lxc-templates
+```
+
+una vez instalado comprobamos que esta todo preparado para comenzar a trabajar con el.
+
+![imagen_4.1]()
+
+Una vez comprobado que todos los componentes estan en estado "enabled" podemos trabajar con lxc.
+
+Creamos un contenedor.
+
+```sh
+sudo lxc-create -t ubuntu -n una-caja
+```
+una vez crear la iniciamos y nos conectamos a el.
+
+```sh
+sudo lxc-start -n una-caja
+```
+![imagen_4.2]()
+
+##Ejercicio 2
+**Comprobar qué interfaces puente se han creado y explicarlos.**
+
+Para comprobar que se han creado correctamente los interfacez puente accedo al fichero "config" en la siguiente ruta:
+```sh
+/var/lib/lxc/una-caja/config
+```
+![imagen_4.3]()
+
+Aqui podemos ver que los puentes se han creado correctamente y comprobamos que esta en funcionamiento.
+![imagen_4.4]()
+
+##Ejercicio 3.1
+**Crear y ejecutar un contenedor basado en Debian.**
+Realizamos los mismos pasos que hicimos para crear un contenedor en ubuntu.
+![imagen_4.5]()
+##Ejercicio 3.2
+**Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue. **
+![imagen_4.6]()
+##Ejercicio 4.1
+**Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.**
+
+Procedo a instalar lxc-webpanel para facilitarnos todo el trabajo sobre el control de las maquimas virtuales instaladas
+```sh
+wget http://lxc-webpanel.github.io/tools/install.sh
+chmod +x install.sh
+sudo ./install.sh
+```
+![imagen_4.7]()
+
+
+##Ejercicio 4.2
+**Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.**
+
+Para poder modificar los recursos de alguna de nuestras distribuciones primero deberan estas totalmente paradas y pinchando en ellas obtendremos otro panel con los parametros que se pueden modificar.
+![imagen_4.8]()
+
+
+##Ejercicio 5
+**Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.**
+
+##Ejercicio 6.1
+**Instalar juju.**
+Para proceder con la instalacion de juju primero he añadido el repositorio para su instalacion.
+```sh
+sudo add-apt-repository ppa:juju/stable
+```
+y acontinuacion realizamos la instalacion.
+
+![imagen_4.9]()
+
+
+
+##Ejercicio 6.2
+**Usándolo, instalar MySQL en un táper. **
+
+##Ejercicico 7.1
+**Destruir toda la configuración creada anteriormente**
+
+##Ejercicio 7.2
+**Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.**
+
+##Ejercicio 7.3
+**Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.**
+
+##Ejercicio 8
+**Instalar libvirt. Te puede ayudar esta guía para Ubuntu. **
+
+##Ejercicio 9
+**Instalar un contenedor usando virt-install.**
+
+##Ejercicio 10
+**Instalar docker.**
+
+##Ejercicio 11.1
+**Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.**
+
+##Ejercicio 11.2
+**Buscar e instalar una imagen que incluya MongoDB.**
+
+##Ejercicio 12
+**Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.**
+
+##Ejercicio 13
+**Crear a partir del contenedor anterior una imagen persistente con commit. **
+
+##Ejercicio 14
+**Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección. **
+
+#TEMA 5
