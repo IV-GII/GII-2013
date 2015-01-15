@@ -226,7 +226,7 @@ sudo apt-get install lxc lxctl lxc-templates
 
 una vez instalado comprobamos que esta todo preparado para comenzar a trabajar con el.
 
-![imagen_4.1]()
+![imagen_4.1](http://i.imgur.com/0nvM6vs.png)
 
 Una vez comprobado que todos los componentes estan en estado "enabled" podemos trabajar con lxc.
 
@@ -240,7 +240,7 @@ una vez crear la iniciamos y nos conectamos a el.
 ```sh
 sudo lxc-start -n una-caja
 ```
-![imagen_4.2]()
+![imagen_4.2](http://i.imgur.com/m1P6t5h.png)
 
 ##Ejercicio 2
 **Comprobar qué interfaces puente se han creado y explicarlos.**
@@ -249,18 +249,18 @@ Para comprobar que se han creado correctamente los interfacez puente accedo al f
 ```sh
 /var/lib/lxc/una-caja/config
 ```
-![imagen_4.3]()
+![imagen_4.3](http://i.imgur.com/QBnCwgu.png)
 
 Aqui podemos ver que los puentes se han creado correctamente y comprobamos que esta en funcionamiento.
-![imagen_4.4]()
+![imagen_4.4](http://i.imgur.com/vc3OaGY.png)
 
 ##Ejercicio 3.1
 **Crear y ejecutar un contenedor basado en Debian.**
 Realizamos los mismos pasos que hicimos para crear un contenedor en ubuntu.
-![imagen_4.5]()
+![imagen_4.5](http://i.imgur.com/FXXGeR5.png)
 ##Ejercicio 3.2
 **Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue. **
-![imagen_4.6]()
+![imagen_4.6](http://i.imgur.com/vE2OpuS.png)
 ##Ejercicio 4.1
 **Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.**
 
@@ -270,14 +270,14 @@ wget http://lxc-webpanel.github.io/tools/install.sh
 chmod +x install.sh
 sudo ./install.sh
 ```
-![imagen_4.7]()
+![imagen_4.7](http://i.imgur.com/5CJJIsR.png)
 
 
 ##Ejercicio 4.2
 **Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.**
 
 Para poder modificar los recursos de alguna de nuestras distribuciones primero deberan estas totalmente paradas y pinchando en ellas obtendremos otro panel con los parametros que se pueden modificar.
-![imagen_4.8]()
+![imagen_4.8](http://i.imgur.com/FuUQbUJ.png)
 
 
 ##Ejercicio 5
@@ -291,7 +291,7 @@ sudo add-apt-repository ppa:juju/stable
 ```
 y acontinuacion realizamos la instalacion.
 
-![imagen_4.9]()
+![imagen_4.10](http://i.imgur.com/CzaCszf.png)
 
 
 
@@ -309,21 +309,75 @@ y acontinuacion realizamos la instalacion.
 
 ##Ejercicio 8
 **Instalar libvirt. Te puede ayudar esta guía para Ubuntu. **
+Antes de procede a trabajar con libvirt debemos comprobar que nuestro equipo hardware es compatible con las extensiones de virtualización necesarias para KVM.
+
+Para ellos realizamos la comprobacion y nos damos cuenta de que nuestra CPU no soporta al virtualizacion:
+![imagen_4.13](http://i.imgur.com/84S7Rzu.png)
+
+Buscamos varias soluciones para poder realizar la virtualizacion en nuestro equipo pero las soluciones encontradas no se pueden realizar en nuestro equipo debio a la antiguedad del mismo.
+
+Igualmente procedo a la instalacion de libvirt.
+```sh
+sudo apt-get install kvm libvirt-bin
+```
+y con la orden virsh se abrira la terminal de trabajo en linea de comandos.
+![imagen_4.14](http://i.imgur.com/ehHmsSf.png)
+
 
 ##Ejercicio 9
 **Instalar un contenedor usando virt-install.**
 
 ##Ejercicio 10
 **Instalar docker.**
+Realizamos la instalacion tal y como nos indica la misma pagina de [docker](http://docs.docker.com/installation/ubuntulinux/).
 
+En primer lugar hemos tenido que añadir la clave repositorio Docker a una biblioteca de claves.
+con: 
+```sh
+$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+```
+una vez echo esto añadimos el repositorio 
+![imagen_4.15](http://i.imgur.com/t6cuGXX.png)
+y realizamos seguidamente:
+
+```sh
+sudo apt-get update
+sudo apt-get install lxc-docker
+```
+Para comprobar que funciona correctamente lo iniciamos.
+
+![imagen_4.16](http://i.imgur.com/xzyRxTv.png)
 ##Ejercicio 11.1
 **Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.**
+Si queremos instalar una imagen a partir de docker introduciremos el siguiente codigo:
 
+En este caso usaremos la imagen de la distribucion de centos.
+ ```sh
+ sudo docker pull centos
+ ```
+ ![imagen_4.17](http://i.imgur.com/IdYa5Fx.png)
+ 
+ Comprobandola de la siguiente forma:
+ ![imagen_4.18](http://i.imgur.com/CPO04wz.png)
+ 
+ Esta sentencia nos vendra bien si por cualquier caso si darnos cuenta creamos varias imagenes y necesitamos [eliminarlas](http://rm-rf.es/como-instalar-configurar-usar-docker-linux-containers/):
+ ```sh
+ sudo docker rmi ID_IMAGE
+ ```
 ##Ejercicio 11.2
 **Buscar e instalar una imagen que incluya MongoDB.**
+Buscando la imagen para docker en la que incluya MongoDB, encontre la sentencia que me instala la imagen de mongo.
+```sh
+sudo docker pull mongo
+```
+![imagen_4.19](http://i.imgur.com/iNPq0rV.png)
 
 ##Ejercicio 12
 **Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.**
+En primer lugar iniciamos con docker el contenedor de ubuntu.
+Para instalar nginx necesitamos crear un usuario que valide los parametros y despues cambiamos de usuario para poder instalar dicho paquete en su sesion como muestro en la imagen
+
+![imagen_4.20](http://i.imgur.com/ceHnryY.png)
 
 ##Ejercicio 13
 **Crear a partir del contenedor anterior una imagen persistente con commit. **
