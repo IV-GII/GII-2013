@@ -196,3 +196,15 @@ Creamos el disco con
 Si abrimos otra terminal podemos comprobar que el servidor vnc está en uso por la maquina que hemos creado.
 
 ![Imgur](http://i.imgur.com/s9ozwIA.png)
+
+## Tema 7 Gestión de configuraciones
+
+### Ejercicio 1
+
+Instalamos con
+
+`wget  https://www.opscode.com/chef/install.sh `
+`sudo bash install.sh `
+
+![Imgur](http://i.imgur.com/TcjClcS.png)
+
