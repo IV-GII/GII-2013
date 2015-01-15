@@ -240,6 +240,7 @@ una vez crear la iniciamos y nos conectamos a el.
 ```sh
 sudo lxc-start -n una-caja
 ```
+Introduciendo como login: ubuntu y como pass: ubuntu
 ![imagen_4.2](http://i.imgur.com/m1P6t5h.png)
 
 ##Ejercicio 2
@@ -257,7 +258,12 @@ Aqui podemos ver que los puentes se han creado correctamente y comprobamos que e
 ##Ejercicio 3.1
 **Crear y ejecutar un contenedor basado en Debian.**
 Realizamos los mismos pasos que hicimos para crear un contenedor en ubuntu.
+
+Pero en este caso el usuario y contraseña cambian 
+login: root
+pass:root
 ![imagen_4.5](http://i.imgur.com/FXXGeR5.png)
+
 ##Ejercicio 3.2
 **Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue. **
 ![imagen_4.6](http://i.imgur.com/vE2OpuS.png)
