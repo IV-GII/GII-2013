@@ -172,6 +172,14 @@ Al iniciarla le damos la ruta donde tenemos la imagen descargada.
 ![Imgur](http://i.imgur.com/WatqSwp.png)
 
 Se inicia e instalamos normalmente.
+### Ejercicio 3
+Creamos un script, le damos permisos.
+
+![Imgur](http://i.imgur.com/IShCBpd.png)
+
+Ejecutamos y comprobamos el tiempo.
+
+![Imgur](http://i.imgur.com/julvRkx.png)
 
 ### Ejercicio 4
 
