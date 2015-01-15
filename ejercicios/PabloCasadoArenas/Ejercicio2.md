@@ -208,3 +208,18 @@ Instalamos con
 
 ![Imgur](http://i.imgur.com/TcjClcS.png)
 
+### Ejercicio 2
+
+Ejecutando cheff:
+
+![Imgur](http://i.imgur.com/h3esBIb.png)
+
+Como ya habia comprobado antes que la receta funcionaba (y tengo vim instalado) el fichero y el directorio no los crea ni instala vim, pero si instala nginx.
+
+Ficheros de configuración:
+
+![Imgur](http://i.imgur.com/vEdLlbX.png)
+
+![Imgur](http://i.imgur.com/uQX20O2.png)
+
+![Imgur](http://i.imgur.com/wzrk9hx.png)
