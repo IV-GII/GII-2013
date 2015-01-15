@@ -375,7 +375,7 @@ Vamos a comprobar las interfaces que se han creado. En éste caso podemos ver qu
 	
 	> sudo add-apt-repository ppa:juju/stable
 	
-	Como nuestra versión de Ubuntu supera la 12.04 debemos ejecutar:
+Como nuestra versión de Ubuntu supera la 12.04 debemos ejecutar:
 
 	> sudo apt-get install juju-local
 	
@@ -476,3 +476,23 @@ Ahora vamos a instalar docker, como ya lo teníamos instalado de prácticas ante
 
 ![Ejercicio11_2](http://i.imgur.com/v7plLEP.png)
 
+#Ejercicio 12
+
+Vamos a crear un usuario e instalar nginx en uno de los contenedores que hemos creado anteriormente.
+Primero accederemos al contenedor Ubuntu y crearemos un nuevo usuario.
+
+	> sudo docker run -i -t ubuntu /bin/bash
+	
+![Ejercicio12_1](http://i.imgur.com/7xrAP6D.png)
+
+A continuación (dentro del contenedor) instalaremos nginx.
+
+	> sudo apt-get update
+	> sudo apt-get install nginx
+
+![Ejercicio12_2](http://i.imgur.com/skZAnI4.png)
+
+Como podemos ver, el servicio se está ejecutando lo que nos confirma que la instalación se ha realizado correctamente.
+
+
+## Tema 5
