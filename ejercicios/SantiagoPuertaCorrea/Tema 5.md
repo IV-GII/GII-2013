@@ -267,10 +267,42 @@ Para la realización de este ejercicio, voy a usar la cuenta de prueba de Azure 
 sudo npm install azure-cli -g
 
 # Descargo el fichero de configuración
-azure account import
+azure account download
 
 # Ahora importo la configuracion
 azure account import [Fichero descargado con azure account import]
 ```
 ![8_1.png](./capturas/t5/8_1.png)
 
+
+-----
+
+Ejercicio 9
+-----------
+
+**Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.**
+
+Creo una cuenta de almacenamiento y obtengo las claves:
+```bash
+# Cuenta de almacenamiento
+azure storage account create santi
+
+# Lista las claves de la cuenta una primaria y una secundaria.
+azure storage account keys list santi
+```
+Estas claves se pueden copiar en las variables de entorno en .bashrc:
+```bash
+export AZURE_STORAGE_ACCOUNT=santi
+export  AZURE_STORAGE_ACCESS_KEY=key
+```
+Ahora creo los contenedores:
+```bash
+azure storage container create taper1 -p blob
+azure storage container create taper2 -p blob
+```
+![9_1.png](./capturas/t5/9_1.png)
+Ahora subo las capturas con el siguiente comando:
+```bash
+azure storage blob upload 9_1.jpg taper1 9_1.jpg
+```
+[Link a la captura](https://portalvhds015v8zkvtv47g.blob.core.windows.net/taper1/9_1.png)
