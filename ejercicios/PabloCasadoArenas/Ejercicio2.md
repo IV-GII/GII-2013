@@ -223,3 +223,11 @@ Ficheros de configuración:
 ![Imgur](http://i.imgur.com/uQX20O2.png)
 
 ![Imgur](http://i.imgur.com/wzrk9hx.png)
+
+### Ejercicio 3
+
+```
+uno:  dos
+tres: 
+  - [4,5,Seis, [Siete: 8, [nueve: [10, 11] ]] ]
+```
