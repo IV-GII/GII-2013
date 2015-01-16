@@ -97,6 +97,22 @@ De esta manera restringiremos los recursos a nuestro antojo.
 #Ejercicio 5#
 ##Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.##
 
+Vamos a proceder a comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. En mi caso haré uso del famoso *Apache Benchmark*. Pero para empezar a utilizar *Apache Benchmark* deberemos instalarlo tanto en la jaula como en el contenedor. Para ello, ejecutaremos el siguiente comando:
+
+<code>sudo apt-get install apache2-utils</code>
+
+Y ahora procederemos a ejecutar el siguiente comando en ambos lados:
+
+<code>ab -n 1000 -c 25 http://127.0.0.1/</code>
+
+RESULTADO CONTENEDOR:
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema4-57.png">
+
+RESULTADO JAULA:
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema4-58.png">
+
 #Ejercicio 6#
 ##1. Instalar juju.##
 
