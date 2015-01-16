@@ -1,4 +1,4 @@
-# TEMA 5: Virtualización ligera usando contenedores
+# Seminario: Ruby
 
 ## Ejercicio 1
 La heramienta más popular para instalar Ruby es RVM (“Ruby Version Manager”).
