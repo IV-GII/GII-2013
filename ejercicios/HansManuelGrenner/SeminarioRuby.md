@@ -88,6 +88,63 @@ end
 
 **Crear una serie de funciones instanciadas con un URL que devuelvan algún tipo de información sobre el mismo: fecha de última modificación, por ejemplo. Pista: esa información está en la cabecera HTTP que devuelve**
 
+Investigamos un poco acerca de la [librearía NET::HTTP](http://apidock.com/ruby/Net/HTTP), que nos será de utilidad para este ejercicio. Una vez conocidos los diferentes campos a los que podemos acceder a través del header HTTP de una página web podemos proceder a crear el programa en ruby.
+
+
+```ruby
+#!/usr/bin/ruby
+
+require 'net/http'
+
+# Creamos la clase Cabecera que incluye las diferentes funciones para acceder a los campos
+# de la cabecera de la página que le pasamos al inicializar la clase con la uri
+class Cabecera
+
+	def initialize(uri)
+		@response = Net::HTTP.get_response(uri, '/')     				
+	end
+
+	def direccion()
+		return @response['location'].to_s
+	end
+
+	def fecha()
+		return @response['date'].to_s
+	end
+
+	def tipo_contenido()
+		return @response['content-type'].to_s
+	end
+
+	def longitud_contenido()
+		return @response['content-length'].to_s
+	end
+
+	def servidor()
+		return @response['server'].to_s
+	end
+end	
+
+# Creamos el objeto para acceder a las funciones de la clase
+cabecera_test = Cabecera.new(ARGV[0])
+
+# Devolvemos los resultados
+puts "Direccion: " + cabecera_test.direccion()
+puts "Fecha: "+ cabecera_test.fecha()
+puts "Tipo de contenido: "+ cabecera_test.tipo_contenido()
+puts "Longitud del contenido: "+ cabecera_test.longitud_contenido()
+puts "Servidor: "+ cabecera_test.servidor()
+```
+![Figura3](Imagenes/ejRuby_4_1.png)
+> Figura 4. Resultado ejecución para obtener información de la cabecera de una url
+
+
 ## Ejercicio 5
 
 **Ver si está disponible Vagrant como una gema de Ruby e instalarla.**
+
+Para consultar si existen versiones disponibles usamos el comando ```gem search --remote vagrant```.
+
+Veremos una gran cantidad de versiones de vagrant para diferentes sistemas operativos. Podemos instalar alguna de ellas mediante ```sudo gem install <version_vagrant> ```.
+
+Sin embargo la propia recomendación de los creadores es acceder a su página web y desde ahí instalar la última versión, puesto que desde hace más de un año que no se actualiza su RubyGem.
