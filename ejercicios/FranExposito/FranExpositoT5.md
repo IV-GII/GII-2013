@@ -113,11 +113,11 @@ En primer lugar:
 ```
 mkdir -p /srv/ceph/{osd,mon,mds}
 ```  
-![t5ej6_a](imagenes/t5ej6_a.png)  
+![t5e6_a](imagenes/t5e6_a.png)  
 
 Después de crear los directorios necesarios crearemos el archivo de configuración:
 
-![t5ej6_b](imagenes/t5ej6_b.png)  
+![t5e6_b](imagenes/t5e6_b.png)  
 
 Ahora crearemos los ficheros necesarios:
 
