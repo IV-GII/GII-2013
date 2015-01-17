@@ -10,7 +10,7 @@
 
 Nos conectamos a ello con `ssh jcristobal@jcristobal.cloudapp.net`.
 
-Y dentro lo instalamos como nos indican en el guión, con `sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash`
+Y dentro lo instalamos como nos indican en el guión, con `sudo curl -L https://www.opscode.com/chef/install.sh | sudo bash` 
 
 
 ![imagen](http://i.imgur.com/ehjjAiH.png) 
@@ -19,7 +19,7 @@ Y dentro lo instalamos como nos indican en el guión, con `sudo curl -L https://
 ##Ejercicio 2
 ###Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual. 
 
-Para ello muestro los contenidos de solo.rb y node.json
+Crearé recetas con nginx, emacs y un directorio (iv). Para ello muestro los contenidos de mi solo.rb y node.json
 
 en el archivo solo.rb:
 
@@ -34,11 +34,11 @@ en node.json:
 ```
 {
 "iv": {
-"name" : "IV"
+   "name" : "IV"
 },
 "nginx": {
-"user" : "www-data",
-"port"	: "80"
+   "user" : "www-data",
+   "port"	: "80"
 },
 "run_list": [ "recipe[emacs]", "recipe[iv]", "recipe[nginx]" ]
 }
@@ -57,6 +57,7 @@ maintainer_email "tobas92@gmail.com"
 description "Instala nginx"
 version "1.0.0"
 name "nombrenginx"
+
 recipe "nginx", "Receta para instalar nginx"
 ```
 
@@ -75,5 +76,69 @@ Muestro la esctructura que se queda:
 ![imagen](http://i.imgur.com/tFveKn6.png) 
 
 y para acabar `sudo chef-solo -c solo.rb`
+
+Pero no se puede ejecutar con éxito en esta versión de Ubuntu, Chef no encuentra ningún paquete (en el siguiente pantallazo muestra nginx por ejemplo):
+
+![imagen](http://i.imgur.com/hu0qVB1.png) 
+
+
+Pruebo lo mismo en una versión anterior, [Ubuntu 12.04.5](http://releases.ubuntu.com/12.04/). Una vez dentro instalo chef y creo una receta, pero obtengo el mismo fallo.
+
+
+##Ejercicio 3
+###Escribir en YAML la siguiente estructura de datos en JSON
+
+{ uno: "dos", tres: [ 4, 5, "Seis", { siete: 8, nueve: [ 10, 11 ] } ] }
+
+En YAML:
+
+```
+
+---
+- uno: "dos"
+  tres:
+    - 4
+    - 5
+    - "Seis"
+    -
+      - siete: 8
+        nueve: 
+          - 10
+          - 11
+
+```
+
+##Ejercicio 4 
+### Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.
+
+Lo instalamos como aplicación normal: primero tenemos que añadir su repositorio correspondiente: ejecutamos `sudo add-apt-repository ppa:rquillo/ansible`
+
+Actualizamos paquetes e intalamos: `sudo apt-get install ansible`
+
+Creamos un fichero (en la máquina anfitriona) para especificar las máquinas controladas por la máquina anfitriona, indicando la dirección de la máquina. Será ansible_host y simplemente contendrá:
+
+```
+[azure]
+jcristobal.cloudapp.net
+```
+
+
+E indico el nuevo valor de variable de la ruta a este archivo: `export ANSIBLE_HOSTS=~/ansible_hosts`
+
+Y lo podemos comprobar con `ansible azure -u jcristobal -m ping --ask-pass`
+
+![imagen](http://i.imgur.com/PfkbZX9.png) 
+
+Y desde local desplegamos la [aplicación](https://github.com/JCristobal/practicas3-4-DAI) con ansible:
+`ansible azure -u jcristobal -m git -a "repo=https://github.com/JCristobal/practicas3-4-DAI.git dest=~/practicas3-4-DAI version=HEAD" --ask-pass`
+
+![imagen](http://i.imgur.com/oShNyIM.png) 
+
+Y lo comprobamos:
+
+![imagen](http://i.imgur.com/Ygq64PG.png) 
+
+
+
 
 

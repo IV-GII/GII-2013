@@ -197,7 +197,7 @@
 ##Objetivos de sesión 27
 
 * [x] Entender el último hito del proyecto.
-* [] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [x] Usar diversas herramientas para provisionamiento de una máquina virtual.
 
 * [x] Aprender a usar máquinas virtuales.
 * [] Elegir un sistema de provisionamiento.
