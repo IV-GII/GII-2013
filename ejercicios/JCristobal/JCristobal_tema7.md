@@ -140,5 +140,56 @@ Y lo comprobamos:
 
 
 
+##Ejercicio 5
+###Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.
+
+Crearé un playbook (despliegue.yml) instalando Python (y varios módulos, además de MongoDB como base de datos). Además trataremos la aplicación como un "servicio Upstart" para poder gestionarla más fácilmente.
+
+despliegue.yml
+
+```
+---
+- hosts: azure
+  sudo: yes
+  remote_user: jcristobal
+  tasks:
+    - name: Instalar Python y EasyInstall
+      apt: name=build-essential state=present
+      apt: name=python-dev state=present
+      apt: name=python-setuptools state=present
+    - name: Instalar módulos de Python necesarios
+      command: easy_install web.py mako pymongo feedparser tweepy geopy
+    - name: Instalar MongoDB
+      apt: name=mongodb-server state=present
+    - name: Crear servicio upstart
+      template: src=despliegue.conf dest=/etc/init/despliegue.conf owner=root group=root mode=0644
+    - name: Iniciar aplicación
+      service: name=despliegue state=running
+```
+
+Y el script upstart "despliegue.conf" 
+
+```
+script
+    cd /home/jcristobal/practicas3-4-DAI
+    python practica3-4.py 0.0.0.0:8000
+end script
+```
+
+Y usamos el playbook con `ansible-playbook despliegue.yml --ask-pass`
+
+![imagen](http://i.imgur.com/UfpWJuV.png) 
+
+Ya estaría desplegada, pero necesitamos definir los endpoints (primero hay que borrar el endpoint que teníamos ya configurado): `azure vm endpoint create -n http jcristobal 80 8000`
+
+La aplicación debería estar disponible en: http://jcristobal.cloudapp.net/periodico/
+
+![imagen](http://i.imgur.com/RiiHPWQ.png) 
+
+
+###¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí?.
+
+[Enlace a mi comentario del issue](https://github.com/IV-GII/GII-2013/issues/131#issuecomment-70383092)
+
 
 
