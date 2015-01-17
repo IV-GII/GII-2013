@@ -255,3 +255,39 @@ Supongo que ya tengo los endpoints creados del ejercicio anterior. En nuestro "a
 
 
 ***
+
+###Ejercicio 6###
+
+#####Instalar una máquina virtual Debian usando Vagrant y conectar con ella.#####
+
+Primero hay que instalarla (utilizando ``sudo apt-get install vagrant``). Después se descarga la imagen ejecutando `` vagrant box add debian https://dl.dropboxusercontent.com/u/4775364/vagrant/debian-6.0.9-amd64-plain-vmware.box``
+
+Para poder usarlo, crearemos un fichero Vagrant, mediante la siguiente orden ``vagrant init debian`` (se especifica según el nombre que le hayamos dado al descargar la imagen). Ejecutamos y conectamos mediante:
+
+```bash
+vagrant up
+vagrant ssh
+```
+
+
+
+***
+
+###Ejercicio 7###
+
+#####Crear un script para provisionar `nginx` o cualquier otro servidor web que pueda ser útil para alguna otra práctica#####
+
+Nuestro Vagrantfile será el siguiente
+
+```ruby
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "debian"
+
+  config.vm.provision "shell",
+  inline: "sudo apt-get update && sudo apt-get install -y nginx && sudo service nginx start"
+
+end
+```
