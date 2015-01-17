@@ -189,8 +189,41 @@ json_attribs "/home/iblancasa/chef/node.json"
 ```
 
 
+
 ***
 
 ###Ejercicio 4###
 
-Tras comprobar que Python está instalado e instalar pip con ``sudo apt-get install python-pip``.
+#####Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.#####
+
+Tras comprobar que Python está instalado e instalar pip con ``sudo apt-get install python-pip``, añado el host con ``echo "iblancasa.cloudapp.net" > ~/ansible_hosts`` y ejecutamos ``export ANSIBLE_HOSTS=~/ansible_hosts``. Si no habíamos configurado nuestra clave SSH para poder conectarnos a la máquina virtual sin utilizar contraseña, deberemos hacerlo ahora.
+Para ello ejecutamos:
+
+```bash
+ssh-keygen -t dsa #Dejamos las claves sin poner
+ssh-copy-id -i .ssh/id_dsa.pub iblancasa@iblancasa.cloudapp.net
+```
+
+Nos pedirá ingresar nuestra contraseña a través de SSH y ya no lo volverá a hacer.
+
+Salimos de la máquina virtual y comprobamos que haya conexión
+
+``ansible all -u iblancasa -m ping``
+
+![Ping con Ansible](http://fotos.subefotos.com/eb6a534f12e56ae63db42f8e8efee58do.jpg)
+
+Ahora hay que ejecutar los siguientes comandos:
+
+```bash
+ansible all -u iblancasa -m command -a "sudo apt-get install git nodejs npm -y"
+ansible all -u iblancasa -m git -a "repo=https://github.com/iblancasa/BackendSI2-IV.git dest=~/backend version=HEAD"
+ansible all -u iblancasa -m command -a "npm install /home/iblancasa/backend"
+ansible all -u iblancasa -m command -a "node /home/iblancasa/backend"
+azure vm endpoint create -n http iblancasa 80 8080
+```
+
+Tras esto, ya podremos acceder a la aplicación
+
+
+
+***
