@@ -377,3 +377,36 @@ Objetivos generales
 
 * [X] Conocer a empresas radicadas en Granada que usen la tecnología nube.
 * [X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+
+
+
+***
+***
+
+##Clase del 12 de enero de 2015##
+
+* [X] Entender el concepto de provisionamiento de máquinas virtuales.
+* [X] Usar Chef para provisionamiento de una máquina virtual.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+Objetivos generales
+
+* [X] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* [X] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+
+
+***
+***
+
+##Clase del 16 de enero de 2015##
+
+* [ ] Entender el [último hito del proyecto](http://jj.github.io/IV/documentos/practicas/4.Aplicaciones).
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+Objetivos generales
+
+* [X] Aprender a usar máquinas virtuales.
+* [X] Elegir un sistema de provisionamiento.
+* [ ] Entender los objetivos del último proyecto (y de la asignatura).

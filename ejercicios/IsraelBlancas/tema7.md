@@ -291,3 +291,50 @@ Vagrant.configure("2") do |config|
 
 end
 ```
+***
+
+
+
+###Ejercicio 7###
+
+#####Configurar tu máquina virtual usando vagrant con el provisionador ansible#####
+
+Primero creamos nuestro fichero "ansible_host" en nuestra carpeta personal, con este contenido:
+
+```
+[debian]
+192.168.1.55
+```
+
+En nuestra terminal introducimos: ``xport ANSIBLE_HOSTS=~/ansible_hosts``
+
+En nuestro Vagrantfile escribimos:
+
+```ruby
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  config.vm.box = "debian"
+  config.vm.network :private_network, ip: "192.168.1.55"
+
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "playbook.yml"
+  end
+end
+```
+
+Y en nuestro playbook.yml, tendremos:
+
+```yaml
+  - hosts: debian
+    sudo: yes
+    tasks:
+      - name: Actualización de lista de paquetes en repositorios
+        apt: update_cache=yes
+      - name: Instalación de Nginx
+        apt: name=nginx state=present
+      - name: Iniciar
+        command: service nginx start
+```
+
+Y en terminal ejecutamos ``vagrant provision``
