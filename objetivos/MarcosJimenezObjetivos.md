@@ -151,7 +151,7 @@
 * [] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
 * [X] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
 
-</h3> Clase del 13 de Enero </h3>
+<h3> Clase del 13 de Enero </h3>
 * [X] Entender el último hito del proyecto.
 * [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
 * [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
