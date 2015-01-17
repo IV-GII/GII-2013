@@ -227,3 +227,31 @@ Tras esto, ya podremos acceder a la aplicación
 
 
 ***
+
+###Ejercicio 5###
+
+#####Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.#####
+#####¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí?.#####
+
+Cláramente Ansible. Es menos engorroso de utilizar y tiene algunos módulos muy interesantes (además de tener una sintáxis más clara).
+
+Supongo que ya tengo los endpoints creados del ejercicio anterior. En nuestro "ansible_hosts", escribimos, justo antes de la aplicación Azure: ``[azure]``
+
+```yaml
+- hosts: azure
+  sudo: yes
+  remote_user: iblancasa
+  tasks:
+  - name: Instalar paquetes necesarios
+    apt: name=nodejs state=present
+    apt: name=git state=present
+    apt: name=npm state=present
+  - name: Instalar módulos
+    command: npm install /home/iblancasa/backend
+  - name: Iniciar
+    command: node /home/iblancasa/backend
+```
+
+
+
+***
