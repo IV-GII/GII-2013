@@ -145,7 +145,7 @@ Y lo comprobamos:
 
 Crearé un playbook (despliegue.yml) instalando Python (y varios módulos, además de MongoDB como base de datos). Además trataremos la aplicación como un "servicio Upstart" para poder gestionarla más fácilmente.
 
-despliegue.yml
+despliegue.yml:
 
 ```
 ---
@@ -157,17 +157,21 @@ despliegue.yml
       apt: name=build-essential state=present
       apt: name=python-dev state=present
       apt: name=python-setuptools state=present
-    - name: Instalar módulos de Python necesarios
-      command: easy_install web.py mako pymongo feedparser tweepy geopy
     - name: Instalar MongoDB
       apt: name=mongodb-server state=present
+    - name: Instalar web.py
+      command: easy_install web.py 
+    - name: Instalar pip
+      apt: name=python-pip state=present
+    - name: Instalar twetpy
+      command: easy_install tweepy
     - name: Crear servicio upstart
       template: src=despliegue.conf dest=/etc/init/despliegue.conf owner=root group=root mode=0644
     - name: Iniciar aplicación
       service: name=despliegue state=running
 ```
 
-Y el script upstart "despliegue.conf" 
+El script upstart "despliegue.conf" contendrá:
 
 ```
 script
