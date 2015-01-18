@@ -162,39 +162,22 @@ Creamos el fichero de configuración ```/etc/ceph/ceph.conf ```
 
 ```
 [global]
-
 log file = /var/log/ceph/$name.log
-
 pid file = /var/run/ceph/$name.pid
-
 [mon]
-
 mon data = /srv/ceph/mon/$name
-
 [mon.mio]
-
 host = jmgn-pc
-
 mon addr = 127.0.0.1:6789
-
 [mds]
-
 [mds.mio]
-
 host = jmgn-pc
-
 [osd]
-
 osd data = /srv/ceph/osd/$name
-
 osd journal = /srv/ceph/osd/$name/journal
-
 osd journal size = 1000 ; journal size, in megabytes
-
 [osd.0]
-
 host = jmgn-pc
-
 devs = /dev/loop2
 ```
 
