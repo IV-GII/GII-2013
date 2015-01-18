@@ -264,9 +264,7 @@ Cambiaremos la configuración en el Vagrantfile indicando la IP que tiene que co
 
 Y recargamos para que se guarden los cambios: `vagrant reload`
 
-Nuestro playbook instalará Nginx:
-
-Contendrá playbook.yml:
+Nuestro playbook instalará Nginx, contenido de playbook.yml:
 
 ```
 ---
