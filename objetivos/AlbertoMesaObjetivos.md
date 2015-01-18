@@ -172,14 +172,14 @@
 
 ##Clase del 24 de Noviembre.
 * [X] Resolver problemas con juju.
-* [ ] Configuración compleja de sistemas con él.
+* [X] Configuración compleja de sistemas con él.
 * [X] Entender el concepto de hipervisor y trabajar con ellos.
 
 ###Otros Objetivos
 * [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 ##Clase del 25 de Noviembre.
-* [ ] Resolver problemas con juju.
+* [X] Resolver problemas con juju.
 * [X] Entender cómo funciona docker y qué implica.
 
 ###Otros Objetivos
@@ -209,4 +209,75 @@
 
 ###Otros Objetivos
 * [X] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
-* [ ] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+* [X] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
+##Clase del 11 de Diciembre.
+* [X] Entender diferentes tipos de sistemas de ficheros virtuales.
+* [X] Aprender a provisionar almacenamiento en la nube.
+
+###Objetivos generales
+* [X] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [X] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+
+##Clase del 15 de Diciembre.
+* [X] Entender los diferentes componentes de la infraestructura como servicio.
+* [X] Aprender a usar máquinas virtuales, localmente y en la nube.
+* [ ] Comprender las bases físicas de las infraestructuras virtuales.
+
+###Objetivos generales
+* [X] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
+* [X] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [X] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+##Clase del 16 de Diciembre.
+* [X] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+###Objetivos generales
+* [ ] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+
+##Clase del 12 de Enero.
+* [ ] Entender el concepto de provisionamiento de máquinas virtuales.
+* [ ] Usar Chef para provisionamiento de una máquina virtual.
+* [ ] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+###Objetivos generales
+* [ ] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* [ ] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+##Clase del 13 de Enero.
+* [ ] Entender el último hito del proyecto.
+* [ ] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [ ] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+###Objetivos generales
+* [ ] Aprender a usar máquinas virtuales.
+* [ ] Elegir un sistema de provisionamiento.
+* [ ] Entender los objetivos del último proyecto (y de la asignatura).
+
+##Clase del 19 de Enero.
+* [ ] 
+* [ ] 
+* [ ] 
+
+###Objetivos generales
+* [ ] 
+* [ ] 
+* [ ] 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
