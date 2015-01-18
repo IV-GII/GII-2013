@@ -222,4 +222,66 @@ Conectamos con ella con `vagran ssh`
 
 
 
+##Ejercicio 7
+###Crear un script para provisionar `nginx` o cualquier otro servidor web que pueda ser útil para alguna otra práctica
+
+Al archivo Vagrantfile añadimos las líneas:
+
+```
+config.vm.provision "shell",
+inline: "sudo apt-get update && sudo apt-get install -y nginx && sudo service nginx restart && sudo service nginx status"
+```
+
+Y activamos el provisionamiento `vagrant provision`:
+
+![imagen](http://i.imgur.com/1sLNH3K.png)
+
+
+##Ejercicio 8
+###Configurar tu máquina virtual usando vagrant con el provisionador ansible
+
+
+Crearemos un archivo de inventario para indicar las máquinas con la que trabajaremos (ansible_hosts2), y lo almacenamos con `export ANSIBLE_HOSTS=~/ansible_hosts2`:
+
+```
+[puphpet/debian75-x64]
+192.168.2.50
+```
+
+Cambiaremos la configuración en el Vagrantfile indicando la IP que tiene que conectarse y el playbook que usaremos, añadimos a "Vagrantfile":
+
+
+```
+
+  config.vm.network :private_network, ip: "192.168.2.50"
+
+
+  config.vm.provision "ansible" do |ansible| 
+    ansible.playbook = "playbook.yml"
+  end
+
+```
+
+Y recargamos para que se guarden los cambios: `vagrant reload`
+
+Nuestro playbook instalará Nginx, contenido de playbook.yml:
+
+```
+---
+- hosts: vagrant
+  sudo: yes
+  tasks:
+    - name: Actualizar lista de paquetes
+      apt: update_cache=yes
+    - name: Instalar Nginx
+      apt: name=nginx state=present
+```
+
+y realizamos el provisionamiento con `vagrant provision`, lo podemos comprobar accediendo a la dirección IP de la máquina virtual: 192.168.2.50
+
+![imagen](http://i.imgur.com/72cSVMm.png)
+
+
+***
+***
 
