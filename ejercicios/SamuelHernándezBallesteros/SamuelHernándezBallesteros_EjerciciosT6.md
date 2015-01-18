@@ -3,52 +3,82 @@
 ##Ejercicio 1
 Instalar los paquetes necesarios para usar KVM. Se pueden seguir estas instrucciones. Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.
 
-He instalado KVM con los siguientes comandos:
-
-Instalar en debían KVM, las librerías de administración Libvirt:
-
-	sudo apt-get install qemu-kvm libvirt-bin virtinst kvm virt-viewer
-
-	sudo adduser samuel kvm
-
-	sudo modprobe kvm-amd
-
-Preparar la configuración de red para que los futuros guests tengan conectividad entre el host y los guest.
-Entramos en la consola y escribimos:
-
-	sudo nano /etc/network/interfaces
-
-Les podría salir algo similar a lo siguiente:
-
-    auto eth0
-    iface eth0 inet dhcp
-
-Escribimos lo siguiente:
-
-    auto br0
-    iface br0 inet dhcp
-    bridge_ports eth0
-    bridge_stp off
-    bridge_maxwait 5
-
-Ahora guardamos los cambios (Control + o) y luego lo cerramos (Control + x). Antes de crear una máquina virtual debemos reiniciar el sistema. Escribimos en la consola:
-
-sudo reboot
-
+Ya tenia KVM instalado en mi máquina.
 
 ##Ejercicio 2
 Crear varias máquinas virtuales con algún sistema operativo libre tal como Linux o BSD. Si se quieren distribuciones que ocupen poco espacio con el objetivo principalmente de hacer pruebas se puede usar CoreOS (que sirve como soporte para Docker) GALPon Minino, hecha en Galicia para el mundo, Damn Small Linux, SliTaz (que cabe en 35 megas) y ttylinux (basado en línea de órdenes solo).
 
+Con ttylinux
+
+Creamos un disco virtual:
+
+	qemu-img create -f qcow2 fichero-cow3.qcow2 10000M
+
+Arrancamos la máquina
+
+	qemu-system-x86_64 -hda fichero-cow3.qcow2 -cdrom slitaz-4.0.iso
+
+![Qemu](http://i62.tinypic.com/21m9lyb.png)
+
+Con SliTaz:
+
+Creamos un disco virtual
+
+	qemu-img create -f qcow2 fichero-cow3.qcow2 10000M
+
+Arrancamos la máquina
+
+	qemu-system-x86_64 -hda fichero-cow3.qcow2 -cdrom slitaz-4.0.iso
+
+![Slitaz](http://i61.tinypic.com/30ihncw.jpg)
+
 Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.
 
-##Ejercicio 3
-Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con:
+Vmware
 
-	qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img
+![Vmware1](http://i62.tinypic.com/2yu0pqf.jpg)
+
+![Vmware2](http://i58.tinypic.com/1qpkx2.jpg)
+
+##Ejercicio 3
+Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con: qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img
+
+Utilizamos la orden:
+
+	qemu-system-x86_64 -boot order=c -drive file=fichero-cow2.qcow2,if=virtio
+
+|Medición    |Real        |User       |Sys        |
+| ---------- | ---------- |---------- |---------- |
+| 1          | 3.532      |0.038      |3.272      |
+| 2          | 3.320      |0.050      |3.540      |
+| 3          | 4.576      |0.060      |3.448      |
+| 4          | 5.646      |0.044      |3.324      |
+| Media      | 4.264      |0.048      |3.396      |
+
+
+	qemu-system-x86_64 -hda fichero-cow2.qcow2
+
+|Medición    |Real        |User       |Sys        |
+| ---------- | ---------- |---------- |---------- |
+| 1          | 6.223      |0.043      |2.436      |
+| 2          | 3.982      |0.010      |3.432    |
+| 3          | 2.016      |0.033      |2.292      |
+| 4          | 3.358      |0.042      |2.584      |
+| Media      | 3.894      |0.032      |2.686      
+
+Como se ve en las mediciones es más rápida la segunda forma.
 
 
 ##Ejercicio 4
 Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
+
+Creamos la imagen:
+
+	qemu-img create -f qcow2 lxde.img 15G
+
+Ejecutamos:
+
+	qemu-system-x86_64 -hda lxde.img -cdrom debian-7.7.0-amd64-netinst.iso -m 512M
 
 ##Ejercicio 5
 Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
