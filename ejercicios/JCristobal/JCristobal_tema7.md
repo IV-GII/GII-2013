@@ -129,7 +129,7 @@ Y lo podemos comprobar con `ansible azure -u jcristobal -m ping --ask-pass`
 
 ![imagen](http://i.imgur.com/PfkbZX9.png) 
 
-Y desde local desplegamos la [aplicación](https://github.com/JCristobal/practicas3-4-DAI) con ansible:
+Y desde local desplegamos la [aplicación](https://github.com/JCristobal/practicas3-4-DAI), que es la práctica 4 de la asignatura DAI, con ansible:
 `ansible azure -u jcristobal -m git -a "repo=https://github.com/JCristobal/practicas3-4-DAI.git dest=~/practicas3-4-DAI version=HEAD" --ask-pass`
 
 ![imagen](http://i.imgur.com/oShNyIM.png) 
@@ -143,7 +143,7 @@ Y lo comprobamos:
 ##Ejercicio 5
 ###Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.
 
-Crearé un playbook (despliegue.yml) instalando Python (y varios módulos, además de MongoDB como base de datos). Además trataremos la aplicación como un "servicio Upstart" para poder gestionarla más fácilmente.
+Crearé un playbook (despliegue.yml) instalando Python (y web.py, además de MongoDB como base de datos). Además trataremos la aplicación (la práctica 4 de la asignatura DAI) como un "servicio Upstart" para poder gestionarla más fácilmente.
 
 despliegue.yml:
 
@@ -194,6 +194,32 @@ La aplicación debería estar disponible en: http://jcristobal.cloudapp.net/peri
 ###¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí?.
 
 [Enlace a mi comentario del issue](https://github.com/IV-GII/GII-2013/issues/131#issuecomment-70383092)
+
+
+
+##Ejercicio 6
+###Instalar una máquina virtual Debian usando Vagrant y conectar con ella.
+
+Para instalar Vagrant ejecutamos `sudo apt-get install vagrant` y ya podemos trabajar con él.
+
+Escogemos la máquina que queramos de las disponibles en su [web](http://www.vagrantbox.es/). Como nos dice el enunciado instalaremos Debian, por lo que escojo [Debian 6 Squeeze x64](http://www.emken.biz/vagrant-boxes/debsqueeze64.box)
+
+Pero al querer instalar la máquina con `vagrant box add debian http://www.emken.biz/vagrant-boxes/debsqueeze64.box` me dice que con esta instalación está obsoleta, y que me descargue e instale [la actual](https://www.vagrantup.com/downloads)
+
+Desistalo la que tenía instalada con `sudo gem uninstall vagrant` y me descargo de su web la actual.
+
+Ya podemos trabajar con la versión correcta de Vagrant, escogemos la máquina que queremos de su [catálogo](https://atlas.hashicorp.com/boxes/search) y me la descargo: `vagrant init puphpet/debian75-x64`
+
+![imagen](http://i.imgur.com/CqPUKbn.png)
+
+E iniciamos la máquina: `vagrant up`
+
+![imagen](http://i.imgur.com/w8xZRta.png)
+
+Conectamos con ella con `vagran ssh`
+
+![imagen](http://i.imgur.com/Qdr9fhL.png)
+
 
 
 
