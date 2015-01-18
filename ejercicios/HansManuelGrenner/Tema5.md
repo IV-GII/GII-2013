@@ -78,13 +78,127 @@ Formateado ya podemos montarlo usando ```mount ```.
 
 **Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema**
 
+Vamos a crear sistemas de ficheros en bucle usando ambos formatos del enunciado : xfs y btrfs.
+Para [btrfs](https://btrfs.wiki.kernel.org/index.php/Btrfs_source_repositories) hay varias repositorios fuente para instalarlo, usaremos apt-get.
+
+```sudo apt-get install btrfs-tools ```
+
+Y a continuación instalamos también las herramientas necesarias para poder usar el formato [xfs](https://wiki.ubuntu.com/XFS).
+
+```sudo apt-get install xfsprogs xfsdump ```
+
+> Es necesaria tambíen la herramienta ```mount ``` que suele venir instalada por defecto.
+
+Una vez tengamos todas las herramientas necesarias podemos empezar a crear los sistemas de ficheros.
+
+Primero generamos las imágenes.
+
+```
+sudo qemu-img create -f raw imagenXfs.img 100M
+sudo qemu-img create -f raw imagenBtrfs.img 100M 
+```
+
+Convertimos las imágenes creadas a un dispositivo de bucle.
+
+```
+sudo losetup -v -f imagenXfs.img
+sudo losetup -v -f imagenBtrfs.img 
+```
+
+Ahora podemos darle el formato correspondiente a cada uno.
+
+```
+sudo mkfs.xfs /dev/loop0
+sudo mkfs.btrfs /dev/loop1
+```
+
+![Figura5](Imagenes/ej5_4_1.png)
+> Figura 5. Formateo.
+
+Y finalmente creamos los puntos de montaje y montamos los sistemas de ficheros.
+
+```
+sudo mkdir /mnt/mount0
+sudo mkdir /mnt/mount1
+sudo mount -t xfs /dev/loop0 /mnt/mount0/
+sudo mount -t btrfs /dev/loop1 /mnt/mount1/ 
+```
+
+Para comparar las prestaciones entre ambos vamos a [generar un fichero con datos aleatorios de un tamaño determinado](http://www.skorks.com/2010/03/how-to-quickly-generate-a-large-file-on-the-command-line-with-linux/). Se recomienda el uso del comando ```dd ```.
+
+Este comando genera un fichero de 50 MB con bytes aleatorios, cuyo contenido no será nada leible.
+
+```dd if=/dev/urandom of=file.txt bs=524288 count=100 ```
+
+Mediante la herramienta ```time ``` compararemos los resultados al copiar un fichero.
+
+```
+sudo time -v cp file.txt /mnt/mount0/file.txt
+sudo time -v cp file.txt /mnt/mount1/file.txt 
+```
+
+![Figura5](Imagenes/ej5_4_2.png)
+> Figura 5. Comparando prestaciones xfs y btrfs.
+
+El sistema de ficheros con formato btrfs muestra mejores marcas de tiempo (0.02s y xfs 0.04s) al igual que un menor gasto de CPU para realizar la misma tarea, un 23% frente al 40% usado para copiar al sistema de ficheros con formato xfs.
+
 ## Ejercicio 5
 
 **Instalar ceph en tu sistema operativo.**
 
+Usando apt-get el comando para instalar ceph en nuestro sistema es el siguiente.
+
+```sudo apt-get install ceph-mds ```
+
 ## Ejercicio 6
 
 **Crear un dispositivo ceph usando BTRFS o XFS**
+
+Creamos el directorio que va usarse para el dispositivo ceph
+
+```sudo mkdir -p /srv/ceph/{osd,mon,mds} ```
+
+Creamos el fichero de configuración ```/etc/ceph/ceph.conf ```
+
+```
+[global]
+
+log file = /var/log/ceph/$name.log
+
+pid file = /var/run/ceph/$name.pid
+
+[mon]
+
+mon data = /srv/ceph/mon/$name
+
+[mon.mio]
+
+host = jmgn-pc
+
+mon addr = 127.0.0.1:6789
+
+[mds]
+
+[mds.mio]
+
+host = jmgn-pc
+
+[osd]
+
+osd data = /srv/ceph/osd/$name
+
+osd journal = /srv/ceph/osd/$name/journal
+
+osd journal size = 1000 ; journal size, in megabytes
+
+[osd.0]
+
+host = jmgn-pc
+
+devs = /dev/loop2
+```
+
+
 
 **Avanzado Usar varios dispositivos en un nodo para distribuir la carga.**
 
