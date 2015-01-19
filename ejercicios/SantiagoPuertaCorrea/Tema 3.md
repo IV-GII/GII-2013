@@ -12,7 +12,7 @@ Para crear un espacio de nombres:
 sudo unshare -u /bin/bash
 hostname test
 ```
-![1_1.png](./capturas/t3/1_1.png)
+![img](https://dl.dropboxusercontent.com/u/22433100/IV/t3/1_1.png)
 Ahora paso a montar en él una imagen ISO:
 ```bash
 # Carpeta donde voy a montar el ISO
@@ -21,7 +21,7 @@ mkdir /mnt/iso
 # Para montar la imagen, en mi caso una de ubuntu
 mount -o loop ubuntu-14.04.1-desktop-amd64.iso /mnt/iso
 ```
-![1_2.png](./capturas/t3/1_2.png)
+![1_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t3/1_2.png)
 
 
 Ejercicio 2
@@ -32,7 +32,7 @@ Ejercicio 2
 # Muestra los puentes configurados.
 brctl show
 ```
-![2_1.png](./capturas/t3/2_1.png)
+![2_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t3/2_1.png)
 
 **2. Crear un interfaz virtual y asignarlo al interfaz de la tarjeta wifi, si se tiene, o del fijo, si no se tiene.**
 ```bash
@@ -58,7 +58,7 @@ Uso el comando que nos indica la [teoria](http://jj.github.io/IV/documentos/tema
 sudo debootstrap --arch=i386 trusty /home/jaulas/trusty/ http://archive.ubuntu.com/ubuntu
 ```
 Una vez que se a terminado de crear el sistema, nos aparecerá lo siguiente:
-![3_1.png](./capturas/t3/3_1.png)
+![3_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t3/3_1.png)
 
 **Experimentar con la creación de un sistema Fedora dentro de Debian usando Rinse.**
 
@@ -70,7 +70,7 @@ Ahora instalo fedora:
 ```bash
 sudo rinse --arch=i386 --distribution fedora-core-6 --directory /home/jaulas/fedora/
 ```
-![3_2.png](./capturas/t3/3_2.png)
+![3_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t3/3_2.png)
 
 
 Ejercicio 4
@@ -95,7 +95,7 @@ Ahora paso a instalar por ejemplo nano :
 ```bash
 apt-get install nano
 ```
-![4_1.png](./capturas/t3/4_1.png)
+![4_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t3/4_1.png)
 
 
 Ejercicio 5
@@ -112,7 +112,7 @@ apt-get install nginx
 service nginx start
 ```
 Tras installar, si accedo desde fuera de la jaula a localhost, veré la pantalla de bienvenida de nginx.
-![5_1.png](./capturas/t3/5_1.png)
+![5_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t3/5_1.png)
 
 
 Ejercicio 6

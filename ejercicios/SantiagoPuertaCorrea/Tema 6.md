@@ -63,3 +63,11 @@ Ahora voy a crear otra máquina virtual con VirtualBox, ahora una máquina con t
 ![2_8.png](./capturas/t6/2_8.png)
 
 
+Ejercicio 3
+-----------
+
+**Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img**
+
+
+
+
