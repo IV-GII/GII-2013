@@ -12,7 +12,7 @@ Lo instale para el tema 1, para instalarlo, usé:
 sudo yum install qemu-kvm libvirt-bin
 ```
 Si uso el comando ``bash virsh list --all`` puedo ver que funciona y que en mi caso no tengo ninguna maquina virtual instalada.
-![1_1.png](./capturas/t6/1_1.png)
+![1_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t6/1_1.png)
 
 
 Ejercicio 2
@@ -31,8 +31,8 @@ Arranco la imagen para instalarla en el disco1:
 ```bash
 qemu-system-x86_64 -hda disco1.qcow2 -cdrom slitaz-4.0.iso
 ```
-![2_2.png](./capturas/t6/2_2.png)
-![2_1.png](./capturas/t6/2_1.png)
+![2_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t6/2_2.png)
+![2_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t6/2_1.png)
 
 Ademas de crear una máquina virtual con slitaz, voy a crear otra con [ttylinux](http://ttylinux.net/Download/)
 
@@ -45,22 +45,22 @@ Arranco la imagen para instalarla en el disco2:
 ```bash
 qemu-system-x86_64 -hda disco2.qcow2 -cdrom ttylinux-pc_x86_64-2015.01.iso 
 ```
-![2_3.png](./capturas/t6/2_3.png)
-![2_4.png](./capturas/t6/2_4.png)
+![2_3.png](https://dl.dropboxusercontent.com/u/22433100/IV/t6/2_3.png)
+![2_4.png](https://dl.dropboxusercontent.com/u/22433100/IV/t6/2_4.png)
 
 **2. Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.**
 
 Para este apartado voy a usar el hipervisor VirtualBox, una vez que lo tengo instalado, voy a crear una máquina nueva.
-![2_5.png](./capturas/t6/2_5.png)
+![2_5.png](https://dl.dropboxusercontent.com/u/22433100/IV/t6/2_5.png)
 
 La primera que voy a instalar en este hipervisor va a ser slitaz que ya tengo descargada su imagen.
 Lo primero que tengo que hacer en VirtualBox es especificar el nombre y sistema operativo.
-![2_6.png](./capturas/t6/2_6.png)
+![2_6.png](https://dl.dropboxusercontent.com/u/22433100/IV/t6/2_6.png)
 Tras indicar el nombre del sistema y el sistema, se arranca la máquina y se le indica la imagen del sistema para arrancar. En la siguiente captura de pantalla muestro el sistema slitaz inciado.
-![2_7.png](./capturas/t6/2_7.png)
+![2_7.png](https://dl.dropboxusercontent.com/u/22433100/IV/t6/2_7.png)
 
 Ahora voy a crear otra máquina virtual con VirtualBox, ahora una máquina con ttylinux. Para crearla, hay que volver a repetir los pasos anteriores. En la siguiente captura de pantalla muestro el sistema ttylinux iniciado con VirtualBox.
-![2_8.png](./capturas/t6/2_8.png)
+![2_8.png](https://dl.dropboxusercontent.com/u/22433100/IV/t6/2_8.png)
 
 
 Ejercicio 3

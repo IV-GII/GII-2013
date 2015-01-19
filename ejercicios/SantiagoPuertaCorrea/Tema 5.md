@@ -10,7 +10,7 @@ Ejercicio 1
 **Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza?**
 
 En mi disco duro tengo las siguientes particiones:
-![EJ1_1.png](./capturas/t5/EJ1_1.png)
+![EJ1_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/EJ1_1.png)
 
 - Una partición para boot.
 - Una para Windows.
@@ -49,7 +49,7 @@ Ejercicio 2
 
 Como no tengo instalado sshfs, lo instalo en el anfitrion y en la máquina virtual.
 Para poder conectarme con la máquina servidora, necesito saber su ip, usando ifconfig en la anfitriona saco la ip:
-![EJ2_1.png](./capturas/t5/EJ2_1.png)
+![EJ2_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/EJ2_1.png)
 
 Me conecto a la máquina virtual e instalo con:
 ```bash
@@ -70,7 +70,7 @@ Tras esto paso a usar sshfs, en mi caso:
 sshfs santiago@172.17.42.1:/home /home/administrador/projects/test -p 49153
 ```
 Captura de pantalla que muestra como se a montado la carpeta test
-![EJ2_2.png](./capturas/t5/EJ2_2.png)
+![EJ2_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/EJ2_2.png)
 
 
 -----
@@ -96,14 +96,14 @@ qemu-img create -f raw fichero-raw.raw 5M
 # vdi
 qemu-img create -f vdi fichero-vdi.vdi 5M
 ```
-![3_1.png](./capturas/t5/3_1.png)
+![3_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/3_1.png)
 
 Ahora podré la imagen qcow2 en bucle y le daré formato con los siguientes comandos:
 ```bash
 sudo losetup -v -f fichero-cow.qcow2
 sudo mkfs.ext4 /dev/loop0
 ```
-![3_2.png](./capturas/t5/3_2.png)
+![3_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/3_2.png)
 
 
 -----
@@ -135,9 +135,9 @@ sudo mkdir /mnt/loop3
 sudo mount /dev/loop2 /mnt/loop2
 sudo mount /dev/loop3 /mnt/loop3
 ```
-![4_1.png](./capturas/t5/4_1.png)
-![4_2.png](./capturas/t5/4_2.png)
-![4_3.png](./capturas/t5/4_3.png)
+![4_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/4_1.png)
+![4_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/4_2.png)
+![4_3.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/4_3.png)
 Creo un fichero de 40MB y compruebo que tarda en copiar el fichero en cada uno.
 
 ```bash
@@ -150,8 +150,8 @@ sudo time -v cp 40M /mnt/loop3/40M
 
 ```
 Como se puede ver en las siguientes capturas xfs es un poco más rápido que btrfs.
-![4_4.png](./capturas/t5/4_4.png)
-![4_5.png](./capturas/t5/4_5.png)
+![4_4.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/4_4.png)
+![4_5.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/4_5.png)
 
 
 -----
@@ -219,7 +219,7 @@ Y el directorio para usar el sistema de objetos:
  sudo mkdir /srv/ceph/osd/osd.0
  sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf 
  ```
-![6_1.png](./capturas/t5/6_1.png)
+![6_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/6_1.png)
 Ahora inicio el servicio con:
 ```bash
 sudo /etc/init.d/ceph -a start
@@ -227,7 +227,7 @@ sudo /etc/init.d/ceph -a start
 # Compruebo como ha ido.
 sudo ceph -s
 ```
-![6_2.png](./capturas/t5/6_2.png)
+![6_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/6_2.png)
 Ahora ya puedo montar:
 ```bash
 sudo mkdir /mnt/ceph
@@ -272,7 +272,7 @@ azure account download
 # Ahora importo la configuracion
 azure account import [Fichero descargado con azure account import]
 ```
-![8_1.png](./capturas/t5/8_1.png)
+![8_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/8_1.png)
 
 
 -----
@@ -300,7 +300,7 @@ Ahora creo los contenedores:
 azure storage container create taper1 -p blob
 azure storage container create taper2 -p blob
 ```
-![9_1.png](./capturas/t5/9_1.png)
+![9_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t5/9_1.png)
 Ahora subo las capturas con el siguiente comando:
 ```bash
 azure storage blob upload 9_1.jpg taper1 9_1.jpg
