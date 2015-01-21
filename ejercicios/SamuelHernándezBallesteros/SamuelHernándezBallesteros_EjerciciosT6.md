@@ -64,7 +64,7 @@ Utilizamos la orden:
 | 2          | 3.982      |0.010      |3.432    |
 | 3          | 2.016      |0.033      |2.292      |
 | 4          | 3.358      |0.042      |2.584      |
-| Media      | 3.894      |0.032      |2.686      
+| Media      | 3.894      |0.032      |2.686      |
 
 Como se ve en las mediciones es más rápida la segunda forma.
 
@@ -83,8 +83,72 @@ Ejecutamos:
 ##Ejercicio 5
 Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
 
+Ejecutamos la siguiente orden para ver las imagenes de ubuntu disponibles:
+
+	azure vm image list | grep ubuntu
+
+Podemos ver información sobre ellas ejecutando:
+
+	azure vm image show [nombre de la imagen]
+
+Creamos la máquina:
+
+azure vm create samueliv b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04-LTS-amd64-server-20140414-en-us-30GB samueliv [PASS] --location "West Europe" --ssh
+
+![EJ5-1](http://i60.tinypic.com/ng3dr5.jpg)
+
+Arrancamos la máquina:
+
+	azure vm start samueliv
+
+Nos conectamos por ssh:
+
+	ssh samueliv@samueliv.cloudapp.net
+
+Actualizamos la máquina:
+
+	sudo apt-get update && sudo apt-get ugprade
+
+Instalamos nginx
+
+	sudo apt-get install nginx
+
+	sudo service nginx start
+
+Creamos el endpoint para el puerto 80:
+
+	azure vm endpoint create -n http samueliv 80 80
+
+Y ya podemos acceder a través del enlace:
+[Cloudapp](http://samueliv.cloudapp.net/)
+
 ##Ejercicio 6
 Usar juju para hacer el ejercicio anterior.
+
+Creamos un certificado y lo subimos a azure en la pestaña configuración. certificados de administración:
+
+    openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout azure.pem -out azure.pem
+    openssl x509 -inform pem -in azure.pem -outform der -out azure.cer
+    chmod 600 azure.pem
+
+![Certificado](http://i59.tinypic.com/1552fxd.jpg)
+
+Editamos el archivo "environments.yaml" en /home/usuario/.juju y añadimos lo siguiente:
+
+En la sección azure:
+
+Añadimos "availability-sets-enabled: false" (sin comillas)
+"location" pasa a "West Europe"
+"manage-suscription-id" lo tomamos de azure account list
+"management-certificate-path" es la ruta a nuestro ".pem", generado cuando hemos creado el certificado
+"storage-account-name" ponemos el nombre de la cuenta de almacenamiento que vamos a usar (azure storage account list)
+
+Después ejecutamos:
+
+sudo juju switch azure
+sudo juju bootstrap
+sudo juju deploy --to 0 juju-gui
+sudo juju expose juju-gui
 
 ##Ejercicio 7
 Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.

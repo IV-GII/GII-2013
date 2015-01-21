@@ -211,29 +211,22 @@ Clase del 25 de noviembre de 2014
 [X] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
 
 ## Clase del 15 de diciembre de 2014
-[] Entender los diferentes componentes de la infraestructura como servicio.
+[X] Entender los diferentes componentes de la infraestructura como servicio.
 
-[] Aprender a usar máquinas virtuales, localmente y en la nube.
+[X] Aprender a usar máquinas virtuales, localmente y en la nube.
 
-[] Comprender las bases físicas de las infraestructuras virtuales.
+[X] Comprender las bases físicas de las infraestructuras virtuales.
 
-[] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+[X] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
 
-[] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
-
-## Clase del 16 de diciembre de 2014
-[] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
-
-[] Conocer a empresas radicadas en Granada que usen la tecnología nube.
-
-[] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+[X] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
 
 ## Clase del 16 de diciembre de 2014
-[] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+[X] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
 
-[] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+[X] Conocer a empresas radicadas en Granada que usen la tecnología nube.
 
-[] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+[X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
 
 ## Clase del 12 de enero de 2015
 
