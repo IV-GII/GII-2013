@@ -111,11 +111,11 @@ Introducimos las siguientes órdenes:
 
 He creado dos scripts, la primera parte inicia la instalación de juju y se para hasta el editor para cambiar el entorno a local. El segundo script, termina la configuración de relacionar los tápers.
 
-#!/bin/bash
-sudo add-apt-repository ppa:juju/stable
-sudo apt-get update && sudo apt-get install juju-core
-juju init
-gedit $HOME/.juju/environments.yaml &
+        #!/bin/bash
+        sudo add-apt-repository ppa:juju/stable
+        sudo apt-get update && sudo apt-get install juju-core
+        juju init
+        gedit $HOME/.juju/environments.yaml &
 
 Ahora comentamos
 
@@ -126,13 +126,13 @@ Y escribimos
         default:local
         
 
-#!/bin/bash
-sudo juju switch local
-sudo apt-get install mongodb-server
-sudo juju deploy mediawiki
-sudo juju deploy mysql
-sudo juju add-relation mediawiki:slave mysql:db
-sudo juju expose mediawiki
+        #!/bin/bash
+        sudo juju switch local
+        sudo apt-get install mongodb-server
+        sudo juju deploy mediawiki
+        sudo juju deploy mysql
+        sudo juju add-relation mediawiki:slave mysql:db
+        sudo juju expose mediawiki
 
 
 
