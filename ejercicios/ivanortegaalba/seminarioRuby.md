@@ -2,7 +2,7 @@
 
 ## Ejercicio 1: Instalar Ruby y usar comprobar la versión instalada. A la vez, conviene instalar también irb, rubygems y rdoc.
 La heramienta más popular para instalar Ruby es RVM (“Ruby Version Manager”).
-Desde la [(]página oficial de Ruby](https://www.ruby-lang.org/es/downloads/) nos dan las instrucciones a seguir para instalarlo:
+Desde la [página oficial de Ruby](https://www.ruby-lang.org/es/downloads/) nos dan las instrucciones a seguir para instalarlo:
 ```
 \curl -L https://get.rvm.io | bash -s stable --ruby
 ```
@@ -165,7 +165,7 @@ MacBook-Pro-de-Ivan:scriptRuby ivanortegaalba$ gem search --remote vagrant
     vagrant (1.5.0)
 ```
 
-Para instalarlo basta con: 
+Para instalarlo basta con:
 ```
 sudo gem install vagrant
 ```
