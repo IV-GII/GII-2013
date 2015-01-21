@@ -55,10 +55,15 @@ Ejercicio 8.
 5. Importamos el archivo: azure account import _archivo_
 6. Y usamos los siguientes comandos para configurar la cuenta:
 
+~
   azure account storage create jarotru
+  
   azure account storage keys list jarotru
+  
   export AZURE_STORAGE_ACCOUNT=jarotru
+  
   export	AZURE_STORAGE_ACCESS_KEY= _laclave_
+~
 
 Ejercicio 9.
 ---
