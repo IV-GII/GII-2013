@@ -54,7 +54,7 @@ Ejercicio 8.
 4. [Nos da un enlace para iniciar sesión y descargar el archivo de la cuenta.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/8.4.jpg)
 5. Importamos el archivo: azure account import _archivo_
 6. Y usamos los siguientes comandos para configurar la cuenta:
- 
+
 > azure account storage create jarotru
 > azure account storage keys list jarotru
 > export AZURE_STORAGE_ACCOUNT=jarotru
