@@ -60,6 +60,81 @@ Test en el contenedor: (más lento)
 
 
 
+###Ejercicio 6
+####Instalar juju
 
+Añadimos a los repositorios la última versión de juju, actualizamos y finalmente instalamos el programa.
+
+        sudo add-apt-repository ppa:juju/stable
+
+
+        sudo apt-get update && sudo apt-get install juju-core
+        
+![Imgur](http://i.imgur.com/GPguPo7.png)
+        
+
+Iniciamos juju:
+
+        juju init
+        
+####Instalar Mysql en un táper
+
+Escribimos la siguiente órden
+
+        
+        juju deploy mysql
+
+Resultado de mostrar el estado de juju:
+
+![Imgur](http://i.imgur.com/xZVhbf1.png)
   
-  
+ 
+ 
+ 
+### Ejercicio 7
+#### Destruir toda la configuracion creada anteriormente
+
+Introducimos las siguientes órdenes:
+
+        juju destroy-unit mysql/0
+
+
+        juju destroy-machine 1
+        
+#### Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.
+
+        juju add-relation mediawiki:slave mysql:db
+        
+        juju expose mediawiki
+
+#### Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.
+
+He creado dos scripts, la primera parte inicia la instalación de juju y se para hasta el editor para cambiar el entorno a local. El segundo script, termina la configuración de relacionar los tápers.
+
+#!/bin/bash
+sudo add-apt-repository ppa:juju/stable
+sudo apt-get update && sudo apt-get install juju-core
+juju init
+gedit $HOME/.juju/environments.yaml &
+
+Ahora comentamos
+
+        #default:amazon 
+
+Y escribimos
+
+        default:local
+        
+
+#!/bin/bash
+sudo juju switch local
+sudo apt-get install mongodb-server
+sudo juju deploy mediawiki
+sudo juju deploy mysql
+sudo juju add-relation mediawiki:slave mysql:db
+sudo juju expose mediawiki
+
+
+
+
+
