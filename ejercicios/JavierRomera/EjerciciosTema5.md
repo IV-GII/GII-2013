@@ -67,5 +67,5 @@ Ejercicio 8.
 
 Ejercicio 9.
 ---
-1. Creamos el contendor: azure storage container create prueba -p blob
-2. Subimos una imagen al contenedor: azure storage blob upload /home/javi/prueba/img.jpg prueba img.jpg
+1. Creamos el contendor: azure storage container create pruebaiv -p blob
+2. Subimos una imagen al contenedor: azure storage blob upload /home/javi/prueba/img.jpg pruebaiv img.jpg
