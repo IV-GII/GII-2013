@@ -261,3 +261,5 @@ Seleccionamos Debian de la lista.
 ![Imgur](http://i.imgur.com/BJysSYu.png)
 
 ![Imgur](http://i.imgur.com/p5iN0Ua.png)
+
+Usamos `vagrant up` para iniciar la máquina.
