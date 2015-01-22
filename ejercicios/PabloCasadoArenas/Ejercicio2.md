@@ -231,3 +231,21 @@ uno:  dos
 tres: 
   - [4,5,Seis, [Siete: 8, [nueve: [10, 11] ]] ]
 ```
+
+### Ejercicio 4
+
+Instalamos Ansible añadiendo sus repositorios y con apt-get.
+
+Creamos el inventario:
+```
+[local]
+192.168.56.101
+```
+Exportamos la variable de entorno:
+
+`export ANSIBLE_HOSTS=~/ansible_hosts`
+
+Desplegamos
+```
+ansible local -u pablo -m git -a "repo=https://github.com/ramako/IV.git dest=~/practicas version=HEAD" 
+```
