@@ -12,7 +12,7 @@ Ejercicio 2.
 ---
 1. [Bajamos fuse sshfs.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/2.1.jpg)
 2. [Lo instalamos.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/2.2.jpg)
-3. Añadimos a FUSE el usuario con el que nos conectaremos: usermod -a -G fuse javi
+3. Añadimos a FUSE el usuario con el que nos conectaremos: usermod -aG fuse javi
 4. Para acceder al contenido de la carpeta del remoto como si fuesen locales:  sshfs javi@IP_del_remoto:/home/javi/ /home/javi/
 
 Ejercicio 3.
@@ -67,5 +67,5 @@ Ejercicio 8.
 
 Ejercicio 9.
 ---
-1. Creamos el contendor: azure storage container create untaper -p blob
-2. Subimos una imagen al contenedor: azure storage blob upload /home/javi/prueba/img.png untaper img.png
+1. Creamos el contendor: azure storage container create prueba -p blob
+2. Subimos una imagen al contenedor: azure storage blob upload /home/javi/prueba/img.jpg untaper img.jpg
