@@ -129,8 +129,8 @@ Y escribimos
         #!/bin/bash
         sudo juju switch local
         sudo apt-get install mongodb-server
-        sudo juju deploy mediawiki
-        sudo juju deploy mysql
+        juju deploy mediawiki
+        juju deploy mysql
         sudo juju add-relation mediawiki:slave mysql:db
         sudo juju expose mediawiki
 
