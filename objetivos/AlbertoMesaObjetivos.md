@@ -194,7 +194,7 @@
 * [ ] Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 
 ##Clase del 2 de Diciembre.
-* [ ] Resolver últimos problemas con docker.
+* [X] Resolver últimos problemas con docker.
 * [X] Resolver dudas relacionadas con la tercera práctica.
 
 ###Otros Objetivos
@@ -205,7 +205,7 @@
 * [X] Terminar la familiarización con Ruby.
 * [X] Recordar conceptos de almacenamiento físico.
 * [X] Entender el concepto de FUSE y usarlo en la prática.
-* [ ] Crear y manipular formatos de provisionamiento delgado.
+* [X] Crear y manipular formatos de provisionamiento delgado.
 
 ###Otros Objetivos
 * [X] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
@@ -222,7 +222,7 @@
 ##Clase del 15 de Diciembre.
 * [X] Entender los diferentes componentes de la infraestructura como servicio.
 * [X] Aprender a usar máquinas virtuales, localmente y en la nube.
-* [ ] Comprender las bases físicas de las infraestructuras virtuales.
+* [X] Comprender las bases físicas de las infraestructuras virtuales.
 
 ###Objetivos generales
 * [X] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
@@ -233,40 +233,42 @@
 * [X] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
 
 ###Objetivos generales
-* [ ] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [X] Conocer a empresas radicadas en Granada que usen la tecnología nube.
 * [X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
 
 ##Clase del 12 de Enero.
-* [ ] Entender el concepto de provisionamiento de máquinas virtuales.
+* [X] Entender el concepto de provisionamiento de máquinas virtuales.
 * [ ] Usar Chef para provisionamiento de una máquina virtual.
-* [ ] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
 
 ###Objetivos generales
 * [ ] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
-* [ ] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+* [X] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
 
 ##Clase del 13 de Enero.
-* [ ] Entender el último hito del proyecto.
+* [X] Entender el último hito del proyecto.
 * [ ] Usar diversas herramientas para provisionamiento de una máquina virtual.
-* [ ] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
 
 ###Objetivos generales
 * [ ] Aprender a usar máquinas virtuales.
 * [ ] Elegir un sistema de provisionamiento.
-* [ ] Entender los objetivos del último proyecto (y de la asignatura).
+* [X] Entender los objetivos del último proyecto (y de la asignatura).
 
 ##Clase del 19 de Enero.
-* [ ] 
-* [ ] 
-* [ ] 
+* [X] Trabajar sobre el último hito del proyecto.
+* [ ] Usar diversas herramientas para provisionamiento de una máquina virtual. 
 
 ###Objetivos generales
-* [ ] 
-* [ ] 
-* [ ] 
+* [ ] Ponerse al día en los ejercicios de autoevaluación.
 
+##Clase del 20 de Enero.
+* [X] Trabajar sobre el último hito del proyecto.
+* [ ] Usar diversas herramientas para provisionamiento de una máquina virtual.  
 
-
+###Objetivos generales
+* [ ] Ponerse al día en los ejercicios de autoevaluación.
+* [X] Recopilar recursos para plantear dudas antes de la entrega final.
 
 
 
