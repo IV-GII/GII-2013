@@ -51,7 +51,7 @@ Ejercicio 7.
 Ejercicio 8.
 ---
 1. [Instalamos node.js](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/8.1.jpg)
-2  [Instalamos el cliente azure: npm install azure-cli -g](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/8.2.jpg)
+2.  [Instalamos el cliente azure: npm install azure-cli -g](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/8.2.jpg)
 3. [Ejecutamos "azure account download"](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/8.3.jpg)
 4. [Nos da un enlace para iniciar sesión y descargar el archivo de la cuenta.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/8.4.jpg)
 5. Importamos el archivo: azure account import _archivo_
