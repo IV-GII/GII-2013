@@ -263,3 +263,9 @@ Seleccionamos Debian de la lista.
 ![Imgur](http://i.imgur.com/p5iN0Ua.png)
 
 Usamos `vagrant up` para iniciar la máquina.
+
+### Ejercicio 7
+
+![Imgur](http://i.imgur.com/ECfS4q1.png)
+
+Y ejecutamos `vagrant provison`
