@@ -249,3 +249,15 @@ Desplegamos
 ```
 ansible local -u pablo -m git -a "repo=https://github.com/ramako/IV.git dest=~/practicas version=HEAD" 
 ```
+
+### Ejercicio 6
+
+Instalamos Vagrant desde la web con wget y luego con dpkg.
+
+Seleccionamos Debian de la lista.
+
+`vagrant init puphpet/debian75-x64`
+
+![Imgur](http://i.imgur.com/BJysSYu.png)
+
+![Imgur](http://i.imgur.com/p5iN0Ua.png)
