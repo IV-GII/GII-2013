@@ -1,10 +1,12 @@
 Ejercicio 1.
 ---
-1) [Comprobamos nuestro disco.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/1.1.jpg)
+1) 
 
-2)
+[Particionado del disco.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/1.1.jpg)
 
-3) La facultad usa un NFS.
+[Volúmenes lógicos.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/1.2.jpg)
+
+2) La facultad usa un NFS.
 
 Ejercicio 2.
 ---
@@ -38,7 +40,7 @@ Ejercicio 6.
 2. [Creamos el ceph.conf](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/6.1.jpg)
 3. [Creamos el directorio donde se guardará el objeto.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/6.2.jpg)
 4. [Creamos el sistema de ficheros.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/6.2.jpg)
-5. [Iniciamos el servicio.] (https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/6.3.jpg)
+5. [Iniciamos el servicio.](https://github.com/Jarotru/IV/blob/master/Ejercicios/Tema5_Imagenes/6.3.jpg)
 6. Creamos el directorio que se usará como punto de montaje: sudo mkdir /mnt/ceph.
 7. Lo montamos: sudo mount -t ceph javi-virtual-machine:/ /mnt/ceph
 
