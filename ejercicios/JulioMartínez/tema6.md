@@ -171,3 +171,88 @@ Como podemos observar por las pruebas realizadas el hecho de usar un controlador
 ## Ejercicio 4 ##
 **Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.**
 
+He instalado lubuntu (Ubuntu con LXDE) de la misma forma que hice las máquinas virtuales en el ejercicio 2.1 y he accedido a la máquina de esta forma:
+
+```
+$ qemu-system-x86_64 -machine accel=kvm -hda lubuntu.qcow2 -m 512M -vnc :1
+```
+
+Luego podemos ver el escritorio remoto con vinagre de la siguiente forma:
+
+```
+$ vinagre localhost:1
+```
+
+![caputra13](http://i.imgur.com/Mp2hwAY.png)
+
+Para ssh voy a instalar en la máquina lubuntu el servidor ssh
+
+```
+$ sudo apt-get install ssh
+```
+
+La apagamos y la arrancamos de nuevo con esta orden:
+
+```
+qemu-system-x86_64 -machine accel=kvm -hda lubuntu.qcow2 -m 512M -redir tcp:2222::22
+```
+
+De esta forma estamos haciendo NAT del puerto 2222 de la máquina host al 22 de la máquina invitada.
+
+Ahora para entrar basta con:
+
+```
+$ ssh julioxus@localhost -p 2222
+```
+
+![captura14](http://i.imgur.com/2DLQmyy.png)
+
+## Ejercicio 5 ##
+**Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.**
+
+Falta por conseguir un servicio cloud
+
+## Ejercicio 6 ##
+**Usar juju para hacer el ejercicio anterior.**
+
+Lo primero va a ser instalar juju-gui, para ello simplemente tendremos que hacer:
+
+```
+$ juju deploy juju-gui
+$ juju expose juju-gui
+```
+Ahora vemos la configuración con 
+
+```
+$ juju status
+```
+
+![captura15](http://i.imgur.com/6gjRUiS.png)
+
+Como podemos ver ya está inciado. Accedemos a la dirección pública e introducimos la contraseña que encontraremos en el archivo ~/.juju/environments/local.jenv
+
+![captura16](http://i.imgur.com/ZtkkdMq.png)
+
+Para crear la máquina con nginx buscamos nginx en el menú de la izquierda. Le damos a "add to my canvas" y seleccionamos los recursos que le queramos asignar. Una vez hecho esto tendremos que pulsar el botón "commit" de abajo para guardar los cambios. Ahora nos aparecerá la máquina en el menú de inicio con un color amarillo:
+
+![captura17](http://i.imgur.com/cEfnPNm.png)
+
+Aquí me quedo porque no consigo hacer que funcione
+
+## Ejercicio 7 ##
+**Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.**
+
+Para instalar Linux Mint podríamos hacerlo de la misma forma que lo hice con CoreOS en el ejercicio 2.2 usando el hipervisor Xen. Supongo que el objetivo sería hacerlo de forma automatizada como se explica en los apuntes.
+
+He clonado el proyecto de vmbuilder de github
+
+```
+$ git clone git://git.debian.org/git/pkg-escience/vmbuilder.git
+```
+Ahora como se explica [aquí](https://wiki.debian.org/VMBuilder) para Debian tendríamos que ejecutar:
+
+```
+$ ./debian-vm-builder kvm lenny --tmp=/var/tmp --mirror http://ftp.de.debian.org/debian --rootpass debian
+```
+
+De esta forma nos instalaría una distribución Ubuntu lenny (sólo podemos instalar Ubuntu lenny o Ubuntu etch) de manera automática usando el hipervisor kvm.
