@@ -36,6 +36,18 @@ No tengo VLM.
 #### Ejercicio 2
 ###### _Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión._
 
+Instalamos en las dos máquinas sshfs.
+
+`sudo apt-get install sshfs`
+
+En la máquina cliente, creamos una carpeta donde vayamos a montar la carpeta remota y ejecutamos lo siguiente como en el ejemplo:
+``` sh 
+sshfs usuario@IP_remota:carpeta_remota punto_montaje
+
+
+
+sshfs angel@192.168.56.101:/home/angel/CarpetaCompartir /home/angeljcisneros/carpeta
+```
 
 - - -
 
