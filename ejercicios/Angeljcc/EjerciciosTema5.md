@@ -71,24 +71,94 @@ y la ultima orden nos muestra que todo se ha montadocorrectamente.
 #### Ejercicio 4
 ######_Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema_
 
+Instalamos los paquetes necesarios:
+
+>`sudo apt-get install btrfs-tools xfsprogs`  
+
+Ahora creamos las dos imagenes y las montamos:
+>``` sh
+sudo qemu-img create -f raw  primera.img 300M
+sudo qemu-img create -f raw  segunda.img 300M
+sudo losetup -v -f primera.img
+sudo losetup -v -f segunda.img
+sudo mkfs.xfs /dev/loop2
+sudo mkfs.btrfs /dev/loop3
+mkdir primera segunda
+sudo mount -t xfs /dev/loop2 primera
+sudo mount -t btrfs /dev/loop3 segunda
+```
+
+Tras las pruebas al copiar un fichero a cada imagen:  
+
+Primera Imagen (xfs):
+>![](capturas/eje4tema5.png)  
+
+Segunda imagen (btrfs):
+>![](capturas/eje4tema5_1.png)
 
 - - -
 
 #### Ejercicio 5
 ###### _Instalar ceph en tu sistema operativo._
 
+`sudo apt-get install ceph-mds`
 - - -
 
 
 #### Ejercicio 6
 ######_Crear un dispositivo ceph usando BTRFS o XFS_
+Creamos los directorios:
 
+`mkdir -p /srv/ceph/{osd,mon,mds}`
+
+A continuación el fichero de configuración en /etc/ceph.conf
+```
+[global]
+log file = /var/log/ceph/$name.log
+pid file = /var/run/ceph/$name.pid
+[mon]
+mon data = /srv/ceph/mon/$name
+[mon.mio]
+host = angeljcisneros
+mon addr = 127.0.0.1:6789
+[mds]
+[mds.mio]
+host = angeljcisneros
+[osd]
+osd data = /srv/ceph/osd/$name
+osd journal = /srv/ceph/osd/$name/journal
+osd journal size = 1000 ; journal size, in megabytes
+[osd.0]
+host = angeljcisneros
+devs = /dev/loop4
+
+```
+Creamos la imagen:
+```sh 
+qemu-img create -f raw ceph.img 100M
+sudo losetup -v -f ceph.img
+sudo mkfs.xfs /dev/loop4
+
+```
+Creamos el sistema de archivos:
+
+`sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf`
+
+Iniciamos el servicio:
+`sudo /etc/init.d/ceph -a start`
+
+Y finalmente lo montamos:
+`sudo mkdir /mnt/ceph sudo mount -t ceph angeljcisneros:/ /mnt/ceph`
 - - -
 
 
 
 #### Ejercicio 7
 ###### _Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados._
+>``` sh
+sudo rados mkpool piscina
+sudo rados put -p piscina objeto fichero.txt
+```
 
 - - -
 
