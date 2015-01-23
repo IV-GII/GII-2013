@@ -37,6 +37,9 @@ wget http://lxc-webpanel.github.io/tools/install.sh -O - | bash
 ![](http://fotos.subefotos.com/173a6979ebb1dbafbeeb1c95c364a970o.png)
 ![](http://fotos.subefotos.com/8a2d8d603f47b845d9a762191e36ca98o.png)
 
-Una vez instalado, se accede desde el navegador en http://localhost:5000. Aparecerá un panel de acceso, donde introducimos el usuario y contraseña por defecto, los cuales son los dos **admin**. Una vez dentro, se elige la maquina virtual y ya podremos restringir los recursos de la máquina.
+Una vez instalado, se accede desde el navegador en **http://localhost:5000**. Aparecerá un panel de acceso, donde introducimos el usuario y contraseña por defecto, los cuales son los dos **admin**. Una vez dentro, se elige la maquina virtual y ya podremos restringir los recursos de la máquina.
 
 ![](http://fotos.subefotos.com/a4feae8c7fe317c50154263c996d036ao.png)
+
+
+## Ejercicio 5
