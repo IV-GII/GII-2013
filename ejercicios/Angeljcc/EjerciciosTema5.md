@@ -54,6 +54,17 @@ sshfs angel@192.168.56.101:/home/angel/CarpetaCompartir /home/angeljcisneros/car
 #### Ejercicio  3
 ###### _Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre_
 
+Instalamos qemu:
+`sudo apt-get install qemu-system`
+
+Creamos y montamos el almacenamiento:
+``` sh
+sudo qemu-img create -f qcow2 cow.qcow2 5M
+sudo losetup -v -f cow.qcow2
+sudo mkfs.ext4 /dev/loop0
+```
+y la ultima orden nos muestra que todo se ha montadocorrectamente.
+![](capturas/eje3tema5.png)
 
 -----
 
