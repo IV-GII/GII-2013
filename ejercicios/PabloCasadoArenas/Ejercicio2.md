@@ -249,6 +249,30 @@ Desplegamos
 ```
 ansible local -u pablo -m git -a "repo=https://github.com/ramako/IV.git dest=~/practicas version=HEAD" 
 ```
+### Ejercicio 5
+
+Un playbook de ansible es como una receta de Chef.
+
+```
+---
+- hosts: azure
+  sudo: yes
+  remote_user: pablo
+  tasks:
+    - name: instalar python y easy install 
+      apt: name=build-essential state=present
+      apt: name=python-dev state=present
+      apt: name=python-setuptools state=present
+    - name: instalar build-essentials
+      apt: name=build-essential state=present
+    - name: Instalar MongoDB
+      apt: name=mongodb-server state=present
+    - name: Instalar web.py
+      command: easy_install web.py 
+```
+Necesitamos instalar web.py por lo que necesitamos easy install.
+
+`ansible-playbook nombre_fichero.yml --ask-pass`
 
 ### Ejercicio 6
 
