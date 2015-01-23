@@ -197,6 +197,21 @@ Si abrimos otra terminal podemos comprobar que el servidor vnc está en uso por 
 
 ![Imgur](http://i.imgur.com/s9ozwIA.png)
 
+
+### Ejercicio 5
+
+`azure vm image list | grep Ubuntu`
+la primera instrucción nos muestra la lista de imagenes para instalar, y como nos piden Ubuntu filtramos por Ubuntu.
+
+`azure vm create maquinaIV b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu_DAILY_BUILD-trusty-14_04-LTS-amd64-server-20131221-en-us-30GB pablo (password) --location "West Europe" --ssh`
+
+`azume vm list` listamos la maquina por si ya se nos ha olvidado el nombre que le habiamos puesto y arrancamos con `azure vm start maquinaIV`
+
+Nos conectamos por ssh e instalamos nginx `sudo apt-get install nginx`
+
+Creación del endpoint.
+`azure vm endpoint create -n http maquinaIV 80 80`
+
 ## Tema 7 Gestión de configuraciones
 
 ### Ejercicio 1
