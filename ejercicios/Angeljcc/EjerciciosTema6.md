@@ -61,12 +61,27 @@ Y en la máquina anfitriona:
 #### Ejercicio 5
 ###### _Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web._
 
+Tras crear la maquina virtual en modo grafico porque no atinaba a que el comando azure funcionase, podemos ver las MV que están funcionando
+![](capturas/eje5tema6_1.png)
+Para crearlas utilizariamos el siguiente comando: `azure vm create NOMBRE_VM NOMBRE_IMAGEN usuario [pass] --location "zona" --ssh`
+
+instalamos nginx y comprobamos que esta andando:
+![](capturas/eje5tema6_2.png)
 
 - - -
 
 #### Ejercicio 6
 ###### _Usar juju para hacer el ejercicio anterior._
 
-
+Cambiamos los parámetros de azure en el archivo de configuracion de juju situado en /home/usuario/.juju/enviroments.yaml
+![](capturas/eje6tema6_1.png)
+A continuación ejecutaremos juju:
+``` bash
+sudo juju switch azure
+sudo juju bootstrap
+sudo juju deploy --to 0 juju-gui
+sudo juju expose juju-gui
+```
+Despues de seguir las instrucciones, a través de la interface grafica seleccionamos nginx y lo dejamos puesto. Esperamos a que esté en marcha y ya tenemos el servidor nginx funcionando en juju en azure.
 
 
