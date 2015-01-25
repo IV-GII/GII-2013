@@ -1,6 +1,6 @@
 ##1. Instala LXC en tu versión de Linux favorita. 
 
-![http://i.imgur.com/hTUtWQl.png]
+![](http://i.imgur.com/hTUtWQl.png)
 
 
 ##2. Comprobar qué interfaces puente se han creado y explicarlos.
@@ -46,7 +46,7 @@ sudo apt-get update
 
 Y luego instalamos juju desde los repositorios:
 
-![http://i.imgur.com/3UPJQuW.png]
+![](http://i.imgur.com/3UPJQuW.png)
 
 Ahora entramos en:  ~/.juju/environments.yaml y sustituimos en la línea default:amazon por default:local Y ahora hacemos:
 
@@ -92,7 +92,7 @@ juju status
 
 ##8. Instalar libvirt. Te puede ayudar esta guía para Ubuntu.
 
-![http://i.imgur.com/mdCp0NA.png]
+![](http://i.imgur.com/mdCp0NA.png)
 
 Instalado de la siguiente forma:
 
