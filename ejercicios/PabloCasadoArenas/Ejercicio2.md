@@ -197,6 +197,21 @@ Si abrimos otra terminal podemos comprobar que el servidor vnc está en uso por 
 
 ![Imgur](http://i.imgur.com/s9ozwIA.png)
 
+
+### Ejercicio 5
+
+`azure vm image list | grep Ubuntu`
+la primera instrucción nos muestra la lista de imagenes para instalar, y como nos piden Ubuntu filtramos por Ubuntu.
+
+`azure vm create maquinaIV b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu_DAILY_BUILD-trusty-14_04-LTS-amd64-server-20131221-en-us-30GB pablo (password) --location "West Europe" --ssh`
+
+`azume vm list` listamos la maquina por si ya se nos ha olvidado el nombre que le habiamos puesto y arrancamos con `azure vm start maquinaIV`
+
+Nos conectamos por ssh e instalamos nginx `sudo apt-get install nginx`
+
+Creación del endpoint.
+`azure vm endpoint create -n http maquinaIV 80 80`
+
 ## Tema 7 Gestión de configuraciones
 
 ### Ejercicio 1
@@ -231,3 +246,65 @@ uno:  dos
 tres: 
   - [4,5,Seis, [Siete: 8, [nueve: [10, 11] ]] ]
 ```
+
+### Ejercicio 4
+
+Instalamos Ansible añadiendo sus repositorios y con apt-get.
+
+Creamos el inventario:
+```
+[local]
+192.168.56.101
+```
+Exportamos la variable de entorno:
+
+`export ANSIBLE_HOSTS=~/ansible_hosts`
+
+Desplegamos
+```
+ansible local -u pablo -m git -a "repo=https://github.com/ramako/IV.git dest=~/practicas version=HEAD" 
+```
+### Ejercicio 5
+
+Un playbook de ansible es como una receta de Chef.
+
+```
+---
+- hosts: azure
+  sudo: yes
+  remote_user: pablo
+  tasks:
+    - name: instalar python y easy install 
+      apt: name=build-essential state=present
+      apt: name=python-dev state=present
+      apt: name=python-setuptools state=present
+    - name: instalar build-essentials
+      apt: name=build-essential state=present
+    - name: Instalar MongoDB
+      apt: name=mongodb-server state=present
+    - name: Instalar web.py
+      command: easy_install web.py 
+```
+Necesitamos instalar web.py por lo que necesitamos easy install.
+
+`ansible-playbook nombre_fichero.yml --ask-pass`
+
+### Ejercicio 6
+
+Instalamos Vagrant desde la web con wget y luego con dpkg.
+
+Seleccionamos Debian de la lista.
+
+`vagrant init puphpet/debian75-x64`
+
+![Imgur](http://i.imgur.com/BJysSYu.png)
+
+![Imgur](http://i.imgur.com/p5iN0Ua.png)
+
+Usamos `vagrant up` para iniciar la máquina.
+
+### Ejercicio 7
+
+![Imgur](http://i.imgur.com/ECfS4q1.png)
+
+Y ejecutamos `vagrant provison`
