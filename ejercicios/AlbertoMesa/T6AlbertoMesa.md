@@ -191,7 +191,11 @@ Una vez dentro, desde el panel izquierdo sólo hay que instalar nginx y listo.
 ###Ejercicio 7
 ####Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
 
-Descargaremos la ISO de [Linux Mint](http://www.linuxmint.com/download.php). Esta vez usaremos un gestor de máquinas virtuales más intuitivo:
+Descargaremos la ISO de [Linux Mint](http://www.linuxmint.com/download.php). Esta vez usaremos un gestor de máquinas virtuales más intuitivo, previa instalación de Xen:
+
+`sudo apt-get install xen-hypervisor-4.4-amd64 bridge-utils virtinst`
+
+A continuación:
 
 `sudo apt-get install virt-manager`
 
