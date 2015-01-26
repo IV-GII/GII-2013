@@ -97,3 +97,40 @@ sudo time -v cp /compatida/mongodump.zip /mnt/prueba2
 ```
 
 ![t5e4_e](imagenes/t5e4_e.png)
+
+
+###Ejercicio 5.
+Para ello seguiremos esta [guía](http://ceph.com/docs/master/start/).  
+
+```
+sudo apt-get install ceph-mds
+```
+
+###Ejercicio 6.
+Siguiendo las instrucciones del tema crearé un dispositivo ceph usando **XFS**.
+En primer lugar:  
+
+```
+mkdir -p /srv/ceph/{osd,mon,mds}
+```  
+![t5e6_a](imagenes/t5e6_a.png)  
+
+Después de crear los directorios necesarios crearemos el archivo de configuración:
+
+![t5e6_b](imagenes/t5e6_b.png)  
+
+Ahora crearemos los ficheros necesarios:
+
+```
+qemu-img create -f raw ceph.img 100M
+sudo losetup -v -f ceph.img
+sudo mkfs.xfs /dev/loop0
+```
+
+###Ejercicio 7.
+Para ello ejecutaremos los siguientes comandos:  
+
+```
+sudo rados mkpool pooltemp
+sudo rados put -p pooltemp obj FILE_NAME
+```
