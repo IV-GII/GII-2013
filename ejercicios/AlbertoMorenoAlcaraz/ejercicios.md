@@ -1,4 +1,156 @@
 
+Tema 4
+======
+
+Ejercicio 1
+-----------
+
+**Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.**
+
+Instalamos el paquete lxc en fedora con el siguiente comando:
+```bash
+sudo yum install lxc
+```
+
+Una vez instalado, comprobamos que se ha realizado correctamente:
+```bash
+lxc-checkconfig
+```
+
+![t4ej1.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej1.png)
+
+
+Ejercicio 2
+-----------
+
+**Comprobar qué interfaces puente se han creado y explicarlos.**
+
+Para la creación de un contenedor, necesitamos instalar algunos paquetes. Hay que introducir los siguientes comandos:
+```bash
+sudo yum install lxc-templates
+sudo yum install debootstrap
+```
+
+Para iniciar contenedores, hay que tener instaladas algunas librerias, que se pueden instalar ejecutando en nuestra consola:
+```bash
+sudo yum install libvirt-daemon-lxc libvirt-daemon-config-network
+sudo systemctl start libvirtd.service
+sudo systemctl enable libvirtd.service
+```
+
+Una vez que tenemos instaladas todas las dependencias, pasamos a crear una contenedor con el siguiente comando:
+```bash
+sudo lxc-create -t fedora -n container
+```
+![t4ej2.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej2.png)
+
+Cuando se ha terminado de crear el contenedor, podemos iniciarlo:
+```bash
+sudo lxc-start -n una-caja
+```
+
+Una vez iniciado el contenedor, ejecutamos `ipconfig -a` y vemos que se han creado las siguientes interfaces:
+- lxcbr0
+- vethPAXMMJ
+Por lo que podemos decir que el contenedor tiene acceso a la red.
+
+![t4ej2b.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej2b.png)
+
+
+Ejercicio 3
+-----------
+
+**1. Crear y ejecutar un contenedor basado en Debian.**
+
+Creamos un contenedor con una distribucion debian y lo ejecutamos:
+```bash
+sudo lxc-create -t debian -n debian
+sudo lxc-start -n debian
+```
+![t4ej3.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej3.png)
+
+**Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.**
+
+Creamos un contenedor con una distribucion centos y lo ejecutamos:
+```bash
+sudo lxc-create -t centos -n centos
+sudo lxc-start -n centos
+```
+![t4ej3b.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej3b.png)
+
+
+Ejercicio 4
+-----------
+
+**1. Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.**
+
+Para instalar lxc-webpanel hay que introducir el comando:
+```bash
+wget http://lxc-webpanel.github.com/tools/install.sh -O - | bash
+```
+que hemos recogido de la [documentacion](http://lxc-webpanel.github.io/install.html) oficial.
+
+
+Una vez instalado, accedemos a traves del navegador a la direccion http://localhost:5000 siendo admin el usuario y contraseña.
+Esta pagina nos mostrara las maquinas que tenemos instaladas.
+
+**2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.**
+
+Desde la pagina anterior, haciendo clic en el nombre de la maquina, se accede a las opciones de cada una de ellas, en el que se pueden restringir los recursos.
+
+
+Ejercicio 6
+-----------
+
+**Instalar juju.**
+
+Añadimos el repositorio de juju y lo instalamos con los siguientes comandos:
+```bash
+sudo add-apt-repository ppa:juju/stable
+sudo apt-get update && sudo apt-get install juju-core
+```
+
+![t4ej6.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej6.png)
+
+**Usándolo, instalar MySQL en un táper.**
+
+Para iniciar juju:
+```bash
+juju init
+```
+
+Para poder usar juju en local, hay que modificar el archivo de configuracion para cambiar el parametro #defaul a local.
+
+Necesitamos tener instalado mongodb-server para usar juju en nuestro equipo, segun indica el temario.
+Lo instalamos:
+```bash
+sudo apt-get install mongodb-server
+```
+
+Ahora le indicamos que vamos a trabajar en nuestro equipo local:
+```bash
+sudo juju switch local
+```
+
+Despues, ejecutamos el comando:
+```bash
+juju bootstrap
+```
+
+Una vez terminado, instalamos mysql usando juju:
+```bash
+sudo juju deploy mysql
+```
+
+Una vez instalado, comprobamos que se ha realizado correctamente viendo el estado de juju:
+```bash
+sudo juju status
+```
+![t4ej6b.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej6b.png)
+
+Vemos que el servicio mysql se ha instalado.
+
+
 Tema 5
 ======
 
