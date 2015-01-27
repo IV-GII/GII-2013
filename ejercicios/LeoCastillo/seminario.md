@@ -17,7 +17,7 @@ sudo apt-get install ruby irb rubygems rdoc
 Y comprobamos la versión isntalada:
 
 
-![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/SeminarioRuby/SeminarioRuby/ejercicio1_1.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/SeminarioRuby/ejercicio1_1.png)
 
 
 
@@ -69,7 +69,7 @@ url = ARGV[0]
 puts "Ultima modificación: "+ fecha_mod(url)
 ~~~
 
-![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/SeminarioRuby/ejercicio4_1.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/SeminarioRuby/ejercicio4.png)
 
 #Ejercicio 5#
 ###Ver si está disponible Vagrant como una gema de Ruby e instalarla.###
