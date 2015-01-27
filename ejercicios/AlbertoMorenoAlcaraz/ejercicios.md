@@ -263,6 +263,91 @@ sudo docker pull dockerfile/mongodb
 ![t4ej11c.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej11c.png)
 
 
+Ejercicio 12
+------------
+
+**Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.**
+
+Ejecutamos el contenedor ubuntu
+```bash
+sudo docker run -i -t ubuntu /bin/bash
+```
+
+Añadimos un usuario nuevo y lo hacemos sudo
+```bash
+useradd -d /home/nginx -m alberto
+passwd alberto
+adduser alberto sudo
+```
+
+Hacemos login con el usuario creado
+```bash
+login alberto
+```
+
+![t4ej12.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej12.png)
+
+Despues de añadir el usuario y entrar con el, instalamos nginx con el siguiente comando:
+```bash
+sudo apt-get install nginx
+```
+
+Ejercicio 13
+------------
+
+**Crear a partir del contenedor anterior una imagen persistente con commit.**
+
+
+Necesitamos el id del contenedor que tenemos encendido, por lo que lo miramos con el comando:
+```bash
+sudo docker ps --no-trunc
+```
+![t4ej13.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej13.png)
+
+Despues, hacemos el commit con el id obtenido.
+```bash
+sudo docker commit dd93c54d2a269e0161da2b78097f65c058afdbdda03f58ba2b80abdc6f8cc427 contenedor
+```
+Compruebo si se a creado la imagen de docker con:
+```bash
+sudo docker images 
+```
+![t4ej13b.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej13b.png)
+
+
+Ejercicio 14
+------------
+
+Para crear una imagen, voy a utilizar un dockerfile del proyecto Virtual Vulcano, sobre el sistema coreOS.
+
+
+El fichero dockerfile es:
+```yaml
+# Copyright (c) 2014 The Virtual Vulcano authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that
+# can be found in the LICENSE.md file.
+
+FROM dockerfile/nodejs-bower-gulp
+MAINTAINER Virtual Vulcano <virtualvulcano@gmail.com>
+
+RUN apt-get update
+
+# Intalar mongoDB
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && \
+   echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' > /etc/apt/sources.list.d/mongodb.list && \
+   apt-get update && \
+   apt-get install -y mongodb-10gen
+RUN mkdir -p /data/db
+
+ADD . /web
+
+WORKDIR /web
+CMD /web/cmd/startup.sh
+```
+
+El dockerfile indica que el contenedor se va a actualizar, va a instalarse con una imagen con nodejs, bower y gulp, instalará mongoDB, añadirá como directorio de trabajo una carpeta llamada web e iniciará el script startup.sh nada más iniciarse el contenedor.
+
+
 Tema 5
 ======
 
