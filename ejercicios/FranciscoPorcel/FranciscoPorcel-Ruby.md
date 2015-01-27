@@ -16,11 +16,12 @@ Además hemos instalado rubygems ([instalación rubygems](https://rubygems.org/p
 
 Lo creamos de la siguiente forma:
 
-´´´ #!/usr/local/bin/ruby
-
+~~~
+#!/usr/local/bin/ruby
 for i in 1..10
   puts "#{i}"
-end ´´´
+end
+~~~
 
 Y obtenemos el siguiente resultado:
 
