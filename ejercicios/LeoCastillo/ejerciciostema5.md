@@ -7,7 +7,8 @@ Para ver como tenemos instalado el disco duro podemos usar el siguiente comando:
 sudo lsblk -fm
 ~~~ 
 
-![Sin titulo](https://github.com/leocm89/prueba/tree/master/Imagenes/Tema5/ejercicio1_1.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio1_1.png)
+
 
 Donde mi disco se compone de 5 particiones:
 
@@ -48,12 +49,12 @@ raw:
 dd of=fichero-suelto.img bs=1k seek=5242879 count=0
 ~~~
 
-![Sin titulo](https://github.com/leocm89/prueba/tree/master/Imagenes/Tema5/ejercicio3_1.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio3_1.png)
 
 
 VMDK:
 
-![Sin titulo](https://github.com/leocm89/prueba/tree/master/Imagenes/Tema5/ejercicio3_2.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio3_2.png)
 
 
 
@@ -63,7 +64,7 @@ qcow2:
 qemu-img create -f qcow2 fichero-cow.qcow2 5M
 ~~~
 
-![Sin titulo](https://github.com/leocm89/prueba/tree/master/Imagenes/Tema5/ejercicio3_3.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio3_3.png)
 
 
 Lo montamos con el siguiete comando:
@@ -72,7 +73,7 @@ Lo montamos con el siguiete comando:
 sudo mount -o loop,offset=32256 fichero-cow.qcow2 /mnt/mountpoint
 ~~~
 
-![Sin titulo](https://github.com/leocm89/prueba/tree/master/Imagenes/Tema5/ejercicio3_4.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio3_4.png)
 
 El cual nos da un error al no haberlo formateado.
 
@@ -101,7 +102,7 @@ sudo mkfs.xfs /dev/loop0
 sudo mkfs.btrfs /dev/loop1
 ~~~
 
-![Sin titulo](https://github.com/leocm89/prueba/tree/master/Imagenes/Tema5/ejercicio4_1.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio4_1.png)
 
 Creamos los puntos de montaje:
 ~~~
@@ -122,13 +123,13 @@ Por último probamos copiando un fichero a cada uno de los directorios:
 sudo time -v cp /home/l/Descargas/ubuntu-14.04.1-desktop-amd64.iso /mnt/mountpoint1
 ~~~
 
-![Sin titulo](https://github.com/leocm89/prueba/tree/master/Imagenes/Tema5/ejercicio4_2.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio4_2.png)
 
 ~~~
 sudo time -v cp /home/l/Descargas/ubuntu-14.04.1-desktop-amd64.iso /mnt/mountpoint2
 ~~~
 
-![Sin titulo](https://github.com/leocm89/prueba/tree/master/Imagenes/Tema5/ejercicio4_3.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio4_3.png)
 
 
 Y observamos que con xfs se consume más tiempo y que el porcentaje de CPU es menor.
@@ -154,7 +155,7 @@ sudo mkdir -p /srv/ceph/{osd,mon,mds}
 
 Configuramos ceph, creando un fichero de configuración como el siguiente:
 
-![Sin titulo](https://github.com/leocm89/prueba/tree/master/Imagenes/Tema5/ejercicio6_1.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio6_1.png)
 
 Creamos una imagen:
 ~~~
@@ -181,7 +182,7 @@ Creamos el sistema de ficheros de objetos con:
 sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf
 ~~~
 
-![Sin titulo](https://github.com/leocm89/prueba/tree/master/Imagenes/Tema5/ejercicio6_2.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio6_2.png)
 
 
 Iniciamos el servicio:
@@ -194,7 +195,7 @@ Comprobamos si todo ha ido bien con:
 sudo ceph -s 
 ~~~
 
-![Sin titulo](https://github.com/leocm89/prueba/tree/master/Imagenes/Tema5/ejercicio6_3.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio6_3.png)
 
 Creamos el punto de montaje:
 ~~~
