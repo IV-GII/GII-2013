@@ -190,15 +190,15 @@
 * [X] Comenzar con la tercera práctica.
 
 ###Otros Objetivos
-* [ ] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
-* [ ] Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [X] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [X] Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 
 ##Clase del 2 de Diciembre.
 * [X] Resolver últimos problemas con docker.
 * [X] Resolver dudas relacionadas con la tercera práctica.
 
 ###Otros Objetivos
-* [ ] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [X] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 * [X] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests).
 
 ##Clase del 9 de Diciembre.
@@ -238,36 +238,36 @@
 
 ##Clase del 12 de Enero.
 * [X] Entender el concepto de provisionamiento de máquinas virtuales.
-* [ ] Usar Chef para provisionamiento de una máquina virtual.
+* [X] Usar Chef para provisionamiento de una máquina virtual.
 * [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
 
 ###Objetivos generales
-* [ ] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* [X] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
 * [X] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
 
 ##Clase del 13 de Enero.
 * [X] Entender el último hito del proyecto.
-* [ ] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
 * [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
 
 ###Objetivos generales
-* [ ] Aprender a usar máquinas virtuales.
-* [ ] Elegir un sistema de provisionamiento.
+* [X] Aprender a usar máquinas virtuales.
+* [X] Elegir un sistema de provisionamiento.
 * [X] Entender los objetivos del último proyecto (y de la asignatura).
 
 ##Clase del 19 de Enero.
 * [X] Trabajar sobre el último hito del proyecto.
-* [ ] Usar diversas herramientas para provisionamiento de una máquina virtual. 
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual. 
 
 ###Objetivos generales
-* [ ] Ponerse al día en los ejercicios de autoevaluación.
+* [X] Ponerse al día en los ejercicios de autoevaluación.
 
 ##Clase del 20 de Enero.
 * [X] Trabajar sobre el último hito del proyecto.
-* [ ] Usar diversas herramientas para provisionamiento de una máquina virtual.  
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.  
 
 ###Objetivos generales
-* [ ] Ponerse al día en los ejercicios de autoevaluación.
+* [X] Ponerse al día en los ejercicios de autoevaluación.
 * [X] Recopilar recursos para plantear dudas antes de la entrega final.
 
 
