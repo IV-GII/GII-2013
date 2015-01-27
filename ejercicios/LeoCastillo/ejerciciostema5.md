@@ -104,6 +104,7 @@ sudo mkfs.btrfs /dev/loop1
 
 ![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio4_1.png)
 
+
 Creamos los puntos de montaje:
 ~~~
 sudo mkdir /mnt/mountpoint1
