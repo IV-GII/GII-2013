@@ -18,7 +18,7 @@ No tengo VLM.
 + Windows.
 + RECOVERY de windows.
 + Una particion para datos en general llamada DATA
-+ Y los respectivos para Linx:
++ Y los respectivos para Linux:
  + home
  + /
  + swap (intercambio)
