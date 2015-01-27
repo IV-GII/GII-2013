@@ -151,6 +151,118 @@ sudo juju status
 Vemos que el servicio mysql se ha instalado.
 
 
+Ejercicio 7
+-----------
+
+**1. Destruir toda la configuración creada anteriormente**
+
+Primero, eliminamos mysql:
+```bash
+sudo juju destroy-unit mysql/0
+```
+
+Despues, eliminamos el taper que habia:
+```bash
+sudo juju destroy-machine 1
+```
+
+**2. Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos**
+
+Cambiamos para que juju se ejecute en local.
+```bash
+sudo juju switch local
+```
+
+Añadimos una maquina.
+```bash
+sudo juju add-machine
+```
+
+Añadimos mediawiki
+```bash
+sudo juju deploy mediawiki 
+```
+Creamos una relacion entre ellos. Por ejemplo: 
+```bash
+sudo juju add-relation mediawiki:db mysql 
+```
+Finalmente, exponemos mediawiki
+```bash
+sudo juju expose mediawiki
+```
+
+**3. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.**
+
+```bash
+sudo juju switch local
+
+juju bootstrap
+
+sudo juju deploy mediawiki 
+
+sudo juju add-relation mediawiki:db mysql 
+
+sudo juju expose mediawiki
+```
+
+
+Ejercicio 8
+-----------
+
+**Instalar libvirt. Te puede ayudar esta guía para Ubuntu.**
+
+Instalamos en fedora, ejecutando el comando:
+```bash
+sudo yum install libvirt
+```
+
+![t4ej8.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej8.png)
+
+
+Ejercicio 10
+------------
+
+**Instalar docker.**
+
+Para la instalacion de docker, he mirado el manual de [docker](https://docs.docker.com/installation/fedora/).
+Introducimos los siguiente comandos
+
+```bash
+sudo yum install docker-io
+sudo systemctl start docker
+sudo systemctl enable docker
+```
+
+![t4ej10.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej10.png)
+
+
+Ejercicio 11
+------------
+
+**1. Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.**
+
+
+Instalamos un contenedor con ubuntu:
+```bash
+sudo docker pull ubuntu
+```
+![t4ej11.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej11.png)
+
+Instalamos un contenedor con centos:
+```bash
+sudo docker pull centOS
+```
+![t4ej11b.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej11b.png)
+
+**2. Buscar e instalar una imagen que incluya MongoDB.**
+
+Buscamos una imagen para docker que incluya MongoDB, y encontramos un paquete que lo contiene. Usamos este repositorio para instalar docker con esta imagen ejecutando el siguiente comando:
+```bash
+sudo docker pull dockerfile/mongodb
+```
+![t4ej11c.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t4ej11c.png)
+
+
 Tema 5
 ======
 
