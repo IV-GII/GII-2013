@@ -7,7 +7,7 @@ Para ver como tenemos instalado el disco duro podemos usar el siguiente comando:
 sudo lsblk -fm
 ~~~ 
 
-![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejercicio1_1.png)
+![Sin titulo](https://github.com/leocm89/prueba/blob/master/Imagenes/Tema5/ejrcicio1_1.png)
 
 
 Donde mi disco se compone de 5 particiones:
@@ -240,8 +240,9 @@ azure account download
 
 Y nos dará la dirección de donde podemos descargar el fichero de suscripción. Una vez descargado lo importamos con el siguente comando: 
 
+~~~
 azure account import <file>
-
+~~~
 
 
 #Ejercicio 9#
