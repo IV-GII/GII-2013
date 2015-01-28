@@ -52,3 +52,10 @@ Instalamos en las dos maquinas sshfs
  ```
 ###Ejercicio 3
 #####Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre
+
+Primero instalamos qemu:
+
+``` bash
+sudo apt-get install qemu-system
+```
+
