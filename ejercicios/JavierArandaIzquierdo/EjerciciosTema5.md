@@ -142,3 +142,18 @@ qemu-img create -f raw ceph.img 150M
 sudo losetup -v -f ceph.img
 sudo mkfs.xfs /dev/loop4
 ```
+Se crea el sistema de archivos:
+```bash
+sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf
+```
+Ahora iniciamos el servicio:
+```bash
+sudo /etc/init.d/ceph -a start
+```
+Y montamos:
+```bash
+sudo mkdir /mnt/ceph sudo mount -t ceph javi:/ /mnt/ceph
+```
+
+###Ejercicio 7
+#####Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
