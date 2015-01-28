@@ -70,5 +70,28 @@ sudo mkfs.ext4 /dev/loop0
 ###Ejercicio 4 
 #####Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema
 
+Previamente instalamos las herramientas necesarias:
 
+``` bash
+sudo apt-get install btrfs-tools xfsprogs
+```
 
+Creamos las imagenes:
+```bash
+sudo qemu-img create -f raw  a.img 150M
+sudo qemu-img create -f raw  b.img 150M
+```
+Formateamos las imagenes:
+```bash
+sudo losetup -v -f a.img
+sudo losetup -v -f b.img
+sudo mkfs.xfs /dev/loop1
+sudo mkfs.btrfs /dev/loop2
+```
+Tras esto, los montamos:
+```bash
+sudo mkdir mnt/m1
+sudo mkdir mnt/m2
+sudo mount -t xfs /dev/loop1 /mnt/m1
+sudo mount -t xfs /dev/loop2 /mnt/m2
+```
