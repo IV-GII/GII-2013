@@ -50,3 +50,5 @@ Instalamos en las dos maquinas sshfs
  
  sshfs javi@192.168.56.101:/home/javi/NuevaCarpeta /home/javi/capetaIV
  ```
+###Ejercicio 3
+#####Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre
