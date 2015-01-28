@@ -18,12 +18,18 @@ Utiliza la particion U
 La comparacion es la siguiente: 
 
 [AM866B HP 8/8 Base (0) e-port SAN Switch](http://www.senetic.es/product/AM866B?gclid=CjwKEAiAi52mBRDkq5bX0vq1-RQSJAAq_7IGEvUX7fVBH0xfzvDw8xK5cqGhJoz3noK0Dy-eVPTLPBoC-ZPw_wcB)
-- Precio: 2007,05 €
 
+- Precio: 2007,05 €
 - 8 puertos SFP
 - Puerto consola RS-232
 - Tecnologia de cableado ethernt de cobre 100BASE-T
 - 1 puerto fastEthernet
 - 8 Gbits/s de capacidad de computacion
 - Montaje Rack
-- 
+
+[AP881A HP StorageWorks D2200sb PCIe and P4000 VSA Bundle with Smart Array Adv Pk LTU](http://www.senetic.es/product/AP881A)
+
+- Precio: 4284,00 €
+- 12 unidades de almacenamiento compatibles
+- 10,8 TB de capacidad maxima de almacenamiento permitida
+- Interfaz de unidad de almacenamiento
