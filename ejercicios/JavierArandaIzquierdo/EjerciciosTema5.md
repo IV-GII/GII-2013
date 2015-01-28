@@ -95,3 +95,9 @@ sudo mkdir mnt/m2
 sudo mount -t xfs /dev/loop1 /mnt/m1
 sudo mount -t xfs /dev/loop2 /mnt/m2
 ```
+Ahora copiamos un fichero a cada imagen con:
+sudo time -v cp fichero /mnt/m1/fichero
+sudo time -v cp fichero /mnt/m2/fichero
+
+###Ejercicio 5
+#####
