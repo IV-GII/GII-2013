@@ -101,4 +101,13 @@ sudo time -v cp fichero /mnt/m1/fichero
 sudo time -v cp fichero /mnt/m2/fichero
 
 ###Ejercicio 5
-#####
+#####Instalar ceph en tu sistema operativo.
+Para instalar ceph ejecutamos la siguiente orden:
+```bash
+sudo apt-get install ceph-mds
+```
+###Ejercicio 6
+#####Crear un dispositivo ceph usando BTRFS o XFS
+
+#####Avanzado Usar varios dispositivos en un nodo para distribuir la carga.
+
