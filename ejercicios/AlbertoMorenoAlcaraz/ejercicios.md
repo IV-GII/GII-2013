@@ -74,6 +74,78 @@ sudo rinse --arch=i386 --distribution fedora-core-6 --directory /home/jaulas/fed
 ![t3ej3b.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t3ej3b.png)
 
 
+Ejercicio 4
+-----------
+
+**Instalar alguna sistema debianita y configurarlo para su uso. Trabajando desde terminal, probar a ejecutar alguna aplicación o instalar las herramientas necesarias para compilar una y ejecutarla.**
+
+Primero, entramos en una de las jaulas que hemos instalado antes(ubuntu, por ejemplo):
+```bash
+sudo chroot /home/jaulas/trusty
+```
+
+Despues, montamos proc como dice la teoria:
+```bash
+mount -t proc proc /proc
+```
+
+Instalamos el paquete en español:
+```bash
+apt-get install language-pack-es
+```
+
+Ahora por ejemplo, para ejecutar una aplicación, instalamos curl:
+```bash
+apt-get install curl
+```
+
+![t3ej4.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t3ej4.png)
+
+
+Ejercicio 5
+-----------
+
+**Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.**
+
+Instalamos nginx en la jaula ubuntu, con el siguiente comando:
+```bash
+apt-get install nginx
+```
+
+Iniciamos el servicio nginx para poder usarlo:
+```bash
+service nginx start
+```
+
+Una vez iniciado el servicio, desde fuera de la jaula, usando un navegador, introducimos localhost en la barra de direcciones y nos aparecerá la pantalla de bienvenida de nginx.
+![t3ej5.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t3ej5.png)
+
+
+Ejercicio 6
+-----------
+
+**Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.**
+
+Descargamos jailkit desde la pagina oficial de jailkit y lo instalamos con el siguiente comando:
+```bash
+sudo ./configure && make && sudo make install
+```
+
+Creamos la nueva jaula y iniciamos jailkit:
+```bash
+sudo mkdir /home/jaulas/jailkit
+sudo jk_init -v -j /home/jaulas/jailkit jk_lsh basicshell netutils editors
+```
+
+Creamos un usuario nuevo y lo enjaulamos, con los siguiente comandos:
+```bash
+sudo adduser enjauladojailkit
+sudo jk_jailuser -m -j /home/jaulas/jailkit enjauladojailkit
+```
+
+Una vez realizado esto, tenemos enjaulado un usuario nuevo.
+
+
 
 Tema 4
 ======
