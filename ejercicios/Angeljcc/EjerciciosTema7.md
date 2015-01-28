@@ -2,8 +2,6 @@
 ---------------------------------------------
 
 
-[TOC]
-
 
 ####Ejercicio 1
 ######_Instalar chef en la máquina virtual que vayamos a usar_
