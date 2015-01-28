@@ -191,7 +191,7 @@ ansible koding -u juanfranrv -m ping
 Nos conectamos con ssh e instalamos 'git'. Finalmente, desde la máquina anfitriona le damos la orden  para que usando ansible despliegue las fuentes:
 
 ```sh
-ansible azure -m git -a "repo=https://github.com/julioxus/iv-aerospace.git dest=~/iv-aerospace version=HEAD"
+ansible koding -m git -a "repo=https://github.com/julioxus/iv-aerospace.git dest=~/iv-aerospace version=HEAD"
 ```
 Y los fuentes habrán sido desplegados correctamente en Koding.
 
