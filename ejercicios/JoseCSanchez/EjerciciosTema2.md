@@ -1,4 +1,4 @@
-# Ejercicio tema 2
+# Ejercicios tema 2
 
 ## Ejercicio 1
 
