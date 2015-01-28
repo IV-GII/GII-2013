@@ -58,4 +58,17 @@ Primero instalamos qemu:
 ``` bash
 sudo apt-get install qemu-system
 ```
+Tras esto, creamos y montamos el almacenamiento virtual:
+
+``` bash
+sudo qemu-img create -f qcow2 cow.qcow2 5M
+sudo losetup -v -f cow.qcow2
+sudo mkfs.ext4 /dev/loop0
+```
+ ![1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/2Tema5.png)
+ 
+###Ejercicio 4 
+#####Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema
+
+
 
