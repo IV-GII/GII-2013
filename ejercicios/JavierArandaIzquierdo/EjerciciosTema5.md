@@ -111,3 +111,34 @@ sudo apt-get install ceph-mds
 
 #####Avanzado Usar varios dispositivos en un nodo para distribuir la carga.
 
+Primeramente creamos los directorios:
+```bash
+sudo mkdir -p /srv/ceph/{osd,mon,mds}
+```
+Creamos el fichero de configuracion:
+```bash
+[global]
+log file = /var/log/ceph/$name.log
+pid file = /var/run/ceph/$name.pid
+[mon]
+mon data = /srv/ceph/mon/$name
+[mon.mio]
+host = javi
+mon addr = 127.0.0.1:6789
+[mds]
+[mds.mio]
+host = javi
+[osd]
+osd data = /srv/ceph/osd/$name
+osd journal = /srv/ceph/osd/$name/journal
+osd journal size = 1000 ; journal size, in megabytes
+[osd.0]
+host = javi
+devs = /dev/loop4
+```
+Creamos el sistema de archivos:
+```bash
+qemu-img create -f raw ceph.img 150M
+sudo losetup -v -f ceph.img
+sudo mkfs.xfs /dev/loop4
+```
