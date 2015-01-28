@@ -125,6 +125,7 @@ sudo apt-get install docker.io
 Una vez instalado, si queremos comprobar la versión que tenemos introducimos el siguiente comando:
 
 `docker -v`
+
 ![](http://fotos.subefotos.com/92e20968f28092a7196658272007fdd9o.png)
 
 
