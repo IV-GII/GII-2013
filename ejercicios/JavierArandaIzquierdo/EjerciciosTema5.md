@@ -7,7 +7,7 @@ Para ver la configuracion de mi disco duro he utilizado el comando:
  ``` bash
  sudo lsblk -fm
  ```
- ![1](https://github.com/angeljcc/GII-2014/tree/master/ejercicios/JavierArandaIzquierdo/Capturas/tema5-1.png)
+ ![1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/tema5-1.png)
 
 #####2. Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza?
 
@@ -33,3 +33,7 @@ La comparacion es la siguiente:
 - 12 unidades de almacenamiento compatibles
 - 10,8 TB de capacidad maxima de almacenamiento permitida
 - Interfaz de unidad de almacenamiento
+
+###Ejercicio 2
+
+#####Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.
