@@ -123,10 +123,51 @@ Si hemos realizado todos los pasos anteriores correctamente, podremos ejecutarlo
 
 * [+]Ejercicio 4
  - A) Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.
+ - 
+Lo primero que debemos de hacer antes de comenzar es instalar en nuestro ordenador, ansible, porque desde este gestionaremos de forma remoto lso démas sistemas.
 
-* [+]Ejercicio 5
- - A) Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.
- - B) ¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí?.
+Para ello vamos a instalar "pip", que tiene los paquetes y dependecias para posteriormente instalar ansible:
+
+    apt-get install python-pip
+
+Ahora procedemos a instalar "ansible", con el siguiente comando:
+
+    pip install paramiko PyYAML jinja2 httplib2 ansible
+
+Ahora tenemos que crear el archivo de inventario y añadimos las urls de nuestros sistemas para conectarnos remotamente(Azure).
+
+    [azure]
+    app-conf2.cloudapp.net
+
+[Ver](https://www.dropbox.com/s/l90480e4ihxlebh/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2018.22.50.png?dl=0)
+
+Se le pone "[azure]" porque de estra manera nos sirve para poder referirnos a todas las máquinas a la vez que esten en "azure".
+
+Ahora procedemos a exportat el archivo de inventario a una variable global para que al ejecutar ansible recoja la información:
+
+    export ANSIBLE_HOSTS=~/ansible_hosts
+
+Lo siguiente es configurar el acceso mediante "ssh", para esto debemos de enviar nuestra clave "ssh" a nuestro sistema remoto "app-conf1.cloudapp.net":
+
+    ssh-copy-id -i ~/.ssh/id_rsa.pub walker@app-conf2.cloudapp.net
+
+Ahora comprobamos si desde la máquina anfitrión podemos acceder a la máquina externa, para ello hacemos:
+
+    ansible all -u walker -m ping
+
+Si todo ha ido bien, nos saldrá en color verde el activo.
+
+[Ver](https://www.dropbox.com/s/671wsl892cre0zy/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2018.23.39.png?dl=0)
+
+Una vez realizados los pasos anteriores y si todo a salido bien como se ha explicado, nos descargamos un repositorio de git con un proyecto ya terminado del año pasado[SocialCookies](https://github.com/IV-GII/SocialCookies.git):
+
+    ansible azure -m git -a "repo=https://github.com/IV-GII/SocialCookies.git dest=~/SocialCookies"
+
+Si todo esta bien, nos aparecerá "success", que indica que se ha clonado correctamente.
+
+[Ver](https://www.dropbox.com/s/1adc2ufnfs7vuzj/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2018.24.56.png?dl=0)
+
+Para poder clonar un repositorio con git hay que indicar el repositorio con repo, la carpeta de destino con dest y la versión en caso de querer alguna especifica con version
 
 * [+]Ejercicio 6
  - A) Instalar una máquina virtual Debian usando Vagrant y conectar con ella.
