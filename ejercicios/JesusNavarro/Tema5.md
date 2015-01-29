@@ -54,8 +54,46 @@ La instalación se realiza con el comando:
 **Ejercicio 6.** Crear un dispositivo ceph usando BTRFS o XFS.
 
 Vamos a crear el fichero de configuración /etc/ceph/ceph.conf
+```
+[global]
+log file = /var/log/ceph/$name.log
+pid file = /var/run/ceph/$name.pid
+[mon]
+mon data = /srv/ceph/mon/$name
+[mon.mio]
+host = ubuntu
+mon addr = 127.0.0.1:6789
+[mds]
+[mds.mio]
+host = ubuntu
+[osd]
+osd data = /srv/ceph/osd/$name
+osd journal = /srv/ceph/osd/$name/journal
+osd journal size = 1000 ; journal size, in megabytes
+[osd.0]
+host = ubuntu
+devs = /dev/loop4
+```
 
+A continuación procedemos con a la creacion del sistema:
 
+```
+qemu-img create -f raw ceph.img 100M
+sudo losetup -v -f ceph.img
+sudo mkfs.xfs /dev/loop4
+```
+
+Creación del sistema de ficheros: 
+
+```
+sudo mkdir /srv/ceph/osd/osd.0
+sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf
+```
+
+Para finalizar podemos inicializar el servicio con el siguiente comando:
+```
+sudo /etc/init.d/ceph -a start
+```
 
 **Ejercicio 7.** Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
 
@@ -73,7 +111,39 @@ Registro en Azure de Microsoft:
 
 <a href="http://es.tinypic.com?ref=5bo8ll" target="_blank"><img src="http://i57.tinypic.com/5bo8ll.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
+Una vez finalizado el registro y realiza la verificación por parte de Microsoft, será necesario ejecutar en nuestra máquina el comando ```azure account donwload``` para proceder a enlazar la cuenta, se nos indicará acudir a una dirección para poder obtener un archivo de verificación. Una vez descargado el archivo realizamos la siguiente acción ``` account import nombre_fichero```
+
+<a href="http://es.tinypic.com?ref=2qx8aj9" target="_blank"><img src="http://i60.tinypic.com/2qx8aj9.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
 **Ejercicio 9.** Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.
+
+Pasos a seguir, en primer lugar he introducido el siguiente comando:
+
+``` azure storage account create jesusnavarro ```
+```azure storage account keys list jesusnavarro```
+
+Una vez obtenidas las claves es necesario exportarlas para ello ejecutamos:
+
+```export AZURE_STORAGE_ACCOUNT=jesusnavarro```
+```export AZURE_STORAGE_ACCESS_KEY=(clave obtenida)```
+<a href="http://es.tinypic.com?ref=w7j1ox" target="_blank"><img src="http://i58.tinypic.com/w7j1ox.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+Ahora procedemos a la creación de los contenedores: 
+
+``` azure storage container create taper0 -p blob ```
+<a href="http://es.tinypic.com?ref=29qk1uq" target="_blank"><img src="http://i60.tinypic.com/29qk1uq.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+``` azure storage container create taper1 -p blob ```
+<a href="http://es.tinypic.com?ref=23wmhvq" target="_blank"><img src="http://i62.tinypic.com/23wmhvq.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+
+<a href="http://es.tinypic.com?ref=w7j1ox" target="_blank"><img src="http://i58.tinypic.com/w7j1ox.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+Para proceder a la subida de un archivo es necesario ejecutar: 
+
+```azure storage blob upload Storage1.png taper1 Storage1.png ```
+<a href="http://es.tinypic.com?ref=r1jy4x" target="_blank"><img src="http://i60.tinypic.com/r1jy4x.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
 
 
 **Ejercicio 10.** Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor.
