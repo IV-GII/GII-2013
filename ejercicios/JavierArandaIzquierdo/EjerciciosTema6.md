@@ -77,5 +77,6 @@ http://javiaranda.cloudapp.net/
 ###Ejercicio 7
 #####Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
 
-Voy a instalar una imagen de Linux Mint en VirtualBox:
+Voy a instalar una imagen de Linux Mint en VirtualBox, aqui esta funcionando:
+![4](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/4Tema6.png)
 
