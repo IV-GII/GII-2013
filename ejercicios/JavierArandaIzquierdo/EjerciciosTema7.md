@@ -2,7 +2,7 @@
 ### Ejercicio 1
 #####Instalar chef en la máquina virtual que vayamos a usar
 
-Tras intentar sin exito instalar tal y como vemos en el guion, opte por descargar Ruby 2.2.0 desde la web he instalar chef con el siguiente comando:
+Tras intentar sin exito instalar tal y como vemos en el guion, opte por descargar Ruby 2.2.0 desde la web he instalado chef con el siguiente comando:
 ```bash
 curl -L https://www.opscode.com/chef/install.sh | sudo bash
 ```
@@ -13,8 +13,21 @@ curl -L https://www.opscode.com/chef/install.sh | sudo bash
 #####Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual.
 
 ###Ejercicio 3
-#####Escribir en YAML la siguiente estructura de datos en JSON: { uno: "dos",
-  tres: [ 4, 5, "Seis", { siete: 8, nueve: [ 10, 11 ] } ] }
+#####Escribir en YAML la siguiente estructura de datos en JSON:
+#####{ uno: "dos",tres: [ 4, 5, "Seis", { siete: 8, nueve: [ 10, 11 ] } ] }
+```yaml
+---
+- uno: "dos"
+  tres:
+    - 4
+    - 5
+    - "Seis"
+    -
+      - siete: 8
+        nueve:
+          - 10
+          - 11
+```
 
 ###Ejercicio 4
 #####Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.
