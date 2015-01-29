@@ -169,4 +169,9 @@ rados put -p poool obj archivo.txt
 
 #####Finalmente, is puedo hacer estos ultimos ejercicios poruqe @angeljcc me ha cedido una de las maquinas que tiene en su cuenta de Azure! Grcias mate!
 
+
 ###Ejercicio 8
+Para conectar a la maquina lo hare mediante SSH desde mi terminal
+
+###Ejercicio 9
+#####Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.
