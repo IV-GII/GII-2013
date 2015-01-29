@@ -167,4 +167,6 @@ Añadimos un fichero:
 rados put -p poool obj archivo.txt
 ```
 
-#####Me ha sido imposible terminar el tema 5 (Ejercicio 8,9 y 10) ya que no dispongo de una maquina en Azure.
+#####Finalmente, is puedo hacer estos ultimos ejercicios poruqe @angeljcc me ha cedido una de las maquinas que tiene en su cuenta de Azure! Grcias mate!
+
+###Ejercicio 8
