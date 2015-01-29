@@ -53,7 +53,7 @@
 
 * [+]Entender el concepto de entorno virtual de desarrollo y comenzar a usarlo.
 * [+]Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
-*  [+]Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
+* [+]Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
 #Otros objetivos
 
@@ -85,7 +85,6 @@
 #Otros objetivos
 
 * [+]Último día de entrega de la primera práctica. 
-* []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request *directamente a su copia del repositorio*, no al repositorio principal de la asignatura. 
 * [+]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 * [+]Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
 
@@ -113,7 +112,6 @@
 
 #Otros objetivos
 
-* []Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request *directamente a su copia del repositorio*, no al repositorio principal de la asignatura. 
 * [+]Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
 #VIRTUALIZACIÓN
@@ -203,7 +201,7 @@ Conocer qué tipo de perfil buscan estas empresas.
 
 #Otros objetivos
 
-* [] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+* [+] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
 * [+] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
 #Clase del 25 de noviembre de 2014
@@ -267,7 +265,7 @@ Conocer qué tipo de perfil buscan estas empresas.
 
 # Otros objetivos
 
-* []Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [+]Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
 * [+]Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
 
 #Clase del 15 de Diciembre de 2014
@@ -280,7 +278,7 @@ Conocer qué tipo de perfil buscan estas empresas.
 
 # Otros objetivos
 
-* []Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
+* [+]Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
 * [+]Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
 * [+]Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
 
