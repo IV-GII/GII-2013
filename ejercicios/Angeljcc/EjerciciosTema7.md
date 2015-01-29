@@ -81,6 +81,27 @@ Ejecutamos el comando siguiente:
 #### Ejercicio 4
 ###### _Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible._
 
+Como no habia manera de instalar ansible como en los apuntes, decidí probar por la manera de la [documentación de Ansible](http://docs.ansible.com/intro_installation.html#latest-releases-via-apt-ubuntu):
+```bash
+$ sudo apt-get install software-properties-common
+$ sudo apt-add-repository ppa:ansible/ansible
+$ sudo apt-get update
+$ sudo apt-get install ansible
+```
+y con esto configura todos los paquetes, ahora podemos conectar. pero antes tenemos que añadir el host al siguiente archivo: `/etc/ansible/hosts`
+Añadimos el host donde queremos que Ansible se conecte, en este caso a nuestra MV de azure.
+![](capturas/eje4tema7_1.png)
+Y vemos que se ha conectado. Ahora procedemos a instalar una aplicación, en este caso me decido por instalar python para la practica de DAI, procedemos con:
+``` bash
+ansible all -u azureuser -m command -a "sudo apt-get install git python"
+ansible all -u azureuser -m command -a "sudo apt-get install python-pip -y"
+ansible all -u azureuser -m command -a "sudo pip install web.py"
+ansible all -u azureuser -m git -a "repo=https://github.com/IV-2014/VirtualBoard.git dest=~/VirtualBoard version=HEAD"
+ansible all -u azureuser -m command -a "npm install /home/azureuser/VirtualBoard/ServerConfiguration/serverSocket"
+ansible all -u azureuser -m command -a "node /home/azureuser/VirtualBoard/ServerConfiguration/serverSocket"
+azure vm endpoint create -n http angeljcc 80 8080
+
+```
 
 - - -
 
@@ -89,11 +110,50 @@ Ejecutamos el comando siguiente:
 
 ######_¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí?._
 
+
+Despues de hacer un par de ejercicios con los dos, veo mas sencillo ansible y chef me ha dado mas problemas.
+
+```yaml
+- hosts: azure
+  sudo: yes
+  tasks:
+  - name: Instalar paquetes necesarios
+    apt: name=nodejs state=present
+    apt: name=git state=present
+    apt: name=npm state=present
+  - name: Clonando Repositorio desde git
+    command: git clone  https://github.com/IV-2014/VirtualBoard.git
+  - name: Iniciar
+    command: node /home/VirtualBoard/ServerConfiguration/serverSocket/server.js
+```
+lanzamos el fichero con:
+``` bash
+ansible-playbook fichero.yml -u azureuser
+
+```
 - - -
 
 #### Ejercicio 6
 ###### _Instalar una máquina virtual Debian usando Vagrant y conectar con ella._
 
+Lo instalamos utilizando: 
+```bash
+sudo apt-get install vagrant
+```
+Descargamos una Imagen:
+En [vagrantbox.es](http://www.vagrantbox.es/) podemos descargarnos las imagenes que queramos, en este caso será una debian.
+
+```bash
+vagrant box add debian https://dl.dropboxusercontent.com/u/29173892/vagrant-boxes/debian7.3.0-vbox4.3.6-puppet3.4.1.box
+``` 
+Con la orden `vagrant box list` podemos ver la lista de imágenes descargadas.
+
+Para poder usar la imagen, crearemos un fichero Vagrant, mediante la siguiente orden `vagrant init debian`. Y ejecutamos:
+
+``` bash
+vagrant up
+vagrant ssh
+```
 
 - - -
 
