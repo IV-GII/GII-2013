@@ -392,3 +392,95 @@ Para instalar nginx necesitamos crear un usuario que valide los parametros y des
 **Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección. **
 
 #TEMA 5
+
+##Ejercicio 1.1
+**¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?**
+
+##Ejercicio 1.2
+**Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza? **
+
+##Ejercicio 1.3
+**Buscar ofertas SAN comerciales y comparar su precio con ofertas locales (en el propio ordenador) equivalentes.**
+
+##Ejercicio 2
+**Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.Avanzado Usar los drivers de FUSE para Ruby (aquí explican más o menos como hacerlo con fusefs para mostrar el contenido de una estructura de datos en un lenguaje como si fuera un fichero. Este es un ejemplo en Python.**
+
+##Ejercicio 3
+**Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre**
+
+##Ejercicio 4
+**Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema**
+
+##Ejercicio 5
+**Instalar ceph en tu sistema operativo. **
+
+##Ejercicio 6
+**Crear un dispositivo ceph usando BTRFS o XFS.Avanzado Usar varios dispositivos en un nodo para distribuir la carga.**
+
+##Ejercicio 7
+**Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados. **
+
+##Ejercicio 8
+**Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente**
+
+##Ejercicio 9
+**Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho. **
+
+##Ejercicio 10
+**Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.**
+
+
+#TEMA6
+
+##Ejercicio 1
+**Instalar los paquetes necesarios para usar KVM. Se pueden seguir estas instrucciones. Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.**
+
+##Ejercicio 2.1
+**Crear varias máquinas virtuales con algún sistema operativo libre tal como Linux o BSD. Si se quieren distribuciones que ocupen poco espacio con el objetivo principalmente de hacer pruebas se puede usar CoreOS (que sirve como soporte para Docker) GALPon Minino, hecha en Galicia para el mundo, Damn Small Linux, SliTaz (que cabe en 35 megas) y ttylinux (basado en línea de órdenes solo).**
+
+##Ejercicio 2.2
+**Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels. **
+
+##Ejercicio 3
+**Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con "qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img" **
+
+##Ejercicio 4
+**Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.**
+
+##Ejercicio 5
+**Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.**
+
+##Ejercicio 6
+**Usar juju para hacer el ejercicio anterior.**
+
+##Ejercicio 7
+**Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.**
+
+#TEMA 7
+
+##Ejercicio 1
+**Instalar chef en la máquina virtual que vayamos a usar**
+
+##Ejercicio 2
+**Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual. **
+
+##Ejercicio 3
+**Escribir en YAML la siguiente estructura de datos en JSON { uno: "dos",  tres: [ 4, 5, "Seis", { siete: 8, nueve: [ 10,11 ] } ] } "**
+
+##Ejercicio 4
+**Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.**
+
+##Ejercicio 5.1
+**Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.**
+
+##Ejercicio 5.2
+**¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí?.**
+
+##Ejercicio 6
+**Instalar una máquina virtual Debian usando Vagrant y conectar con ella.**
+
+##Ejercicio 7
+**Crear un script para provisionar `nginx` o cualquier otro servidor web que pueda ser útil para alguna otra práctica**
+
+##Ejercicio 8
+**Configurar tu máquina virtual usando vagrant con el provisionador ansible**
