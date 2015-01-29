@@ -122,6 +122,54 @@ Por lo que podemos ver que es algo mas rapido en los accesos a archivos grandes,
 
 Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
 
+Lo primero es elegir un sistema linux con LXDE o que se le pueda instalar, para ello miro en la pagina de http://lxde.org/es/lxde y veo que ubuntu me sirve para este proposito, voy a darle simplemente a la maquina virtual 512 megas.
+
+Lo primero es inicializar la maquina ubuntu y vamos a poner el LXDE, primero instalamos con la terminal:
+
+````
+sudo apt-get install lubuntu-desktop
+````
+
+Ahora simplemente cerramos sesión y ponemos el modo de escritorio en LXDE. Necesita reiniciarse al parecer. (Al reiniciarse)
+
+<img src="http://i60.tinypic.com/10pvuwm.jpg"/>
+
+
+<img src="http://i60.tinypic.com/i2sm69.jpg"/>
+
+
+Ahora vamos a ejecutarlo con 512 megas y con vnc:
+
+````
+qemu-system-x86_64 -boot order=c -drive file=ubuntulxde.img,if=virtio -m 512M -name debian -vnc
+````
+Miramos la ip con ifconfig.
+
+<img src="http://i60.tinypic.com/wv7ewn.jpg"/>
+
+Para conectarnos al VNC simplemente con el instalamos vinagre
+
+````
+sudo apt-get install vinagre 
+vinagre 192.168.56.101:5901 &
+````
+
+<img src="http://i57.tinypic.com/2hdu1dv.jpg"/>
+
+Ahora vamos a poner el servidor ssh
+
+````
+sudo apt-get install openssh-server
+sudo service ssh start
+````
+
+Y nos conectamos desde la otra maquina.
+
+<img src="http://i59.tinypic.com/kbpsfk.jpg"/>
+
+
+###Ejercicio 5:
+
 
 Trabajando....!!!!!
 
