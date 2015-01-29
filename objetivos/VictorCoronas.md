@@ -299,25 +299,48 @@ Conocer qué tipo de perfil buscan estas empresas.
 
 # Objetivos de esta sesión
 
-* []Entender el concepto de provisionamiento de máquinas virtuales.
-* []Usar Chef para provisionamiento de una máquina virtual.
-* []Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+* [+]Entender el concepto de provisionamiento de máquinas virtuales.
+* [+]Usar Chef para provisionamiento de una máquina virtual.
+* [+]Comprender la utilidad de provisionamiento externo de máquinas virtuales.
 
 # Otros objetivos
 
-* []Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
-* []Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+* [+]Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* [+]Retomar el contacto con la asignatura y ponerse al día en los objetivos.
 
 #Clase del 13 de Enero de 2014
 
 # Objetivos de esta sesión
 
-* [] Entender el último hito del proyecto.
-* [] Usar diversas herramientas para provisionamiento de una máquina virtual.
-* [] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+* [+] Entender el último hito del proyecto.
+* [+] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [+] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
 
 # Otros objetivos
 
-* [] Aprender a usar máquinas virtuales.
-* [] Elegir un sistema de provisionamiento.
-* [] Entender los objetivos del último proyecto (y de la asignatura).
+* [+] Aprender a usar máquinas virtuales.
+* [+] Elegir un sistema de provisionamiento.
+* [+] Entender los objetivos del último proyecto (y de la asignatura).
+
+#Clase del 19 de Enero de 2014
+
+# Objetivos de esta sesión
+
+* [+] Trabajar sobre el último hito del proyecto.
+* [+] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+# Otros objetivos
+
+* [+] Ponerse al día en los ejercicios de autoevaluación.
+
+#Clase del 20 de Enero de 2014
+
+# Objetivos de esta sesión
+
+* [+] Trabajar sobre el último hito del proyecto.
+* [+] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+# Otros objetivos
+
+* [+] Ponerse al día en los ejercicios de autoevaluación.
+* [+] Recopilar recursos para plantear dudas antes de la entrega final.
