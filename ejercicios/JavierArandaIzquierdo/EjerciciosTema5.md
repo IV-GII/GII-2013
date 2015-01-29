@@ -171,7 +171,14 @@ rados put -p poool obj archivo.txt
 
 
 ###Ejercicio 8
-Para conectar a la maquina lo hare mediante SSH desde mi terminal
+Primero nos hara falta instalar npm:
+```bash
+sudo apt-get install npm
+```
+Tras esto, ejecutamos:
+```bash 
+sudo npm install azure-cli -g
+```
 
 ###Ejercicio 9
 #####Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.
