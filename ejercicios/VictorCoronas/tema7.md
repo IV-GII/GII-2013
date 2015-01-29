@@ -134,15 +134,56 @@ Si hemos realizado todos los pasos anteriores correctamente, podremos ejecutarlo
 Lo primero es instalr "Vagrant" en caso de que no este instalado con el comando:
 
     apt-get install vagrant
-El siguientep paso que debemos de dar, es descargar la imagen de "Debian" con Vagrant.[Ver más imagenes soportadas](http://www.vagrantbox.es/). Solo tenemos que poner el siguiente comando:
+El siguiente paso que debemos de dar, es descargar la imagen de "Debian" con Vagrant.[Ver más imagenes soportadas](http://www.vagrantbox.es/). Solo tenemos que poner el siguiente comando:
 
     vagrant box add debian-squeeze http://ergonlogic.com/files/boxes/debian-current.box
 
 [Ver](https://www.dropbox.com/s/fcx51lbt0vfssce/Captura%20de%20pantalla%202015-01-27%20a%20la%28s%29%2013.24.07.png?dl=0)
 
+Una vez que se haya hecho la descarga, procedemos a crear el archivo de configuración "Vagrantfile" con el siguiente comando:
+
+    vagrant init debian-squeeze
+
+[Ver captura de pantalla]()
+
+Una vez creado el archivo de configuración solo queda arrancar nuestra máquina con el siguiente comando:
+
+    vagrant up
+
+
+
+
 * [+]Ejercicio 7
  - A) Crear un script para provisionar `nginx` o cualquier otro servidor
 web que pueda ser útil para alguna otra práctica.
+
+El primer paso que debemos de dar es editar el fichero "Vagrantfile" como se sigue:
+
+```
+ # -*- mode: ruby -*-
+ # vi: set ft=ruby :
+
+ Vagrant.configure("2") do |config|
+ config.vm.box = "walker"
+  config.vm.provider "virtualbox" do |v|
+    v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+    v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
+  end
+  config.vm.provision "shell",
+    inline: "sudo apt-get install -y nginx && sudo service nginx restart && sudo service nginx status"
+ end
+```
+
+[Ver captura de pantalla]()
+
+Una vez que tengamos hechas las modificaciones mostradas anteriormente, tenemos que ejecutar nuestra máquina con el siguiente comando:
+
+    vagrant provision
+
+Este comando hará que se ejecuten los comandos que necesitamos para el aprovisionamiento.
+
+[Ver captura de pantalla]()
+
 
 * [+]Ejercicio 8
  - A) Configurar tu máquina virtual usando vagrant con el provisionador
