@@ -51,3 +51,5 @@ Una vez redireccionado el trafico, solo nos falta instalar SSH para conectarnos 
 ```bash
 sudo apt-get install ssh
 ```
+###Ejercicio 5
+#####Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
