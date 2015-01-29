@@ -395,6 +395,22 @@ Para instalar nginx necesitamos crear un usuario que valide los parametros y des
 
 ##Ejercicio 1.1
 **¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?**
+En mi ordenador solo tengo un disco duro instalado.uso varias particiones una para windows otra para linux y otro para datos importantes.
+En ambos sistemas opetativos tengo maquinas virtuales para mostrar la informacion de las maquinas virtuales utilizaremos las sentecias:
+```sh
+sudo fdisk -l 
+y 
+sudo lsblk -fm
+```
+![1]()
+![2]()
+para compreobar los volumenes logicos podriamos hacerlo con:
+```sh
+sudo lvmdiskscan
+```
+![3]()
+simpre y cuando hayamos instalado anteriormente ```sh sudo apt-get install lvm2```
+![4]()
 
 ##Ejercicio 1.2
 **Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza? **
@@ -404,24 +420,98 @@ Para instalar nginx necesitamos crear un usuario que valide los parametros y des
 
 ##Ejercicio 2
 **Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.Avanzado Usar los drivers de FUSE para Ruby (aquí explican más o menos como hacerlo con fusefs para mostrar el contenido de una estructura de datos en un lenguaje como si fuera un fichero. Este es un ejemplo en Python.**
+HACER CON DOS MAQUINAS
 
 ##Ejercicio 3
 **Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre**
+En primer lugar comenzaremos instalando qemu:
+```sh
+sudo apt-get install qemu-system
+```
+acontinuacion crearemos la imagen qemu y despues la montaremos:
+![6,9]()
+
 
 ##Ejercicio 4
 **Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema**
+Para poder trabajar con ese tipo de formatos en primer lugar procederemos a la instalacion de las herramientas necesarias.
+![7]()
+
+Una vez instaladas vamos a crear las imagenes y mostarles en el loop.
+![8]()
+
+Ahora vamos a ubicar las carpetas que necesitaremos y seguidamente realizaremos los puntos de montaje.
+
+![10_1]()
+![10_2]()
+y comprobaremos
+![10_3]()
+
+y vamos a prodecer a realizar un test a ambas imagenes
+![10_4]()
+
 
 ##Ejercicio 5
 **Instalar ceph en tu sistema operativo. **
+Para ellos procedemos a instalarlo de la siguiente forma:
+```sh
+sudo apt-get install ceph-mds
+```
+
 
 ##Ejercicio 6
 **Crear un dispositivo ceph usando BTRFS o XFS.Avanzado Usar varios dispositivos en un nodo para distribuir la carga.**
+Para crear un dispositivo con ceph empezamos creando las carpetas que necesitaremos para ello.
+```sh
+sudo mkdir -p /srv/ceph/{osd,mon,mds}
+```
+abrimos un fichero de configuracion de lo configaremos de la siguiente forma
+![11]()
+Despues realizamos la creacion de la imagen y mas tarde susu ficheros.
+![12]()
+![12_2]()
+y ahora que lo tenemos arrancaremos la maquina con:
+```sh
+sudo /etc/init.d/ceph -a start
+```
+y para verlo con ceph:
+```sh
+sudo ceph -s
+```
+y finalmente lo montamos en un directorio que hayamos creado anteriormente.
 
 ##Ejercicio 7
 **Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados. **
+Para ellos usaremos las siguiente ordenes :
+```sh
+sudo rados mkpool poolrados
+```
+y para ver que funciona utilizamos cualquier archivo de nuestro sistema:
+```sh
+sudo rados put -p prueba-pool objeto hola2.txt
+```
 
 ##Ejercicio 8
 **Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente**
+Una vez que nos hayamos dado de alta en la cuenta de azure vamos a realizar la instalacion del cliente de azule.
+```sh
+sudo apt-get install nodejs-legacy
+sudo apt-get install npm
+sudo npm install -g azure-cli
+```
+acontinuacion nos logueamos con la siguiente sentecia:
+```sh
+azure login -u mwlmc@outlook.com
+```
+
+despues procedemos a realizar el siguiente paso en el que enlazamos la sesion con azure
+```sh
+azure account download
+```
+y finalmente solo nos quedara realizar la importacion de fichero con el link que nos han proporcionado anteriormente.
+```sh
+azure account import "fichero"
+```
 
 ##Ejercicio 9
 **Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho. **
