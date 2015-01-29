@@ -138,20 +138,20 @@ El siguiente paso que debemos de dar, es descargar la imagen de "Debian" con Vag
 
     vagrant box add debian-squeeze http://ergonlogic.com/files/boxes/debian-current.box
 
-[Ver](https://www.dropbox.com/s/fcx51lbt0vfssce/Captura%20de%20pantalla%202015-01-27%20a%20la%28s%29%2013.24.07.png?dl=0)
+[Ver 1](https://www.dropbox.com/s/fcx51lbt0vfssce/Captura%20de%20pantalla%202015-01-27%20a%20la%28s%29%2013.24.07.png?dl=0)
+[Ver 2](https://www.dropbox.com/s/hbl6pg84nm8cjhg/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2017.02.31.png?dl=0)
 
 Una vez que se haya hecho la descarga, procedemos a crear el archivo de configuración "Vagrantfile" con el siguiente comando:
 
     vagrant init debian-squeeze
 
-[Ver captura de pantalla]()
+[Ver captura de pantalla](https://www.dropbox.com/s/nmi1kgg9lpbwnl5/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2017.05.10.png?dl=0)
 
 Una vez creado el archivo de configuración solo queda arrancar nuestra máquina con el siguiente comando:
 
     vagrant up
 
-
-
+[Ver](https://www.dropbox.com/s/51wo49rt7xq9zf0/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2017.20.28.png?dl=0)
 
 * [+]Ejercicio 7
  - A) Crear un script para provisionar `nginx` o cualquier otro servidor
@@ -164,7 +164,7 @@ El primer paso que debemos de dar es editar el fichero "Vagrantfile" como se sig
  # vi: set ft=ruby :
 
  Vagrant.configure("2") do |config|
- config.vm.box = "walker"
+ config.vm.box = "debian-squeeze"
   config.vm.provider "virtualbox" do |v|
     v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
@@ -174,7 +174,7 @@ El primer paso que debemos de dar es editar el fichero "Vagrantfile" como se sig
  end
 ```
 
-[Ver captura de pantalla]()
+[Ver captura de pantalla](https://www.dropbox.com/s/oy0xuwir895o5f3/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2017.33.19.png?dl=0)
 
 Una vez que tengamos hechas las modificaciones mostradas anteriormente, tenemos que ejecutar nuestra máquina con el siguiente comando:
 
@@ -182,9 +182,66 @@ Una vez que tengamos hechas las modificaciones mostradas anteriormente, tenemos 
 
 Este comando hará que se ejecuten los comandos que necesitamos para el aprovisionamiento.
 
-[Ver captura de pantalla]()
-
+[Ver captura de pantalla](https://www.dropbox.com/s/oc9rsyz4htrfc38/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2017.36.40.png?dl=0)
 
 * [+]Ejercicio 8
  - A) Configurar tu máquina virtual usando vagrant con el provisionador
 ansible.
+
+Ahora en este ejercicio vamos a seguir los mismos pasos que en el ejercicio anterior, pero en este caso vamos a añadir en el archivo "Vagrantfile" las líneas necesárias para que coja los playbooks de "ansible".
+
+Lo primero que debemos de hacer es abrir nuestro archivo "Vagrantfile", y tenemos que borrar todo el contenido y sustituirlo por este nuevo contenido:
+
+   ```
+   VAGRANTFILE_API_VERSION = "2"
+   
+   Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+     config.vm.box = "debian-ansible"
+     config.vm.network :private_network, ip: "192.168.53.101"
+   
+     config.vm.provision "ansible" do |ansible|
+       ansible.playbook = "provisioning/playbook.yml"
+       ansible.inventory_path = "provisioning/ansible_hosts"
+   
+     end
+   end
+   ```
+
+[Ver](https://www.dropbox.com/s/jujfcg25n03xlwf/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2017.42.12.png?dl=0)
+
+El siguiente paso es crear una carpeta "provisioning", donde guardaremos el archivo "playbooks.yml", que contendrá las tareas que deseamos que provisione "Vagrant" y el archivo "ansible_host".
+
+[Ver](https://www.dropbox.com/s/zwvpstx2odbuj8p/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2017.44.59.png?dl=0)
+
+El archivo playbook.yml contendrá lo siguiente:
+
+    ```
+    hosts: debian 
+    sudo: yes 
+    tasks:
+      name: Actualizar 
+      apt: update_cache=yes
+      name: Instalar el servidor Nginx 
+      apt: pkg=nginx state=present
+      name: Arrancando el servidor NGINX 
+      action: shell service nginx start
+    ```
+
+[Ver](https://www.dropbox.com/s/oi8hqn4t9ewglpx/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2017.50.10.png?dl=0)
+
+Ya el último paso que debemos de dar antes de arrancar la máquina es, editar el archivo "ansible_host", para que contenga la "ip" que hemos puesto en el archivo de configuración de "Vagrantfile".
+
+    [debian]
+    192.168.53.101
+
+[Ver](https://www.dropbox.com/s/xebckfiurqci8q2/Captura%20de%20pantalla%202015-01-29%20a%20la%28s%29%2017.51.20.png?dl=0)
+
+Ahora y apodemos arrancar la máquina con:
+
+    vagrant up
+
+y provisionarla con:
+
+    vagrant provision
+
+Para acceder al servidor tan fácil como poner en el navegador la "ip" que le hemos asignado a la VM: 192.168.53.101
