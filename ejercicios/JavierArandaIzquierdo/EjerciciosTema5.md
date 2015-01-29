@@ -167,7 +167,7 @@ Añadimos un fichero:
 rados put -p poool obj archivo.txt
 ```
 
-#####Finalmente, is puedo hacer estos ultimos ejercicios poruqe @angeljcc me ha cedido una de las maquinas que tiene en su cuenta de Azure! Grcias mate!
+#####Finalmente, puedo hacer estos ultimos ejercicios porque [Angel](https://github.com/angeljcc) me ha cedido una de las maquinas que tiene en su cuenta de Azure!
 
 
 ###Ejercicio 8
