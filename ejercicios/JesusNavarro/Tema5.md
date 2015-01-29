@@ -51,13 +51,13 @@ La instalación se realiza con el comando:
 
 ```sudo apt-get install ceph-mds```
 
-**Ejercicio 6.** 
+**Ejercicio 6.** Crear un dispositivo ceph usando BTRFS o XFS.
 
-**Ejercicio 7.** 
+**Ejercicio 7.** Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
 
-**Ejercicio 8.** 
+**Ejercicio 8.** Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente.
 
-**Ejercicio 9.** 
+**Ejercicio 9.** Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.
 
 
 
