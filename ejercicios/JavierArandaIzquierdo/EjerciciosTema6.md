@@ -18,6 +18,7 @@ Ahora arrancamos la maquina con la imagen descargada:
 qemu-system-x86_64 -hda fichero-cow.qcow2 -cdrom ~/Escritorio/slitaz-4.0.iso
 ```
 Aqui esta funcionando:
+
 ![1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/1Tema6.png)
 
 #####2.Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.
@@ -27,3 +28,14 @@ He utilizado VirtualBox para montar la misma imagen que en el apartado anterior:
 
 ###Ejercicio 3
 #####Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img
+
+###Ejercicio 4
+#####Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
+Primeramente creamos la imagen con:
+```bash
+qemu-img create -f qcow2 linux.img 10G
+```
+Tras esto, creamos la maquina:
+```bash
+qemu-system-x86_64 -hda linux.img -cdrom ubuntu-14.04.1-server-i386.iso -m 512M
+```
