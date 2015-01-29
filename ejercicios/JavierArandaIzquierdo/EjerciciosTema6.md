@@ -53,3 +53,23 @@ sudo apt-get install ssh
 ```
 ###Ejercicio 5
 #####Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
+Una vez creada la maquina virtual (en mi caso Ubuntu), conectamos con ella mediante SSH con el siguiente comando:
+```bash
+ssh azureuser@javiaranda.cloudapp.net
+```
+Escribimos la contra y ya estamos dentro de nuestra maquina. Ahora instalamos nginx con:
+```bash
+sudo apt-get install nginx
+```
+Y para arrancarlo escribiremos:
+```bash
+sudo service nginx start
+```
+Ahora entramos en la direccion de la web de mi maquina y vemos que nginx esta funcionando:
+```
+http://javiaranda.cloudapp.net/
+```
+![3](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/3Tema6.png)
+
+###Ejercicio 7
+#####Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
