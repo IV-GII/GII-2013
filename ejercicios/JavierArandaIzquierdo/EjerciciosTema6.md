@@ -71,5 +71,11 @@ http://javiaranda.cloudapp.net/
 ```
 ![3](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/3Tema6.png)
 
+###Ejercicio 6
+#####Usar juju para hacer el ejercicio anterior.
+
 ###Ejercicio 7
 #####Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
+
+Voy a instalar una imagen de Linux Mint en VirtualBox:
+
