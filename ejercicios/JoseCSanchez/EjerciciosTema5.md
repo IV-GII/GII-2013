@@ -19,3 +19,23 @@ Para ver los volumenes lógicos, primero instalamos el paquete **sudo apt-get in
 `sudo lvmdiskscan`
 
 ![](http://fotos.subefotos.com/779921a29ac7f59bddc5e5f5fee49091o.png)
+
+Como ofertas comerciales, podemos encontrar las siguientes: [Drobo B800i SAN RAID 8 bahías](http://www.macnificos.com/product.aspx?p=7909&gclid=CJ6vyImXucMCFazKtAod10oAsg), [IBM 249824E](http://www.ebay.es/itm/like/391037303855?limghlpsr=true&hlpv=2&ops=true&viphx=1&hlpht=true&lpid=115), entre otras muchas, viendo en general son bastante caras, pero con grandes niveles de eficiencia, sin decir la capacidad de swapping, redundancia, etc de la que disponen.
+
+
+## Ejercicio 2
+
+Primero, si no tenemos Fuse instalado, lo instalamos en ambas máquinas con las ordenes:
+
+```sh
+modprobe fuse
+depmod -A
+```
+
+Una vez instalado, instalo también en ambas máquinas el **sshfs**,
+
+`sudo apt-get install sshfs`
+
+y en la segunda máquina instalo el servidor ssh:
+
+`sudo apt-get install openssh-server`
