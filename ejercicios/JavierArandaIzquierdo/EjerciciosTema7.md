@@ -2,7 +2,11 @@
 ### Ejercicio 1
 #####Instalar chef en la máquina virtual que vayamos a usar
 
-Tras intentar sin exito instalar tal y como vemos en el guion, opte por ver los ejercicio de mis 
+Tras intentar sin exito instalar tal y como vemos en el guion, opte por descargar Ruby 2.2.0 desde la web he instalar chef con el siguiente comando:
+```bash
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
+```
+![1](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/tema7-1.png)
 
 
 ###Ejercicio 2
