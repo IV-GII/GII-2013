@@ -53,11 +53,29 @@ La instalación se realiza con el comando:
 
 **Ejercicio 6.** Crear un dispositivo ceph usando BTRFS o XFS.
 
+Vamos a crear el fichero de configuración /etc/ceph/ceph.conf
+
+
+
 **Ejercicio 7.** Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
 
+Mediante rados:
+
+```sudo rados mkpool pisci```
+
+y añadimos un fichero
+
+```rados put -p pisci obj pruebaIV.txt```
+
 **Ejercicio 8.** Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente.
+
+Registro en Azure de Microsoft: 
+
+<a href="http://es.tinypic.com?ref=5bo8ll" target="_blank"><img src="http://i57.tinypic.com/5bo8ll.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
 **Ejercicio 9.** Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.
 
 
+**Ejercicio 10.** Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor.
 
+<a href="http://es.tinypic.com?ref=2hcm4i8" target="_blank"><img src="http://i61.tinypic.com/2hcm4i8.png" border="0" alt="Image and video hosting by TinyPic"></a>
