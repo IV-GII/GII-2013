@@ -402,15 +402,15 @@ sudo fdisk -l
 y 
 sudo lsblk -fm
 ```
-![1]()
-![2]()
+![1](http://i.imgur.com/f4EiWgh.png)
+![2](http://i.imgur.com/59yPfKy.png)
 para compreobar los volumenes logicos podriamos hacerlo con:
 ```sh
 sudo lvmdiskscan
 ```
-![3]()
+![3](http://i.imgur.com/qYztuyr.png)
 simpre y cuando hayamos instalado anteriormente ```sh sudo apt-get install lvm2```
-![4]()
+![4](http://i.imgur.com/RfgJbDH.png)
 
 ##Ejercicio 1.2
 **Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza? **
@@ -420,7 +420,7 @@ simpre y cuando hayamos instalado anteriormente ```sh sudo apt-get install lvm2`
 
 ##Ejercicio 2
 **Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.Avanzado Usar los drivers de FUSE para Ruby (aquí explican más o menos como hacerlo con fusefs para mostrar el contenido de una estructura de datos en un lenguaje como si fuera un fichero. Este es un ejemplo en Python.**
-HACER CON DOS MAQUINAS
+
 
 ##Ejercicio 3
 **Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre**
@@ -429,26 +429,26 @@ En primer lugar comenzaremos instalando qemu:
 sudo apt-get install qemu-system
 ```
 acontinuacion crearemos la imagen qemu y despues la montaremos:
-![6,9]()
+![6,9](http://i.imgur.com/jlyFyee.png)
 
 
 ##Ejercicio 4
 **Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema**
 Para poder trabajar con ese tipo de formatos en primer lugar procederemos a la instalacion de las herramientas necesarias.
-![7]()
+![7](http://i.imgur.com/M8bho4v.png)
 
 Una vez instaladas vamos a crear las imagenes y mostarles en el loop.
-![8]()
+![8](http://i.imgur.com/xlOoyOA.png)
 
 Ahora vamos a ubicar las carpetas que necesitaremos y seguidamente realizaremos los puntos de montaje.
 
-![10_1]()
-![10_2]()
+![10_1](http://i.imgur.com/aU8OG5g.png)
+![10_2](http://i.imgur.com/JCqqmUy.png)
 y comprobaremos
-![10_3]()
+![10_3](http://i.imgur.com/l16qIqs.png)
 
 y vamos a prodecer a realizar un test a ambas imagenes
-![10_4]()
+![10_4](http://i.imgur.com/orlMxam.png)
 
 
 ##Ejercicio 5
@@ -466,10 +466,10 @@ Para crear un dispositivo con ceph empezamos creando las carpetas que necesitare
 sudo mkdir -p /srv/ceph/{osd,mon,mds}
 ```
 abrimos un fichero de configuracion de lo configaremos de la siguiente forma
-![11]()
+![11](http://i.imgur.com/yvaoVxV.png)
 Despues realizamos la creacion de la imagen y mas tarde susu ficheros.
-![12]()
-![12_2]()
+![12](http://i.imgur.com/GJbSoee.png)
+![12_2](http://i.imgur.com/mzkIaEG.png)
 y ahora que lo tenemos arrancaremos la maquina con:
 ```sh
 sudo /etc/init.d/ceph -a start
@@ -524,15 +524,36 @@ azure account import "fichero"
 
 ##Ejercicio 1
 **Instalar los paquetes necesarios para usar KVM. Se pueden seguir estas instrucciones. Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.**
+Comprobamos los paquetes necesarios para usar kvm y comprobamos si esta preparado.
+![1]()
+
 
 ##Ejercicio 2.1
 **Crear varias máquinas virtuales con algún sistema operativo libre tal como Linux o BSD. Si se quieren distribuciones que ocupen poco espacio con el objetivo principalmente de hacer pruebas se puede usar CoreOS (que sirve como soporte para Docker) GALPon Minino, hecha en Galicia para el mundo, Damn Small Linux, SliTaz (que cabe en 35 megas) y ttylinux (basado en línea de órdenes solo).**
+En primer ligar he buscado sistemas operativos libres que ocupen poco espacio para poder trabajar mejor sin la complicacion de tener cuidado con el espacio ya que me ha surgido varios problemas en practicas anteriores.
+
+uno de ellos sera [SLITAZ](http://www.slitaz.org/es/get/#stable) y otro [Damn Small Linux](http://www.damnsmalllinux.org/download.html).
+
+Ahora crearemos los disco necesarios con :
+```sh
+qemu-img create -f qcow2 slitaz.img 600M
+qemu-img create -f qcow2 damn.img 600M
+```
+y ahora las instalaremos:
+![1_2]()
+![2]()
+![3]()
+
 
 ##Ejercicio 2.2
 **Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels. **
+Realizamos las misma instalacion de los sistemas anteriores pero utilizandi Virtualbox
+![4]()
+![5]()
 
 ##Ejercicio 3
 **Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con "qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img" **
+
 
 ##Ejercicio 4
 **Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.**
