@@ -39,3 +39,15 @@ Tras esto, creamos la maquina:
 ```bash
 qemu-system-x86_64 -hda linux.img -cdrom ubuntu-14.04.1-server-i386.iso -m 512M
 ```
+Tras ver que la maquina funciona, la ejecutaremos de forma que no veamos ninguna ventana y nos conectamos con vinagre a ella:
+```bash
+qemu-system-x86_64 -boot order=c -drive file=lxde.img,if=virtio -m 512M -name ubuntu14 -vnc :1
+```
+Inicialmente no podremos conectarnos por SSH ya que qemu solo permite una conexion procedente de internet. Redirigimos hacia el puerto que queramos:
+```bash
+-redir tcp:4664::22
+```
+Una vez redireccionado el trafico, solo nos falta instalar SSH para conectarnos a la maquina:
+```bash
+sudo apt-get install ssh
+```
