@@ -2,6 +2,10 @@
 
 ## Ejercicio 1
 
+**¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?**
+
+**Buscar ofertas SAN comerciales y comparar su precio con ofertas locales (en el propio ordenador) equivalentes.**
+
 En mi ordenador personal en donde estoy realizando los ejercicios de esta asignatura no dispongo de ninguna partición, usando una máquina virtual de ubuntu. 
 
 A continuación muestro el sistema de disco que uso en la máquina virtual ejecutando los siguientes comandos:
@@ -24,6 +28,8 @@ Como ofertas comerciales, podemos encontrar las siguientes: [Drobo B800i SAN RAI
 
 
 ## Ejercicio 2
+
+**Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.**
 
 Primero, si no tenemos Fuse instalado, lo instalamos en ambas máquinas con las ordenes:
 
@@ -48,6 +54,8 @@ Una vez instalado todo, compruebo la dirección ip de la máquina servidora medi
 
 
 ## Ejercicio 3
+
+**Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre.**
 
 Primero instalo qemu con el siguiente comando:
 
@@ -77,6 +85,8 @@ y ahora podemos por ejemplo formatearlo como si fuera un disco duro normal:
 
 
 ## Ejercicio 4
+
+**Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema.**
 
 Primero intalamos los paquetes necesarios con la orden:
 
@@ -115,8 +125,60 @@ sudo mount -t xfs /dev/loop3 /mnt/m2
 
 ## Ejercicio 5
 
+**Instalar ceph en tu sistema operativo.**
+
 Orden de instalación: `sudo apt-get install ceph-mds`
 
 
 ## Ejercicio 6
 
+**Crear un dispositivo ceph usando BTRFS o XFS**
+
+En primer lugar, creamos los directorios necesarios y el fichero de configuración:
+
+```sh
+sudo mkdir -p /srv/ceph/{osd,mon,mds}
+sudo nano /etc/ceph/ceph.conf
+```
+
+Rellenamos el fichero de la siguiente manera:
+
+![](http://fotos.subefotos.com/99ab266583b39c7779cd2fb80110dc17o.png)
+
+Una vez relleno, creamos las imágenes y los ficheros respectivamente:
+
+```sh
+qemu-img create -f raw ceph.img 100M
+sudo losetup -v -f ceph.img
+sudo mkfs.xfs /dev/loop4
+```
+
+```sh
+sudo mkdir /srv/ceph/osd/osd.0
+sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf
+```
+![](http://fotos.subefotos.com/5d5152556c7c91a333a92cde992ed320o.png)
+
+Por último, iniciamos con 
+
+`sudo /etc/init.d/ceph -a start`
+
+y montamos.
+
+```sh
+sudo mkdir /mnt/ceph
+sudo mount -t ceph ubuntu:/ /mnt/ceph
+```
+
+
+## Ejercicio 7
+
+**Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.**
+
+Primero creo un pool:
+
+`sudo rados mkpool mi_pool`
+
+Y añado un fichero a pool:
+
+`sudo rados put -p mi_pool obj obj2
