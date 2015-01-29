@@ -157,3 +157,12 @@ sudo mkdir /mnt/ceph sudo mount -t ceph javi:/ /mnt/ceph
 
 ###Ejercicio 7
 #####Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
+
+Primero creamos un pool:
+```bash
+sudo rados mkpool poool
+```
+Añadimos un fichero:
+```bash
+rados put -p poool obj archivo.txt
+```
