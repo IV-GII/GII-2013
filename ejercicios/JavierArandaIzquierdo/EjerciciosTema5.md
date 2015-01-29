@@ -166,3 +166,5 @@ Añadimos un fichero:
 ```bash
 rados put -p poool obj archivo.txt
 ```
+
+#####Me ha sido imposible terminar el tema 5 (Ejercicio 8,9 y 10) ya que no dispongo de una maquina en Azure.
