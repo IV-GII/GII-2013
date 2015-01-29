@@ -179,6 +179,14 @@ Tras esto, ejecutamos:
 ```bash 
 sudo npm install azure-cli -g
 ```
+Tras esto, conectamos con nuestra cuenta de Azure:
+```bash
+azure account download
+```
+Tras dar mil vueltas para que funcionara el comando anterior, entramos en el link nos dicen y descargamos el fichero. Cuando este descargado, importamos el fichero:
+```bash
+azure accont import "fichero"
+```
 
 ###Ejercicio 9
 #####Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.
