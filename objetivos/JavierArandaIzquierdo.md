@@ -74,7 +74,7 @@
 
 ##Otros objetivos
 
-( )Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+(x)Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 
 (x)Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
@@ -87,7 +87,7 @@
 
 ##Otros objetivos
 
-( )Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+(x)Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 
 (x)Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
@@ -102,7 +102,7 @@
 
 ##Otros objetivos
 
-( )Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+(x)Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
 
 (x)Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
@@ -134,7 +134,7 @@
 
 Otros objetivos
 
-()Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
+(x)Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero.
     
 (x)Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
@@ -151,7 +151,7 @@ Otros objetivos
 ##Otros objetivos
 (x)Último día de entrega de la primera práctica.
 
-()Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.x
+(x)Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.x
 
 (x)Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
@@ -168,7 +168,7 @@ Otros objetivos
 (x)Comenzar con la segunda práctica
 ##Otros objetivos
 
-()Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
+(x)Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
 
 (x)Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
@@ -185,29 +185,10 @@ Otros objetivos
 
 (x)Otros objetivos
 
-()Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
+(x)Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
 
 (x)Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
 
-#Clase del 4 de noviembre de 2014
-##Objetivos de esta sesión
-
-()Entender los objetivos de este tema
-
-()Entender la base de las técnicas de virtualización de diferentes subsistemas del ordenador
-
-()Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
-
-()Entender y saber llevar a cabo la virtualización de dispositivos de red
-##Otros objetivos
-
-()Usar herramientas de administración y monitorización de red en línea de órdenes
-
-(x)Contestar a la encuesta sobre la asignatura
-
-()Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
-
-(x)Dejar de usar Sublime Text por estas 7 razones.
 
 #Clase del 4 de noviembre de 2014
 ##Objetivos de esta sesión
@@ -350,15 +331,15 @@ herramientas similares para otros sistemas operativos.
 
 [ ] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 
-[ ] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+[x] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
 
 #Clase del 9 de diciembre de 2014
 ##Objetivos de la asignatura
 
-[ ] Terminar la familiarización con Ruby
+[x] Terminar la familiarización con Ruby
 
-[ ] Recordar conceptos de almacenamiento físico.
+[x] Recordar conceptos de almacenamiento físico.
 
-[ ] Entender el concepto de FUSE y usarlo en la prática.
+[x] Entender el concepto de FUSE y usarlo en la prática.
 
-[ ] Crear y manipular formatos de provisionamiento delgado.
+[x] Crear y manipular formatos de provisionamiento delgado.
