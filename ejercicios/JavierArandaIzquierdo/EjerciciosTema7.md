@@ -75,7 +75,16 @@ ansible-playbook ejercicio5.yml -u azureuser
 ```
 
 ###Ejercicio 6
-#####Instalar una maquina virtual Debian usando Vagrant y conectar con ella
+#####Instalar una maquina virtual Debian usando Vagrant y conectar con ella.
+Primero instalamos vagrant con:
+```bash
+sudo apt-get install vagrant
+```
+He descargado Debia 7.7.0:
+```bash
+vagrant box add debian https://github.com/kraksoft/vagrant-box-debian/releases/download/7.7.0/debian-7.7.0-amd64.box
+```
+![3](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/tema7-3.png)
 
 ###Ejercicio 7
 #####Crear un script para provisionar `nginx` o cualquier otro servidor web que pueda ser útil para alguna otra práctica
