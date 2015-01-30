@@ -41,7 +41,7 @@ Contraseña: root
 
 <img src="http://i61.tinypic.com/2r7bic1.png"></img>
 
-2.Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue. </strong>
+<strong>2.Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue. </strong>
 
 Como estoy usando Ubuntu 14.04, voy a probar a instalar la distribución de CentOS. Pero hay que tener cuidado, ya que en CentOS se usa yum para instalar en vez de apt-get. Por tanto lo instalamos:
 ```
