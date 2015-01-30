@@ -144,15 +144,100 @@ juju expose mediawiki
 ```
 <strong> Ejercicio 8: Instalar libvirt. Te puede ayudar esta guía para Ubuntu.</strong>
 
+Antes de instalarlo debemos ver si tenemos instalado KVM. Lo comprobamos con:
+```
+kvm-ok
+```
+En mi caso no lo tengo instalado. Lo instalo con:
+```
+sudo apt-get install cpu-checker
+```
+<img src="http://i59.tinypic.com/2wd6nf9.png"></img>
+
 <strong> Ejercicio 9: Instalar un contenedor usando virt-install.</strong>
 
+En primer lugar ejecutamos:
+```
+sudo apt-get install virtinst
+```
+Para poder usar la GUI virt-viewer instalamos lo siguiente:
+```
+sudo apt-get install virt-viewer
+```
+Ahora tenemos que colocar la ISO que vamos a instalar en el siguiente directorio:
+```
+/var/lib/libvirt/images
+```
+Copiamos la imagen desde el escritorio a la carpeta indicada:
+```
+sudo cp Escritorio/ubuntu-14.04.1-desktop-i386.iso /var/lib/libvirt/images
+```
+Por último, lo instalamos con:
+```
+sudo virt-install --name ubuntuVirt --ram 512 --file=/var/lib/libvirt/images/ubuntu-14.04.1-desktop-i386.img --file-size=3 --vnc --cdrom=/var/lib/libvirt/images/ubuntu-14.04.1-desktop-i386.iso
+```
 <strong> Ejercicio 10: Instalar docker.</strong>
 
+Vamos a seguir los pasos detallados en este tutorial: https://docs.docker.com/installation/ubuntulinux/
+
+Comenzamos instalando la versión más reciente. Para ello hacemos:
+```
+sudo apt-get update
+sudo apt-get install docker.io
+```
+Reiniciamos bash:
+```
+source /etc/bash_completion.d/docker.io
+```
+Ahora instalamos transport-https para que nuestro APT pueda trabajar con https:
+```
+sudo apt-get install apt-transport-https
+```
+Lo siguiente que debemos hacer es añadir la llave del repositorio de Docker a nuestro llavero local: 
+```
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 36A1D7869245C8950F966E92D8576A8BA88D21E9
+````
+Añadimos el repositorio a nuestra lista de fuentes de apt: 
+```
+sudo sh -c "echo deb https://get.docker.com/ubuntu docker main\/etc/apt/sources.list.d/docker.list"
+```
+Actualizamos los repositorios e instalamos lxc-docker:
+```
+sudo apt-get update 
+sudo apt-get install lxc-docker
+```
+Ejecutamos el servicio: 
+```
+sudo docker -d &
+```
+Y aquí vemos docker en funcionamiento:
+
+<img src="http://i58.tinypic.com/2uo3mvn.png"></img>
+
 <strong> Ejercicio 11:<br>
-1. Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.<br>
-2. Buscar e instalar una imagen que incluya MongoDB.</strong>
+1. Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.</strong><br>
+
+Usamos en primer lugar:
+```
+sudo docker pull ubuntu
+```
+Para centOS hacemos:
+```
+sudo docker pull centos
+```
+<img src="http://i60.tinypic.com/34tevtj.png"></img>
+
+<strong>2. Buscar e instalar una imagen que incluya MongoDB.</strong>
+
+Ejecutamos lo siguiente:
+```
+sudo docker pull hairmare/mongodb
+```
+<img src="http://i58.tinypic.com/316rt40.png"></img>
 
 <strong> Ejercicio 12: Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.</strong>
+
+
 
 <strong> Ejercicio 13: Crear a partir del contenedor anterior una imagen persistente con commit.</strong>
 
