@@ -39,7 +39,19 @@ sudo apt-add-repository ppa:ansible/ansible
 sudo apt-get update
 sudo apt-get install ansible
 ```
-Tras esto, Ansible esta instalado y listo para utilizar.
+Tras esto, Ansible esta instalado y listo para utilizar. Ahora copio mi clave publica para SSH y con la siguiente orden probamos a instalar varias cosas en mi maquina virtual como Ansible:
+
+![2](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/tema7-2.png)
+```bash
+ansible all -u azureuser -m command -a "sudo apt-get install git python"
+ansible all -u azureuser -m command -a "sudo apt-get install python-pip -y"
+ansible all -u azureuser -m command -a "sudo pip install web.py"
+ansible all -u azureuser -m git -a "repo=https://github.com/IV-2014/VirtualBoard.git dest=~/VirtualBoard version=HEAD"
+ansible all -u azureuser -m command -a "npm install /home/azureuser/VirtualBoard/ServerConfiguration/serverSocket"
+ansible all -u azureuser -m command -a "node /home/azureuser/VirtualBoard/ServerConfiguration/serverSocket"
+azure vm endpoint create -n http angeljcc 80 8080
+```
+
 
 ###Ejercicio 5
 #####1. Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.
