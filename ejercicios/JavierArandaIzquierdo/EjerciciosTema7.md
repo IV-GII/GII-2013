@@ -97,6 +97,16 @@ vagrant ssh
 
 ###Ejercicio 7
 #####Crear un script para provisionar `nginx` o cualquier otro servidor web que pueda ser útil para alguna otra práctica
+El scrpt seria este:
+```ruby
+Vagrant.configure("2") do |config|
+  config.vm.box = "debian"
+
+  config.vm.provision "shell",
+  inline: "sudo apt-get install -y nginx"
+
+end
+```
 
 ###Ejercicio 8
 #####Configurar tu máquina virtual usando vagrant con el provisionador ansible
