@@ -112,10 +112,36 @@ juju add-relation mediawiki:db mysql
 ```
 
 <strong> Ejercicio 7:<br>
-1. Destruir toda la configuración creada anteriormente.<br>
-2. Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.<br>
-3. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.</strong>
+1. Destruir toda la configuración creada anteriormente.</strong><br>
 
+Vamos a destruir toda la configuración relativa a juju:
+```
+juju destroy-service mysql 
+juju destroy-service mediawiki 
+sudo juju destroy-environment local
+```
+<strong>2. Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.</strong><br>
+
+Para ello ejecutamos lo siguiente:
+```
+juju deploy mediawiki 
+juju deploy msql 
+juju add-relation mediawiki msql 
+juju expose mediawiki
+```
+<strong>3. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.</strong>
+
+El script es el siguiente:
+```
+juju switch local
+
+sudo juju bootstrap
+juju deploy mediawiki
+juju deploy mysql
+juju add-relation mediawiki:db mysql
+
+juju expose mediawiki
+```
 <strong> Ejercicio 8: Instalar libvirt. Te puede ayudar esta guía para Ubuntu.</strong>
 
 <strong> Ejercicio 9: Instalar un contenedor usando virt-install.</strong>
