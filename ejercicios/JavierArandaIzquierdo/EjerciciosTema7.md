@@ -92,7 +92,8 @@ vagrant init debian
 Y lo ejecutamos con las ordenes:
 ```bash
 vagrant up
-vagrant ssh```
+vagrant ssh
+```
 
 ###Ejercicio 7
 #####Crear un script para provisionar `nginx` o cualquier otro servidor web que pueda ser útil para alguna otra práctica
