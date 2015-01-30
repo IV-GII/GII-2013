@@ -85,6 +85,14 @@ He descargado Debia 7.7.0:
 vagrant box add debian https://github.com/kraksoft/vagrant-box-debian/releases/download/7.7.0/debian-7.7.0-amd64.box
 ```
 ![3](https://github.com/JavideBaza/GII-2014/blob/master/ejercicios/JavierArandaIzquierdo/Capturas/tema7-3.png)
+Y para usar la imagen descargada, creamos un archivo Vagrant, con el comando:
+```bahs
+vagrant init debian
+```
+Y lo ejecutamos con las ordenes:
+```bash
+vagrant up
+vagrant ssh```
 
 ###Ejercicio 7
 #####Crear un script para provisionar `nginx` o cualquier otro servidor web que pueda ser útil para alguna otra práctica
