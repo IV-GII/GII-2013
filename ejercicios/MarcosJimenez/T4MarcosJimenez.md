@@ -267,5 +267,19 @@ service nginx status
 
 <strong> Ejercicio 13: Crear a partir del contenedor anterior una imagen persistente con commit.</strong>
 
+En primer lugar, necesitamos el container ejecutándose y necesitamos conocer el ID. Para saber cual es lo hacemos con:
+```
+sudo docker ps -notrunc
+```
+<img src="http://i57.tinypic.com/15hg8ki.png"></img>
+
 <strong> Ejercicio 14: Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.</strong>
 
+Nos logueamos en primer lugar en Docker, que además nos da la opción de asociar nuestra cuenta con la de GitHub. Una vez dentro de Docker, añadimos el repositorio donde pone "Automated Build". Nos quedaría lo siguiente:
+
+<img src="http://i58.tinypic.com/2ebsq3a.png"></img>
+
+Por último, para instalarlo en nuestra máquina ejecutamos:
+```
+sudo docker pull marcosjf/proyecto-iv
+```
