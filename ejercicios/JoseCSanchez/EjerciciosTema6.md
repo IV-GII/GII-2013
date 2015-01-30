@@ -34,4 +34,8 @@ qemu-system-x86_64 -hda fichero-cow3.qcow2 -cdrom Core-current.iso
 
 ![](http://fotos.subefotos.com/8890f780b6af76d5756751326dd379e3o.png)
 
-Desde **VMware** realizo la instalación de una nueva máquina virtual de SliTaz:
+Desde **VMware** realizo la instalación de una nueva máquina virtual de SliTaz y otra de CoreOS:
+
+![](http://fotos.subefotos.com/9c78f633064e0f8df26aa34a0150a297o.png)
+
+![](http://fotos.subefotos.com/d175dbb3eb29d0ffa7caecc83fea64f2o.png)
