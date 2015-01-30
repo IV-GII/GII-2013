@@ -39,3 +39,41 @@ Desde **VMware** realizo la instalación de una nueva máquina virtual de SliTaz
 ![](http://fotos.subefotos.com/9c78f633064e0f8df26aa34a0150a297o.png)
 
 ![](http://fotos.subefotos.com/d175dbb3eb29d0ffa7caecc83fea64f2o.png)
+
+
+## Ejercicio 3
+
+#### Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con: qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img
+
+Aplicando el benchmark de tiempo comprobamos como con paravirtualización tarda ligeramente menos que sin paravirtualización:
+
+**Con para virtualización**
+
+`qemu-system-x86_64 -boot order=c -drive file=fichero-cow3.qcow2,if=virtio`
+
+|Medición    |Real        |User       |Sys        |
+| ---------- | ---------- |---------- |---------- |
+| 1          | 2.620      |0.843      |1.656      |
+| 2          | 2.534      |0.871      |1.790      |
+| 3          | 2.089      |0.800      |1.742      |
+| 4          | 2.246      |0.816      |1.678      |
+| Media      | 2.372      |0.832      |1.716      |
+
+
+**Sin para virtualización**
+
+`qemu-system-x86_64 -hda fichero-cow3.qcow2`
+
+|Medición    |Real        |User       |Sys        |
+| ---------- | ---------- |---------- |---------- |
+| 1          | 3.089      |0.965      |2.288      |
+| 2          | 2.913      |0.884      |2.782      |
+| 3          | 2.064      |1.034      |2.205      |
+| 4          | 2.484      |0.798      |2.343      |
+| Media      | 2,637      |0.918      |2.404      |
+
+
+## Ejercicio 4
+
+#### Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
+
