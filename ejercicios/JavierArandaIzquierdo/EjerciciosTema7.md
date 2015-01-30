@@ -32,6 +32,15 @@ curl -L https://www.opscode.com/chef/install.sh | sudo bash
 ###Ejercicio 4
 #####Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.
 
+He utilizado los siguientes comando pasa instalar Ansible:
+```bash
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install ansible
+```
+Tras esto, Ansible esta instalado y listo para utilizar.
+
 ###Ejercicio 5
 #####1. Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.
 
