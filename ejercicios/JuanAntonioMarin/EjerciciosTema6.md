@@ -235,12 +235,90 @@ Ahora miramos el dominio y lo tenemos correctamente instalado:
 
 ###Ejercicio 6:
 
+Usar juju para hacer el ejercicio anterior.
+
+Dado que borre juju voy a proceder a instalar todas las cosas de nuevo.
+
+````
+sudo add-apt-repository ppa:juju/stable
+sudo apt-get update
+sudo apt.get install juju-core
+````
+
+Voy a usar la información de configuración para Azure: https://juju.ubuntu.com/docs/config-azure.html
+
+Vamos a editar el archivo de configuración:
+
+````
+sudo gedit /home/alumno/.juju/environments.yaml
+````
+
+Y procedemos a poner los datos de la cuenta de azure quitando los corchetes.
+
+Pero antes debemos de generar unos certificados:
+
+````
+openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout certificado.pem -out certificado.pem
+openssl x509 -inform pem -in certificado.pem -outform der -out certificado.cer
+chmod 600 certificado.pem
+````
+
+Ahora subimos el certificado en configuración:
+
+<img src="http://i60.tinypic.com/nn5cf4.jpg"/>
+
+Entonces el environments.yaml quedaria de la siguiente forma:
+
+<img src="http://i62.tinypic.com/34g5zyt.jpg"/>
+
+Despues utilizamos los siguiente comandos:
+
+````
+sudo juju switch azure
+sudo juju bootstrap
+sudo juju deploy --to 0 juju-gui
+sudo juju expose juju-gui
+````
+
+<img src="http://i60.tinypic.com/21oo950.jpg"/>
+
+Y hacemos un status de juju:
+
+<img src="http://i62.tinypic.com/smavkl.jpg"/>
+
+Ya solo tenemos que poner la direccion que nos señalaba el status (tarda un rato en activarse) y entramos con la contraseña que tenemos en un fichero que se a creado en la carpeta .juju/environment:
+
+<img src="http://i58.tinypic.com/s4q9p0.jpg"/>
+
+Y mediante la consola de comandos:
+
+````
+sudo juju deploy --to 0 cs:~hp-discover/trusty/nginx-4
+sudo expose nginx
+````
+
+Quedando instalado correctamente:
+
+<img src="http://i62.tinypic.com/qy8qpt.jpg"/>
+
+
 
 ###Ejercicio 7: 
 
 Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
 
+Descargo la imagen de LinuxMint desde: http://www.linuxmint.com/download.php
+
+Voy a instalarla desde VirtualBox:
+
+Ejecuto la imagen:
+
+<img src="http://i59.tinypic.com/11kffgp.jpg"/>
+
+Pero no consigo instalar ninguna de las versiones que me he descargado de 32bits ni de 64 bits:
+
+<img src="http://i60.tinypic.com/5zl2xl.jpg"/>
 
 
-Trabajando....!!!!!
+
 
