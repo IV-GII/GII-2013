@@ -4,11 +4,46 @@
 
 <strong> Ejercicio 1: Instala LXC en tu versión de Linux favorita. Normalmente la versión en desarrollo, disponible tanto en GitHub como en el sitio web está bastante más avanzada; para evitar problemas sobre todo con las herramientas que vamos a ver más adelante, conviene que te instales la última versión y si es posible una igual o mayor a la 1.0.</strong>
 
+Para instalar LXC ejecutamos en nuestra terminal:
+```
+sudo apt-get install lxc lxc-templates
+```
+
 <strong> Ejercicio 2: Comprobar qué interfaces puente se han creado y explicarlos.</strong>
+
+Para mostrar los interfaces web de nuestra máquina ejecutamos:
+```
+ifconfig -a
+```
+Nos fijamos en el último de todos:
+
+<img src="http://i60.tinypic.com/2w2pjj9.png"></img>
+
+El interfaz lxcbr0 es el que se ha creado con la instalación de LXC y sirve para permitir al container tener acceso a la red.
 
 <strong> Ejercicio 3:<br>
 1.Crear y ejecutar un contenedor basado en Debian.<br>
+
+Creamos el contenedor LXC con el siguiente comando:
+```
+sudo lxc-create -t debian -n ubuntu
+```
+Vemos que ha quedado instalado:
+
+<img src="http://i57.tinypic.com/ic011g.png"></img>
+
+Una vez que se haya instalado, lo arrancamos:
+```
+sudo lxc-start -n ubuntu
+```
+Usuario: root
+Contraseña: root
+
+<img src="http://i61.tinypic.com/2r7bic1.png"></img>
+
 2.Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue. </strong>
+
+
 
 <strong> Ejercicio 4:<br>
 1.Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.<br>
