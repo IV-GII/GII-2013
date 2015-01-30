@@ -43,10 +43,30 @@ Contraseña: root
 
 2.Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue. </strong>
 
+Como estoy usando Ubuntu 14.04, voy a probar a instalar la distribución de CentOS. Pero hay que tener cuidado, ya que en CentOS se usa yum para instalar en vez de apt-get. Por tanto lo instalamos:
+```
+sudo apt-get install yum
+```
+A continuación creamos nuestra distribución de CentOS con LXC:
+```
+sudo lxc-create -t centos -n centos
+```
+<img src="http://i59.tinypic.com/2d28ufs.png"></img>
 
+Al igual que antes, para arrancarla ejecutamos:
+```
+sudo lxc-start -n centos
+```
+<img src="http://i59.tinypic.com/1zzpely.png"></img>
 
 <strong> Ejercicio 4:<br>
 1.Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.<br>
+
+Para instalar lxc-webpanel hacemos lo siguiente:
+```
+sudo wget http://lxc-webpanel.github.io/tools/install.sh -O - | sudo bash
+```
+
 2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.</strong>
 
 <strong> Ejercicio 5: Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.</string>
