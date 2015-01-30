@@ -86,7 +86,7 @@
 * [X] Darse de alta en un PaaS y comprender los mecanismos usados para despliegue de aplicaciones así como el uso de los entornos virtuales anteriores.
 * [X] Entender los mecanismos de creación y despliegue de aplicaciones en un PaaS
 
- Otros objetivos
+- Otros objetivos:
 
 * [ ] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
 * [X] Comprender el método de entrega de las prácticas de la asignatura.
@@ -106,35 +106,38 @@
 
 ###Clase del 27 de octubre de 2014
 
- * [X] Consolidar el uso de PaaS/SaaS
- * [X] Entender los sistemas de automatización de la construcción de aplicaciones
+ * [X] Consolidar el uso de PaaS/SaaS.
+ * [X] Entender los sistemas de automatización de la construcción de aplicaciones.
 
 - Otros objetivos:
+
 
  * [X] Último día de entrega de la primera práctica.
  * [ ] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
  * [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
- * [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+ * [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
 
 ###Clase del 28 de octubre de 2014
 
- * [X] Consolidar el uso de PaaS/SaaS
- * [X] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
- * [X] Comenzar con la segunda práctica
+ * [X] Consolidar el uso de PaaS/SaaS.
+ * [X] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones.
+ * [X] Comenzar con la segunda práctica.
 
 - Otros objetivos:
 
+
  * [ ] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
  * [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
- * [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting
+ * [X] Asimilar buenas prácticas en el desarrollo y puesta en producción de lenguajes de scripting.
  
- ###Clase del 3 de noviembre de 2014
+###Clase del 3 de noviembre de 2014
 
  * [X] Consolidar el uso de PaaS/SaaS
  * [X] Consolidar el uso de sistemas de automatización de la construcción de aplicaciones
  * [X] Continuar con la segunda práctica
 
 - Otros objetivos:
+
 
  * [ ] Revisar algún ejercicio de un compañero y sugerir cambios o mejoras. Se puede hacer, de la misma forma, mediante un pull request, en este caso al repo del compañero. Hacer pull request directamente a su copia del repositorio, no al repositorio principal de la asignatura.
  * [X] Auto-corregir los ejercicios de esta forma, comprobando que están correctos.
@@ -146,19 +149,19 @@
  * [ ] Comprender la significación de los espacios de nombres para aislamiento de recursos en Linux
  * [ ] Entender y saber llevar a cabo la virtualización de dispositivos de red
 
- Otros objetivos
+- Otros objetivos:
 
  * [X] Usar herramientas de administración y monitorización de red en línea de órdenes
  * [ ] Contestar a la encuesta sobre la asignatura
- * [ ] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
+ * [ ] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii.
  * [X] Dejar de usar Sublime Text por estas 7 razones.
 
-Clase del 10 de noviembre de 2014
+###Clase del 10 de noviembre de 2014
 
  * [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
  * [X] Aprender a ''enjaular'' usuarios.
 
-Otros objetivos
+- Otros objetivos:
 
  * [X] Finalizar la entrega la segunda práctica.
  * [ ] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii.
@@ -169,92 +172,92 @@ Otros objetivos
  * [ ] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
  * [ ] Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
 
-Clase del 11 de noviembre de 2014
+###Clase del 11 de noviembre de 2014
 
  * [X] Entender el concepto de contenedores
  * [X] Configurar el sistema para poder crear y usar contenedores
  * [X] Crear y usar contenedores
 
-Otros objetivos
+- Otros objetivos:
 
  * [X] Comprobar la aplicación de conocimientos anteriores tales como espacios de nombres, CGROUPS y puentes de red en una aplicación para virtualización.
  * [ ] Retomar la costumbre de hacer git pull upstream master al principio de cada sesión.
 
-Clase del 17 de noviembre de 2014
+###Clase del 17 de noviembre de 2014
 
  * [X] Entender los sistemas de orquestación de máquinas virtuales.
  * [X] Usarlos en la práctica para configurar máquinas virtuales con un fin determinado.
 
-Otros objetivos
+- Otros objetivos
 
  * [X] Ver el papel de los tápers o containers como base de experimentación y prácticas de muchos de los conceptos de virtualización.
 
-Clase del 18 de noviembre de 2014
+###Clase del 18 de noviembre de 2014
 
  * [X] Entender los factores económicos en la instalación y valor añadido en un centro de proceso de datos
  * [X] Conocer las tecnologías a nivel hardware que se usan para los mismos.
  * [X] Conocer las aplicaciones y programas que se usan.
  * [X] Saber qué tipo de habilidades y empleos se generan con este tipo de instalaciones.
 
-Otros objetivos
+- Otros objetivos:
 
  * [X] Familiarizarse con el tejido económico TIC en nuestro entorno local.
  * [X] Conocer qué tipo de perfil buscan estas empresas.
 
-Clase del 24 de noviembre de 2014
+###Clase del 24 de noviembre de 2014
 
  * [X] Resolver problemas con juju.
  * [ ] Configuración compleja de sistemas con él.
  * [X] Entender el concepto de hipervisor y trabajar con ellos.
 
-Otros objetivos
+- Otros objetivos:
 
  * [ ] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
  * [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
 
-Clase del 25 de noviembre de 2014
+###Clase del 25 de noviembre de 2014
 
  * [X] Resolver problemas con juju.
  * [X] Entender cómo funciona docker y qué implica.
 
-Otros objetivos
+- Otros objetivos:
 
  * [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
  * [ ] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
 
-Clase del 1 de diciembre de 2014
+###Clase del 1 de diciembre de 2014
 
  * [X] Resolver últimos problemas con docker.
  * [X] Comenzar con la tercera práctica.
 
-Otros objetivos
+- Otros objetivos:
 
  * [ ] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
  * [ ] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 
-Clase del 2 de diciembre de 2014
+###Clase del 2 de diciembre de 2014
 
  * [X] Resolver últimos problemas con docker.
  * [X] Resolver dudas relacionadas con la tercera práctica.
 
-Otros objetivos
+- Otros objetivos:
 
  * [ ] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
  * [ ] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
 
-Clase del 9 de diciembre de 2014
+###Clase del 9 de diciembre de 2014
 
  * [ ] Terminar la familiarización con Ruby
  * [X] Recordar conceptos de almacenamiento físico.
  * [ ] Entender el concepto de FUSE y usarlo en la práctica.
  * [ ] Crear y manipular formatos de provisionamiento delgado.
 
-Objetivos generales
+- Objetivos generales:
 
  * [X] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
  * [X] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
 
-Clase del 11 de diciembre de 2014
+###Clase del 11 de diciembre de 2014
 
  * [X] Entender diferentes tipos de sistemas de ficheros virtuales
  * [ ] Aprender a provisionar almacenamiento en la nube.
