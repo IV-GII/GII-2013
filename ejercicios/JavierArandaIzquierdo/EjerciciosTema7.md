@@ -54,9 +54,25 @@ azure vm endpoint create -n http angeljcc 80 8080
 
 
 ###Ejercicio 5
-#####1. Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.
-
-#####2. ¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí?.
+#####1. Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible. ¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí?.
+Para mi, Ansible ha sido mucho mas facil de manejar
+```yaml
+- hosts: azure
+  sudo: yes
+  tasks:
+  - name: Instalar paquetes 
+    apt: name=nodejs state=present
+    apt: name=git state=present
+    apt: name=npm state=present
+  - name: Clonando Repositorio desde git
+    command: git clone  https://github.com/IV-2014/VirtualBoard.git
+  - name: Iniciar
+    command: node /home/VirtualBoard/ServerConfiguration/serverSocket/server.js
+```
+Para lanzar el fichero utilizamos:
+```bahs
+ansible-playbook ejercicio5.yml -u azureuser
+```
 
 ###Ejercicio 6
 #####Instalar una maquina virtual Debian usando Vagrant y conectar con ella
