@@ -22,7 +22,7 @@ Nos fijamos en el último de todos:
 El interfaz lxcbr0 es el que se ha creado con la instalación de LXC y sirve para permitir al container tener acceso a la red.
 
 <strong> Ejercicio 3:<br>
-1.Crear y ejecutar un contenedor basado en Debian.<br>
+1.Crear y ejecutar un contenedor basado en Debian.</strong><br>
 
 Creamos el contenedor LXC con el siguiente comando:
 ```
@@ -60,20 +60,56 @@ sudo lxc-start -n centos
 <img src="http://i59.tinypic.com/1zzpely.png"></img>
 
 <strong> Ejercicio 4:<br>
-1.Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.<br>
+1.Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.</strong><br>
 
 Para instalar lxc-webpanel hacemos lo siguiente:
 ```
 sudo wget http://lxc-webpanel.github.io/tools/install.sh -O - | sudo bash
 ```
+<img src="http://i60.tinypic.com/2j3635x.png"></img>
 
-2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.</strong>
+<strong>2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.</strong>
+
+Entrando en un navegador nos vamos a la dirección siguiente:
+```
+http://localhost:5000/
+```
+En el panel de logueo que nos sale escribimos 'admin' como nombre de usuario y 'admin' como contraseña. Al entrar nos aparece esta pantalla:
+
+<img src="http://i61.tinypic.com/dpwt8x.png"></img>
+
+Pinchando en nuestra máquina de CentOS accedemos a las opciones donde podemos limitar los recursos, como se ve en la imagen:
+
+<img src="http://i60.tinypic.com/29oraf7.png"></img>
 
 <strong> Ejercicio 5: Comparar las prestaciones de un servidor web en una jaula y el mismo servidor en un contenedor. Usar nginx.</string>
 
 <strong> Ejercicio 6:<br>
-1. Instalar juju.<br>
-2. Usándolo, instalar MySQL en un táper.</strong>
+1. Instalar juju.</strong><br>
+
+Para instalar juju ejecutamos:
+```
+sudo add-apt-repository ppa:juju/stable
+sudo apt-get update && sudo apt-get install juju-core
+```
+<img src="http://i58.tinypic.com/16s6ck.png"></img>
+
+<strong>2. Usándolo, instalar MySQL en un táper.</strong>
+
+En primer lugar lo arrancamos:
+```
+juju init
+juju bootstrap
+```
+Y lo instalamos:
+```
+juju deploy mediawiki
+juju deploy mysql
+```
+Por último establecemos mysql como la BD que va a usar mediawiki añadiendo una relación:
+```
+juju add-relation mediawiki:db mysql
+```
 
 <strong> Ejercicio 7:<br>
 1. Destruir toda la configuración creada anteriormente.<br>
