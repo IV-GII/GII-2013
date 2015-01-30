@@ -141,7 +141,7 @@ Ahora simplemente cerramos sesión y ponemos el modo de escritorio en LXDE. Nece
 Ahora vamos a ejecutarlo con 512 megas y con vnc:
 
 ````
-qemu-system-x86_64 -boot order=c -drive file=ubuntulxde.img,if=virtio -m 512M -name debian -vnc
+qemu-system-x86_64 -boot order=c -drive file=ubuntulxde.img,if=virtio -m 512M -name ubuntuldxe -vnc
 ````
 Miramos la ip con ifconfig.
 
@@ -169,6 +169,77 @@ Y nos conectamos desde la otra maquina.
 
 
 ###Ejercicio 5:
+
+Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
+
+Lo primero es ver las imagenes disponibles en azure:
+
+````
+azure vm image list
+````
+
+Y hago un show de la ultima imagen de ubuntu para eso usamos grep ubuntu:
+
+<img src="http://i58.tinypic.com/2l9jzhd.jpg"/>
+
+<img src="http://i59.tinypic.com/2nrogt2.jpg"/>
+
+Vamos a crear una maquina virtual:
+
+<img src="http://i59.tinypic.com/1124thw.jpg"/>
+
+Pero no se porque desde la linea de comandos no me funciona correctamente, se queda atascado durante horas...
+
+<img src="http://i58.tinypic.com/33wpkid.jpg"/>
+
+Por lo que procedo a crearlo desde la aplicación web, despues el resto de pasos los seguire haciendo desde el terminal. (el usuario es azureuser)
+
+Vemos que la maquina esta correctamente alojada:
+
+<img src="http://i61.tinypic.com/dd0pk3.jpg"/>
+
+Por lo que inicio la maquina:
+
+<img src="http://i58.tinypic.com/2vdr9zn.jpg"/>
+
+Ahora me conecto por ssh con la maquina:
+
+````
+ssh azureuser@jantoniomarin.cloudapp.net
+````
+
+<img src="http://i60.tinypic.com/688qid.jpg"/>
+
+Ahora simplemente instalo nginx como si estuviera en un terminal de linux
+
+````
+sudo apt-get install nginx
+````
+
+Inicio el servicio:
+
+````
+sudo service nginx start
+````
+
+<img src="http://i62.tinypic.com/1z2emiw.jpg"/>
+
+Ahora tenemos que indicarle al dominio para que utilize el puerto 80 del http para que tenga un endpoint de acceso:
+
+<img src="http://i57.tinypic.com/x5y58y.jpg"/>
+
+Ahora miramos el dominio y lo tenemos correctamente instalado:
+
+<img src="http://i60.tinypic.com/k37r5e.jpg"/>
+
+
+###Ejercicio 6:
+
+
+###Ejercicio 7: 
+
+Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
+
 
 
 Trabajando....!!!!!
