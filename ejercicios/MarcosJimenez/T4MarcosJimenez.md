@@ -237,7 +237,33 @@ sudo docker pull hairmare/mongodb
 
 <strong> Ejercicio 12: Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.</strong>
 
+Creamos nuestro propio usuario: 
+```
+useradd -d /home/DockerUser -m DockerUser 
+```
+Establecemos una contraseña: 
+```
+passwd DockerUser 
+```
+Por último le damos privilegios de súperusuario y nos logeamos con su sesión ejecutando:
+```
+adduser DockerUser sudo
+login DockerUser
+```
+<img src="http://i57.tinypic.com/1o5api.png"></img>
 
+Ahora instalamos nginx:
+```
+sudo apt-get install nginx
+```
+<img src="http://i62.tinypic.com/2uoml9x.png"></img>
+
+Comprobamos que funciona con:
+```
+sudo nginx
+service nginx status
+```
+<img src="http://i61.tinypic.com/2intw2.png"></img>
 
 <strong> Ejercicio 13: Crear a partir del contenedor anterior una imagen persistente con commit.</strong>
 
