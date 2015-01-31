@@ -2,7 +2,7 @@
 
 ## Objetivos de la clase
     [X]Trabajar sobre el último hito del proyecto.
-[X]Usar diversas herramientas para provisionamiento de una máquina virtual.
+    [X]Usar diversas herramientas para provisionamiento de una máquina virtual.
 
 ## Otros objetivos
     [X]Ponerse al día en los ejercicios de autoevaluación.
