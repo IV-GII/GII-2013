@@ -99,3 +99,18 @@ Para comprobar el rendimiento de una y otra, he copiado y pegado un archivo gran
 Para instalar **ceph** tan solo tenemos que instalar el paquete **ceph-mds**:
 
     sudo apt-get install ceph-mds
+
+### Ejercicio 6
+Vamos a crear un dispositivo ceph usando XFS, para ello en primer lugar tenemos que crear los directorios:
+
+    mkdir -p /srv/ceph/{osd,mon,mds}
+
+Creamos el fichero de configuración **/etc/ceph/ceph.conf**
+
+![Imgur](http://i.imgur.com/Z5AntFP.png)
+
+Una vez creado el archivo tenemos que crear el sistema, para ello debemos de ejecutar los siguientes comandos:
+
+    sudo qemu-img create -f raw ceph.img 100M
+    sudo losetup -v -f ceph.img
+    sudo mkfs.xfs /dev/loop4  
