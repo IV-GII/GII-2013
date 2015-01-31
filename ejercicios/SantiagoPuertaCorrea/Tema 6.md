@@ -7,11 +7,14 @@ Ejercicio 1
 
 **Instalar los paquetes necesarios para usar KVM. Se pueden seguir estas instrucciones. Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.**
 
-Lo instale para el tema 1, para instalarlo, usé:
+Como no me funciona kvm en el portatil, voy a realizar estos ejercicios en el sobremesa usando ubuntu 14.10:
 ```bash
-sudo yum install qemu-kvm libvirt-bin
+# Instalo kvm
+sudo apt-get install cpu-checker
+
+# compruebo que esta disponible.
+kvm-ok
 ```
-Si uso el comando ``bash virsh list --all`` puedo ver que funciona y que en mi caso no tengo ninguna maquina virtual instalada.
 ![1_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t6/1_1.png)
 
 
