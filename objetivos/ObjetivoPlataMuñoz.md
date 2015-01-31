@@ -283,3 +283,89 @@ Lista de objetivos Jose Antonio Plata Muñoz
 
 * [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 * [] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+
+##Sesión 09-12-2014##
+
+* [X] Terminar la familiarización con Ruby
+* [X] Recordar conceptos de almacenamiento físico.
+* [X] Entender el concepto de FUSE y usarlo en la práctica.
+* [X] Crear y manipular formatos de provisionamiento delgado.
+
+###Objetivos generales###
+
+* [X] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+* [X] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
+##Sesión 11-12-2014##
+
+* [X] Entender diferentes tipos de sistemas de ficheros virtuales
+* [X] Aprender a provisionar almacenamiento en la nube.
+* 
+###Objetivos generales###
+
+* [X] Comenzar a usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio.
+* [X] Entender los pasos necesarios para montar una infraestructura virtual a partir de sus componentes.
+
+##Sesión 15-12-2014##
+
+* [X] Entender los diferentes componentes de la infraestructura como servicio.
+* [X] Aprender a usar máquinas virtuales, localmente y en la nube.
+* [X] Comprender las bases físicas de las infraestructuras virtuales.
+* 
+###Objetivos generales###
+
+* [X] Usar IaaS de algún tipo, obteniendo una cuenta gratuita en Fi-Ware, DigitalOcean (a través de GitHub) o cualquier otro medio. Ser agnóstico con respecto a las herramientas usadas.
+* [X] Manejar desde línea de órdenes cuestiones de almacenamiento virtual.
+* [X] Comprender la importancia de la medición y experimentación en la gestión de sistemas informáticos.
+
+##Sesión 16-12-2014##
+
+* [X] Ver cómo se pueden usar en la práctica los conocimientos de la asignatura.
+
+###Objetivos generales###
+
+* [X] Conocer a empresas radicadas en Granada que usen la tecnología nube.
+* [X] Resolver dudas relacionadas con la utilidad práctica de las infraestructuras virtuales.
+
+##Sesión 12-01-2015##
+
+* [X] Entender el concepto de provisionamiento de máquinas virtuales.
+* [X] Usar Chef para provisionamiento de una máquina virtual.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+###Objetivos generales###
+
+* [X] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+* [X] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+
+##Sesión 13-01-2015##
+
+* [X] Entender el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+* [X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+
+###Objetivos generales###
+
+* [X] Aprender a usar máquinas virtuales.
+* [X] Elegir un sistema de provisionamiento.
+* [X] Entender los objetivos del último proyecto (y de la asignatura).
+
+##Sesión 19-01-2015##
+
+* [X] Trabajar sobre el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+###Objetivos generales###
+
+* [X] Ponerse al día en los ejercicios de autoevaluación.
+
+##Sesión 20-01-2015##
+
+* [X] Trabajar sobre el último hito del proyecto.
+* [X] Usar diversas herramientas para provisionamiento de una máquina virtual.
+
+###Objetivos generales###
+
+* [X] Ponerse al día en los ejercicios de autoevaluación.
+* [X] Recopilar recursos para plantear dudas antes de la entrega final.
+
