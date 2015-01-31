@@ -94,3 +94,55 @@ sudo mount -t btrfs /dev/loop2 /mnt/Imagen2
 ```
 sudo apt-get install ceph-mds
 ```
+
+## Ejercicio 6
+#### Crear un dispositivo ceph usando BTRFS o XFS.
+
+Creamos carpetas:
+```
+sudo mkdir -p /srv/ceph/{osd,mon,mds}
+
+```
+Y editamos el archivo de configuración: ``` /etc/ceph/ceph.conf ``` :
+```
+[global]
+log file = /var/log/ceph/$name.log
+pid file = /var/run/ceph/$name.pid
+[mon]
+mon data = /srv/ceph/mon/$name
+[mon.mio]
+host = ivan-PC
+mon addr = 127.0.0.1:6789
+[mds]
+[mds.mio]
+host = ivan-PC
+[osd]
+osd data = /srv/ceph/osd/$name
+osd journal = /srv/ceph/osd/$name/journal
+osd journal size = 1000 ; journal size, in megabytes
+[osd.0]
+host = ivan-PC
+devs = /dev/loop0
+```
+
+Creamos imagen y ficheros necesarios:
+
+```
+qemu-img create -f raw ceph_osd.img 100M
+sudo losetup -v -f ceph_osd.img
+sudo mkfs.xfs /dev/loop0
+```
+
+Creamos el directorio y el sistema de archivos:
+
+```
+sudo mkdir /srv/ceph/osd/osd.0
+sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf
+```
+
+Finalmente creamos el directorio donde lo vamos a montar y lo montamos:
+
+```
+sudo mkdir /mnt/ceph
+sudo mount -t ceph ivan-PC:/ /mnt/ceph
+```
