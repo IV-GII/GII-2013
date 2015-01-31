@@ -357,31 +357,97 @@ Y a continuacion instalar:<br />
 
 **Ejercicio 1:**<br />
 ######1.1 - ¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?<br />
+[ej5_1]()
 
 ######1.2 - Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza?<br />
+No dispongo de acceso a un ordenador de la escuela.
 
 ######1.3 -Buscar ofertas SAN comerciales y comparar su precio con ofertas locales (en el propio ordenador) equivalentes.<br />
 
 **Ejercicio 2:**<br />
 **Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.**<br />
++ Instalar sshfs en el anfitrion: sudo apt-get install sshfs
++ Instalar sshfs en la maquina virtual
++ En el anfitrion añadimos al grupo fuse el usuario que utilizaremos para conectarnos a la maquina virtual: sudo usermod -a -G fuse user_fuse
++ Creamos en la maquina virtual una carpeta que nos permita realizar comprobaciones del correcto funcionamiento y observamos la IP del equipo virtual para conectarnos posteriormente
++ Nos conectamos desde el anfitrion: sshfs user_fuse@10.0.1.2:/home/carpetaComprobaciones /home/spwn/Desktop/remoto/
 
 **Ejercicio 3:**<br />
 **Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre**<br />
++ Instalamos qemu: sudo apt-get install qemu-system
++ Creamos y montamos el almacenamiento: 
+ + sudo qemu-img create -f qcow2 cow.qcow2 5M
+ + sudo losetup -v -f cow.qcow2
+ + sudo mkfs.ext4 /dev/loop0
 
 **Ejercicio 4:**<br />
 **Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema**<br />
++ Instalamos los componentes necesarios: sudo apt-get install btrfs-tools xfsprogs
++ Creamos las imagenes:
+ + sudo qemu-img create -f raw  a.img 200M
+ + sudo qemu-img create -f raw  b.img 200M
++ Establecemos el bucle y su correspondiente formato:
+ + sudo losetup -v -f a.img
+ + sudo losetup -v -f b.img
+ + sudo mkfs.xfs /dev/loop2
+ + sudo mkfs.btrfs /dev/loop3
++ Establecemos el punto de montaje:
+ + sudo mkdir mnt/m1
+ + sudo mkdir mnt/m2
+ + sudo mount -t xfs /dev/loop2 /mnt/m1
+ + sudo mount -t xfs /dev/loop3 /mnt/m2
++ Copiamos un archivo grande para valorar tiempos:
+ + sudo time -v cp archivo /mnt/m1/archivo
+ + sudo time -v cp archivo /mnt/m2/archivo 
++ Tiempo para el copiado en m1: 0.36
++ Tiempo para el copiado en m2: 0.37
 
 **Ejercicio 5:**<br />
 **Instalar ceph en tu sistema operativo.**<br />
+sudo mkdir -p /srv/ceph/{osd,mon,mds}
 
 **Ejercicio 6:**<br />
 **Crear un dispositivo ceph usando BTRFS o XFS**<br />
++ Creamos los directorios: mkdir -p /srv/ceph/{osd,mon,mds}
++ Creamos el archivo de configuracion:
+[global]<br />
+log file = /var/log/ceph/$name.log<br />
+pid file = /var/run/ceph/$name.pid<br />
+[mon]<br />
+mon data = /srv/ceph/mon/$name<br />
+[mon.mio]<br />
+host = spwn<br />
+mon addr = 127.0.0.1:6789<br />
+[mds]<br />
+[mds.mio]<br />
+host = spwn<br />
+[osd]<br />
+osd data = /srv/ceph/osd/$name<br />
+osd journal = /srv/ceph/osd/$name/journal<br />
+osd journal size = 1000 ; journal size, in megabytes<br />
+[osd.0]<br />
+host = spwn<br />
+devs = /dev/loop4<br />
++ Creamos una imagen con xfs:
+qemu-img create -f raw ceph.img 100M<br />
+sudo losetup -v -f ceph.img<br />
+sudo mkfs.xfs /dev/loop4<br />
++ Creamos los directorios:
+sudo mkdir /srv/ceph/osd/osd.0<br />
+sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf<br />
++ Arrancar el servicio: sudo /etc/init.d/ceph -a start
++ Creamos los directorios de montaje:
+ + sudo mkdir /mnt/ceph
+ + sudo mount -t ceph spwni:/ /mnt/ceph
 
 **Ejercicio 7:**<br />
 **Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.**<br />
++ sudo rados mkpool pool
++ sudo rados put -p pool obj felix
 
 **Ejercicio 8:**<br />
 **Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente**<br />
+
 
 **Ejercicio 9:**<br />
 **Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.**<br />
