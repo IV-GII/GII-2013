@@ -114,3 +114,9 @@ Una vez creado el archivo tenemos que crear el sistema, para ello debemos de eje
     sudo qemu-img create -f raw ceph.img 100M
     sudo losetup -v -f ceph.img
     sudo mkfs.xfs /dev/loop4  
+
+### Ejercicio 7
+Tenemos que crear primero el pool y añadimos un fichero:
+
+    sudo rados mkpl pooltmp
+    rados put -p pooltmp obj filename.txt
