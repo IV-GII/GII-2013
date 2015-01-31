@@ -357,7 +357,7 @@ Y a continuacion instalar:<br />
 
 **Ejercicio 1:**<br />
 ######1.1 - ¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?<br />
-[ej5_1]()
+![ej5_1](https://raw.githubusercontent.com/felixparra/Imagenes/master/ej1.png)
 
 ######1.2 - Si tienes acceso en tu escuela o facultad a un ordenador común para las prácticas, ¿qué almacenamiento físico utiliza?<br />
 No dispongo de acceso a un ordenador de la escuela.
