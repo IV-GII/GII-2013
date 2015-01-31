@@ -22,3 +22,5 @@ Y a continuación, instalamos en nuestra maquina anfitriona el cliente vinagre p
 Y nos conectamos a nuestra maquina ejecutando la siguiente orden
 
 <pre>qemu-system-x86_64 -hda disco-lubuntu.img -vnc :1</pre>
+
+Buscamos la interfaz virbr0 y nos conectamos a ella con vinagre 192.168.22.1:5901.
