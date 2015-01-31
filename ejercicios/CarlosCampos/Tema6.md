@@ -11,3 +11,29 @@ En el cuál nos debe de aparecer si nuestra máquina esta o no preparada. En mi 
 Para instalar todo lo necesario haría falta ejecutar el siguiente código:
 
     sudo apt-get install qemu-kvm qemu-system libvirt-bin virtinst virt-manager
+
+### Ejercicio 2  
+#### 2.1
+En primer lugar, tenemos que crear un HDD virtual para cada MV.  
+
+    qemu-img create -f qcow2 HDD1.qcow2 1024M
+    qemu-img create -f qcow2 HDD2.qcow2 1024M
+
+Para iniciar la instalación debemos de arrancar las máquinas virtuales desde la ISO, en mi caso usamos **SliTaz** y **DSL**.
+
+    qemu-system-x86_63 -hda HDD1.qcow2 -cdrom slitaz-4.0.iso &
+
+![Imgur](http://i.imgur.com/FqknKUp.png)
+
+    qemu-system-x86_64 -hda HDD2.qcow2 - cdrom dsl-4.11.rc1.iso &
+
+![Imgur](http://i.imgur.com/fwvFbMK.png)
+
+#### 2.2
+Vamos a procededer a instalar bajo VirtualBox DSL.  
+
+Una vez que tenemos intalado virtualbox y descargado la imágen de DSL, basta con abrir Virtualbox, pulsar sobre **Nueva** y seguir el proceso de configuración de la máquina virtual paso a paso.
+
+Una vez creada la máquina virtual tan solo necesitaremos pulsar sobre ella para acceder a **Configuración -> Almacenamiento** y selecionamos en la unidad de CD la imágen descargada, en nuestro caso el sistema operativo DSL.
+
+![Imgur](http://i.imgur.com/jJSv56t.png)
