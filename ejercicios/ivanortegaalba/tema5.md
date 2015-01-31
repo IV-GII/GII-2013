@@ -31,10 +31,10 @@ Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de
 Vamos a necesitar 2 máquinas y comprobamos que no hay instancia de FUSE:
 
 ```
-lsmod | grep fuse depmod -A.
+lsmod | grep fuse
 
 ```
-
+y
 ```
  depmod -A.
 
