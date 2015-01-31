@@ -21,7 +21,7 @@ Voy a instalar una imagen de Ubuntu server 14.04, para ver si esta disponible e 
 
 Y ahora creamos la imagen con la siguiente orden:
 
-<pre>azure vm create b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04-LTS-amd64-server-20140414-en-us-30GB mario [PASSWORD] --location "West Europe" --ssh</pre>
+<pre>azure vm create ubuntu-mortega87 b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04-LTS-amd64-server-20140414-en-us-30GB mario [PASSWORD] --location "West Europe" --ssh</pre>
 
 Ahora vemos la lista de las imagenes:
 
