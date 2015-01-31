@@ -1,4 +1,4 @@
-#1. ¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?
+####1. ¿Cómo tienes instalado tu disco duro? ¿Usas particiones? ¿Volúmenes lógicos?
 
 ![](http://i.imgur.com/NYC7o1b.png)
 
@@ -8,7 +8,7 @@ Aquí podemos ver las distintas particiones donde están Windows y Linux. (tengo
 
 Creo que utilizan un sistema de ficheros remoto.
 
-#1.2. Buscar ofertas SAN comerciales y comparar su precio con ofertas locales (en el propio ordenador) equivalentes.
+####1.2. Buscar ofertas SAN comerciales y comparar su precio con ofertas locales (en el propio ordenador) equivalentes.
 
 Según he estado investigando, SAN es mucho mas caro que discos duros locales. Barracuda ofrece un sistema de disco duro de red de unos 200GB (para backups automaticas) por unos 1200$ anuales. (carísimo para mi gusto).
 
@@ -19,7 +19,7 @@ Aqui un SAN con 8 ranuras para disco duro, por el módico precio de 1229€.
 Evidentemente son mucho mas caros que los disco duros locales.
 
 
-#2. Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.
+####2. Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.
 
 Pasos para esto:
 
@@ -36,7 +36,7 @@ sudo usermod -a -G fuse ariacus
 De esta forma veremos que si abrimos la carpeta va a estar el mismo archivo que el del contenedor
 
 
-#3. Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre
+####3. Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre
 
 Para hacer el ejercicio utilizaremos una imagen con formato RAW que es admitida por la mayoría de los SO.
 
@@ -51,7 +51,7 @@ Por último tenemos que crear otra imagen en formato vmdk usando QEMU y la cream
 
 
 
-#4. Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema
+####4. Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema
 
 Primero crearemos las imagenes con quemu:
 
@@ -87,14 +87,14 @@ Lo copiamos finalmente a los loop con:
 -time -v cp archivo /mnt/loop4/archivo_btrfs
 
 
-#5. Instalar ceph en tu sistema operativo.
+####5. Instalar ceph en tu sistema operativo.
 
 Para instalar todo usar:
 
 
 sudo apt-get install ceph-mds
 
-#6. Crear un dispositivo ceph usando BTRFS o XFS
+####6. Crear un dispositivo ceph usando BTRFS o XFS
 
 Primero tendremos que configurarlo con la orden siguiente y rellenar el fichero de configuraración:
 
@@ -104,7 +104,7 @@ Seguidamente, creamos un sistema loop en xfs  y posteriormente, creamos el direc
 
 mkdir /srv/ceph/osd/osd.0 y el sistema de ficheros de objetos con /sbin/mkcephtfs -a -c /etc/ceph/ceph.conf.
 
-#7. Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
+####7. Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
 
 Para ello tendremos que crear una piscina para rados:
 
