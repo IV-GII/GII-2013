@@ -1,4 +1,4 @@
-1. Instalar los paquetes necesarios para usar KVM. Se pueden seguir estas instrucciones. Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.
+####1. Instalar los paquetes necesarios para usar KVM. Se pueden seguir estas instrucciones. Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.
 
 Lo primero que hacemos es comprobar si podemos usar o no virtualización, mediante la orden:
 
@@ -8,9 +8,9 @@ En nuestro caso es posible, por tanto pasamos a instalar los paquetes necesarios
 
 sudo apt-get install qemu-kvm qemu-system libvirt-bin virtinst virt-manager
 
-2. 
+####2. 
 
-2.1 Crear varias máquinas virtuales con algún sistema operativo libre tal como Linux o BSD. Si se quieren distribuciones que ocupen poco espacio con el objetivo principalmente de hacer pruebas se puede usar CoreOS (que sirve como soporte para Docker) GALPon Minino, hecha en Galicia para el mundo, Damn Small Linux, SliTaz (que cabe en 35 megas) y ttylinux (basado en línea de órdenes solo).
+####2.1 Crear varias máquinas virtuales con algún sistema operativo libre tal como Linux o BSD. Si se quieren distribuciones que ocupen poco espacio con el objetivo principalmente de hacer pruebas se puede usar CoreOS (que sirve como soporte para Docker) GALPon Minino, hecha en Galicia para el mundo, Damn Small Linux, SliTaz (que cabe en 35 megas) y ttylinux (basado en línea de órdenes solo).
 
 Primero activamos el módulo del kernek kvm con:
 
@@ -23,10 +23,10 @@ qemu-img create -f raw SliTar-hdd.img 100M
 qemu-system-x86_64 -hda ./SliTar-hdd.img -cdrom Descargas/slitaz-4.0.iso 
 
 
-http://imageshack.com/i/p8OeUFgip
+![](http://imageshack.com/i/p8OeUFgip)
 
 
-http://imageshack.com/i/p12nSquUp
+![](http://imageshack.com/i/p12nSquUp)
 
 Ya tenemos slitax funcionando.
 
@@ -40,24 +40,24 @@ qemu-system-x86_64 -hda /home/ariacus/Escritorio/dsl_imagen.img -cdrom /home/ari
 
 
 
-http://i.imgur.com/mYkctJH.png
+![](http://i.imgur.com/mYkctJH.png)
 
 
-2.2 Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.
+####2.2 Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.
 
 Para este ejercicio usaré VirtualBox que ya lo tengo instalado e instalaremos UbuntuServer:
 
-http://i.imgur.com/XSM6vqI.png
+![](http://i.imgur.com/XSM6vqI.png)
 
 
-3. Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con:
+####3. Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con:
 
 qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img
 
 Haciendo un tanteo acerca de los tiempos tomados con virtualización y sin virtualización, he comprobado que es mas rapido con virtualización, aunque los tiempos no varian demasiado.
 
 
-4. Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
+####4. Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
 
 
 Para este ejercicio he elegido Lubuntu:
@@ -77,7 +77,7 @@ Ahora para conectarnos correctamente a la máquina usando VNC debemos de instala
 
 qemu-system-x86_64 -boot order=c -drive file=Lubuntu-hdd.img,if=virtio -m 512M -vnc :1 vinagre 192.168.122.1:5901
 
-5. Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
+####5. Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
 
 Para ello voy a usar vb
 
@@ -126,7 +126,7 @@ Finalmente abrimos nuestro navegador añadiendo la ip de nuestra página y nos s
 
 
 
-7. Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
+####7. Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
 
 Como algunos compañeros he tenido problemas con Linux Mint, por tanto he intentado hacerlo con Ubuntu 12.04
 
