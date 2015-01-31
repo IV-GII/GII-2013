@@ -32,10 +32,15 @@ Vamos a necesitar 2 máquinas y comprobamos que no hay instancia de FUSE:
 
 ```
 lsmod | grep fuse
-
 ```
 y
 ```
- depmod -A.
-
+depmod -A
 ```
+Lo instalaremos en las dos máquinas.
+
+En la máquina invitada vamos a crear una carpeta y la montaremos con sshfs:
+```
+sshfs ivanortegaalba@192.168.78.128:/home/ivanortegaalba/prueba-IV /home/ivanortegaalba/prueba-IV
+```
+Si se ha hecho correctamente, ya tendremos en nuestra máquina el enlace.
