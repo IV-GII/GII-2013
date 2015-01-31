@@ -15,5 +15,18 @@
 
 **Ejercicio 5.**Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
 
+Vamos a proceder a la creación de una máquina virtual ubuntu en azure y en ella vamos a instalar Nginx, para ello vamos a listar las imagenes disponibles mediante el comando ``azure vm image list``, elegimos una y llevamos a cabo la instalación.
+
+``azure vm create jesusnavarro b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04-LTS-amd64-server-20140414-en-us-30GB jesusnavarro contraseña --location "West Europe" --ssh``
+
+En esta captura podemosver la máquina ya creada: 
+
+<a href="http://es.tinypic.com?ref=nc12s" target="_blank"><img src="http://i60.tinypic.com/nc12s.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+Para instalar Nginx accedemos a la máquina que se encuentra en azure, para ello ejecutamos ``azure vm start jesusnavarro`` 
+
+
 **Ejercicio 6.** Usar juju para hacer el ejercicio anterior.
+
+
 
