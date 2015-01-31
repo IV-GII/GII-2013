@@ -83,7 +83,14 @@ sudo mkfs.xfs /dev/loop1
 sudo mkfs.btrfs /dev/loop2
 ```
 Creamos las carpetas y puntos de montaje:
-sudo mkdir /mnt/Imagen1.
-sudo mkdir /mnt/Imagen2.
-sudo mount -t xfs /dev/loop3 /mnt/Imagen1.
-sudo mount -t btrfs /dev/loop2 /mnt/Imagen2.
+```
+sudo mkdir /mnt/Imagen1
+sudo mkdir /mnt/Imagen2
+sudo mount -t xfs /dev/loop3 /mnt/Imagen1
+sudo mount -t btrfs /dev/loop2 /mnt/Imagen2
+```
+## Ejercicio 5
+#### Instalar ceph en tu sistema operativo.
+```
+sudo apt-get install ceph-mds
+```
