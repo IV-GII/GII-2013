@@ -1,3 +1,5 @@
+# Jose Carlos Sánchez Hurtado
+
 # Ejercicios tema 2
 
 ## Ejercicio 1
