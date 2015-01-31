@@ -216,7 +216,8 @@ sudo docker -d &
 Después de haber instalado una imagen de Ubuntu:
 
 ```shell 
-sudo docker pull ubuntu``
+sudo docker pull ubuntu
+```
 
 hacemos lo mismo con CentOS: 
 
