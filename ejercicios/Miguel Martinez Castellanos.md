@@ -525,7 +525,7 @@ azure account import "fichero"
 ##Ejercicio 1
 **Instalar los paquetes necesarios para usar KVM. Se pueden seguir estas instrucciones. Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.**
 Comprobamos los paquetes necesarios para usar kvm y comprobamos si esta preparado.
-![1]()
+![1](http://i.imgur.com/VXMzdMb.png)
 
 
 ##Ejercicio 2.1
@@ -540,16 +540,16 @@ qemu-img create -f qcow2 slitaz.img 600M
 qemu-img create -f qcow2 damn.img 600M
 ```
 y ahora las instalaremos:
-![1_2]()
-![2]()
-![3]()
+![1_2](http://i.imgur.com/NgRZXRy.png)
+![2](http://i.imgur.com/GFo97Ha.png)
+![3](http://i.imgur.com/QfVl3kQ.png)
 
 
 ##Ejercicio 2.2
 **Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels. **
 Realizamos las misma instalacion de los sistemas anteriores pero utilizando Virtualbox
-![4]()
-![5]()
+![4](http://i.imgur.com/j9fHr9G.png)
+![5](http://i.imgur.com/1W1zK4n.png)
 
 ##Ejercicio 3
 **Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con "qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img" **
@@ -566,16 +566,16 @@ con eso ya hemos creado un disco duro ahora realizaremos la instalacion pero aho
 ```sh
 qemu-system-x86_64 -hda LUbuntu.qcow2 -cdrom Escritorio/lubuntu-14.10-desktop-i386.iso -m 512M
 ```
-![7_1]()
+![6](http://i.imgur.com/Q875Ubd.png)
 Cuando tengamos la instalacion completada tendremos que realizar la conexion a traves de VNC y SSH y para ello utilizaremos VNC Vinagre.Si no tenemos instalada dicha herramienta las instalaremos con:
-![6]()
+![7_1](http://i.imgur.com/ZlX2XAV.png)
 ```sh
 sudo aptutide vinagre
 ```
-![7]()
+![7](http://i.imgur.com/ICxYhU4.png)
 una vez instalada la herramienta vamos a conectarnos atraves de VNC y co ifconfig veremos la direccion para la conexion.
 y realizamos la conexion con vinagre <Direccion dada por ifconfig>
-![7_2]()
+![7_2](http://i.imgur.com/XecoqT1.png)
 Y entonces solo nos quedara conectarnos con:
 ```sh
 vinagre vinagre 192.168.122.1:5901
@@ -592,8 +592,8 @@ Para realizar el ejercicio anterior pero con juju.
 **Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.**
 En mi maquina tengo instalado el hipervisor VirtualBox y creare la maquinas desde ahi.
 
-![10]()
-![11]()
+![10](http://i.imgur.com/UVscuDy.png)
+![11](http://i.imgur.com/WjA0rli.png)
 
 
 #TEMA 7
@@ -604,7 +604,7 @@ Para realizar la instalacion realizamos la siguiente sentencia:
 ```sh
 curl -L https://www.opscode.com/chef/install.sh | sudo bash
 ```
-![1]()
+![1](http://i.imgur.com/6uluxM5.png)
 
 ##Ejercicio 2
 **Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual. **
@@ -647,9 +647,9 @@ y realizamos la instalacion con:
 ```sh
 vagrant box add debian http://dl.dropbox.com/u/937870/VMs/squeeze64.box
 ```
-![6]()
+![6](http://i.imgur.com/CxqY5Q5.png)
 despues de esto iniciaremos la maquina y levantaremos el entorno virtual.
-![6_1]()
+![6_1](http://i.imgur.com/3wC602h.png)
 y finalmente nos conectaremos por ssh con:
 ```sh
 vagrant ssh
