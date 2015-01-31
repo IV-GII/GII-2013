@@ -68,3 +68,29 @@ Para la creación y posterior montaje de un almacenamiento virtual ejecutamos:
 Podemos ver en la siguiente imagen el resultado de dichos comandos:  
 
 ![Imgur](http://i.imgur.com/inKgouI.png)
+
+### Ejercicio 4
+Para poder dar el formato **xfs** o **btrfs** tenemos que instalar algunas herramientas:  
+
+    sudo apt-get install btrfs-tools xfsprogs
+
+Creamos las imágenes y les damos formato.
+
+    sudo qemu-img create -f raw xfs.img 200M
+    sudo qemu-img create -f raw btrfs.img 200M
+    sudo losetup -v -f xfs.img
+    sudo losetup -v -f btrfs.img
+    sudo mkfs.xfs /dev/loop0
+    sudo mkfs.btrfs /dev/loop1
+
+Creamos los dos puntos de montajes y las montamos.
+
+    sudo mkdir /media/xfs
+    sudo mkdir /media/btrfs
+    sudo mount -t xfs /dev/loop0 /media/xfs
+    sudo mount -t btrfs /dev/loop1 /media/btrfs
+
+Para comprobar el rendimiento de una y otra, he copiado y pegado un archivo grandels en los directorios (time cp archivo.tar.gz /media/xfs) y el tiempo que han tardado cada unas han sido:  
+
+* XFS: 0.304s
+* BTRFS: 0.323s
