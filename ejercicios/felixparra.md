@@ -503,6 +503,7 @@ Observando ambos casos y realizando 5 pruebas a cada uno, una vez calculada la m
 
 **Ejercicio 1:**<br />
 **Instalar chef en la máquina virtual que vayamos a usar**<br />
+$ curl -L https://www.opscode.com/chef/install.sh | sudo bash
 
 **Ejercicio 2:**<br />
 **Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual.**<br />
