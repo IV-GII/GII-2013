@@ -101,7 +101,8 @@ Tras aceptar la clave y escribir la contraseña, nos habremos conectado.
 Ejecuando: 
 
 ```shell 
-azure vm image list | grep Ubuntu``` 
+azure vm image list | grep Ubuntu
+``` 
 
 Obtenemos todas las imágenes Ubuntu disponibles. Voy a instalar la imagen " b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04-LTS-amd64-server-20140414-en-us-30GB". Podemos ver información sobre ella ejecutando: 
 
@@ -131,7 +132,7 @@ azure vm start toranzo
 
 Y nos conectamos con: 
 
-``shell
+```shell
 ssh toranzo@toranzo.cloudapp.net
 ```
 
