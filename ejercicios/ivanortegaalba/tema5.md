@@ -10,7 +10,6 @@ Ejercicio 1
 Tengo 2 particiones en un Mac book pro:
 - Una donde tengo instalado Linux con 30 GB asignados
 - Otra donde tengo macos con 90GB
-<<<<<<< HEAD
 - Tengo dos particiones extra para el boot y el swap de linux
 
 
@@ -25,6 +24,18 @@ Bahías para discos duros SATA cambiables en funcionamiento
 Batería para conservar los contenidos de la memoria caché de hasta 4GB
 Soporte para configuraciones HDD RAID 0/1/1+0/5 HDD
 Fácil gestión a través del gestor de dispositivos IP-SAN basado en web
-=======
-- Tengo dos particiones extra para el boot y el swap de linux 
->>>>>>> 01c53784ab7b577eebf77ae50fbe148d312d809f
+
+Ejercicio 2: Usar FUSE para acceder a recursos remotos como si fueran ficheros locales.
+Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.
+
+Vamos a necesitar 2 máquinas y comprobamos que no hay instancia de FUSE:
+
+```
+lsmod | grep fuse depmod -A.
+
+```
+
+```
+ depmod -A.
+
+```
