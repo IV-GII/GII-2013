@@ -40,7 +40,7 @@ Ahora instalamos sshfs:
 
 Ahora podemos entrar a cualquier carpeta realizando:
 
-´´´sshfs [usuario remoto]]@[IP remota]]:[carpeta remota a montar] [punto de montaje] ´´´
+``` sshfs [usuario remoto]]@[IP remota]]:[carpeta remota a montar] [punto de montaje] ```
 
 ## Ejercicio 3
 
@@ -66,7 +66,7 @@ Montamos el mvdk:
 
 Primero instalamos elementos necesarios:
 
-´´´ sudo apt-get install btrfs-tools xfsprogs ´´´
+``` sudo apt-get install btrfs-tools xfsprogs ```
 
 A continuación creamos las imágenes:
 
@@ -110,11 +110,11 @@ El primero tiene un system time de 0.8 segundos, y el segundo de 0.47 segundos.
 
 Con rados lo primero que hacemos es crear un pool:
 
-´´´ sudo rados mkpool poolprueba ´´´
+``` sudo rados mkpool poolprueba ```
 
 Ahora simplemente añadimos un archivo:
 
-´´´ rados put -p poolprueba obj prueba.md ´´´
+``` rados put -p poolprueba obj prueba.md ```
 
 ## Ejercicio 8
 
@@ -122,15 +122,15 @@ Ahora simplemente añadimos un archivo:
 
 Tras solicitar la cuenta de prueba, hay que ejecutar:
 
-´´´ sudo npm install azure-cli -g ´´´
+``` sudo npm install azure-cli -g ```
 
 Después, tenemos que "hacer link" a nuestra cuenta de Azure de la siguiente manera:
 
-´´´ azure 'account' download ´´´
+``` azure 'account' download ```
 
 Se nos muestra una URL, la abrimos y se nos descarga un fichero. Tenemos que importarlo a nuestra cuenta de Axure con:
 
-´´´ azure 'account' import 'fichero_descargado' ´´´
+``` azure 'account' import 'fichero_descargado' ```
 
 Ya tenemos la cuenta enlazada.
 
@@ -138,7 +138,7 @@ Ya tenemos la cuenta enlazada.
 
 #### Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.
 
-~~~~
+~~~
 
 #!/usr/local/bin/ruby
 
@@ -159,7 +159,7 @@ cont.each do |conte|
   blob = azure_blob.create_block_blob(cont.name, "lista_blobs", text)
 end
 
-~~~~
+~~~
 
 
 
