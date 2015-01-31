@@ -21,7 +21,7 @@ Batería para conservar los contenidos de la memoria caché de hasta 4GB
 Soporte para configuraciones HDD RAID 0/1/1+0/5 HDD
 Fácil gestión a través del gestor de dispositivos IP-SAN basado en web
 
-## Ejercicio 2 :
+## Ejercicio 2
 #### Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.
 
 Vamos a necesitar 2 máquinas y comprobamos que no hay instancia de FUSE:
@@ -40,3 +40,24 @@ En la máquina invitada vamos a crear una carpeta y la montaremos con sshfs:
 sshfs ivanortegaalba@192.168.78.128:/home/ivanortegaalba/prueba-IV /home/ivanortegaalba/prueba-IV
 ```
 Si se ha hecho correctamente, ya tendremos en nuestra máquina el enlace.
+
+## Ejercicio 3
+#### Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre.
+
+Instalamos Qemu con el comando:
+```
+sudo apt-get install qemu-system
+```
+Ahora creamos la imagen con:
+
+```
+qemu-img create -f qcow2 cow.qcow2 10M
+```
+Y posteriormente montamos el VMDK:
+```
+sudo losetup -v -f cow.qcow2
+```
+Y asociamos al dispositivo de bloque:
+```
+sudo mkfs.ext4 /dev/loop0:
+```
