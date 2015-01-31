@@ -1,4 +1,58 @@
 
+Tema 2
+======
+
+Ejercicio 1
+-----------
+
+**Instalar un entorno virtual para tu lenguaje de programación favorito (uno de los mencionados arriba, obviamente).**
+
+Se ha elegido el lenguaje Python, por lo que se va a proceder a instalar virtualenv.
+Para ello, antes tenemos que tener instalado el paquete pip. por lo que lo instalamos usando:
+```bash
+sudo apt-get install python-pip
+```
+
+Tras esto, podemos pasar a instalar virtualenv, con el siguiente comando:
+```bash
+sudo pip install virtualenv
+```
+![t2ej1.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t2ej1.png)
+
+
+Despues de la instalacion, pasamos a crear un entorno virtual:
+```bash
+virtualenv prueba
+```
+
+Ejercicio 2
+-----------
+
+**Darse de alta en algún servicio PaaS tal como Heroku, Nodejitsu u OpenShift.**
+
+Para darnos de alta en Openshift, vamos a su pagina y rellenamos el formulario con los datos.
+![t2ej2.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t2ej2.png)
+
+
+Ejercicio 3
+-----------
+
+**Crear una aplicación en OpenShift y dentro de ella instalar WordPress.**
+
+Para crear una aplicacion, le damos a crear una aplicacion nueva.
+![t2ej3.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t2ej3.png)
+
+Esto nos llevara a un formulario en el que tendremos que rellenar datos de la aplicación como su url.
+![t2ej3b.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t2ej3b.png)
+
+Una vez instalado, accedemos a la url que le hemos asignado a la aplicación, y automaticamente nos llevara a la configuracion de wordpress.
+
+Rellenamos los datos necesarios para la instalación, y una vez instalado, nos pedira nuestro usuario y contraseña.
+Despues, nos aparecerá una pantalla de bienvenida.
+![t2ej3c.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t2ej3c.png)
+
+
+
 Tema 3
 ======
 
