@@ -146,3 +146,18 @@ Finalmente creamos el directorio donde lo vamos a montar y lo montamos:
 sudo mkdir /mnt/ceph
 sudo mount -t ceph ivan-PC:/ /mnt/ceph
 ```
+## Ejercicio 7
+#### Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
+
+Para almacenar los objetos en rados lo primero que deberemos hacer es crear una piscina:
+```
+rados mkpool prueba
+```
+Si queremos comprobar que se ha creado:
+```
+rados lspools
+```
+Una vez creado, podemos introducir cualquier archivo que tengamos en nuestro sistema, como por ejemplo:
+```
+rados put -p objeto-prueba objeto prueba.img
+```
