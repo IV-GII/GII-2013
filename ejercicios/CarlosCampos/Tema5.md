@@ -94,3 +94,8 @@ Para comprobar el rendimiento de una y otra, he copiado y pegado un archivo gran
 
 * XFS: 0.304s
 * BTRFS: 0.323s
+
+### Ejercicio 5
+Para instalar **ceph** tan solo tenemos que instalar el paquete **ceph-mds**:
+
+    sudo apt-get install ceph-mds
