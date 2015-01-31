@@ -23,10 +23,10 @@ qemu-img create -f raw SliTar-hdd.img 100M
 qemu-system-x86_64 -hda ./SliTar-hdd.img -cdrom Descargas/slitaz-4.0.iso 
 
 
-![](http://imageshack.com/i/p8OeUFgip)
+[](http://imageshack.com/i/p8OeUFgip)
 
 
-![](http://imageshack.com/i/p12nSquUp)
+[](http://imageshack.com/i/p12nSquUp)
 
 Ya tenemos slitax funcionando.
 
