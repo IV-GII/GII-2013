@@ -61,3 +61,29 @@ Y asociamos al dispositivo de bloque:
 ```
 sudo mkfs.ext4 /dev/loop0:
 ```
+
+## Ejercicio 4
+#### Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema.
+Para manejar estos formatos tenemos que instalar las herramientas necesarias:
+```
+sudo apt-get install xfsprogs
+```
+```
+sudo apt-get install btrfs-tools
+```
+Una vez las tenemos, creamos las imagenes y las ponemos en looping:
+```
+sudo qemu-img create -f raw Imagen1.img 256M
+sudo qemu-img create -f raw Imagen2.img 256M
+sudo losetup -v -f Imagen1.img. sudo losetup -v -f Imagen2.img
+```
+Damos formato:
+```
+sudo mkfs.xfs /dev/loop1
+sudo mkfs.btrfs /dev/loop2
+```
+Creamos las carpetas y puntos de montaje:
+sudo mkdir /mnt/Imagen1.
+sudo mkdir /mnt/Imagen2.
+sudo mount -t xfs /dev/loop3 /mnt/Imagen1.
+sudo mount -t btrfs /dev/loop2 /mnt/Imagen2.
