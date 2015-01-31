@@ -48,6 +48,18 @@ Una vez instalada, la arrancamos con los dos especificadores que necesitamos:
 
     qemu-system-x86_64 -boot order=c -drive file=lxde.qcow2,if=virtio -m 512M -name debian -vnc :1
 
-La máquina comienza a ejecutarse pero esta vez sin mostrarnos su entorno, observamos la ip que tiene con un **ifconfig**.
+La máquina comienza a ejecutarse pero esta vez sin mostrarnos su entorno, observamos la ip que tiene con un **ifconfig** a virbr0.
 
 Con cualquier cliente VNC accedemos indicando dicha ip.
+
+### Ejercicio 6
+Lo primero que debemos de hacer es instalar juju-gui, para ello:  
+
+    juju deploy juju-gui
+    juju expose juju-gui
+
+Ahora vemos la configuración con **juju status** para saber si está inicializado o no. Accedemos a la ip del servidor (la cuál podemos verla en la línea *public-address*) e introducimos la contraseña que podemos encontrar en el archivo **~/.juju/environments/local.jenv**.
+
+Para crear una máquina con nginx, lo búscamos en el menú de la izquierda, le damos a **add to my canvas** y seleccionamos los recursos que le queramos asignar. Una vez hecho esto tendremos que pulsar el botón **commit** de abajo para guardar los cambios. Ahora nos aparecerá la máquina en el menú de inicio con un color amarillo.
+
+![Imgur](http://i.imgur.com/bmmRbO8.png)
