@@ -310,22 +310,62 @@ Tras haber creado la cuenta de Microsfot Azure, vamos a proceder a instalar las 
 
 <img src="https://github.com/javiergama8/Images/blob/master/Tema5-35.png">
 
++ Ahora antes de enlazar con nuestra cuenta vamos a solucionar el siguiente error, ya que si no no podremos hacer el enlazado:
+
+<code>/usr/bin/env: node: No existe el archivo o el directorio</code>
+
++ Para solucionar el error anterior vamos a crear un enlace simbólico de la siguiente manera:
+
+<code>sudo ln -s /usr/bin/nodejs /usr/bin/node</code>
+
 + Ahora vamos a enlazar con nuestra cuenta:
 
 <code>azure account download</code>
 
 <img src="https://github.com/javiergama8/Images/blob/master/Tema5-36.png">
 
-+ Nos identificarnos y se bajara un fichero, que importamos haciendo:
++ Nos identificaremos y se bajará un fichero, que importamos haciendo:
 
 <code>azure account import [fichero]</code>
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema5-60.png">
 
 Con estos pasos ya tendremos nuestra cuenta enlazada.
 
 #Ejercicio 9#
 ##Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.##
 
+Vamos a proceder a crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo. Para ello, vamos a seguir los siguientes pasos:
+
++ En primer lugar, se crea la cuenta.
+
+<code>azure storage account create cuentajavi</code>.
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema5-61.png">
+
++ Ahora listaremos la clave primaria y secundaria con el comando <code>azure storage account keys list cuentajavi</code>.
 
 
++ Ahora vamos a pasar esta información mediante unas variables de entorno:
+
+<code>export AZURE_STORAGE_ACCOUNT=cuentajavi</code>
+<code>export  AZURE_STORAGE_ACCESS_KEY=miclave</code>
+
++ Ahora vamos a proceder a crear un par de contenedores:
+
+<code>azure storage container create taper -p blob</code>
+
+<code>azure storage container create taper2 -p blob</code>
+
++ Por último, cuando tengamos los contenedores creados, podemos subir el archivo que queramos. Para ello, vamos a utilizar el comando siguiente:
+
+<code>azure storage blob upload [archivo] taper2 [archivo]</code>
+
+#Ejercicio 10#
+##Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.##
+
+Mi programa en *Ruby* es el siguiente:
+
+<img src="https://github.com/javiergama8/Images/blob/master/Tema5-62.png">
 
 
