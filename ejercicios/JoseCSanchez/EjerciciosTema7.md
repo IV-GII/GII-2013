@@ -13,11 +13,6 @@ Instalo chef sobre la máquina en la que realizo los ejercicios:
 ![](http://fotos.subefotos.com/e788ce39b188892f0a97623fe1d2e79bo.png)
 
 
-## Ejercicio 2
-
-#### Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual. 
-
-
 ## Ejercicio 3
 
 #### Escribir en YAML la siguiente estructura de datos en JSON: 
