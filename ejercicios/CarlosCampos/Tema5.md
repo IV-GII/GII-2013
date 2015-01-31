@@ -32,3 +32,24 @@ Actualmente con el Macbook, solo tengo la particion de sistema operativo, pero c
   12 x Bahías Totales  
   Gigabit Ethernet.  
   2U Montable en Bastidor.  
+
+  ### Ejercicio 2
+  Antes de nada, tenemos que comprobar si tenemos cargado **fuse**. Para ello tenemos que ejecutar en una consola:
+
+      lsmod | grep fuse
+
+  En el caso de que nos nos aparezca nada, tenemos que ejecutar:
+
+      modprobe fuse
+      depmod -A
+
+  Ahora, instalamos sshfs en las dos máquinas (cliente y servidor) desde la consola a través de apt:  
+
+      sudo apt-get install sshfs
+
+  El siguiente paso a realizar es crear una carpeta en la máquina cliente donde vayamos a montar la remota, para esto:
+
+      mkdir carpeta_remota
+      sshfs [usuario_remoto]@[IP]:[carpeta_remota] [punto a montar]
+      --
+      Por ejemplo: sshfs ccampos@server:Documents carpeta_remota
