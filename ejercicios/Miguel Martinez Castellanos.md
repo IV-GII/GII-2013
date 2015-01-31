@@ -547,7 +547,7 @@ y ahora las instalaremos:
 
 ##Ejercicio 2.2
 **Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels. **
-Realizamos las misma instalacion de los sistemas anteriores pero utilizandi Virtualbox
+Realizamos las misma instalacion de los sistemas anteriores pero utilizando Virtualbox
 ![4]()
 ![5]()
 
@@ -557,26 +557,74 @@ Realizamos las misma instalacion de los sistemas anteriores pero utilizandi Virt
 
 ##Ejercicio 4
 **Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.**
+Primero nos descargamos una imagen de linux en mi caso ya la tengo puesto que es la imagen de utilizo como maquina personal y con esa imagen vamos a crear una maquina virtula nueva con los requisitos del enunciado.
+Para ellos realizaremos el siguiente comando,tal y como venimos haciendo en practicas anteriores.
+```sh
+qemu-img create -f qcow2 LUbuntu.qcow2 4G
+```
+con eso ya hemos creado un disco duro ahora realizaremos la instalacion pero ahora le indicaremos la condiciones.
+```sh
+qemu-system-x86_64 -hda LUbuntu.qcow2 -cdrom Escritorio/lubuntu-14.10-desktop-i386.iso -m 512M
+```
+![7_1]()
+Cuando tengamos la instalacion completada tendremos que realizar la conexion a traves de VNC y SSH y para ello utilizaremos VNC Vinagre.Si no tenemos instalada dicha herramienta las instalaremos con:
+![6]()
+```sh
+sudo aptutide vinagre
+```
+![7]()
+una vez instalada la herramienta vamos a conectarnos atraves de VNC y co ifconfig veremos la direccion para la conexion.
+y realizamos la conexion con vinagre <Direccion dada por ifconfig>
+![7_2]()
+Y entonces solo nos quedara conectarnos con:
+```sh
+vinagre vinagre 192.168.122.1:5901
+```
+y se nos desplegara una ventana de nuestra maquina remota.
 
 ##Ejercicio 5
 **Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.**
 
 ##Ejercicio 6
 **Usar juju para hacer el ejercicio anterior.**
-
+Para realizar el ejercicio anterior pero con juju.
 ##Ejercicio 7
 **Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.**
+En mi maquina tengo instalado el hipervisor VirtualBox y creare la maquinas desde ahi.
+
+![10]()
+![11]()
+
 
 #TEMA 7
 
 ##Ejercicio 1
 **Instalar chef en la máquina virtual que vayamos a usar**
+Para realizar la instalacion realizamos la siguiente sentencia:
+```sh
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
+```
+![1]()
 
 ##Ejercicio 2
 **Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual. **
 
 ##Ejercicio 3
 **Escribir en YAML la siguiente estructura de datos en JSON { uno: "dos",  tres: [ 4, 5, "Seis", { siete: 8, nueve: [ 10,11 ] } ] } "**
+Esta estructura en YAML se puede crear introduciento los valores usando un orden jeraquico precedido de guion.
+```sh
+---
+- uno: "dos"
+  tres:
+    - 4
+    - 5
+    - "Seis"
+    -
+      - siete: 8
+        nueve: 
+          - 10
+          - 11
+```
 
 ##Ejercicio 4
 **Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.**
@@ -589,6 +637,23 @@ Realizamos las misma instalacion de los sistemas anteriores pero utilizandi Virt
 
 ##Ejercicio 6
 **Instalar una máquina virtual Debian usando Vagrant y conectar con ella.**
+En primer lugar tendremos que instalar la herramienta:
+```sh
+sudo apt-get install vagrant
+```
+Ahora para instalar la maquina usando Vagrant buscaremos una direccion tal y como dice el siguiente [guion](http://www.vagrantbox.es/)de la pagina oficial de Vagrand.
+
+y realizamos la instalacion con:
+```sh
+vagrant box add debian http://dl.dropbox.com/u/937870/VMs/squeeze64.box
+```
+![6]()
+despues de esto iniciaremos la maquina y levantaremos el entorno virtual.
+![6_1]()
+y finalmente nos conectaremos por ssh con:
+```sh
+vagrant ssh
+```
 
 ##Ejercicio 7
 **Crear un script para provisionar `nginx` o cualquier otro servidor web que pueda ser útil para alguna otra práctica**
