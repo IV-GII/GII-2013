@@ -37,3 +37,17 @@ Una vez que tenemos intalado virtualbox y descargado la imágen de DSL, basta co
 Una vez creada la máquina virtual tan solo necesitaremos pulsar sobre ella para acceder a **Configuración -> Almacenamiento** y selecionamos en la unidad de CD la imágen descargada, en nuestro caso el sistema operativo DSL.
 
 ![Imgur](http://i.imgur.com/jJSv56t.png)
+
+### Ejrcicio 4
+El primer paso que tenemos que realizar es crear una imagen y ejecutarlo igual que en el ejercicio anterior, pero esta vez especificandole la memoria.
+
+    qemu-img create -f qcow2 lxde.qcow2 8096M
+    qemu-system-x86_64 -hda lxde.qcow2 -cdrom lubuntu-14.10-desktop-i386.iso -m 512M
+
+Una vez instalada, la arrancamos con los dos especificadores que necesitamos:
+
+    qemu-system-x86_64 -boot order=c -drive file=lxde.qcow2,if=virtio -m 512M -name debian -vnc :1
+
+La máquina comienza a ejecutarse pero esta vez sin mostrarnos su entorno, observamos la ip que tiene con un **ifconfig**.
+
+Con cualquier cliente VNC accedemos indicando dicha ip.
