@@ -146,6 +146,7 @@ Finalmente creamos el directorio donde lo vamos a montar y lo montamos:
 sudo mkdir /mnt/ceph
 sudo mount -t ceph ivan-PC:/ /mnt/ceph
 ```
+
 ## Ejercicio 7
 #### Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.
 
