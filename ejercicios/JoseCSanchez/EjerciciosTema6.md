@@ -4,6 +4,12 @@
 
 #### Instalar los paquetes necesarios para usar KVM. Se pueden seguir estas instrucciones. Ya lo hicimos en el primer tema, pero volver a comprobar si nuestro sistema está preparado para ejecutarlo o hay que conformarse con la paravirtualización.
 
+Vuelvo a instalarlo con el siguiente comando para mostrar que ya lo tengo:
+
+`sudo aptitude install qemu-kvm libvirt-bin`
+
+![](http://fotos.subefotos.com/a44d3fc73f730426038fd38ca6df18b6o.png)
+
 
 ## Ejercicio 2
 
@@ -77,3 +83,59 @@ Aplicando el benchmark de tiempo comprobamos como con paravirtualización tarda 
 
 #### Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
 
+Primero creo del disco duro virtual:
+
+`qemu-img create -f qcow2 lxde.img 10G`
+
+Instalo la máquina virtual:
+
+`qemu-system-x86_64 -hda lxde.img -cdrom debian-7.7.0-amd64-netinst.iso -m 512M`
+
+Una vez instalada, en el menú de arranque le indico que quiero que se instale con el entorno gráfico LXDE.
+
+![](http://fotos.subefotos.com/f93e6e8bc20fbd673104fde67d550e52o.png)
+
+Una vez instalada, vemos la dirección IP de la máquina con `ifconfig virbr0` y accedemos con **vinagre**:
+
+`vinagre 192.168.23.129`
+
+Para conectar por ssh se ejecutan los siguientes comandos:
+
+```sh
+qemu-system-x86_64 -boot order=c -drive file=discolxde.qcow2,if=virtio -m 512M -name debian -redir tcp:4664::22
+
+ssh -p 4664 localhost
+```
+
+## Ejercicio 6
+
+#### Usar juju para hacer el ejercicio anterior.
+
+Lo primero que tenemos que hacer es instalar juju-gui:
+
+```sh
+juju deploy juju-gui
+juju expose juju-gui
+```
+
+Ahora accedemos a la dirección IP desde el navegador, con la contraseña que se encuentra en el archivo juju/environments/local.jenv.
+
+![](http://fotos.subefotos.com/3068344e55af58c35bc7453dde497ea9o.png)
+
+Ahora seleccionamos nginx en el menú de la izquierda y lo instalamos.
+
+![](http://fotos.subefotos.com/80401f212fad5ef82c898ac98867b624o.png)
+
+
+## Ejercicio 7
+
+#### Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.
+
+Instalamos el [Linux Mint](http://www.linuxmint.com/download.php) de la misma manera que las máquinas anteriores:
+
+```sh
+qemu-img create -f qcow2 mint.qcow2 10G
+qemu-system-x86_64 -hda mint.qcow2 -cdrom linuxmint-17.1-cinnamon-64bit.iso
+```
+
+![](http://fotos.subefotos.com/deeda21402db8502c368bc5377f5f8ado.png)
