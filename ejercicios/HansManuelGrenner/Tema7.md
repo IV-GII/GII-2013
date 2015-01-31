@@ -2,6 +2,15 @@
 
 **Instalar chef en la máquina virtual que vayamos a usar**
 
+> Haré uso de la recomendación dada por Israel en el Issue blabla de usar una máquina virtual de Ubuntu 12.04 de 32 bits.
+
+Instalamos ruby.
+
+```sudo apt-get install ruby ```
+
+E instalamos chef usando una versión que soporte la versión de ruby instalada.
+
+
 ## Ejercicio 2
 
 **Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual.**
@@ -10,6 +19,20 @@
 
 **Escribir en YAML la siguiente estructura de datos en JSON : `{ uno: "dos",
   tres: [ 4, 5, "Seis", { siete: 8, nueve: [ 10, 11 ] } ] } `**
+
+```
+---
+- uno: "dos"
+  tres:
+    - 4
+    - 5
+    - "Seis"
+    -
+      - siete: 8
+        nueve: 
+          - 10
+          - 11 
+```
 
 ## Ejercicio 4
 
