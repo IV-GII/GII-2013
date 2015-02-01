@@ -161,3 +161,60 @@ Ejercicio 4
 **Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.**
 
 
+Ejercicio 5
+-----------
+
+**1.Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.**
+
+**2.¿Ansible o Chef? ¿O cualquier otro que no hemos usado aquí?.**
+
+
+Ejercicio 6
+-----------
+
+**Instalar una máquina virtual Debian usando Vagrant y conectar con ella.**
+
+Lo primero es seleccionar una máquina en la [vagrantbox.es](http://www.vagrantbox.es/), en mi caso ***CentOS 6.3 32bit (puppet)***.
+Una vez elegido el que voy a descargar, uso el comando de vagrant box add.
+```bash
+vagrant box add CentOS https://dl.dropbox.com/sh/9rldlpj3cmdtntc/chqwU6EYaZ/centos-63-32bit-puppet.box
+```
+![6_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t7/6_1.png)
+Una vez que se a terminado de descargar, la voy a iniciar con:
+```bash
+vagrant init CentOS
+vagrant up
+```
+![6_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t7/6_2.png)
+Cuando se inicie la máquina, podré acceder por ssh usando:
+```bash
+vagrant ssh
+```
+![6_3.png](https://dl.dropboxusercontent.com/u/22433100/IV/t7/6_3.png)
+
+
+Ejercicio 7
+-----------
+
+**Crear un script para provisionar `nginx` o cualquier otro servidor
+web que pueda ser útil para alguna otra práctica.**
+
+Tan solo tengo que abrir el Vagrantfile y añadirle lo que quiero instalar, en este caso, nginx. Por lo tanto el fichero de configuración Vagrantfile quedará de la siguiente forma:
+```bash
+VAGRANTFILE_API_VERSION = "2"
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.vm.box = "CentOS"
+  
+  config.vm.provision "shell",
+  inline: "sudo yum -y update && sudo yum install -y nginx"
+
+end
+```
+![7_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t7/7_1.png)
+Una vez añadido todo lo anterior al Vagrantfile, ejecuto:
+```bash
+vagrant provision
+```
+![7_2.png](https://dl.dropboxusercontent.com/u/22433100/IV/t7/7_2.png)
+
