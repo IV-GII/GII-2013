@@ -1,194 +1,134 @@
-TEMA 5
+TEMA 6
 =========
 
 
 ##Ejercicio 1##
 
-![gparted](https://raw.githubusercontent.com/yonatan24891/ImagenesIV/master/gparted.bmp)
+Ya lo tenía instalado del primer tema:
 
-Podemos ver dos particiones para Windows y una extendida para ubuntu que contiene: el raíz, el home y la swap
+![kvm](https://raw.githubusercontent.com/yonatan24891/ImagenesIV/master/kvm.bmp)
 
 
 ##Ejercicio 2##
 
-Localizamos la ip de la maquina virtual añadimos esta línea al fichero /etc/hosts para acceder de forma más cómoda:
+Descargamos la iso de la página oficial por ejemplo de ttyLinux
 
-192.168.65.1
+Creamos fichero de almacenamiento:
 
-Instalamos sshfs:
+`qemu-img create -f raw diskimage.img 200M`
 
-`sudo apt-get install sshfs`
+Iniciamos la máquina especificando la iso y el fichero de almacenamiento:
 
-Creamos una carpeta para montar el sistema de ficheros y lo montamos con sshfs:
+`qemu-system-x86_64 -hda diskimage.img -cdrom ~/ttylinux-virtio_x86_64-16.1.iso `
 
-`mkdir carpeta`
+![tty](https://raw.githubusercontent.com/yonatan24891/ImagenesIV/master/tty.bmp)
 
-`sshfs yonatan24891@192.168.65.1:/home/yonatan24891 carpeta`
+Otro ejemplo con Damn Small Linux:
 
-Finalmente podremos acceder a nuestras carpetas montadas en una carpeta usando el protocolo ssh:
+`qemu-img create -f raw diskimage2.img 200M`
+
+`qemu-system-x86_64 -hda diskimage2.img -cdrom ~/dsl-4.4.10.iso`
+
+![dsl](https://raw.githubusercontent.com/yonatan24891/ImagenesIV/master/dsl.bmp)
 
 
-##Ejercicio 3##
+###Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels:###
 
-Instalamos QEMU:
+Primero instalamos virtualbox (si no lo tenesmo ya instalado):
 
-`sudo aptitude install qemu-system`
+```
+echo "deb http://download.virtualbox.org/virtualbox/debian `lsb_release -sc` contrib" >> /etc/apt/sources.list
+wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add -
+apt-get update
+apt-get install virtualbox-4.3
+```
 
-Cremaos y montamos el amacenamiento:
+Creamos una máquina virtual:
 
-`sudo qemu-img create -f qcow2 cow.qcow2 5M`
+![vbox](https://raw.githubusercontent.com/yonatan24891/ImagenesIV/master/vbox1.bmp)
 
-`sudo losetup -v -f cow.qcow2`
+Añadimos el disco con la iso en configuración y la iniciamos:
 
-`sudo mkfs.ext4 /dev/loop0`
+![vbox2](https://raw.githubusercontent.com/yonatan24891/ImagenesIV/master/vbox2.bmp)
 
 
 ##Ejercicio 4##
 
-Instalamos las herramientas:
+Creamos e iniciamos la máquina como en el ejercicio 2 esta vez con la imagen de lubuntu
 
-`sudo apt-get install xfsprogs btrfs-tools ntfs-3g`
+La apagamos y la volvemos a iniciar con:
 
-Creamos 3 imagenes y las montamos en un dispositivo loop:
+`qemu-system-x86_64 -boot order=c -drive file=lxde.img,if=virtio -m 512M -name debian -redir tcp:3251::22`
 
-`qemu-img create -f raw xfs.img 1G`
+Tenemos que redirigir un puerto de la máquina anfitriona a un puerto de la máquina virtual.
 
-`qemu-img create -f raw btrfs.img 1G`
+Instalamos ssh
 
-`qemu-img create -f raw ntfs.img 1G`
+`apt-get update && apt-get install ssh`
 
-`losetup -f xfs.img`
+Para conectarnos por ssh:
 
-`losetup -f btrfs.img`
-
-`losetup -f ntfs.img`
-
-Les damos formato y las montamos en nuestro sistema de ficheros:
-
-`mkfs.xfs /dev/loop0`
-
-`mkfs.btrfs /dev/loop1`
-
-`mkfs.ntfs -f /dev/loop2`
-
-`mkdir /mnt/xfs /mnt/btrfs /mnt/ntfs`
-
-`mount /dev/loop0 /mnt/xfs`
-
-`mount /dev/loop1 /mnt/btrfs`
-
-`mount /dev/loop2 /mnt/ntfs`
-
-Crearmos el fichero
-
-sudo dd if=/dev/zero of=/home/yonatan24891/40M bs=1MB count=40
-
-Medimos tiempo con time:
-
-sudo time -v cp 40M /mnt/loop0/40M
-sudo time -v cp 40M /mnt/loop1/40M
-sudo time -v cp 40M /mnt/loop2/40M
-
-Resultados:
-
-El primero ha tenido un system time de 0.52 segundos. El segundo, de 0.55 segundos. El tercero de 0.60
+`ssh -p 3251 yonatan24891@localhost`
 
 
 ##Ejercicio 5##
 
-Para instalarlo he usado el siguiente comando:
+Listamos las imagenes:
 
-sudo apt-get install ceph-mds
+`azure vm image list`
+
+La creamos:
+
+`azure vm create nginx b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-13_10-amd64-server-20140129-en-us-30GB yonatan24891 <pass_WD1=> --location "West Europe" --ssh`
+
+Nos conectamos a la máquina meduante ssh:
+
+`ssh yonatan24891@nginx.cloudapp.net`
+
+Instalamos nginx:
+
+`apt-get install nginx`
+
+Abrimos el puerto:
+
+`azure vm endpoint create -n nginx nginx 80 80`
 
 
 ##Ejercicio 6##
 
-### Crear un dispositivo ceph usando BTRFS o XFS.
+Si no tenemos juju instalados, ejecutamos:
 
-Para crear un dispositivo usando XFS una vez instalado ceph deberemos:
+```
+apt-get install juju-core
+juju init
+```
 
-1. Crear los directorios donde se almacenará la información de ceph:
+Creamos los certificados ssl:
 
-        # mkdir -p /srv/ceph/{osd,mon,mds}
+```
+openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout azure.pem -out azure.pem
+openssl x509 -inform pem -in azure.pem -outform der -out azure.cer
+chmod 600 azure.pem
+```
 
+Modificamo es archivo ~/.juju/environments.yaml añadiendole:
 
-2. Creamos un fichero de configuración en `/etc/ceph/ceph.conf`:
+management-susbscription-id: lo que devuelva: `azure account list`
 
-    ```
-[global]
-    log file = /var/log/ceph/$name.log 
-    pid file = /var/run/ceph/$name.pid 
-[mon] 
-    mon data = /srv/ceph/mon/$name 
-[mon.mio] 
-    host = yonatan24891
-    mon addr = 127.0.0.1:6789 
-[mds] 
-[mds.mio] 
-    host = yonatan24891
-[osd] 
-    osd data = /srv/ceph/osd/$name 
-    osd journal = /srv/ceph/osd/$name/journal 
-    osd journal size = 1000 ; journal size, in megabytes 
-[osd.0] 
-    host = yonatan24891
-    devs = /dev/loop0 
-    ```
+management-certificate-path: ruta del fichero "azure.pem".
 
-Para crear el dispositivo **XFS** tenemos que crear el directorio a 
+storage-account-name: lo que devuelva `azure storage account list`
 
-`mkdir /srv/ceph/osd/osd.0`
+Activamos el entorno, desplegamos y exponemos:
+
+```
+juju switch azure
+juju deploy --to 0 juju-gui
+juju expose juju-gui
+```
 
 
-Para finalizar con nuestra configuración creamos el sistemas de ficheros de objetos:
 
-`mount -o loop xfs.img /srv/ceph/osd/osd.0/`
-
-`mkcephfs -a -c /etc/ceph/ceph.conf`
-
-`/etc/init.d/ceph -a start`
-
-
-Comprobamos:
-
-`ceph -s`
-
-Montamos nuestro nuevo sistema de ficheros de objetos:
-
-`mount -t ceph localhost:/ /mnt/ceph/`
-
-
-##Ejercicio 7##
-
-Creamos un pool:
-
-`sudo rados mkpool yo`
-
-y añadimos un fichero
-
-`rados put -p yo obj yo.txt`
-
-
-##Ejercicio 8##
-
-Instalamos CLI:
-
-`sudo apt-get install nodejs-legacy npm`
-
-`npm install -g azure-cli`
-
-
-Nos logueamos:
-
-`azure login -u <your organizational ID email address>`
-
-Tenemos que enlazar con nuestra cuenta de Azure. Para ello, ejecutamos:
-
-`azure account download`
-
-Se nos indicará una URL. Cuando la abramos, se descargará un fichero. Importamos este fichero con:
-
-`azure account import <fichero>`
 
 
 
