@@ -117,3 +117,11 @@ Como el propio mensaje de Vagrant indica, el **vagrantfile** se ha creado estamo
 Por último acceemos a nuestro entorno virtual
 
     vagrant ssh
+
+### Ejercicio 7
+Para instalar nginx en nuestra máquina Debian, podemos hacerlo desde el mismo fichero **Vagrantfile**. Lo abrimos y añadimos un par de líneas al cihero:
+
+```ruby
+  config.vm.provision "shell".
+    inline: "sudo apt-get install -y nginx"
+```
