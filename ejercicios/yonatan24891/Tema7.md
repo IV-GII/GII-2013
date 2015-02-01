@@ -30,42 +30,11 @@ TEMA 7
 └── solo.rb
 ```
 
-* [**./solo.rb**](./chef/solo.rb)
-		
-        cookbook_path File.expand_path("../cookbooks", __FILE__)
-        json_attribs File.expand_path("../node.json", __FILE__)
-
-
-* [**./node.json**](./chef/node.json)
-
-    ```
-{
-        "nginx": {
-                "version"       : "1.4.4",
-                "user"          : "www-data",
-                "port"          : "80"
-        },
-
-        "vim": {
-                "version"       : "7.3.429"
-        },
-
-        "fichero": {
-                "name"          : "fichero"
-        },
-
-        "run_list": [
-                "recipe[nginx]",
-                "recipe[vim]",
-                "recipe[fichero]"
-                ]
-}
-    ```
-
 En los default.rb de vim y nginx ponemos según el caso:
-`package 'nginx[vim]'`
 
-En el default.rb del ficjero:
+`package 'nginx/vim'`
+
+En el default.rb del fichero:
 
 ```
 directory '/home/fichero'
