@@ -96,3 +96,24 @@ Ahora solo nos queda comprobar que ciertamente se han realizado correctamente to
             nueve:
               - 10
               - 11
+
+### Ejercicio 6
+Antes de nada, tenemos que instalar **vagrant**
+
+    sudo apt-get install vagrant
+
+Ahora ejecutamos la siguiente instruccion con la url correspondiente a Debian.
+
+    vagrant box add debian http://dl.dropbox.com/u/54390273/vagrantboxes/Squeeze64_VirutalBox4.2.4.box
+
+Seguidamente inicializamos:
+
+    vagrant init debian
+
+Como el propio mensaje de Vagrant indica, el **vagrantfile** se ha creado estamos listos entonces para levantar el entorno virtual.
+
+    vagrant up
+
+Por último acceemos a nuestro entorno virtual
+
+    vagrant ssh
