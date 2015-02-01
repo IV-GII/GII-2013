@@ -63,3 +63,18 @@ Ahora vemos la configuración con **juju status** para saber si está inicializa
 Para crear una máquina con nginx, lo búscamos en el menú de la izquierda, le damos a **add to my canvas** y seleccionamos los recursos que le queramos asignar. Una vez hecho esto tendremos que pulsar el botón **commit** de abajo para guardar los cambios. Ahora nos aparecerá la máquina en el menú de inicio con un color amarillo.
 
 ![Imgur](http://i.imgur.com/bmmRbO8.png)
+
+### Ejercicio 7  
+Al no encontrar ninguna máquina virtual de Linux Mint, procedo a realizar el ejercicio con **ubuntu**.
+
+Antes de nada, tenemos que instalar una serie de paquetes:
+
+    sudo apt-get install ubuntu-vm-builder kvm virt-manager
+
+Ahora para provisionar la máquina virtual simplemente es necesario introducir la línea de ordenes de **vmbuilder** con los siguientes parámetros:
+
+    sudo vmbuilder vmw6 ubuntu --suite precise --flavour    server --arch i386 -o --dest /home/ccampos/ubuntu --hostname ubuntu --domain ubun
+
+Ahora abrimos VirtualBox y al crear una nueva máquina virtual con dicha imagen, seleccionamos "Usar un archivo disco duro virtual existente" y seleccionamos el disco virtual que acabamos de crear.
+
+Arrancamos la VirtualBox y ya podemos comprobar que la máquina virtual funciona correctamente.
