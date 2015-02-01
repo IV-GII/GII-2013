@@ -124,3 +124,130 @@ node.json:
 Ejecutamos:
 
 `$ sudo chef-solo -c solo.rb`
+
+
+
+##Ejercicio 3##
+
+```
+- uno: "dos" 
+  tres: 
+    - 4 
+    - 5 
+    - "Seis" 
+    - 
+      - siete: 8 
+        nueve: 
+          - 10 
+          - 11
+```
+
+##Ejercicio 4##
+
+Instalamos ansible:
+
+`apt-get install python-pip`
+`pip install ansible`
+
+Añadimos el host:
+
+`echo -e "[azure]\nombre_de_la_maquina.cloudapp.net" >> /etc/ansible/hosts`
+
+Desplegamos:
+
+`ansible azure -u yonatan24891 -m git -a "repo=https://github.com/yonatan24891/"GIT" dest="DESTINO"`
+
+
+##Ejercicio 6##
+
+Instalamos Vagrant:
+
+`apt-get install vagrant`
+
+Descargamos la imagen:
+
+`vagrant box add debian https://dl.dropboxusercontent.com/u/197673519/debian-7.2.0.box`
+
+Iniciamos y nos conectamos a ella:
+```
+vagrant init debian
+vagrant up
+vagrant ssh
+```
+
+
+##Ejercicio 7##
+
+##Ejercicio 8##
+
+
+Modificamos el fichero Vagrantfile:
+
+```
+```
+Vagrant::Config.run do |config| 
+  config.vm.box = "debian" 
+
+  config.vm.provision "ansible" do |ansible| 
+    ansible.playbook = "playbook.yml" 
+    ansible.inventory_path = "hosts"
+  end 
+
+  config.vm.box_url = "https://dl.dropboxusercontent.com/u/197673519/debian-7.2.0.box" 
+
+  config.vm.network :hostonly, "192.168.33.10" 
+end
+```
+
+Y creamos un playbook:
+
+```
+- hosts: vagrant 
+  sudo: yes 
+  tasks: 
+    - name: Instalar última versión de nginx 
+      apt: name=nginx state=latest 
+      notify: 
+      - restart nginx 
+  handlers: 
+    - name: restart nginx 
+      service: name=nginx state=restarted 
+```
+
+Añadimos el host a la lista de hosts "vagrant":
+
+    # echo -e "[vagrant]\n192.168.33.10 " >> hosts
+
+De esta forma, ansible se encargará de instalar nginx y mantenerlo actualizado al ejecutar:
+
+    $ vagrant provision
+
+o al iniciar la máquina (`$ vagrant up`).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
