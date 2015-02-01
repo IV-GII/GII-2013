@@ -21,53 +21,47 @@ El archivos **"solo.rb"** es el archivo de configuración de nuestro recetario; 
 
 El archivo **"node.json"** como he indicado antes es el que indicará los atributos de cada una de las recetas de nuestro recetario (nombres, versiones, usuarios...), así como la forma de ejecutarlas (por ejemplo, ejecutar todas las recetas seguidas).
 
-```
-{
-  "nginx": {
-    "version"	: "1.4.1",
-    "user"		: "www-data",
-    "port"		: "80"
-  },
+    {
+      "nginx": {
+        "version"	: "1.4.1",
+        "user"		: "www-data",
+        "port"		: "80"
+      },
 
-  "emacs": {
-    "version"	: "23.4.1"
-  },
+      "emacs": {
+        "version"	: "23.4.1"
+      },
 
-  "iv": {
-    "name"		: "Infraestructura Virtual"
-  },
+      "iv": {
+        "name"		: "Infraestructura Virtual"
+      },
 
-  "run_list":	[
-    "recipe[nginx]",
-    "recipe[emacs]",
-    "recipe[iv]"
-  ]
-}
-```
+      "run_list":	[
+        "recipe[nginx]",
+        "recipe[emacs]",
+        "recipe[iv]"
+      ]
+    }
 
 El directorio **"codebooks"** será el que contendrá cada una de las recetas, cada una de las carpetas en su interior representa una receta, y a su vez, en el interior de las carpetas de las recetas nos encontraremos un archivo **"metadata.rb"** con los metadatos sobre la receta y una carpeta **"recipes"** con un archivo **"default.rb"** en su interior, este archivo es la receta en si misma ya que contendrá los "pasos" para realizar dicha receta. En el caso de la receta para crear el directorio, su archivo de metadatos es:
 
-```
-maintainer       "Carlos Campos Fuentes"
-maintainer_email "carlos@ccamposfuentes.es"
-description      "Crea un directorio para los archivos de Infraestructura Virtual"
-version          "1.0.0"
+    maintainer       "Carlos Campos Fuentes"
+    maintainer_email "carlos@ccamposfuentes.es"
+    description      "Crea un directorio para los archivos de Infraestructura Virtual"
+    version          "1.0.0"
 
-recipe "iv", "Receta de creación del directorio de Infraestructura Virtual."
-```
+    recipe "iv", "Receta de creación del directorio de Infraestructura Virtual."
 
 Y su receta es:
 
-```
-directory '/home/ccampos/IV'
-file "/home/ccampos/IV/README.md" do
-  owner "ccampos"
-  group "ccampos"
-  mode 00764
-  action :create
-  content "Archivos de Infraestructura Virtual"
-end
-```
+    directory '/home/ccampos/IV'
+    file "/home/ccampos/IV/README.md" do
+      owner "ccampos"
+      group "ccampos"
+      mode 00764
+      action :create
+      content "Archivos de Infraestructura Virtual"
+    end
 
 Esta receta creará el directorio **"/home/ccampos/IV"** y en su interior el archivo **"README.md"**, dándole la propiedad al usuario **"ccampos"**, asignándole ese mismo usuario y permisos de lectura, escritura y ejecución para su dueño, solo lectura y escritura para los miembros del mismo grupo, y finalmente, solo permisos de lectura para el resto de usuarios.
 
@@ -75,26 +69,18 @@ En el caso de las recetas para instalar un paquete, su contenido es mucho más s
 
 * Archivo **default.rb** para instalar **nginx**:
 
-```
-package 'nginx'
-```
+      package 'nginx'
 
 * Archivo **default.rb** para instalar **emacs**:
 
-```
-package 'emacs'
-```
+      package 'emacs'
 
 Ejecutando el archivo **"solo.rb"** con **chef-solo** podremos usar las recetas que acabo de crear.
 
-```
-sudo chef-solo -c chef-solo-iv/solo.rb -j chef-solo-iv/node.json
-```
+    sudo chef-solo -c chef-solo-iv/solo.rb -j chef-solo-iv/node.json
 
 Ahora solo nos queda comprobar que ciertamente se han realizado correctamente todas las recetas.
 
-```
-nginx -v
-emacs --version
-ls IV/
-```
+    nginx -v
+    emacs --version
+    ls IV/
