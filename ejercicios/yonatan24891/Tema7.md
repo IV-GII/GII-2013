@@ -153,7 +153,6 @@ vagrant ssh
 Modificamos el fichero Vagrantfile:
 
 ```
-```
 Vagrant::Config.run do |config| 
   config.vm.box = "debian" 
 
@@ -167,8 +166,7 @@ Vagrant::Config.run do |config|
   config.vm.network :hostonly, "192.168.33.10" 
 end
 ```
-
-Y creamos un playbook:
+Creamos un playbook:
 
 ```
 - hosts: vagrant 
@@ -183,15 +181,14 @@ Y creamos un playbook:
       service: name=nginx state=restarted 
 ```
 
-Añadimos el host a la lista de hosts "vagrant":
+Añadimos el host:
 
-    # echo -e "[vagrant]\n192.168.33.10 " >> hosts
+    echo -e "[vagrant]\n192.168.33.10 " >> hosts
 
-De esta forma, ansible se encargará de instalar nginx y mantenerlo actualizado al ejecutar:
+De esta forma, ansible se encargará de instalar nginx:
 
-    $ vagrant provision
+    vagrant provision
 
-o al iniciar la máquina (`$ vagrant up`).
 
 
 
