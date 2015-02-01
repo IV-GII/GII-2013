@@ -113,6 +113,8 @@ sudo add-apt-repository ppa:juju/stable
 sudo apt-get update && sudo apt-get install juju-core
 ```
 
+También tenemos que instalar el paquete `juju-local` para poder usar el sistema en el entorno local.
+
 
 **2. Usándolo, instalar MySQL en un táper.**
 
@@ -136,15 +138,44 @@ Igualmente para poder usar el proveedor local necesitamos MongoDB (siguiendo las
 sudo apt-get install mongodb-server
 ```
 
+Podemos usar estos dos comandos para instalar y preparar MySQL:
+
+```shell
+juju bootstrap
+juju deploy mysql
+```
+
 
 Ejercicio 7
 -----------
 
 **1. Destruir toda la configuración creada anteriormente**
 
+```shell
+juju destroy-service mysql
+```
+
+
 **2. Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.**
 
-**3. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.**
+Usamos los comandos que nos provee el guión para hacer la tarea:
+
+```shell
+juju deploy mysql
+juju deploy mediawiki
+juju add-relation mediawiki:db mysql
+juju expose mediawiki
+```
+
+Una vez inicializado todo podemos usar:
+
+```shell
+juju status
+```
+
+para obtener la configuración del sistema que estamos preparando y la dirección donde podemos verlo.
+
+![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img7.png)
 
 
 Ejercicio 8
