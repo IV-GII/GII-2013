@@ -447,7 +447,13 @@ sudo /sbin/mkcephfs -a -c /etc/ceph/ceph.conf<br />
 
 **Ejercicio 8:**<br />
 **Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente**<br />
-
+`sudo apt-get install nodejs-legacy` <br />
+`sudo apt-get install npm`<br />
+`sudo npm install -g azure-cli`<br />
+Ahora enlazamos con nuestra cuenta:<br />
+`azure account download`<br />
+Nos dirigimos a la URL proporcionada e importamos el fichero descargado con:<br />
+`azure account import [archivo]`<br />
 
 **Ejercicio 9:**<br />
 **Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.**<br />
