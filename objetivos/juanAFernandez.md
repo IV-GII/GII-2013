@@ -209,7 +209,7 @@ Otros objetivos.
 * [X] Aplicar conocimientos de administración de un sistema Linux: usuarios, permisos.
 * [X] Entender las consideraciones de seguridad en el uso de este tipo de técnicas.
 * [X] Comprender que existe vida en los servidores web fuera del Apache.
-* [X] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
+* [] Comprobar la página de chroot en la Wikipedia y mejorarla o modificarla como iniciación a crear contenido de la Wikipedia relacionado con la asignatura.
 * [X] Buscar material adicional de la asignatura e insertarlo aquí en su apartado correspondiente con un pull request.
 
 ####Sesión del 11 de noviembre de 2014
@@ -288,7 +288,7 @@ Otros objetivos.
 ######Otros:
 
 * [X] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
-* [X] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 
 ####Sesión del 2 de diciembre de 2014
 
@@ -299,7 +299,7 @@ Otros objetivos.
 
 ######Otros:
 
-* [X] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+* [] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
 * [X] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
 
 ###Sesión del 9 de diciembre de 2014
