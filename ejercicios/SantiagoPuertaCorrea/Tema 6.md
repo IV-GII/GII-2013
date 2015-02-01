@@ -198,10 +198,25 @@ Ahora indico el switch "azure" y hago bootstrap.
 ```bash
 sudo juju switch azure
 sudo juju bootstrap
+sudo juju deploy --to 0 juju-gui
+sudo juju expose juju-gui
 ```
+
+Con esto ya podemos acceder al panel en el que indicamos que queremos instalar nginx.
 
 
 Ejercicio 7
 -----------
 
 **Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.**
+
+Descargo la ISO de linux mint desde su [web](http://www.linuxmint.com/download.php), en mi caso he descargado linux mint 17.1 cinnamon de 32 bits.
+
+Para la instalación voy a seguir los mismos pasos que en el ejercicio 2.
+
+```bash
+# Creo un disco virtual.
+qemu-img create -f qcow2 disco3.qcow2 8000M
+# Arranco la imagen del disco de mint
+qemu-system-x86_64 -hda disco3.qcow2 -cdrom linuxmint-17.1-cinnamon-32bit.iso
+```
