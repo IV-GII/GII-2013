@@ -229,3 +229,51 @@
 * [X] Resumir lo más interesante de la visita a Trevenque (los que estuvieran)
 
 * [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+
+##Clase del 25 de noviembre de 2014##
+* [X] Resolver problemas con juju.
+
+* [X] Entender cómo funciona docker y qué implica.
+
+###Otros objetivos###
+* [X] Aprender estrategias para resolución de problemas con nuevas aplicaciones: uso de foros, registros de error, preguntar a quien lo sepa.
+
+* [X] Escribir un resumen de la visita al Grupo Trevenque. Hombre ya.
+
+
+##Clase del 1 de diciembre de 2014##
+* [X] Resolver últimos problemas con docker.
+
+* [X] Comenzar con la tercera práctica.
+
+###Otros objetivos###
+* [X] Resumir lo más interesante de la visita a Trevenque (los que estuvieran).
+
+* [X] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+
+##Clase del 2 de diciembre de 2014##
+* [X] Resolver últimos problemas con docker.
+
+* [X] Resolver dudas relacionadas con la tercera práctica.
+
+###Otros objetivos###
+* [X] ¿Has modificado algún artículo de la Wikipedia? Pues hazlo ya.
+
+* [X] Sigue corrigiendo ejercicios de tus compañeros y discutiéndolos con ellos (usando comentarios a los commits o pull requests)
+
+##Clase del 9 de diciembre de 2014##
+* [X] Terminar la familiarización con Ruby
+
+* [X] Recordar conceptos de almacenamiento físico.
+
+* [X] Entender el concepto de FUSE y usarlo en la práctica.
+
+* [X] Crear y manipular formatos de provisionamiento delgado.
+
+###Objetivos generales###
+* [X] Tener flexibilidad para saber cuando usar lenguajes nuevos y aprenderlos sobre la marcha.
+
+* [X] Usar herramientas de la asignatura para tareas de utilidad en la administración de sistemas u otras asignaturas.
+
