@@ -55,7 +55,7 @@ Y nos muestra el puente `lxcbr0` con una sola interfaz `veth0GKDBX` que permite 
 Ejercicio 3
 -----------
 
-1. **Crear y ejecutar un contenedor basado en Debian.**
+**1. Crear y ejecutar un contenedor basado en Debian.**
 
 Usamos los siguientes comandos para instalar y ejecutar el contenedor:
 
@@ -68,7 +68,7 @@ Podemos verlo funcionando aquí:
 
 ![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img2.png)
 
-2. **Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.**
+**2. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.**
 
 En mi caso voy a elegir CentOS (que es más estable que Fedora). Para ello uso:
 
@@ -77,10 +77,11 @@ sudo lxc-create -t centos -n tcentos
 sudo lxc-start -n tcentos
 ```
 
+
 Ejercicio 4
 -----------
 
-1. **Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.**
+**1. Instalar lxc-webpanel y usarlo para arrancar, parar y visualizar las máquinas virtuales que se tengan instaladas.**
 
 Instalamos siguiendo las instrucciones oficiales de su página web desde una consola donde seamos root:
 
@@ -88,26 +89,34 @@ Instalamos siguiendo las instrucciones oficiales de su página web desde una con
 wget http://lxc-webpanel.github.io/tools/install.sh -O - | bash
 ```
 
+![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img4.png)
 
-2. **Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.**
+**NOTA:** El contenedor de CentOS no aparece porque lo he borrado explícitamente con ```lxc-destroy``` y no quería crearlo de nuevo para la captura.
+
+
+**2. Desde el panel restringir los recursos que pueden usar: CPU shares, CPUs que se pueden usar (en sistemas multinúcleo) o cantidad de memoria.**
+
+Podemos por ejemplo restringir la memoria a medio giga y a una sola CPU:
+
+![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img5.png)
 
 
 Ejercicio 6
 -----------
 
-1. **Instalar juju.**
+**1. Instalar juju.**
 
-2. **Usándolo, instalar MySQL en un táper.**
+**2. Usándolo, instalar MySQL en un táper.**
 
 
 Ejercicio 7
 -----------
 
-1. **Destruir toda la configuración creada anteriormente**
+**1. Destruir toda la configuración creada anteriormente**
 
-2. **Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.**
+**2. Volver a crear la máquina anterior y añadirle mediawiki y una relación entre ellos.**
 
-3. **Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.**
+**3. Crear un script en shell para reproducir la configuración usada en las máquinas que hagan falta.**
 
 
 Ejercicio 8
@@ -133,9 +142,9 @@ Ya tenía docker previamente instalado para el proyecto de prácticas.
 Ejercicio 11
 ------------
 
-1. **Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.**
+**1. Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.**
 
-2. **Buscar e instalar una imagen que incluya MongoDB.**
+**2. Buscar e instalar una imagen que incluya MongoDB.**
 
 
 Ejercicio 12
