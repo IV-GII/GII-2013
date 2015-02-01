@@ -64,9 +64,9 @@ sudo lxc-create -t debian -n tdeb
 sudo lxc-start -n tdeb
 ```
 
-Podemos verlo funcionando aquí:
+Podemos verlo encendido aquí:
 
-![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img2.png)
+![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img6.png)
 
 **2. Crear y ejecutar un contenedor basado en otra distribución, tal como Fedora. Nota En general, crear un contenedor basado en tu distribución y otro basado en otra que no sea la tuya. Fedora, al parecer, tiene problemas si estás en Ubuntu 13.04 o superior, así que en tal caso usa cualquier otra distro. Por ejemplo, Óscar Zafra ha logrado instalar Gentoo usando un script descargado desde su sitio, como indica en este comentario en el issue.**
 
@@ -106,7 +106,35 @@ Ejercicio 6
 
 **1. Instalar juju.**
 
+Usamos las instrucciones del sitio oficial de Juju que nos dice que ejecutemos:
+
+```shell
+sudo add-apt-repository ppa:juju/stable
+sudo apt-get update && sudo apt-get install juju-core
+```
+
+
 **2. Usándolo, instalar MySQL en un táper.**
+
+Inicializamos el entorno de Juju usando:
+
+```shell
+juju init
+```
+
+Y editamos las configuraciones para usar el proveedor local poniendo:
+
+```yaml
+default: local
+```
+
+en el fichero generado `~/.juju/environments.yaml`
+
+Igualmente para poder usar el proveedor local necesitamos MongoDB (siguiendo las instrucciones del guión de prácticas):
+
+```shell
+sudo apt-get install mongodb-server
+```
 
 
 Ejercicio 7
