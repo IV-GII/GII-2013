@@ -128,15 +128,15 @@ Comenzar con la segunda práctica
 
 * [] Usar herramientas de administración y monitorización de red en línea de órdenes
 * [X] Contestar a la encuesta sobre la asignatura
-* [] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
-* []  de usar Sublime Text por estas 7 razones.
+* [x] Ver los proyectos hechos por los compañeros y si os gustan dadles una estrella o fork en GitHub o tuitearlas con el hashtag #ivgii
+* [x]  de usar Sublime Text por estas 7 razones.
 * 
 ## Clase del 10 de noviembre de 2014
 
 ### Objetivos de esta sesión
 
 * [X] Usar herramientas específicas para configurar una jaula chroot y conocer herramientas similares para otros sistemas operativos.
-* [] Aprender a ''enjaular'' usuarios.
+* [x] Aprender a ''enjaular'' usuarios.
 
 ### Otros objetivos
 
@@ -196,7 +196,7 @@ Aprender a ''enjaular'' usuarios.
 ## Clase del 24 de noviembre de 2014
 ### Objetivos de esta sesión
 
-* [] Resolver problemas con juju.
+* [x] Resolver problemas con juju.
 * [x] Configuración compleja de sistemas con él.
 * [x] Entender el concepto de hipervisor y trabajar con ellos.
 
