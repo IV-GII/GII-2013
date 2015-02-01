@@ -84,3 +84,15 @@ Ahora solo nos queda comprobar que ciertamente se han realizado correctamente to
     nginx -v
     emacs --version
     ls IV/
+
+### Ejercicio 3
+    - uno: "dos"  
+      tres:
+        - 4
+        - 5
+        - "Seis"
+        -
+          - siete: 8
+            nueve:
+              - 10
+              - 11
