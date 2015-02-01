@@ -23,7 +23,7 @@ Ejercicio 2
 
 **1. Crear varias máquinas virtuales con algún sistema operativo libre tal como Linux o BSD. Si se quieren distribuciones que ocupen poco espacio con el objetivo principalmente de hacer pruebas se puede usar CoreOS (que sirve como soporte para Docker) GALPon Minino, hecha en Galicia para el mundo, Damn Small Linux, SliTaz (que cabe en 35 megas) y ttylinux (basado en línea de órdenes solo).**
 
-Para este ejercicio voy a usar varias imagenes, una de ellas será [slitaz](http://www.slitaz.org/en/)
+Para este ejercicio voy a usar varias imágenes, una de ellas será [slitaz](http://www.slitaz.org/en/)
 
 Me descargo la imagen de slitaz desde su web.
 Creo un disco virtual usando:
@@ -214,9 +214,8 @@ Descargo la ISO de linux mint desde su [web](http://www.linuxmint.com/download.p
 
 Para la instalación voy a seguir los mismos pasos que en el ejercicio 2.
 
-```bash
-# Creo un disco virtual.
-qemu-img create -f qcow2 disco3.qcow2 8000M
-# Arranco la imagen del disco de mint
-qemu-system-x86_64 -hda disco3.qcow2 -cdrom linuxmint-17.1-cinnamon-32bit.iso
-```
+Creo una máquina virtual en virtual box.
+![7_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t6/7_1.png)
+
+Le indico el iso que debe de cargar para instalarlo, en mi caso linuxmint-17.1-xfce-32bit.iso.
+Una vez que se a iniciado con la imagen, mint nos va a ir pidiendo en su menú de instalación datos de usuario, donde deseamos instalar, etc.
