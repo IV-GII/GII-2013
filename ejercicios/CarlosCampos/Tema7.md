@@ -125,3 +125,27 @@ Para instalar nginx en nuestra máquina Debian, podemos hacerlo desde el mismo f
   config.vm.provision "shell".
     inline: "sudo apt-get install -y nginx"
 ```
+
+### Ejrcicio 8
+Tenemos que sobreescrbir el fichero de hosts de Ansible para usarlo con la máquina de Vagrant. Como esta vez no accedemos mediante un DNS de internet vamos a usar la ip de la máquina virtual en Vagrant, que consultaremos accediendo y ejecutando **/sbin/ip addr**.
+
+Una vez que tenemos la ip, simplemente tenemos que añadirla al archivo **~/ansible_hosts** y modificar el archivo **Vagrantfile** y añadir:
+
+```shell
+config.vm.provision "ansible" do |ansible|
+ansible.playbook = "Vagrant.yml"
+```
+Y creamos su *.yml específico:
+
+```shell
+hosts: vagrant
+  sudo: yes
+- name: actualizar todos los paquetes
+  yum: name=* state=latest
+
+- name: instalar las development tools
+  yum: name="@Development tools" state=present
+```
+Como en el casi anterior, ejecutamos el script de aprovisionamiento:
+
+    vagrant provision
