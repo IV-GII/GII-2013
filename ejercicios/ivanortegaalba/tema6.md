@@ -47,3 +47,17 @@ Lo descargamos de la página oficial y :
 sh VMware-Player.bundle
 ```
 Seguimos los pasos del instalador y seleccionamos la imagen desde el asistente.
+
+
+## Ejercicio 4
+
+#### Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.
+
+Creamos la imagen:
+```
+qemu-img create -f qcow2 lxde.img 20G
+```
+y montamos desde iso:
+```
+qemu-system-x86_64 -hda lxde.img -cdrom debian-7.7.0-amd64-netinst.iso -m 512M
+```
