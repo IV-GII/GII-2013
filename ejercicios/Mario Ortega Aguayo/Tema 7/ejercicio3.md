@@ -1,7 +1,7 @@
 ###Ejercicio3
 
 **Escribir en YAML la siguiente estructura de datos en JSON**
-'''sh
+<pre>
 uno: "dos"
 tres:
     - 4
@@ -11,3 +11,4 @@ tres:
         - nueve:
             - 10
             - 11
+</pre>
