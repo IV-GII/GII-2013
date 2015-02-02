@@ -496,3 +496,301 @@ Como podemos ver, el servicio se está ejecutando lo que nos confirma que la ins
 
 
 ## Tema 5
+
+## Tema 6
+
+#Ejercicio 1
+
+Instalar los paquetes necesarios para usar KVM.Comprobar que nuestro systema está preparado para ejecutarlo. Ejecutamos kvm-ok para comprobar (como lo hicimos en temas anteriores si KVM es compatible con nuestro sistema). Como podemos ver si es compatible y podemos utilizarlo.
+
+![Ejercicio1_1](http://i.imgur.com/IVYcTfw.png)
+
+
+#Ejercicio 2
+
+1)	Vamos a crear varias máquinas virtuales con sistemas operativos libres. Por ejemplo ttyLinux que está basado solamente en línea de ordenes. 
+
+- Ttylinux: Descargamos la imagen desde la [página oficial](http://ttylinux.net/dloadPC-x86_64.html)
+A continuación creamos un disco virtual y arrancamos la máquina con la iso y el disco.
+
+![Ejercicio2_1_1](http://i.imgur.com/vCOit9G.png)
+
+- Slitaz: Descargamos la imagen desde la [página oficial](http://www.slitaz.org/en/)
+Seguimos los mismos pasos que en el apartado anterior, creamos un disco virtual nuevo y volvemos a arrancar la máquina.
+
+![Ejercicio2_1_2](http://i.imgur.com/5qR3Zit.png)
+
+2)	Ahora volveremos a crear varias máquinas virtuales pero usando VirtualBox. Para instalarlo ejecutaremos las siguientes instrucciones:
+	
+	> sudo apt-get update
+	> sudo apt-get install virtualbox-qt
+
+Una vez instalado, abrimos la aplicación desde el entorno gráfico. Y nos aparecerá la siguiente ventana.
+
+![Ejercicio2_2_1](http://i.imgur.com/ZuF5gVG.png)
+
+Pinchamos en "Nueva" y nos aparecerá una nueva ventana desde donde indicaremos el tipo de SO que vamos a instalar y el nombre que queremos darle.
+
+![Ejercicio2_2_2](http://i.imgur.com/yqtx75H.png)
+
+A continuación configuramos el tamaño de de memoria que queremos asignarle y le damos a "Siguiente".
+
+![Ejercicio2_2_3](http://i.imgur.com/GrdKsZm.png)
+
+Ahora configuraremos el almacenamiento de nuestra máquina, podemos usar un disco virtual ya creado, no crear ninguno o crear uno nuevo. En nuestro caso crearemos uno nuevo.
+
+![Ejercicio2_2_4](http://i.imgur.com/vD3klPN.png)
+
+En la siguiente ventana elegiremos el tipo de archivo que utilizará nuestro disco, dejaremos la opción que viene por defecto (aunque podemos ver como nos ofrece la opción de usar qcow2). A continuación podemos configurar nuestro disco como dinámico o fijo.
+
+![Ejercicio2_2_5](http://i.imgur.com/nEybnht.png)
+
+![Ejercicio2_2_6](http://i.imgur.com/K0JVeYC.png)
+
+Ahora elegimos donde se guardará nuestra máquina y el tamaño que queremos que tenga nuestro disco.
+
+![Ejercicio2_2_7](http://i.imgur.com/zcVEzBi.png)
+
+Y ya tenemos creada una nueva máquina virtual, sólo nos queda asignarle la iso del SO que queremos instalar y podremos arrancar nuestra máquina. Para ello nos situamos sobre la máquina recién creada y hacemos clic con el botón derecho, de entre las opciones elegimos "Configuración" y accederemos a la ventana de configuración de nuestra máquina.
+
+![Ejercicio2_2_8](http://i.imgur.com/B1dvaWk.png)
+
+En la pestaña "Almacenamiento", en la "unidad de CD/DVD" le asignamos la iso que queremos usar y aceptamos.
+
+![Ejercicio2_2_9](http://i.imgur.com/M8l0Qzd.png)
+
+![Ejercicio2_2_10](http://i.imgur.com/ElLN8xa.png)
+
+Y ya tenemos creada nuestra máquina virtual, ahora sólo tenemos que iniciarla para instalar el SO para poder comenzar a usarlo.
+
+![Ejercicio2_2_11](http://i.imgur.com/bVTIFQz.png)
+
+#Ejercicio 3
+
+Crearemos un benchmark para comprobar la velocidad de entrada y salida y ver la diferencia que existe entre usar paravirtualización o sin ella.
+
+- Utilizando paravirtualización
+
+|Medidas     |Real        |User       |Sys        |
+| ---------- | ---------- |---------- |---------- |
+| 1          | 1.709s     |1.648s     |0.040s     |
+| 2          | 1.749s     |1.693s     |0.041s     |
+| 3          | 1.603s     |1.541s     |0.036s     |
+| 4          | 1.647s     |1.589s     |0.032s     |
+| 5          | 1.556s     |1.510s     |0.032s     |
+| Media      | 1.6528s    |1.5962s    |0.0524s    |
+
+- Sin utilizar paravirtualización
+
+|Medidas     |Real        |User       |Sys        |
+| ---------- | ---------- |---------- |---------- |
+| 1          |1.955s      |1.888s     |0.140s     |
+| 2          |1.845s      |1.759s     |0.132s     |
+| 3          |2.113s      |2.035s     |0.119s     |
+| 4          |1.611s      |1.554s     |0.103s     |
+| 5          |2.049s      |1.960s     |0.142s     |
+| Media      |1.91446s    |1.8392s    |0.1272s    |
+
+Como podemos observar utilizando paravirtualización la velocidad aumenta ligeramente, podríamos ver un valor más significativo si hicieramos un test más complejo.
+
+
+#Ejercicio 4
+
+Vamos a crear una maquina virtual Linux con 512 MB de RAM y entorno gŕafico LXDE a la que podamos acceder mediante ssh y VNC.
+
+Como hemos hecho en los ejercicios anteriores, creamos el fichero donde se instalará la máquina:
+
+	> qemu-img create -f qcow2 lubuntu.qcow2 13G
+
+Descargamos el SO que vamos a instalar de la [página oficial](https://help.ubuntu.com/community/Lubuntu/GetLubuntu), en éste caso Lubuntu que tiene un entorno lxde. E arrancamos la máquina con la ISO para su instalación.
+
+	> qemu-system-x86_64 -hda lubuntu.qcow2 -cdrom lubuntu-14.10-desktop-amd64.iso -m 512M
+
+![Ejercicio4_1](http://i.imgur.com/4EXn7I8.png)
+
+Y al finalizar la instalación tendremos listo nuestra nueva máquina con Lubuntu. Para poder conectarnos mediante vnc y ssh necesitaremos un cliente VNC, así que nos instalaremos el cliente VNC Vinagre:
+
+	> aptitude install vinagre
+
+Una vez instalado, arrancamos de nuevo la máquina.
+
+	> qemu-system-x86_64 -hda lubuntu.qcow2 -vnc:1rm 
+
+Ésta vez no se abrirá ninguna ventana se quedará ejecutandose en segundo plano. Ahora nos conectaremos a través del cliente VNC que nos hemos instalado, para ello ejecutamos ifconfig para comprar la dirección de la máquina.
+
+![Ejercicio4_2](http://i.imgur.com/O8Q9CP0.png)
+
+Y ahora nos conectaremos y nos aparecerá un ventana donde nos aparecerá el entorno de nuestra máquina de forma remota.
+
+	> vinagre 192.168.122.1:5901
+
+![Ejercicio4_3](http://i.imgur.com/tPIZNkp.png)
+
+Después de ver cómo conectarnos con VNC vamos a hacerlo a través de SSH. Para ello lo primero que haremos será arrancar nuestra máquina e instalar el paquete ssh:
+
+	> apt-get update
+	> apt-get install ssh
+
+Una vez instalado, accederemos desde nuestra máquina local con el usuario que creamos al instalar el SO y la ip de la máquina virtual. Al ejecutar la máquina deberemos hacerlo de la siguiente forma para redirigir el puerto del ssh.
+
+	> qemu-system-x86_64 -boot order=c -drive file=lubuntu.qcow2 -m 2G -redir tcp:3333::22
+
+![Ejercicio4_4](http://i.imgur.com/Ds2Xuhe.png)
+
+#Ejercicio 6
+
+Crear una máquina virtual con ubuntu e instalar un servidor nginx usando juju. Lo primero que haremos será instalar el GUI de juju:
+
+	> juju deploy juju-gui
+	> juju expose juju-gui
+
+A continuación ejecutamos "juju status" para ver la configuración y la ip pública para poder acceder desde el navegador.
+
+![Ejercicio6_1](http://i.imgur.com/rIZmIYZ.png)
+
+Una vez en el navegador accedemos a juju (debajo del formulario nos dice donde encontrar el password), a continuación en el panel de la izquierda buscamos el servicio nginx y lo añadimos y activamos.
+
+![Ejercicio6_2](http://i.imgur.com/5SSijb8.png)
+
+![Ejercicio6_3](http://i.imgur.com/MUg2z13.png)
+
+
+##Tema 7
+
+#Ejercicio 1
+
+Instalar chef en la máquina virtual que vayamos a utilizar, en nuestro caso Lubuntu.
+
+	> curl -L https://www.opscode.com/chef/install.sh | sudo bash
+
+![Ejercicio1_1](http://i.imgur.com/rm7aMJY.png)
+
+#Ejercicio 2
+
+Vamos a crear una receta para instalar nginx, un editor y algún directorio. Para ello hemos creado una serie de documentos y directorios ordenados en jerarquía de ésta forma:
+
+.chef
+  |____cookbooks
+  |	|__emacs
+  |	|    |__recipes
+  |	|	 |__default.rb
+  |	|
+  |	|__nginx
+  |	     |__recipes
+  |		 |__default.rb
+  |__ node.json
+  |__ solo.rb
+
+- Contenido del fichero cookbooks/emacs/recipes/default.rb
+
+```sh
+	package 'emacs'
+	directory '/home/cristinara/DocumentosIV'
+	file "/home/cristinara/DocumentosIV/fichero" do
+        	owner "cristinara"
+        	group "cristinara"
+        	mode 00544
+        	action :create
+        	content "Directorio para documentos de la asignatura IV"
+	end
+```
+
+- Contenido del fichero cookbooks/nginx/recipes/default.rb
+
+```sh
+	package 'nginx'
+	directory '/home/cristinara/EjerciciosTema7'
+	file "/home/cristinara/EjerciciosTema7/ejercicio2" do
+        	owner "cristinara"
+        	group "cristinara"
+        	mode 00544
+        	action :create
+        	content "Directorio para los ejercicios del tema 7"
+	end
+```
+
+- Contenido del fichero node.json
+
+```sh
+	{
+		"run_list": [
+		            "recipe[emacs]",
+		            "recipe[nginx]"
+		            ]
+	}
+```
+
+- Contenido del fichero solo.rb
+
+```sh
+	file_cache_path "/home/cristinara/chef"
+	cookbook_path "/home/cristinara/chef/cookbooks"
+	json_attribs "/home/cristinara/chef/node.json"
+
+```
+
+Una vez creados los archivos ejecutaremos la siguiente instrucción:
+
+	> sudo chef-solo -c chef/solo.rb
+
+Y se nos crearán el directorio, el fichero y se nos instalará el paquete nginx además de emacs.
+
+#Ejercicio 3
+
+Ahora escribiremos en YAML la siguiente estructura de datos en JSON: { uno: "dos", tres: [ 4, 5, "Seis", { siete: 8, nueve: [ 10, 11 ] } ] }. Para realizarlo me he guiado de alguna [documentación](http://playdoces.appspot.com/documentation/1.2.4/yaml).
+
+- Em YAML sería:
+
+	.uno: "dos"
+	.tres:
+		.4
+		.5
+		.seis
+		.
+			.siete: 8
+			.nueve:
+				.10
+				.11
+
+#Ejercicio 6
+
+Intalar una máquina Debian usando Vagrant. Lo primero que haremos será instalar Vagrant.
+
+	> sudo apt-get install vagrant
+
+Ahora ejecutaremos la siguiente instrucción cogiendo de la siguiente [web](http://www.vagrantbox.es/) la url correspondiente al sistema (Debian) que vamos a instalar.
+
+![Ejercicio6_1](http://i.imgur.com/OUXg90b.png)
+
+Antes de poder inicializar la máquina debemos crear el fichero Vagrantfile para poder trabajar con ella. Una vez creado la inicializamos.
+
+![Ejercicio6_2](http://i.imgur.com/Q1iL57i.png)
+
+Y por último para conectarnos por SSH sólo tendremos que escribir:
+
+	> vangrant ssh
+
+#Ejercicio 7
+
+Crear un script para provisionar nginx o cualquier otro servidor web.
+Para instalar nginx en nuestra máquina Debian, podemos hacerlo desde el mismo fichero Vagrantfile. Lo abrimos y añadimos un par de líneas de forma que el fichero nos quede tal que así:
+
+![Ejercicio7_1](http://i.imgur.com/BLcsEui.png)
+
+#Ejercicio 8
+
+Configurar tu máquina virtual usando vagrant con el aprovisionador ansible. Primero añadiremos crearemos el archivo ansible_host y le añadiremos la dirección de nuestra máquina virtual. A continuación como hemos visto en ejemplos anteriores guardaremos la ruta de ese archivo en una variable de entorno para que ansible sepa donde se encuentra.
+
+![Ejercicio8_1](http://i.imgur.com/OdcOP52.png)
+
+Y ahora tal y como hicimos en el ejercicio anterior tendremos que modificar el archivo Vagrantfile para use ansible, el archivo nos quedará así:
+
+![Ejercicio8_2](http://i.imgur.com/qjdGLJc.png)
+
+Sólo nos falta configurar el archivo nginx.yml para que realice las configuraciones que queremos (como por ejemplo instalar nginx).
+
+![Ejercicio8_3](http://i.imgur.com/1S0jYH3.png)
+
+Y para finalizar ejecutamos la siguiente instrucción para alzar la máquina de forma explícita y ejecutar las acciones que hemos configurado en el fichero.
+
+	> vagrant provision
