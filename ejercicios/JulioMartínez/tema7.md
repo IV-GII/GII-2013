@@ -23,6 +23,7 @@ De esta forma se instala bien sin dar problemas al instalar los paquetes más ta
 
 Mi lista de archivos es la siguiente:
 
+```
 .
 ├── chef-client-running.pid
 ├── chef-stacktrace.out
@@ -35,6 +36,7 @@ Mi lista de archivos es la siguiente:
 │           └── default.rb
 ├── node.json
 └── solo.rb
+```
 
 Cuyo contenido es:
 
@@ -285,7 +287,7 @@ Vagrant.configure("2") do |config|
   config.vm.network :private_network, ip: "192.168.1.55"
 
   config.vm.provision "ansible" do |ansible| 
-    ansible.playbook = "despliegue."
+    ansible.playbook = "despliegue.yml"
   end
 
 end
