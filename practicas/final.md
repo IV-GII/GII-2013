@@ -17,9 +17,10 @@ IMPORTANTE: Koding en su versión gratuita se mantiene ejecutandose de forma con
 ####Miguel Fabre Navarro
 
 1. Código de la aplicación funcionando: 
-Aportación a fichero principal de la aplicación (pruebadrive.py) y creación de ficheros html(página principal y hoja de cálculo) y del fichero de configuración "app.yaml". [Issue 14](https://github.com/miguelfabre/Proyecto/issues/14)
 
-2. Documentación en línea y externa correcta.
+* Aportación a fichero principal de la aplicación (pruebadrive.py) y creación de ficheros html(página principal y hoja de cálculo) y del fichero de configuración "app.yaml". [Issue 14](https://github.com/miguelfabre/Proyecto/issues/14)
+
+2. Documentación en línea y externa correcta: 
 Documentación de los archivos: [crear_jaula.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/crear_jaula.md), [gap_como_paas.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/gap_como_paas.md), [instalacion_saraososl.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/instalacion_saraososl.md), [integracion_continua.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/integracion_continua.md), [jaulas_chroot.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/jaulas_chroot.md), [primera_app_gap.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/primera_app_gap.md), [requeriments.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/requeriments.md) y [saraososl_paso_a_paso.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/saraososl_paso_a_paso.md).
 
 3. Provisionamiento correcto de la aplicación.
