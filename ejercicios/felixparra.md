@@ -479,7 +479,7 @@ Nos dirigimos a la URL proporcionada e importamos el fichero descargado con:<br 
  + qemu-system-x86_64 -hda fichero-cow3.qcow2 -cdrom slitaz-4.0.iso
 
 ###### 2.2 Hacer un ejercicio equivalente usando otro hipervisor como Xen, VirtualBox o Parallels.<br />
-En este caso elegimos añadir nueva maquina, introducimos el sistema operativo a crear, configuramos las opciones de la máquina en cuanto a nivel hardware y especificamos el fichero de la imagen para poder proceder con la instalación.
+En este caso selecciono añadir nueva maquina, introducimos el sistema operativo a crear, en nuestro caso ubuntu, configuramos las opciones de la máquina en cuanto a nivel hardware y especificamos el fichero de la imagen ISO del SO para poder proceder con la instalación. Así al arrancar la máquina el proceso será el mismo que si instalaramos un SO en cualquier máquina.
  
 **Ejercicio 3:**<br />
 **Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img**<br />
@@ -496,6 +496,9 @@ Observando ambos casos y realizando 5 pruebas a cada uno, una vez calculada la m
 
 **Ejercicio 5:**<br />
 **Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.**<br />
+En la máquina virtual ubuntu creada anteriormente, introducimos el siguiente comando:
+`$ sudo apt-get install nginx` <br />
+Tras la instalación procedemos a ver la direccion de nuestro servidor en localhost y vemos el mensaje de bienvenida de nginx.
 
 **Ejercicio 6:**<br />
 **Usar juju para hacer el ejercicio anterior.**<br />
@@ -513,9 +516,97 @@ $ curl -L https://www.opscode.com/chef/install.sh | sudo bash
 
 **Ejercicio 2:**<br />
 **Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual.**<br />
+`mkdir chef` <br />
+`mkdir chef/cookbooks` <br />
+`mkdir chef/cookbooks/emacs` <br />
+`mkdir chef/cookbooks/nginx` <br />
+`mkdir chef/cookbooks/carpeta` <br />
+En las tres carpetas de cookbooks se crea un archivo metadata.rb y una carpeta recipes con un fichero default.rb. Se editan los archivos metadata.rb y default.rb dependiendo de la tarea a realizar.<br />
+
++ En emacs:
+**metadata.rb**<br />
+maintainer       "Felix Parra"<br />
+maintainer_email "felixpm@correo.ugr.es"<br />
+description      "Install emacs"<br />
+version          "1.0"<br />
+name             "emacs"<br />
+
+recipe "emacs", "Install emacs"<br />
+
+**default.rb**<br />
+package 'emacs'<br />
+
++ En carpeta:
+**default.rb**<br />
+directory '/home/spwn/carpeta'<br />
+file "/home/spwn/carpeta/readme.txt" do<br />
+owner "spwn"<br />
+group "spwn"<br />
+mode 00777<br />
+action :create<br />
+content "Mkdir carpeta and readme.txt"<br />
+end<br />
+
+**metadata.rb**<br />
+maintainer       "Felix Parra"<br />
+maintainer_email "felixpm@correo.ugr.es"<br />
+description      "Mkdir carpeta and readme.txt"<br />
+version          "1.0"<br />
+name                 "carpeta"<br />
+
+recipe "fichero", "Mkdir carpeta and readme.txt"<br />
+
++ En nginx:
+**default.rb**<br />
+package 'nginx'<br />
+
+**metadata.rb**<br />
+maintainer       "Felix Parra"<br />
+maintainer_email "felixpm@correo.ugr.es"<br />
+description      "Install nginx"<br />
+version          "1.0"<br />
+name                 "nginx"<br />
+
+recipe "nginx", "Install nginx"<br />
+
+El archivo node.json del directorio chef debe contener:<br />
+{<br />
+  "nginx": {<br />
+    "version"   : "latest",<br />
+    "user"      : "www-data",<br />
+    "port"      : "80"<br />
+    },<br />
+    "emacs": {<br />
+      "version" : "latest"<br />
+      },<br />
+      "fichero": {<br />
+        "name"  : "carpeta"<br />
+        },<br />
+        "run_list": [<br />
+        "recipe[nginx]",<br />
+        "recipe[emacs]",<br />
+        "recipe[carpeta]"<br />
+        ]<br />
+      }<br />
+<br />
+Y el archivo solo.rb debe contener:<br />
+file_cache_path "/home/spwn/chef"<br />
+cookbook_path "/home/spwn/chef/cookbooks"<br />
+json_attribs "/home/spwn/chef/node.json"<br />
 
 **Ejercicio 3:**<br />
 **Escribir en YAML la siguiente estructura de datos en JSON**<br />
+---
+- uno: "dos"
+  tres:
+    - 4
+    - 5
+    - "Seis"
+    -
+      - siete: 8
+        nueve:
+          - 10
+          - 11
 
 **Ejercicio 4:**<br />
 **Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.**<br />
@@ -526,6 +617,12 @@ $ curl -L https://www.opscode.com/chef/install.sh | sudo bash
 
 **Ejercicio 6:**<br />
 **Instalar una máquina virtual Debian usando Vagrant y conectar con ella**<br />
++ Instalamos vagrant: `sudo apt-get install vagrant`
++ Seleccionamos una imagen de las distintas [opciones](http://www.vagrantbox.es/)
++ Añadirmos la máquina: `sudo vagrant box add debian https://dl.dropboxusercontent.com/u/4775364/vagrant/debian-6.0.9-amd64-plain-vmware.box`
++ Inicializamos la maquna: `vagrant init debian`
++ Iniciamos la maquina: `vagrant up`
++ Nos conectamos: `vagrant ssh`
 
 **Ejercicio 7:**<br />
 **Crear un script para provisionar nginx o cualquier otro servidor web que pueda ser útil para alguna otra práctica** <br />
