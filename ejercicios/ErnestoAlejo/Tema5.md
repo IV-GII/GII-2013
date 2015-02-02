@@ -105,9 +105,32 @@ Ejercicio 9
 
 **Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.**
 
+Necesitamos crear una nueva cuenta de almacenamiento y luego obtener las claves para usarlas en las peticiones.
 
-Ejercicio 10
-------------
+```shell
+azure storage account create ernesto
+azure storage account keys list ernesto
+```
 
-**Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.**
+Cogemos la clave que nos dan y la ponemos como variable de entorno:
 
+```shell
+export AZURE_STORAGE_ACCOUNT=ernesto
+export AZURE_STORAGE_ACCESS_KEY=[key]
+```
+
+Creamos un nuevo contenedor:
+
+```shell
+azure storage container create ernesto-testing -p blob
+```
+
+![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img11.png)
+
+Podemos subir las imágenes usando:
+
+```shell
+azure storage blob upload img11.png ernesto-testing img11.png
+```
+
+![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img12.png)
