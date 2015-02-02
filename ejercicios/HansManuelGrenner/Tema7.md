@@ -149,9 +149,10 @@ y acto seguido asignárselo a la variable de entorno ANSIBLE_HOSTS
 
 Para hacerlo de manera automática:
 
-```sh
-   printf "[koding]\nivaerospace.koding.io" > ~/ansible_hosts
-   export ANSIBLE_HOSTS=~/ansible_hosts
+```
+sh
+printf "[koding]\nivaerospace.koding.io" > ~/ansible_hosts
+export ANSIBLE_HOSTS=~/ansible_hosts
 ```
 
 Creamos el archivo [despliegue.yml](https://github.com/julioxus/iv-aerospace/blob/master/despliegue.yml). En él vamos a meter instrucciones para instalar las dependencias necesarias y ejecutar la aplicación
@@ -187,8 +188,9 @@ Instalar ahora el paquete dkms para asegurarnos de que los módulos del kernel d
 Una vez todo instalado nos buscamos una imagen vagrant para debian. En el siguiente enlace tenemos una [lista](http://www.vagrantbox.es/) con todas las imágenes disponibles.
 He elegido **Debian Squeeze i386 6.0.7**  y la desplegamos el entorno mediante.
 
-``` vagrant box add debian http://dl.dropbox.com/u/40989391/vagrant-boxes/debian-squeeze-i386.box
- ```
+```
+vagrant box add debian http://dl.dropbox.com/u/40989391/vagrant-boxes/debian-squeeze-i386.box
+```
 
 El siguiente paso es iniciar la configuración del proyecto. Para ello tenemos que crear un directorio raíz de nuestro proyecto y dentro generar el fichero de configuración llamando a ```vagrant init ```.
 
@@ -203,21 +205,21 @@ Editamos el fichcero de configuración de Vagrant sustituyendo la siguiente lín
 ```config.vm.box = "debian" ```
 
 ![Imgur](http://i.imgur.com/HL6AsL0.png)
-> Figura 1. Modificando el fichero de configuración de Vagrant
+> Figura 3. Modificando el fichero de configuración de Vagrant
 
 Ya podemos iniciar el entorno mediante.
 
 ```vagrant up ```
 
 ![Imgur](http://i.imgur.com/1sGnY5T.png)
-> Figura 2. Iniciando entorno
+> Figura 4. Iniciando entorno
 
 Para conectarnos a la máquina usamos.
 
 ```vagrant ssh ```
 
 ![Imgur](http://i.imgur.com/pu9XcHV.png)
-> Figura 3. Conectar mediante ssh a la máquina
+> Figura 5. Conectar mediante ssh a la máquina
 
 
 ## Ejercicio 7
@@ -235,17 +237,17 @@ Quedará de la siguiente forma.
 ```config.vm.provision "shell", inline: "sudo apt-get update && sudo apt-get install -y nginx" ```
 
 ![Imgur](http://i.imgur.com/EOv7fGR.png)
-> Figura 4. Fichero de configuración.
+> Figura 6. Fichero de configuración.
 
 Lanzamos el comando ```vagrant provision ``` para iniciar el proceso.
 
 ![Imgur](http://i.imgur.com/jsbN6LC.png)
-> Figura 5. Provisionamiento.
+> Figura 7. Provisionamiento.
 
 Finalmente comprobamos en localhost el funcionamiento de la página por defecto ( o la IP que le hayamos asignado en el archivo de configuración ) de nginx o nos conectamos por ssh y comprobamos el estado del servicio.
 
 ![Imgur](http://i.imgur.com/2gabNzk.png)
-> Figura 6. Nginx en funcionamiento.
+> Figura 8. Nginx en funcionamiento.
 
 
 ## Ejercicio 8
