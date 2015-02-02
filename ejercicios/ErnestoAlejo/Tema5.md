@@ -44,36 +44,6 @@ fusermount -u prueba/
 ```
 
 
-Ejercicio 3
------------
-
-**Crear imágenes con estos formatos (y otros que se encuentren tales como VMDK) y manipularlas a base de montarlas o con cualquier otra utilidad que se encuentre**
-
-
-Ejercicio 4
------------
-
-**Crear uno o varios sistema de ficheros en bucle usando un formato que no sea habitual (xfs o btrfs) y comparar las prestaciones de entrada/salida entre sí y entre ellos y el sistema de ficheros en el que se encuentra, para comprobar el overhead que se añade mediante este sistema**
-
-
-Ejercicio 5
------------
-
-**Instalar ceph en tu sistema operativo.**
-
-
-Ejercicio 6
------------
-
-**Crear un dispositivo ceph usando BTRFS o XFS**
-
-
-Ejercicio 7
------------
-
-**Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.**
-
-
 Ejercicio 8
 -----------
 

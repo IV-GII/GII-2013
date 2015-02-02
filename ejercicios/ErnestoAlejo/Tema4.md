@@ -190,12 +190,6 @@ sudo apt-get install libvirt-bin
 ```
 
 
-Ejercicio 9
------------
-
-**Instalar un contenedor usando virt-install.**
-
-
 Ejercicio 10
 ------------
 
@@ -204,27 +198,9 @@ Ejercicio 10
 Ya tenía docker previamente instalado para el proyecto de prácticas.
 
 
-Ejercicio 11
-------------
-
-**1. Instalar a partir de docker una imagen alternativa de Ubuntu y alguna adicional, por ejemplo de CentOS.**
-
-**2. Buscar e instalar una imagen que incluya MongoDB.**
-
-
-Ejercicio 12
-------------
-
-**Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.**
-
-
-Ejercicio 13
-------------
-
-**Crear a partir del contenedor anterior una imagen persistente con commit.**
-
-
 Ejercicio 14
 ------------
 
 **Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.**
+
+Nosotros en nuestro proyecto (Virtual Vulcano) ya estamos usando contenedores e imágenes que publicamos a Docker Hub. Incluso no solamente una sino varias.
