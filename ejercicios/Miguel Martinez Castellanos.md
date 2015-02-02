@@ -554,6 +554,34 @@ Realizamos las misma instalacion de los sistemas anteriores pero utilizando Virt
 ##Ejercicio 3
 **Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con "qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img" **
 
+Usando 
+```sh
+qemu-system-x86_64 -hda uno-cow2.qcow2
+qemu-system-x86_64 -boot order=c -drive file=uno-cow2.qcow2,if=virtio
+```
+ Utilizando paravirtualizacion
+ 
+|Medidas     |Real        |User       |Sys        |
+| ---------- | ---------- |---------- |---------- |
+| 1          | 1.909s     |1.867s     |0.042s     |
+| 2          | 1.799s     |1.756s     |0.043s     |
+| 3          | 1.853s     |1.819s     |0.034s     |
+| 4          | 1.757s     |1.723s     |0.034s     |
+| 5          | 1.666s     |1.633s     |0.033s     |
+| Media      | 1.796s     |1.759s     |0.0376s    |
+
+ Sin utilizar paravirtualizacion
+ 
+|Medidas     |Real        |User       |Sys        |
+| ---------- | ---------- |---------- |---------- |
+| 1          | 2.109s     |2.048s     |0.040s     |
+| 2          | 2.149s     |2.093s     |0.041s     |
+| 3          | 2.003s     |1.941s     |0.036s     |
+| 4          | 2.047s     |1.989s     |0.032s     |
+| 5          | 1.956s     |1.910s     |0.032s     |
+| Media      | 2.0528s    |1.9962s    |0.0524s    |
+
+
 
 ##Ejercicio 4
 **Crear una máquina virtual Linux con 512 megas de RAM y entorno gráfico LXDE a la que se pueda acceder mediante VNC y ssh.**
@@ -608,6 +636,73 @@ curl -L https://www.opscode.com/chef/install.sh | sudo bash
 
 ##Ejercicio 2
 **Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual. **
+
+.chef
+  |____cookbooks
+  |	|__emacs
+  |	|    |__recipes
+  |	|	 |__default.rb
+  |	|
+  |	|__nginx
+  |	     |__recipes
+  |		 |__default.rb
+  |__ node.json
+  |__ solo.rb
+
+- Fichero cookbooks/emacs/recipes/default.rb
+
+```sh
+	package 'emacs'
+	directory '/home/mwlmc/iv'
+	file "/home/mwlmc/iv/fichero" do
+        	owner "mwlmc"
+        	group "mwlmc"
+        	mode 00544
+        	action :create
+        	content "Directorio iv"
+	end
+```
+
+- Fichero cookbooks/nginx/recipes/default.rb
+
+```sh
+	package 'nginx'
+	directory '/home/mwlmc/tema7'
+	file "/home/mwlmc/tema7/actividad2" do
+        	owner "mwlmc"
+        	group "mwlmc"
+        	mode 00544
+        	action :create
+        	content "Directorio tema7"
+	end
+```
+
+- Fichero node.json
+
+```sh
+	{
+		"run_list": [
+		            "recipe[emacs]",
+		            "recipe[nginx]"
+		            ]
+	}
+```
+
+-Fichero solo.rb
+
+```sh
+	file_cache_path "/home/mwlmc/chef"
+	cookbook_path "/home/mwlmc/chef/cookbooks"
+	json_attribs "/home/mwlmc/chef/node.json"
+
+```
+Despues de crear los archivos procedemos a ejecutar la siguiente sentencia:
+
+```sh
+sudo chef-solo -c chef/solo.rb
+```
+Y una vez realizado esto ya tendremos creado el directorio y el fichero.Tambien se nos instalara en paquete emacs y nginx.
+
 
 ##Ejercicio 3
 **Escribir en YAML la siguiente estructura de datos en JSON { uno: "dos",  tres: [ 4, 5, "Seis", { siete: 8, nueve: [ 10,11 ] } ] } "**
