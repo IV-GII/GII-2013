@@ -163,4 +163,5 @@ Una vez creado, podemos introducir cualquier archivo que tengamos en nuestro sis
 rados put -p objeto-prueba objeto prueba.img
 ```
 ## Ejercicios de Azure
-*** A falta de cuenta***
+
+** A falta de cuenta **
