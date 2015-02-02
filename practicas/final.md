@@ -188,8 +188,24 @@ Integrantes:
 Detalles del **Hito4** en issue [#26](https://github.com/freelinuxdistrodeployed/LDT/issues/26)
 
 
+-----------------------------------------------------------------------------------------------------------------------------
 
+###[Gestion de Empresa Deportiva - GED](https://github.com/felixparra/ProyectoIV)
++ Repositorio del proyecto: [Github](https://github.com/felixparra/ProyectoIV)
++ Aplicación desplegada en:
+	+ Enlace en Openshift: [Openshift](http://ged-parra.rhcloud.com/)
+	+ Enlace en Koding:  [Koding](http://felixparra.koding.io:8080/)
++ Despliegue a través de openshift: [Despliegue openshift](https://github.com/felixparra/ProyectoIV#openshift)
++ Despliegue a través de docker: [Despliegue docker](https://github.com/felixparra/ProyectoIV#openshift)
++ Despliegue a través de koding: [Despliegue koding](https://github.com/felixparra/ProyectoIV#que-es-2)
++ Automated buil repository de docker: [Docker hub](https://registry.hub.docker.com/u/felixparra/ged/)
++ Test e integración continua: [Shippable](https://github.com/felixparra/ProyectoIV#test-unitarios-e-integraci%C3%B3n-continua)
++ Licencia: [GNU v.3](https://github.com/felixparra/ProyectoIV/blob/master/LICENSE.md)
++ Descripción detallada del proyecto: [README](https://github.com/felixparra/ProyectoIV/blob/master/README.md)
 
+###### Autor: Félix Parra Martínez @felixparra
+
+-----------------------------------------------------------------------------------------------------------------------------
 
 
 
