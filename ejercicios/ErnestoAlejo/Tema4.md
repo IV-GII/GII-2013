@@ -183,6 +183,12 @@ Ejercicio 8
 
 **Instalar libvirt. Te puede ayudar esta guía para Ubuntu.**
 
+Instalamos el paquete:
+
+```shell
+sudo apt-get install libvirt-bin
+```
+
 
 Ejercicio 9
 -----------

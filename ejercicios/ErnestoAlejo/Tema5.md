@@ -31,9 +31,11 @@ sshfs ernesto@192.168.1.52:/home/ernesto prueba/
 
 ![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img8.png)
 
+
 Una vez montado el disco podemos ver y modificar el contenido de la máquina remota desde la nuestra:
 
 ![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img9.png)
+
 
 Para desactivar el disco remoto podemos usar:
 
