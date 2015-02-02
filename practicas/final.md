@@ -218,124 +218,204 @@ Participantes:
 + Pablo Casado Arenas @ramako 
 
 [Aplicación funcionando en OpenShift](http://backendsi2-iblancasa.rhcloud.com/)
+
 [Aplicación funcionando en Azure](http://backendsi2.cloudapp.net:8080/)
 
 
 ### Israel Blancas Álvarez, (@iblancasa)
 
 * **Ha participado en estos scripts de provisionamiento:**
+
 Issues
+
 [Despliegue utilizando Ansible o similares](https://github.com/iblancasa/BackendSI2-IV/issues/84)
+
 Commits
+
 [Modificando playbook y preparando para provisionamiento](https://github.com/iblancasa/BackendSI2-IV/commit/656104a5f4e11e08ff0e6daedb5a3bd48967192d)
+
 [Creación de ansible_host](https://github.com/iblancasa/BackendSI2-IV/commit/fe04c45b73ce0bdc355e4e2f657249906160741f)
+
 [Arreglando problemas para iniciar servicio](https://github.com/iblancasa/BackendSI2-IV/commit/db32f8a4d1eff82ae0a157c61d242cd3fbd80c5d)
+
 [Cambiando la forma de instalar dependencias de NodeJS y haciendo asíncrono el arranque de servicio](https://github.com/iblancasa/BackendSI2-IV/commit/4afa4631b1dd5cc2adaad7961a021e7e3bddd200)
+
 [Acabando documentación sobre provisionamiento](https://github.com/iblancasa/BackendSI2-IV/commit/c1c1366807962b8b83552cd0ae2d6998cada0c28)
 
+
 * **Ha participado en los tests con:**
+
 Issues
+
 [Crear nuevos test y documentarlos](https://github.com/iblancasa/BackendSI2-IV/issues/80)
+
 Commits
+
 [Primera hilera de test](https://github.com/iblancasa/BackendSI2-IV/commit/c26c84769a9286560794015979ebd56b066baa61) (algunos de estos test se usaban para la aplicación de prueba que teníamos con socket.io)
+
 [Arreglando un problema con un test que estaba doble](https://github.com/iblancasa/BackendSI2-IV/commit/4baceceb5e3692478d7e81e6cbf885033eb2b408)
+
 [Script para instalar las herramientas necesarias para ejecutar test](https://github.com/iblancasa/BackendSI2-IV/blob/master/test/installTestSuite.sh)
 
+
 * **Ha participado en esta integración continua y PaaS:**
+
 Issues
+
 [Integración continua](https://github.com/iblancasa/BackendSI2-IV/issues/82)
+
 [Cambio a OpenShift](https://github.com/iblancasa/BackendSI2-IV/issues/77)
+
 [Problemas desplegar OpenShift](https://github.com/iblancasa/BackendSI2-IV/issues/90)
+
 Commits
+
 [Arreglando problema con ejecución de Mocha e instalación de Ansible en Travis](https://github.com/iblancasa/BackendSI2-IV/commit/918b88a95799927ae158d5fe41926511b5ae72ae)
+
 [Arreglando problema con permisos de scripts en Travis](https://github.com/iblancasa/BackendSI2-IV/commit/9b5b3f5a5e4f08be52edfb5a8d9c7c3cd8be2053)
+
 [Arreglando problemas con integración continua](https://github.com/iblancasa/BackendSI2-IV/commit/2626fabe9297d10dd0359fd654d6395c31ae6012)
+
 [Añadiendo despliegue en OpenShift en Travis](https://github.com/iblancasa/BackendSI2-IV/commit/0e5697bd5e51dae840eed58a6398fb18787e2d8d)
+
 [Editando package.json para arreglar problemas de integración continua](https://github.com/iblancasa/BackendSI2-IV/commit/1ec2f2252184fb0615799b97f6f216b4bb305c86)
 
+
 * **Ha participado en esta configuración de despliegue automático con:**
+
 Issues
+
 [Despliegue utilizando Ansible o similares](https://github.com/iblancasa/BackendSI2-IV/issues/84) (este issue ha sido mencionado anteriormente, pero cubría varios aspectos)
+
 Commits
+
 [Eliminando problema de bloqueo tras despliegue en Azure](https://github.com/iblancasa/BackendSI2-IV/commit/4afa4631b1dd5cc2adaad7961a021e7e3bddd200)
+
 [Documentar cómo se el despliegue automático en el IaaS y en el PaaS desde Travis](https://github.com/iblancasa/BackendSI2-IV/commit/d5a8a1cacbdad7dfe22fb8099f19b53781ca599a)
 
 
+
 * **También a participado en:**
+
 [Documentación](https://github.com/iblancasa/BackendSI2-IV/issues/91)
+
 [Correcciones en la documentación realizada por los compañeros](https://github.com/iblancasa/BackendSI2-IV/commit/c329e67fea0b473dc85a9be45298eaecaa92dc09)
 
 
 ### José Cristóbal López Zafra  (@JCristobal)
 
 * **Ha participado en estos scripts de provisionamiento:**
+
 Issues:
+
 [Despligue usando Ansible o similares](https://github.com/iblancasa/BackendSI2-IV/issues/84)
+
 Commits:
+
 [Añado playbook.yml](https://github.com/iblancasa/BackendSI2-IV/commit/adfb6e21cf66a6a049b8220eb6989fac137a51cf)
 
 * **Ha participado en los tests con:**
+
 Issues:
+
 [Tests](https://github.com/iblancasa/BackendSI2-IV/issues/80)
+
 Commits:
+
 [Añado algunos test](https://github.com/iblancasa/BackendSI2-IV/commit/ea7c06cb5299bab7b234b4c0d6d32ae317433661)
+
 [Corrección de los test recién añadidos](https://github.com/iblancasa/BackendSI2-IV/commit/d043a2fa652bf24c221f42c5392fe40e3d77715a)
+
 [Test unitario del servidor](https://github.com/iblancasa/BackendSI2-IV/commit/8ce488d4e3fbd1592ac417d41415300bae7a5227)
+
 [Arreglo de un fallo en los test](https://github.com/iblancasa/BackendSI2-IV/commit/ae0b0ee418f16a6665985fa018c2ea4733b58357) (aquí reescribo mucho código, pero lo explico en el comentario del commit)
+
 [Documentación de los test](https://github.com/iblancasa/BackendSI2-IV/commit/b0af63b53142c041267eff420d22bc38b3328142)
 
 * **Ha participado en esta integración continua y PaaS:**
+
 Issues:
+
 [Problemas con el PaaS](https://github.com/iblancasa/BackendSI2-IV/issues/90)
+
 [Añadir fichero de claves al PaaS](https://github.com/iblancasa/BackendSI2-IV/issues/81)
 
 
 * **Ha participado en esta configuración de despliegue automático con:**
+
 Commits:
+
 [Se añade la opción de despligue automático al playbook](https://github.com/iblancasa/BackendSI2-IV/commit/2816786fc08815d1468d43370a9ad1a8e8113d28)
+
 [Correcciones al playbook](https://github.com/iblancasa/BackendSI2-IV/commit/1eab44f4badcf2c8815d7f967e31f44b23c5fd2b)
 
+
 * **También he participado en otros issues:**
+
 [Documentación](https://github.com/iblancasa/BackendSI2-IV/issues/91)
+
 ["Frontend": issue donde se mencionan los commits sobre éste](https://github.com/iblancasa/BackendSI2-IV/issues/52) y la [validación de sus formularios](https://github.com/iblancasa/BackendSI2-IV/issues/65)
 
 
 ### Pablo Casado Arenas, (@ramako).
 
 ### Participación en issues:
+
 [Despliegue](https://github.com/iblancasa/BackendSI2-IV/issues/84#issuecomment-72320039)
+
 [Documentación](https://github.com/iblancasa/BackendSI2-IV/issues/91)
+
 [Tests](https://github.com/iblancasa/BackendSI2-IV/issues/80)
+
 [Código BDD](https://github.com/iblancasa/BackendSI2-IV/issues/89)
+
 
 ### Commits
 
 * **Ha participado en los tests con:**
 
 [Tests](https://github.com/iblancasa/BackendSI2-IV/commit/a2bb6b0b4fcfb36916645ebd9108312fa722b330)
+
 [Tests](https://github.com/iblancasa/BackendSI2-IV/commit/5da457ab6185d4a6d8c8188e70af66e079837f1c)
+
 [Tests y dependencias](https://github.com/iblancasa/BackendSI2-IV/commit/e914aae0f5d770c13ed520830cee6ca009ae1cd9)
 
+
 * **Ha participado en esta integración continua y PaaS:**
+
 [Travis](https://github.com/iblancasa/BackendSI2-IV/commit/6ebf7232e87da85ed099524c532c9d7313d99ec4)
+
 [Travis](https://github.com/iblancasa/BackendSI2-IV/commit/df062e578f2807455032e176446f1adf800b0c80)
 
+
 * **Ha participado en esta configuración de despliegue automático con:**
+
 [Despliegue](https://github.com/iblancasa/BackendSI2-IV/commit/0e731918b0345d850f5391e96cfc70af73c6653f)
+
 [Despliegue](https://github.com/iblancasa/BackendSI2-IV/commit/dac95519f6acfa6cf86a3165050e1aa32f4286e3)
+
 [Playbook](https://github.com/iblancasa/BackendSI2-IV/commit/852ff98ca4dc3fe4ecab0c00492eeb585def3534)
 
+
 * **Ha participado en estos scripts de provisionamiento:**
+
 [Provisionamiento](https://github.com/iblancasa/BackendSI2-IV/commit/c219ef735199197574b714d06a4797042b6c4a11)
 
+
 * **Ha participado en el código de la aplicación:**
-[Código] (https://github.com/iblancasa/BackendSI2-IV/commit/612d0d848df76aaf9d4b0c924729b61858c94917)
+
+[Código](https://github.com/iblancasa/BackendSI2-IV/commit/612d0d848df76aaf9d4b0c924729b61858c94917)
+
 [Código](https://github.com/iblancasa/BackendSI2-IV/commit/7f73edade9a94cdafb9722a5aa369107fa1ee33b)
+
 [Código](https://github.com/iblancasa/BackendSI2-IV/commit/b8de2c9a858be84027ff17209ae70d919ee7a19c)
 
+
 * **Ha participado en la documentación:**
+
 [Documentación Test](https://github.com/iblancasa/BackendSI2-IV/commit/795fb4b97d07d8d05cdc4bff7947888818472729)
-[Documentacion Ansible] (https://github.com/iblancasa/BackendSI2-IV/commit/b6b73cea82f172ade7d82c233be08e499d711fa8)
+
+[Documentacion Ansible](https://github.com/iblancasa/BackendSI2-IV/commit/b6b73cea82f172ade7d82c233be08e499d711fa8)
 
 
 
