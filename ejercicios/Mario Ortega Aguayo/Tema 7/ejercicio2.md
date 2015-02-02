@@ -8,7 +8,7 @@ Para crear la receta, primero tenemos que crear una carpeta donde vamos a alojar
 
 Cuando se crea este directorio, creamos un fichero ruby que se guarda en /recipes que contiene lo siguiente:
 
-**
+'''sh
 package 'nginx'
 package 'emacs'
 directory '/home/mario/IV'
@@ -19,7 +19,7 @@ file "/home/mario/IV/LEEME" do
 	action: create
 	content "Ejercicio IV"
 end
-**
+'''
 
 
 Ahora creamos otro archivo en la carpeta chef:
