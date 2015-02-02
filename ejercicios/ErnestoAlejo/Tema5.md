@@ -15,6 +15,32 @@ Ejercicio 2
 
 **Usar FUSE para acceder a recursos remotos como si fueran ficheros locales. Por ejemplo, sshfs para acceder a ficheros de una máquina virtual invitada o de la invitada al anfitrión.**
 
+Instalamos en las dos máquinas sshfs:
+
+```shell
+sudo apt-get install sshfs
+```
+
+Luego creamos una carpeta y montamos el sistema remoto en esa carpeta:
+
+```shell
+mkdir prueba
+sudo chown ernesto:fuse prueba
+sshfs ernesto@192.168.1.52:/home/ernesto prueba/
+```
+
+![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img8.png)
+
+Una vez montado el disco podemos ver y modificar el contenido de la máquina remota desde la nuestra:
+
+![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img9.png)
+
+Para desactivar el disco remoto podemos usar:
+
+```shell
+fusermount -u prueba/
+```
+
 
 Ejercicio 3
 -----------
@@ -50,6 +76,28 @@ Ejercicio 8
 -----------
 
 **Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente**
+
+Instalamos globalmente la herramienta de línea de comandos de Azure:
+
+```shell
+sudo npm install -g azure
+```
+
+Nos descargamos el fichero de configuración de nuestra cuenta:
+
+```shell
+azure account download
+```
+
+Una vez tengamos el fichero de configuración de la cuenta que vayamos a usar podemos ejecutar:
+
+```shell
+azure account import [fichero]
+```
+
+para introducirlo en el programa.
+
+![](https://raw.githubusercontent.com/ernestoalejo/ivimages/master/img10.png)
 
 
 Ejercicio 9
