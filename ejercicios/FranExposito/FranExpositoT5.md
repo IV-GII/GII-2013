@@ -134,3 +134,64 @@ Para ello ejecutaremos los siguientes comandos:
 sudo rados mkpool pooltemp
 sudo rados put -p pooltemp obj FILE_NAME
 ```
+
+###Ejercicio 8.
+Accedemos en www.windowsazurepass.com/azureu y nos creamos una cuenta en Windows Azure. Una vez hecho esto instalamos node.js para ello debemos añadir un repositorio:  
+
+```
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+```
+
+Node.js nos va a servir para poder instalar azure y poder de esta forma usarlo desde linea de ordenes. Instalamos azure de la siguiente manera:
+
+```
+npm install azure-cli
+```
+
+Ahora ya podremos crear una cuenta de almacenamiento de la siguiente manera:  
+
+```
+azure account storage create franexposito
+azure account keys list franexposito
+export AZURE_STORAGE_ACCOUNT=franexposito
+export AZURE_STORAGE_ACCESS_KEY=llaveprimaria
+```
+
+Ahora si entramos en https://manage.windowsazure.com podemos observar que desde el panel de control de azure tambien se ve la nueva cuenta de almacenamiento.
+
+###Ejercicio 9.
+Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.  
+
+Vamos a crear dos contenedores uno para imagenes y otro para archivos de texto:  
+
+```
+azure storage container create imagenes -p blob
+azure storage blob upload /home/franexp/Escritorio/yo.png
+azure storage container create texto -p blob
+azure storage blob upload /home/franexposito/practica4c-EC.txt
+```
+
+###Ejercicio 10.
+Programa en python
+
+```
+"""
+Created on Fri Jan 10 18:05:24 2014
+@author: franexposito
+"""
+
+from azure.storage import BlobService
+
+def imprimeListaBlob(datos):
+for i in datos.list_containers().containers:
+print("Contenedor: ".format(i.name))
+for j in blob_service.list_blobs(i.name).blobs:
+print("\tNombre del Blob: ".format(j.name))
+print("\tUrl del Blob: ".format(j.url))
+print("\n")
+
+llave = 'key primaria'
+datos = BlobService('franvalverde', llave)
+```

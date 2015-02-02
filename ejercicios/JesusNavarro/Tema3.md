@@ -121,3 +121,31 @@ sudo rinse --arch=amd64 --distribution fedora-core-10 --directory /home/jaulas/
 **Ejercicio 5.** Instalar una jaula chroot para ejecutar el servidor web de altas prestaciones nginx.
 
 **Ejercicio 6.** Crear una jaula y enjaular un usuario usando `jailkit`, que previamente se habrá tenido que instalar.
+
+Vamos a proceder en primer lugar a realizar la instalación de jailkit.
+```
+wget http://olivier.sessink.nl/jailkit/jailkit-2.17.tar.gz
+
+```
+
+Descomprimimos el archivo, nos posicionamos en la carpeta contenedora y ejecutmos:
+
+```
+./configure && make && sudo make install
+```
+Creamos una nueva jaula.
+
+```
+sudo mkdir /home/jaulas/la_isla sudo jk_init -v -j /home/jaulas/la_isla jk_lsh basicshell netutils editors
+```
+
+A continuación creamos un usuario y lo enjaulamos:
+
+```
+sudo adduser usuario
+```
+
+```
+sudo jk_jailuser -m -j /home/jaulas/la_isla usuario
+```
+

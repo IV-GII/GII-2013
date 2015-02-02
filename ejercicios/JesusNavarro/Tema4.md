@@ -151,19 +151,38 @@ Verificamos que la instalación de centos se ha relizado correctamente
 <a href="http://es.tinypic.com?ref=160sz5y" target="_blank"><img src="http://i58.tinypic.com/160sz5y.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
 
-
 2. Buscar e instalar una imagen que incluya MongoDB.
+
+Una imagen que contiene mongodb es dockerfile/mongodb. Esta se instala:
+
+```docker pull dockerfile/mongodb```
 
 **Ejercicio 12.**
 
 Crear un usuario propio e instalar nginx en el contenedor creado de esta forma.
 
+Pasos para crear usuario propio e instalción de Nginx:
+
+<a href="http://es.tinypic.com?ref=11s37dg" target="_blank"><img src="http://i60.tinypic.com/11s37dg.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
+Nginx corriendo:
+
+<a href="http://es.tinypic.com?ref=29ne0wx" target="_blank"><img src="http://i59.tinypic.com/29ne0wx.png" border="0" alt="Image and video hosting by TinyPic"></a>
+
 **Ejercicio 13.**
 
 Crear a partir del contenedor anterior una imagen persistente con commit
 
+Manteniendo el contenedor en funcionamiento listamos los dockers con sudo docker ps y guardamos la ID (en mi caso "1575992b0c6c"). Escribimos sudo docker commit 5c1240db1a0d nombrenuevo y el resultado será una ID (en mi caso "sudo docker commit 1575992b0c6c ejerciciosIVT4").
+
+Al ejecutar sudo docker images, veremos que la última es la que hemos creado.
+
 **Ejercicio 14.**
 
 Crear una imagen con las herramientas necesarias para el proyecto de la asignatura sobre un sistema operativo de tu elección.
+
+En primer lugar nos registramos en la página web de Docker en mi caso haciendo uso de la cuenta de GitHub. En esta imagen podemos ver que ya me encuentro registrado.
+
+<a href="http://es.tinypic.com?ref=2mmxu9d" target="_blank"><img src="http://i61.tinypic.com/2mmxu9d.png" border="0" alt="Image and video hosting by TinyPic"></a>
 
 

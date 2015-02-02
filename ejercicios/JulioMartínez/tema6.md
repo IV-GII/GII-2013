@@ -210,7 +210,24 @@ $ ssh julioxus@localhost -p 2222
 ## Ejercicio 5 ##
 **Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.**
 
-Falta por conseguir un servicio cloud
+Puesto que no tenía cupón de Azure he decidido crear una máquina virtual en [Koding](https://koding.com/)
+
+Tras crear una cuenta de forma gratuita se nos creará automáticamente nuestra primera máquina virtual con Ubuntu Server (eso sí, se cortará sola si no la tenemos activa más de una hora).
+
+Aquí podemos ver el panel de administración:
+
+![captura18](http://i.imgur.com/ZkysUdN.png)
+
+Esta máquina viene con Apache instalado por defecto, así que primero tendremos que desinstalarlo y luego instalr Nginx:
+
+```sh
+$ sudo apt-get remove --purge apache2
+$ sudo apt-get install nginx
+```
+
+Si miramos la dirección pública de la máquina virtual veremos que se está ejecutando ya el servidor Nginx:
+
+![captura19](http://i.imgur.com/GQtJp6t.png)
 
 ## Ejercicio 6 ##
 **Usar juju para hacer el ejercicio anterior.**
@@ -237,7 +254,6 @@ Para crear la máquina con nginx buscamos nginx en el menú de la izquierda. Le 
 
 ![captura17](http://i.imgur.com/cEfnPNm.png)
 
-Aquí me quedo porque no consigo hacer que funcione
 
 ## Ejercicio 7 ##
 **Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.**
