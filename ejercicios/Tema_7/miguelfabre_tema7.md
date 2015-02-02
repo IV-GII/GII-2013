@@ -34,27 +34,7 @@ node1.json
 
 chef/cookbooks/receta1/recipes/default.rb
 
-```Actualizamos repositorio
-execute "apt-get-update" do
-command "apt-get update" 
-end
-
-Instalación d nginx
-execute "install nginx" do
-command "apt-get install nginx -y"
-end
-
-Instalacion de emacs
-execute "install emacs" do
-command "apt-get install emacs -y"
-end
-
-Instalacion de nano
-execute "install nano" do
-command "apt-get install nano -y"
-end
-
-```
+![](https://github.com/miguelfabre/GII-2014/blob/master/ejercicios/Tema_7/imagenes/ejercicio2-3.png)
 
 Una vez creados tenemos todos los archivos, ejecutamos con la siguiente orden:
 
@@ -64,18 +44,19 @@ Una vez creados tenemos todos los archivos, ejecutamos con la siguiente orden:
 
 **Escribir en YAML la siguiente estructura de datos en JSON.**
 
-```---```
-```- uno: "dos"```
-```  tres:```
-```    - 4```
-```    - 5```
-```    - "Seis"```
-```    -```
-```      - siete: 8```
-```        nueve: ```
-```          - 10```
-```          - 11```
-
+```
+---
+- uno: "dos"
+  tres:
+    - 4
+    - 5
+    - "Seis"
+    -
+      - siete: 8
+        nueve:
+          - 10
+          - 11
+```
 ##Ejercicio 6
 
 **Instalar una máquina virtual Debian usando Vagrant y conectar con ella.**
