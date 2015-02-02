@@ -61,3 +61,7 @@ y montamos desde iso:
 ```
 qemu-system-x86_64 -hda lxde.img -cdrom debian-7.7.0-amd64-netinst.iso -m 512M
 ```
+
+## Ejercicio 5
+
+#### Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
