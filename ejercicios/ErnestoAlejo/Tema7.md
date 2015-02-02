@@ -7,11 +7,11 @@ Ejercicio 1
 
 **Instalar chef en la máquina virtual que vayamos a usar**
 
+Usamos el gestor de gemas de Ruby para importar Chef:
 
-Ejercicio 2
------------
-
-**Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual.**
+```shell
+gem install chef
+```
 
 
 Ejercicio 3
@@ -34,18 +34,6 @@ Ejercicio 3
     - siete: 8
       nueve: [10, 11]
 ```
-
-
-Ejercicio 4
------------
-
-**Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.**
-
-
-Ejercicio 5
------------
-
-**Desplegar la aplicación de DAI con todos los módulos necesarios usando un playbook de Ansible.**
 
 
 Ejercicio 6
@@ -80,9 +68,8 @@ Ejercicio 7
 
 **Crear un script para provisionar `nginx` o cualquier otro servidor web que pueda ser útil para alguna otra práctica**
 
+Usando el provisionamiento por línea de comandos que es el más simple que tiene Vagrant podemos añadir esta línea a la configuración:
 
-Ejercicio 8
------------
-
-**Configurar tu máquina virtual usando vagrant con el provisionador ansible**
-
+```ruby
+config.vm.provision "shell", inline: "sudo apt-get install -y nginx && sudo service nginx start"
+```
