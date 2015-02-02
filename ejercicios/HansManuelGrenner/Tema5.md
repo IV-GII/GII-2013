@@ -189,14 +189,17 @@ devs = /dev/loop2
 
 **Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados.**
 
-## Ejercicio 8
+Creamos la "piscina" para poder almacenar los objetos en rados.
 
-**Tras crear la cuenta de Azure, instalar las herramientas de línea de órdenes (Command line interface, cli) del mismo y configurarlas con la cuenta Azure correspondiente**
+```rados mkpool pool ```
 
-## Ejercicio 9
+Ya podemos crear un fichero e introducirlo en dicho sistema recien creado.
 
-**Crear varios contenedores en la cuenta usando la línea de órdenes para ficheros de diferente tipo y almacenar en ellos las imágenes en las que capturéis las pantallas donde se muestre lo que habéis hecho.**
+```rados put -p prueba-pool objeto prueba.txt ```
 
-## Ejercicio 10 
+Con ```rados lspools ``` podemos comprobar que se ha creado todo correctamente.
 
-**Desde un programa en Ruby o en algún otro lenguaje, listar los blobs que hay en un contenedor, crear un fichero con la lista de los mismos y subirla al propio contenedor. Muy meta todo.**
+## Ejercicio 8 - 10
+
+> No dispongo de una cuenta de azure, caducaron las ofrecidas por el profesor.
+

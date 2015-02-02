@@ -62,12 +62,68 @@ Ya podemos iniciar la máquina virtual, para DSL en concreto no se requieren pas
 **Crear un benchmark de velocidad de entrada salida y comprobar la diferencia entre usar paravirtualización y arrancar la máquina virtual simplemente con : `qemu-system-x86_64 -hda /media/Backup/Isos/discovirtual.img
 `**
 
-> HACER COPY PASTE, nose que pollas de
+He reutilizado un benchmark que escribí para la asignatura de ISE, que calcula la velocidad de lectura/escritura del disco duro.
 
->  $ sudo hdparm -Tt /dev/loop0
->  
->  Y chocapic resultado copiado
+```
+#include <iostream>
+#include <fstream>
+#include <cstdio>
+#include <ctime>
 
+using namespace std;
+
+void test_memoria(){
+
+// Abrimos el flujo para el archivo de entrada y podremos calcular su tamaño en bytes.
+
+ifstream fichero_entrada("f1");
+
+double inicio, final, tamanio_archivo;
+inicio = fichero_entrada.tellg();
+fichero_entrada.seekg(0, ios::end);
+final = fichero_entrada.tellg();
+fichero_entrada.close(); // Ya que nos hemos colocado al final o bien podemos cerrar el fichero y abrirlo de nuevo o colocarnos de nuevo al comienzo del fichero
+
+tamanio_archivo = (final-inicio)/(1024*1024); // Pasamos los datos a MegaBytes
+
+// Ahora que ya tenemos el tamaño del archivo podemos abrir todos los flujos
+
+fichero_entrada.open("f1");
+ofstream fichero_salida("f2");
+
+std::clock_t start, end;
+string aux;
+
+// Calculamos los tiempos que tarda para realizar la lectura/escritura del fichero
+
+start= std::clock();
+
+while(!fichero_entrada.eof()){
+     fichero_entrada >> aux;
+ fichero_salida << aux;
+}
+
+end = std::clock();
+
+double tiempo_total = (end-start)/(double) CLOCKS_PER_SEC; 
+
+cout << "\nTiempo transcurrido : " << tiempo_total << " segundos" << endl;
+cout << "Tamaño del fichero : " << tamanio_archivo << " MegaBytes" << endl;
+cout << "\nVelocidad de lectura/escritura : " << tamanio_archivo/tiempo_total << " MB/s\n" << endl;
+
+fichero_entrada.close();
+fichero_salida.close();
+
+}
+
+int main(){
+
+	test_memoria();
+
+}
+```
+
+> Al usar máquinas virtuales sobre máquinas virtuales no he podido ejecutar el benchmark sobre las máquinas. Eran demasiado lentas...
 
 ## Ejercicio 4
 
@@ -104,16 +160,26 @@ Usamos el cliente para conectarnos a la máquina virtual de forma remota.
 
 ```vinagre 192.168.122.1:5901 ```
 
-
-
 ## Ejercicio 5
 
 **Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.**
 
-## Ejercicio 6
+Dado que no dispongo de una cuenta azure, usaré Koding que es gratuito y no solicita una tarjeta de crédito.
 
-**Usar juju para hacer el ejercicio anterior.**
+Nos registramos y arrancamos una nueva máquina virtual.
 
-## Ejercicio 7
+![Imgur](http://i.imgur.com/UsEjum7.png)
+> Figura 7. Creando una máquina virtual en Koding.
 
-**Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.**
+Las máquinas virtuales de Koding por defecto vienen instaladas con Apache, servicio que se arranca por defecto al iniciar la máquina.
+La recomendación sería desinstalar dicho servicio antes de instalar nginx en ella.
+
+```sudo apt-get remove --purge apache2 ```
+
+Y ya podemos proceder a instalar nginx.
+
+```sudo apt-get install nginx ```
+
+
+![Imgur](http://i.imgur.com/W6RbeRb.png)
+> Figura 7. Nginx instalado en Koding.
