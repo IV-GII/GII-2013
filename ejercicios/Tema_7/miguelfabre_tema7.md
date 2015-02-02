@@ -34,25 +34,24 @@ node1.json
 
 chef/cookbooks/receta1/recipes/default.rb
 
-```#Actualizamos repositorio
-execute "apt-get-update" do
-command "apt-get update" 
-end
+```#Actualizamos repositorio```
+```execute "apt-get-update" do```
+```command "apt-get update"``` 
+```end```
 
-Instalación d nginx
-execute "install nginx" do
-command "apt-get install nginx -y"
-end
+```# Instalación d nginx```
+```execute "install nginx" do```
+```command "apt-get install nginx -y"```
+```end```
+```#Instalacion de emacs```
+```execute "install emacs" do```
+```command "apt-get install emacs -y"```
+```end```
 
-Instalacion de emacs
-execute "install emacs" do
-command "apt-get install emacs -y"
-end
-
-Instalacion de nano
-execute "install nano" do
-command "apt-get install nano -y"
-end```
+```#Instalacion de nano```
+```execute "install nano" do```
+```command "apt-get install nano -y"```
+```end```
 
 Una vez creados tenemos todos los archivos, ejecutamos con la siguiente orden:
 
