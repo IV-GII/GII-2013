@@ -1160,3 +1160,45 @@ Para acceder a la maquina, desde la anfitriona, ejecutamos el comando:
 ```bash
 ssh alberto@localhost -p [puerto]
 ```
+
+Ejercicio 5
+-----------
+
+**Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.**
+
+Ya tengo una maquina virtual ubuntu instalada.
+Iniciamos la maquina e instalamos nginx con el comando:
+```bash
+sudo apt-get install nginx
+```
+
+Despues, iniciamos el servicio ejecutando:
+```bash
+sudo service nginx start
+```
+
+Ahora, miramos la direccion ip de la maquina virtual para ponerla en la barra de direcciones del navegador y nos aparecerá la pantalla de inicio de nginx.
+![t6ej5.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t6ej5.png)
+```
+
+
+Ejercicio 7
+-----------
+
+**Instalar una máquina virtual con Linux Mint para el hipervisor que tengas instalado.**
+
+Para la instalacion de una maquina con linux Mint, se va a usar VirtualBox.
+Lo primero que hay que hacer, es descargarnos de su pagina oficial un archivo iso con la imagen de linux mint.
+
+Lo siguiente, es crear una maquina virtual nueva y rellenar algunos datos.
+![t6ej7.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t6ej7.png)
+
+Despues, hay que indicarle que cree un disco virtual para ello, como se indica en la siguiente imagen.
+![t6ej7b.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t6ej7b.png)
+
+Una vez terminada la creacion, iniciamos la maquina y le indicamos el fichero iso con la imagen que va a cargar para iniciarse.
+![t6ej7c.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t6ej7c.png)
+
+Cuando termine de iniciarse, tendremos una maquina con linux Mint lista para usarse, como vemos en la siguiente imagen.
+![t6ej7d.png](https://raw.githubusercontent.com/albertomoreno/iv-images/master/t6ej7d.png)
+
