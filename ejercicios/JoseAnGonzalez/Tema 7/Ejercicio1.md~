@@ -13,10 +13,4 @@ Una vez dentro, nos descargamos con curl el script de instalación:
 Damos permisos de ejecución y lo ejecutamos:
 
 	chmod +x install.sh
-    	sudo ./install.sh
-
-Se instala tal y como vemos en la imagen:
-
-![](Ejercicio1.png)
-
-
+    sudo ./install.sh
