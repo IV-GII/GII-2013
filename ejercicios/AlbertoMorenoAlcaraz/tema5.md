@@ -159,17 +159,17 @@ pid file = /var/run/ceph/$name.pid
 [mon]
 mon data = /srv/ceph/mon/$name
 [mon.mio]
-host = santiago-PC
+host = ubuntu
 mon addr = 127.0.0.1:6985
 [mds]
 [mds.mio]
-host = santiago-PC
+host = ubuntu
 [osd]
 osd data = /srv/ceph/osd/$name
 osd journal = /srv/ceph/osd/$name/journal
 osd journal size = 1000 ; journal size, in megabytes
 [osd.0]
-host = santiago-PC
+host = ubuntu
 devs = /dev/loop0
 ```
 
