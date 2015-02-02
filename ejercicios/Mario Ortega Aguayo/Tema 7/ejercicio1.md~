@@ -14,4 +14,3 @@ Y posteriormente, tras instalar curl:
 <pre>sudo apt-get install curl</pre>
 <pre>curl -L https://www.opscode.com/chef/install.sh | bash</pre>
 
-Tras esto ya tendremos instalado chef.
