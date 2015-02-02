@@ -169,6 +169,23 @@ Ha participado en lo siguiente:
     * [Creación del fichero Gruntfile.js del TestFailure]( https://github.com/TransparenciaUGR/Proyecto-IV/commit/accbe816324b4b149dff184f065e5a659d49b256)
 
 
+---
+
+###[Sistema de Distribución Remota de Software](https://github.com/freeLinuxDistroDeployed)
+###[LDT Linux Deployed Tool](http://freelinuxdistrodeployed.github.io/freelinuxdistrodeployed/)
+
+Integrantes:
+
+* Jose Antonio Gonzalez Cervera @Ja-Gonz
+* Juan Antonio Moraleda Ocon @juanantc
+* Juan Antonio Fernández Sánchez @juanAFernandez
+* Mario Ortega Aguayo @mortega87
+* Ruben Adrados Breton @rubenadrados
+
+
+[Web del proyecto, blog de desarrollo, documentación, **instalación** y **testing**.](http://freelinuxdistrodeployed.github.io/freelinuxdistrodeployed/) 
+
+Detalles del **Hito4** en issue [#26](https://github.com/freelinuxdistrodeployed/LDT/issues/26)
 
 
 
