@@ -1,9 +1,9 @@
 ###Ejercicio3
 
 **Escribir en YAML la siguiente estructura de datos en JSON**
-
+'''sh
 uno: "dos"
-tres: 
+tres:
     - 4
     - 5
     - "Seis" :
