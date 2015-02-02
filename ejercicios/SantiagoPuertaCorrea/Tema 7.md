@@ -160,6 +160,31 @@ Ejercicio 4
 
 **Desplegar los fuentes de la aplicación de DAI o cualquier otra aplicación que se encuentre en un servidor git público en la máquina virtual Azure (o una máquina virtual local) usando ansible.**
 
+En este ejercicio vot a desplegar los fuentes de [Virtual Vulcano](https://github.com/ernestoalejo/virtual-vulcano).
+Instalo ansible y todo lo necesario para usarlo, con los siguientes comandos [instalación ansible](http://docs.ansible.com/intro_installation.html):
+```bash
+sudo yum update
+sudo easy_install pip
+sudo pip install paramiko PyYAML Jinja2 httplib2
+sudo yum install ansible
+```
+![4_1.png](https://dl.dropboxusercontent.com/u/22433100/IV/t7/4_1.png)
+Una vez instalado ansible, configuro los host en ~/ansible_hosts:
+```bash
+[azure]
+santiagoiv.cloudapp.net
+```
+Ahora añado:
+```bash
+export ANSIBLE_HOSTS=~/ansible_hosts
+```
+una vez que tengo todo configurado, despliego la aplicación de virtualvulcano con el siguiente comando:
+```bash
+# Necesito sshpass
+sudo yum install sshpass
+
+ansible all -u core -m git -a "ansible all -u core -m git -a "repo=git@github.com:ernestoalejo/virtual-vulcano.git" --ask-pass" --ask-pass
+```
 
 Ejercicio 5
 -----------
