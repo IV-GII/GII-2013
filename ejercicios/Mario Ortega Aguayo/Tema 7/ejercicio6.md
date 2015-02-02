@@ -16,5 +16,5 @@ Ahora creamos un fichero Vagrant, mediante la siguiente orden
 
 Ejecutamos y conectamos mediante estos dos comandos:
 
-vagrant up
-vagrant ssh
+<pre>vagrant up</pre>
+<pre>vagrant ssh</pre>
