@@ -1,6 +1,5 @@
 #Entrega del proyecto de la asignatura.
 
-
 ###Transparente-Servidor-UGR. Entrega de Práctica final.
 
 - Enlace al **repositorio**: [repo de Github](https://github.com/TransparenciaUGR/Proyecto-IV).
@@ -219,128 +218,983 @@ Participantes:
 + Pablo Casado Arenas @ramako 
 
 [Aplicación funcionando en OpenShift](http://backendsi2-iblancasa.rhcloud.com/)
+
 [Aplicación funcionando en Azure](http://backendsi2.cloudapp.net:8080/)
 
 
 ### Israel Blancas Álvarez, (@iblancasa)
 
 * **Ha participado en estos scripts de provisionamiento:**
+
 Issues
+
 [Despliegue utilizando Ansible o similares](https://github.com/iblancasa/BackendSI2-IV/issues/84)
+
 Commits
+
 [Modificando playbook y preparando para provisionamiento](https://github.com/iblancasa/BackendSI2-IV/commit/656104a5f4e11e08ff0e6daedb5a3bd48967192d)
+
 [Creación de ansible_host](https://github.com/iblancasa/BackendSI2-IV/commit/fe04c45b73ce0bdc355e4e2f657249906160741f)
+
 [Arreglando problemas para iniciar servicio](https://github.com/iblancasa/BackendSI2-IV/commit/db32f8a4d1eff82ae0a157c61d242cd3fbd80c5d)
+
 [Cambiando la forma de instalar dependencias de NodeJS y haciendo asíncrono el arranque de servicio](https://github.com/iblancasa/BackendSI2-IV/commit/4afa4631b1dd5cc2adaad7961a021e7e3bddd200)
+
 [Acabando documentación sobre provisionamiento](https://github.com/iblancasa/BackendSI2-IV/commit/c1c1366807962b8b83552cd0ae2d6998cada0c28)
 
+
 * **Ha participado en los tests con:**
+
 Issues
+
 [Crear nuevos test y documentarlos](https://github.com/iblancasa/BackendSI2-IV/issues/80)
+
 Commits
+
 [Primera hilera de test](https://github.com/iblancasa/BackendSI2-IV/commit/c26c84769a9286560794015979ebd56b066baa61) (algunos de estos test se usaban para la aplicación de prueba que teníamos con socket.io)
+
 [Arreglando un problema con un test que estaba doble](https://github.com/iblancasa/BackendSI2-IV/commit/4baceceb5e3692478d7e81e6cbf885033eb2b408)
+
 [Script para instalar las herramientas necesarias para ejecutar test](https://github.com/iblancasa/BackendSI2-IV/blob/master/test/installTestSuite.sh)
 
+
 * **Ha participado en esta integración continua y PaaS:**
+
 Issues
+
 [Integración continua](https://github.com/iblancasa/BackendSI2-IV/issues/82)
+
 [Cambio a OpenShift](https://github.com/iblancasa/BackendSI2-IV/issues/77)
+
 [Problemas desplegar OpenShift](https://github.com/iblancasa/BackendSI2-IV/issues/90)
+
 Commits
+
 [Arreglando problema con ejecución de Mocha e instalación de Ansible en Travis](https://github.com/iblancasa/BackendSI2-IV/commit/918b88a95799927ae158d5fe41926511b5ae72ae)
+
 [Arreglando problema con permisos de scripts en Travis](https://github.com/iblancasa/BackendSI2-IV/commit/9b5b3f5a5e4f08be52edfb5a8d9c7c3cd8be2053)
+
 [Arreglando problemas con integración continua](https://github.com/iblancasa/BackendSI2-IV/commit/2626fabe9297d10dd0359fd654d6395c31ae6012)
+
 [Añadiendo despliegue en OpenShift en Travis](https://github.com/iblancasa/BackendSI2-IV/commit/0e5697bd5e51dae840eed58a6398fb18787e2d8d)
+
 [Editando package.json para arreglar problemas de integración continua](https://github.com/iblancasa/BackendSI2-IV/commit/1ec2f2252184fb0615799b97f6f216b4bb305c86)
 
+
 * **Ha participado en esta configuración de despliegue automático con:**
+
 Issues
+
 [Despliegue utilizando Ansible o similares](https://github.com/iblancasa/BackendSI2-IV/issues/84) (este issue ha sido mencionado anteriormente, pero cubría varios aspectos)
+
 Commits
+
 [Eliminando problema de bloqueo tras despliegue en Azure](https://github.com/iblancasa/BackendSI2-IV/commit/4afa4631b1dd5cc2adaad7961a021e7e3bddd200)
+
 [Documentar cómo se el despliegue automático en el IaaS y en el PaaS desde Travis](https://github.com/iblancasa/BackendSI2-IV/commit/d5a8a1cacbdad7dfe22fb8099f19b53781ca599a)
 
 
+
 * **También a participado en:**
+
 [Documentación](https://github.com/iblancasa/BackendSI2-IV/issues/91)
+
 [Correcciones en la documentación realizada por los compañeros](https://github.com/iblancasa/BackendSI2-IV/commit/c329e67fea0b473dc85a9be45298eaecaa92dc09)
 
 
 ### José Cristóbal López Zafra  (@JCristobal)
 
 * **Ha participado en estos scripts de provisionamiento:**
+
 Issues:
+
 [Despligue usando Ansible o similares](https://github.com/iblancasa/BackendSI2-IV/issues/84)
+
 Commits:
+
 [Añado playbook.yml](https://github.com/iblancasa/BackendSI2-IV/commit/adfb6e21cf66a6a049b8220eb6989fac137a51cf)
 
 * **Ha participado en los tests con:**
+
 Issues:
+
 [Tests](https://github.com/iblancasa/BackendSI2-IV/issues/80)
+
 Commits:
+
 [Añado algunos test](https://github.com/iblancasa/BackendSI2-IV/commit/ea7c06cb5299bab7b234b4c0d6d32ae317433661)
+
 [Corrección de los test recién añadidos](https://github.com/iblancasa/BackendSI2-IV/commit/d043a2fa652bf24c221f42c5392fe40e3d77715a)
+
 [Test unitario del servidor](https://github.com/iblancasa/BackendSI2-IV/commit/8ce488d4e3fbd1592ac417d41415300bae7a5227)
+
 [Arreglo de un fallo en los test](https://github.com/iblancasa/BackendSI2-IV/commit/ae0b0ee418f16a6665985fa018c2ea4733b58357) (aquí reescribo mucho código, pero lo explico en el comentario del commit)
+
 [Documentación de los test](https://github.com/iblancasa/BackendSI2-IV/commit/b0af63b53142c041267eff420d22bc38b3328142)
 
 * **Ha participado en esta integración continua y PaaS:**
+
 Issues:
+
 [Problemas con el PaaS](https://github.com/iblancasa/BackendSI2-IV/issues/90)
+
 [Añadir fichero de claves al PaaS](https://github.com/iblancasa/BackendSI2-IV/issues/81)
 
 
 * **Ha participado en esta configuración de despliegue automático con:**
+
 Commits:
+
 [Se añade la opción de despligue automático al playbook](https://github.com/iblancasa/BackendSI2-IV/commit/2816786fc08815d1468d43370a9ad1a8e8113d28)
+
 [Correcciones al playbook](https://github.com/iblancasa/BackendSI2-IV/commit/1eab44f4badcf2c8815d7f967e31f44b23c5fd2b)
 
+
 * **También he participado en otros issues:**
+
 [Documentación](https://github.com/iblancasa/BackendSI2-IV/issues/91)
+
 ["Frontend": issue donde se mencionan los commits sobre éste](https://github.com/iblancasa/BackendSI2-IV/issues/52) y la [validación de sus formularios](https://github.com/iblancasa/BackendSI2-IV/issues/65)
 
 
 ### Pablo Casado Arenas, (@ramako).
 
 ### Participación en issues:
+
 [Despliegue](https://github.com/iblancasa/BackendSI2-IV/issues/84#issuecomment-72320039)
+
 [Documentación](https://github.com/iblancasa/BackendSI2-IV/issues/91)
+
 [Tests](https://github.com/iblancasa/BackendSI2-IV/issues/80)
+
 [Código BDD](https://github.com/iblancasa/BackendSI2-IV/issues/89)
+
 
 ### Commits
 
 * **Ha participado en los tests con:**
 
 [Tests](https://github.com/iblancasa/BackendSI2-IV/commit/a2bb6b0b4fcfb36916645ebd9108312fa722b330)
+
 [Tests](https://github.com/iblancasa/BackendSI2-IV/commit/5da457ab6185d4a6d8c8188e70af66e079837f1c)
+
 [Tests y dependencias](https://github.com/iblancasa/BackendSI2-IV/commit/e914aae0f5d770c13ed520830cee6ca009ae1cd9)
 
+
 * **Ha participado en esta integración continua y PaaS:**
+
 [Travis](https://github.com/iblancasa/BackendSI2-IV/commit/6ebf7232e87da85ed099524c532c9d7313d99ec4)
+
 [Travis](https://github.com/iblancasa/BackendSI2-IV/commit/df062e578f2807455032e176446f1adf800b0c80)
 
+
 * **Ha participado en esta configuración de despliegue automático con:**
+
 [Despliegue](https://github.com/iblancasa/BackendSI2-IV/commit/0e731918b0345d850f5391e96cfc70af73c6653f)
+
 [Despliegue](https://github.com/iblancasa/BackendSI2-IV/commit/dac95519f6acfa6cf86a3165050e1aa32f4286e3)
+
 [Playbook](https://github.com/iblancasa/BackendSI2-IV/commit/852ff98ca4dc3fe4ecab0c00492eeb585def3534)
 
+
 * **Ha participado en estos scripts de provisionamiento:**
+
 [Provisionamiento](https://github.com/iblancasa/BackendSI2-IV/commit/c219ef735199197574b714d06a4797042b6c4a11)
 
+
 * **Ha participado en el código de la aplicación:**
-[Código] (https://github.com/iblancasa/BackendSI2-IV/commit/612d0d848df76aaf9d4b0c924729b61858c94917)
+
+[Código](https://github.com/iblancasa/BackendSI2-IV/commit/612d0d848df76aaf9d4b0c924729b61858c94917)
+
 [Código](https://github.com/iblancasa/BackendSI2-IV/commit/7f73edade9a94cdafb9722a5aa369107fa1ee33b)
+
 [Código](https://github.com/iblancasa/BackendSI2-IV/commit/b8de2c9a858be84027ff17209ae70d919ee7a19c)
 
+
 * **Ha participado en la documentación:**
+
 [Documentación Test](https://github.com/iblancasa/BackendSI2-IV/commit/795fb4b97d07d8d05cdc4bff7947888818472729)
-[Documentacion Ansible] (https://github.com/iblancasa/BackendSI2-IV/commit/b6b73cea82f172ade7d82c233be08e499d711fa8)
 
-
-
+[Documentacion Ansible](https://github.com/iblancasa/BackendSI2-IV/commit/b6b73cea82f172ade7d82c233be08e499d711fa8)
 
 
 
 Algunos commits no se han incluido por tener solo pequeñas modificaciones para corregir comportamientos del sistema o errores (que se iban intentando solucionar con otros commits precedentes) y que no suponen grandes aportes respecto a los aquí presentados. Además, se ha tratado de listar los contenidos que son solo de la asignatura
+
+#[Repositorio IV_Aerospace](https://github.com/julioxus/iv-aerospace)#
+
+* [Aplicación desplegada en Google App Engine](http://ugraerospaceprogram.appspot.com/)
+
+* [Aplicación desplegada en un IaaS (Koding)](http://ivaerospace.koding.io/) (Si la máquina se ha quedado ausente durante una hora, se apaga automáticamente)
+
+Algunos commits que presentaban cambios leves no han sido añadido, tampoco hemos añadido los commits de la documentación que se pueden ver en nuestro repositorio. Los commits
+aquí listados, en el mayor de los casos, son cambios notables.
+
+###Juan Francisco Rodríguez Vílchez###
+ 
+Ha participado en estos scripts de provisionamiento (enlace a los commits).
+ 
+* [Issue Provisionamiento](https://github.com/julioxus/iv-aerospace/issues/56)
+* [Issue Docker para ver todos los arreglos](https://github.com/julioxus/iv-aerospace/issues/69)
+    
+* [Arreglando Docker](https://github.com/julioxus/iv-aerospace/commit/e422b275cc4d01e7f11956f0c080615f73f8336d)
+* [Arreglos Docker](https://github.com/julioxus/iv-aerospace/commit/5b7d02f1817e45c7e70e6d042b83d0c9b504c58f)
+* [Mejorando Dockerfile](https://github.com/julioxus/iv-aerospace/commit/75400050584c8b83a44785754a7f0fa7586d46e4)
+* [Mejorando Dockerfile](https://github.com/julioxus/iv-aerospace/commit/15c5a59f38263b9b4d4c66d3254f1dbb4926a7dc)
+* [Dockerfile](https://github.com/julioxus/iv-aerospace/commit/4363fe973b263ea87030c5e252e750b38954278b)
+* [Demonio necesario para el provisionamiento y despliegue en Koding](https://github.com/julioxus/iv-aerospace/commit/4d5a2ec7bd548a472464e562b63e81095a4e1b97)
+     
+Ha participado en estos tests (o issues)
+ 
+* [Issue Test para ver los distintos arreglos](https://github.com/julioxus/iv-aerospace/issues/55)
+    
+* [Test](https://github.com/julioxus/iv-aerospace/commit/c1eb14beab405337b030dc9effb3458f04d07288)
+* [Test](https://github.com/julioxus/iv-aerospace/commit/a38e3aba564930c13d57c860f4f182787b347950)
+* [Test](https://github.com/julioxus/iv-aerospace/commit/7919d7736276242ba85c9d4446ad1f57ccaa6480)
+     
+Ha participado en esta integración continua y PaaS
+     
+* [Issue integración continua para ver los distintos arreglos](https://github.com/julioxus/iv-aerospace/issues/54)
+    
+* [Realización del script de Shippable](https://github.com/julioxus/iv-aerospace/commit/41b11e7293ec617242ab740eab1ed98cc4d4009e)
+
+Ha participado en esta configuración de despliegue automático.
+
+* [Issue Despliegue Koding](https://github.com/julioxus/iv-aerospace/issues/72)
+    
+* [Script de despliegue automático en Koding](https://github.com/julioxus/iv-aerospace/commit/a34a75f640b1e63fb92ed0d771ec35baea528a67)
+* [Script de despliegue automático en GAE](https://github.com/julioxus/iv-aerospace/commit/a6706785b77627be091f3f8036b7ac2d7c58d9e2)
+
+###Jose Antonio Plata Muñoz###
+
+Ha participado en estos scripts de provisionamiento (enlace a los commits)
+
+* https://github.com/julioxus/iv-aerospace/commit/da3eb1d9f5b76c352b8ca770f2d28915fc640b75
+* https://github.com/julioxus/iv-aerospace/commit/d801f595564a3c7acfad7594f473eed2a005bb17
+* https://github.com/julioxus/iv-aerospace/commit/0aea9a410ac71dfa0fe393414ef549e2f87f7bc5
+* https://github.com/julioxus/iv-aerospace/commit/6acc847c569b15a0e49475674e3549be5cff58fd
+* https://github.com/julioxus/iv-aerospace/issues/69
+
+Ha participado en esta integración continua y PaaS
+
+* https://github.com/julioxus/iv-aerospace/issues/54
+
+Ha participado en esta configuración de despliegue automático.
+
+* https://github.com/julioxus/iv-aerospace/commit/9d1d360c2a612d3feaeeb4b493d47cce778a7328
+* https://github.com/julioxus/iv-aerospace/commit/c32d8c58a1a7c719a53e2caaeeb6735a36e1603f
+
+##Julio Martínez Martínez-Checa##
+ 
+Ha participado en estos scripts de provisionamiento (enlace a los commits).
+ 
+* [Jaula](https://github.com/julioxus/iv-aerospace/commit/59449e67ef650df9795a7ae6494c94b2c348a38e)
+* [Jaula](https://github.com/julioxus/iv-aerospace/commit/34eed7bbb8fe4a082a8bd64bf4a5c9784f910ec9)
+* [Docker](https://github.com/julioxus/iv-aerospace/commit/6835b93ebd10ca5106f835a0c0906b1132b36839)
+* [Demonio](https://github.com/julioxus/iv-aerospace/commit/678d2ea3f41991460b7ab4db77251382eb28993f)
+* [Shippable/Koding/Ansible](https://github.com/julioxus/iv-aerospace/commit/0e5bbdcff2ee331b649fbbf8c5def31e378ff0f6)
+* [Ansible](https://github.com/julioxus/iv-aerospace/commit/d7590ffedc1fa8224859d82efc7c51bb7245ca14)
+
+* [Issue Docker](https://github.com/julioxus/iv-aerospace/issues/69)
+* [Issue pregunta](https://github.com/julioxus/iv-aerospace/issues/71)
+* [Issue scripts provisionamiento](https://github.com/julioxus/iv-aerospace/issues/58)
+     
+Ha participado en estos tests (o issues)
+ 
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/f57153240f6b62169445f645202d7e4a45943f4e)
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/7423ecf0af66829263d4fd3e5a75facc6554b402)
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/556c6f28d468ee4a7d251b656cef20c9cc71c541)
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/8344169f9002840e9b789de0ebd4ef87020c9a1a)
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/d381099be6e5e4c7a531db1f3a795388f1e89af3)
+* [Tests](https://github.com/julioxus/iv-aerospace/commit/21dae535cb645037fc03fcdbefe7798e29bdae93)
+
+* [Issue tests](https://github.com/julioxus/iv-aerospace/issues/55)
+     
+Ha participado en esta integración continua y PaaS
+
+* [Autenticación automática](https://github.com/julioxus/iv-aerospace/commit/67e3ad99298ecd8a321b9386211e48e87ff74992)
+* [Autenticación automática](https://github.com/julioxus/iv-aerospace/commit/0b2345745dbc65f300efec29bfab91803cafc088)
+
+
+* [Issue integración contínua](https://github.com/julioxus/iv-aerospace/issues/54)
+     
+
+Ha participado en esta configuración de despliegue automático.
+
+* [Koding](https://github.com/julioxus/iv-aerospace/commit/6eabc869193f0d66df333311d99ec5a8e1e83462)
+* [Shippable/Koding](https://github.com/julioxus/iv-aerospace/commit/3d1af3f104a1b743a328f325c08da111c5d5bb58)
+* [Shippable/Koding/Ansible](https://github.com/julioxus/iv-aerospace/commit/0e5bbdcff2ee331b649fbbf8c5def31e378ff0f6)
+* [Shippable/Koding](https://github.com/julioxus/iv-aerospace/commit/c35384ac5dfc14033a9aaac04d3cef6ad84b4142)
+* [Vagrant](https://github.com/julioxus/iv-aerospace/commit/b8b1c4fd884dabf5260930cbbf2d0d617c4f1d54)
+
+* [Issue Koding](https://github.com/julioxus/iv-aerospace/issues/72)
+* [Issue despliegue IaaS](https://github.com/julioxus/iv-aerospace/issues/56)
+
+##Cristina Rosillo Arenas##
+
+Ha participado en estos scripts de provisionamiento: 
+
+* [Docker](https://github.com/julioxus/iv-aerospace/commit/90e7bd24db0c5f38d05dd4bcd36525d3edc976ce)
+* [Despliegue automático](https://github.com/julioxus/iv-aerospace/commit/49b4904a4df6a4ab71ba641b85fa6ce93a6ddf7b) ,issues: #67
+	
+Ha participado en estos tests: 
+			
+* [Test conexiones máximas](https://github.com/julioxus/iv-aerospace/blob/master/test/test-conex-simultaneas.py) ,issues: #55
+* [Test en shippable](https://github.com/julioxus/iv-aerospace/commit/4d789258e6b0c2a9c9e4db7ce1959b1ee3a7143e) ,issues: #55
+
+Ha participado en esta integración continua y PaaS:
+
+* [Base de Datos](https://github.com/julioxus/iv-aerospace/commit/a40612da0f12e140505d9ff49ed0b58fddff01bc) , issues: #51
+
+##Miguel Martinez Castellanos##
+
+Ha participado en estos scripts de provisionamiento:
+
+* [Docker](https://github.com/julioxus/iv-aerospace/commit/245287d56062edc2af6a7b3ab2b9e2c4b54c3e15) (issue #69)
+* [Docker](https://github.com/julioxus/iv-aerospace/commit/b05ab41faa878d680e5f571709228c23bbb8b61b) (issue #69)
+
+Ha participado en esta integración continua y PaaS:
+
+* [Base de datos ndb](https://github.com/julioxus/iv-aerospace/commit/6871b7a8a3fbd26f45c3157cacf3f4b56bcede98) (issue #51)
+
+Ha participado en esta configuración de despliegue automático:
+
+* [Despliegue automático en Koding](https://github.com/julioxus/iv-aerospace/commit/f5e763025d58abc1dace375943d3cdaceb16540e) (issue #72)
+   
+##Óscar Sánchez Martínez##
+ 
+Ha participado en estos scripts de provisionamiento (enlace a los commits):
+
+* [playbook de ansible](https://github.com/julioxus/iv-aerospace/commit/52333c0f60900d0d8c20f7f5a88e07dc5dda1072)
+* [script de docker](https://github.com/julioxus/iv-aerospace/commit/7565d8e23ea6a48605570eb60372ceadc2d489af)
+* [Issues Dockerfile](https://github.com/julioxus/iv-aerospace/issues/69)
+     
+Ha participado en estos tests (o issues):
+ 
+* [Documentación test navegación](https://github.com/julioxus/iv-aerospace/commit/6fe18d10ec691520f4164e1813aba01f68bd1a37)
+* [Test navegación automática](https://github.com/julioxus/iv-aerospace/commit/ee950e02b85072a5604aa3ef1f2d54eb13d7d6d6)
+* [Issues desarrollo de test](https://github.com/julioxus/iv-aerospace/issues/55)
+
+Ha participado en esta integración continua y PaaS:
+     
+* [Archivo de requerimientos para Shippable](https://github.com/julioxus/iv-aerospace/commit/b2e3b33045296431e6cdaa76977898711d76639f)
+* [Issues integración con travis](https://github.com/julioxus/iv-aerospace/issues/73)
+
+Ha participado en esta configuración de despliegue automático:
+
+* [Despliegue con vagrant - ficheros](https://github.com/julioxus/iv-aerospace/commit/388ce90dc887e6c68b0dbdd30288c33f3a644824)
+* [Despliegue con vagrant - correción](https://github.com/julioxus/iv-aerospace/commit/8841b91c69bb6f99d9203faffd4c54ddb446c38c)
+
+
+##Hans Manuel Grenner Noguerón##
+ 
+Ha participado en estos scripts de provisionamiento (enlace a los commits).
+ 
+* [Script eliminar proceso del servidor, modificar install_dock](https://github.com/julioxus/iv-aerospace/commit/cc21f69d6d95645fa10ade6deb75fdf29020390f)
+* [**Docker**](https://github.com/julioxus/iv-aerospace/commit/6200c0eec098aca8a57b612e0bd2e3139a6708e9)
+
+* [**Issue Docker**](https://github.com/julioxus/iv-aerospace/issues/69)
+
+Ha participado en estos tests (o issues)
+ 
+* [**Test** para comprobar URL's de la aplicación](https://github.com/julioxus/iv-aerospace/commit/215004ef87472653cc0f5a84d5d3927c9e3e95bc)
+    
+* [**Issue Tests**](https://github.com/julioxus/iv-aerospace/issues/55)
+
+Ha participado en esta integración continua y PaaS
+     
+* [Integracion continua en **Travis**](https://github.com/julioxus/iv-aerospace/commit/3d3e29059269e28eea7009da0943b7092b73d395)
+    
+* [**Issue Travis**](https://github.com/julioxus/iv-aerospace/issues/73)
+
+Ha participado en esta configuración de despliegue automático.
+
+* [Creación del playbook de **Ansible**](https://github.com/julioxus/iv-aerospace/commit/75497d83bcb2b924ce444bf7090c479791498bf9)
+* [**Vagrant**](https://github.com/julioxus/iv-aerospace/commit/9e6e074d6d2269e9b1846f9f93c4c93d204c04fa)
+    
+* [**Issue Koding**](https://github.com/julioxus/iv-aerospace/issues/56)
+
+### [Gestión de eventos - OSL](https://github.com/miguelfabre/Proyecto)
+
+####Integrantes:
+* Miguel Fabre Navarro
+* Francisco Porcel Sendrós
+
+####Enlaces principales
+* [Memoria del proyecto](https://github.com/miguelfabre/Proyecto/blob/master/README.md)
+* [Aplicación funcionando en IaaS (Koding)](http://umkkfee9511b.miguelfabre.koding.io:8080/)
+IMPORTANTE: Koding en su versión gratuita se mantiene ejecutandose de forma continua durante solo una hora. Para comprobar el funcionamiento se puede avisar a alguno de los miembros de este grupo para su puesta en marcha. 
+* [Aplicación funcionando en PaaS (GAE)](https://pruebadriveiv.appspot.com)
+
+###Aportación de cada miembro del grupo
+
+####Miguel Fabre Navarro
+
+1. Código de la aplicación funcionando: Aportación a fichero principal de la aplicación (pruebadrive.py) y creación de ficheros html(página principal y hoja de cálculo) y del fichero de configuración "app.yaml". [Issue 14](https://github.com/miguelfabre/Proyecto/issues/14)
+
+2. Documentación en línea y externa correcta: Documentación de los archivos:  [crear_jaula.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/crear_jaula.md), [gap_como_paas.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/gap_como_paas.md), [instalacion_saraososl.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/instalacion_saraososl.md), [integracion_continua.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/integracion_continua.md), [jaulas_chroot.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/jaulas_chroot.md), [primera_app_gap.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/primera_app_gap.md), [requeriments.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/requeriments.md) y [saraososl_paso_a_paso.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/saraososl_paso_a_paso.md).
+
+3. Provisionamiento correcto de la aplicación: Aportación a los ficheros de provisionamiento de la aplicación realizados con Chef. [Issue 13](https://github.com/miguelfabre/Proyecto/issues/13)
+
+4. Contribución al test, integración continua y despliegue: Aportación a los test [Issue 2](https://github.com/miguelfabre/Proyecto/issues/2), a la integración continua [Issue 3](https://github.com/miguelfabre/Proyecto/issues/3) y despliegue [Issue 13](https://github.com/miguelfabre/Proyecto/issues/13)
+
+5. Buenas prácticas en los mensajes de commit y documentación del código: Aportación a la documentación del código [Issue 8](https://github.com/miguelfabre/Proyecto/issues/8) y buenas prácticas en los mensajes de commit [Issues](https://github.com/miguelfabre/Proyecto/issues)
+
+####Francisco Porcel Sendrós
+
+1. Código de la aplicación funcionando: Aportación a fichero principal de la aplicación (pruebadrive.py) y creación de ficheros html(formulario y certificado). [Issue 14](https://github.com/miguelfabre/Proyecto/issues/14)
+
+2. Documentación en línea y externa correcta: Documentación de los archivos:  [crear_jaula.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/crear_jaula.md), [descripcion_inicial.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/descripcion_inicial.md), [despliegue_chef_saraos.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/despliegue_chef_saraos.md), [despliegue_script_2_pasos.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/despliegue_script_2_pasos.md), [instalacion_saraososl.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/instalacion_saraososl.md), [integracion_continua.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/integracion_continua.md), [requeriments.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/requeriments.md) y [saraososl_paso_a_paso.md](https://github.com/miguelfabre/Proyecto/blob/master/documentacion/saraososl_paso_a_paso.md)
+
+3. Provisionamiento correcto de la aplicación: Aportación a los ficheros de provisionamiento de la aplicación realizados con Chef. [Issue 13](https://github.com/miguelfabre/Proyecto/issues/13)
+
+4. Contribución al test, integración continua, despliegue: Aportación a los test [Issue 2](https://github.com/miguelfabre/Proyecto/issues/2), a la integración continua [Issue 3](https://github.com/miguelfabre/Proyecto/issues/3) y despliegue [Issue 13](https://github.com/miguelfabre/Proyecto/issues/13)
+
+5. Buenas prácticas en los mensajes de commit y documentación del código: Aportación a la documentación del código [Issue 8](https://github.com/miguelfabre/Proyecto/issues/8) y buenas prácticas en los mensajes de commit [Issues](https://github.com/miguelfabre/Proyecto/issues)
+
+--------------------------------------------------------------------------------
+
+
+Virtual Vulcano
+---------------
+
+- Integrantes: [@ernestoalejo](https://github.com/ernestoalejo), [@santiagopuerta](https://github.com/santiagopuerta), [@albertomoreno](https://github.com/albertomoreno) y [@yonatan24891](https://github.com/yonatan24891)
+- Enlace al [repositorio del proyecto](https://github.com/ernestoalejo/virtual-vulcano)
+- Enlace a la [aplicación desplegada](http://croqueta.cloudapp.net)
+
+Hemos querido resaltar especialmente los commits más importantes de las cosas relacionadas con la asignatura. Tenemos más cambios que por importancia no han entrado en esta lista o que pertenecen más al dominio de DAI o de la aplicación en sí misma.
+
+Con respecto a las issues hemos tenido un trabajo totalmente colaborativo y distribuido a través de la plataforma de Github y nuestra participación ha sido uniforme a lo largo de las distintas tareas (lo que dificulta de forma considerable vincularlas individualmente).
+
+
+#### Ernesto Alejo Oltra
+
+- Scripts de provisionamiento para el desarrollo usando Crane [cbd8d5dcda](https://github.com/ernestoalejo/virtual-vulcano/commit/cbd8d5dcdadd171a2f2d1e76192bff8c7f6d140a)
+- Colaborar facilitando la implementación de los tests: [afc15ba1d2](https://github.com/ernestoalejo/virtual-vulcano/commit/afc15ba1d29386af4ec50bee1f7e0d6cf834bef1) o solucionando problemas complejos de dependencias en éstos últimos: [c9eb7600fe](https://github.com/ernestoalejo/virtual-vulcano/commit/c9eb7600fe3ac2dfafceda31b5c15a73075aaddb).
+- Scripts de despliegue automático en Docker Hub: [f9cf5f518a](https://github.com/ernestoalejo/virtual-vulcano/commit/f9cf5f518a72943988184a84a1552d0bf29ad2ad) y he colaborado con el despliegue en la máquina del cliente (Azure, Digital Ocean, ...) [4ac7febcc9](https://github.com/ernestoalejo/virtual-vulcano/commit/4ac7febcc95857f8d9c993f8c2b0e7c419292b61).
+- Cubrir parte de la redacción de la práctica: [aa588eeaf9](https://github.com/ernestoalejo/virtual-vulcano/commit/aa588eeaf943d09264e453e5cac8163f957948bd) o describir tecnologías que usamos en el proyecto: [8e77e83837](https://github.com/ernestoalejo/virtual-vulcano/commit/8e77e83837d08ee03f8c4a06abf392f26a346971).
+
+
+#### Santiago Puerta Correa
+
+- Test para la integración continua en: [669ab9aea6](https://github.com/ernestoalejo/virtual-vulcano/commit/669ab9aea6b299161490389fc6b78dc28f1ede26)
+- Scripts de provisionamiento: [7c95deccf6](https://github.com/ernestoalejo/virtual-vulcano/commit/7c95deccf6afa75a3ca2541865e755e60bebb25e), [c7df6cfb30](https://github.com/ernestoalejo/virtual-vulcano/commit/c7df6cfb30d0b1dac7f4336df5c81175d9209f95), [9ee6368466](https://github.com/ernestoalejo/virtual-vulcano/commit/9ee63684668b56020364e18393c7da4b36b3d1d2) y [cc0c5664b3](https://github.com/ernestoalejo/virtual-vulcano/commit/cc0c5664b33a01a1eb993976f643ba662a5a67e3)
+- Configuración para el despliegue automático: [84a5167be0](https://github.com/ernestoalejo/virtual-vulcano/commit/84a5167be0ce610eb4c648d2bc7661bdf241bfda)
+- Documentación: [985c40a806](https://github.com/ernestoalejo/virtual-vulcano/commit/985c40a80680fb6941d45d94abca92f44cb1e4bc)
+
+
+#### Alberto Moreno Alcaraz
+
+- Test para la integracion continua: [6a83bb0b36](https://github.com/ernestoalejo/virtual-vulcano/commit/6a83bb0b36b23286e2d97f3b734827159aea9a36)
+- Añadir un nuevo servicio como script de provisionamiento: [6b46da3da0](https://github.com/ernestoalejo/virtual-vulcano/commit/6b46da3da0cd6d068041849bb63c8d4208d45561) [0acf3697ab](https://github.com/ernestoalejo/virtual-vulcano/commit/0acf3697ab51befd4c0070894cfcd8322b8cc5f8) [d40ec06fd0](https://github.com/ernestoalejo/virtual-vulcano/commit/d40ec06fd013063bf6b3032b0362d7f9c70d7412)
+- Configuracion para el despliegue automatico: [6b46da3da0](https://github.com/ernestoalejo/virtual-vulcano/commit/6b46da3da0cd6d068041849bb63c8d4208d45561) [36785e7e1c](https://github.com/ernestoalejo/virtual-vulcano/commit/36785e7e1c497f95624b4fc6410b453847f3dab4)
+- Documentacion de las tecnologias usadas: [445ba3c0d4](https://github.com/ernestoalejo/virtual-vulcano/commit/445ba3c0d48659924578c5c62cb38c61d56c2c6d)
+- Añadir licencias en algunos ficheros: [fa56e96c97](https://github.com/ernestoalejo/virtual-vulcano/commit/fa56e96c97c9d84c931cff5f44d228243b281551)
+
+
+#### Jonathan Mulero López
+
+- Test del registro de plugins para la intregación continua en: [a0d79d4077](https://github.com/ernestoalejo/virtual-vulcano/commit/a0d79d40775555ea1cb1c1a4a92f6244c1769429)
+- Un ejemplo de documentacion ha sido añadiendo y actualizando las licencias: [9043805043](https://github.com/ernestoalejo/virtual-vulcano/commit/90438050431ccf4cc6b8dffdc12b8f12a13ed01e)
+y documentando tecnologias utilizadas: [1cdc7f69b7](https://github.com/ernestoalejo/virtual-vulcano/commit/1cdc7f69b7071c4357de644185866c41d77b858f)
+- A añadido el despliegue automático de el servicio FTP y web: [83df80c9ed](https://github.com/ernestoalejo/virtual-vulcano/commit/83df80c9ed63915cec56cd12b35c11fa933ea8bc)
+[commit2](https://github.com/ernestoalejo/virtual-vulcano/commit/b68d9b0440f4ae43c5c43dcd5da4d67e54d5e403)
+- A participado en scripts de provisionamiento de FTP y haproxy: [0858537591](https://github.com/ernestoalejo/virtual-vulcano/commit/08585375916f34bab43f3a1cbba7a9da5ec82396)
+- También en provisionamiento con gulp: [07d5dd69c3](https://github.com/ernestoalejo/virtual-vulcano/commit/07d5dd69c3e4beb2b519de9274d98ef7a6c414de)
+
+-----------------------------------------------------------
+
+###[AGA-OSL - Automatización de la gestión del almacén de reciclaje y donaciones de la oficina de software libre](https://github.com/Samu92/AGA-OSL)
+
+Integrantes actuales:
+
+1. Juan Antonio Marin Sanchez
+2. Pablo Perez Ruiz
+3. Samuel Hernández Ballesteros
+4. Harí Carreras Pérez
+
+**Servidor Web realizado con Ruby On Rails**
+
+[Repositorio de la aplicación REST Ruby On Rails](https://github.com/hcarreras/AGA-OSL-rails-app)
+
+[Aplicación desplegada en Heroku](http://aga-osl.herokuapp.com/stock.json)
+
+[Documentación - Apartado de REST API](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+También estamos desarrollando dos aplicaciones de tipo cliente que interactuarán con esta aplicación haciendo uso de la información que reciban.
+
+Estas aplicaciones de tipo cliente son una página web y una aplicación Android que tendrá la funcionalidad de trabajar con códigos QR.
+
+**Cliente Android**
+
+[Repositorio de la aplicación Android - Documentación en Readme](https://github.com/Samu92/AGA-OSL-Android-App)
+
+[Enlace al APK](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/bin/AgaOsl.apk)
+
+**Cliente Web**
+
+[Repositorio de la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App)
+
+[Aplicación Web desplegada en GoogleAppEngine](http://aga-osl-web.appspot.com/)
+
+En la parte de documentación y pruebas tenemos:
+
+**Documentación**
+
+[Presentación del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
+
+[Presentación web](https://github.com/Samu92/AGA-OSL/tree/master/Documentaci%C3%B3n/Presentaci%C3%B3n)
+
+[Documentación del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+**Contenedores**
+
+[Docker & DockerHub - Digital Ocean Droplet](http://178.62.92.114/stock.json)
+
+[Documentación - Apartado de contenedores](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+**Tests y Pruebas**
+
+Hemos utilizado [New Relic](http://newrelic.com/sp/brand?utm_source=GOOG&utm_medium=adwords&utm_content=rpm&utm_campaign=RPM&utm_term=NewRelic&mpc=PS-GOOG-RPM-EN-SIGNUP-Europe-Brand-NewRelic-LP3&gclid=Cj0KEQiAzb-kBRDe49qh9s75m-wBEiQATOxgwdPt9jKY8auuF_Y5KoKYNJ6eI_DDrJJmVO91Z-IM_MkaAlK18P8HAQ) para testear la aplicación.
+
+Hemos realizado test para comprobar el buen funcionamiento de las aplicaciones
+- RoR: [Rspec](https://github.com/hcarreras/AGA-OSL-rails-app/tree/master/spec)
+- Android: [JUnit FrameWork](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java)
+- PHP: [SimpleTest](http://aga-osl-web.appspot.com/phpUnit.php)
+
+[Documentación - Apartado de test y pruebas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+**Integración continua**
+
+[Jenkins - Interfaz](http://178.62.92.114:8080/)
+
+[Documentación - Apartado de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+**Provisionamiento**
+
+Vagrant y Chef para Ruby on Rails
+
+[Documentación - Apartado de provisionamiento](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.mdci%C3%B3n)
+
+**Participación**
+
+Juan Antonio Marín Sanchez
+
+Ha participado en la documentación
+
+
+- [x] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
+- [ ] [Presentación del proyecto]()
+- [x] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- [ ] [Documentación REST - Apartado REST API](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+Ha participado en el desarrollo de los siguientes contenedores
+
+- [ ] [Docker - Dockerhub]()
+
+
+Ha participado en estos scripts de provisionamiento
+
+- [ ] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
+- [ ] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
+- [ ] [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile)
+- [ ] [Script de provisionamiento - Vagrant & Chef Solo](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/script_provisionamiento)
+
+
+Ha participado en estos tests (o issues)
+
+
+- [x] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
+- [ ] [Test - Test de Rails Rspec](https://github.com/hcarreras/AGA-OSL-rails-app/tree/master/spec)
+- [ ] [Test - Test de Android JUnit](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java)
+- [x] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
+- [x] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
+- [x] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
+
+
+Ha participado en esta integración continua y PaaS
+
+
+- [x] [Jenkins en Digital Ocean Droplet](http://178.62.92.114:8080/)
+- [x] [Documentación - Parte de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+
+
+Ha participado en esta configuración de despliegue automático
+
+
+- [ ] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
+- [x] [AppSpot - Web](http://aga-osl-web.appspot.com/)
+
+
+
+Ha participado en el desarrollo del proyecto
+
+
+- [x] [Desarrollo de la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App)
+- [ ] [Desarrollo del REST RoR](https://github.com/hcarreras/AGA-OSL-rails-app)
+- [ ] [Desarrollo de la aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
+
+
+Pablo Perez Ruíz
+
+Ha participado en la documentación
+
+
+- [x] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
+- [ ] [Presentación del proyecto]()
+- [x] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- [ ] [Documentación REST - Apartado REST API](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+Ha participado en el desarrollo de los siguientes contenedores
+
+- [ ] [Docker - Dockerhub]()
+
+Ha participado en estos scripts de provisionamiento
+
+
+- [ ] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
+- [ ] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
+- [ ] [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile)
+- [ ] [Script de provisionamiento - Vagrant & Chef Solo](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/script_provisionamiento)
+
+
+Ha participado en estos tests (o issues)
+
+
+- [x] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
+- [ ] [Test - Test de Rails Rspec](https://github.com/hcarreras/AGA-OSL-rails-app/tree/master/spec)
+- [ ] [Test - Test de Android JUnit](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java)
+- [x] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
+- [x] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
+- [x] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
+
+
+
+Ha participado en esta integración continua y PaaS
+
+
+- [x] [Jenkins en Digital Ocean Droplet](http://178.62.92.114:8080/)
+- [x] [Documentación - Parte de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+
+
+Ha participado en esta configuración de despliegue automático
+
+
+- [ ] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
+- [x] [AppSpot - Web](http://aga-osl-web.appspot.com/)
+
+
+
+Ha participado en el desarrollo del proyecto
+
+
+- [x] [Desarrollo de la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App)
+- [ ] [Desarrollo del REST RoR](https://github.com/hcarreras/AGA-OSL-rails-app)
+- [ ] [Desarrollo de la aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
+
+
+Samuel Hernández Ballesteros
+
+
+
+Ha participado en la documentación
+
+
+- [x] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
+- [x] [Presentación del proyecto]()
+- [x] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- [x] [Documentación REST - Apartado REST API](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+Ha participado en el desarrollo de los siguientes contenedores
+
+- [x] [Docker - Dockerhub]()
+
+
+Ha participado en estos scripts de provisionamiento
+
+
+- [x] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
+- [x] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
+- [ ] [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile)
+- [x] [Script de provisionamiento - Vagrant & Chef Solo](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/script_provisionamiento)
+
+
+Ha participado en estos tests (o issues)
+
+
+- [ ] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
+- [ ] [Test - Test de Rails Rspec](https://github.com/hcarreras/AGA-OSL-rails-app/tree/master/spec)
+- [x] [Test - Test de Android JUnit](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java)
+- [x] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
+- [x] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
+- [x] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
+
+
+
+Ha participado en esta integración continua y PaaS
+
+
+- [x] [Jenkins en Digital Ocean Droplet](http://178.62.92.114:8080/)
+- [x] [Documentación - Parte de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+
+
+Ha participado en esta configuración de despliegue automático
+
+
+- [ ] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
+- [ ] [AppSpot - Web](http://aga-osl-web.appspot.com/)
+- [x] [Script Rails - Heroku]()
+
+Ha participado en el desarrollo del proyecto
+
+
+- [ ] [Desarrollo de la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App)
+- [x] [Desarrollo del REST RoR](https://github.com/hcarreras/AGA-OSL-rails-app)
+- [x] [Desarrollo de la aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
+
+
+Harí Carreras Pérez
+
+Ha participado en la documentación
+
+
+- [x] [Descripción del proyecto](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Presentaci%C3%B3n%20del%20proyecto.md)
+- [x] [Presentación del proyecto]()
+- [x] [Documentación técnica - Herramientas utilizadas](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Entorno%20de%20pruebas/Contenedores%20y%20pruebas.md)
+- [x] [Documentación REST - Apartado REST API](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+Ha participado en el desarrollo de los siguientes contenedores
+
+- [x] [Docker - Dockerhub]()
+
+
+Ha participado en estos scripts de provisionamiento
+
+
+- [ ] [Vagrantfile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Vagrantfile)
+- [ ] [Cheffile](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/Cheffile)
+- [x] [Dockerfile](https://github.com/hcarreras/AGA-OSL-rails-app/blob/master/Dockerfile)
+- [ ] [Script de provisionamiento - Vagrant & Chef Solo](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Scripts/script_provisionamiento)
+
+
+Ha participado en estos tests (o issues)
+
+
+- [ ] [Test - SimpleTest PHP para la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App/tree/master/simpletest)
+- [x] [Test - Test de Rails Rspec](https://github.com/hcarreras/AGA-OSL-rails-app/tree/master/spec)
+- [ ] [Test - Test de Android JUnit](https://github.com/Samu92/AGA-OSL-Android-App/blob/master/src/com/etsiit/agaosl/TestAgaOsl.java)
+- [x] [Definiendo el REST](https://github.com/Samu92/AGA-OSL/issues/14)
+- [x] [Conectar con la API Google Drive](https://github.com/Samu92/AGA-OSL/issues/4)
+- [x] [Urgente - Correciones](https://github.com/Samu92/AGA-OSL/issues/15)
+
+
+
+Ha participado en esta integración continua y PaaS
+
+
+- [x] [Jenkins en Digital Ocean Droplet](http://178.62.92.114:8080/)
+- [x] [Documentación - Parte de integración continua](https://github.com/Samu92/AGA-OSL/blob/master/Documentaci%C3%B3n/Documentaci%C3%B3n%20t%C3%A9cnica.md)
+
+
+
+Ha participado en esta configuración de despliegue automático
+
+
+- [x] [Heroku - Aplicación Rails](https://aga-osl.herokuapp.com/stock.json)
+- [ ] [AppSpot - Web](http://aga-osl-web.appspot.com/)
+- [x] [Script Rails - Heroku]()
+
+Ha participado en el desarrollo del proyecto
+
+
+- [ ] [Desarrollo de la Web](https://github.com/JAntonioMarin/AGA-OSL-Web-App)
+- [x] [Desarrollo del REST RoR](https://github.com/hcarreras/AGA-OSL-rails-app)
+- [ ] [Desarrollo de la aplicación Android](https://github.com/Samu92/AGA-OSL-Android-App)
+
+**Commits**
+
+[Enlace a los commits del repositorio principal](https://github.com/Samu92/AGA-OSL/commits/master)
+
+[Enlace a los commits del subrepo Android](https://github.com/Samu92/AGA-OSL-Android-App/commits/master)
+
+[Enlace a los commits del subrepo REST](https://github.com/hcarreras/AGA-OSL-rails-app/commits/master)
+
+[Enlace a los commits del subrepo WEB](https://github.com/JAntonioMarin/AGA-OSL-Web-App/commits/master)
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+# Evenge
+
+- Enlace al **repositorio**: [Github](https://github.com/evenge/EVENGE).
+- **Aplicación**: [evenge-2014.appspot.com](https://evenge-2014.appspot.com)  
+- **Provisionamiento bajo Docker**: [DockerHub](https://registry.hub.docker.com/u/ivanortegaalba/evenge/)
+- Toda la **documentación resumida** sobre provisionamiento, CI, test y despliegue está en el [README.md](https://github.com/evenge/EVENGE/blob/master/README.md)
+- Publicado bajo **Licencia GPL v3**: [Licencia GNU](https://github.com/evenge/EVENGE/blob/master/LICENSE).
+- **Blog**: [evenge.github.io](http://evenge.github.io)  
+
+## Aportaciones de cada miembro:
+### Carlos Campos:
+Enlace a toda la historia de commits de Carlos Campos: https://github.com/evenge/EVENGE/commits?author=ccamposfuentes
+
+* Scripts de provisionamiento
+  * Commits: [fc552a28a210b849253e7b91e56feedb2f1d6308](https://github.com/evenge/EVENGE/commit/fc552a28a210b849253e7b91e56feedb2f1d6308)
+  * Pull Request: [#154](https://github.com/evenge/EVENGE/pull/154)
+  * Issues: [#143](https://github.com/evenge/EVENGE/issues/143)
+* Tests:
+  * Commits: [b9daa61139cedd10d16543a8f00aed66f3f3295c](https://github.com/evenge/EVENGE/commit/b9daa61139cedd10d16543a8f00aed66f3f3295c), [2e75aa52f71454582a1887cd42ab251de261c002](http://github.com/evenge/EVENGE/commit/2e75aa52f71454582a1887cd42ab251de261c002)
+  * Pull Request: [#157]( https://github.com/evenge/EVENGE/pull/157)
+  * Issues: [#145](https://github.com/evenge/EVENGE/issues/145), [#17](https://github.com/evenge/EVENGE/issues/17)
+* Configuración de integración continua y PaaS:
+  * Commits: [750380ea1f48d3a42fa522498fe5f6dc06aca049](https://github.com/evenge/EVENGE/commit/750380ea1f48d3a42fa522498fe5f6dc06aca049), [9f6ef41663034f0b80b62064971131a184666600](https://github.com/evenge/EVENGE/commit/9f6ef41663034f0b80b62064971131a184666600), [0153a045ad3c50515b61872ae8674a2ba7e36ccc](https://github.com/evenge/EVENGE/commit/0153a045ad3c50515b61872ae8674a2ba7e36ccc), [ef818b2e930cc9955ddfac9a239d1031394a5ccd](https://github.com/evenge/EVENGE/commit/ef818b2e930cc9955ddfac9a239d1031394a5ccd), [962510c7aa861655880c76b9cbf1ec410b204cdb](https://github.com/evenge/EVENGE/commit/962510c7aa861655880c76b9cbf1ec410b204cdb)
+  * Pull Request:  [#138](https://github.com/evenge/EVENGE/pull/138), [#113](https://github.com/evenge/EVENGE/pull/113)
+  * Issues: [#133](https://github.com/evenge/EVENGE/issues/133), [#107](https://github.com/evenge/EVENGE/issues/107), [#165](https://github.com/evenge/EVENGE/issues/165), [#36](https://github.com/evenge/EVENGE/issues/36), [#51](https://github.com/evenge/EVENGE/issues/51), [#34](https://github.com/evenge/EVENGE/issues/34), [#61](https://github.com/evenge/EVENGE/issues/61), [#27](https://github.com/evenge/EVENGE/issues/27), [#85](https://github.com/evenge/EVENGE/issues/85), [#86](https://github.com/evenge/EVENGE/issues/86), [#83](https://github.com/evenge/EVENGE/issues/83)
+* Configuración de despliegue automático:
+  * Commits: [fc552a28a210b849253e7b91e56feedb2f1d6308](https://github.com/evenge/EVENGE/commit/fc552a28a210b849253e7b91e56feedb2f1d6308)
+  * Pull Request: [#154](https://github.com/evenge/EVENGE/pull/154)
+  * Issues: [#143](https://github.com/evenge/EVENGE/issues/143)
+
+## Victor Coronas:
+* Scripts de provisionamiento:
+  * Commits: [wiki](https://github.com/evenge/EVENGE/wiki/Desplegar-el-entorno-de-desarrollo/a223122130b773bc628729e84c52f0595665d6a8), [Post](https://github.com/evenge/evenge.github.io/commit/303912c6d803540fb8b4f9017570d8a4e80f5f36#diff-1d0c6a774c173c2999a04ee7b5b6feeb)
+  * Issues:[1](https://github.com/evenge/EVENGE/issues/148), [2](https://github.com/evenge/EVENGE/issues/144), [3](https://github.com/evenge/EVENGE/issues/139)
+
+* Tests:
+  * Commits: [Post](https://github.com/evenge/evenge.github.io/commit/a97be29b3a72cc0ef20d984218ca3440c25056fb#diff-3fffece9f737baf1e2b9d51d56a3ad0c), [Wiki](https://github.com/evenge/EVENGE/wiki/Ejecutar-test/d6069feeaf3f2d9f38c51d042babe9853d272519), [commit1](https://github.com/evenge/EVENGE/commit/5555e4cc81765c8359f46d34bc5eb9085b94bf33), [commit2](https://github.com/evenge/EVENGE/commit/1ba3e8fbe3c84ac35fd25a17228ccd3551b126c8),  [commit3](https://github.com/evenge/EVENGE/commit/80daa6874f78554a51b6fa810bfc5b4ed8514bb4), [commit4](https://github.com/evenge/EVENGE/commit/857523787df202fb7915e8ac12b8db4450ca4145), [commit5](https://github.com/evenge/EVENGE/commit/e715c39f90577e6f7fe9ea5f4be01ef86277b450),
+
+  * Pull request:  https://github.com/evenge/EVENGE/commit/e933fcf6de499867ea5a963d99131946db15575d, https://github.com/evenge/EVENGE/commit/67a9c1d8924811744d2f01ac8ef3c60b465cf854
+  * Issues:[1](https://github.com/evenge/EVENGE/issues/152), [2](https://github.com/evenge/EVENGE/issues/148),  [3](https://github.com/evenge/EVENGE/issues/139), [4](https://github.com/evenge/EVENGE/issues/147),
+  [5](https://github.com/evenge/EVENGE/issues/7),
+  [6](https://github.com/evenge/EVENGE/issues/150),
+  [7](https://github.com/evenge/EVENGE/issues/6),
+  [8](https://github.com/evenge/EVENGE/issues/18),
+  [9](https://github.com/evenge/EVENGE/issues/32),
+  [10](https://github.com/evenge/EVENGE/issues/40),
+  [11](https://github.com/evenge/EVENGE/issues/43),
+  [12](https://github.com/evenge/EVENGE/issues/102),
+  [13](https://github.com/evenge/EVENGE/issues/85),
+  [14](https://github.com/evenge/EVENGE/issues/84),
+  [15](https://github.com/evenge/EVENGE/issues/88),
+  [16](https://github.com/evenge/EVENGE/issues/108)
+
+* Configuración de integración continua y PaaS:
+  * Commits:[Post](https://github.com/evenge/evenge.github.io/commit/26791ced937512d3bb8d0b6d66732732f28a6e97#diff-4ceb80bbb705d7bbd146456089946507),[Wiki](https://github.com/evenge/EVENGE/wiki/Test-unitarios/1688149ce31c06103cef42c4a73a338d99f5e633)
+  * Issues:[1](https://github.com/evenge/EVENGE/issues/151), [2](https://github.com/evenge/EVENGE/issues/148), [3](https://github.com/evenge/EVENGE/issues/139)
+
+* Configuración de despliegue automático:
+  * Commits: [Documentación](https://github.com/evenge/EVENGE/commit/401874a0e0e4244268e7a9a94ea94af93ef2651c#diff-5377c2487afc76788f872d39d21d3987),
+[Post](https://github.com/evenge/evenge.github.io/commit/77e116bc946ff4ed27e7e35fd79a255ba06a3b2f#diff-feae184406671d7c9e74ea16ede72fce)
+  * Issues:[Documentación](https://github.com/evenge/EVENGE/issues/153),
+  [1](https://github.com/evenge/EVENGE/issues/148), [2](https://github.com/evenge/EVENGE/issues/139)
+
+### Fran Expósito:
+Link a todos los issues, en cada issue están todos los commits relacionados. Hay más issues y commits, relacionados con gestión, organización y tareas externas de equipo que no están incluidos aqui. Enlace a toda la historia de commits de [Fran Expósito](https://github.com/evenge/EVENGE/commits?author=franexposito).  
+
+* Provisionamiento y PaaS
+	* Documentación de Dockerfile.
+	  * [#142](https://github.com/evenge/EVENGE/issues/142)
+	* Aportaciones funcionales a la aplicación
+	* Añadida platilla Asistente
+	  * [#54](https://github.com/evenge/EVENGE/issues/54)
+	* Añadido botón asistente para diploma
+	  * [#88](https://github.com/evenge/EVENGE/issues/88)
+	* Vista de Mi Cuenta
+	  * [#108](https://github.com/evenge/EVENGE/issues/108)
+	* Vista de Evento detallado
+	  * [#94](https://github.com/evenge/EVENGE/issues/94)
+	* Test de inserción de evento
+	  * [d8824c163e9e34ecf9ba3890d20661cf8931a5e5](https://github.com/evenge/EVENGE/commit/d8824c163e9e34ecf9ba3890d20661cf8931a5e5)
+
+* Integración continua:
+	* Integración continua con Shippable
+	  * [#71](https://github.com/evenge/EVENGE/issues/71)
+
+* Test
+	* Test e integración continua con Shippable
+	  * [#71](https://github.com/evenge/EVENGE/issues/71)
+	* Test de inserción de evento
+	  * [d8824c163e9e34ecf9ba3890d20661cf8931a5e5](https://github.com/evenge/EVENGE/commit/d8824c163e9e34ecf9ba3890d20661cf8931a5e5)
+
+* Despliegue
+	* Despliegue automático con Shippable
+	  * [#71](https://github.com/evenge/EVENGE/issues/71)
+
+* Otros
+	* Configuración de app.yaml para guardar en Datastore
+	  * [#21](https://github.com/evenge/EVENGE/issues/21)
+
+## Ivan Ortega:
+Link a todos los issues, en cada issue están todos los commits relacionados.
+Hay más issues y commits, relacionados con gestión, organización y tareas externas de equipo que no están incluidos aqui.
+Enlace a toda la historia de commits de Ivan Ortega: https://github.com/evenge/EVENGE/commits?author=ivanortegaalba
+* Provisionamiento y PaaS:
+  * Aportación al Dockerfile:
+    * https://github.com/evenge/EVENGE/issues/70
+    * https://github.com/evenge/EVENGE/issues/
+  * Aportación al Script de instalación de Dockerfile y todo lo necesario para descargar la imagen de DockerHub:
+    * https://github.com/evenge/EVENGE/issues/70
+  * Aportaciones Funcionales a la Aplicación:
+    * Añadido estilo al formulario Usuario y añadida la barra de menu
+      * https://github.com/evenge/EVENGE/commit/91fcd617f4dd2a8f27792fed6a4e4f127486558a
+    * Plantillas con Jinja y herencia entre ellas generica, asistente y corrige bug:
+      * https://github.com/evenge/EVENGE/issues/35
+      * https://github.com/evenge/EVENGE/issues/36
+      * https://github.com/evenge/EVENGE/issues/37
+    * Listar todos los eventos:
+      * https://github.com/evenge/EVENGE/issues/38
+    * Añadir la biblioteca Fontawesome de iconos
+      * https://github.com/evenge/EVENGE/issues/95
+    * Arreglo de bug en vista:
+      * https://github.com/evenge/EVENGE/issues/93
+    * Añadido el footer a la plantilla esqueleto (Con gif de celebración incuido):
+      * https://github.com/evenge/EVENGE/issues/87
+    * Añadido navegador:
+      * https://github.com/evenge/EVENGE/issues/92
+    * Añadida plantilla para usuario:
+      * https://github.com/evenge/EVENGE/issues/89
+      * https://github.com/evenge/EVENGE/issues/106
+
+* Integración continua:
+  * Configuración y explicación del papel de Shippable para la CI
+    * https://github.com/evenge/EVENGE/issues/146
+
+* Test:
+  * Test para la inserción de usuarios con NoseGAE
+    * https://github.com/evenge/EVENGE/issues/161
+  * Funcionamiento de NoseGAE junto a Shippable:
+    * https://github.com/evenge/EVENGE/issues/163
+
+* Despliegue:
+  * Configuración de Shippable para despliegue con push en rama master.
+    * https://github.com/evenge/EVENGE/issues/146
+
+
+- - -
+
+
+###[VirtualBoard](https://github.com/IV-2014/VirtualBoard)
+
+Integrantes:
+
+* [Javier Aranda Izquierdo](https://github.com/JavideBaza)
+* [Angel Jimenez de Cisneros Carreño](https://github.com/angeljcc)
+* [David Castellon Rodriguez](https://github.com/divadcr)
+* [Juan Marquina Garcia](https://github.com/marquina91)
+* [Eduardo J. Polo Gozalez](https://github.com/edupg1)
+
+
+####[Documentación del proyeto](https://github.com/IV-2014/VirtualBoard/blob/master/Documentacion/Documentacion.md)
+
+####[Licencia del proyecto](https://github.com/IV-2014/VirtualBoard/blob/master/LICENSE)
+
+####[Despliegue en OpenShift](http://virtualboardphp-virtualboard.rhcloud.com/)
+
+####[Despliegue en Azure](http://virtualboard.cloudapp.net/)
+
+####[Issues y commits de cada integrante del grupo](https://github.com/IV-2014/VirtualBoard/blob/master/Documentacion/referencias.md)
