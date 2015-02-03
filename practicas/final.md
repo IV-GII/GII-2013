@@ -344,6 +344,3 @@ Commits:
 
 
 Algunos commits no se han incluido por tener solo pequeñas modificaciones para corregir comportamientos del sistema o errores (que se iban intentando solucionar con otros commits precedentes) y que no suponen grandes aportes respecto a los aquí presentados. Además, se ha tratado de listar los contenidos que son solo de la asignatura
-
-
->>>>>>> 80b25c10e3ab578cc509d0ba841e3ac6c2f7e0e8
