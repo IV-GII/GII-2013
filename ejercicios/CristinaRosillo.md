@@ -497,6 +497,87 @@ Como podemos ver, el servicio se está ejecutando lo que nos confirma que la ins
 
 ## Tema 5
 
+#Ejercicio 1
+
+1) En mi disco duro no utilizo volúmenes lógicos sino particiones, aquí podemos ver cómo lo tengo distribuido.
+
+![Ejercicio1_1](http://i.imgur.com/CzVnhi9.png)
+
+#Ejercicio 2
+
+Vamos a usar FUSE para acceder a los recursos remotos como si fueran ficheros locales. Primero instalamos el paquete sshfs (debemos tenerlo tanto en el cliente como en el servidor):
+
+	> sudo apt-get install sshfs
+
+Ahora creamos un directorio donde montará la carpeta que queremos "compartir" de nuestro servidor y ejecutamos la instrucción para montarlo.
+
+![Ejercicio2_1](http://i.imgur.com/Rt148Zk.png)
+
+Ahora vamos a comprobar que se ha realizado de forma correcta listando el directorio y añadiendo un fichero de prueba para ver que realmente se crea en el servidor al crearlo en nuestra máquina local.
+
+![Ejercicio2_2](http://i.imgur.com/myppUYw.png)
+
+#Ejercicio 3
+
+Vamos a crear imágenes con los formatos descritos en teoría y vamos a montarlas, para ver cómo funciona. Lo primero que necesitamos es instalar el paquete qemu-system.
+
+	> apt-get install qemu-system
+
+Una vez lo tenemos crearemos el fichero de almacenamiento virtual de la máquina y a continuación lo montaremos en un directorio.
+
+Ahora vamos a hacerlo utilizando ficheros tipo raw. Creamos el fichero raw.
+
+![Ejercicio3_1](http://i.imgur.com/F13SX60.png)
+
+Para poder montarlo tendremos que formatearlo (podemos hacerlo con el comando fdisk y mkfs). Una vez le hayamos dado formato y se haya particionado, podremos montarlo con la siguiente instrucción:
+
+	> mount -o loop maquina1.img /mnt/maquina1
+
+![Ejercicio3_2](http://i.imgur.com/EEEQ0wE.png)
+
+#Ejercicio 5
+
+Vamos a instalar ceph en nuestro sistema, para ello sólo ejecutamos:
+
+	> apt-get install ceph
+
+![Ejercicio5_1](http://i.imgur.com/xDs91xt.png)
+
+#Ejercicio 6
+
+Vamos a crear un dispositivo ceph usando BTRFS o XFS. Creamos los directorios donde se va a almacenar la información y a continuación creamos el fichero de configuración tal y como se explica en el tema.
+
+![Ejercicio6_1](http://i.imgur.com/TVBEbgu.png)
+
+Ahora creamos la máquina.
+
+![Ejercicio6_2](http://i.imgur.com/37ppYJT.png)
+
+#Ejercicio 7
+
+Almacenar objetos y ver la forma de almacenar directorios completos usando ceph y rados. Usando rados tendremos que crear un pool.
+
+	> rados mkpool ejemplo1
+
+Una vez lo tenemos podemos añadirle cualquier fichero.
+
+	> rados put -p ejemplo1 fichero.txt
+
+#Ejercicio 8
+
+Vamos a instalar las herramientas de línea de órdenes de nuestra cuenta Azure. Instalaremos primero cli:
+
+	> npm install -g azure-cli
+
+Después tendremos que conectar con nuestra cuenta de azure ejecutando la siguiente instrucción:
+
+	> azure account download
+
+Nos aparecerá una url, al abrirla se nos descarga un fichero que es el que debemos importar y con éste paso ya tendríamos nuestra cuenta conectada.
+
+	> azure account import "fichero"
+
+
 ## Tema 6
 
 #Ejercicio 1
