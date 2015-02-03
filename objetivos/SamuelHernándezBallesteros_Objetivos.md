@@ -230,28 +230,28 @@ Clase del 25 de noviembre de 2014
 
 ## Clase del 12 de enero de 2015
 
-[] Entender el concepto de provisionamiento de máquinas virtuales.
+[X] Entender el concepto de provisionamiento de máquinas virtuales.
 
-[] Usar Chef para provisionamiento de una máquina virtual.
+[X] Usar Chef para provisionamiento de una máquina virtual.
 
-[] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+[X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
 
-[] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
+[X] Tener listas máquinas virtuales para pruebas, localmente con un gestor de máquinas virtuales o en la nube.
 
-[] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
+[X] Retomar el contacto con la asignatura y ponerse al día en los objetivos.
 
 ## Clase del 13 de enero de 2015
 
-[] Entender el último hito del proyecto.
+[X] Entender el último hito del proyecto.
 
-[] Usar diversas herramientas para provisionamiento de una máquina virtual.
+[X] Usar diversas herramientas para provisionamiento de una máquina virtual.
 
-[] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
+[X] Comprender la utilidad de provisionamiento externo de máquinas virtuales.
 
-[] Aprender a usar máquinas virtuales.
+[X] Aprender a usar máquinas virtuales.
 
-[] Elegir un sistema de provisionamiento.
+[X] Elegir un sistema de provisionamiento.
 
-[] Entender los objetivos del último proyecto (y de la asignatura).
+[X] Entender los objetivos del último proyecto (y de la asignatura).
 
 
