@@ -1,15 +1,13 @@
 # TEMA 7: Gestión de infraestructuras virtuales
 
 ## Ejercicio 1
-
-Instalar chef en la máquina virtual que vayamos a usar
+#### Instalar chef en la máquina virtual que vayamos a usar
 
 Usamos el gestor de gemas de Ruby para importar Chef:
 ```
 gem install chef
 ```
 ## Ejercicio 2
-
 #### Crear una receta para instalar nginx, tu editor favorito y algún directorio y fichero que uses de forma habitual.
 
 Creamos un fichero ruby con el nombre que prefiramos, en mi caso ejercicio4.rb, y añadimos la información necesaria para realizar nuestra receta.
@@ -28,8 +26,8 @@ Para ejecutarlo usamos
 ```
 chef-apply ejercicio4.rb.
 ```
-## Ejercicio 3
 
+## Ejercicio 3
 #### Escribir en YAML la siguiente estructura de datos en JSON:
 ```
 { uno: "dos",
