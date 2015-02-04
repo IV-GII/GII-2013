@@ -65,3 +65,26 @@ qemu-system-x86_64 -hda lxde.img -cdrom debian-7.7.0-amd64-netinst.iso -m 512M
 ## Ejercicio 5
 
 #### Crear una máquina virtual ubuntu e instalar en ella un servidor nginx para poder acceder mediante web.
+
+Ejecutamos azure vm image list | grep Ubuntu y obtendremos las imagenes Ubunto del repositorio de Azure.
+Nosotros instalaremos Ubuntu 14,04(b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04-LTS-amd64-server-20140414-en-us-30GB)
+
+Por tanto creamos la máquina con:
+```
+azure vm create ivanortegaalba b39f27a8b8c64d52b05eac6a62ebad85__Ubuntu-14_04-LTS-amd64-server-20140414-en-us-30GB ivanortegaalba [PASS] --location "West Europe" --ssh
+```
+Si usamos azure vm list podemos ver la imagen creada.
+
+Vamos a arrancarla con
+```
+azure vm start ivanortegaalba
+```
+Nos conectamos por ssh y instalamos nginx desde el repo:
+```
+sudo apt-get install nginx
+sudo service nginx start
+```
+Y para terminar creamos el endpoint con:
+```
+azure vm endpoint create -n http ivanortegaalba 8080
+```
